@@ -18,7 +18,7 @@ Bluetooth LE.
 It fetches the bike key from the VanMoof account once and stores it encrypted on the phone
 (Android Keystore). After that it works without VanMoof's servers.
 
-I built it in Frankfurt for my second-hand S3.
+Crafted in Zagreb.
 
 <p align="center">
   <img src="assets/screens/ride.png" width="19%" alt="Ride: speed on the top tube, unlock slider, speed region">
