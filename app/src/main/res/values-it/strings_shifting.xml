@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cambio nella schermata di guida: modalità (5538) e punti di cambiata (5537). -->
+<resources>
+    <string name="shift_section">Cambio</string>
+    <string name="shift_mode_auto">Automatico</string>
+    <string name="shift_mode_manual">Manuale</string>
+    <string name="shift_gear">Marcia</string>
+    <string name="shift_gear_cd">Marcia\u00A0%1$d</string>
+    <string name="shift_gear_unknown_cd">Marcia sconosciuta</string>
+
+    <!-- Profili -->
+    <string name="shift_profile_standard">Standard</string>
+    <string name="shift_profile_flat">Pianura</string>
+    <string name="shift_profile_hilly">Collina</string>
+    <string name="shift_profile_custom">Personale</string>
+    <string name="shift_reason_standard">Impostazione di fabbrica VanMoof.</string>
+    <string name="shift_reason_flat">La 3ª marcia tiene da 14 a 27\u00A0km/h. In città non cambia quasi mai.</string>
+    <string name="shift_reason_hilly">La 2ª marcia tiene da 9 a 21\u00A0km/h. In salita cambia meno spesso sotto sforzo.</string>
+    <string name="shift_reason_custom">I tuoi punti di cambiata.</string>
+    <string name="shift_custom_empty">Ancora nessun punto di cambiata personale.</string>
+    <string name="shift_row_cd">%1$s. Sale di marcia a %2$d, %3$d e %4$d\u00A0km/h, scende a %5$d, %6$d e %7$d\u00A0km/h.</string>
+    <string name="shift_points_short">su %1$d, %2$d, %3$d, giù %4$d, %5$d, %6$d\u00A0km/h</string>
+    <string name="shift_limit_cd">L’assistenza termina a %1$d\u00A0km/h.</string>
+    <string name="shift_axis_kmh">%1$d\u00A0km/h</string>
+    <string name="shift_units_note">I punti di cambiata si impostano sempre in km/h.</string>
+    <string name="shift_reading">Lettura dei punti di cambiata…</string>
+    <string name="shift_invalid_on_bike">I punti di cambiata sulla bici possono farla cambiare avanti e indietro di continuo. Scegli un profilo o correggili.</string>
+    <string name="shift_fault">Il cambio segnala l’errore\u00A0%1$d: %2$s</string>
+    <string name="shift_ease_off">Quando la bici cambia, alleggerisci per un attimo la spinta sui pedali. Così il cambio dura di più.</string>
+
+    <!-- Personale: editor -->
+    <string name="shift_handle_up">Salire dalla %1$d alla %2$d</string>
+    <string name="shift_handle_down">Scendere dalla %1$d alla %2$d</string>
+    <string name="shift_lane_up">su</string>
+    <string name="shift_lane_down">giù</string>
+    <string name="shift_allowed">Possibile: da %1$d a %2$d\u00A0km/h</string>
+    <string name="shift_step_higher">1\u00A0km/h in più</string>
+    <string name="shift_step_lower">1\u00A0km/h in meno</string>
+    <string name="shift_blocked_by">Limitato da: %1$s</string>
+    <string name="shift_rules">La soglia per scalare è almeno 2\u00A0km/h sotto quella per salire di marcia. Le soglie nella stessa direzione distano almeno 3\u00A0km/h. La bici torna in 1ª al più tardi a 5\u00A0km/h.</string>
+    <string name="shift_apply">Applica</string>
+    <string name="shift_discard">Scarta</string>
+    <string name="shift_draft_matches">Uguale a %1$s.</string>
+    <string name="shift_draft_from_standard">I valori sulla bici non erano utilizzabili. Parti da Standard.</string>
+
+    <!-- Manuale -->
+    <string name="shift_manual_up">Salire di marcia: mentre pedali, premi Boost due volte di seguito.</string>
+    <string name="shift_manual_down">Scendere di marcia: tieni premuto il tasto del campanello e premi Boost due volte di seguito.</string>
+    <string name="shift_manual_stop">Da ferma, la bici torna da sola in 1ª.</string>
+    <string name="shift_manual_boost">Tenendo premuto Boost hai ancora la spinta extra.</string>
+    <string name="shift_manual_points_kept">I tuoi punti di cambiata restano salvati per Automatico.</string>
+    <string name="shift_key_bell">Campanello</string>
+    <string name="shift_key_boost">Boost</string>
+    <string name="shift_key_pressed">premuto</string>
+
+    <!-- Registro ed errori -->
+    <string name="shift_cmd_mode">Modalità cambio: %1$s</string>
+    <string name="shift_cmd_points">Punti di cambiata: %1$s</string>
+    <string name="shift_log_state">Cambio: %1$s (%2$s)</string>
+    <string name="shift_unknown">sconosciuto</string>
+    <string name="shift_error_mode_rejected">La bici non ha accettato %1$s. Segnala: %2$s.</string>
+    <string name="shift_error_points_rejected">La bici non ha accettato i punti di cambiata. Segnala: %1$s.</string>
+    <string name="shift_error_points_invalid">Questi punti di cambiata farebbero cambiare la bici avanti e indietro di continuo. Non è stato inviato nulla.</string>
+    <string name="shift_error_too_many">Troppe modifiche al cambio di seguito. Riconnettiti per continuare.</string>
+    <string name="shift_error_region_changed">La regione è cambiata durante il salvataggio. Controlla di nuovo i punti di cambiata.</string>
+
+    <!-- Notes, conflicts, editor actions, checks (second round) -->
+    <string name="shift_riding_note">In marcia una modifica vale subito: la bici può cambiare all’istante.</string>
+    <string name="shift_region_short">Vale per la regione %1$s (ogni regione tiene i suoi).</string>
+    <string name="shift_legend">Chiaro: quella marcia. Vuoto: la bici resta nella marcia da cui arriva. Sottolineato: la tua marcia ora.</string>
+    <string name="shift_profiles_show">Mostra tutti i profili</string>
+    <string name="shift_profiles_hide">Nascondi i profili</string>
+    <string name="shift_reason_invalid">Valori non validi sulla bici.</string>
+    <string name="shift_invalid_zero">La bici indica 0\u00A0km/h per tutti i punti di cambiata. Così sale fino alla 4ª appena si muove e parte in 4ª. Scegli Standard.</string>
+    <string name="shift_conflict_gap">“%1$s” (%2$d\u00A0km/h) non è almeno 2\u00A0km/h sotto “%3$s” (%4$d\u00A0km/h).</string>
+    <string name="shift_conflict_spacing">“%1$s” (%2$d\u00A0km/h) non è almeno 3\u00A0km/h sopra “%3$s” (%4$d\u00A0km/h).</string>
+    <string name="shift_conflict_min">“%1$s” (%2$d\u00A0km/h) è sotto %3$d\u00A0km/h.</string>
+    <string name="shift_conflict_range">“%1$s” (%2$d\u00A0km/h) è fuori da %3$d a %4$d\u00A0km/h.</string>
+    <string name="shift_conflict_max">“%1$s” (%2$d\u00A0km/h) è sopra %3$d\u00A0km/h.</string>
+    <string name="shift_conflict_more">… e altri %1$d.</string>
+    <string name="shift_edit">Modifica</string>
+    <string name="shift_edit_set">Imposta</string>
+    <string name="shift_edit_close">Chiudi</string>
+    <string name="shift_expanded">espanso</string>
+    <string name="shift_collapsed">compresso</string>
+    <string name="shift_edit_action">Modifica i punti di cambiata</string>
+    <string name="shift_edit_close_action">Chiudi l’editor</string>
+    <string name="shift_editor_hint">Trascina un punto o toccalo, poi regola con − e +.</string>
+    <string name="shift_top_gear_above_limit">La 4ª arriva solo sopra %1$d\u00A0km/h, oltre il limite di assistenza di %2$d\u00A0km/h: quindi solo senza assistenza. Fin lì tiene la 3ª.</string>
+    <string name="shift_keys_live">Tasti del manubrio (dal vivo)</string>
+    <string name="shift_gesture_hold">tieni premuto</string>
+    <string name="shift_check_failed">Il firmware\u00A0%1$s riporta valori di cambiata che YABA non conosce (%2$s). YABA qui non cambia nulla.</string>
+    <string name="shift_persist_ok">Impostazioni del cambio ancora sulla bici dopo la riconnessione (firmware\u00A0%1$s).</string>
+    <string name="shift_persist_mode_lost">YABA aveva impostato %1$s, ora la bici indica %2$s. Un’altra app l’ha cambiato, oppure la bici non l’ha tenuto.</string>
+    <string name="shift_persist_points_lost">Sulla bici non ci sono più i punti di cambiata scritti da YABA l’ultima volta (scritti %1$s, ora %2$s). Un’altra app li ha cambiati, oppure la bici non li ha tenuti.</string>
+    <string name="shift_log_fw">%1$s (firmware\u00A0%2$s)</string>
+    <string name="shift_error_read">Non è stato possibile leggere le impostazioni attuali del cambio. Non è stato inviato nulla.</string>
+    <string name="shift_error_no_region">La regione della bici è sconosciuta, quindi YABA non sa quale memoria dei punti di cambiata vale. Non è stato inviato nulla.</string>
+    <string name="shift_error_region_moved">La regione è cambiata da quando hai impostato questi punti. Non è stato inviato nulla; controllali di nuovo.</string>
+</resources>

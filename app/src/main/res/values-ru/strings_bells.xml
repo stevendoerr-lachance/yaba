@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Встроенные звонки на экране «Звук»: десять собственных звуков, которые идут вместе с приложением (tools/bells). -->
+<resources>
+    <string name="bells_hint">Касание воспроизводит звук на телефоне.</string>
+    <string name="bells_choose">Выбрать</string>
+    <string name="bells_muted">Громкость мультимедиа выключена. Увеличь её, чтобы услышать звук.</string>
+    <string name="bells_preview_failed">Не удалось воспроизвести звук.</string>
+    <string name="bells_seconds">%1$s\u00A0с</string>
+
+    <!-- TalkBack -->
+    <string name="bells_row_cd">%1$s, %2$s</string>
+    <string name="bells_play_action">прослушать на телефоне</string>
+    <string name="bells_stop_action">остановить</string>
+    <string name="bells_state_playing">Играет на телефоне</string>
+
+    <!-- Звонок в слоте своего звука, на его строке -->
+    <string name="bells_state_on_bike">На велосипеде</string>
+
+    <!-- Названия -->
+    <string name="bells_name_ringring">Велозвонок</string>
+    <string name="bells_name_tram">Загребский трамвай</string>
+    <string name="bells_name_honk">Клаксон</string>
+    <string name="bells_name_stadium">Фанатский горн</string>
+    <string name="bells_name_fanfare">Фанфары</string>
+    <string name="bells_name_cucaracha">La Cucaracha</string>
+    <string name="bells_name_trombone">Грустный тромбон</string>
+    <string name="bells_name_nightshift">Ночная смена</string>
+    <string name="bells_name_jingle">Джингл YABA</string>
+    <string name="bells_name_ufo">НЛО</string>
+    <string name="bells_caption_phone">На телефоне</string>
+</resources>

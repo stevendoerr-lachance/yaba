@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sound-Lab на экране «Звук» (ui/components/SoundLabBits.kt): громкость каждого звука (5572) и пять заменяемых звуков. -->
+<resources>
+    <!-- Громкость каждого звука -->
+    <string name="soundlab_tiers_title">Громкость каждого звука</string>
+    <string name="soundlab_tiers_hint">Каждый звук играет на уровне\u00A020, 30 или 38 либо не играет вовсе. Три уровня задаёт прошивка; здесь ты выбираешь, какой звук получает какой.</string>
+    <string name="soundlab_tiers_unread">Велосипед ещё не сообщил свои громкости. До тех пор лесенки показывают заводскую настройку начиная с прошивки\u00A01.9.1.</string>
+    <string name="soundlab_tiers_read">Считать с велосипеда</string>
+    <string name="soundlab_tiers_reading">Чтение…</string>
+    <string name="soundlab_tiers_none">Велосипед не сообщает громкости. Вероятно, его прошивка не предлагает это значение.</string>
+    <string name="soundlab_tiers_offline">Пожалуйста, подключись к велосипеду, чтобы считать и сохранить громкости.</string>
+    <string name="soundlab_tier_off">выкл</string>
+    <string name="soundlab_tier_silent">Без звука</string>
+    <string name="soundlab_tier_low">Тихо</string>
+    <string name="soundlab_tier_medium">Средне</string>
+    <string name="soundlab_tier_high">Громко</string>
+    <string name="soundlab_tier_level">%1$s, уровень\u00A0%2$d</string>
+    <string name="soundlab_tier_changed">%1$s вместо %2$s</string>
+    <string name="soundlab_tier_step_cd">%1$s: %2$s</string>
+    <plurals name="soundlab_group_sounds">
+        <item quantity="one">%d звук</item>
+        <item quantity="few">%d звука</item>
+        <item quantity="many">%d звуков</item>
+        <item quantity="other">%d звука</item>
+    </plurals>
+    <plurals name="soundlab_group_muted">
+        <item quantity="one">без звука: %d</item>
+        <item quantity="few">без звука: %d</item>
+        <item quantity="many">без звука: %d</item>
+        <item quantity="other">без звука: %d</item>
+    </plurals>
+    <plurals name="soundlab_group_changed">
+        <item quantity="one">изменено: %d</item>
+        <item quantity="few">изменено: %d</item>
+        <item quantity="many">изменено: %d</item>
+        <item quantity="other">изменено: %d</item>
+    </plurals>
+    <string name="soundlab_state_expanded">развёрнуто</string>
+    <string name="soundlab_state_collapsed">свёрнуто</string>
+    <string name="soundlab_note_bell">Кнопка звонка играет этот звук. Если звук отключён, кнопка молчит.</string>
+    <string name="soundlab_note_alarm">Если звук отключён, сигнализация по-прежнему срабатывает, но без звука.</string>
+    <string name="soundlab_note_find">Если звук отключён, поиск велосипеда остаётся тихим.</string>
+    <string name="soundlab_note_error">Если звук отключён, велосипед показывает ошибки только на дисплее.</string>
+    <plurals name="soundlab_tiers_save">
+        <item quantity="one">Сохранить %d изменение</item>
+        <item quantity="few">Сохранить %d изменения</item>
+        <item quantity="many">Сохранить %d изменений</item>
+        <item quantity="other">Сохранить %d изменения</item>
+    </plurals>
+    <string name="soundlab_tiers_saving">Сохранение…</string>
+    <string name="soundlab_tiers_discard">Отменить изменения</string>
+    <string name="soundlab_tiers_factory">Загрузить заводскую настройку</string>
+    <string name="soundlab_tiers_flash">Каждое сохранение перезаписывает флеш-память велосипеда. Поэтому YABA записывает, только когда ты сохраняешь.</string>
+    <string name="soundlab_tiers_wait">Сохранение ждёт окончания текущей передачи.</string>
+    <string name="soundlab_tiers_saved">Сохранено. Велосипед сообщает новые громкости.</string>
+    <string name="soundlab_tiers_not_taken">После сохранения велосипед сообщает другое состояние. Пожалуйста, считай значения с велосипеда ещё раз.</string>
+
+    <!-- Заменить другие звуки -->
+    <string name="soundlab_clips_title">Звуки в велосипеде</string>
+    <string name="soundlab_clips_hint">Пять звуков велосипеда можно заменить. YABA хранит каждый отправленный файл на этом телефоне.</string>
+    <string name="soundlab_clip_factory">Заводской звук</string>
+    <string name="soundlab_clip_custom">«%1$s» с %2$s</string>
+    <string name="soundlab_clip_empty">Вероятно, без звука: последняя передача прервалась.</string>
+    <string name="soundlab_clip_replace">Заменить</string>
+    <string name="soundlab_clip_factory_note">Велосипед не отдаёт заводской звук. После отправки его можно вернуть только с заводским файлом.</string>
+    <string name="soundlab_clip_bundled">Встроенные звуки</string>
+    <string name="soundlab_clip_history">Уже отправлено</string>
+    <string name="soundlab_clip_history_line">отправлено %1$s</string>
+    <string name="soundlab_clip_history_unsent">ни разу не дошло целиком</string>
+    <string name="soundlab_clip_choose_cd">Выбрать %1$s для «%2$s»</string>
+    <string name="soundlab_clip_pick_hint">YABA конвертирует аудиофайлы. Файл, который уже в формате VM_SOUND велосипеда, например заводской, уходит на велосипед без изменений.</string>
+    <string name="soundlab_clip_cancel">Отмена</string>
+    <string name="soundlab_clip_send">Отправить для «%1$s»</string>
+    <string name="soundlab_clip_keep_close">Пожалуйста, держи телефон рядом с велосипедом. Если передача прервётся, звук молчит, пока файл не придёт целиком.</string>
+    <string name="soundlab_clip_wait_bell">Можно, когда звук звонка дойдёт; велосипед принимает передачи по одной.</string>
+    <string name="soundlab_clip_sending">Отправка %1$s для «%2$s»</string>
+    <string name="soundlab_clip_done">«%1$s» передан. Теперь велосипед играет его для «%2$s», даже когда YABA не запущена.</string>
+    <string name="soundlab_clip_finish">Готово</string>
+    <string name="soundlab_clip_read_failed">Не удалось прочитать файл. Пожалуйста, выбери другой аудиофайл.</string>
+    <string name="soundlab_clip_too_big">Файл больше %1$d\u00A0КБ, а больше в один звук велосипеда не помещается.</string>
+    <string name="soundlab_clip_not_wav">Файл начинается как звуковой файл велосипеда, но не содержит звука WAV. Пожалуйста, выбери другой файл.</string>
+    <string name="soundlab_clip_store_failed">YABA не смогла сохранить файл на этом телефоне и поэтому не отправляет его. Пожалуйста, проверь свободную память.</string>
+    <string name="soundlab_clip_failed_at">Передача прервалась на %1$d\u00A0%%. «%2$s» молчит, пока файл не придёт целиком.</string>
+    <string name="soundlab_clip_failed_before">Передача не началась. «%1$s» сохраняет прежний звук.</string>
+    <string name="soundlab_clip_retry">Отправить снова</string>
+    <string name="soundlab_clip_confirm_title">Перезаписать заводской звук</string>
+    <string name="soundlab_clip_confirm_text">Велосипед не отдаёт заводской звук для «%1$s», а у YABA его нет. После отправки его можно вернуть только с заводским файлом.</string>
+    <string name="soundlab_clip_confirm_ok">Перезаписать</string>
+    <string name="soundlab_clip_play_action">воспроизвести на велосипеде</string>
+    <string name="soundlab_clip_replace_cd">Заменить «%1$s»</string>
+    <string name="soundlab_clip_sending_percent">Отправка %1$s для «%2$s», %3$d\u00A0%%</string>
+    <string name="soundlab_tiers_standstill">Сохранение начинается, когда велосипед стоит.</string>
+</resources>

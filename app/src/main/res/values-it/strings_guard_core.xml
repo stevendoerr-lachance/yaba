@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="guard_core_channel_alarm_name">Guardia</string>
+    <string name="guard_core_channel_alarm_desc">Segnala i movimenti della bici e una connessione persa finché la guardia è attiva.</string>
+    <string name="guard_core_channel_status_name">Guardia in corso</string>
+    <string name="guard_core_channel_status_desc">Mostra che la guardia è attiva finché YABA resta connessa alla bici.</string>
+    <string name="guard_core_notif_arming_title">Attivazione della guardia</string>
+    <string name="guard_core_notif_arming_text">YABA blocca la bici e attende la sua conferma.</string>
+    <string name="guard_core_notif_active_title">Guardia attiva</string>
+    <string name="guard_core_notif_active_text">Dalle %1$s. La bici sorveglia da sola il movimento, YABA resta connessa.</string>
+    <string name="guard_core_notif_active_text_phone">Dalle %1$s. YABA resta connessa alla bici.</string>
+    <string name="guard_core_notif_searching">Connessione interrotta. YABA cerca la bici.</string>
+    <string name="guard_core_notif_disarming_title">Fine della guardia</string>
+    <string name="guard_core_notif_alarm_title">Allarme sulla bici</string>
+    <string name="guard_core_notif_alarm_title_at">Allarme sulla bici alle %1$s</string>
+    <string name="guard_core_notif_lost_title">Connessione alla bici persa</string>
+    <string name="guard_core_notif_lost_watch">Connessione alla bici persa. La sorveglianza del movimento della bici continua.</string>
+    <string name="guard_core_notif_lost">Connessione alla bici persa. YABA si ricollega appena la bici è a portata.</string>
+    <string name="guard_core_notif_restart_title">Guardia interrotta</string>
+    <string name="guard_core_notif_restart_text">Android ha chiuso YABA in background. Tocca qui perché la guardia continui.</string>
+    <string name="guard_core_action_end">Termina la guardia</string>
+    <string name="guard_core_action_silence">Spegni la sirena</string>
+    <string name="guard_core_trigger_wheel">La bici segnala una ruota che gira.</string>
+    <string name="guard_core_trigger_bike_alarm">La bici ha fatto scattare da sola il suo allarme.</string>
+    <string name="guard_core_trigger_status">La bici segnala lo stato di allarme.</string>
+    <string name="guard_core_trigger_unlock_request">La bici ha inviato una richiesta di sblocco. Succede quando si preme un pulsante o si sposta la bici.</string>
+    <string name="guard_core_trigger_button">È stato premuto un pulsante della bici.</string>
+    <string name="guard_core_trigger_battery">La bici non segnala più una batteria inserita.</string>
+    <string name="guard_core_trigger_lock_opened">La bici risulta sbloccata, senza che YABA l’abbia sbloccata.</string>
+    <string name="guard_core_trigger_pin">Sulla bici si sta inserendo un codice.</string>
+    <string name="guard_core_trigger_offline">La bici ha fatto scattare l’allarme mentre il tuo telefono non era connesso.</string>
+    <string name="guard_core_siren_yaba">YABA ha acceso la sirena (giro %1$d di %2$d).</string>
+    <string name="guard_core_siren_bike">La sirena della bici sta suonando.</string>
+    <string name="guard_core_siren_running">La sirena sta ancora suonando.</string>
+    <string name="guard_core_siren_off_setting">La sirena resta spenta perché «Sirena subito» è disattivata.</string>
+    <string name="guard_core_siren_snoozed">Dopo «Spegni la sirena» la sirena resta spenta per due minuti.</string>
+    <string name="guard_core_siren_cap">La sirena ha già suonato %1$d volte. YABA la riaccende solo dopo dieci minuti di calma.</string>
+    <string name="guard_core_cmd">Guardia</string>
+    <string name="guard_core_log_arming">Guardia: attivazione (modalità allarme %1$s, blocco %2$s, stato allarme %3$s)</string>
+    <string name="guard_core_log_armed_native">Guardia attiva: la bici segnala lo stato allarme 2 dopo %1$s secondi, senza scrittura diretta.</string>
+    <string name="guard_core_log_armed_direct">Guardia attiva: stato allarme 2 solo dopo la scrittura di 5523\u00A0=\u00A02.</string>
+    <string name="guard_core_log_armed_unconfirmed">Guardia attiva senza conferma: stato allarme %1$s.</string>
+    <string name="guard_core_log_arm_failed">Guardia non attivata: %1$s</string>
+    <string name="guard_core_log_value">Guardia: %1$s (%2$s) = %3$s, prima %4$s, %5$s</string>
+    <string name="guard_core_log_pushed">segnalato dalla bici</string>
+    <string name="guard_core_log_read">letto</string>
+    <string name="guard_core_log_value_cap">Guardia: altre variazioni di valore in quest’ora non registrate</string>
+    <string name="guard_core_log_ignored">Guardia, non contato durante l’attivazione: %1$s</string>
+    <string name="guard_core_log_siren">Guardia: sirena scritta (5523\u00A0=\u00A03), risposta %1$s</string>
+    <string name="guard_core_log_rearmed">Guardia ripristinata: stato allarme %1$s, blocco %2$s</string>
+    <string name="guard_core_log_silence">Guardia: sirena spenta</string>
+    <string name="guard_core_log_disarmed">Guardia terminata: stato allarme %1$s, blocco %2$s</string>
+    <string name="guard_core_log_disarmed_offline">Guardia terminata senza connessione alla bici</string>
+    <string name="guard_core_log_lost">Guardia: connessione persa</string>
+    <string name="guard_core_log_back">Guardia: connessione ripristinata, stato allarme %1$s, blocco %2$s</string>
+    <string name="guard_core_log_budget">Guardia: raggiunto il limite dei comandi automatici, per ora solo notifiche</string>
+    <string name="guard_core_log_restored">Guardia ripresa dopo un riavvio di YABA</string>
+    <string name="guard_core_log_sequence_failed">Guardia: %1$s non riuscito: %2$s</string>
+    <string name="guard_core_log_bike_gone">Guardia terminata: la bici non è più salvata in YABA</string>
+    <string name="guard_core_error_active">La guardia è attiva. Termina prima la guardia.</string>
+    <string name="guard_core_error_not_s3">La guardia esiste solo per la S3 e la X3.</string>
+    <string name="guard_core_siren_budget">La sirena resta spenta, perché negli ultimi dieci minuti YABA ha già inviato molti comandi alla bici.</string>
+    <string name="guard_core_notif_not_locked_title">Bici non bloccata</string>
+    <string name="guard_core_notif_not_locked">YABA non è riuscita a bloccare di nuovo la bici (il blocco segnala %1$s). Apri YABA e tocca «Riprova».</string>
+    <string name="guard_core_notif_not_locked_unknown">YABA non ha la conferma che la bici sia di nuovo bloccata. Apri YABA e tocca «Riprova».</string>
+    <string name="guard_core_log_relocked">Guardia: blocco riscritto (5521\u00A0=\u00A01), il blocco segnala %1$s</string>
+    <string name="guard_core_log_not_locked">Guardia: la bici resta sbloccata (blocco %1$s). YABA non riprova più da sola.</string>
+    <string name="guard_core_log_held">Guardia: la bici era sbloccata quando la connessione è tornata. YABA la blocca di nuovo solo dopo «Riprova».</string>
+    <string name="guard_core_log_watch_seen">Guardia: ora la bici segnala lo stato allarme 2, la sua sorveglianza del movimento è attiva.</string>
+    <string name="guard_core_log_watch_left">Guardia: la bici segnala lo stato allarme %1$s, la sua sorveglianza del movimento non è più attiva.</string>
+    <string name="guard_core_log_cancelled">Guardia: %1$s annullato prima che arrivasse qualcosa alla bici</string>
+    <string name="guard_core_log_disarmed_unconfirmed">Guardia terminata senza risposta dalla bici</string>
+    <string name="guard_core_step_arm">attivazione</string>
+    <string name="guard_core_step_verify">controllo dopo la riconnessione</string>
+    <string name="guard_core_step_siren">sirena</string>
+    <string name="guard_core_step_rearm">ripristino</string>
+    <string name="guard_core_step_relock">nuovo blocco</string>
+    <string name="guard_core_step_disarm">chiusura</string>
+    <string name="guard_core_step_internal">passo interno</string>
+</resources>

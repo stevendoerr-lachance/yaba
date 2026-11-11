@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- S2 drive diagnosis (ui/s2): wiggle test, error catcher, GPS comparison, live status block, S2 test mode. -->
+    <string name="s2diag_title">S2 drive</string>
+    <string name="s2diag_entry_intro">For a motor that cuts out: a wiggle test on the cable, a catcher for rare error codes, a GPS comparison while riding and the live status block.</string>
+    <string name="s2diag_entry_open">Check the drive</string>
+    <string name="s2diag_entry_waiting">No status block read yet.</string>
+    <string name="s2diag_entry_quiet">No error code in the status block since %1$s.</string>
+    <plurals name="s2diag_entry_caught">
+        <item quantity="one">One error code caught: fault %2$d at %3$s.</item>
+        <item quantity="other">%1$d error codes caught, the latest fault %2$d at %3$s.</item>
+    </plurals>
+    <string name="s2diag_close">Close</string>
+    <string name="s2diag_intro">The S2 status block reports neither motor current nor temperature nor the hall signals. YABA therefore infers the cable or part from speed dropouts and the error code.</string>
+    <string name="s2diag_connect_reason">The drive can only be checked with the bike connected.</string>
+    <string name="s2diag_clock">%1$s</string>
+    <string name="s2diag_copied">Copied to the clipboard.</string>
+
+    <!-- Wiggle test -->
+    <string name="s2diag_wiggle_title">Wiggle test</string>
+    <string name="s2diag_wiggle_speed_cd">Speed reported by the bike: %1$d\u00A0km/h</string>
+    <string name="s2diag_wiggle_speed_none_cd">No speed from the bike yet.</string>
+    <string name="s2diag_wiggle_unit">km/h, as the bike reports it</string>
+    <plurals name="s2diag_wiggle_stale">
+        <item quantity="one">No status block for more than %1$d second.</item>
+        <item quantity="other">No status block for more than %1$d seconds.</item>
+    </plurals>
+    <string name="s2diag_wiggle_step1">Lift the front wheel, for example with a box under the down tube, so the bike stands firm and cannot roll off. The bike is unlocked and switched on.</string>
+    <string name="s2diag_wiggle_step2">Tap Start wiggle test above. Then spin the front wheel by hand until the display shows at least 10\u00A0km/h.</string>
+    <string name="s2diag_wiggle_step3">Do it with two people: one spins, the other flexes the motor cable at the fork, at the head tube and where it enters the frame. Keep your fingers away from the spokes and the brake disc, and do not pedal or press boost.</string>
+    <string name="s2diag_wiggle_step4">If the speed drops to 0 while the wheel spins, the phone vibrates, beeps and sets a mark with the time. A mark right after someone touched the wheel does not count.</string>
+    <string name="s2diag_wiggle_steps_show">Show the steps</string>
+    <string name="s2diag_wiggle_zero_hint">If the speed stays at 0\u00A0km/h while the wheel spins, the bike probably measures it only with the motor running. The ride with GPS helps then.</string>
+    <string name="s2diag_wiggle_spot">Spot on the cable</string>
+    <string name="s2diag_spot_fork">Fork</string>
+    <string name="s2diag_spot_head">Head tube</string>
+    <string name="s2diag_spot_frame">Frame</string>
+    <string name="s2diag_wiggle_start">Start wiggle test</string>
+    <string name="s2diag_wiggle_stop">Stop wiggle test</string>
+    <string name="s2diag_wiggle_running">The test is running: YABA reads the status block about every second, and the screen stays on.</string>
+    <string name="s2diag_mark">Set mark</string>
+    <string name="s2diag_marks_title">Marks</string>
+    <string name="s2diag_marks_clear">Clear marks</string>
+    <string name="s2diag_mark_drop">Dropped from %1$d to 0\u00A0km/h</string>
+    <string name="s2diag_mark_manual">Set by hand at %1$d\u00A0km/h</string>
+    <string name="s2diag_log_drop">Wiggle test: dropped from %1$d to 0\u00A0km/h</string>
+    <string name="s2diag_log_mark">Wiggle test: mark at %1$d\u00A0km/h</string>
+
+    <!-- Error catcher -->
+    <string name="s2diag_catch_title">Error catcher</string>
+    <string name="s2diag_catch_intro">YABA checks every status block it receives: the ones it reads itself every few seconds and the ones the bike sends on its own. Every error code in them lands here, even one in a single block.</string>
+    <plurals name="s2diag_catch_blocks">
+        <item quantity="one">One status block checked since %2$s.</item>
+        <item quantity="other">%1$s status blocks checked since %2$s.</item>
+    </plurals>
+    <plurals name="s2diag_catch_implausible">
+        <item quantity="one">One status block with impossible values skipped; that usually comes from a wrong key.</item>
+        <item quantity="other">%1$d status blocks with impossible values skipped; that usually comes from a wrong key.</item>
+    </plurals>
+    <string name="s2diag_catch_none">No error code so far.</string>
+    <string name="s2diag_hit_title">Fault %1$d: %2$s</string>
+    <plurals name="s2diag_hit_group">
+        <item quantity="one">Fault\u00A0%1$d, %2$d×, at %3$s</item>
+        <item quantity="other">Fault\u00A0%1$d, %2$d×, last at %3$s</item>
+    </plurals>
+    <string name="s2diag_hit_meta">%1$s, %2$d\u00A0km/h, battery %3$d%%, module %4$d%%</string>
+    <plurals name="s2diag_hit_blocks">
+        <item quantity="one">Reported in a single status block.</item>
+        <item quantity="other">Reported in %1$d status blocks, until %2$s.</item>
+    </plurals>
+    <string name="s2diag_hit_part">Likely: %1$s</string>
+    <string name="s2diag_part_stall">hall sensors or phase wires of the motor</string>
+    <string name="s2diag_part_voltage_high">battery or charger</string>
+    <string name="s2diag_part_supply">battery contact or supply cable</string>
+    <string name="s2diag_part_speed_signal">the speed signal from the motor, so hall sensors or sensor cable</string>
+    <string name="s2diag_part_phase_short">a short on a motor phase, in the cable or at the connector</string>
+    <string name="s2diag_part_torque">the torque sensor cable</string>
+    <string name="s2diag_part_heat">motor or motor controller too hot, usually not a cable</string>
+    <string name="s2diag_part_hall_cable">hall sensors in the motor or the sensor cable through the fork and head tube</string>
+    <string name="s2diag_part_module">the electronics in the frame, not the drive</string>
+    <string name="s2diag_part_gsm">the mobile modem in the module, not the drive</string>
+    <string name="s2diag_part_controller_line">the data line between the frame electronics and the motor controller</string>
+    <string name="s2diag_part_unknown">an unknown code; the whole status block is in the ride log</string>
+    <string name="s2diag_note_disputed">The sources disagree on whether 4 or 5 means “motor too fast”. Please switch on S2 test mode: every changed status block then lands in the log, so the code can be assigned later.</string>
+    <string name="s2diag_note_disputed_on">The sources disagree on whether 4 or 5 means “motor too fast”. S2 test mode is on, so every changed status block is in the log.</string>
+    <string name="s2diag_catch_copy">Copy list</string>
+    <string name="s2diag_catch_clear">Clear list</string>
+
+    <!-- Ride with GPS -->
+    <string name="s2diag_gps_title">Ride with GPS</string>
+    <string name="s2diag_gps_intro">While riding, YABA writes the phone’s GPS speed next to the bike’s speed into the ride log. Where the bike reports 0\u00A0km/h while GPS measures more than 8\u00A0km/h, the log viewer shows a signal dropout.</string>
+    <string name="s2diag_gps_switch">Record GPS speed</string>
+    <string name="s2diag_gps_switch_hint">Only the speed goes into the ride log, never the location.</string>
+    <string name="s2diag_gps_denied">Without access to the precise location the phone measures no GPS speed. Please allow it in the app settings.</string>
+    <string name="s2diag_gps_coarse">Only the approximate location is allowed. YABA needs the precise one for the GPS speed.</string>
+    <string name="s2diag_gps_app_settings">Open app settings</string>
+    <string name="s2diag_gps_off">Location is switched off on the phone.</string>
+    <string name="s2diag_gps_location_settings">Turn on location</string>
+    <string name="s2diag_gps_waiting">Waiting for GPS. Under open sky this usually takes less than a minute.</string>
+    <string name="s2diag_gps_fact_bike">Bike</string>
+    <string name="s2diag_gps_fact_gps">GPS</string>
+    <string name="s2diag_kmh">%1$s\u00A0km/h</string>
+    <string name="s2diag_gps_steps">Switch GPS on and ride a few minutes on a quiet road, pedalling all the time at assist 1 or higher. Open the cockpit in Diagnostics for it: it starts the ride log, and a volume key marks the moment the motor cuts out.</string>
+    <string name="s2diag_gps_open_log">Open the last ride log</string>
+
+    <!-- Live status block -->
+    <string name="s2diag_raw_title">Live status block</string>
+    <string name="s2diag_raw_intro">The 16 bytes as the bike reports them right now. Bright bytes changed with the last block; the small number counts their changes.</string>
+    <string name="s2diag_raw_legend">Byte 2 state and alarm, 3 lock, 4 speed, 5 battery, 6 module battery, 7 light and unit, 8 level and region, 10 sounds, 11 to 14 distance, 15 error code and run bits.</string>
+    <string name="s2diag_raw_none">No status block yet.</string>
+    <plurals name="s2diag_raw_byte_cd">
+        <item quantity="one">Byte %1$d: %2$s, changed once</item>
+        <item quantity="other">Byte %1$d: %2$s, changed %3$d times</item>
+    </plurals>
+    <string name="s2diag_raw_copy">Copy block</string>
+
+    <!-- S2 test mode -->
+    <string name="s2diag_test_title">S2 test mode</string>
+    <string name="s2diag_test_switch">Allow unconfirmed commands</string>
+    <string name="s2diag_test_hint">Unlocks what is not yet confirmed on a real S2: locking from the app and the alarm on Ride, the backup code on Bike, muting and 37\u00A0km/h below.</string>
+    <string name="s2diag_test_gatt">Copy GATT overview</string>
+
+    <!-- Ride log viewer: GPS speed and signal dropouts -->
+    <string name="s2diag_view_legend_gps">GPS speed in km/h</string>
+    <string name="s2diag_view_legend_dropout">Signal dropout</string>
+    <string name="s2diag_view_readout_gps">GPS %1$s</string>
+    <string name="s2diag_view_fact_gps_top">GPS top speed</string>
+    <string name="s2diag_view_fact_dropouts">Signal dropouts</string>
+    <string name="s2diag_view_signal">Signal dropout: bike 0\u00A0km/h, GPS above 8\u00A0km/h</string>
+    <string name="s2diag_view_dropout_total">%1$s in total, GPS up to %2$s</string>
+    <string name="s2diag_view_dropout_none">No signal dropout: wherever GPS measured more than 8\u00A0km/h, the bike reported a speed too.</string>
+    <plurals name="s2diag_view_summary_dropouts">
+        <item quantity="one">Once the bike reported 0\u00A0km/h while GPS measured more than 8\u00A0km/h, %2$s.</item>
+        <item quantity="other">%1$s times the bike reported 0\u00A0km/h while GPS measured more than 8\u00A0km/h, first %2$s.</item>
+    </plurals>
+</resources>

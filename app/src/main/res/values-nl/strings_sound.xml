@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Geluidsscherm, eigen beltoon, soundboard, delen en de gedeelde geluidsonderdelen. -->
+<resources>
+    <!-- SoundScreen -->
+    <string name="sound_title">Geluid</string>
+    <string name="sound_connect_needed">Maak verbinding met je fiets om geluiden af te spelen.</string>
+
+    <!-- Beltoon -->
+    <string name="sound_bell_title">Beltoon</string>
+    <string name="sound_bell_hint">Het geluid dat de belknop afspeelt.</string>
+    <string name="sound_listen">Beluisteren</string>
+    <string name="sound_bell_switching">Overschakelen naar %1$s…</string>
+    <string name="sound_bell_unknown">De fiets heeft zijn beltoon nog niet doorgegeven.</string>
+    <string name="sound_bell_plays">Speelt %1$s af op de fiets.</string>
+    <string name="sound_tone_custom">Je eigen geluid</string>
+    <string name="sound_tone_custom_option">Of je eigen geluid</string>
+    <string name="sound_tile_busy">Wisselen</string>
+
+    <!-- Eigen beltoon -->
+    <plurals name="sound_custom_intro">
+        <item quantity="one">Het geluid vervangt “Misthoorn” en mag maximaal %1$d\u00A0seconde duren. Het verzenden duurt ongeveer een minuut.</item>
+        <item quantity="other">Het geluid vervangt “Misthoorn” en mag maximaal %1$d\u00A0seconden duren. Het verzenden duurt ongeveer een minuut.</item>
+    </plurals>
+    <string name="sound_custom_sending_named">%1$s wordt verzonden</string>
+    <string name="sound_custom_keep_close" formatted="false">Houd je telefoon alsjeblieft dicht bij de fiets tot de overdracht 100% heeft bereikt.</string>
+    <string name="sound_custom_pick">Eigen bestand kiezen</string>
+    <string name="sound_custom_converting">Omzetten…</string>
+    <string name="sound_custom_done">Beltoon overgedragen. De fiets speelt hem vanaf nu af, ook als YABA niet draait. Druk ter controle alsjeblieft op de belknop aan het stuur.</string>
+    <string name="sound_custom_sound_name">Eigen geluid</string>
+    <string name="sound_custom_waveform">Golfvorm van %1$s</string>
+    <string name="sound_custom_trimmed">Ingekort tot %1$d\u00A0s</string>
+    <string name="sound_fact_length">Lengte</string>
+    <string name="sound_fact_sample_rate">Samplefrequentie</string>
+    <string name="sound_fact_size">Grootte</string>
+    <string name="sound_value_seconds">%1$s\u00A0s</string>
+    <string name="sound_value_khz">%1$s\u00A0kHz</string>
+    <string name="sound_value_kb">%1$d\u00A0kB</string>
+    <string name="sound_custom_send">Naar de fiets verzenden</string>
+    <string name="sound_custom_connect_first">Maak alsjeblieft eerst verbinding met de fiets.</string>
+    <string name="sound_custom_other_file">Ander bestand kiezen</string>
+    <string name="sound_audio_file">Audiobestand</string>
+
+    <!-- Soundboard -->
+    <string name="sound_board_title">Alle geluiden op de fiets</string>
+    <string name="sound_board_quiet">Tijdens het verzenden blijft de fiets stil.</string>
+    <string name="sound_board_hint">Een tik speelt het geluid af op de fiets.</string>
+    <string name="sound_board_alarm_warning">Zeer luid. Test dit alsjeblieft niet in de buurt van andere mensen.</string>
+
+    <!-- Verzendmeter (TalkBack + getal) -->
+    <string name="sound_upload_done_state">Verzenden voltooid</string>
+    <string name="sound_upload_progress_state">Verzonden: %1$d procent</string>
+    <string name="sound_upload_percent">%1$d%%</string>
+
+    <!-- Verbindingsmelding -->
+    <string name="sound_connect_ble_denied">Bluetooth niet toegestaan</string>
+    <string name="sound_connect_ble_off">Bluetooth staat uit</string>
+    <string name="sound_connect_searching">Zoekt de fiets…</string>
+    <string name="sound_connect_connecting">Verbinden…</string>
+    <string name="sound_connect_authenticating">Inloggen op de fiets…</string>
+    <string name="sound_connect_lost">Verbinding onderbroken</string>
+    <string name="sound_connect_offline">Niet verbonden</string>
+    <string name="sound_connect_allow">Bluetooth toestaan</string>
+    <string name="sound_connect_enable">Bluetooth aanzetten</string>
+    <string name="sound_connect_connect">Verbinden</string>
+    <string name="sound_open_garage">Garage openen</string>
+
+    <!-- Delen -->
+    <string name="sound_share_title">Delen</string>
+    <string name="sound_share_gate_login">Delen werkt via je VanMoof-account. Log alsjeblieft in via de garage.</string>
+    <string name="sound_share_gate_pick">Kies in de garage een fiets uit je account, dan kun je hem delen.</string>
+    <string name="sound_share_gate_manual">Deze fiets is niet gekoppeld aan je VanMoof-account. Alleen fietsen uit je account kunnen worden gedeeld.</string>
+    <string name="sound_share_shared_with">Gedeeld met %1$s.</string>
+    <string name="sound_share_ended_for">Delen met %1$s gestopt.</string>
+    <string name="sound_share_ended">Delen gestopt.</string>
+    <string name="sound_share_bad_email">Dit is geen geldig e-mailadres.</string>
+    <string name="sound_share_intro">Geef iemand toegang tot je fiets, tijdelijk of onbeperkt.</string>
+    <string name="sound_share_email_label">E-mailadres</string>
+    <string name="sound_share_open_ended">Geldt totdat je het delen beëindigt.</string>
+    <string name="sound_share_sharing">Delen…</string>
+    <string name="sound_share_submit">Fiets delen</string>
+    <string name="sound_share_end_title">Stoppen met delen?</string>
+    <string name="sound_share_end_text">%1$s heeft dan geen toegang meer tot je fiets.</string>
+    <string name="sound_share_someone">Deze persoon</string>
+    <string name="sound_share_end">Stoppen</string>
+    <string name="sound_share_end_for">Delen met %1$s stoppen</string>
+    <string name="sound_share_cancel">Annuleren</string>
+    <string name="sound_share_list_title">Gedeeld met</string>
+    <string name="sound_share_loading">Gedeelde toegang laden…</string>
+    <string name="sound_share_none">Je hebt je fiets nog met niemand gedeeld. Delen kan met iedereen die een VanMoof-account heeft: vul het e-mailadres in en kies een duur of “onbeperkt”. Je kunt het delen op elk moment beëindigen. Delen loopt via de server van VanMoof en werkt zolang die antwoordt.</string>
+    <string name="sound_share_reload">Opnieuw laden</string>
+    <string name="sound_share_no_email">Geen e-mail</string>
+    <string name="sound_share_until">Tot %1$s</string>
+    <string name="sound_share_expired">Verlopen op %1$s</string>
+    <string name="sound_share_unlimited_row">Onbeperkt</string>
+    <string name="sound_share_for_row">Voor %1$s</string>
+    <string name="sound_share_unlimited">Onbeperkt</string>
+    <string name="sound_share_for">Voor %1$s</string>
+    <plurals name="sound_share_minutes">
+        <item quantity="one">%1$d\u00A0minuut</item>
+        <item quantity="other">%1$d\u00A0minuten</item>
+    </plurals>
+    <plurals name="sound_share_hours">
+        <item quantity="one">%1$d\u00A0uur</item>
+        <item quantity="other">%1$d\u00A0uur</item>
+    </plurals>
+    <plurals name="sound_share_days">
+        <item quantity="one">%1$d\u00A0dag</item>
+        <item quantity="other">%1$d\u00A0dagen</item>
+    </plurals>
+    <plurals name="sound_share_weeks">
+        <item quantity="one">%1$d\u00A0week</item>
+        <item quantity="other">%1$d\u00A0weken</item>
+    </plurals>
+    <string name="sound_custom_row_none">Vervangt “%1$s”</string>
+    <string name="sound_tone_custom_record">Eigen geluid in plaats van %1$s</string>
+    <string name="sound_custom_failed_at">De overdracht brak af bij %1$d%%. “%2$s” blijft stil tot er een bestand volledig aankomt.</string>
+    <string name="sound_custom_failed_before">De overdracht kwam niet tot stand. “%1$s” houdt zijn vorige geluid.</string>
+    <string name="sound_custom_resend">Opnieuw versturen</string>
+    <string name="sound_send_standstill">Het verzenden start als de fiets stilstaat. Tijdens de overdracht leest YABA ongeveer een minuut lang geen waarden.</string>
+    <string name="sound_custom_wait_transfer">Het verzenden wacht tot de lopende overdracht klaar is.</string>
+    <string name="sound_custom_sending_percent">Verstuurt “%1$s”, %2$d%%</string>
+    <string name="sound_lab_title">Geluidslab</string>
+    <string name="sound_custom_replace_cd">Eigen geluid kiezen in plaats van “%1$s”</string>
+</resources>

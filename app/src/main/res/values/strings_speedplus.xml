@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speedplus_title">Speed++ (24″ wheel setting)</string>
+    <string name="speedplus_text" formatted="false">Sets your bike to 24″ wheels. It then counts 84% of the real speed and cuts assist only at about 29.7\u00A0km/h (EU) or 38\u00A0km/h (US). YABA shows you the real speed everywhere; the bike’s own speedo shows less.</string>
+    <string name="speedplus_on">Turn on Speed++</string>
+    <string name="speedplus_off">Back to 28″</string>
+    <string name="speedplus_active">On. YABA multiplies the bike’s speed by 1.1875.</string>
+    <string name="speedplus_odometer" formatted="false">While it is on, the bike’s odometer counts about 16% too little.</string>
+    <string name="speedplus_unknown">YABA reads the wheel size when it connects to the bike.</string>
+    <string name="speedplus_unread">YABA could not read the wheel size.</string>
+    <string name="speedplus_read">Read wheel size</string>
+    <string name="speedplus_not_28">Speed++ only works on bikes with 28″ wheels from the factory.</string>
+    <string name="speedplus_cmd">Wheel size %1$d″</string>
+    <string name="speedplus_error_rolling">Only while standing: the bike passes the wheel size to the motor controller.</string>
+    <string name="speedplus_error_rejected">The bike did not take the wheel size.</string>
+    <string name="speedplus_choice_28">28″ stock</string>
+    <string name="speedplus_choice_24" translatable="false">24″ Speed++</string>
+    <string name="speedplus_stock_title">Wheel size from the factory</string>
+    <string name="speedplus_stock_question">Your bike is set to 24″ wheels right now. YABA cannot tell whether it left the factory as an S3 with 28″ wheels or as an X3 with 24″ wheels. Your answer decides which speed YABA shows.</string>
+    <string name="speedplus_stock_28" translatable="false">28″ (S3)</string>
+    <string name="speedplus_stock_24" translatable="false">24″ (X3)</string>
+    <string name="speedplus_stock_next">Continue</string>
+    <string name="speedplus_stock_later">You can change your answer later under %1$s › %2$s.</string>
+    <string name="speedplus_read_none">The bike did not report its wheel size this time either.</string>
+    <string name="speedplus_x3_on_28">Your bike is set to 28″ wheels but left the factory with 24″. It then shows more speed than it rides and cuts assist earlier. YABA shows you the real speed.</string>
+    <string name="speedplus_back_to_24">Back to 24″</string>
+    <string name="speedplus_stock_open_note">YABA does not know the factory wheel size yet, so it shows the speed as your bike reports it. You can set it under %1$s › %2$s.</string>
+</resources>

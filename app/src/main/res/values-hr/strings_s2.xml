@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VanMoof S2/X2 error codes (ble/S2Protocol.kt S2Faults); not the S3 fault table. -->
+    <string name="core_fault_s2_0_name">Nema greške</string>
+    <string name="core_fault_s2_0_hint">Bicikl ne javlja nikakvu grešku.</string>
+    <string name="core_fault_s2_1_name">Motor blokiran</string>
+    <string name="core_fault_s2_1_hint">Motor se nije mogao okrenuti. Provjeriti da ništa ne blokira kotače, zatim isključiti i ponovno uključiti bicikl.</string>
+    <string name="core_fault_s2_2_name">Prenapon</string>
+    <string name="core_fault_s2_2_hint">Napon baterije je previsok. Iskopčati punjač i ponovno pokrenuti bicikl.</string>
+    <string name="core_fault_s2_3_name">Podnapon</string>
+    <string name="core_fault_s2_3_hint">Napon baterije je prenizak. Napuniti bateriju.</string>
+    <string name="core_fault_s2_motor_fast_alt_name">Motor prebrz (nepotvrđeno)</string>
+    <string name="core_fault_s2_motor_fast_alt_hint">Izvori se ne slažu oko ovog koda; jedan ga čita kao „motor prebrz”. Zabilježiti kada se pojavi.</string>
+    <string name="core_fault_s2_motor_fast_name">Motor prebrz</string>
+    <string name="core_fault_s2_motor_fast_hint">Motor se okretao brže nego što je dopušteno, npr. nizbrdo. Obično nestane sam od sebe.</string>
+    <string name="core_fault_s2_6_name">Prevelika struja</string>
+    <string name="core_fault_s2_6_hint">Motor je povukao previše struje. Ponovno pokrenuti bicikl; ako se ponavlja, dati provjeriti motor.</string>
+    <string name="core_fault_s2_7_name">Senzor zakretnog momenta neispravan</string>
+    <string name="core_fault_s2_7_hint">Senzor pedala daje nelogične vrijednosti. Ponovno pokrenuti bicikl bez opterećenja na pedalama.</string>
+    <string name="core_fault_s2_8_name">Senzor zakretnog momenta neispravan pri pokretanju</string>
+    <string name="core_fault_s2_8_hint">Senzor pedala dao je čudne vrijednosti pri uključivanju. Ponovno pokrenuti bicikl bez opterećenja na pedalama.</string>
+    <string name="core_fault_s2_9_name">Pregrijavanje</string>
+    <string name="core_fault_s2_9_hint">Pustiti da se bicikl ohladi.</string>
+    <string name="core_fault_s2_16_name">Hall senzori se ne podudaraju</string>
+    <string name="core_fault_s2_16_hint">Senzori položaja motora se ne slažu. Provjeriti kabel motora/senzora kod upravljačke cijevi okvira.</string>
+    <string name="core_fault_s2_25_name">Greška I²C sabirnice</string>
+    <string name="core_fault_s2_25_hint">Unutarnja greška komunikacije u modulu. Ponovno pokrenuti bicikl.</string>
+    <string name="core_fault_s2_26_name">GSM modem ne odgovara</string>
+    <string name="core_fault_s2_26_hint">Mobilni modem ne reagira pa praćenje možda neće raditi. Ponovno pokrenuti bicikl.</string>
+    <string name="core_fault_s2_27_name">Upravljač motora ne odgovara</string>
+    <string name="core_fault_s2_27_hint">Upravljač motora ne reagira. Ponovno pokrenuti bicikl; ako ostane, provjeriti kabel upravljača.</string>
+    <string name="core_fault_s2_28_name">GSM prijava nije uspjela</string>
+    <string name="core_fault_s2_28_hint">Modem se nije mogao prijaviti u mobilnu mrežu pa praćenje možda neće raditi.</string>
+    <string name="core_fault_s2_29_name">Nema struje iz baterije</string>
+    <string name="core_fault_s2_29_hint">Baterija ne daje struju. Napuniti je i provjeriti konektor baterije.</string>
+
+    <!-- S2 and Device Information characteristic names (error texts, GATT overview); a command this bike family lacks. -->
+    <string name="core_char_s2_functions">Naredbe (S2)</string>
+    <string name="core_char_s2_parameters">Statusni blok (S2)</string>
+    <string name="core_char_s2_key_change">Promjena ključa (S2)</string>
+    <string name="core_char_device_model">Broj modela</string>
+    <string name="core_char_device_serial">Serijski broj</string>
+    <string name="core_char_device_firmware">Verzija firmvera</string>
+    <string name="core_char_device_hardware">Verzija hardvera</string>
+    <string name="core_char_device_software">Verzija softvera</string>
+    <string name="core_error_not_on_this_bike">Ovaj model bicikla to ne podržava.</string>
+
+    <!-- S2 driver (ble/S2Driver.kt) and the driver choice (BikeController.chooseDriver). -->
+    <string name="core_status_standby">Stanje pripravnosti</string>
+    <string name="core_alarm_stage_automatic">Automatski</string>
+    <string name="core_cmd_alarm_stage">Alarm: %1$s</string>
+    <string name="core_cmd_s2_mute">Utišani zvukovi promijenjeni</string>
+    <string name="core_error_not_s2">Nije pronađena S2 usluga statusa. Ovo nije S2 ni X2 ili je Bluetooth predmemorija oštećena.</string>
+    <string name="core_error_older_vanmoof">Javio se stariji VanMoof (S/X 1, S/X 2 ili SmartBike). Ako je to S2 ili X2, odaberi taj model za ovaj bicikl u garaži.</string>
+    <string name="core_error_legacy_unsupported">YABA ne podržava ovaj VanMoof model (SmartBike ili Electrified S/X 1).</string>
+    <string name="core_error_s2_test_mode">Samo u S2 testnom načinu: još nije potvrđeno na pravom S2.</string>
+    <string name="core_error_s2_frame">Bicikl nije poslao valjani blok statusa.</string>
+    <string name="core_error_s2_level_unknown">Razina pomoći još nije poznata, a S2 postavlja regiju i razinu zajedno. Pokušaj ponovno za trenutak.</string>
+    <string name="core_error_s2_region_unknown">Regija još nije poznata, a S2 postavlja regiju i razinu zajedno. Pokušaj ponovno za trenutak.</string>
+    <string name="core_log_s2_driver">S2/X2 upravljački program (eksperimentalno, još nije testirano na pravom S2)</string>
+    <string name="core_log_s3_despite_profile">Račun navodi %1$s, ali bicikl ima S3 usluge: koristi se S3 upravljački program.</string>
+    <string name="core_log_s2_frame">S2 blok statusa %1$s</string>
+    <string name="core_detail_s2_frame_changed">Promijenjeni bajtovi: %1$s</string>
+    <string name="core_error_s2_offroad_level">Bicikl javlja terensku regiju (37 km/h). S2 postavlja regiju i razinu zajedno, pa je za promjenu razine ovdje potreban S2 testni način.</string>
+    <string name="core_error_s2_pair_mismatch">S2 postavlja regiju i razinu zajedno, a sada javlja %3$s km/h na razini %4$s umjesto %1$d km/h na razini %2$d. Provjeri obje postavke.</string>
+    <string name="core_log_s2_implausible">S2 blok statusa ima nemoguće vrijednosti (baterija %1$d %%, modul %2$d %%, brzina %3$d): je li ključ bicikla ispravan?</string>
+    <string name="core_detail_s2_frame_implausible">Promijenjeni bajtovi: %1$s. Nemoguće vrijednosti: je li ključ ispravan?</string>
+</resources>

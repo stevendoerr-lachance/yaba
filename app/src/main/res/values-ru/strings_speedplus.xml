@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speedplus_title">Speed++ (колёса 24″)</string>
+    <string name="speedplus_text" formatted="false">Переключает велосипед на колёса 24″. Тогда он считает 84\u00A0% реальной скорости и отключает помощь только примерно на 29,7\u00A0км/ч (EU) или 38\u00A0км/ч (US). YABA везде показывает тебе реальную скорость; спидометр велосипеда показывает меньше.</string>
+    <string name="speedplus_on">Включить Speed++</string>
+    <string name="speedplus_off">Вернуть 28″</string>
+    <string name="speedplus_active">Включено. YABA умножает скорость велосипеда на 1,1875.</string>
+    <string name="speedplus_odometer" formatted="false">Пока это включено, одометр велосипеда считает примерно на 16\u00A0% меньше.</string>
+    <string name="speedplus_unknown">YABA читает размер колёс при подключении к велосипеду.</string>
+    <string name="speedplus_unread">YABA не смог прочитать размер колёс.</string>
+    <string name="speedplus_read">Прочитать размер колёс</string>
+    <string name="speedplus_not_28">Speed++ работает только на велосипедах с заводскими колёсами 28″.</string>
+    <string name="speedplus_cmd">Размер колёс %1$d″</string>
+    <string name="speedplus_error_rolling">Только на месте: велосипед передаёт размер колёс контроллеру мотора.</string>
+    <string name="speedplus_error_rejected">Велосипед не принял размер колёс.</string>
+    <string name="speedplus_choice_28">28″ заводские</string>
+    <string name="speedplus_stock_title">Заводской размер колёс</string>
+    <string name="speedplus_stock_question">Сейчас твой велосипед настроен на колёса 24″. YABA не может определить, вышел ли он с завода как S3 с колёсами 28″ или как X3 с колёсами 24″. От твоего ответа зависит, какую скорость показывает YABA.</string>
+    <string name="speedplus_stock_next">Далее</string>
+    <string name="speedplus_stock_later">Ты можешь позже изменить ответ в разделе %1$s › %2$s.</string>
+    <string name="speedplus_read_none">Велосипед и в этот раз не сообщил размер колёс.</string>
+    <string name="speedplus_x3_on_28">Твой велосипед настроен на колёса 28″, хотя с завода у него колёса 24″. Тогда он показывает скорость выше реальной и раньше отключает помощь. YABA показывает тебе реальную скорость.</string>
+    <string name="speedplus_back_to_24">Вернуть 24″</string>
+    <string name="speedplus_stock_open_note">YABA ещё не знает заводской размер колёс и поэтому показывает скорость так, как её сообщает твой велосипед. Ты можешь указать его в разделе %1$s › %2$s.</string>
+</resources>

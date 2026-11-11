@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VanMoof S2/X2 error codes (ble/S2Protocol.kt S2Faults); not the S3 fault table. -->
+    <string name="core_fault_s2_0_name">Geen fout</string>
+    <string name="core_fault_s2_0_hint">De fiets meldt geen storing.</string>
+    <string name="core_fault_s2_1_name">Motor geblokkeerd</string>
+    <string name="core_fault_s2_1_hint">De motor kon niet draaien. Controleren dat niets de wielen blokkeert, dan de fiets uit- en weer aanzetten.</string>
+    <string name="core_fault_s2_2_name">Overspanning</string>
+    <string name="core_fault_s2_2_hint">Accuspanning te hoog. Lader loskoppelen en de fiets herstarten.</string>
+    <string name="core_fault_s2_3_name">Onderspanning</string>
+    <string name="core_fault_s2_3_hint">Accuspanning te laag. Accu opladen.</string>
+    <string name="core_fault_s2_motor_fast_alt_name">Motor te snel (onbevestigd)</string>
+    <string name="core_fault_s2_motor_fast_alt_hint">De bronnen zijn het over deze code oneens; één leest hem als ‘motor te snel’. Noteren wanneer hij verschijnt.</string>
+    <string name="core_fault_s2_motor_fast_name">Motor te snel</string>
+    <string name="core_fault_s2_motor_fast_hint">De motor draaide sneller dan toegestaan, bijvoorbeeld bergaf. Verdwijnt meestal vanzelf.</string>
+    <string name="core_fault_s2_6_name">Overstroom</string>
+    <string name="core_fault_s2_6_hint">De motor trok te veel stroom. Fiets herstarten; komt het terug, de motor laten controleren.</string>
+    <string name="core_fault_s2_7_name">Koppelsensor afwijkend</string>
+    <string name="core_fault_s2_7_hint">De trapsensor geeft onwaarschijnlijke waarden. Fiets herstarten zonder gewicht op de pedalen.</string>
+    <string name="core_fault_s2_8_name">Koppelsensor afwijkend bij opstarten</string>
+    <string name="core_fault_s2_8_hint">De trapsensor gaf vreemde waarden bij het aanzetten. Fiets herstarten zonder gewicht op de pedalen.</string>
+    <string name="core_fault_s2_9_name">Te hoge temperatuur</string>
+    <string name="core_fault_s2_9_hint">Laat de fiets afkoelen.</string>
+    <string name="core_fault_s2_16_name">Hallsensoren komen niet overeen</string>
+    <string name="core_fault_s2_16_hint">De positiesensoren van de motor komen niet overeen. Motor-/sensorkabel bij de balhoofdbuis controleren.</string>
+    <string name="core_fault_s2_25_name">I²C-busfout</string>
+    <string name="core_fault_s2_25_hint">Interne communicatiefout in de module. Fiets herstarten.</string>
+    <string name="core_fault_s2_26_name">GSM-modem reageert niet</string>
+    <string name="core_fault_s2_26_hint">De mobiele modem reageert niet, dus tracking werkt mogelijk niet. Fiets herstarten.</string>
+    <string name="core_fault_s2_27_name">Motorcontroller reageert niet</string>
+    <string name="core_fault_s2_27_hint">De motorcontroller reageert niet. Fiets herstarten; blijft het, de kabel naar de controller controleren.</string>
+    <string name="core_fault_s2_28_name">GSM-aanmelding mislukt</string>
+    <string name="core_fault_s2_28_hint">De modem kon zich niet aanmelden op het mobiele netwerk, dus tracking werkt mogelijk niet.</string>
+    <string name="core_fault_s2_29_name">Geen stroom uit de accu</string>
+    <string name="core_fault_s2_29_hint">De accu levert geen stroom. Accu opladen en de accustekker controleren.</string>
+
+    <!-- S2 and Device Information characteristic names (error texts, GATT overview); a command this bike family lacks. -->
+    <string name="core_char_s2_functions">Opdrachten (S2)</string>
+    <string name="core_char_s2_parameters">Statusblok (S2)</string>
+    <string name="core_char_s2_key_change">Sleutelwissel (S2)</string>
+    <string name="core_char_device_model">Modelnummer</string>
+    <string name="core_char_device_serial">Serienummer</string>
+    <string name="core_char_device_firmware">Firmwareversie</string>
+    <string name="core_char_device_hardware">Hardwareversie</string>
+    <string name="core_char_device_software">Softwareversie</string>
+    <string name="core_error_not_on_this_bike">Dit fietsmodel ondersteunt dat niet.</string>
+
+    <!-- S2 driver (ble/S2Driver.kt) and the driver choice (BikeController.chooseDriver). -->
+    <string name="core_status_standby">Stand-by</string>
+    <string name="core_alarm_stage_automatic">Automatisch</string>
+    <string name="core_cmd_alarm_stage">Alarm: %1$s</string>
+    <string name="core_cmd_s2_mute">Gedempte geluiden gewijzigd</string>
+    <string name="core_error_not_s2">Geen S2-statusdienst gevonden. Dit is geen S2 of X2, of de Bluetooth-cache is beschadigd.</string>
+    <string name="core_error_older_vanmoof">Een oudere VanMoof antwoordde (S/X 1, S/X 2 of SmartBike). Is het een S2 of X2, kies dat model dan voor deze fiets in de garage.</string>
+    <string name="core_error_legacy_unsupported">YABA ondersteunt dit VanMoof-model niet (SmartBike of Electrified S/X 1).</string>
+    <string name="core_error_s2_test_mode">Alleen in de S2-testmodus: nog niet bevestigd op een echte S2.</string>
+    <string name="core_error_s2_frame">De fiets stuurde geen geldig statusblok.</string>
+    <string name="core_error_s2_level_unknown">Het ondersteuningsniveau is nog niet bekend, en de S2 stelt regio en niveau samen in. Probeer het zo opnieuw.</string>
+    <string name="core_error_s2_region_unknown">De regio is nog niet bekend, en de S2 stelt regio en niveau samen in. Probeer het zo opnieuw.</string>
+    <string name="core_log_s2_driver">S2/X2-driver (experimenteel, nog niet getest op een echte S2)</string>
+    <string name="core_log_s3_despite_profile">Het account zegt %1$s, maar de fiets heeft S3-diensten: de S3-driver wordt gebruikt.</string>
+    <string name="core_log_s2_frame">S2-statusblok %1$s</string>
+    <string name="core_detail_s2_frame_changed">Gewijzigde bytes: %1$s</string>
+    <string name="core_error_s2_offroad_level">De fiets meldt de offroad-regio (37 km/u). De S2 stelt regio en niveau samen in, dus een niveauwijziging kan hier alleen in de S2-testmodus.</string>
+    <string name="core_error_s2_pair_mismatch">De S2 stelt regio en niveau samen in en meldt nu %3$s km/u op niveau %4$s in plaats van %1$d km/u op niveau %2$d. Controleer beide instellingen.</string>
+    <string name="core_log_s2_implausible">S2-statusblok onwaarschijnlijk (accu %1$d%%, module %2$d%%, snelheid %3$d): klopt de sleutel van de fiets?</string>
+    <string name="core_detail_s2_frame_implausible">Gewijzigde bytes: %1$s. Onwaarschijnlijke waarden: klopt de sleutel?</string>
+</resources>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Тахограф (ui/screens/LogInsightsScreen.kt). -->
+<resources>
+    <string name="loginsights_title">Тахограф</string>
+    <string name="loginsights_close">Закрыть</string>
+    <string name="loginsights_intro">Пока велосипед не спит, он каждые 30\u00A0секунд записывает в свой журнал строку измерений. YABA строит из неё графики по каждой поездке, даже по поездкам без телефона.</string>
+    <string name="loginsights_loading">Читает сохранённый журнал …</string>
+    <string name="loginsights_more">Показать ещё</string>
+    <string name="loginsights_yes">да</string>
+    <string name="loginsights_no">нет</string>
+
+    <string name="loginsights_fmt_time">HH:mm</string>
+    <string name="loginsights_fmt_time_seconds">HH:mm:ss</string>
+    <string name="loginsights_fmt_ride">EEE, d MMM, HH:mm</string>
+    <string name="loginsights_fmt_day">EEEE, d MMMM yyyy</string>
+    <string name="loginsights_fmt_day_short">EEE d.MM</string>
+    <string name="loginsights_fmt_date">dd.MM.yyyy</string>
+    <string name="loginsights_at_time">%s</string>
+    <string name="loginsights_unit_kmh">%s\u00A0км/ч</string>
+    <string name="loginsights_unit_km">%s\u00A0км</string>
+    <string name="loginsights_unit_pct">%s\u00A0%%</string>
+    <string name="loginsights_unit_amp">%s\u00A0А</string>
+    <string name="loginsights_unit_celsius">%s\u00A0°C</string>
+    <string name="loginsights_unit_min">%d\u00A0мин</string>
+    <string name="loginsights_unit_h_min">%1$d\u00A0ч %2$d\u00A0мин</string>
+
+    <string name="loginsights_entry_intro">Тахограф показывает поездки, ограничение тока, переключение передач и пробуждения из журнала велосипеда.</string>
+    <string name="loginsights_entry_empty">На этом телефоне ещё нет сохранённого журнала. Прочитай журнал велосипеда один раз, и здесь появятся поездки.</string>
+    <string name="loginsights_entry_no_rides">В сохранённом журнале ещё нет ни одной поездки.</string>
+    <string name="loginsights_entry_open">Открыть тахограф</string>
+    <plurals name="loginsights_entry_summary">
+        <item quantity="one">%1$d поездка, всего %2$s, последняя %3$s</item>
+        <item quantity="few">%1$d поездки, всего %2$s, последняя %3$s</item>
+        <item quantity="many">%1$d поездок, всего %2$s, последняя %3$s</item>
+        <item quantity="other">%1$d поездки, всего %2$s, последняя %3$s</item>
+    </plurals>
+
+    <string name="loginsights_archive_title">Сохранённый журнал</string>
+    <plurals name="loginsights_archive_lines_unit">
+        <item quantity="one">строка</item>
+        <item quantity="few">строки</item>
+        <item quantity="many">строк</item>
+        <item quantity="other">строки</item>
+    </plurals>
+    <plurals name="loginsights_archive_downloads">
+        <item quantity="one">Объединено из %d чтения</item>
+        <item quantity="few">Объединено из %d чтений</item>
+        <item quantity="many">Объединено из %d чтений</item>
+        <item quantity="other">Объединено из %d чтения</item>
+    </plurals>
+    <string name="loginsights_archive_span">С %1$s по %2$s, по часам велосипеда</string>
+    <string name="loginsights_archive_empty">На этом телефоне ещё не сохранено ни одной строки измерений.</string>
+    <string name="loginsights_archive_hint">Каждое чтение остаётся на телефоне. YABA объединяет их, поэтому сохраняются и поездки, которые велосипед уже перезаписал в своей памяти на 128\u00A0КБ.</string>
+    <string name="loginsights_archive_read">Прочитать журнал сейчас</string>
+    <string name="loginsights_archive_read_again">Прочитать снова</string>
+    <string name="loginsights_archive_reading">Читает журнал …</string>
+    <string name="loginsights_archive_reading_percent">Читает журнал, %d\u00A0%%</string>
+    <string name="loginsights_archive_offline">Для чтения велосипед должен быть подключён.</string>
+    <string name="loginsights_archive_failed">Журнал не пришёл. Оставайся рядом с велосипедом и прочитай его снова.</string>
+    <string name="loginsights_archive_partial">Последнее чтение остановилось до конца журнала. То, что пришло, сохранено.</string>
+
+    <string name="loginsights_rides_title">Поездки</string>
+    <plurals name="loginsights_rides_count">
+        <item quantity="one">%d поездка</item>
+        <item quantity="few">%d поездки</item>
+        <item quantity="many">%d поездок</item>
+        <item quantity="other">%d поездки</item>
+    </plurals>
+    <string name="loginsights_rides_none">В сохранённом журнале нет ни одной поездки. Поездкой считается, когда колесо вращается минимум в двух строках измерений.</string>
+    <string name="loginsights_rides_all">Все поездки</string>
+    <string name="loginsights_rides_more">Показать ещё поездки</string>
+    <string name="loginsights_ride_row">%1$s за %2$s, до %3$s</string>
+    <string name="loginsights_ride_sampling">Велосипед измеряет каждые 30\u00A0секунд. Пики между измерениями пропадают, поэтому самое высокое измерение обычно ниже настоящего максимума.</string>
+    <string name="loginsights_fact_distance">Расстояние</string>
+    <string name="loginsights_fact_duration">Длительность</string>
+    <string name="loginsights_fact_avg">Средняя</string>
+    <string name="loginsights_fact_max">Самое высокое измерение</string>
+    <string name="loginsights_fact_battery">Израсходовано батареи</string>
+    <string name="loginsights_fact_motor_temp">Мотор максимум</string>
+    <string name="loginsights_fact_boost">С Boost</string>
+
+    <string name="loginsights_chart_scrub_hint">Проведи пальцем по графику, и под каждым графиком появятся значения в этот момент.</string>
+    <string name="loginsights_chart_speed">Скорость, км/ч</string>
+    <string name="loginsights_chart_battery">Батарея, проценты</string>
+    <string name="loginsights_chart_current">Ток мотора, амперы</string>
+    <string name="loginsights_chart_temps">Температуры, °C</string>
+    <string name="loginsights_chart_battery_note" formatted="false">Ниже линии 22\u00A0% прошивка даёт мотору меньше тока. Под батареей модуля понимается маленькая ячейка в электронном модуле, а не тяговая батарея.</string>
+    <string name="loginsights_chart_current_no_limit">Для этой поездки в сохранённом журнале нет границы тока. Велосипед записывает её только при изменении.</string>
+    <string name="loginsights_chart_cd">%1$s, с %2$s до %3$s. Наименьшее значение %4$s, наибольшее значение %5$s.</string>
+    <string name="loginsights_series_speed">Скорость</string>
+    <string name="loginsights_series_main_battery">Основная батарея</string>
+    <string name="loginsights_series_module_battery">Батарея модуля</string>
+    <string name="loginsights_series_motor_current">Ток мотора</string>
+    <string name="loginsights_series_limit">Граница прошивки</string>
+    <string name="loginsights_series_temp_battery">Батарея</string>
+    <string name="loginsights_series_temp_motor">Мотор</string>
+    <string name="loginsights_series_temp_driver">Контроллер</string>
+    <string name="loginsights_series_shift_retry">Повтор переключения</string>
+    <string name="loginsights_readout">%1$s: %2$s</string>
+    <string name="loginsights_readout_two">%1$s: %2$s %3$s, %4$s %5$s</string>
+    <string name="loginsights_readout_three">%1$s: %2$s %3$s, %4$s %5$s, %6$s %7$s</string>
+    <string name="loginsights_rows_show">Показать строки измерений</string>
+    <string name="loginsights_rows_hide">Скрыть строки измерений</string>
+    <string name="loginsights_col_time">Время</string>
+    <string name="loginsights_col_speed">км/ч</string>
+    <string name="loginsights_col_soc">Батарея</string>
+    <string name="loginsights_col_current">Ток</string>
+    <string name="loginsights_col_battemp">Бат. °C</string>
+    <string name="loginsights_col_motortemp">Мотор °C</string>
+
+    <string name="loginsights_derate_title">Ограничение тока</string>
+    <string name="loginsights_derate_intro">Сколько тока может брать мотор, прошивка определяет по заряду и температуре батареи. По Bluetooth велосипед это значение не передаёт, но журнал записывает каждое изменение.</string>
+    <string name="loginsights_derate_of_max">из максимум %s</string>
+    <string name="loginsights_derate_full">При заряде %1$s и %2$s мотор может брать полные %3$s.</string>
+    <string name="loginsights_derate_empty">При заряде %1$s прошивка больше не даёт тока, и мотор не помогает.</string>
+    <string name="loginsights_derate_battery">При заряде %1$s прошивка даёт только %2$s вместо %3$s.</string>
+    <string name="loginsights_derate_next_soc">С заряда %1$s будет %2$s.</string>
+    <string name="loginsights_derate_cold">При температуре батареи %1$s прошивка даёт только %2$s вместо %3$s.</string>
+    <string name="loginsights_derate_next_warmer">Выше %1$s будет %2$s.</string>
+    <string name="loginsights_derate_heat">При температуре батареи %1$s прошивка даёт только %2$s вместо %3$s.</string>
+    <string name="loginsights_derate_next_cooler">До %1$s снова будет %2$s.</string>
+    <string name="loginsights_derate_both">При заряде %1$s и температуре батареи %2$s прошивка даёт только %3$s вместо %4$s. Ограничивает и то и другое.</string>
+    <string name="loginsights_derate_unknown">Для оценки не хватает заряда или температуры батареи. Прочитай журнал, и YABA возьмёт температуру из последней строки измерений.</string>
+    <string name="loginsights_derate_basis_live">Заряд напрямую с велосипеда, температура батареи из строки измерений от %s. Температура попадает в журнал только каждые 30\u00A0секунд, поэтому значение приблизительное.</string>
+    <string name="loginsights_derate_basis_log">Заряд и температура батареи из строки измерений от %s. С подключённым велосипедом YABA берёт текущий заряд.</string>
+    <string name="loginsights_derate_grid_title">Граница тока по заряду и температуре</string>
+    <string name="loginsights_derate_grid_cd">Таблица границ тока: строки по температуре батареи, столбцы по заряду.</string>
+    <string name="loginsights_derate_now">текущее состояние</string>
+    <string name="loginsights_derate_grid_note">Таблица взята из прошивки\u00A01.07.06 и проверена строка за строкой. На 1.9.3 она, вероятно, такая же.</string>
+    <string name="loginsights_derate_log_title">Изменения в журнале</string>
+    <string name="loginsights_derate_log_row">%1$s при заряде %2$s</string>
+    <string name="loginsights_derate_log_row_nosoc">%1$s, заряд неизвестен</string>
+    <string name="loginsights_derate_log_none">В сохранённом журнале нет ни одного изменения границы тока.</string>
+
+    <string name="loginsights_shift_title">Переключение передач</string>
+    <string name="loginsights_shift_intro">Журнал записывает каждый повтор переключения, каждую ошибку положения, отключение переключателя и его калибровку нулевой точки.</string>
+    <string name="loginsights_shift_summary_ok">За %s езды переключатель работал без повторов и без ошибок положения.</string>
+    <plurals name="loginsights_shift_summary_retries">
+        <item quantity="one">За %1$s езды переключателю пришлось повторить переключение %2$d раз.</item>
+        <item quantity="few">За %1$s езды переключателю пришлось повторить переключение %2$d раза.</item>
+        <item quantity="many">За %1$s езды переключателю пришлось повторить переключение %2$d раз.</item>
+        <item quantity="other">За %1$s езды переключателю пришлось повторить переключение %2$d раза.</item>
+    </plurals>
+    <plurals name="loginsights_shift_summary_position">
+        <item quantity="one">Переключатель %d раз не нашёл своё положение. Пожалуйста, отдай переключение на проверку.</item>
+        <item quantity="few">Переключатель %d раза не нашёл своё положение. Пожалуйста, отдай переключение на проверку.</item>
+        <item quantity="many">Переключатель %d раз не нашёл своё положение. Пожалуйста, отдай переключение на проверку.</item>
+        <item quantity="other">Переключатель %d раза не нашёл своё положение. Пожалуйста, отдай переключение на проверку.</item>
+    </plurals>
+    <string name="loginsights_shift_retries">Повторы переключения</string>
+    <string name="loginsights_shift_retries_hint">Передача не включилась с первой попытки.</string>
+    <string name="loginsights_shift_per_hour">%s за час езды</string>
+    <string name="loginsights_shift_position">Ошибки положения</string>
+    <string name="loginsights_shift_position_hint">Переключатель не нашёл своё положение.</string>
+    <string name="loginsights_shift_off">Переключатель отключён</string>
+    <string name="loginsights_shift_off_hint">Обычно это нормальное отключение после паузы.</string>
+    <string name="loginsights_shift_zero">Калибровки нулевой точки</string>
+    <string name="loginsights_shift_zero_hint">Переключатель ищет свою нулевую точку, обычно после включения.</string>
+    <string name="loginsights_shift_by_gear">Повторы по передачам</string>
+    <string name="loginsights_shift_gear">Передача\u00A0%d</string>
+    <string name="loginsights_shift_by_gear_cd">Повторы по передачам. Передача\u00A01: %1$d, передача\u00A02: %2$d, передача\u00A03: %3$d, передача\u00A04: %4$d.</string>
+    <string name="loginsights_shift_events">Записи</string>
+    <string name="loginsights_shift_event_retry">Передача\u00A0%1$s, ответ %2$s, новая попытка</string>
+    <string name="loginsights_shift_event_position">Ошибка положения</string>
+    <string name="loginsights_shift_event_off">Переключатель отключён</string>
+    <string name="loginsights_shift_event_zero">Нулевая точка откалибрована</string>
+    <string name="loginsights_shift_event_speed">на %s</string>
+    <string name="loginsights_shift_event_parked">на месте</string>
+    <string name="loginsights_shift_none">В сохранённом журнале нет ни одной записи переключателя.</string>
+    <string name="loginsights_shift_caveat">Тексты взяты из прошивки\u00A01.07.06. Твой переключатель Revotronics может сообщать иначе, поэтому проверь строки по журналу своего велосипеда.</string>
+
+    <string name="loginsights_wake_title">Журнал пробуждений</string>
+    <string name="loginsights_wake_intro">Журнал записывает, почему велосипед проснулся. Толчок без последующей поездки обычно значит, что кто-то сдвинул велосипед.</string>
+    <string name="loginsights_wake_clock_skew">Часы велосипеда расходятся с временем телефона на %s. Пожалуйста, поставь часы велосипеда, и время будет совпадать.</string>
+    <string name="loginsights_wake_legend_ride">Поездка</string>
+    <string name="loginsights_wake_legend_wake">Пробуждение</string>
+    <string name="loginsights_wake_legend_moved">Толчок без поездки</string>
+    <string name="loginsights_wake_day_cd">%1$s. Поездки: %2$d. Пробуждения: %3$d. Из них сдвинут без поездки: %4$d.</string>
+    <string name="loginsights_wake_none">Причина не указана</string>
+    <string name="loginsights_wake_rtc">Таймер велосипеда</string>
+    <string name="loginsights_wake_button1">Кнопка\u00A01</string>
+    <string name="loginsights_wake_button2">Кнопка\u00A02</string>
+    <string name="loginsights_wake_ble">Bluetooth</string>
+    <string name="loginsights_wake_mems">Толчок</string>
+    <string name="loginsights_wake_charger">Зарядное устройство</string>
+    <string name="loginsights_wake_wheel">Колесо вращается</string>
+    <string name="loginsights_wake_key">Контакт батареи</string>
+    <string name="loginsights_wake_kicklock">Kick Lock</string>
+    <string name="loginsights_wake_cold">Холодный старт, журнал стёрт</string>
+    <string name="loginsights_wake_counter_only">Пробуждение</string>
+    <string name="loginsights_wake_other">Другая причина</string>
+    <string name="loginsights_wake_moved">%s без поездки</string>
+    <string name="loginsights_wake_ride_after">затем поездка, %s</string>
+    <string name="loginsights_wake_counter">счётчик пробуждений %1$d из %2$d</string>
+    <string name="loginsights_wake_deepsleep">Bluetooth в глубоком сне</string>
+    <string name="loginsights_wake_deepsleep_detail">заряд %1$s, пробуждений %2$s</string>
+    <string name="loginsights_wake_deepsleep_hint" formatted="false">При заряде ниже 19\u00A0% и после более чем 167 пробуждений прошивка переводит Bluetooth в более глубокий сон.</string>
+    <string name="loginsights_wake_none_found">В сохранённом журнале нет ни одной строки пробуждения.</string>
+    <string name="loginsights_wake_more">Показать ещё дни</string>
+    <string name="loginsights_wake_caveat">Строка пробуждения попадает в память, только если велосипед после этого остаётся бодрствовать около минуты. Время указано по часам велосипеда.</string>
+
+    <string name="loginsights_seek_title">Читать только новые строки</string>
+    <string name="loginsights_seek_intro">Сдвигает указатель чтения велосипеда за самую новую сохранённую строку. После этого YABA читает только новые строки, это быстрее.</string>
+    <string name="loginsights_seek_warning">Это нельзя отменить. Старые строки велосипед после этого не отдаёт ни одному приложению и ни одной мастерской; они остаются только на этом телефоне.</string>
+    <string name="loginsights_seek_check_link">Велосипед подключён</string>
+    <string name="loginsights_seek_check_complete">Журнал прочитан до конца</string>
+    <string name="loginsights_seek_check_complete_hint">Пожалуйста, прочитай журнал полностью, здесь или в разделе «Диагностика».</string>
+    <string name="loginsights_seek_check_saved">Чтение сохранено на телефоне</string>
+    <string name="loginsights_seek_check_saved_hint">Файл последнего чтения лежит в памяти YABA и совпадает символ в символ.</string>
+    <string name="loginsights_seek_check_fresh">Возраст чтения</string>
+    <string name="loginsights_seek_check_fresh_hint">Не старше %d\u00A0минут и из текущего подключения, чтобы не пропустить ни одной новой строки.</string>
+    <string name="loginsights_seek_check_newest">Самая новая сохранённая строка</string>
+    <string name="loginsights_seek_check_newest_hint">Указатель идёт до момента чуть раньше этого времени по часам велосипеда, никогда по времени телефона.</string>
+    <string name="loginsights_seek_check_clock_hint">Часы велосипеда не выставлены. Сначала поставь их, иначе самая новая строка неоднозначна.</string>
+    <string name="loginsights_seek_button">Сдвинуть указатель до %s</string>
+    <string name="loginsights_seek_button_plain">Сдвинуть указатель</string>
+    <string name="loginsights_seek_busy">Сдвигает указатель …</string>
+    <string name="loginsights_seek_blocked">Возможно, только когда выполнены все пункты выше.</string>
+    <string name="loginsights_seek_confirm_title">Сдвинуть указатель чтения</string>
+    <string name="loginsights_seek_confirm_text">После этого велосипед будет отдавать только строки начиная с %1$s %2$s. Предыдущие строки (%3$s) останутся только на этом телефоне.</string>
+    <string name="loginsights_seek_confirm">Сдвинуть</string>
+    <string name="loginsights_seek_cancel">Отмена</string>
+    <string name="loginsights_seek_done">Указатель стоит перед %s. Следующее чтение вернёт только новые строки.</string>
+    <string name="loginsights_archive_read_where">Новые строки добавятся, как только ты прочитаешь журнал в разделе «Диагностика», «Журнал велосипеда».</string>
+</resources>

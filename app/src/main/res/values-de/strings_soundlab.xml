@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sound-Lab im Klang-Screen (ui/components/SoundLabBits.kt): Lautstärke pro Ton (5572) und die fünf ersetzbaren Töne. -->
+<resources>
+    <!-- Lautstärke pro Ton -->
+    <string name="soundlab_tiers_title">Lautstärke pro Ton</string>
+    <string name="soundlab_tiers_hint">Jeder Ton spielt mit Pegel\u00A020, 30 oder 38 oder gar nicht. Die drei Pegel legt die Firmware fest; hier wählst du, welcher Ton welchen bekommt.</string>
+    <string name="soundlab_tiers_unread">Das Bike hat seine Lautstärken noch nicht gemeldet. Bis dahin zeigen die Leitern die Werkseinstellung ab Firmware\u00A01.9.1.</string>
+    <string name="soundlab_tiers_read">Vom Bike lesen</string>
+    <string name="soundlab_tiers_reading">Liest …</string>
+    <string name="soundlab_tiers_none">Das Bike meldet keine Lautstärken. Seine Firmware bietet diesen Wert wahrscheinlich nicht an.</string>
+    <string name="soundlab_tiers_offline">Bitte verbinde dich mit dem Bike, um die Lautstärken zu lesen und zu speichern.</string>
+    <string name="soundlab_tier_off">aus</string>
+    <string name="soundlab_tier_silent">Stumm</string>
+    <string name="soundlab_tier_low">Leise</string>
+    <string name="soundlab_tier_medium">Mittel</string>
+    <string name="soundlab_tier_high">Laut</string>
+    <string name="soundlab_tier_level">%1$s, Pegel\u00A0%2$d</string>
+    <string name="soundlab_tier_changed">%1$s statt %2$s</string>
+    <string name="soundlab_tier_step_cd">%1$s: %2$s</string>
+    <plurals name="soundlab_group_sounds">
+        <item quantity="one">%d Ton</item>
+        <item quantity="other">%d Töne</item>
+    </plurals>
+    <plurals name="soundlab_group_muted">
+        <item quantity="one">%d stumm</item>
+        <item quantity="other">%d stumm</item>
+    </plurals>
+    <plurals name="soundlab_group_changed">
+        <item quantity="one">%d geändert</item>
+        <item quantity="other">%d geändert</item>
+    </plurals>
+    <string name="soundlab_state_expanded">ausgeklappt</string>
+    <string name="soundlab_state_collapsed">eingeklappt</string>
+    <string name="soundlab_note_bell">Die Klingeltaste spielt diesen Ton. Stumm bleibt sie still.</string>
+    <string name="soundlab_note_alarm">Stumm löst der Alarm weiter aus, aber ohne Ton.</string>
+    <string name="soundlab_note_find">Stumm bleibt die Suche nach dem Bike ohne Ton.</string>
+    <string name="soundlab_note_error">Stumm zeigt das Bike Fehler nur noch auf der Anzeige.</string>
+    <plurals name="soundlab_tiers_save">
+        <item quantity="one">%d Änderung speichern</item>
+        <item quantity="other">%d Änderungen speichern</item>
+    </plurals>
+    <string name="soundlab_tiers_saving">Speichert …</string>
+    <string name="soundlab_tiers_discard">Änderungen verwerfen</string>
+    <string name="soundlab_tiers_factory">Werkseinstellung laden</string>
+    <string name="soundlab_tiers_flash">Jedes Speichern beschreibt den Flash-Speicher des Bikes. YABA schreibt deshalb erst, wenn du speicherst.</string>
+    <string name="soundlab_tiers_wait">Das Speichern wartet, bis die laufende Übertragung fertig ist.</string>
+    <string name="soundlab_tiers_saved">Gespeichert. Das Bike meldet die neuen Lautstärken zurück.</string>
+    <string name="soundlab_tiers_not_taken">Das Bike meldet nach dem Speichern einen anderen Stand. Bitte lies die Werte erneut vom Bike.</string>
+
+    <!-- Weitere Töne ersetzen -->
+    <string name="soundlab_clips_title">Töne im Bike</string>
+    <string name="soundlab_clips_hint">Fünf Töne des Bikes lassen sich ersetzen. YABA hebt jede gesendete Datei auf diesem Handy auf.</string>
+    <string name="soundlab_clip_factory">Werkston</string>
+    <string name="soundlab_clip_custom">„%1$s“ seit %2$s</string>
+    <string name="soundlab_clip_empty">Wahrscheinlich still: Die letzte Übertragung brach ab.</string>
+    <string name="soundlab_clip_replace">Ersetzen</string>
+    <string name="soundlab_clip_factory_note">Den Werkston gibt das Bike nicht heraus. Nach dem Senden ist er nur mit der Werksdatei zurückzuholen.</string>
+    <string name="soundlab_clip_bundled">Fertige Töne</string>
+    <string name="soundlab_clip_history">Schon gesendet</string>
+    <string name="soundlab_clip_history_line">gesendet am %1$s</string>
+    <string name="soundlab_clip_history_unsent">nie vollständig angekommen</string>
+    <string name="soundlab_clip_choose_cd">%1$s für „%2$s“ wählen</string>
+    <string name="soundlab_clip_pick_hint">YABA wandelt Audiodateien um. Eine Datei, die schon im Bike-Format VM_SOUND vorliegt, etwa eine Werksdatei, geht unverändert ans Bike.</string>
+    <string name="soundlab_clip_cancel">Abbrechen</string>
+    <string name="soundlab_clip_send">Für „%1$s“ senden</string>
+    <string name="soundlab_clip_keep_close">Bitte halt das Handy nah am Bike. Bricht die Übertragung ab, bleibt der Ton still, bis eine Datei vollständig ankommt.</string>
+    <string name="soundlab_clip_wait_bell">Erst wenn der Klingelton angekommen ist; das Bike nimmt eine Übertragung nach der anderen an.</string>
+    <string name="soundlab_clip_sending">Sendet %1$s für „%2$s“</string>
+    <string name="soundlab_clip_done">„%1$s“ ist übertragen. Das Bike spielt ihn ab sofort bei „%2$s“, auch wenn YABA nicht läuft.</string>
+    <string name="soundlab_clip_finish">Fertig</string>
+    <string name="soundlab_clip_read_failed">Die Datei ließ sich nicht lesen. Bitte wähl eine andere Audiodatei.</string>
+    <string name="soundlab_clip_too_big">Die Datei ist größer als %1$d\u00A0kB, mehr fasst ein Ton im Bike nicht.</string>
+    <string name="soundlab_clip_not_wav">Die Datei beginnt wie eine Tondatei des Bikes, enthält aber keinen WAV-Ton. Bitte wähl eine andere Datei.</string>
+    <string name="soundlab_clip_store_failed">YABA konnte die Datei nicht auf dem Handy sichern und sendet sie deshalb nicht. Bitte prüf den freien Speicher.</string>
+    <string name="soundlab_clip_failed_at">Die Übertragung brach bei %1$d\u00A0%% ab. „%2$s“ bleibt still, bis eine Datei vollständig ankommt.</string>
+    <string name="soundlab_clip_failed_before">Die Übertragung kam nicht zustande. „%1$s“ behält den bisherigen Ton.</string>
+    <string name="soundlab_clip_retry">Erneut senden</string>
+    <string name="soundlab_clip_confirm_title">Werkston überschreiben</string>
+    <string name="soundlab_clip_confirm_text">Das Bike gibt den Werkston für „%1$s“ nicht heraus, und YABA hat ihn nicht. Nach dem Senden ist er nur mit der Werksdatei zurückzuholen.</string>
+    <string name="soundlab_clip_confirm_ok">Überschreiben</string>
+    <string name="soundlab_clip_play_action">am Bike abspielen</string>
+    <string name="soundlab_clip_replace_cd">„%1$s“ ersetzen</string>
+    <string name="soundlab_clip_sending_percent">Sendet %1$s für „%2$s“, %3$d\u00A0%%</string>
+    <string name="soundlab_tiers_standstill">Das Speichern startet im Stand.</string>
+</resources>

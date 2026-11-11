@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shifting section on the ride screen: e-shifter mode (5538) and shift points (5537). -->
+<resources>
+    <string name="shift_section">Shifting</string>
+    <string name="shift_mode_auto">Automatic</string>
+    <string name="shift_mode_manual">Manual</string>
+    <string name="shift_gear">Gear</string>
+    <string name="shift_gear_cd">Gear\u00A0%1$d</string>
+    <string name="shift_gear_unknown_cd">Gear unknown</string>
+
+    <!-- Profiles -->
+    <string name="shift_profile_standard">Standard</string>
+    <string name="shift_profile_flat">Flat</string>
+    <string name="shift_profile_hilly">Hilly</string>
+    <string name="shift_profile_custom">Custom</string>
+    <string name="shift_reason_standard">VanMoof factory setting.</string>
+    <string name="shift_reason_flat">Gear\u00A03 holds from 14 to 27\u00A0km/h, so city pace needs hardly any shifts.</string>
+    <string name="shift_reason_hilly">Gear\u00A02 holds from 9 to 21\u00A0km/h, so climbs need fewer shifts under load.</string>
+    <string name="shift_reason_custom">Your own shift points.</string>
+    <string name="shift_custom_empty">No custom shift points yet.</string>
+    <string name="shift_row_cd">%1$s. Shifts up at %2$d, %3$d and %4$d\u00A0km/h, down at %5$d, %6$d and %7$d\u00A0km/h.</string>
+    <string name="shift_points_short">up %1$d, %2$d, %3$d, down %4$d, %5$d, %6$d\u00A0km/h</string>
+    <string name="shift_limit_cd">Assist ends at %1$d\u00A0km/h.</string>
+    <string name="shift_axis_kmh">%1$d\u00A0km/h</string>
+    <string name="shift_units_note">Shift points are always set in km/h.</string>
+    <string name="shift_reading">Reading shift points …</string>
+    <string name="shift_invalid_on_bike">The shift points on the bike can make it shift back and forth. Pick a profile or adjust them.</string>
+    <string name="shift_fault">Shifter reports fault\u00A0%1$d: %2$s</string>
+    <string name="shift_ease_off">Ease off the pedals for a moment when the bike shifts. That spares the shifter.</string>
+
+    <!-- Custom editor -->
+    <string name="shift_handle_up">Shift up from %1$d to %2$d</string>
+    <string name="shift_handle_down">Shift down from %1$d to %2$d</string>
+    <string name="shift_lane_up">up</string>
+    <string name="shift_lane_down">down</string>
+    <string name="shift_allowed">Possible: %1$d to %2$d\u00A0km/h</string>
+    <string name="shift_step_higher">1\u00A0km/h higher</string>
+    <string name="shift_step_lower">1\u00A0km/h lower</string>
+    <string name="shift_blocked_by">Limited by: %1$s</string>
+    <string name="shift_rules">Shifting down sits at least 2\u00A0km/h below shifting up. Points in the same direction are at least 3\u00A0km/h apart. The bike drops to gear\u00A01 at 5\u00A0km/h at the latest.</string>
+    <string name="shift_apply">Apply</string>
+    <string name="shift_discard">Discard</string>
+    <string name="shift_draft_matches">Same as %1$s.</string>
+    <string name="shift_draft_from_standard">The values on the bike were not usable. You start from Standard.</string>
+
+    <!-- Manual -->
+    <string name="shift_manual_up">Shift up: press Boost twice quickly while riding.</string>
+    <string name="shift_manual_down">Shift down: hold the bell button and press Boost twice quickly.</string>
+    <string name="shift_manual_stop">When you stop, the bike shifts to gear\u00A01 by itself.</string>
+    <string name="shift_manual_boost">Holding Boost still gives extra power.</string>
+    <string name="shift_manual_points_kept">Your shift points stay stored for Automatic.</string>
+    <string name="shift_key_bell">Bell</string>
+    <string name="shift_key_boost">Boost</string>
+    <string name="shift_key_pressed">pressed</string>
+
+    <!-- Event log and errors -->
+    <string name="shift_cmd_mode">Shift mode: %1$s</string>
+    <string name="shift_cmd_points">Shift points: %1$s</string>
+    <string name="shift_log_state">Shifting: %1$s (%2$s)</string>
+    <string name="shift_unknown">unknown</string>
+    <string name="shift_error_mode_rejected">The bike did not take %1$s. It reports: %2$s.</string>
+    <string name="shift_error_points_rejected">The bike did not take the shift points. It reports: %1$s.</string>
+    <string name="shift_error_points_invalid">These shift points would make the bike shift back and forth. Nothing was sent.</string>
+    <string name="shift_error_too_many">Too many shift changes in a row. Reconnect to go on.</string>
+    <string name="shift_error_region_changed">The region changed while saving. Check the shift points again.</string>
+
+    <!-- Notes, conflicts, editor actions, checks (second round) -->
+    <string name="shift_riding_note">While riding, a change applies at once: the bike may shift right away.</string>
+    <string name="shift_region_short">Applies to region %1$s (each region keeps its own).</string>
+    <string name="shift_legend">Bright: that gear. Gap: the bike keeps the gear it came from. Underlined: your gear now.</string>
+    <string name="shift_profiles_show">Show all profiles</string>
+    <string name="shift_profiles_hide">Hide profiles</string>
+    <string name="shift_reason_invalid">Invalid values on the bike.</string>
+    <string name="shift_invalid_zero">The bike reports every shift point as 0\u00A0km/h. With that it shifts up to gear\u00A04 as soon as it rolls and starts off in gear\u00A04. Pick Standard.</string>
+    <string name="shift_conflict_gap">“%1$s” (%2$d\u00A0km/h) is not at least 2\u00A0km/h below “%3$s” (%4$d\u00A0km/h).</string>
+    <string name="shift_conflict_spacing">“%1$s” (%2$d\u00A0km/h) is not at least 3\u00A0km/h above “%3$s” (%4$d\u00A0km/h).</string>
+    <string name="shift_conflict_min">“%1$s” (%2$d\u00A0km/h) is below %3$d\u00A0km/h.</string>
+    <string name="shift_conflict_range">“%1$s” (%2$d\u00A0km/h) is outside %3$d to %4$d\u00A0km/h.</string>
+    <string name="shift_conflict_max">“%1$s” (%2$d\u00A0km/h) is above %3$d\u00A0km/h.</string>
+    <string name="shift_conflict_more">… and %1$d more.</string>
+    <string name="shift_edit">Edit</string>
+    <string name="shift_edit_set">Set up</string>
+    <string name="shift_edit_close">Close</string>
+    <string name="shift_expanded">expanded</string>
+    <string name="shift_collapsed">collapsed</string>
+    <string name="shift_edit_action">Edit shift points</string>
+    <string name="shift_edit_close_action">Close the editor</string>
+    <string name="shift_editor_hint">Drag a point or tap it, then fine-tune with − and +.</string>
+    <string name="shift_top_gear_above_limit">Gear\u00A04 only comes above %1$d\u00A0km/h, past the assist limit of %2$d\u00A0km/h: so only without assist. Gear\u00A03 holds up to there.</string>
+    <string name="shift_keys_live">Handlebar keys, live</string>
+    <string name="shift_gesture_hold">hold</string>
+    <string name="shift_check_failed">Firmware\u00A0%1$s reports shifting values YABA does not know (%2$s). YABA changes nothing here.</string>
+    <string name="shift_persist_ok">Shift settings still on the bike after reconnecting (firmware\u00A0%1$s).</string>
+    <string name="shift_persist_mode_lost">YABA last set %1$s, the bike now reports %2$s. Another app changed it, or the bike did not keep it.</string>
+    <string name="shift_persist_points_lost">The bike no longer has the shift points YABA wrote last time (wrote %1$s, now %2$s). Another app changed them, or the bike did not keep them.</string>
+    <string name="shift_log_fw">%1$s (firmware\u00A0%2$s)</string>
+    <string name="shift_error_read">Could not read the current shift settings. Nothing was sent.</string>
+    <string name="shift_error_no_region">The bike’s region is unknown, so YABA cannot tell which shift point slot is in use. Nothing was sent.</string>
+    <string name="shift_error_region_moved">The region changed since you set these points. Nothing was sent; check them again.</string>
+    <string name="shift_gesture_twice" translatable="false">×2</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Opening film. Slogan lockup A in two lines: the first is the Klappe (900/125), the second the Hand (400/100). -->
+    <string name="intro_skip">Skip</string>
+    <string name="intro_description">Intro: A boot stomps on a bike three times while its display blinks error 42. The bike bursts apart, then rises again, glowing.</string>
+    <string name="intro_slogan_1">Keeps riding.</string>
+    <string name="intro_slogan_2">No matter what.</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars. The Dutch call stays untranslated in every language. -->
+    <string name="intro_matrix_ouch" translatable="false">AUW</string>
+    <!-- matrix: the bike's fault code -->
+    <string name="intro_matrix_error" translatable="false">E42</string>
+    <string name="intro_replay">Play the intro again</string>
+</resources>

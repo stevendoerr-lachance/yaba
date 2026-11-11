@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Bewaking (the guard design section 7): the section on Rijden, the hero while it is active, the locked links. -->
+    <string name="guard_section_title">Bewaking</string>
+    <string name="guard_intro">De bewaking vergrendelt je fiets en zet zijn bewegingsbewaking aan. YABA blijft verbonden en stuurt je een melding op deze telefoon zodra het een beweging herkent.</string>
+    <string name="guard_arm">Bewaking inschakelen</string>
+    <string name="guard_siren_now">Sirene meteen</string>
+    <string name="guard_siren_now_caption">Bij de eerste beweging die YABA herkent, zet YABA de sirene van de fiets aan. Zonder deze instelling stuurt YABA je alleen een melding; de fiets zet zijn sirene dan pas zelf aan na meerdere schokken.</string>
+
+    <!-- Why arming is not offered (GuardRules.armBlocker) -->
+    <string name="guard_blocker_not_connected">Verbind YABA eerst met de fiets.</string>
+    <string name="guard_blocker_not_parked">De bewaking kan alleen worden ingeschakeld zolang de fiets stilstaat en er geen knop is ingedrukt.</string>
+    <string name="guard_blocker_bike_state">De fiets werkt zijn firmware bij of gaat naar de transportmodus. De bewaking kan nu niet worden ingeschakeld.</string>
+    <string name="guard_blocker_busy">De fiets draagt gegevens over. De bewaking kan worden ingeschakeld zodra de overdracht klaar is.</string>
+
+    <!-- Phases -->
+    <string name="guard_arming">Inschakelen …</string>
+    <string name="guard_arming_text">YABA vergrendelt de fiets en wacht tot die zijn bewegingsbewaking bevestigt. Dat duurt maximaal %1$d seconden.</string>
+    <string name="guard_active_since">Bewaking actief sinds %1$s</string>
+    <string name="guard_watch_bike">De fiets let zelf op beweging, en YABA blijft verbonden.</string>
+    <string name="guard_watch_unconfirmed">De fiets heeft zijn bewegingsbewaking niet bevestigd (alarmstatus %1$d). Daarom herkent YABA alleen een draaiend wiel, ingedrukte knoppen, het slot en de accu.</string>
+    <string name="guard_watch_unconfirmed_unknown">De fiets heeft zijn bewegingsbewaking niet bevestigd. Daarom herkent YABA alleen een draaiend wiel, ingedrukte knoppen, het slot en de accu.</string>
+    <string name="guard_watch_retry">Opnieuw proberen</string>
+    <string name="guard_end">Bewaking beëindigen</string>
+    <string name="guard_silence">Sirene uit</string>
+    <string name="guard_lever_hint">Schuiven beëindigt de bewaking en ontgrendelt de fiets.</string>
+    <string name="guard_lever_hint_offline">Zonder verbinding wacht YABA na het schuiven tot %1$d seconden op de fiets. Komt de verbinding terug, dan wordt de fiets ontgrendeld; anders eindigt de bewaking alleen in YABA.</string>
+    <string name="guard_alarm_at">Alarm om %1$s</string>
+    <string name="guard_rearming">Herstelt de bewaking …</string>
+    <string name="guard_disarming">Beëindigt de bewaking …</string>
+    <string name="guard_disarming_wait">YABA wacht maximaal %1$d seconden op de verbinding met de fiets.</string>
+    <string name="guard_lost_watch">Verbinding met de fiets onderbroken. De bewegingsbewaking van de fiets loopt door, en YABA maakt opnieuw verbinding.</string>
+    <string name="guard_lost">Verbinding met de fiets onderbroken. YABA maakt opnieuw verbinding.</string>
+
+    <!-- Latest lines -->
+    <string name="guard_events_title">Recent</string>
+    <string name="guard_events_all">Alle gebeurtenissen onder Diagnose</string>
+    <string name="guard_share_journal">Bewakingslogboek delen</string>
+
+    <!-- Hints -->
+    <string name="guard_notifications_off">Meldingen staan uit voor YABA. De sirene werkt, maar je telefoon meldt je geen beweging.</string>
+    <string name="guard_notifications_allow">Meldingen toestaan</string>
+    <string name="guard_battery_hint">Zet de batterijoptimalisatie voor YABA uit, zodat Android de verbinding met de fiets ’s nachts niet beëindigt.</string>
+    <string name="guard_battery_open">Batterij-instellingen openen</string>
+    <string name="guard_alarm_choice_locked">Zolang de bewaking actief is, blijft het alarm aan.</string>
+    <string name="guard_link_locked">Zolang de bewaking actief is, blijft YABA verbonden met de fiets. Beëindig eerst de bewaking.</string>
+
+    <!-- Issues (GuardState.issue) -->
+    <string name="guard_issue_dismiss">Verbergen</string>
+    <string name="guard_issue_service">Android heeft de dienst voor de bewaking niet gestart. De bewaking blijft uit.</string>
+    <string name="guard_issue_arm_failed">De bewaking kon niet worden ingeschakeld. Reden: %1$s</string>
+    <string name="guard_issue_arm_failed_unknown">De bewaking kon niet worden ingeschakeld.</string>
+    <string name="guard_issue_alarm_during">De fiets heeft tijdens het inschakelen zelf alarm gegeven. YABA heeft het alarm gestopt, de fiets blijft vergrendeld. Houd hem stil en probeer het opnieuw.</string>
+    <string name="guard_issue_alarm_mode">De fiets heeft het alarm niet aangezet (alarmmodus %1$s). De bewaking blijft uit.</string>
+    <string name="guard_issue_lock">De fiets is niet vergrendeld (slot meldt %1$s). De bewaking blijft uit.</string>
+    <string name="guard_issue_disarm_unconfirmed">De bewaking is beëindigd, maar de fiets meldt nog alarmstatus %1$s. Onder “Alarm” kun je het alarm stoppen.</string>
+    <string name="guard_issue_ended_offline">De bewaking is beëindigd. YABA kon de fiets niet bereiken, dus aan de fiets is niets veranderd.</string>
+    <string name="guard_issue_bike_gone">De bewaking is beëindigd, omdat de fiets niet meer in YABA is opgeslagen.</string>
+
+    <!-- Top tube and header. Matrix words: ASCII, no diacritics (BRAND "Languages"). -->
+    <string name="guard_matrix_armed">WAAK</string>
+    <string name="guard_matrix_alarm">ALARM</string>
+    <string name="guard_tube_armed_cd">Bewaking actief, accu op %1$d procent</string>
+    <string name="guard_tube_armed_nobattery_cd">Bewaking actief</string>
+    <string name="guard_tube_arming_cd">Bewaking wordt ingeschakeld</string>
+    <string name="guard_tube_alarm_cd">Alarm bij de fiets</string>
+    <string name="guard_tube_lost_cd">Bewaking actief, verbinding onderbroken</string>
+    <string name="guard_header_armed">Bewaking</string>
+    <string name="guard_header_alarm">Alarm</string>
+    <string name="guard_issue_arm_failed_partly">De bewaking kon niet worden ingeschakeld. Reden: %1$s. De fiets kan toch al vergrendeld zijn of zijn alarm hebben ingeschakeld. Controleer de schuif en “Alarm”.</string>
+    <string name="guard_issue_disarm_locked">De bewaking is beëindigd en het alarm is uit, maar de fiets meldt zich nog als vergrendeld (slot %1$s). Je kunt hem met de schuif ontgrendelen.</string>
+    <string name="guard_issue_ended_partly">De bewaking is beëindigd. YABA heeft opdrachten naar de fiets gestuurd, maar geen antwoord gekregen. “Rijden” toont na de volgende verbinding hoe de fiets ervoor staat.</string>
+    <string name="guard_issue_not_locked">De fiets is niet vergrendeld (slot meldt %1$s). “Opnieuw proberen” vergrendelt hem en herstelt de bewaking.</string>
+    <string name="guard_issue_not_locked_unknown">YABA heeft geen bevestiging dat de fiets vergrendeld is. “Opnieuw proberen” vergrendelt hem en herstelt de bewaking.</string>
+</resources>

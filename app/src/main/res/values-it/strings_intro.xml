@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intro_skip">Salta</string>
+    <string name="intro_description">Intro: uno stivale calpesta tre volte una bici mentre il display lampeggia con l’errore 42. La bici esplode, poi si rialza luminosa.</string>
+    <string name="intro_slogan_1">Va avanti.</string>
+    <string name="intro_slogan_2">Comunque vada.</string>
+    <string name="intro_replay">Riguarda l’intro</string>
+</resources>

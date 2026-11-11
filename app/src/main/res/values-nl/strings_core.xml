@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Core layers (ble, data, ride, audio, view model): Dutch. -->
+<resources>
+
+    <!-- GATT characteristics (diagnosis page, version list) -->
+    <string name="core_char_challenge">Challenge</string>
+    <string name="core_char_key_index">Sleutelnummer</string>
+    <string name="core_char_backup_code">Back-upcode</string>
+    <string name="core_char_bike_message">Backoffice</string>
+    <string name="core_char_firmware_metadata">Bestandsmetadata</string>
+    <string name="core_char_firmware_block">Bestandsblok</string>
+    <string name="core_char_oad_status">Overdrachtsstatus</string>
+    <string name="core_char_lock_state">Slot</string>
+    <string name="core_char_unlock_request">Ontgrendelverzoek</string>
+    <string name="core_char_alarm_state">Alarmmodus</string>
+    <string name="core_char_alarm_mode">Alarm aan of uit</string>
+    <string name="core_char_distance">Kilometerstand</string>
+    <string name="core_char_speed">Snelheid</string>
+    <string name="core_char_unit_system">Eenheden</string>
+    <string name="core_char_power_level">Trapondersteuning</string>
+    <string name="core_char_speed_limit">Snelheidslimiet</string>
+    <string name="core_char_e_shifter_gear">Versnelling</string>
+    <string name="core_char_e_shift_points">Schakelpunten</string>
+    <string name="core_char_e_shifter_mode">Schakelmodus</string>
+    <string name="core_char_motor_battery_level">Accu</string>
+    <string name="core_char_motor_battery_state">Laadstekker</string>
+    <string name="core_char_module_battery_level">Oplader en moduleaccu</string>
+    <string name="core_char_module_battery_state">Status moduleaccu</string>
+    <string name="core_char_environment">Temperatuur en vochtigheid</string>
+    <string name="core_char_motor_telemetry_a">Motortelemetrie A</string>
+    <string name="core_char_motor_telemetry_b">Motortelemetrie B</string>
+    <string name="core_char_motor_errors">Storingsbits motor</string>
+    <string name="core_char_model">Model</string>
+    <string name="core_char_bike_firmware">Firmware van de fiets</string>
+    <string name="core_char_ble_firmware">Bluetooth-firmware</string>
+    <string name="core_char_controller_firmware">Motorsturing</string>
+    <string name="core_char_pcba_hardware">Printplaat</string>
+    <string name="core_char_gsm_firmware">GSM-module</string>
+    <string name="core_char_e_shifter_firmware">E-shifter</string>
+    <string name="core_char_battery_firmware">Accufirmware</string>
+    <string name="core_char_frame_number">Framenummer</string>
+    <string name="core_char_module_mode">Bedrijfstoestand</string>
+    <string name="core_char_module_state">Stand-by</string>
+    <string name="core_char_errors">Storingsbits</string>
+    <string name="core_char_wheel_size">Wieltype</string>
+    <string name="core_char_clock">Klok van de fiets</string>
+    <string name="core_char_buttons">Knoppen en Kick Lock</string>
+    <string name="core_char_supply_ok">Voeding ≥\u00A020\u00A0V</string>
+    <string name="core_char_play_sound">Geluid afspelen</string>
+    <string name="core_char_sound_groups">Volumegroepen</string>
+    <string name="core_char_bell_sound">Beltoon</string>
+    <string name="core_char_light_mode">Licht</string>
+    <string name="core_char_led_state">LED-kanalen</string>
+    <string name="core_char_light_sensor">Lichtdrempel</string>
+    <string name="core_char_log_mode">Logboekmodus</string>
+    <string name="core_char_log_size">Logboekgrootte</string>
+    <string name="core_char_log_block">Logboekblok</string>
+
+    <!-- Speed limit regions (under the road sign) -->
+    <string name="core_region_japan">Japan</string>
+    <string name="core_region_europe">Europa</string>
+    <string name="core_region_usa">VS</string>
+    <string name="core_region_private">Offroad</string>
+
+    <!-- Lock / alarm phase (ALARM_STATE) -->
+    <string name="core_defence_unlocked">Ontgrendeld</string>
+    <string name="core_defence_locked">Vergrendeld</string>
+    <string name="core_defence_alarm_one">Alarmniveau\u00A01</string>
+    <string name="core_defence_alarm_two">Alarmniveau\u00A02</string>
+    <string name="core_defence_tracking">Lokalisatie</string>
+
+    <!-- Alarm switch (ALARM_MODE) -->
+    <string name="core_alarm_stage_disarmed">Uit</string>
+    <string name="core_alarm_stage_armed">Ingeschakeld</string>
+
+    <!-- Charger state -->
+    <string name="core_charge_charging">Laadt op</string>
+    <string name="core_charge_not_charging">Laadt niet</string>
+    <string name="core_charge_battery_missing">Accu niet herkend</string>
+    <string name="core_log_battery_missing">Accu niet herkend: de fiets herkent de accu niet meer</string>
+    <string name="core_log_battery_back">Accu weer herkend</string>
+
+    <!-- Light modes -->
+    <string name="core_light_auto">Auto</string>
+    <string name="core_light_on">Aan</string>
+    <string name="core_light_off">Uit</string>
+
+    <!-- Coarse bike status (MODULE_MODE) -->
+    <string name="core_status_ready">Klaar</string>
+    <string name="core_status_riding">Rijklaar</string>
+    <string name="core_status_alarm">Alarm/lokalisatie</string>
+    <string name="core_status_updating">Wordt bijgewerkt</string>
+    <string name="core_status_shipping">Transportmodus</string>
+    <string name="core_status_sleeping">Slaapt</string>
+    <string name="core_status_other">Wisselt van toestand</string>
+
+    <!-- Bell tones -->
+    <string name="core_bell_bell">Tweeklank</string>
+    <string name="core_bell_sonar">Duikboot</string>
+    <string name="core_bell_party">Toeter</string>
+    <string name="core_bell_foghorn">Misthoorn</string>
+
+    <!-- Sound board groups -->
+    <string name="core_sound_group_horn">Bellen en hoorns</string>
+    <string name="core_sound_group_signal">Signalen van de fiets</string>
+    <string name="core_sound_group_alarm">Alarm</string>
+    <string name="core_sound_group_system">Systeem</string>
+
+    <!-- Sound board sounds -->
+    <string name="core_sound_ding_dong">Tweeklank</string>
+    <string name="core_sound_toot">Toeter</string>
+    <string name="core_sound_foghorn">Misthoorn</string>
+    <string name="core_sound_submarine">Duikboot</string>
+    <string name="core_sound_urgent_whistle">Dringend fluitsignaal</string>
+    <string name="core_sound_click">Klik</string>
+    <string name="core_sound_positive">Positief signaal</string>
+    <string name="core_sound_negative">Negatief signaal</string>
+    <string name="core_sound_lock">Vergrendeltoon</string>
+    <string name="core_sound_unlock">Ontgrendeltoon</string>
+    <string name="core_sound_unlock_countdown">Aftellen ontgrendelen</string>
+    <string name="core_sound_backup_code">Invoer van de back-upcode</string>
+    <string name="core_sound_pairing_ok">Koppelen gelukt</string>
+    <string name="core_sound_pairing_failed">Koppelen mislukt</string>
+    <string name="core_sound_find_my">Zoektoon</string>
+    <string name="core_sound_alarm_one">Alarmniveau\u00A01</string>
+    <string name="core_sound_alarm_two">Alarmniveau\u00A02</string>
+    <string name="core_sound_noise">Lawaai</string>
+    <string name="core_sound_startup">Opstarttoon</string>
+    <string name="core_sound_shutdown">Uitschakeltoon</string>
+    <string name="core_sound_charging">Laadtoon</string>
+    <string name="core_sound_diagnostics">Diagnosetoon</string>
+    <string name="core_sound_reset_countdown">Afteltijd voor herstart</string>
+    <string name="core_sound_firmware_loading">Firmware laden</string>
+    <string name="core_sound_firmware_failed">Firmware mislukt</string>
+    <string name="core_sound_unpair">Ontkoppelen</string>
+
+    <!-- Fault table: name and what to do -->
+    <string name="core_fault_0_name">Accu: kortsluitbeveiliging</string>
+    <string name="core_fault_0_hint">De accu heeft zichzelf uitgeschakeld na een kortsluiting; mogelijk is de zekering doorgeslagen. Controleer de bedrading en de stekker aan de accu.</string>
+    <string name="core_fault_1_name">Accu: MOSFET te heet</string>
+    <string name="core_fault_1_hint">De vermogensschakelaar (MOSFET) in de accu is te heet. Laat de fiets afkoelen en probeer het daarna opnieuw.</string>
+    <string name="core_fault_2_name">Accu: kortsluiting bij voorontlading</string>
+    <string name="core_fault_2_hint">De accu detecteerde bij het inschakelen een kortsluiting. Controleer de bedrading tussen accu en fiets.</string>
+    <string name="core_fault_3_name">Accu: overbelasting bij voorontlading</string>
+    <string name="core_fault_3_hint">De accu detecteerde bij het inschakelen een overbelasting. Zoek naar een kortsluiting in de bedrading tussen accu en fiets.</string>
+    <string name="core_fault_4_name">Accu: onderspanning niveau\u00A02</string>
+    <string name="core_fault_4_hint">De accuspanning is erg laag geworden. Laad de accu langer op. Blijft de code, dan moet het BMS worden gereset (werkplaats).</string>
+    <string name="core_fault_5_name">Accu: onderspanning niveau\u00A01</string>
+    <string name="core_fault_5_hint">De accuspanning is laag. Laad de accu op.</string>
+    <string name="core_fault_6_name">Accu: overspanning niveau\u00A02</string>
+    <string name="core_fault_6_hint">De accuspanning is te hoog. Trek de lader los en controleer of het de juiste is (42\u00A0V). Een storing op niveau\u00A02 vraagt om een BMS-reset.</string>
+    <string name="core_fault_7_name">Accu: overspanning niveau\u00A01</string>
+    <string name="core_fault_7_hint">De accuspanning is te hoog. Trek de lader los en controleer of het de juiste is (42\u00A0V).</string>
+    <string name="core_fault_8_name">Accu: laadstroom te hoog (niveau\u00A01)</string>
+    <string name="core_fault_8_hint">De accu nam te veel laadstroom op. Controleer de lader (42\u00A0V).</string>
+    <string name="core_fault_9_name">Accu: laadstroom te hoog (niveau\u00A02)</string>
+    <string name="core_fault_9_hint">Te veel laadstroom. Controleer de lader (42\u00A0V). Een storing op niveau\u00A02 vraagt om een BMS-reset.</string>
+    <string name="core_fault_10_name">Accu: ontlaadstroom te hoog (niveau\u00A02)</string>
+    <string name="core_fault_10_hint">De fiets trok te veel stroom. Zoek naar een kortsluiting in de bedrading of een motorprobleem. Een storing op niveau\u00A02 vraagt om een BMS-reset.</string>
+    <string name="core_fault_11_name">Accu: ontlaadstroom te hoog (niveau\u00A01)</string>
+    <string name="core_fault_11_hint">De fiets trok kort te veel stroom, bijvoorbeeld op een steile helling of met Boost. Komt de code ook op vlak terrein terug, controleer dan de motor en de motorkabel.</string>
+    <string name="core_fault_12_name">Accu: te koud om te laden</string>
+    <string name="core_fault_12_hint">De accu is te koud om te laden. Laad hem op bij kamertemperatuur. Verschijnt de code ook bij normale temperatuur, dan is mogelijk een temperatuursensor in de accu defect.</string>
+    <string name="core_fault_13_name">Accu: te heet om te laden</string>
+    <string name="core_fault_13_hint">De accu is te heet om te laden. Laat hem afkoelen en laad hem daarna op. Verschijnt de code ook bij normale temperatuur, dan is mogelijk een temperatuursensor in de accu defect.</string>
+    <string name="core_fault_14_name">Accu: te koud om te rijden</string>
+    <string name="core_fault_14_hint">De accu is te koud om stroom te leveren. Laat de fiets opwarmen. Verschijnt de code ook bij normale temperatuur, dan is mogelijk een temperatuursensor in de accu defect.</string>
+    <string name="core_fault_15_name">Accu: te heet om te rijden</string>
+    <string name="core_fault_15_hint">De accu is te heet om stroom te leveren. Laat de fiets afkoelen. Verschijnt de code ook bij normale temperatuur, dan is mogelijk een temperatuursensor in de accu defect.</string>
+    <string name="core_fault_16_name">Accu: permanente storing (BMS)</string>
+    <string name="core_fault_16_hint">De accu meldt een permanente storing of antwoordt helemaal niet. Vaak is de zekering doorgebrand, waarschijnlijk door een kortsluiting aan de accuaansluiting. Controleer stekker en aansluiting op brandplekken. Daarna moet een werkplaats de accu controleren.</string>
+    <string name="core_fault_17_name">Accu geeft laden en ontladen niet vrij</string>
+    <string name="core_fault_17_hint">De accu heeft zijn laad- of ontlaaduitgang niet ingeschakeld. Controleer stekker en kabel van de accu en start de fiets opnieuw op.</string>
+    <string name="core_fault_18_name">Accu niet gedetecteerd</string>
+    <string name="core_fault_18_hint">De fiets ziet de accu niet (het detectiesignaal blijft laag). Controleer of de accu helemaal erin zit, en daarna stekker en kabel. Verschijnt tegelijk de 42, dan kan de fiets overgaan naar de transportmodus.</string>
+    <string name="core_fault_19_name">Busfout accu</string>
+    <string name="core_fault_19_hint">De fiets kan niet met de accu praten via de datalijn (Modbus). Controleer stekker en kabel van de accu. Blijft de storing, dan is mogelijk de interfacechip in de module of het BMS zelf defect.</string>
+    <string name="core_fault_20_name">Voedingsspanning te laag</string>
+    <string name="core_fault_20_hint">De voedingsspanning ligt onder 25\u00A0V, alsof de accu zijn uitgang heeft uitgeschakeld. Laad de accu op en controleer de accustekker. Een korte 20 direct na een reset is normaal.</string>
+    <string name="core_fault_21_name">Laden zonder stroom</string>
+    <string name="core_fault_21_hint">De fiets ziet een lader, maar er loopt geen laadstroom. Controleer de lader (42\u00A0V) en de laadaansluiting. Ook een bereikte laadlimiet kan dit veroorzaken.</string>
+    <string name="core_fault_22_name">Motorsturing reageert niet</string>
+    <string name="core_fault_22_hint">De module krijgt geen antwoord van de motorsturing, dus er is geen ondersteuning. Staat de fiets stil, dan probeert hij de sturing zelf te herstarten. Zet de fiets uit en weer aan. Blijft de code, dan krijgt de sturing geen spanning of is hij defect (werkplaats).</string>
+    <string name="core_fault_23_name">Bluetooth-chip herstart</string>
+    <string name="core_fault_23_hint">De module heeft het contact met zijn Bluetooth-chip verloren en start hem opnieuw op, dus de app kan mogelijk niet verbinden. Met de back-upcode kun je nog steeds ontgrendelen. Blijft de code, dan is de chip of zijn firmware defect (werkplaats).</string>
+    <string name="core_fault_24_name">Updateoverdracht afgebroken</string>
+    <string name="core_fault_24_hint">De firmwareoverdracht vanaf de app is afgebroken. Start de fiets opnieuw op en begin de update opnieuw, met je telefoon dicht bij de fiets.</string>
+    <string name="core_fault_25_name">Updateoverdracht: controlesomfout</string>
+    <string name="core_fault_25_hint">Het overgedragen firmwarebestand doorstond de controlesom niet. Start de fiets opnieuw op en draag de update opnieuw over.</string>
+    <string name="core_fault_26_name">Updateoverdracht duurde te lang</string>
+    <string name="core_fault_26_hint">De firmwareoverdracht duurde te lang. Start de fiets opnieuw op en probeer het opnieuw met je telefoon dicht bij de fiets.</string>
+    <string name="core_fault_27_name">Updatepakket ontbreekt of is ongeldig</string>
+    <string name="core_fault_27_hint">Een bestand in het updatepakket ontbreekt of is ongeldig. Start de fiets opnieuw op en laad het pakket opnieuw.</string>
+    <string name="core_fault_28_name">Flashprogrammering: time-out</string>
+    <string name="core_fault_28_hint">De module heeft het schrijven van de nieuwe firmware niet op tijd afgerond. Start de fiets opnieuw op en herhaal de update. Mislukt het weer, dan moet een werkplaats de module controleren.</string>
+    <string name="core_fault_29_name">Updatepakket: header niet gevonden</string>
+    <string name="core_fault_29_hint">De module vond geen header in het firmwarebestand van het updatepakket. Het pakket is beschadigd of verkeerd. Herhaal de update met een intact pakket.</string>
+    <string name="core_fault_30_name">Updatepakket: geen bestanden</string>
+    <string name="core_fault_30_hint">Het updatepakket bevat geen bestanden. Herhaal de update met een compleet pakket.</string>
+    <string name="core_fault_31_name">Flash wissen mislukt</string>
+    <string name="core_fault_31_hint">De module kon zijn oude firmware niet wissen. Start de fiets opnieuw op en herhaal de update. Mislukt het weer, dan moet een werkplaats de module controleren.</string>
+    <string name="core_fault_32_name">Flash schrijven mislukt</string>
+    <string name="core_fault_32_hint">De module kon de nieuwe firmware niet schrijven. Start de fiets opnieuw op en herhaal de update. Mislukt het weer, dan moet een werkplaats de module controleren.</string>
+    <string name="core_fault_33_name">Updatepakket: controlesomfout</string>
+    <string name="core_fault_33_hint">Een bestand in het updatepakket heeft een controlesomfout. Herhaal de update met een vers pakket.</string>
+    <string name="core_fault_34_name">Motorupdate mislukt</string>
+    <string name="core_fault_34_hint">De update van de motorsturing (motorware) is niet afgerond. Start de fiets opnieuw op en herhaal de update. Reageert de motor daarna niet meer (code\u00A022), dan moet een werkplaats de firmware herstellen.</string>
+    <string name="core_fault_35_name">Accu-update mislukt</string>
+    <string name="core_fault_35_hint">De update van de accusturing (BMS) is niet afgerond. Start de fiets opnieuw op en herhaal de update. Blijft de accu stil, dan moet een werkplaats hem opnieuw flashen.</string>
+    <string name="core_fault_36_name">Shifter-update mislukt</string>
+    <string name="core_fault_36_hint">De update van de shiftersturing is niet afgerond. Start de fiets opnieuw op en herhaal de update. Blijft de shifter stil (code\u00A044), dan moet een werkplaats hem opnieuw flashen.</string>
+    <string name="core_fault_37_name">Bluetooth-update mislukt</string>
+    <string name="core_fault_37_hint">De update van de Bluetooth-sturing is niet afgerond. Start de fiets opnieuw op en herhaal de update. Kan de app niet meer verbinden, dan kun je nog steeds ontgrendelen met de back-upcode; een werkplaats kan de chip opnieuw flashen.</string>
+    <string name="core_fault_38_name">Meting moduleaccu verstoord</string>
+    <string name="core_fault_38_hint">De fiets kan de kleine accu in de Smart Cartridge niet uitlezen; misschien ontbreekt hij, is hij leeg of versleten. Laad de fiets op en controleer of de moduleaccu oplaadt. Blijft de code, vervang dan de moduleaccu.</string>
+    <string name="core_fault_39_name">Storing lichtsensor</string>
+    <string name="core_fault_39_hint">De module kan de lichtsensor niet lezen (I²C-fout), dus het automatische licht kan zich vreemd gedragen. Start de fiets opnieuw op. Blijft de code, dan moet de module worden gerepareerd.</string>
+    <string name="core_fault_40_name">Belknop zit vast</string>
+    <string name="core_fault_40_hint">De fiets zag de belknop langer dan 20\u00A0s als ingedrukt. Maak de knop schoon of vervang hem en controleer de kabel op vocht of kortsluiting.</string>
+    <string name="core_fault_41_name">Boostknop zit vast</string>
+    <string name="core_fault_41_hint">De fiets zag de boostknop langer dan 20\u00A0s als ingedrukt. Maak de knop schoon of vervang hem en controleer de kabel op vocht of kortsluiting.</string>
+    <string name="core_fault_42_name">Kick Lock-spoel niet gedetecteerd</string>
+    <string name="core_fault_42_hint">De fiets herkent de spoel in de Kick Lock niet. Meestal zit een stekker los of is een kabel bekneld. Controleer alsjeblieft de Kick Lock-stekker en loop de kabel na op knikken. Valt tegelijk de accudetectie weg, dan gaat de fiets waarschijnlijk over naar de transportmodus.</string>
+    <string name="core_fault_43_name">Versnelling niet ingeschakeld</string>
+    <string name="core_fault_43_hint">De shifter probeerde het tien keer en bereikte de versnelling niet. Controleer kabel en stekker van de shifter bij de achternaaf en schakel daarna opnieuw.</string>
+    <string name="core_fault_44_name">E-shifter reageert niet</string>
+    <string name="core_fault_44_hint">De fiets kreeg vijf keer geen antwoord van de shifter. Controleer stekker en kabel van de shifter bij de achternaaf. Zijn beide in orde, dan is waarschijnlijk de shifterprint defect (werkplaats).</string>
+    <string name="core_fault_45_name">Motorkabel of temperatuursensor open</string>
+    <string name="core_fault_45_hint">De temperatuursensor (NTC) van de motor meldt een open leiding, alsof de motorkabel is losgetrokken of gebroken. Controleer de motorstekker en de kabelboom naar het voorwiel op knikken en breuken. Draait de motor nog, dan is dit vaak het eerste teken van een defecte kabelboom; zonder de sensor heeft de motor geen oververhittingsbeveiliging. Draai het voorwiel rond: verschijnt er een snelheid, dan is de snelheidsleiding nog heel.</string>
+    <string name="core_fault_46_name">Motordriver: oververhitting of overstroom</string>
+    <string name="core_fault_46_hint">De motordriverchip (DRV8301) meldde een fout. De werkplaatstabel noemt oververhitting, de naam van de code overstroom. Laat de fiets afkoelen en start hem opnieuw op. Komt de code terug, controleer dan de motorkabel op schade; daarna moet een werkplaats de sturing controleren.</string>
+    <string name="core_fault_47_name">Accu meldt geen laadniveau</string>
+    <string name="core_fault_47_hint">De accu meldt zijn laadniveau niet. Controleer stekker en kabel van de accu en start de fiets opnieuw op.</string>
+    <string name="core_fault_48_name">Statusbit wielsnelheid</string>
+    <string name="core_fault_48_hint">YABA telt de 48 niet als storing: de firmware zet dit bit op basis van de wielsnelheidspulsen. De werkplaatstabel noemt de 48 een fout van de motorsturing (parameterfout, motor vervangen). Toont de fiets 48 op het display of klopt de snelheid niet, controleer dan de motorstekker en de snelheidsleiding in de kabelboom.</string>
+    <string name="core_fault_49_name">Motor: stroommeting wijkt af</string>
+    <string name="core_fault_49_hint">Bij het opstarten mat de motorsturing een stroomoffset die ver van de standaardwaarde (1,0) afligt, dus de stroommeting klopt niet. Start de fiets opnieuw op. Blijft de code, dan moet een werkplaats de sturing controleren.</string>
+    <string name="core_fault_50_name">Motor: spanningsmeting wijkt af</string>
+    <string name="core_fault_50_hint">Bij het opstarten klopte de spanningsmeting van de motorsturing niet. Start de fiets opnieuw op en controleer de accustekker. Blijft de code, dan moet een werkplaats de sturing controleren.</string>
+    <string name="core_fault_51_name">Motorvermogen door hitte beperkt</string>
+    <string name="core_fault_51_hint">De motorsturing heeft de maximale stroom verlaagd omdat hij heet is. Laat de fiets afkoelen. Dit is een waarschuwing, geen defect.</string>
+    <string name="core_fault_52_name">Koppelsensor uitgevallen</string>
+    <string name="core_fault_52_hint">De motorsturing meldt een uitgevallen koppelsensor. Controleer stekker en kabel van de koppelsensor en start de fiets opnieuw op.</string>
+    <string name="core_fault_53_name">Kritieke motorstoring (motor niet gereed)</string>
+    <string name="core_fault_53_hint">De motorsturing meldt een zware fout (parameterfout plus niet gereed) en start niet. Start de fiets één keer opnieuw op. Blijft de code, dan adviseert de werkplaatstabel de motor te vervangen; laat motor en sturing door een werkplaats controleren.</string>
+    <string name="core_fault_54_name">Geen simkaart</string>
+    <string name="core_fault_54_hint">De fiets herkent de simkaart van zijn tracker niet, dus de locatiebepaling werkt niet. Het rijden wordt hierdoor niet beïnvloed. Controleer of de sim in zijn sleuf zit en in een ander apparaat werkt.</string>
+    <string name="core_fault_55_name">Opstartfout interne bus</string>
+    <string name="core_fault_55_hint">Meerdere chips op de interne I²C-bus van de module reageerden niet bij het opstarten. Start de fiets opnieuw op. Blijft de code, dan is de module (Smart Cartridge) waarschijnlijk defect.</string>
+    <string name="core_fault_56_name">Verkeerde simkaart</string>
+    <string name="core_fault_56_hint">Dit is geen VanMoof-sim (het nummer heeft het verkeerde voorvoegsel). Plaats de sim die bij de fiets hoort.</string>
+    <string name="core_fault_57_name">Sim niet leesbaar</string>
+    <string name="core_fault_57_hint">De modem herkent de sim, maar kan hem niet lezen. Haal de sim eruit, maak de contacten schoon en plaats hem terug. Blijft de code, probeer dan een andere VanMoof-sim.</string>
+    <string name="core_fault_58_name">GSM-modem start niet</string>
+    <string name="core_fault_58_hint">De start van de modem is mislukt. Start de fiets opnieuw op; de code verdwijnt vaak na een reset. Blijft hij, dan is de modemchip waarschijnlijk defect (hij is makkelijk te vervangen).</string>
+    <string name="core_fault_60_name">Fabrieksmodus</string>
+    <string name="core_fault_60_hint">De fiets draait op zijn fabrieksfirmware in plaats van de normale firmware. Een werkplaats moet de normale firmware opnieuw installeren.</string>
+    <string name="core_fault_unknown_name">Onbekende code</string>
+    <string name="core_fault_unknown_hint">Deze code staat niet in de storingstabel. Noteer het nummer en wanneer het verschijnt.</string>
+
+    <!-- Lock state, used inside sentences (lower case) -->
+    <string name="core_lock_unlocked">ontgrendeld</string>
+    <string name="core_lock_locked">vergrendeld</string>
+    <string name="core_lock_pin_entry">code-invoer</string>
+
+    <!-- Link messages and connection errors -->
+    <string name="core_link_key_invalid">De sleutel is ongeldig. Leg de fiets in de garage opnieuw aan of laad hem opnieuw.</string>
+    <string name="core_link_bike_not_found">Fiets niet gevonden. Beweeg de fiets even of druk op de belknop om hem te wekken. De VanMoof-app moet gesloten zijn.</string>
+    <string name="core_link_location_off">De locatie staat uit. Zonder locatie vindt Android geen Bluetooth-apparaten.</string>
+    <string name="core_error_bluetooth_off">Bluetooth staat uit.</string>
+    <string name="core_error_connect_failed">Verbinden mislukt</string>
+    <string name="core_error_invalid_mac">Ongeldig MAC-adres %1$s</string>
+    <string name="core_error_not_s3">Dit is geen S3 of X3, of de Bluetooth-cache is beschadigd.</string>
+    <string name="core_error_not_connected_wake">Niet verbonden. Wek de fiets alsjeblieft en wacht even.</string>
+    <string name="core_error_not_connected">Niet verbonden</string>
+    <string name="core_error_link_lost">Verbinding onderbroken</string>
+    <string name="core_error_no_challenge">De fiets heeft geen challenge verzonden</string>
+    <string name="core_error_read_failed">%1$s: lezen mislukt</string>
+    <string name="core_error_connect_gatt_null">Android kon geen verbinding openen (connectGatt gaf null terug)</string>
+    <string name="core_error_no_answer">Geen antwoord van de fiets. Meestal slaapt de fiets, of de VanMoof-app is op dit moment met de fiets verbonden.</string>
+    <string name="core_error_connect_133">De verbinding is onderbroken (133). De fiets accepteert maar één verbinding tegelijk.</string>
+    <string name="core_error_connect_status">Verbinden mislukt (status %1$s)</string>
+    <string name="core_error_services">De services van de fiets konden niet worden gelezen</string>
+    <string name="core_error_services_status">De services van de fiets konden niet worden gelezen (status %1$s)</string>
+    <string name="core_error_missing_char">Kenmerk %1$s ontbreekt op de fiets</string>
+    <string name="core_error_op_not_started">%1$s kon niet worden gestart</string>
+    <string name="core_error_op_timeout">%1$s: time-out</string>
+    <string name="core_error_op_failed">%1$s mislukt (status %2$d)</string>
+    <string name="core_op_read">Lezen</string>
+    <string name="core_op_write">Schrijven</string>
+    <string name="core_op_notify">Meldingen instellen</string>
+    <string name="core_op_mtu">MTU-verzoek</string>
+
+    <!-- Commands: event log entry and error prefix -->
+    <string name="core_cmd_failed">%1$s mislukt</string>
+    <string name="core_cmd_refresh">Vernieuwen</string>
+    <string name="core_cmd_read_raw">Ruwe data gelezen</string>
+    <string name="core_cmd_unlock">Ontgrendelen</string>
+    <string name="core_cmd_lock">Vergrendelen</string>
+    <string name="core_cmd_speed_limit">Snelheidslimiet %1$d\u00A0km/u</string>
+    <string name="core_cmd_level">Stand\u00A0%1$d</string>
+    <string name="core_cmd_light">Licht: %1$s</string>
+    <string name="core_cmd_bell">Beltoon: %1$s</string>
+    <string name="core_cmd_unit">Eenheid: %1$s</string>
+    <string name="core_cmd_wake">Wekken</string>
+    <string name="core_cmd_backup_cleared">Back-upcode verwijderd</string>
+    <string name="core_cmd_backup_set">Back-upcode ingesteld</string>
+    <string name="core_cmd_bike_log">Logboek van de fiets gelezen</string>
+    <string name="core_cmd_custom_bell">Eigen beltoon</string>
+    <string name="core_alarm_on">Alarm aan</string>
+    <string name="core_alarm_off">Alarm uit</string>
+
+    <!-- Command errors -->
+    <string name="core_error_speed_rejected">De fiets heeft %1$d\u00A0km/u niet overgenomen (hij meldt %2$s\u00A0km/u).</string>
+    <string name="core_error_speed_rejected_lock">De fiets heeft %1$d\u00A0km/u niet overgenomen (hij meldt %2$s\u00A0km/u, regiobeperking %3$d).</string>
+    <string name="core_error_region_locked">De regio van de fiets is beperkt. Hij behoudt zijn snelheidslimiet en heeft %1$d\u00A0km/u geweigerd.</string>
+    <string name="core_error_level_rejected">De fiets heeft stand\u00A0%1$d niet overgenomen (hij meldt %2$s).</string>
+    <string name="core_error_wake_riding">Niet nodig tijdens het rijden.</string>
+    <string name="core_error_backup_digits">Drie cijfers van 1 t/m 9.</string>
+    <string name="core_error_no_bike_log">Deze fiets biedt geen logboek aan.</string>
+
+    <!-- Event log -->
+    <string name="core_log_key_invalid">Sleutel voor %1$s is ongeldig</string>
+    <string name="core_log_searching">Zoeken naar %1$s</string>
+    <string name="core_log_disconnected">Verbinding gesloten</string>
+    <string name="core_log_connected">Verbonden en ingelogd</string>
+    <string name="core_log_link_lost_riding">Verbinding tijdens het rijden onderbroken</string>
+    <string name="core_log_link_lost">Verbinding onderbroken</string>
+    <plurals name="core_log_subscribed">
+        <item quantity="one">Geabonneerd op %1$d doorlopende waarde</item>
+        <item quantity="other">Geabonneerd op %1$d doorlopende waarden</item>
+    </plurals>
+    <string name="core_log_firmware">Firmware\u00A0%1$s</string>
+    <string name="core_log_transfer">Overdracht: %1$s</string>
+    <string name="core_log_shipping">Fiets meldt transportmodus</string>
+    <string name="core_log_kicklock_riding">Kick Lock meldt vergrendeld tijdens het rijden</string>
+    <string name="core_log_lock">Slot: %1$s</string>
+    <string name="core_log_status">Status: %1$s</string>
+    <string name="core_log_fault">Storing\u00A0%1$d: %2$s</string>
+    <string name="core_log_faults_cleared">Storingen niet meer actief: %1$s</string>
+    <string name="core_log_power_button_riding">Aan/herstart-knop meldt ingedrukt tijdens het rijden</string>
+    <string name="core_log_supply_low">Voedingsspanning onder 20\u00A0V</string>
+    <string name="core_log_supply_ok">Voeding weer normaal</string>
+    <string name="core_log_charger_in">Oplader aangesloten</string>
+    <string name="core_log_charger_out">Oplader losgekoppeld</string>
+    <string name="core_log_alarm">Alarm: %1$s</string>
+    <string name="core_log_unlock_request">Fiets vraagt om ontgrendeling</string>
+    <string name="core_log_ride_started">Ritregistratie gestart</string>
+    <string name="core_log_ride_stopped">Ritregistratie beëindigd</string>
+
+    <!-- Event details (parts are joined with commas) -->
+    <string name="core_detail_status">Status %1$s</string>
+    <string name="core_detail_status_before">Voorheen %1$s</string>
+    <string name="core_detail_shipping">transportmodus gemeld</string>
+    <string name="core_detail_battery">accu %1$d%%</string>
+    <string name="core_detail_speed">%1$d\u00A0km/u</string>
+    <string name="core_detail_supply_ok">voeding in orde</string>
+    <string name="core_detail_supply_low">voeding laag</string>
+    <string name="core_detail_lock">slot %1$s</string>
+    <string name="core_detail_faults">storingen\u00A0%1$s</string>
+    <string name="core_detail_shipping_state">%1$d\u00A0km/u, slot %2$s, storingen\u00A0%3$s</string>
+    <string name="core_detail_supply_low_state">%1$d\u00A0km/u, accu %2$s%%</string>
+    <string name="core_none">geen</string>
+
+    <!-- Custom bell transfer status (OAD) -->
+    <string name="core_oad_started">gestart</string>
+    <string name="core_oad_done">voltooid, controlesom klopt</string>
+    <string name="core_oad_block_ok">blok geaccepteerd</string>
+    <string name="core_oad_bad_checksum">controlesom klopt niet</string>
+    <string name="core_oad_not_writable">geheugen niet beschrijfbaar</string>
+    <string name="core_oad_bad_type">ongeldig bestandstype</string>
+    <string name="core_oad_too_large">bestand te groot</string>
+    <string name="core_oad_code">code\u00A0%1$s</string>
+
+    <!-- Account and cloud -->
+    <string name="core_default_bike_name">Mijn S3</string>
+    <string name="core_error_no_valid_keys">Geen geldige sleutels gevonden.</string>
+    <string name="core_error_not_logged_in">Niet ingelogd.</string>
+    <string name="core_vault_unavailable">De sleutelkluis is niet beschikbaar.</string>
+    <string name="core_vault_unreadable">De sleutelkluis is momenteel niet leesbaar. Start de app alsjeblieft opnieuw.</string>
+    <string name="core_vault_save_failed">De sleutelkluis kon niet worden opgeslagen.</string>
+    <string name="core_api_wrong_credentials">E-mail of wachtwoord klopt niet.</string>
+    <string name="core_api_no_token">Het antwoord op het inloggen bevatte geen inlogtoken.</string>
+    <string name="core_api_session_expired">De sessie is verlopen. Log alsjeblieft opnieuw in.</string>
+    <string name="core_api_refresh_no_token">Het verlengen van de sessie leverde geen inlogtoken op.</string>
+    <string name="core_api_rate_limited">De server van VanMoof beperkt momenteel het aantal verzoeken. Wacht alsjeblieft een minuut.</string>
+    <string name="core_api_not_authenticated">Niet ingelogd of sessie verlopen.</string>
+    <string name="core_api_not_owner">Hiervoor heb je geen toestemming. Alleen de eigenaar mag dit.</string>
+    <string name="core_api_no_permission">Geen toestemming.</string>
+    <string name="core_api_server_error">De server van VanMoof heeft met fout\u00A0%1$d geantwoord.</string>
+    <string name="core_api_unexpected">Onverwacht antwoord van de server van VanMoof.</string>
+    <string name="core_api_timeout">Time-out. De actie is mogelijk toch uitgevoerd. Laad de lijst alsjeblieft opnieuw.</string>
+    <string name="core_api_connection_dropped">De verbinding met de server van VanMoof is onderbroken.</string>
+    <string name="core_api_unreachable">De server van VanMoof is niet bereikbaar. Controleer alsjeblieft je internetverbinding.</string>
+
+    <!-- Account messages -->
+    <plurals name="core_account_bikes_loaded">
+        <item quantity="one">%1$d fiets geladen.</item>
+        <item quantity="other">%1$d fietsen geladen.</item>
+    </plurals>
+    <string name="core_account_without_key">Nog geen sleutel: %1$s.</string>
+    <plurals name="core_account_bikes_refreshed">
+        <item quantity="one">%1$d fiets bijgewerkt.</item>
+        <item quantity="other">%1$d fietsen bijgewerkt.</item>
+    </plurals>
+    <string name="core_account_logged_out">Uitgelogd. Je sleutels blijven op deze telefoon.</string>
+    <string name="core_account_bike_added">%1$s toegevoegd.</string>
+    <plurals name="core_account_imported">
+        <item quantity="one">%1$d fiets geïmporteerd.</item>
+        <item quantity="other">%1$d fietsen geïmporteerd.</item>
+    </plurals>
+    <plurals name="core_account_import_skipped">
+        <item quantity="one">%1$d ongeldige vermelding overgeslagen.</item>
+        <item quantity="other">%1$d ongeldige vermeldingen overgeslagen.</item>
+    </plurals>
+    <string name="core_account_import_failed">Importeren mislukt.</string>
+    <string name="core_error_unknown">Onbekende fout.</string>
+    <string name="core_share_shared_with">Gedeeld met %1$s.</string>
+    <string name="core_share_revoked">Delen gestopt.</string>
+
+    <!-- Custom bell conversion and upload -->
+    <string name="core_bell_silent">Het bestand bevat alleen stilte.</string>
+    <string name="core_bell_too_long">Het geluid is te lang. Kies een korter geluid.</string>
+    <string name="core_bell_cannot_open">Het bestand kan niet worden geopend.</string>
+    <string name="core_bell_no_audio">Het bestand heeft geen audiospoor.</string>
+    <string name="core_bell_unsupported">Deze telefoon kan dit formaat niet decoderen.</string>
+    <string name="core_bell_no_data">Het bestand bevat geen leesbare audiogegevens.</string>
+    <string name="core_bell_convert_failed">Omzetten mislukt.</string>
+    <string name="core_bell_upload_aborted">De overdracht is afgebroken. Houd de telefoon alsjeblieft dicht bij de fiets en verzend opnieuw.</string>
+
+    <!-- Ride logger -->
+    <string name="core_ride_error_permission">De Bluetooth-toegang ontbreekt. Sta alsjeblieft eerst toegang tot apparaten in de buurt toe.</string>
+    <string name="core_ride_share_subject">S3-ritregistratie %1$s</string>
+    <string name="core_ride_notif_running">Ritregistratie loopt</string>
+    <plurals name="core_ride_notif_incidents">
+        <item quantity="one">Ritregistratie: %1$d incident</item>
+        <item quantity="other">Ritregistratie: %1$d incidenten</item>
+    </plurals>
+    <string name="core_ride_notif_connecting">Verbinden…</string>
+    <string name="core_ride_notif_battery">Accu %1$d%%</string>
+    <string name="core_ride_notif_lost">Verbinding onderbroken, blijft zoeken</string>
+    <string name="core_ride_notif_searching">De fiets zoeken</string>
+    <string name="core_ride_notif_stop">Stoppen</string>
+
+    <!-- Debug builds only: demo data and component gallery -->
+    <string name="core_demo_kicklock_contact">Kick Lock-contact: actief</string>
+    <string name="core_gallery_connected">Verbonden</string>
+    <string name="core_gallery_battery">Accu</string>
+    <string name="core_gallery_percent">%1$d%%</string>
+    <string name="core_gallery_distance">Kilometers</string>
+    <string name="core_gallery_level">Stand</string>
+    <string name="core_gallery_limit">Limiet</string>
+    <string name="core_gallery_speed_limit">Snelheidslimiet</string>
+    <string name="core_gallery_assist">Ondersteuning</string>
+    <string name="core_gallery_light">Licht</string>
+    <string name="core_gallery_soundboard">Soundboard</string>
+    <string name="core_gallery_send_bell">Beltoon verzenden</string>
+    <string name="core_gallery_search_again">Opnieuw zoeken</string>
+    <string name="core_notif_link_lost_riding">Verbinding met de fiets onderbroken. De fiets rijdt ongewijzigd door en YABA maakt opnieuw verbinding.</string>
+    <string name="core_server_error_title">Fout van de server van VanMoof</string>
+    <string name="core_server_error_text">De server van VanMoof heeft om %1$s\u00A0uur met fout\u00A0%2$d geantwoord. Je fiets wordt hierdoor niet beïnvloed: ontgrendelen, licht, bel en diagnose lopen rechtstreeks via Bluetooth. Alleen het inloggen en delen wachten op de server. Tik op “Opnieuw proberen” om het verzoek te herhalen.</string>
+    <string name="core_server_timeout_title">Geen antwoord van de server van VanMoof</string>
+    <string name="core_server_timeout_text">Om %1$s\u00A0uur kwam er binnen 10\u00A0seconden geen antwoord. Je fiets wordt hierdoor niet beïnvloed: ontgrendelen, licht, bel en diagnose lopen rechtstreeks via Bluetooth. Alleen het inloggen en delen wachten op de server. Tik op “Opnieuw proberen” om het verzoek te herhalen.</string>
+    <string name="core_server_dead_title">De server van VanMoof antwoordt niet</string>
+    <string name="core_server_dead_text">De server van VanMoof heeft sinds %1$d\u00A0dagen op geen enkel verzoek van deze telefoon geantwoord. Je fiets heeft hem niet nodig: ontgrendelen, licht, bel en diagnose blijven rechtstreeks via Bluetooth werken. Alleen het inloggen en delen zijn niet mogelijk zolang de server niet antwoordt.</string>
+    <string name="core_server_retry">Opnieuw proberen</string>
+</resources>

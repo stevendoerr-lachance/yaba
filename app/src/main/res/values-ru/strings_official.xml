@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The official VanMoof app competing for the Bluetooth link -->
+    <string name="official_joined_link">Велосипед уже подключён к этому телефону. YABA присоединяется к этому подключению.</string>
+    <string name="official_title">Установлено приложение VanMoof</string>
+    <string name="official_explain">Приложение VanMoof часто удерживает в фоне единственное Bluetooth-подключение к велосипеду, потому что велосипед принимает только один телефон за раз. YABA может присоединиться к этому подключению на этом телефоне. Если не получится, закрой приложение VanMoof.</string>
+    <string name="official_quit">Закрыть приложение VanMoof</string>
+    <string name="official_quit_done">Приложение VanMoof закрыто, YABA ищет заново. Если блокировка остаётся, нажми «Остановить» на странице «О приложении» приложения VanMoof.</string>
+    <string name="official_mute">Отозвать доступ к Bluetooth</string>
+    <string name="official_mute_steps">Открой страницу «О приложении» приложения VanMoof и выбери «Разрешения», «Устройства поблизости», «Запретить». После этого приложение VanMoof больше не видит велосипед. Разреши доступ снова, как только понадобится приложение VanMoof.</string>
+    <string name="official_open_settings_failed">Не удалось открыть настройки приложения VanMoof. Пожалуйста, открой вручную «Настройки», «Приложения», «VanMoof».</string>
+    <string name="official_shared_hint">Подключено через Bluetooth-подключение, которое установило приложение VanMoof.</string>
+</resources>

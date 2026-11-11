@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Suoni inclusi nella schermata Suoni: dieci suoni originali forniti con l'app (tools/bells). -->
+<resources>
+    <string name="bells_hint">Un tocco riproduce il suono sul telefono.</string>
+    <string name="bells_choose">Scegli</string>
+    <string name="bells_muted">Il volume multimediale è a zero. Alzalo per sentire l’anteprima.</string>
+    <string name="bells_preview_failed">Impossibile riprodurre l’anteprima.</string>
+    <string name="bells_seconds">%1$s\u00A0s</string>
+
+    <!-- TalkBack -->
+    <string name="bells_row_cd">%1$s, %2$s</string>
+    <string name="bells_play_action">ascolta sul telefono</string>
+    <string name="bells_stop_action">ferma</string>
+    <string name="bells_state_playing">In riproduzione sul telefono</string>
+
+    <!-- Il suono nello slot personalizzato, sulla sua riga -->
+    <string name="bells_state_on_bike">Sulla bici</string>
+
+    <!-- Nomi -->
+    <string name="bells_name_ringring">Campanello da bici</string>
+    <string name="bells_name_tram">Tram di Zagabria</string>
+    <string name="bells_name_honk">Trombetta</string>
+    <string name="bells_name_stadium">Tromba da stadio</string>
+    <string name="bells_name_fanfare">Fanfara</string>
+    <string name="bells_name_cucaracha">La Cucaracha</string>
+    <string name="bells_name_trombone">Trombone triste</string>
+    <string name="bells_name_nightshift">Turno di notte</string>
+    <string name="bells_name_jingle">Jingle YABA</string>
+    <string name="bells_name_ufo">UFO</string>
+    <string name="bells_caption_phone">Sul telefono</string>
+</resources>

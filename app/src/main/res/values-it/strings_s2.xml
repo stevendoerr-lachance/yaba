@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VanMoof S2/X2 error codes (ble/S2Protocol.kt S2Faults); not the S3 fault table. -->
+    <string name="core_fault_s2_0_name">Nessun errore</string>
+    <string name="core_fault_s2_0_hint">La bici non segnala alcun guasto.</string>
+    <string name="core_fault_s2_1_name">Motore bloccato</string>
+    <string name="core_fault_s2_1_hint">Il motore non è riuscito a girare. Controllare che nulla blocchi le ruote, poi spegnere e riaccendere la bici.</string>
+    <string name="core_fault_s2_2_name">Sovratensione</string>
+    <string name="core_fault_s2_2_hint">Tensione della batteria troppo alta. Scollegare il caricatore e riavviare la bici.</string>
+    <string name="core_fault_s2_3_name">Sottotensione</string>
+    <string name="core_fault_s2_3_hint">Tensione della batteria troppo bassa. Caricare la batteria.</string>
+    <string name="core_fault_s2_motor_fast_alt_name">Motore troppo veloce (non confermato)</string>
+    <string name="core_fault_s2_motor_fast_alt_hint">Le fonti non concordano su questo codice; una lo legge come «motore troppo veloce». Annotare quando compare.</string>
+    <string name="core_fault_s2_motor_fast_name">Motore troppo veloce</string>
+    <string name="core_fault_s2_motor_fast_hint">Il motore ha girato più veloce del consentito, per esempio in discesa. Di solito sparisce da solo.</string>
+    <string name="core_fault_s2_6_name">Sovracorrente</string>
+    <string name="core_fault_s2_6_hint">Il motore ha assorbito troppa corrente. Riavviare la bici; se si ripete, far controllare il motore.</string>
+    <string name="core_fault_s2_7_name">Sensore di coppia anomalo</string>
+    <string name="core_fault_s2_7_hint">Il sensore dei pedali fornisce valori non plausibili. Riavviare la bici senza peso sui pedali.</string>
+    <string name="core_fault_s2_8_name">Sensore di coppia anomalo all’avvio</string>
+    <string name="core_fault_s2_8_hint">Il sensore dei pedali ha dato valori strani all’accensione. Riavviare la bici senza peso sui pedali.</string>
+    <string name="core_fault_s2_9_name">Sovratemperatura</string>
+    <string name="core_fault_s2_9_hint">Lasciare raffreddare la bici.</string>
+    <string name="core_fault_s2_16_name">Sensori Hall non concordi</string>
+    <string name="core_fault_s2_16_hint">I sensori di posizione del motore non coincidono. Controllare il cavo motore/sensore al tubo sterzo.</string>
+    <string name="core_fault_s2_25_name">Errore bus I²C</string>
+    <string name="core_fault_s2_25_hint">Errore di comunicazione interno nel modulo. Riavviare la bici.</string>
+    <string name="core_fault_s2_26_name">Il modem GSM non risponde</string>
+    <string name="core_fault_s2_26_hint">Il modem mobile non risponde, quindi la localizzazione potrebbe non funzionare. Riavviare la bici.</string>
+    <string name="core_fault_s2_27_name">Il controller del motore non risponde</string>
+    <string name="core_fault_s2_27_hint">Il controller del motore non risponde. Riavviare la bici; se persiste, controllare il cavo del controller.</string>
+    <string name="core_fault_s2_28_name">Registrazione GSM non riuscita</string>
+    <string name="core_fault_s2_28_hint">Il modem non è riuscito a registrarsi sulla rete mobile, quindi la localizzazione potrebbe non funzionare.</string>
+    <string name="core_fault_s2_29_name">Nessuna corrente dalla batteria</string>
+    <string name="core_fault_s2_29_hint">La batteria non eroga corrente. Caricarla e controllare il connettore della batteria.</string>
+
+    <!-- S2 and Device Information characteristic names (error texts, GATT overview); a command this bike family lacks. -->
+    <string name="core_char_s2_functions">Comandi (S2)</string>
+    <string name="core_char_s2_parameters">Blocco di stato (S2)</string>
+    <string name="core_char_s2_key_change">Cambio chiave (S2)</string>
+    <string name="core_char_device_model">Numero di modello</string>
+    <string name="core_char_device_serial">Numero di serie</string>
+    <string name="core_char_device_firmware">Versione firmware</string>
+    <string name="core_char_device_hardware">Versione hardware</string>
+    <string name="core_char_device_software">Versione software</string>
+    <string name="core_error_not_on_this_bike">Questo modello di bici non lo supporta.</string>
+
+    <!-- S2 driver (ble/S2Driver.kt) and the driver choice (BikeController.chooseDriver). -->
+    <string name="core_status_standby">Standby</string>
+    <string name="core_alarm_stage_automatic">Automatico</string>
+    <string name="core_cmd_alarm_stage">Allarme: %1$s</string>
+    <string name="core_cmd_s2_mute">Suoni silenziati modificati</string>
+    <string name="core_error_not_s2">Nessun servizio di stato S2 trovato. Non è una S2 o X2, oppure la cache Bluetooth è danneggiata.</string>
+    <string name="core_error_older_vanmoof">Ha risposto una VanMoof più vecchia (S/X 1, S/X 2 o SmartBike). Se è una S2 o X2, imposta quel modello per questa bici nel garage.</string>
+    <string name="core_error_legacy_unsupported">YABA non supporta questo modello VanMoof (SmartBike o Electrified S/X 1).</string>
+    <string name="core_error_s2_test_mode">Solo in modalità test S2: non ancora confermato su una vera S2.</string>
+    <string name="core_error_s2_frame">La bici non ha inviato un blocco di stato valido.</string>
+    <string name="core_error_s2_level_unknown">Il livello di assistenza non è ancora noto, e la S2 imposta regione e livello insieme. Riprova tra un attimo.</string>
+    <string name="core_error_s2_region_unknown">La regione non è ancora nota, e la S2 imposta regione e livello insieme. Riprova tra un attimo.</string>
+    <string name="core_log_s2_driver">Driver S2/X2 (sperimentale, non ancora testato su una vera S2)</string>
+    <string name="core_log_s3_despite_profile">L’account indica %1$s, ma la bici ha i servizi S3: si usa il driver S3.</string>
+    <string name="core_log_s2_frame">Blocco di stato S2 %1$s</string>
+    <string name="core_detail_s2_frame_changed">Byte modificati: %1$s</string>
+    <string name="core_error_s2_offroad_level">La bici indica la regione fuoristrada (37 km/h). La S2 imposta regione e livello insieme, quindi qui cambiare livello richiede la modalità test S2.</string>
+    <string name="core_error_s2_pair_mismatch">La S2 imposta regione e livello insieme, e ora indica %3$s km/h al livello %4$s invece di %1$d km/h al livello %2$d. Controlla entrambe le impostazioni.</string>
+    <string name="core_log_s2_implausible">Blocco di stato S2 non plausibile (batteria %1$d%%, modulo %2$d%%, velocità %3$d): la chiave della bici è giusta?</string>
+    <string name="core_detail_s2_frame_implausible">Byte modificati: %1$s. Valori non plausibili: la chiave è giusta?</string>
+</resources>

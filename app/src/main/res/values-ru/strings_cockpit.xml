@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Кокпит на руле (ui/cockpit). Зона 1: просто, точно, коротко; обращение на «ты». -->
+<resources>
+    <!-- Entry in Diagnose -->
+    <string name="cockpit_open">Открыть кокпит</string>
+    <string name="cockpit_open_hint">Для телефона на руле: крупные значения, экран не гаснет.</string>
+    <string name="cockpit_settings_link">Настройки кокпита</string>
+    <string name="cockpit_with_logger">Заодно начать запись поездки</string>
+    <string name="cockpit_with_logger_hint">Запускается вместе с кокпитом, если ещё не работает. В первый раз Android запросит уведомления, пока телефон ещё у тебя в руке.</string>
+    <string name="cockpit_theme_title">Цвета кокпита</string>
+    <string name="cockpit_theme_app">Как в приложении</string>
+    <string name="cockpit_theme_day">День</string>
+    <string name="cockpit_theme_night">Ночь</string>
+    <string name="cockpit_theme_hint">День: светлая тема, лучше всего читается на солнце.</string>
+    <string name="cockpit_check_hint">Для проверок на месте, например теста покачиванием кабеля Kick Lock.</string>
+    <string name="cockpit_events_no_incidents">Нет происшествий и меток. Здесь появятся обрывы связи, транспортный режим, ошибки и метки кокпита.</string>
+
+    <!-- Riding suggestion -->
+    <string name="cockpit_suggest">Велосипед едет. На руле кокпит читается легче.</string>
+    <string name="cockpit_suggest_later">Не сейчас</string>
+
+    <!-- Frame -->
+    <string name="cockpit_pane">Кокпит</string>
+    <string name="cockpit_close">Выйти из кокпита</string>
+    <string name="cockpit_exit_hold">Удерживай для выхода</string>
+    <string name="cockpit_exit_back_again">Ещё раз «Назад», чтобы выйти</string>
+
+    <!-- Link -->
+    <string name="cockpit_link_live">Подключено</string>
+    <string name="cockpit_link_stale">Нет данных</string>
+    <string name="cockpit_link_searching">Поиск</string>
+    <string name="cockpit_link_connecting">Подключение</string>
+    <string name="cockpit_link_lost">Связь прервана</string>
+    <string name="cockpit_link_offline">Не подключено</string>
+    <plurals name="cockpit_link_reconnects">
+        <item quantity="one">переподключено %d×</item>
+        <item quantity="few">переподключено %d×</item>
+        <item quantity="many">переподключено %d×</item>
+        <item quantity="other">переподключено %d×</item>
+    </plurals>
+
+    <!-- Matrix -->
+    <string name="cockpit_unit_kmh">км/ч</string>
+    <string name="cockpit_speed_spoken">%d\u00A0км/ч</string>
+    <string name="cockpit_speed_unknown">Нет значения скорости</string>
+    <string name="cockpit_matrix_no_data">Нет данных от велосипеда</string>
+    <string name="cockpit_matrix_searching">Поиск велосипеда</string>
+    <string name="cockpit_matrix_log">Чтение внутреннего журнала, %d\u00A0%%</string>
+
+    <!-- Battery -->
+    <string name="cockpit_battery">Батарея</string>
+    <string name="cockpit_battery_value">%d\u00A0%%</string>
+    <string name="cockpit_battery_spoken">Батарея %d\u00A0%%</string>
+    <string name="cockpit_charger_in">Зарядка подключена</string>
+
+    <!-- Lamps -->
+    <string name="cockpit_lamp_coil">Катушка</string>
+    <string name="cockpit_lamp_switch">Выключатель</string>
+    <string name="cockpit_lamp_key">Обнаружение батареи</string>
+    <string name="cockpit_lamp_supply">Питание</string>
+    <string name="cockpit_val_detected">обнаружена</string>
+    <string name="cockpit_val_missing">нет</string>
+    <string name="cockpit_val_quiet">без замечаний</string>
+    <string name="cockpit_val_open">разблокирован</string>
+    <string name="cockpit_val_locked">заблокирован</string>
+    <string name="cockpit_val_code">ввод кода</string>
+    <string name="cockpit_val_supply_ok">выше 20\u00A0В</string>
+    <string name="cockpit_val_supply_low">ниже 20\u00A0В</string>
+    <string name="cockpit_val_gear">Передача\u00A0%1$d</string>
+    <string name="cockpit_val_level">Уровень\u00A0%1$d</string>
+    <string name="cockpit_lamp_count">%d×</string>
+    <plurals name="cockpit_lamp_count_spoken">
+        <item quantity="one">%d раз с открытия</item>
+        <item quantity="few">%d раза с открытия</item>
+        <item quantity="many">%d раз с открытия</item>
+        <item quantity="other">%d раза с открытия</item>
+    </plurals>
+    <string name="cockpit_lamp_spoken">%1$s: %2$s</string>
+    <string name="cockpit_rule">Транспортный режим, если все три пропадут разом</string>
+
+    <!-- Alert line -->
+    <string name="cockpit_alert_link_lost">Связь прервалась на %d\u00A0км/ч</string>
+    <string name="cockpit_alert_link_lost_plain">Связь прервалась во время езды</string>
+    <string name="cockpit_alert_sleeping">Велосипед спит во время езды</string>
+    <string name="cockpit_alert_lock_riding">Замок сообщает о блокировке во время езды</string>
+    <string name="cockpit_alert_fault_42">Катушка Kick Lock не обнаружена</string>
+    <string name="cockpit_alert_fault_18">Батарея не обнаружена</string>
+    <string name="cockpit_alert_fault_8">BMS батареи сообщает об ошибке</string>
+    <string name="cockpit_alert_power_button">Кнопка питания/перезапуска нажата</string>
+    <string name="cockpit_alert_supply_low">Питание ниже 20\u00A0В</string>
+    <string name="cockpit_alert_battery_jump">Заряд скачет с %1$d\u00A0%% до %2$d\u00A0%%</string>
+    <string name="cockpit_alert_battery_low">Батарея %d\u00A0%%</string>
+    <string name="cockpit_alert_stale">Нет данных уже %d\u00A0с</string>
+    <string name="cockpit_alert_searching">Поиск велосипеда</string>
+    <string name="cockpit_alert_logger_off">Запись поездки выключена</string>
+    <string name="cockpit_action_retry">Искать снова</string>
+    <string name="cockpit_action_logger">Начать</string>
+    <string name="cockpit_alert_since">С %s</string>
+    <string name="cockpit_alert_more">+%d</string>
+    <plurals name="cockpit_alert_more_spoken">
+        <item quantity="one">ещё %d предупреждение</item>
+        <item quantity="few">ещё %d предупреждения</item>
+        <item quantity="many">ещё %d предупреждений</item>
+        <item quantity="other">ещё %d предупреждения</item>
+    </plurals>
+    <string name="cockpit_alert_memory">%1$s в %2$s. Коснись, чтобы увидеть подробности.</string>
+    <string name="cockpit_alert_memory_count">%1$s, %2$d× с %3$s. Коснись, чтобы увидеть подробности.</string>
+    <string name="cockpit_alert_last_span">Последнее: %1$s с %2$s до %3$s</string>
+    <string name="cockpit_alert_last_at">Последнее: %1$s в %2$s</string>
+    <string name="cockpit_fault_short">Ошибка\u00A0%d</string>
+
+    <!-- Mark -->
+    <string name="cockpit_mark">Отметить</string>
+    <string name="cockpit_mark_none">Меток пока нет</string>
+    <plurals name="cockpit_mark_count">
+        <item quantity="one">%1$d метка, последняя в %2$s</item>
+        <item quantity="few">%1$d метки, последняя в %2$s</item>
+        <item quantity="many">%1$d меток, последняя в %2$s</item>
+        <item quantity="other">%1$d метки, последняя в %2$s</item>
+    </plurals>
+    <plurals name="cockpit_mark_state">
+        <item quantity="one">%d метка</item>
+        <item quantity="few">%d метки</item>
+        <item quantity="many">%d меток</item>
+        <item quantity="other">%d метки</item>
+    </plurals>
+    <string name="cockpit_mark_done">Поставлена в %s</string>
+    <string name="cockpit_mark_logger_on">В записи поездки с %s</string>
+    <string name="cockpit_mark_logger_off">Только в журнале событий, до закрытия приложения</string>
+    <string name="cockpit_mark_event">Метка\u00A0%d</string>
+    <string name="cockpit_mark_spoken">Метка\u00A0%d поставлена</string>
+
+    <!-- Inner screen only -->
+    <string name="cockpit_recent">Недавнее</string>
+    <string name="cockpit_fact_reconnects">Переподключения</string>
+    <string name="cockpit_fact_reconnects_value">%d×</string>
+    <string name="cockpit_fact_samples">Замеры</string>
+
+    <!-- Takeover -->
+    <string name="cockpit_to_pane">Предупреждение</string>
+    <string name="cockpit_to_off">Велосипед, вероятно, выключен</string>
+    <string name="cockpit_to_kicklock">Kick Lock сообщает о блокировке</string>
+    <plurals name="cockpit_to_countdown">
+        <item quantity="one">Мотор и свет выключатся примерно через %d\u00A0секунду.</item>
+        <item quantity="few">Мотор и свет выключатся примерно через %d\u00A0секунды.</item>
+        <item quantity="many">Мотор и свет выключатся примерно через %d\u00A0секунд.</item>
+        <item quantity="other">Мотор и свет выключатся примерно через %d\u00A0секунды.</item>
+    </plurals>
+    <string name="cockpit_to_soon">Мотор и свет вот-вот выключатся.</string>
+    <string name="cockpit_to_gone">Велосипед выключен. Связь прервана.</string>
+    <string name="cockpit_to_stop">Остановись, как только это будет безопасно.</string>
+    <plurals name="cockpit_to_off_after">
+        <item quantity="one">Связь прервалась через %1$d\u00A0секунду после: %2$s.</item>
+        <item quantity="few">Связь прервалась через %1$d\u00A0секунды после: %2$s.</item>
+        <item quantity="many">Связь прервалась через %1$d\u00A0секунд после: %2$s.</item>
+        <item quantity="other">Связь прервалась через %1$d\u00A0секунды после: %2$s.</item>
+    </plurals>
+    <string name="cockpit_to_kicklock_text">Ехать дальше можно. На следующей остановке велосипед, вероятно, заблокируется.</string>
+    <string name="cockpit_to_snapshot">В %1$s, %2$s\u00A0км/ч: замок %3$s, питание %4$s, %5$s.</string>
+    <string name="cockpit_to_meta">%1$s, %2$s\u00A0км/ч.</string>
+    <string name="cockpit_to_also">Также: %s</string>
+    <string name="cockpit_to_ack">Понятно</string>
+    <string name="cockpit_step_wake">Коротко нажми кнопку под верхней трубой, пока велосипед не отреагирует. Не удерживай её 8–15\u00A0секунд.</string>
+    <string name="cockpit_step_battery">Не отключай батарею: последние секунды перед отключением есть только в памяти велосипеда.</string>
+    <string name="cockpit_step_log">Считай внутренний журнал, как только YABA снова подключится.</string>
+    <string name="cockpit_step_kl_unlock">Если велосипед стоит заблокированным, разблокируй его здесь.</string>
+    <string name="cockpit_step_kl_follow">Если последует транспортный режим, этот экран переключится на него.</string>
+    <string name="cockpit_step_kl_test">Позже: заблокируй и разблокируй Kick Lock десять раз. Звук и символ должны оставаться одинаковыми.</string>
+    <string name="cockpit_to_timeline">Последние 12\u00A0с до %s</string>
+    <string name="cockpit_timeline_row_spoken">%1$s: сбой в %2$d из %3$d замеров</string>
+    <string name="cockpit_to_situation">Ситуация в тот момент</string>
+    <string name="cockpit_tag_bumps">Кочки</string>
+    <string name="cockpit_tag_steering">Поворот руля</string>
+    <string name="cockpit_tag_rain">Дождь</string>
+    <string name="cockpit_tag_climb">Подъём</string>
+    <string name="cockpit_tag_event">Ситуация: %s</string>
+    <string name="cockpit_tag_detail">%1$s в %2$s</string>
+    <string name="cockpit_tag_steering_warning">Отказ при повороте руля: пожалуйста, не продолжай поездку и отдай на проверку жгут проводов в рулевой трубе.</string>
+    <string name="cockpit_to_search_hint">YABA продолжает искать и сама.</string>
+    <string name="cockpit_to_log_saved">Журнал сохранён в %1$s, строк: %2$s</string>
+    <string name="cockpit_to_back">Назад к кокпиту</string>
+    <string name="cockpit_to_diagnosis">К диагностике</string>
+    <string name="cockpit_pre_fault">ошибка\u00A0%d</string>
+    <string name="cockpit_pre_lock">замок сообщил о блокировке</string>
+    <string name="cockpit_pre_supply">питание ниже 20\u00A0В</string>
+    <string name="cockpit_pre_button">кнопка питания/перезапуска</string>
+    <string name="cockpit_pre_jump">скачок заряда</string>
+
+    <!-- Event log -->
+    <string name="cockpit_log_battery_jump">Заряд скачет с %1$d\u00A0%% до %2$d\u00A0%% без зарядки</string>
+    <string name="cockpit_detail_data_age">данные получены %1$.1f\u00A0с назад</string>
+    <string name="cockpit_detail_via_key">кнопкой громкости</string>
+
+    <!-- Takeover evidence, read at the stop, connection facts -->
+    <string name="cockpit_to_faults_none">без ошибок</string>
+    <string name="cockpit_to_faults">ошибки %s</string>
+    <string name="cockpit_to_ack_marks">Также ставит метку\u00A0%d</string>
+    <string name="cockpit_to_read_at_stop">Считать на следующей остановке</string>
+    <string name="cockpit_to_read_at_stop_hint">Во время чтения кокпит не показывает скорость.</string>
+    <string name="cockpit_to_counting_spoken">Мотор и свет выключатся через несколько секунд.</string>
+    <string name="cockpit_fact_connected">Подключено с</string>
+    <string name="cockpit_fact_connected_value">%s</string>
+    <string name="cockpit_ev_age">%1$.1f\u00A0с</string>
+    <string name="cockpit_ev_coil">Катушка пропала за %1$s до этого (42)</string>
+    <string name="cockpit_ev_key">Обнаружение батареи пропало за %1$s до этого (18)</string>
+    <string name="cockpit_ev_bms">Ошибка BMS за %1$s до этого (8)</string>
+    <string name="cockpit_ev_fault">Ошибка\u00A0%1$d за %2$s до этого</string>
+    <string name="cockpit_ev_lock">Замок сообщил о блокировке за %1$s до этого</string>
+    <string name="cockpit_ev_supply">Питание ниже 20\u00A0В за %1$s до этого</string>
+    <string name="cockpit_ev_button">Кнопка питания/перезапуска нажата за %1$s до этого</string>
+    <string name="cockpit_ev_jump">Скачок заряда за %1$s до этого</string>
+    <string name="cockpit_ev_sentence">%s.</string>
+</resources>

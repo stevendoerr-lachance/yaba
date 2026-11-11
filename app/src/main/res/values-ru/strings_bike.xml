@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bike screen, Diagnose screen and the shared bike components (BikeBits). -->
+<resources>
+    <!-- Shared -->
+    <string name="bike_needs_link">Это возможно, только пока велосипед подключён.</string>
+    <string name="bike_add_bike">Добавить велосипед</string>
+    <string name="bike_delete">Удалить</string>
+    <string name="bike_keep">Оставить</string>
+    <string name="bike_cancel">Отмена</string>
+    <string name="bike_share">Поделиться</string>
+    <string name="bike_yes">Да</string>
+    <string name="bike_no">Нет</string>
+    <string name="bike_value_percent">%1$d\u00A0%%</string>
+
+    <!-- Live-check verdicts, read by TalkBack -->
+    <string name="bike_health_ok">В норме</string>
+    <string name="bike_health_problem">Проблема</string>
+    <string name="bike_health_attention">Требует внимания</string>
+    <string name="bike_health_unknown">Неизвестно</string>
+
+    <!-- Link state line -->
+    <string name="bike_link_ready">Подключено</string>
+    <string name="bike_link_searching">Поиск велосипеда…</string>
+    <string name="bike_link_connecting">Подключение…</string>
+    <string name="bike_link_authenticating">Авторизация на велосипеде…</string>
+    <string name="bike_link_lost">Подключение прервано, поиск продолжается</string>
+    <string name="bike_link_offline">Не подключено</string>
+
+    <!-- Connect prompt -->
+    <string name="bike_prompt_no_bike">На этом телефоне пока нет велосипеда.</string>
+    <string name="bike_prompt_permission_nearby">Без разрешения «Устройства поблизости» приложение не найдёт велосипед.</string>
+    <string name="bike_prompt_permission_location">Без разрешения на доступ к местоположению Android не находит устройства Bluetooth.</string>
+    <string name="bike_prompt_grant_permission">Дать разрешение</string>
+    <string name="bike_prompt_bluetooth_off">Bluetooth выключен.</string>
+    <string name="bike_prompt_bluetooth_on">Включить Bluetooth</string>
+    <string name="bike_prompt_connect">Подключить</string>
+    <string name="bike_prompt_close_vanmoof">Пожалуйста, сначала закрой приложение VanMoof: велосипед принимает только одно подключение за раз.</string>
+    <string name="bike_prompt_searching">YABA ищет %1$s. Велосипед просыпается, когда ты сдвигаешь его или нажимаешь кнопку звонка.</string>
+    <string name="bike_prompt_retry">Искать снова</string>
+    <string name="bike_prompt_stop">Остановить поиск</string>
+
+    <!-- Bike screen: header and facts -->
+    <string name="bike_no_bike_title">Нет велосипеда</string>
+    <string name="bike_model_of_owner">%1$s, владелец: %2$s</string>
+    <string name="bike_owned_by">Владелец: %1$s</string>
+    <string name="bike_manage_bikes">Управление велосипедами</string>
+    <string name="bike_no_bike_text">Добавь свой S3, и здесь появятся пробег, заряд батареи и прошивка.</string>
+    <string name="bike_fact_distance">Пробег</string>
+    <string name="bike_fact_battery">Батарея</string>
+    <string name="bike_fact_battery_charging">Батарея заряжается</string>
+    <string name="bike_fact_firmware">Прошивка</string>
+    <string name="bike_fact_frame">Номер рамы</string>
+    <string name="bike_fact_mac">MAC</string>
+    <string name="bike_fact_model">Модель</string>
+
+    <!-- Bike screen: connection -->
+    <string name="bike_connection_title">Подключение</string>
+    <string name="bike_connection_wake">Разбудить</string>
+    <string name="bike_connection_waking">Пробуждение…</string>
+    <string name="bike_connection_refresh">Обновить значения</string>
+    <string name="bike_connection_refreshing">Загрузка…</string>
+    <string name="bike_connection_disconnect">Отключить</string>
+    <string name="bike_connection_wake_done">Велосипед получил команду пробуждения.</string>
+    <string name="bike_connection_refresh_done">Все значения прочитаны заново.</string>
+
+    <!-- Bike screen: versions -->
+    <string name="bike_versions_title">Версии и идентификаторы</string>
+    <string name="bike_versions_none">Велосипед не сообщил ни одной версии.</string>
+    <string name="bike_versions_offline">Приложение читает версии при подключении.</string>
+
+    <!-- Bike screen: settings -->
+    <string name="bike_settings_title">Настройки</string>
+    <string name="bike_units">Единицы</string>
+    <string name="bike_units_hint">Как велосипед показывает скорость и расстояние.</string>
+    <string name="bike_unit_metric">км/ч</string>
+    <string name="bike_unit_imperial">миль/ч</string>
+    <string name="bike_theme">Цвета</string>
+    <string name="bike_theme_system">Системная</string>
+    <string name="bike_theme_dark">Ночь</string>
+    <string name="bike_theme_light">День</string>
+    <string name="bike_auto_connect">Подключаться автоматически</string>
+    <string name="bike_auto_connect_caption">При запуске приложение подключается к последнему велосипеду.</string>
+    <string name="bike_touch_unlock">Разблокировка кнопкой</string>
+    <string name="bike_touch_unlock_caption">Нажатие на кнопку звонка или Boost разблокирует велосипед, пока твой телефон подключён.</string>
+    <string name="bike_touch_unlock_range">Это работает и для других людей, пока ты находишься в зоне действия Bluetooth.</string>
+
+    <!-- Bike screen: backup code -->
+    <string name="bike_code_title">Резервный код</string>
+    <string name="bike_code_intro">Три цифры, которыми ты разблокируешь велосипед без телефона. Вводишь их на велосипеде кнопкой звонка.</string>
+    <string name="bike_code_field">Новый код</string>
+    <string name="bike_code_field_hint">Цифры от 1 до 9</string>
+    <string name="bike_code_set">Задать код</string>
+    <string name="bike_code_setting">Установка кода…</string>
+    <string name="bike_code_set_done">Резервный код задан. Пожалуйста, сразу проверь его на велосипеде.</string>
+    <string name="bike_code_clear">Удалить код</string>
+    <string name="bike_code_clearing">Удаление…</string>
+    <string name="bike_code_clear_done">Резервный код удалён. Сигнализация теперь выключена.</string>
+    <string name="bike_code_clear_title">Удалить резервный код?</string>
+    <string name="bike_code_clear_text">Без резервного кода велосипед можно разблокировать только телефоном. При удалении кода сигнализация велосипеда тоже выключается.</string>
+
+    <!-- Bike screen: experiments -->
+    <string name="bike_exp_title">Эксперименты</string>
+    <string name="bike_exp_intro">Начиная с прошивки\u00A01.8.2 велосипед больше не принимает 37\u00A0км/ч и уровень\u00A05 по Bluetooth, версия\u00A01.9.3 тоже. При запуске прошивка сбрасывает оба значения. Вернуть их могла бы только изменённая прошивка, а в этом приложении её нет.</string>
+    <string name="bike_exp_fw">Твой велосипед работает на прошивке\u00A0%1$s.</string>
+    <string name="bike_exp_fw_knows_37">Эта версия всё ещё поддерживает 37\u00A0км/ч.</string>
+    <string name="bike_exp_fw_knows_level5">Эта версия всё ещё поддерживает уровень\u00A05.</string>
+    <string name="bike_exp_fw_knows_both">Эта версия всё ещё поддерживает 37\u00A0км/ч и уровень\u00A05.</string>
+    <string name="bike_exp_test_37">Проверить 37\u00A0км/ч</string>
+    <string name="bike_exp_test_level5">Проверить уровень\u00A05</string>
+    <string name="bike_exp_sending">Отправка…</string>
+    <string name="bike_exp_37">37\u00A0км/ч</string>
+    <string name="bike_exp_level5">Уровень\u00A05</string>
+    <string name="bike_exp_37_accepted">Велосипед принял 37\u00A0км/ч. После следующего перезапуска снова действует прежнее значение.</string>
+    <string name="bike_exp_level5_accepted">Велосипед принял уровень\u00A05. После следующего перезапуска снова действует прежнее значение.</string>
+    <string name="bike_exp_reports_both">Сейчас велосипед сообщает %1$d\u00A0км/ч и уровень\u00A0%2$d.</string>
+    <string name="bike_exp_reports_speed">Сейчас велосипед сообщает %1$d\u00A0км/ч.</string>
+    <string name="bike_exp_reports_level">Сейчас велосипед сообщает уровень\u00A0%1$d.</string>
+    <string name="bike_exp_back_25">Вернуть 25\u00A0км/ч</string>
+    <string name="bike_exp_back_level4">Вернуть уровень\u00A04</string>
+    <string name="bike_exp_setting">Установка…</string>
+
+    <!-- Bike screen: about -->
+    <string name="bike_about_title">О приложении</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="bike_about_matrix">YABA</string>
+    <string name="bike_about_name">YABA</string>
+    <string name="bike_about_version">Yet Another Bike App, версия\u00A0%1$s</string>
+    <string name="bike_about_slogan">Едет дальше. Что бы ни случилось.</string>
+    <string name="bike_about_disclaimer">Для VanMoof S3, X3, S2 и X2. Не аффилировано с VanMoof и не является официальным приложением VanMoof.</string>
+    <string name="bike_about_credits">YABA опирается на открытую работу mooovy (mjarkk), VanMoofKit (SvenTiigi) и pymoof (quantsini), а также на декомпиляцию прошивки S3, выполненную Knight1. Большое спасибо за это. Спасибо и всем, кто придумал и построил S3.</string>
+
+    <!-- Diagnose screen -->
+    <string name="bike_diag_title">Диагностика</string>
+    <string name="bike_diag_intro">YABA записывает то, что сообщает велосипед. Если велосипед выключится в пути, записи останутся здесь.</string>
+
+    <!-- Diagnose: live check -->
+    <string name="bike_live_title">Проверка на стоянке</string>
+    <string name="bike_live_connect_reason">Эти значения поступают прямо с велосипеда. Как только ты подключишься, список заполнится.</string>
+    <string name="bike_live_status">Рабочее состояние велосипеда</string>
+    <string name="bike_live_status_shipping_hint">Велосипед переходит в транспортный режим. Чтобы разбудить его, подключи зарядное устройство или коротко нажми кнопку под верхней трубой рамы.</string>
+    <plurals name="bike_live_shipping_count">
+        <item quantity="one">Транспортный режим: %1$d раз с запуска приложения</item>
+        <item quantity="few">Транспортный режим: %1$d раза с запуска приложения</item>
+        <item quantity="many">Транспортный режим: %1$d раз с запуска приложения</item>
+        <item quantity="other">Транспортный режим: %1$d раза с запуска приложения</item>
+    </plurals>
+    <string name="bike_live_supply">Питание выше 20\u00A0В</string>
+    <plurals name="bike_live_supply_drops">
+        <item quantity="one">Питание упало ниже 20\u00A0В: %1$d раз</item>
+        <item quantity="few">Питание упало ниже 20\u00A0В: %1$d раза</item>
+        <item quantity="many">Питание упало ниже 20\u00A0В: %1$d раз</item>
+        <item quantity="other">Питание упало ниже 20\u00A0В: %1$d раза</item>
+    </plurals>
+    <string name="bike_live_kicklock_switch">Выключатель Kick Lock</string>
+    <string name="bike_live_kicklock_reports_locked">Сообщает «заблокирован»</string>
+    <string name="bike_live_kicklock_normal">Норма</string>
+    <string name="bike_live_kicklock_switch_hint">Если во время езды замок сообщает «заблокирован», причина, вероятно, в выключателе Kick Lock или его кабеле.</string>
+    <plurals name="bike_live_kicklock_riding">
+        <item quantity="one">Во время езды: %1$d раз</item>
+        <item quantity="few">Во время езды: %1$d раза</item>
+        <item quantity="many">Во время езды: %1$d раз</item>
+        <item quantity="other">Во время езды: %1$d раза</item>
+    </plurals>
+    <string name="bike_live_kicklock_coil">Катушка Kick Lock</string>
+    <string name="bike_live_kicklock_coil_missing">Не обнаружена (42)</string>
+    <string name="bike_live_kicklock_coil_ok">Обнаружена</string>
+    <string name="bike_live_kicklock_coil_hint">Ошибка\u00A042: линия обратной связи катушки разомкнута. Если одновременно пропадает определение батареи, велосипед, вероятно, перейдёт в транспортный режим.</string>
+    <string name="bike_live_wheel">Колесо вращается</string>
+    <string name="bike_live_lock">Замок</string>
+    <string name="bike_live_charger">Зарядное устройство</string>
+    <string name="bike_live_buttons">Нажатые кнопки</string>
+    <string name="bike_live_button_bell">Звонок</string>
+    <string name="bike_live_button_boost">Boost</string>
+    <string name="bike_live_button_power">Питание/перезапуск</string>
+    <string name="bike_live_buttons_none">Нет</string>
+    <string name="bike_live_buttons_hint">Если индикация остаётся без нажатия пальцем, кнопка залипла (ошибка\u00A040 или 41). Нажатие кнопки питания/перезапуска во время езды перезапускает велосипед.</string>
+    <string name="bike_live_connected_for">Время подключения</string>
+    <string name="bike_live_reconnects">Переподключения</string>
+    <string name="bike_live_reconnects_hint">Сколько раз подключение прерывалось и восстанавливалось.</string>
+
+    <!-- Diagnose: faults -->
+    <string name="bike_faults_title">Ошибки</string>
+    <plurals name="bike_faults_active">
+        <item quantity="one">%1$d активная</item>
+        <item quantity="few">%1$d активные</item>
+        <item quantity="many">%1$d активных</item>
+        <item quantity="other">%1$d активной</item>
+    </plurals>
+    <string name="bike_faults_offline">YABA читает активные ошибки прямо с велосипеда. Как только велосипед подключён, они показываются здесь.</string>
+    <string name="bike_faults_none">Активных ошибок нет.</string>
+    <string name="bike_fault_spoken">Ошибка\u00A0%1$d: %2$s. %3$s</string>
+    <string name="bike_lookup_title">Найти код</string>
+    <string name="bike_lookup_hint">Введи число, которое велосипед показывает на дисплее, например 42.</string>
+    <string name="bike_lookup_field">Код</string>
+    <string name="bike_lookup_display_empty">Дисплей пуст</string>
+    <string name="bike_lookup_display_shows">Дисплей показывает %1$s</string>
+    <string name="bike_lookup_unknown_name">Не существует</string>
+    <string name="bike_lookup_unknown_hint">Велосипед использует только коды от 0 до 63.</string>
+    <string name="bike_lookup_active">Сейчас активен на твоём велосипеде.</string>
+
+    <!-- Diagnose: ride logger -->
+    <string name="bike_logger_title">Запись поездок</string>
+    <string name="bike_logger_intro">Запись поездок сохраняет одно измеренное значение каждые 2\u00A0секунды и каждое событие в один CSV-файл. Благодаря уведомлению запись идёт и при выключенном экране.</string>
+    <string name="bike_logger_coloros">ColorOS всё равно останавливает запись поездок, пока YABA не разрешено работать в фоне.</string>
+    <string name="bike_logger_stop">Остановить запись</string>
+    <string name="bike_logger_start">Начать запись</string>
+    <string name="bike_logger_offline">Сейчас велосипед не подключён. Запись поездок всё равно продолжается и фиксирует каждую попытку подключения.</string>
+    <string name="bike_logger_start_failed">Не удалось начать запись поездок: %1$s</string>
+    <string name="bike_logger_battery_settings">Открыть оптимизацию батареи</string>
+    <string name="bike_logger_coloros_path">В ColorOS открой «Настройки», «Аккумулятор», «Расход заряда приложениями» и «YABA», затем разреши работу в фоне.</string>
+    <string name="bike_logger_unrestricted">Оптимизация батареи для YABA выключена, поэтому запись поездок продолжается в фоне.</string>
+    <string name="bike_logger_recordings">Записи</string>
+    <string name="bike_logger_empty">Ни одной поездки пока не записано. Пожалуйста, запусти запись поездок перед следующей поездкой.</string>
+    <string name="bike_logger_share_title">Поделиться записью поездки</string>
+    <string name="bike_logger_delete_title">Удалить запись?</string>
+    <string name="bike_logger_delete_text">Поездка от %1$s будет удалена.</string>
+    <string name="bike_logger_running_since">Идёт с %1$s</string>
+    <string name="bike_logger_samples">Замеры</string>
+    <string name="bike_logger_incidents">Сбои</string>
+    <string name="bike_logger_duration">Длительность</string>
+    <string name="bike_logger_live_file">Идёт запись</string>
+    <!-- java.time DateTimeFormatter pattern for the start of a recording -->
+    <string name="bike_logger_entry_date">d MMM yyyy, HH:mm</string>
+
+    <!-- Diagnose: events -->
+    <string name="bike_events_title">События</string>
+    <string name="bike_events_all">Все</string>
+    <string name="bike_events_incidents">Сбои</string>
+    <plurals name="bike_events_incidents_count">
+        <item quantity="one">%1$d сбой</item>
+        <item quantity="few">%1$d сбоя</item>
+        <item quantity="many">%1$d сбоев</item>
+        <item quantity="other">%1$d сбоя</item>
+    </plurals>
+    <string name="bike_events_no_incidents">Сбоев нет. Прерывания, транспортный режим и ошибки перечисляются здесь.</string>
+    <string name="bike_events_empty">Пока ничего не записано. Как только велосипед подключён, здесь перечисляется каждое изменение.</string>
+    <string name="bike_events_showing">Показано %1$d из %2$d.</string>
+    <string name="bike_events_more">Показать ещё</string>
+    <string name="bike_events_clear">Очистить</string>
+
+    <!-- Diagnose: bike log -->
+    <string name="bike_log_title">Журнал велосипеда</string>
+    <string name="bike_log_intro">Велосипед ведёт собственный журнал. Чтение может занять несколько минут, и непрерывное чтение значений на это время приостанавливается.</string>
+    <string name="bike_log_reading">Чтение…</string>
+    <string name="bike_log_reading_percent">Чтение… %1$d\u00A0%%</string>
+    <string name="bike_log_read">Считать внутренний журнал</string>
+    <string name="bike_log_read_again">Считать снова</string>
+    <string name="bike_log_failed">Не удалось прочитать журнал.</string>
+    <string name="bike_log_empty">Велосипед вернул пустой журнал.</string>
+    <plurals name="bike_log_lines_unit">
+        <item quantity="one">строка</item>
+        <item quantity="few">строки</item>
+        <item quantity="many">строк</item>
+        <item quantity="other">строки</item>
+    </plurals>
+    <string name="bike_log_read_at">Прочитан в %1$s.</string>
+    <plurals name="bike_log_tail">
+        <item quantity="one">Последняя %1$d строка:</item>
+        <item quantity="few">Последние %1$d строки:</item>
+        <item quantity="many">Последние %1$d строк:</item>
+        <item quantity="other">Последние %1$d строки:</item>
+    </plurals>
+    <string name="bike_log_all">Весь журнал:</string>
+    <string name="bike_log_share">Поделиться журналом</string>
+    <string name="bike_log_share_failed">Не удалось записать файл. Возможно, память заполнена.</string>
+    <string name="bike_log_share_subject">Журнал велосипеда S3 %1$s</string>
+    <string name="bike_log_share_title">Поделиться журналом велосипеда</string>
+
+    <!-- Diagnose: raw data -->
+    <string name="bike_raw_title">Сырые данные</string>
+    <string name="bike_raw_hint">Расшифрованные байты по характеристикам в том виде, в каком велосипед отправил их в последний раз.</string>
+    <string name="bike_raw_read">Прочитать все значения</string>
+    <string name="bike_raw_reading">Чтение…</string>
+    <string name="bike_raw_done">Все значения прочитаны.</string>
+    <string name="bike_raw_empty">пусто</string>
+    <string name="bike_about_origin">YABA создана во Франкфурте-на-Майне для одного подержанного S3 и для каждого велосипеда, который должен ехать дальше. Приложение проверено на прошивке S3\u00A01.9.3.</string>
+    <string name="bike_outbursts_title">Голландские ругательства</string>
+    <string name="bike_outbursts_caption">Иногда YABA ругается по-голландски: на точечной матрице здесь, в приложении, и никогда во время езды. На дисплей самого велосипеда YABA писать не может.</string>
+    <string name="bike_outbursts_list_title">Слова</string>
+    <string name="bike_outbursts_list_hint">Удерживай слово, чтобы увидеть его на матрице.</string>
+    <string name="bike_outburst_meaning_balen">Буквально: досадовать. Смысл: жаль.</string>
+    <string name="bike_outburst_meaning_gedoe">Буквально: возня. Смысл: хлопоты, неудобство.</string>
+    <string name="bike_outburst_meaning_nou_ja">Буквально: ну да. Смысл: ну что ж.</string>
+    <string name="bike_outburst_meaning_he_he">Буквально: наконец-то. Смысл: уф, получилось.</string>
+    <string name="bike_outburst_meaning_auw">Буквально: ай. Смысл: было больно.</string>
+    <string name="bike_outburst_meaning_verdorie">Буквально: смягчённая форма слова «verdomme». Смысл: досадно.</string>
+    <string name="bike_outburst_meaning_de_pijp_uit">Буквально: из трубки. Смысл: всё кончено, готово.</string>
+    <string name="bike_outburst_meaning_bek_dicht">Буквально: клюв закрыт. Смысл: тишина.</string>
+    <string name="bike_outburst_meaning_verdomme">Буквально: проклятье на меня. Смысл: проклятье. Велосипед никогда не говорит этого сам.</string>
+    <string name="bike_live_coil_see_fault">См. ошибку\u00A042 в разделе «Ошибки».</string>
+    <string name="bike_events_since">С запуска YABA в %1$s</string>
+    <string name="bike_events_since_day">С запуска YABA %1$s в %2$s</string>
+    <string name="bike_events_since_clear">С очистки в %1$s</string>
+    <string name="bike_events_no_marks">Меток нет. В кокпите метку ставит кнопка «Отметить» или кнопка громкости.</string>
+    <string name="bike_events_expand">Показать полностью</string>
+    <string name="bike_events_collapse">Свернуть</string>
+    <string name="bike_events_clear_title">Очистить события?</string>
+    <string name="bike_events_clear_text">После этого счётчики проверки на стоянке начнутся с нуля.</string>
+    <string name="bike_logger_intro_short">Запись поездок сохраняет одно измеренное значение каждые 2\u00A0секунды и каждое событие в один CSV-файл.</string>
+    <string name="bike_logger_show_all">Показать все (%1$d)</string>
+    <string name="bike_logger_no_ride">без поездки</string>
+    <string name="bike_log_view_text">Открыть как текст</string>
+    <string name="bike_theme_hint">День: светлая тема, лучше всего читается на солнце.</string>
+    <string name="bike_code_set_at">Резервный код задан в %1$s. Пожалуйста, проверь его сейчас на велосипеде.</string>
+    <string name="bike_code_clear_link">Удалить резервный код</string>
+    <string name="bike_exp_fold">Проверки 37\u00A0км/ч и уровня\u00A05</string>
+    <string name="bike_fact_wheel">Колесо</string>
+    <string name="bike_fact_distance_speedplus" formatted="false">Пробег, со Speed++ считает примерно на 16\u00A0% меньше</string>
+    <plurals name="bike_events_marks_count">
+        <item quantity="one">%1$d метка</item>
+        <item quantity="few">%1$d метки</item>
+        <item quantity="many">%1$d меток</item>
+        <item quantity="other">%1$d метки</item>
+    </plurals>
+    <plurals name="bike_logger_entry_incidents">
+        <item quantity="one">%1$d сбой</item>
+        <item quantity="few">%1$d сбоя</item>
+        <item quantity="many">%1$d сбоев</item>
+        <item quantity="other">%1$d сбоя</item>
+    </plurals>
+    <plurals name="bike_raw_without_value">
+        <item quantity="one">%1$d характеристика без значения</item>
+        <item quantity="few">%1$d характеристики без значения</item>
+        <item quantity="many">%1$d характеристик без значения</item>
+        <item quantity="other">%1$d характеристики без значения</item>
+    </plurals>
+</resources>

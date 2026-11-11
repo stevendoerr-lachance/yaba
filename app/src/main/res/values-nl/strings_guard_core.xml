@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="guard_core_channel_alarm_name">Bewaking</string>
+    <string name="guard_core_channel_alarm_desc">Meldt bewegingen bij de fiets en een verbroken verbinding zolang de bewaking actief is.</string>
+    <string name="guard_core_channel_status_name">Bewaking loopt</string>
+    <string name="guard_core_channel_status_desc">Laat zien dat de bewaking actief is zolang YABA met de fiets verbonden blijft.</string>
+    <string name="guard_core_notif_arming_title">Bewaking wordt ingeschakeld</string>
+    <string name="guard_core_notif_arming_text">YABA vergrendelt de fiets en wacht op de bevestiging ervan.</string>
+    <string name="guard_core_notif_active_title">Bewaking actief</string>
+    <string name="guard_core_notif_active_text">Sinds %1$s. De fiets let zelf op beweging, YABA blijft verbonden.</string>
+    <string name="guard_core_notif_active_text_phone">Sinds %1$s. YABA blijft met de fiets verbonden.</string>
+    <string name="guard_core_notif_searching">Verbinding onderbroken. YABA zoekt de fiets.</string>
+    <string name="guard_core_notif_disarming_title">Bewaking wordt beëindigd</string>
+    <string name="guard_core_notif_alarm_title">Alarm bij de fiets</string>
+    <string name="guard_core_notif_alarm_title_at">Alarm bij de fiets om %1$s</string>
+    <string name="guard_core_notif_lost_title">Verbinding met de fiets verbroken</string>
+    <string name="guard_core_notif_lost_watch">Verbinding met de fiets verbroken. De bewegingsbewaking van de fiets loopt door.</string>
+    <string name="guard_core_notif_lost">Verbinding met de fiets verbroken. YABA maakt opnieuw verbinding zodra de fiets binnen bereik is.</string>
+    <string name="guard_core_notif_restart_title">Bewaking onderbroken</string>
+    <string name="guard_core_notif_restart_text">Android heeft YABA op de achtergrond afgesloten. Tik hier om de bewaking door te laten lopen.</string>
+    <string name="guard_core_action_end">Bewaking beëindigen</string>
+    <string name="guard_core_action_silence">Sirene uit</string>
+    <string name="guard_core_trigger_wheel">De fiets meldt een draaiend wiel.</string>
+    <string name="guard_core_trigger_bike_alarm">De fiets heeft zelf zijn alarm geactiveerd.</string>
+    <string name="guard_core_trigger_status">De fiets meldt de toestand alarm.</string>
+    <string name="guard_core_trigger_unlock_request">De fiets heeft een ontgrendelverzoek gestuurd. Dat gebeurt bij een druk op een knop of een beweging van de fiets.</string>
+    <string name="guard_core_trigger_button">Er is een knop op de fiets ingedrukt.</string>
+    <string name="guard_core_trigger_battery">De fiets meldt geen geplaatste accu meer.</string>
+    <string name="guard_core_trigger_lock_opened">De fiets meldt zich als ontgrendeld, zonder dat YABA hem heeft ontgrendeld.</string>
+    <string name="guard_core_trigger_pin">Er wordt een code ingevoerd op de fiets.</string>
+    <string name="guard_core_trigger_offline">De fiets heeft alarm gegeven terwijl je telefoon niet verbonden was.</string>
+    <string name="guard_core_siren_yaba">YABA heeft de sirene ingeschakeld (ronde %1$d van %2$d).</string>
+    <string name="guard_core_siren_bike">De sirene van de fiets klinkt.</string>
+    <string name="guard_core_siren_running">De sirene klinkt nog.</string>
+    <string name="guard_core_siren_off_setting">De sirene blijft uit, omdat „Sirene meteen” uitgeschakeld is.</string>
+    <string name="guard_core_siren_snoozed">Na „Sirene uit” blijft de sirene twee minuten uit.</string>
+    <string name="guard_core_siren_cap">De sirene heeft al %1$d keer geklonken. YABA schakelt haar pas na tien rustige minuten weer in.</string>
+    <string name="guard_core_cmd">Bewaking</string>
+    <string name="guard_core_log_arming">Bewaking: inschakelen (alarmmodus %1$s, slot %2$s, alarmtoestand %3$s)</string>
+    <string name="guard_core_log_armed_native">Bewaking actief: de fiets meldt alarmtoestand 2 na %1$s seconden, zonder direct schrijven.</string>
+    <string name="guard_core_log_armed_direct">Bewaking actief: alarmtoestand 2 pas na het schrijven van 5523\u00A0=\u00A02.</string>
+    <string name="guard_core_log_armed_unconfirmed">Bewaking actief zonder bevestiging: alarmtoestand %1$s.</string>
+    <string name="guard_core_log_arm_failed">Bewaking niet ingeschakeld: %1$s</string>
+    <string name="guard_core_log_value">Bewaking: %1$s (%2$s) = %3$s, eerder %4$s, %5$s</string>
+    <string name="guard_core_log_pushed">gemeld door de fiets</string>
+    <string name="guard_core_log_read">gelezen</string>
+    <string name="guard_core_log_value_cap">Bewaking: verdere waardewijzigingen in dit uur niet vastgelegd</string>
+    <string name="guard_core_log_ignored">Bewaking, niet geteld bij het inschakelen: %1$s</string>
+    <string name="guard_core_log_siren">Bewaking: sirene geschreven (5523\u00A0=\u00A03), antwoord %1$s</string>
+    <string name="guard_core_log_rearmed">Bewaking hersteld: alarmtoestand %1$s, slot %2$s</string>
+    <string name="guard_core_log_silence">Bewaking: sirene uit</string>
+    <string name="guard_core_log_disarmed">Bewaking beëindigd: alarmtoestand %1$s, slot %2$s</string>
+    <string name="guard_core_log_disarmed_offline">Bewaking beëindigd zonder verbinding met de fiets</string>
+    <string name="guard_core_log_lost">Bewaking: verbinding verbroken</string>
+    <string name="guard_core_log_back">Bewaking: weer verbonden, alarmtoestand %1$s, slot %2$s</string>
+    <string name="guard_core_log_budget">Bewaking: grens voor automatische opdrachten bereikt, voorlopig alleen meldingen</string>
+    <string name="guard_core_log_restored">Bewaking voortgezet na een herstart van YABA</string>
+    <string name="guard_core_log_sequence_failed">Bewaking: %1$s mislukt: %2$s</string>
+    <string name="guard_core_log_bike_gone">Bewaking beëindigd: de fiets is niet meer in YABA opgeslagen</string>
+    <string name="guard_core_error_active">De bewaking is actief. Beëindig eerst de bewaking.</string>
+    <string name="guard_core_error_not_s3">De bewaking bestaat alleen voor de S3 en de X3.</string>
+    <string name="guard_core_siren_budget">De sirene blijft uit, omdat YABA de afgelopen tien minuten al veel opdrachten naar de fiets heeft gestuurd.</string>
+    <string name="guard_core_notif_not_locked_title">Fiets niet vergrendeld</string>
+    <string name="guard_core_notif_not_locked">YABA kon de fiets niet opnieuw vergrendelen (slot meldt %1$s). Open YABA en tik op “Opnieuw proberen”.</string>
+    <string name="guard_core_notif_not_locked_unknown">YABA heeft geen bevestiging dat de fiets weer vergrendeld is. Open YABA en tik op “Opnieuw proberen”.</string>
+    <string name="guard_core_log_relocked">Bewaking: slot opnieuw geschreven (5521\u00A0=\u00A01), slot meldt %1$s</string>
+    <string name="guard_core_log_not_locked">Bewaking: de fiets blijft ontgrendeld (slot %1$s). YABA probeert het niet meer vanzelf.</string>
+    <string name="guard_core_log_held">Bewaking: de fiets was ontgrendeld toen de verbinding terugkwam. YABA vergrendelt hem pas weer na “Opnieuw proberen”.</string>
+    <string name="guard_core_log_watch_seen">Bewaking: de fiets meldt nu alarmtoestand 2, zijn bewegingsbewaking loopt.</string>
+    <string name="guard_core_log_watch_left">Bewaking: de fiets meldt alarmtoestand %1$s, zijn bewegingsbewaking loopt niet meer.</string>
+    <string name="guard_core_log_cancelled">Bewaking: %1$s afgebroken voordat er iets bij de fiets aankwam</string>
+    <string name="guard_core_log_disarmed_unconfirmed">Bewaking beëindigd zonder antwoord van de fiets</string>
+    <string name="guard_core_step_arm">inschakelen</string>
+    <string name="guard_core_step_verify">controle na het verbinden</string>
+    <string name="guard_core_step_siren">sirene</string>
+    <string name="guard_core_step_rearm">herstellen</string>
+    <string name="guard_core_step_relock">opnieuw vergrendelen</string>
+    <string name="guard_core_step_disarm">beëindigen</string>
+    <string name="guard_core_step_internal">interne stap</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="guard_core_channel_alarm_name">Garde</string>
+    <string name="guard_core_channel_alarm_desc">Signale les mouvements du vélo et une connexion perdue tant que la garde est active.</string>
+    <string name="guard_core_channel_status_name">Garde en cours</string>
+    <string name="guard_core_channel_status_desc">Indique que la garde est active tant que YABA reste connectée au vélo.</string>
+    <string name="guard_core_notif_arming_title">Activation de la garde</string>
+    <string name="guard_core_notif_arming_text">YABA verrouille le vélo et attend sa confirmation.</string>
+    <string name="guard_core_notif_active_title">Garde active</string>
+    <string name="guard_core_notif_active_text">Depuis %1$s. Le vélo surveille lui-même les mouvements, YABA reste connectée.</string>
+    <string name="guard_core_notif_active_text_phone">Depuis %1$s. YABA reste connectée au vélo.</string>
+    <string name="guard_core_notif_searching">Connexion interrompue. YABA cherche le vélo.</string>
+    <string name="guard_core_notif_disarming_title">Fin de la garde</string>
+    <string name="guard_core_notif_alarm_title">Alarme sur le vélo</string>
+    <string name="guard_core_notif_alarm_title_at">Alarme sur le vélo à %1$s</string>
+    <string name="guard_core_notif_lost_title">Connexion au vélo perdue</string>
+    <string name="guard_core_notif_lost_watch">Connexion au vélo perdue. La surveillance des mouvements du vélo continue.</string>
+    <string name="guard_core_notif_lost">Connexion au vélo perdue. YABA se reconnecte dès que le vélo est à portée.</string>
+    <string name="guard_core_notif_restart_title">Garde interrompue</string>
+    <string name="guard_core_notif_restart_text">Android a fermé YABA en arrière-plan. Touche ici pour que la garde continue.</string>
+    <string name="guard_core_action_end">Terminer la garde</string>
+    <string name="guard_core_action_silence">Couper la sirène</string>
+    <string name="guard_core_trigger_wheel">Le vélo signale une roue qui tourne.</string>
+    <string name="guard_core_trigger_bike_alarm">Le vélo a déclenché lui-même son alarme.</string>
+    <string name="guard_core_trigger_status">Le vélo signale l’état d’alarme.</string>
+    <string name="guard_core_trigger_unlock_request">Le vélo a envoyé une demande de déverrouillage. Cela arrive quand on appuie sur un bouton ou qu’on déplace le vélo.</string>
+    <string name="guard_core_trigger_button">Un bouton du vélo a été pressé.</string>
+    <string name="guard_core_trigger_battery">Le vélo ne signale plus de batterie insérée.</string>
+    <string name="guard_core_trigger_lock_opened">Le vélo se signale déverrouillé, sans que YABA l’ait déverrouillé.</string>
+    <string name="guard_core_trigger_pin">Un code est en cours de saisie sur le vélo.</string>
+    <string name="guard_core_trigger_offline">Le vélo a déclenché l’alarme pendant que ton téléphone n’était pas connecté.</string>
+    <string name="guard_core_siren_yaba">YABA a activé la sirène (passage %1$d sur %2$d).</string>
+    <string name="guard_core_siren_bike">La sirène du vélo retentit.</string>
+    <string name="guard_core_siren_running">La sirène retentit encore.</string>
+    <string name="guard_core_siren_off_setting">La sirène reste coupée, car «\u00A0Sirène immédiate\u00A0» est désactivée.</string>
+    <string name="guard_core_siren_snoozed">Après «\u00A0Couper la sirène\u00A0», la sirène reste coupée pendant deux minutes.</string>
+    <string name="guard_core_siren_cap">La sirène a déjà retenti %1$d fois. YABA ne la réactive qu’après dix minutes de calme.</string>
+    <string name="guard_core_cmd">Garde</string>
+    <string name="guard_core_log_arming">Garde\u00A0: activation (mode d’alarme %1$s, antivol %2$s, état d’alarme %3$s)</string>
+    <string name="guard_core_log_armed_native">Garde active\u00A0: le vélo signale l’état d’alarme 2 après %1$s secondes, sans écriture directe.</string>
+    <string name="guard_core_log_armed_direct">Garde active\u00A0: état d’alarme 2 seulement après l’écriture de 5523\u00A0=\u00A02.</string>
+    <string name="guard_core_log_armed_unconfirmed">Garde active sans confirmation\u00A0: état d’alarme %1$s.</string>
+    <string name="guard_core_log_arm_failed">Garde non activée\u00A0: %1$s</string>
+    <string name="guard_core_log_value">Garde\u00A0: %1$s (%2$s) = %3$s, avant %4$s, %5$s</string>
+    <string name="guard_core_log_pushed">signalé par le vélo</string>
+    <string name="guard_core_log_read">lu</string>
+    <string name="guard_core_log_value_cap">Garde\u00A0: autres changements de valeur de cette heure non enregistrés</string>
+    <string name="guard_core_log_ignored">Garde, non compté pendant l’activation\u00A0: %1$s</string>
+    <string name="guard_core_log_siren">Garde\u00A0: sirène écrite (5523\u00A0=\u00A03), réponse %1$s</string>
+    <string name="guard_core_log_rearmed">Garde rétablie\u00A0: état d’alarme %1$s, antivol %2$s</string>
+    <string name="guard_core_log_silence">Garde\u00A0: sirène coupée</string>
+    <string name="guard_core_log_disarmed">Garde terminée\u00A0: état d’alarme %1$s, antivol %2$s</string>
+    <string name="guard_core_log_disarmed_offline">Garde terminée sans connexion au vélo</string>
+    <string name="guard_core_log_lost">Garde\u00A0: connexion perdue</string>
+    <string name="guard_core_log_back">Garde\u00A0: connexion rétablie, état d’alarme %1$s, antivol %2$s</string>
+    <string name="guard_core_log_budget">Garde\u00A0: limite des commandes automatiques atteinte, seulement des notifications pour l’instant</string>
+    <string name="guard_core_log_restored">Garde reprise après un redémarrage de YABA</string>
+    <string name="guard_core_log_sequence_failed">Garde\u00A0: %1$s a échoué\u00A0: %2$s</string>
+    <string name="guard_core_log_bike_gone">Garde terminée\u00A0: le vélo n’est plus enregistré dans YABA</string>
+    <string name="guard_core_error_active">La garde est active. Termine d’abord la garde.</string>
+    <string name="guard_core_error_not_s3">La garde n’existe que pour le S3 et le X3.</string>
+    <string name="guard_core_siren_budget">La sirène reste coupée, car YABA a déjà envoyé beaucoup de commandes au vélo ces dix dernières minutes.</string>
+    <string name="guard_core_notif_not_locked_title">Vélo non verrouillé</string>
+    <string name="guard_core_notif_not_locked">YABA n’a pas pu reverrouiller le vélo (le verrou indique %1$s). Ouvre YABA et touche «\u00A0Réessayer\u00A0».</string>
+    <string name="guard_core_notif_not_locked_unknown">YABA n’a pas de confirmation que le vélo est de nouveau verrouillé. Ouvre YABA et touche «\u00A0Réessayer\u00A0».</string>
+    <string name="guard_core_log_relocked">Garde\u00A0: verrou réécrit (5521\u00A0=\u00A01), le verrou indique %1$s</string>
+    <string name="guard_core_log_not_locked">Garde\u00A0: le vélo reste déverrouillé (verrou %1$s). YABA ne réessaie plus de lui-même.</string>
+    <string name="guard_core_log_held">Garde\u00A0: le vélo était déverrouillé au retour de la connexion. YABA ne le reverrouille qu’après «\u00A0Réessayer\u00A0».</string>
+    <string name="guard_core_log_watch_seen">Garde\u00A0: le vélo indique maintenant l’état d’alarme 2, sa surveillance des mouvements est active.</string>
+    <string name="guard_core_log_watch_left">Garde\u00A0: le vélo indique l’état d’alarme %1$s, sa surveillance des mouvements n’est plus active.</string>
+    <string name="guard_core_log_cancelled">Garde\u00A0: %1$s annulé avant que quoi que ce soit n’arrive au vélo</string>
+    <string name="guard_core_log_disarmed_unconfirmed">Garde terminée sans réponse du vélo</string>
+    <string name="guard_core_step_arm">activation</string>
+    <string name="guard_core_step_verify">vérification après la reconnexion</string>
+    <string name="guard_core_step_siren">sirène</string>
+    <string name="guard_core_step_rearm">rétablissement</string>
+    <string name="guard_core_step_relock">reverrouillage</string>
+    <string name="guard_core_step_disarm">arrêt</string>
+    <string name="guard_core_step_internal">étape interne</string>
+</resources>

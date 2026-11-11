@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intro_skip">Пропустить</string>
+    <string name="intro_description">Заставка: сапог трижды топчет велосипед, пока на его дисплее мигает ошибка 42. Велосипед разлетается на части, а потом снова поднимается и светится.</string>
+    <string name="intro_slogan_1">Едет дальше.</string>
+    <string name="intro_slogan_2">Что бы ни случилось.</string>
+    <string name="intro_replay">Посмотреть интро ещё раз</string>
+</resources>

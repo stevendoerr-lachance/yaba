@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="labx_cmd_boost_rolling_on">Boost im Rollen an</string>
+    <string name="labx_cmd_boost_rolling_off">Boost im Rollen aus</string>
+
+    <string name="labx_error_level_unknown">Die Unterstützungsstufe ist noch nicht gelesen. Bitte warte einen Augenblick und tipp erneut.</string>
+    <string name="labx_error_clock_readback">Die Rücklesung der Uhr ist unplausibel. Die Uhr wurde möglicherweise gestellt; bitte prüf sie erneut.</string>
+    <string name="labx_error_clock_jump">Nur ohne gedrückte Taste. Springt die Uhr um mehr als 20\u00A0Sekunden, während Klingel oder Boost gehalten wird, wertet das Bike die Taste als klemmend.</string>
+    <string name="labx_error_boost_rolling">Nur im Stand testen: mit „an“ kann die Stufe beim Losrollen versehentlich wechseln.</string>
+    <string name="labx_error_assist_cut">Nur im Stand und wenn das Bike nicht rollt; das schaltet die Unterstützung ab.</string>
+    <string name="labx_error_not_confirmed">Nicht bestätigt. Der Wert wurde geschrieben, aber die Rücklesung bestätigt ihn nicht; der gespeicherte Wert bleibt unverändert.</string>
+    <string name="labx_error_lamp_read">Die Lampenkanäle lassen sich nicht lesen; es wurde nichts geändert.</string>
+    <string name="labx_error_lamp_restore">Die Lampen wurden zurückgeschrieben, aber die Rücklesung weicht ab. Ein echter Wechsel (Modus, Sperren, Neustart) holt sie zurück.</string>
+
+    <string name="labx_board_temp_waiting">wartet auf Änderung</string>
+    <string name="labx_not_read">nicht gelesen</string>
+    <string name="labx_threshold_factory">Werkswert 200</string>
+
+    <string name="labx_alarm_stop_note">Stoppt einen laufenden Alarm ohne Ersatzcode. Der Befehl löscht auch die Software-Sperre; war das Bike gesperrt, bietet YABA danach „Wieder sperren“ an.</string>
+    <string name="labx_relock_button">Wieder sperren</string>
+    <string name="labx_relock_hint">Der Alarm-Stopp hat die Software-Sperre gelöscht. Ist der Kick-Lock nicht eingerastet, gilt das Bike als entsperrt.</string>
+
+    <string name="labx_siren_note">Alarm aus beendet jede Stufe und hebt die Software-Sperre auf. Sperr das Bike danach bei Bedarf neu.</string>
+    <string name="labx_siren_stage2">Bewegungswache. Das Bike schlägt erst bei Erschütterung an und eskaliert nach mehreren Stößen.</string>
+    <string name="labx_siren_stage3">Etwa 30\u00A0Sekunden Sirene, danach Ortungsmodus. Das 2G-Modem meldet sich dann etwa alle 30\u00A0Minuten statt alle 2\u00A0Stunden und braucht Akkustrom.</string>
+    <string name="labx_siren_stage4">Direkt in den Ortungsmodus mit gesetzter Software-Sperre, ohne Sirene.</string>
+
+    <string name="labx_selftest_dialog_text">YABA lädt zuerst das Protokoll des Bikes und sichert es auf dem Handy; dann läuft die Diagnose, danach geht das Bike in Standby. Der Bericht schiebt die ältesten Protokollzeilen heraus, deshalb wird vorher gesichert.</string>
+
+
+    <!-- lamp channel accessibility -->
+    <string name="labx_lamp_channel">Kanal\u00A0%1$d</string>
+    <string name="labx_lamp_state_on">an</string>
+    <string name="labx_lamp_state_off">aus</string>
+
+    <!-- Fahrtenschreiber: firmware tokens as a secondary line -->
+    <string name="labx_firmware_text">Firmware-Text: %1$s</string>
+    <string name="labx_derate_bat_temp">Akkutemperatur %1$s</string>
+
+    <!-- Sound-Lab: factory clip cannot be recovered -->
+    <string name="labx_clip_factory_warning">Der Werkston lässt sich nicht vom Bike zurücklesen. Nach dem Ersetzen ist er für immer weg; YABA kann ihn nicht wiederherstellen. Bewahr ihn selbst auf, wenn du ihn behalten willst.</string>
+</resources>

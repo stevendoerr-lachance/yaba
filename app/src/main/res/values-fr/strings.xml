@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ride_channel_name">Enregistreur de trajet YABA</string>
+    <string name="ride_channel_description">Maintient la connexion au vélo tant que l’enregistreur de trajet est actif.</string>
+</resources>

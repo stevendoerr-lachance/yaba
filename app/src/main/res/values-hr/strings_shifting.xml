@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mijenjanje na zaslonu vožnje: način mijenjanja (5538) i točke mijenjanja (5537). -->
+<resources>
+    <string name="shift_section">Mijenjanje</string>
+    <string name="shift_mode_auto">Automatski</string>
+    <string name="shift_mode_manual">Ručno</string>
+    <string name="shift_gear">Brzina</string>
+    <string name="shift_gear_cd">Brzina\u00A0%1$d</string>
+    <string name="shift_gear_unknown_cd">Brzina nepoznata</string>
+
+    <!-- Profili -->
+    <string name="shift_profile_standard">Standard</string>
+    <string name="shift_profile_flat">Ravno</string>
+    <string name="shift_profile_hilly">Brdovito</string>
+    <string name="shift_profile_custom">Vlastito</string>
+    <string name="shift_reason_standard">Tvornička postavka VanMoofa.</string>
+    <string name="shift_reason_flat">Brzina\u00A03 drži od 14 do 27\u00A0km/h. U gradskoj vožnji gotovo da nema mijenjanja.</string>
+    <string name="shift_reason_hilly">Brzina\u00A02 drži od 9 do 21\u00A0km/h. Na usponu se rjeđe mijenja pod opterećenjem.</string>
+    <string name="shift_reason_custom">Tvoje vlastite točke mijenjanja.</string>
+    <string name="shift_custom_empty">Još nema vlastitih točaka mijenjanja.</string>
+    <string name="shift_row_cd">%1$s. Mijenja naviše na %2$d, %3$d i %4$d\u00A0km/h, naniže na %5$d, %6$d i %7$d\u00A0km/h.</string>
+    <string name="shift_points_short">gore %1$d, %2$d, %3$d, dolje %4$d, %5$d, %6$d\u00A0km/h</string>
+    <string name="shift_limit_cd">Potpora prestaje na %1$d\u00A0km/h.</string>
+    <string name="shift_axis_kmh">%1$d\u00A0km/h</string>
+    <string name="shift_units_note">Točke mijenjanja uvijek postavljaš u km/h.</string>
+    <string name="shift_reading">Čitanje točaka mijenjanja …</string>
+    <string name="shift_invalid_on_bike">Točke mijenjanja na biciklu mogu izazvati stalno mijenjanje amo-tamo. Odaberi profil ili ih prilagodi.</string>
+    <string name="shift_fault">Mjenjač javlja grešku %1$d: %2$s</string>
+    <string name="shift_ease_off">Kad bicikl mijenja brzinu, nakratko popusti pritisak na pedale. Tako štediš mjenjač.</string>
+
+    <!-- Vlastito: uređivač -->
+    <string name="shift_handle_up">Naviše s %1$d na %2$d</string>
+    <string name="shift_handle_down">Naniže s %1$d na %2$d</string>
+    <string name="shift_lane_up">gore</string>
+    <string name="shift_lane_down">dolje</string>
+    <string name="shift_allowed">Moguće: od %1$d do %2$d\u00A0km/h</string>
+    <string name="shift_step_higher">1\u00A0km/h više</string>
+    <string name="shift_step_lower">1\u00A0km/h manje</string>
+    <string name="shift_blocked_by">Ograničava: %1$s</string>
+    <string name="shift_rules">Mijenjanje naniže je barem 2\u00A0km/h ispod mijenjanja naviše. Točke u istom smjeru razmaknute su barem 3\u00A0km/h. U brzinu 1 bicikl prelazi najkasnije na 5\u00A0km/h.</string>
+    <string name="shift_apply">Primijeni</string>
+    <string name="shift_discard">Odbaci</string>
+    <string name="shift_draft_matches">Isto kao %1$s.</string>
+    <string name="shift_draft_from_standard">Vrijednosti na biciklu nisu bile upotrebljive. Krećeš od postavke Standard.</string>
+
+    <!-- Ručno -->
+    <string name="shift_manual_up">Naviše: tijekom vožnje dvaput brzo pritisni Boost.</string>
+    <string name="shift_manual_down">Naniže: drži tipku zvona i dvaput brzo pritisni Boost.</string>
+    <string name="shift_manual_stop">Kad staneš, bicikl sam prebacuje u brzinu\u00A01.</string>
+    <string name="shift_manual_boost">Držanje tipke Boost i dalje daje dodatnu snagu.</string>
+    <string name="shift_manual_points_kept">Tvoje točke mijenjanja ostaju spremljene za Automatski.</string>
+    <string name="shift_key_bell">Zvono</string>
+    <string name="shift_key_boost">Boost</string>
+    <string name="shift_key_pressed">pritisnuto</string>
+
+    <!-- Dnevnik i greške -->
+    <string name="shift_cmd_mode">Način mijenjanja: %1$s</string>
+    <string name="shift_cmd_points">Točke mijenjanja: %1$s</string>
+    <string name="shift_log_state">Mijenjanje: %1$s (%2$s)</string>
+    <string name="shift_unknown">nepoznato</string>
+    <string name="shift_error_mode_rejected">Bicikl nije preuzeo %1$s. Javlja: %2$s.</string>
+    <string name="shift_error_points_rejected">Bicikl nije preuzeo točke mijenjanja. Javlja: %1$s.</string>
+    <string name="shift_error_points_invalid">Ove točke mijenjanja izazvale bi stalno mijenjanje amo-tamo. Ništa nije poslano.</string>
+    <string name="shift_error_too_many">Previše promjena mijenjanja zaredom. Ponovno se poveži za nastavak.</string>
+    <string name="shift_error_region_changed">Regija se promijenila tijekom spremanja. Ponovno provjeri točke mijenjanja.</string>
+
+    <!-- Notes, conflicts, editor actions, checks (second round) -->
+    <string name="shift_riding_note">Tijekom vožnje promjena vrijedi odmah: bicikl može odmah promijeniti brzinu.</string>
+    <string name="shift_region_short">Vrijedi za regiju %1$s (svaka regija čuva svoje).</string>
+    <string name="shift_legend">Svijetlo: ta brzina. Praznina: bicikl ostaje u brzini iz koje dolazi. Podcrtano: tvoja brzina sada.</string>
+    <string name="shift_profiles_show">Prikaži sve profile</string>
+    <string name="shift_profiles_hide">Sakrij profile</string>
+    <string name="shift_reason_invalid">Nevažeće vrijednosti na biciklu.</string>
+    <string name="shift_invalid_zero">Bicikl javlja sve točke mijenjanja kao 0\u00A0km/h. Zbog toga se čim krene prebacuje do brzine\u00A04 i kreće u brzini\u00A04. Odaberi Standard.</string>
+    <string name="shift_conflict_gap">„%1$s“ (%2$d\u00A0km/h) nije barem 2\u00A0km/h ispod „%3$s“ (%4$d\u00A0km/h).</string>
+    <string name="shift_conflict_spacing">„%1$s“ (%2$d\u00A0km/h) nije barem 3\u00A0km/h iznad „%3$s“ (%4$d\u00A0km/h).</string>
+    <string name="shift_conflict_min">„%1$s“ (%2$d\u00A0km/h) je ispod %3$d\u00A0km/h.</string>
+    <string name="shift_conflict_range">„%1$s“ (%2$d\u00A0km/h) je izvan raspona od %3$d do %4$d\u00A0km/h.</string>
+    <string name="shift_conflict_max">„%1$s“ (%2$d\u00A0km/h) je iznad %3$d\u00A0km/h.</string>
+    <string name="shift_conflict_more">… i još %1$d.</string>
+    <string name="shift_edit">Uredi</string>
+    <string name="shift_edit_set">Postavi</string>
+    <string name="shift_edit_close">Zatvori</string>
+    <string name="shift_expanded">prošireno</string>
+    <string name="shift_collapsed">sažeto</string>
+    <string name="shift_edit_action">Uredi točke mijenjanja</string>
+    <string name="shift_edit_close_action">Zatvori uređivač</string>
+    <string name="shift_editor_hint">Povuci točku ili je dodirni, pa fino podesi s − i +.</string>
+    <string name="shift_top_gear_above_limit">Brzina\u00A04 dolazi tek iznad %1$d\u00A0km/h, iza granice pomoći od %2$d\u00A0km/h, dakle samo bez pomoći. Do tada drži brzina\u00A03.</string>
+    <string name="shift_keys_live">Tipke na upravljaču (uživo)</string>
+    <string name="shift_gesture_hold">drži</string>
+    <string name="shift_check_failed">Firmver\u00A0%1$s javlja vrijednosti mijenjanja koje YABA ne poznaje (%2$s). YABA ovdje ništa ne mijenja.</string>
+    <string name="shift_persist_ok">Postavke mijenjanja i dalje su na biciklu nakon ponovnog spajanja (firmver\u00A0%1$s).</string>
+    <string name="shift_persist_mode_lost">YABA je zadnje postavila %1$s, bicikl sada javlja %2$s. Neka druga aplikacija to je promijenila ili ga bicikl nije zadržao.</string>
+    <string name="shift_persist_points_lost">Na biciklu više nisu točke mijenjanja koje je YABA zadnje zapisala (zapisano %1$s, sada %2$s). Neka druga aplikacija ih je promijenila ili ih bicikl nije zadržao.</string>
+    <string name="shift_log_fw">%1$s (firmver\u00A0%2$s)</string>
+    <string name="shift_error_read">Trenutne postavke mijenjanja nije bilo moguće pročitati. Ništa nije poslano.</string>
+    <string name="shift_error_no_region">Regija bicikla nije poznata, pa YABA ne zna koja memorija točaka mijenjanja vrijedi. Ništa nije poslano.</string>
+    <string name="shift_error_region_moved">Regija se promijenila nakon što su ove točke postavljene. Ništa nije poslano; ponovno ih provjeri.</string>
+</resources>

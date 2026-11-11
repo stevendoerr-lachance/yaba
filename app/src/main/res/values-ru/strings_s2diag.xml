@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- S2 drive diagnosis (ui/s2): wiggle test, error catcher, GPS comparison, live status block, S2 test mode. -->
+    <string name="s2diag_title">Привод S2</string>
+    <string name="s2diag_entry_intro">Для мотора, который пропадает: тест изгиба кабеля, ловец редких кодов ошибок, сравнение с GPS в поездке и блок состояния в реальном времени.</string>
+    <string name="s2diag_entry_open">Проверить привод</string>
+    <string name="s2diag_entry_waiting">Блок состояния ещё не прочитан.</string>
+    <string name="s2diag_entry_quiet">С %1$s в блоке состояния нет кода ошибки.</string>
+    <plurals name="s2diag_entry_caught">
+        <item quantity="one">Пойман %1$d код ошибки, последний: ошибка\u00A0%2$d в %3$s.</item>
+        <item quantity="few">Поймано %1$d кода ошибок, последний: ошибка\u00A0%2$d в %3$s.</item>
+        <item quantity="many">Поймано %1$d кодов ошибок, последний: ошибка\u00A0%2$d в %3$s.</item>
+        <item quantity="other">Поймано %1$d кода ошибок, последний: ошибка\u00A0%2$d в %3$s.</item>
+    </plurals>
+    <string name="s2diag_close">Закрыть</string>
+    <string name="s2diag_intro">Блок состояния S2 не сообщает ни ток мотора, ни температуру, ни сигналы датчиков Холла. Поэтому YABA определяет кабель или деталь по провалам скорости и коду ошибки.</string>
+    <string name="s2diag_connect_reason">Привод можно проверить только при подключённом велосипеде.</string>
+    <string name="s2diag_clock">%1$s</string>
+    <string name="s2diag_copied">Скопировано в буфер обмена.</string>
+
+    <!-- Wiggle test -->
+    <string name="s2diag_wiggle_title">Тест изгиба</string>
+    <string name="s2diag_wiggle_speed_cd">Скорость по данным велосипеда: %1$d\u00A0км/ч</string>
+    <string name="s2diag_wiggle_speed_none_cd">Скорости от велосипеда пока нет.</string>
+    <string name="s2diag_wiggle_unit">км/ч по данным велосипеда</string>
+    <plurals name="s2diag_wiggle_stale">
+        <item quantity="one">Больше %1$d\u00A0секунды нет блока состояния.</item>
+        <item quantity="few">Больше %1$d\u00A0секунд нет блока состояния.</item>
+        <item quantity="many">Больше %1$d\u00A0секунд нет блока состояния.</item>
+        <item quantity="other">Больше %1$d\u00A0секунды нет блока состояния.</item>
+    </plurals>
+    <string name="s2diag_wiggle_step1">Подними переднее колесо, например подставив ящик под нижнюю трубу, чтобы велосипед стоял устойчиво и не мог скатиться. Велосипед разблокирован и включён.</string>
+    <string name="s2diag_wiggle_step2">Нажми выше «Начать тест изгиба». Затем раскрути переднее колесо рукой, пока индикатор не покажет не меньше 10\u00A0км/ч.</string>
+    <string name="s2diag_wiggle_step3">Делайте это вдвоём: один крутит колесо, другой сгибает кабель мотора у вилки, у рулевой трубы и там, где он входит в раму. Держи пальцы подальше от спиц и тормозного диска, не крути педали и не нажимай boost.</string>
+    <string name="s2diag_wiggle_step4">Если скорость падает до 0, хотя колесо крутится, телефон вибрирует, пищит и ставит метку со временем. Метка сразу после того, как кто-то коснулся колеса, не считается.</string>
+    <string name="s2diag_wiggle_steps_show">Показать порядок действий</string>
+    <string name="s2diag_wiggle_zero_hint">Если при вращении скорость остаётся 0\u00A0км/ч, велосипед, вероятно, измеряет её только при работающем моторе. Тогда поможет поездка с GPS.</string>
+    <string name="s2diag_wiggle_spot">Место на кабеле</string>
+    <string name="s2diag_spot_fork">Вилка</string>
+    <string name="s2diag_spot_head">Рулевая труба</string>
+    <string name="s2diag_spot_frame">Рама</string>
+    <string name="s2diag_wiggle_start">Начать тест изгиба</string>
+    <string name="s2diag_wiggle_stop">Завершить тест изгиба</string>
+    <string name="s2diag_wiggle_running">Тест идёт: YABA читает блок состояния примерно раз в секунду, экран не гаснет.</string>
+    <string name="s2diag_mark">Поставить метку</string>
+    <string name="s2diag_marks_title">Метки</string>
+    <string name="s2diag_marks_clear">Убрать метки</string>
+    <string name="s2diag_mark_drop">Провал с %1$d до 0\u00A0км/ч</string>
+    <string name="s2diag_mark_manual">Поставлена вручную при %1$d\u00A0км/ч</string>
+    <string name="s2diag_log_drop">Тест изгиба: провал с %1$d до 0\u00A0км/ч</string>
+    <string name="s2diag_log_mark">Тест изгиба: метка при %1$d\u00A0км/ч</string>
+
+    <!-- Error catcher -->
+    <string name="s2diag_catch_title">Ловец ошибок</string>
+    <string name="s2diag_catch_intro">YABA проверяет каждый блок состояния, который получает: те, что читает сам раз в несколько секунд, и те, что велосипед присылает сам. Каждый код ошибки в них попадает сюда, даже если он был лишь в одном блоке.</string>
+    <plurals name="s2diag_catch_blocks">
+        <item quantity="one">%1$s блок состояния проверен с %2$s.</item>
+        <item quantity="few">%1$s блока состояния проверено с %2$s.</item>
+        <item quantity="many">%1$s блоков состояния проверено с %2$s.</item>
+        <item quantity="other">%1$s блока состояния проверено с %2$s.</item>
+    </plurals>
+    <plurals name="s2diag_catch_implausible">
+        <item quantity="one">%1$d блок состояния с невозможными значениями пропущен; обычно так бывает при неверном ключе.</item>
+        <item quantity="few">%1$d блока состояния с невозможными значениями пропущено; обычно так бывает при неверном ключе.</item>
+        <item quantity="many">%1$d блоков состояния с невозможными значениями пропущено; обычно так бывает при неверном ключе.</item>
+        <item quantity="other">%1$d блока состояния с невозможными значениями пропущено; обычно так бывает при неверном ключе.</item>
+    </plurals>
+    <string name="s2diag_catch_none">Пока ни одного кода ошибки.</string>
+    <string name="s2diag_hit_title">Ошибка\u00A0%1$d: %2$s</string>
+    <plurals name="s2diag_hit_group">
+        <item quantity="one">Ошибка\u00A0%1$d, %2$d×, в %3$s</item>
+        <item quantity="few">Ошибка\u00A0%1$d, %2$d×, последняя в %3$s</item>
+        <item quantity="many">Ошибка\u00A0%1$d, %2$d×, последняя в %3$s</item>
+        <item quantity="other">Ошибка\u00A0%1$d, %2$d×, последняя в %3$s</item>
+    </plurals>
+    <string name="s2diag_hit_meta">%1$s, %2$d\u00A0км/ч, батарея %3$d\u00A0%%, модуль %4$d\u00A0%%</string>
+    <plurals name="s2diag_hit_blocks">
+        <item quantity="one">Сообщено в %1$d блоке состояния.</item>
+        <item quantity="few">Сообщено в %1$d блоках состояния, до %2$s.</item>
+        <item quantity="many">Сообщено в %1$d блоках состояния, до %2$s.</item>
+        <item quantity="other">Сообщено в %1$d блоках состояния, до %2$s.</item>
+    </plurals>
+    <string name="s2diag_hit_part">Вероятно: %1$s</string>
+    <string name="s2diag_part_stall">датчики Холла или фазные провода мотора</string>
+    <string name="s2diag_part_voltage_high">батарея или зарядное устройство</string>
+    <string name="s2diag_part_supply">контакт батареи или кабель питания</string>
+    <string name="s2diag_part_speed_signal">сигнал скорости от мотора, то есть датчики Холла или кабель датчиков</string>
+    <string name="s2diag_part_phase_short">короткое замыкание на фазе мотора, в кабеле или на разъёме</string>
+    <string name="s2diag_part_torque">кабель датчика крутящего момента</string>
+    <string name="s2diag_part_heat">мотор или контроллер мотора перегрет, обычно не кабель</string>
+    <string name="s2diag_part_hall_cable">датчики Холла в моторе или кабель датчиков через вилку и рулевую трубу</string>
+    <string name="s2diag_part_module">электроника в раме, не привод</string>
+    <string name="s2diag_part_gsm">мобильный модем в модуле, не привод</string>
+    <string name="s2diag_part_controller_line">линия данных между электроникой в раме и контроллером мотора</string>
+    <string name="s2diag_part_unknown">неизвестный код; весь блок состояния есть в записи поездки</string>
+    <string name="s2diag_note_disputed">Источники расходятся в том, какой код, 4 или 5, означает «мотор слишком быстрый». Пожалуйста, включи тестовый режим S2: тогда каждый изменённый блок состояния попадёт в журнал, и код можно будет определить позже.</string>
+    <string name="s2diag_note_disputed_on">Источники расходятся в том, какой код, 4 или 5, означает «мотор слишком быстрый». Тестовый режим S2 включён, поэтому каждый изменённый блок состояния есть в журнале.</string>
+    <string name="s2diag_catch_copy">Скопировать список</string>
+    <string name="s2diag_catch_clear">Очистить список</string>
+
+    <!-- Ride with GPS -->
+    <string name="s2diag_gps_title">Поездка с GPS</string>
+    <string name="s2diag_gps_intro">Во время поездки YABA записывает скорость GPS телефона рядом со скоростью велосипеда в запись поездки. Там, где велосипед сообщает 0\u00A0км/ч, а GPS измеряет больше 8\u00A0км/ч, просмотр показывает обрыв сигнала.</string>
+    <string name="s2diag_gps_switch">Записывать скорость GPS</string>
+    <string name="s2diag_gps_switch_hint">В запись поездки попадает только скорость, никогда не местоположение.</string>
+    <string name="s2diag_gps_denied">Без доступа к точному местоположению телефон не измеряет скорость GPS. Пожалуйста, разреши его в настройках приложения.</string>
+    <string name="s2diag_gps_coarse">Разрешено только приблизительное местоположение. Для скорости GPS YABA нужно точное.</string>
+    <string name="s2diag_gps_app_settings">Открыть настройки приложения</string>
+    <string name="s2diag_gps_off">На телефоне выключено определение местоположения.</string>
+    <string name="s2diag_gps_location_settings">Включить геолокацию</string>
+    <string name="s2diag_gps_waiting">Ожидание GPS. Под открытым небом это обычно занимает меньше минуты.</string>
+    <string name="s2diag_gps_fact_bike">Велосипед</string>
+    <string name="s2diag_gps_fact_gps">GPS</string>
+    <string name="s2diag_kmh">%1$s\u00A0км/ч</string>
+    <string name="s2diag_gps_steps">Включи GPS и проедь несколько минут по спокойному маршруту, всё время крутя педали с поддержкой 1 или выше. Открой для этого кокпит в разделе «Диагностика»: он начинает запись поездки, а кнопка громкости отмечает момент, когда пропадает мотор.</string>
+    <string name="s2diag_gps_open_log">Открыть последнюю запись поездки</string>
+
+    <!-- Live status block -->
+    <string name="s2diag_raw_title">Блок состояния в реальном времени</string>
+    <string name="s2diag_raw_intro">16 байт в том виде, в каком велосипед сообщает их сейчас. Светлые байты изменились с последним блоком; маленькое число считает их изменения.</string>
+    <string name="s2diag_raw_legend">Байт 2 состояние и сигнализация, 3 замок, 4 скорость, 5 батарея, 6 батарея модуля, 7 свет и единицы, 8 уровень и регион, 10 звуки, с 11 по 14 пробег, 15 код ошибки и рабочие биты.</string>
+    <string name="s2diag_raw_none">Блока состояния пока нет.</string>
+    <plurals name="s2diag_raw_byte_cd">
+        <item quantity="one">Байт %1$d: %2$s, изменён %3$d раз</item>
+        <item quantity="few">Байт %1$d: %2$s, изменён %3$d раза</item>
+        <item quantity="many">Байт %1$d: %2$s, изменён %3$d раз</item>
+        <item quantity="other">Байт %1$d: %2$s, изменён %3$d раза</item>
+    </plurals>
+    <string name="s2diag_raw_copy">Скопировать блок</string>
+
+    <!-- S2 test mode -->
+    <string name="s2diag_test_title">Тестовый режим S2</string>
+    <string name="s2diag_test_switch">Разрешить неподтверждённые команды</string>
+    <string name="s2diag_test_hint">Открывает то, что на настоящем S2 ещё не подтверждено: блокировку из приложения и сигнализацию в разделе «Езда», резервный код в разделе «Велосипед», отключение звуков и 37\u00A0км/ч ниже.</string>
+    <string name="s2diag_test_gatt">Скопировать обзор GATT</string>
+
+    <!-- Ride log viewer: GPS speed and signal dropouts -->
+    <string name="s2diag_view_legend_gps">Скорость GPS, км/ч</string>
+    <string name="s2diag_view_legend_dropout">Обрыв сигнала</string>
+    <string name="s2diag_view_readout_gps">GPS %1$s</string>
+    <string name="s2diag_view_fact_gps_top">Максимум GPS</string>
+    <string name="s2diag_view_fact_dropouts">Обрывы сигнала</string>
+    <string name="s2diag_view_signal">Обрыв сигнала: велосипед 0\u00A0км/ч, GPS больше 8\u00A0км/ч</string>
+    <string name="s2diag_view_dropout_total">всего %1$s, GPS до %2$s</string>
+    <string name="s2diag_view_dropout_none">Обрывов сигнала нет: там, где GPS измерял больше 8\u00A0км/ч, велосипед тоже сообщал скорость.</string>
+    <plurals name="s2diag_view_summary_dropouts">
+        <item quantity="one">%1$s раз велосипед сообщил 0\u00A0км/ч, когда GPS измерял больше 8\u00A0км/ч, %2$s.</item>
+        <item quantity="few">%1$s раза велосипед сообщил 0\u00A0км/ч, когда GPS измерял больше 8\u00A0км/ч, впервые %2$s.</item>
+        <item quantity="many">%1$s раз велосипед сообщил 0\u00A0км/ч, когда GPS измерял больше 8\u00A0км/ч, впервые %2$s.</item>
+        <item quantity="other">%1$s раза велосипед сообщил 0\u00A0км/ч, когда GPS измерял больше 8\u00A0км/ч, впервые %2$s.</item>
+    </plurals>
+</resources>

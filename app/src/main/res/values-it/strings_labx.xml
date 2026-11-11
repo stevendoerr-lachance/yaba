@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="labx_cmd_boost_rolling_on">Boost in movimento attivo</string>
+    <string name="labx_cmd_boost_rolling_off">Boost in movimento disattivato</string>
+
+    <string name="labx_error_level_unknown">Il livello di assistenza non è ancora stato letto. Attendi un momento e tocca di nuovo.</string>
+    <string name="labx_error_clock_readback">Rilettura dell’orologio non plausibile. L’orologio potrebbe essere stato impostato; controlla di nuovo.</string>
+    <string name="labx_error_clock_jump">Solo senza tasto premuto: se l’orologio salta di più di 20\u00A0secondi mentre Campanello o Boost è premuto, la bici considera il tasto bloccato.</string>
+    <string name="labx_error_boost_rolling">Provalo da fermo: con “attivo” il livello può cambiare per sbaglio appena la bici si muove.</string>
+    <string name="labx_error_assist_cut">Solo da fermo e mentre la bici non si muove; questo disattiva l’assistenza del motore.</string>
+    <string name="labx_error_not_confirmed">Non confermato. Il valore è stato scritto, ma la rilettura non lo conferma; il valore memorizzato resta invariato.</string>
+    <string name="labx_error_lamp_read">I canali delle luci non possono essere letti; non è stato modificato nulla.</string>
+    <string name="labx_error_lamp_restore">Le luci sono state riscritte, ma la rilettura differisce. Un vero cambio di stato (modalità, blocco, riavvio) le riporta.</string>
+
+    <string name="labx_board_temp_waiting">in attesa di una variazione</string>
+    <string name="labx_not_read">non letto</string>
+    <string name="labx_threshold_factory">Valore di fabbrica 200</string>
+
+    <string name="labx_alarm_stop_note">Ferma un allarme in corso senza il codice di backup. Il comando cancella anche il blocco software; se la bici era bloccata, YABA offre poi “Blocca di nuovo”.</string>
+    <string name="labx_relock_button">Blocca di nuovo</string>
+    <string name="labx_relock_hint">Lo stop dell’allarme ha cancellato il blocco software. Senza il Kick Lock inserito, la bici risulta sbloccata.</string>
+
+    <string name="labx_siren_note">Allarme spento termina ogni livello e toglie il blocco software. Blocca di nuovo la bici dopo, se serve.</string>
+    <string name="labx_siren_stage2">Sorveglianza del movimento. La bici reagisce solo a uno scossone e aumenta dopo diversi urti.</string>
+    <string name="labx_siren_stage3">Circa 30\u00A0secondi di sirena, poi modalità di localizzazione. Il modem 2G comunica allora circa ogni 30\u00A0minuti invece che ogni 2\u00A0ore e consuma batteria.</string>
+    <string name="labx_siren_stage4">Direttamente in modalità di localizzazione con il blocco software impostato, senza sirena.</string>
+
+    <string name="labx_selftest_dialog_text">YABA scarica prima il registro della bici e lo salva sul telefono; poi parte la diagnosi e la bici va in standby. Il rapporto spinge fuori le righe più vecchie del registro, perciò viene salvato prima.</string>
+
+
+    <!-- lamp channel accessibility -->
+    <string name="labx_lamp_channel">Canale\u00A0%1$d</string>
+    <string name="labx_lamp_state_on">acceso</string>
+    <string name="labx_lamp_state_off">spento</string>
+
+    <!-- Fahrtenschreiber: firmware tokens as a secondary line -->
+    <string name="labx_firmware_text">Testo del firmware: %1$s</string>
+    <string name="labx_derate_bat_temp">Temperatura della batteria %1$s</string>
+
+    <!-- Sound-Lab: factory clip cannot be recovered -->
+    <string name="labx_clip_factory_warning">Il suono di fabbrica non può essere riletto dalla bici. Una volta sostituito è perso per sempre; YABA non può ripristinarlo. Tieni tu una copia se lo vuoi indietro.</string>
+</resources>

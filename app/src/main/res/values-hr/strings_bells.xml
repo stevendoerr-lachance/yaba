@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ugrađeni zvukovi zvona na zaslonu Zvuk: deset vlastitih zvukova koji dolaze s aplikacijom (tools/bells). -->
+<resources>
+    <string name="bells_hint">Dodir pušta zvuk na telefonu.</string>
+    <string name="bells_choose">Odaberi</string>
+    <string name="bells_muted">Glasnoća medija je isključena. Pojačaj je da čuješ pregled.</string>
+    <string name="bells_preview_failed">Pregled se nije mogao reproducirati.</string>
+    <string name="bells_seconds">%1$s\u00A0s</string>
+
+    <!-- TalkBack -->
+    <string name="bells_row_cd">%1$s, %2$s</string>
+    <string name="bells_play_action">reproduciraj na telefonu</string>
+    <string name="bells_stop_action">zaustavi</string>
+    <string name="bells_state_playing">Svira na telefonu</string>
+
+    <!-- Zvuk u vlastitom mjestu, u svom retku -->
+    <string name="bells_state_on_bike">Na biciklu</string>
+
+    <!-- Nazivi -->
+    <string name="bells_name_ringring">Zvonce</string>
+    <string name="bells_name_tram">Zagrebački tramvaj</string>
+    <string name="bells_name_honk">Trubica</string>
+    <string name="bells_name_stadium">Navijačka truba</string>
+    <string name="bells_name_fanfare">Fanfara</string>
+    <string name="bells_name_cucaracha">La Cucaracha</string>
+    <string name="bells_name_trombone">Tužni trombon</string>
+    <string name="bells_name_nightshift">Noćna smjena</string>
+    <string name="bells_name_jingle">YABA džingl</string>
+    <string name="bells_name_ufo">NLO</string>
+    <string name="bells_caption_phone">Na telefonu</string>
+</resources>

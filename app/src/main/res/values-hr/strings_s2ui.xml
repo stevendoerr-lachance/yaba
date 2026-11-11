@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fahren (RideScreen): what an S2 offers instead of the S3 controls (the S2 plan A1, B6). -->
+    <string name="s2ui_alarm_manual">Ručno</string>
+    <string name="s2ui_alarm_read_only">YABA mijenja alarm na S2 tek kad ga test na pravom biciklu potvrdi. U S2 testnom načinu to već radi; prekidač je pod Dijagnoza u S2 pogonu, sasvim dolje.</string>
+    <string name="s2ui_roll_to_unlock">S2 obično otpusti Kick Lock tek kad zakotrljaš bicikl dok traje animacija otključavanja.</string>
+    <string name="s2ui_lock_by_foot">Za zaključavanje S2 pritisni Kick Lock nogom prema dolje.</string>
+    <!-- Klang (SoundScreen): an S2 has no sound command at all. -->
+    <string name="s2ui_sound_none">S2 nema Bluetooth naredbu za ton zvona, zvukove ni vlastito zvono.</string>
+    <!-- Bike (BikeScreen). -->
+    <string name="s2ui_fact_module_battery">Baterija modula</string>
+    <string name="s2ui_code_s2">S2 može rezervni kôd samo postaviti, ne i izbrisati ili prikazati. Dobro zapamti novi kôd prije nego što ga pošalješ.</string>
+    <!-- Diagnose (DiagnosisScreen): the S2 code lookup. -->
+    <string name="s2ui_lookup_hint">Upiši broj koji bicikl prikazuje na zaslonu, na primjer 16.</string>
+    <!-- Cockpit: an S2 shows its error code in place of the four S3 lamps. -->
+    <string name="s2ui_cockpit_lamp_error">Kôd greške</string>
+    <string name="s2ui_cockpit_val_no_error">nema</string>
+    <!-- Garage: model line per bike and the model choice for bikes the account does not describe. -->
+    <string name="s2ui_garage_family_s3">Model S3/X3</string>
+    <string name="s2ui_garage_family_s2">Model S2/X2, podrška u testiranju</string>
+    <string name="s2ui_garage_family_legacy">Stariji VanMoof: YABA ne podržava ovaj model.</string>
+    <string name="s2ui_garage_model_title">Model</string>
+    <string name="s2ui_garage_model_hint">S2 i X2 koriste drugi Bluetooth protokol od S3 i X3. Odaberi model svog bicikla kako bi mu YABA ispravno pristupio.</string>
+</resources>

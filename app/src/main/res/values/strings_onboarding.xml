@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Onboarding: sign in or key, Bluetooth access, find the bike, first unlock (ui/onboarding). Bodies: at most two sentences and 190 characters. -->
+<resources>
+    <string name="onb_signin_button">Sign in</string>
+    <string name="onb_perm_title">Access to nearby devices</string>
+    <string name="onb_perm_text">To find your bike, YABA needs access to “Nearby devices”. YABA does not evaluate your location.</string>
+    <string name="onb_perm_button">Allow access</string>
+    <string name="onb_perm_denied">Access was denied. Please allow it in the app settings under “Permissions”.</string>
+    <string name="onb_perm_denied_again">Access was denied. Tap “Allow access” to ask again.</string>
+    <string name="onb_find_title">Find your bike</string>
+    <string name="onb_find_text">YABA is searching for your bike over Bluetooth. Please stay close and close the VanMoof app, because the bike accepts only one phone at a time.</string>
+    <string name="onb_find_button">Search now</string>
+    <string name="onb_notfound_text">YABA has received no answer from “%1$s” for more than 12\u00A0seconds. Please close the VanMoof app and wake the bike with the bell button.</string>
+    <string name="onb_official_text">The VanMoof app often holds the only Bluetooth connection of the bike in the background, because the bike accepts only one phone at a time.</string>
+    <string name="onb_unlock_title">First unlock</string>
+    <string name="onb_unlock_text">YABA has found your bike. Drag the slider to the end, and YABA unlocks the bike directly over Bluetooth.</string>
+    <string name="onb_server_text_http">VanMoof’s server answered with error\u00A0%2$d at %1$s. Tap “Try again” to repeat the request.</string>
+    <string name="onb_server_text_timeout">At %1$s, no answer came within 10\u00A0seconds. Tap “Try again” to repeat the request.</string>
+    <string name="onb_server_text_dead">VanMoof’s server has not answered any request from this phone for %1$d\u00A0days.</string>
+    <!-- matrix: ASCII only, BLE glyph + 2 empty columns + word must stay within 36 columns -->
+    <string name="onb_matrix_scan">SCAN</string>
+    <string name="onb_step_cd">Step\u00A0%1$d of %2$d</string>
+    <string name="onb_change_key">Change key</string>
+    <string name="onb_find_idle_text">The search has stopped. Please stay close and close the VanMoof app, then search again.</string>
+</resources>

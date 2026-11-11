@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- S2 drive diagnosis (ui/s2): wiggle test, error catcher, GPS comparison, live status block, S2 test mode. -->
+    <string name="s2diag_title">S2-Antrieb</string>
+    <string name="s2diag_entry_intro">Für einen Motor mit Aussetzern: Wackeltest am Kabel, Fehlerfänger für seltene Codes, Vergleich mit GPS bei der Fahrt und der Statusblock live.</string>
+    <string name="s2diag_entry_open">Antrieb prüfen</string>
+    <string name="s2diag_entry_waiting">Noch kein Statusblock gelesen.</string>
+    <string name="s2diag_entry_quiet">Seit %1$s\u00A0Uhr kein Fehlercode im Statusblock.</string>
+    <plurals name="s2diag_entry_caught">
+        <item quantity="one">Ein Fehlercode gefangen: Fehler\u00A0%2$d um %3$s\u00A0Uhr.</item>
+        <item quantity="other">%1$d Fehlercodes gefangen, zuletzt Fehler\u00A0%2$d um %3$s\u00A0Uhr.</item>
+    </plurals>
+    <string name="s2diag_close">Schließen</string>
+    <string name="s2diag_intro">Der Statusblock des S2 meldet weder Motorstrom noch Temperatur noch die Hall-Signale. YABA schließt deshalb aus Tempo-Aussetzern und dem Fehlercode auf das Kabel oder Teil.</string>
+    <string name="s2diag_connect_reason">Der Antrieb lässt sich nur mit verbundenem Bike prüfen.</string>
+    <string name="s2diag_clock">%1$s\u00A0Uhr</string>
+    <string name="s2diag_copied">In die Zwischenablage kopiert.</string>
+
+    <!-- Wiggle test -->
+    <string name="s2diag_wiggle_title">Wackeltest</string>
+    <string name="s2diag_wiggle_speed_cd">Tempo laut Bike: %1$d\u00A0km/h</string>
+    <string name="s2diag_wiggle_speed_none_cd">Noch kein Tempo vom Bike.</string>
+    <string name="s2diag_wiggle_unit">km/h laut Bike</string>
+    <plurals name="s2diag_wiggle_stale">
+        <item quantity="one">Seit mehr als %1$d\u00A0Sekunde kein Statusblock.</item>
+        <item quantity="other">Seit mehr als %1$d\u00A0Sekunden kein Statusblock.</item>
+    </plurals>
+    <string name="s2diag_wiggle_step1">Heb das Vorderrad an, zum Beispiel mit einer Kiste unter dem Unterrohr, sodass das Bike fest steht und nicht herunterrollen kann. Das Bike ist entsperrt und an.</string>
+    <string name="s2diag_wiggle_step2">Tipp oben auf Wackeltest starten. Dann dreh das Vorderrad von Hand, bis die Anzeige mindestens 10\u00A0km/h zeigt.</string>
+    <string name="s2diag_wiggle_step3">Macht es zu zweit: Einer dreht, der andere biegt das Motorkabel an der Gabel, am Steuerrohr und dort, wo es in den Rahmen geht. Finger weg von Speichen und Bremsscheibe, und weder treten noch Boost drücken.</string>
+    <string name="s2diag_wiggle_step4">Fällt das Tempo auf 0, obwohl das Rad dreht, vibriert das Handy, piept und setzt eine Marke mit Uhrzeit. Eine Marke direkt nachdem jemand das Rad berührt hat, zählt nicht.</string>
+    <string name="s2diag_wiggle_steps_show">Ablauf zeigen</string>
+    <string name="s2diag_wiggle_zero_hint">Bleibt das Tempo beim Drehen auf 0\u00A0km/h, misst das Bike es wahrscheinlich nur bei laufendem Motor. Dann hilft die Fahrt mit GPS weiter.</string>
+    <string name="s2diag_wiggle_spot">Stelle am Kabel</string>
+    <string name="s2diag_spot_fork">Gabel</string>
+    <string name="s2diag_spot_head">Steuerrohr</string>
+    <string name="s2diag_spot_frame">Rahmen</string>
+    <string name="s2diag_wiggle_start">Wackeltest starten</string>
+    <string name="s2diag_wiggle_stop">Wackeltest beenden</string>
+    <string name="s2diag_wiggle_running">Der Test läuft: YABA liest den Statusblock etwa jede Sekunde, und der Bildschirm bleibt an.</string>
+    <string name="s2diag_mark">Marke setzen</string>
+    <string name="s2diag_marks_title">Marken</string>
+    <string name="s2diag_marks_clear">Marken entfernen</string>
+    <string name="s2diag_mark_drop">Abriss von %1$d auf 0\u00A0km/h</string>
+    <string name="s2diag_mark_manual">Von Hand gesetzt bei %1$d\u00A0km/h</string>
+    <string name="s2diag_log_drop">Wackeltest: Abriss von %1$d auf 0\u00A0km/h</string>
+    <string name="s2diag_log_mark">Wackeltest: Marke bei %1$d\u00A0km/h</string>
+
+    <!-- Error catcher -->
+    <string name="s2diag_catch_title">Fehlerfänger</string>
+    <string name="s2diag_catch_intro">YABA prüft jeden Statusblock, den es bekommt: die, die es alle paar Sekunden selbst liest, und die, die das Bike von sich aus schickt. Jeder Fehlercode darin landet hier, auch einer in einem einzigen Block.</string>
+    <plurals name="s2diag_catch_blocks">
+        <item quantity="one">Ein Statusblock geprüft seit %2$s\u00A0Uhr.</item>
+        <item quantity="other">%1$s Statusblöcke geprüft seit %2$s\u00A0Uhr.</item>
+    </plurals>
+    <plurals name="s2diag_catch_implausible">
+        <item quantity="one">Ein Statusblock mit unmöglichen Werten übersprungen; das kommt meist von einem falschen Schlüssel.</item>
+        <item quantity="other">%1$d Statusblöcke mit unmöglichen Werten übersprungen; das kommt meist von einem falschen Schlüssel.</item>
+    </plurals>
+    <string name="s2diag_catch_none">Bisher kein Fehlercode.</string>
+    <string name="s2diag_hit_title">Fehler\u00A0%1$d: %2$s</string>
+    <plurals name="s2diag_hit_group">
+        <item quantity="one">Fehler\u00A0%1$d, %2$d×, um %3$s\u00A0Uhr</item>
+        <item quantity="other">Fehler\u00A0%1$d, %2$d×, zuletzt %3$s\u00A0Uhr</item>
+    </plurals>
+    <string name="s2diag_hit_meta">%1$s\u00A0Uhr, %2$d\u00A0km/h, Akku %3$d\u00A0%%, Modul %4$d\u00A0%%</string>
+    <plurals name="s2diag_hit_blocks">
+        <item quantity="one">Nur in einem Statusblock gemeldet.</item>
+        <item quantity="other">In %1$d Statusblöcken gemeldet, bis %2$s\u00A0Uhr.</item>
+    </plurals>
+    <string name="s2diag_hit_part">Wahrscheinlich: %1$s</string>
+    <string name="s2diag_part_stall">Hall-Sensoren oder Phasenkabel des Motors</string>
+    <string name="s2diag_part_voltage_high">Akku oder Ladegerät</string>
+    <string name="s2diag_part_supply">Akkukontakt oder Versorgungskabel</string>
+    <string name="s2diag_part_speed_signal">das Tempo-Signal vom Motor, also Hall-Sensoren oder Sensorkabel</string>
+    <string name="s2diag_part_phase_short">ein Kurzschluss an einer Motorphase, im Kabel oder am Stecker</string>
+    <string name="s2diag_part_torque">das Kabel des Drehmomentsensors</string>
+    <string name="s2diag_part_heat">Motor oder Motorcontroller zu warm, meist kein Kabel</string>
+    <string name="s2diag_part_hall_cable">Hall-Sensoren im Motor oder das Sensorkabel durch Gabel und Steuerrohr</string>
+    <string name="s2diag_part_module">die Elektronik im Rahmen, nicht der Antrieb</string>
+    <string name="s2diag_part_gsm">das Mobilfunkmodem im Modul, nicht der Antrieb</string>
+    <string name="s2diag_part_controller_line">die Datenleitung zwischen der Elektronik im Rahmen und dem Motorcontroller</string>
+    <string name="s2diag_part_unknown">ein unbekannter Code; der ganze Statusblock steht im Fahrtprotokoll</string>
+    <string name="s2diag_note_disputed">Bei 4 und 5 sind sich die Quellen uneinig, welcher Code „Motor zu schnell“ heißt. Bitte schalte den S2-Testmodus ein: Dann landet jeder geänderte Statusblock im Protokoll, und der Code lässt sich später zuordnen.</string>
+    <string name="s2diag_note_disputed_on">Bei 4 und 5 sind sich die Quellen uneinig, welcher Code „Motor zu schnell“ heißt. Der S2-Testmodus ist an, also steht jeder geänderte Statusblock im Protokoll.</string>
+    <string name="s2diag_catch_copy">Liste kopieren</string>
+    <string name="s2diag_catch_clear">Liste leeren</string>
+
+    <!-- Ride with GPS -->
+    <string name="s2diag_gps_title">Fahrt mit GPS</string>
+    <string name="s2diag_gps_intro">Beim Fahren schreibt YABA das GPS-Tempo des Handys neben das Tempo des Bikes ins Fahrtprotokoll. Meldet das Bike 0\u00A0km/h, während GPS mehr als 8\u00A0km/h misst, zeigt die Auswertung dort einen Signalabriss.</string>
+    <string name="s2diag_gps_switch">GPS-Tempo mitschreiben</string>
+    <string name="s2diag_gps_switch_hint">Ins Fahrtprotokoll kommt nur das Tempo, nie der Standort.</string>
+    <string name="s2diag_gps_denied">Ohne Zugriff auf den genauen Standort misst das Handy kein GPS-Tempo. Bitte erlaub ihn in den App-Einstellungen.</string>
+    <string name="s2diag_gps_coarse">Erlaubt ist nur der ungefähre Standort. Für das GPS-Tempo braucht YABA den genauen.</string>
+    <string name="s2diag_gps_app_settings">App-Einstellungen öffnen</string>
+    <string name="s2diag_gps_off">Der Standort ist am Handy ausgeschaltet.</string>
+    <string name="s2diag_gps_location_settings">Standort einschalten</string>
+    <string name="s2diag_gps_waiting">Wartet auf GPS. Unter freiem Himmel dauert das meist weniger als eine Minute.</string>
+    <string name="s2diag_gps_fact_bike">Bike</string>
+    <string name="s2diag_gps_fact_gps">GPS</string>
+    <string name="s2diag_kmh">%1$s\u00A0km/h</string>
+    <string name="s2diag_gps_steps">Schalt GPS ein und fahr ein paar Minuten auf einer ruhigen Strecke, dabei durchgehend treten, Unterstützung ab Stufe 1. Öffne dafür das Cockpit in der Diagnose: Es startet das Fahrtprotokoll, und eine Lautstärketaste markiert den Moment, in dem der Motor aussetzt.</string>
+    <string name="s2diag_gps_open_log">Letztes Fahrtprotokoll öffnen</string>
+
+    <!-- Live status block -->
+    <string name="s2diag_raw_title">Statusblock live</string>
+    <string name="s2diag_raw_intro">Die 16 Bytes, wie das Bike sie gerade meldet. Hell sind die Bytes, die sich mit dem letzten Block geändert haben; die kleine Zahl zählt ihre Änderungen.</string>
+    <string name="s2diag_raw_legend">Byte 2 Zustand und Alarm, 3 Schloss, 4 Tempo, 5 Akku, 6 Modul-Akku, 7 Licht und Einheit, 8 Stufe und Region, 10 Töne, 11 bis 14 Kilometer, 15 Fehlercode und Betriebsbits.</string>
+    <string name="s2diag_raw_none">Noch kein Statusblock.</string>
+    <plurals name="s2diag_raw_byte_cd">
+        <item quantity="one">Byte %1$d: %2$s, einmal geändert</item>
+        <item quantity="other">Byte %1$d: %2$s, %3$d-mal geändert</item>
+    </plurals>
+    <string name="s2diag_raw_copy">Block kopieren</string>
+
+    <!-- S2 test mode -->
+    <string name="s2diag_test_title">S2-Testmodus</string>
+    <string name="s2diag_test_switch">Unbestätigte Befehle freischalten</string>
+    <string name="s2diag_test_hint">Schaltet frei, was am echten S2 noch nicht bestätigt ist: Sperren per App und Alarm unter Fahren, den Ersatzcode unter Bike, Stummschalten und 37\u00A0km/h hier unten.</string>
+    <string name="s2diag_test_gatt">GATT-Übersicht kopieren</string>
+
+    <!-- Ride log viewer: GPS speed and signal dropouts -->
+    <string name="s2diag_view_legend_gps">GPS-Tempo in km/h</string>
+    <string name="s2diag_view_legend_dropout">Signalabriss</string>
+    <string name="s2diag_view_readout_gps">GPS %1$s</string>
+    <string name="s2diag_view_fact_gps_top">GPS-Spitze</string>
+    <string name="s2diag_view_fact_dropouts">Signalabrisse</string>
+    <string name="s2diag_view_signal">Signalabriss: Bike 0\u00A0km/h, GPS über 8\u00A0km/h</string>
+    <string name="s2diag_view_dropout_total">zusammen %1$s, GPS bis %2$s</string>
+    <string name="s2diag_view_dropout_none">Kein Signalabriss: Wo GPS mehr als 8\u00A0km/h maß, meldete auch das Bike ein Tempo.</string>
+    <plurals name="s2diag_view_summary_dropouts">
+        <item quantity="one">Einmal meldete das Bike 0\u00A0km/h, während GPS mehr als 8\u00A0km/h maß, %2$s.</item>
+        <item quantity="other">%1$s-mal meldete das Bike 0\u00A0km/h, während GPS mehr als 8\u00A0km/h maß, zuerst %2$s.</item>
+    </plurals>
+</resources>

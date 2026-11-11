@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Écran Son, sonnerie personnalisée, boîte à sons, partage et les composants son communs. -->
+<resources>
+    <!-- SoundScreen -->
+    <string name="sound_title">Son</string>
+    <string name="sound_connect_needed">Connecte ton vélo pour jouer des sons.</string>
+
+    <!-- Bell tone -->
+    <string name="sound_bell_title">Sonnerie</string>
+    <string name="sound_bell_hint">Le son que joue le bouton de la sonnette.</string>
+    <string name="sound_listen">Écouter</string>
+    <string name="sound_bell_switching">Passage à %1$s…</string>
+    <string name="sound_bell_unknown">Le vélo n’a pas encore transmis le son de sa sonnette.</string>
+    <string name="sound_bell_plays">Joue %1$s sur le vélo.</string>
+    <string name="sound_tone_custom">Ton propre son</string>
+    <string name="sound_tone_custom_option">Ou ton propre son</string>
+    <string name="sound_tile_busy">Changement</string>
+
+    <!-- Custom bell tone -->
+    <plurals name="sound_custom_intro">
+        <item quantity="one">Le son remplace «\u00A0Corne de brume\u00A0» et peut durer jusqu’à %1$d\u00A0seconde. L’envoi prend environ une minute.</item>
+        <item quantity="many">Le son remplace «\u00A0Corne de brume\u00A0» et peut durer jusqu’à %1$d\u00A0secondes. L’envoi prend environ une minute.</item>
+        <item quantity="other">Le son remplace «\u00A0Corne de brume\u00A0» et peut durer jusqu’à %1$d\u00A0secondes. L’envoi prend environ une minute.</item>
+    </plurals>
+    <string name="sound_custom_sending_named">Envoi\u00A0: %1$s</string>
+    <string name="sound_custom_keep_close" formatted="false">Garde ton téléphone près du vélo, s’il te plaît, jusqu’à ce que le transfert atteigne 100\u00A0%.</string>
+    <string name="sound_custom_pick">Choisir ton propre fichier</string>
+    <string name="sound_custom_converting">Conversion…</string>
+    <string name="sound_custom_done">Son de sonnette transféré. Le vélo le joue désormais, même quand YABA ne tourne pas. Appuie sur le bouton de la sonnette au guidon pour l’essayer, s’il te plaît.</string>
+    <string name="sound_custom_sound_name">Son personnalisé</string>
+    <string name="sound_custom_waveform">Forme d’onde\u00A0: %1$s</string>
+    <string name="sound_custom_trimmed">Coupé à %1$d\u00A0s</string>
+    <string name="sound_fact_length">Durée</string>
+    <string name="sound_fact_sample_rate">Échantillonnage</string>
+    <string name="sound_fact_size">Taille</string>
+    <string name="sound_value_seconds">%1$s\u00A0s</string>
+    <string name="sound_value_khz">%1$s\u00A0kHz</string>
+    <string name="sound_value_kb">%1$d\u00A0ko</string>
+    <string name="sound_custom_send">Envoyer au vélo</string>
+    <string name="sound_custom_connect_first">Connecte d’abord ton téléphone au vélo, s’il te plaît.</string>
+    <string name="sound_custom_other_file">Choisir un autre fichier</string>
+    <string name="sound_audio_file">Fichier audio</string>
+
+    <!-- Soundboard -->
+    <string name="sound_board_title">Tous les sons du vélo</string>
+    <string name="sound_board_quiet">Le vélo reste muet pendant le transfert.</string>
+    <string name="sound_board_hint">Un appui joue le son sur le vélo.</string>
+    <string name="sound_board_alarm_warning">Très fort. Ne teste pas ce son à proximité d’autres personnes, s’il te plaît.</string>
+
+    <!-- Upload meter (TalkBack + figure) -->
+    <string name="sound_upload_done_state">Transfert terminé</string>
+    <string name="sound_upload_progress_state">Transfert à %1$d pour cent</string>
+    <string name="sound_upload_percent">%1$d\u00A0%%</string>
+
+    <!-- Connect notice -->
+    <string name="sound_connect_ble_denied">Bluetooth non autorisé</string>
+    <string name="sound_connect_ble_off">Le Bluetooth est désactivé</string>
+    <string name="sound_connect_searching">Recherche du vélo…</string>
+    <string name="sound_connect_connecting">Connexion…</string>
+    <string name="sound_connect_authenticating">Authentification auprès du vélo…</string>
+    <string name="sound_connect_lost">Connexion interrompue</string>
+    <string name="sound_connect_offline">Non connecté</string>
+    <string name="sound_connect_allow">Autoriser le Bluetooth</string>
+    <string name="sound_connect_enable">Activer le Bluetooth</string>
+    <string name="sound_connect_connect">Connecter</string>
+    <string name="sound_open_garage">Ouvrir le garage</string>
+
+    <!-- Sharing -->
+    <string name="sound_share_title">Partage</string>
+    <string name="sound_share_gate_login">Le partage passe par ton compte VanMoof. Connecte-toi au compte depuis le garage, s’il te plaît.</string>
+    <string name="sound_share_gate_pick">Choisis dans le garage un vélo de ton compte, puis tu pourras le partager.</string>
+    <string name="sound_share_gate_manual">Ce vélo n’est pas lié à ton compte VanMoof. Seuls les vélos de ton compte peuvent être partagés.</string>
+    <string name="sound_share_shared_with">Partagé avec %1$s.</string>
+    <string name="sound_share_ended_for">Partage avec %1$s arrêté.</string>
+    <string name="sound_share_ended">Partage arrêté.</string>
+    <string name="sound_share_bad_email">Ce n’est pas une adresse e-mail valide.</string>
+    <string name="sound_share_intro">Donne à une personne l’accès à ton vélo, pour une durée limitée ou sans limite.</string>
+    <string name="sound_share_email_label">Adresse e-mail</string>
+    <string name="sound_share_open_ended">Reste valable jusqu’à ce que tu mettes fin au partage.</string>
+    <string name="sound_share_sharing">Partage…</string>
+    <string name="sound_share_submit">Partager le vélo</string>
+    <string name="sound_share_end_title">Arrêter le partage\u00A0?</string>
+    <string name="sound_share_end_text">%1$s perdra l’accès à ton vélo.</string>
+    <string name="sound_share_someone">Cette personne</string>
+    <string name="sound_share_end">Arrêter</string>
+    <string name="sound_share_end_for">Arrêter le partage avec %1$s</string>
+    <string name="sound_share_cancel">Annuler</string>
+    <string name="sound_share_list_title">Partagé avec</string>
+    <string name="sound_share_loading">Chargement de tes partages…</string>
+    <string name="sound_share_none">Tu n’as encore partagé ton vélo avec personne. Tu peux le partager avec toute personne qui a un compte VanMoof\u00A0: saisis l’adresse e-mail et choisis une durée ou «\u00A0sans limite\u00A0». Tu peux mettre fin à chaque partage à tout moment. Le partage passe par le serveur de VanMoof et fonctionne tant que celui-ci répond.</string>
+    <string name="sound_share_reload">Recharger</string>
+    <string name="sound_share_no_email">Pas d’e-mail</string>
+    <string name="sound_share_until">Jusqu’au %1$s</string>
+    <string name="sound_share_expired">Expiré le %1$s</string>
+    <string name="sound_share_unlimited_row">Illimité</string>
+    <string name="sound_share_for_row">Pour %1$s</string>
+    <string name="sound_share_unlimited">Illimité</string>
+    <string name="sound_share_for">Pour %1$s</string>
+    <plurals name="sound_share_minutes">
+        <item quantity="one">%1$d\u00A0minute</item>
+        <item quantity="many">%1$d\u00A0minutes</item>
+        <item quantity="other">%1$d\u00A0minutes</item>
+    </plurals>
+    <plurals name="sound_share_hours">
+        <item quantity="one">%1$d\u00A0heure</item>
+        <item quantity="many">%1$d\u00A0heures</item>
+        <item quantity="other">%1$d\u00A0heures</item>
+    </plurals>
+    <plurals name="sound_share_days">
+        <item quantity="one">%1$d\u00A0jour</item>
+        <item quantity="many">%1$d\u00A0jours</item>
+        <item quantity="other">%1$d\u00A0jours</item>
+    </plurals>
+    <plurals name="sound_share_weeks">
+        <item quantity="one">%1$d\u00A0semaine</item>
+        <item quantity="many">%1$d\u00A0semaines</item>
+        <item quantity="other">%1$d\u00A0semaines</item>
+    </plurals>
+    <string name="sound_custom_row_none">Remplace «\u00A0%1$s\u00A0»</string>
+    <string name="sound_tone_custom_record">Ton propre son à la place de %1$s</string>
+    <string name="sound_custom_failed_at">Le transfert s’est interrompu à %1$d\u00A0%%. «\u00A0%2$s\u00A0» reste muet jusqu’à ce qu’un fichier arrive en entier.</string>
+    <string name="sound_custom_failed_before">Le transfert n’a pas démarré. «\u00A0%1$s\u00A0» conserve le son précédent.</string>
+    <string name="sound_custom_resend">Renvoyer</string>
+    <string name="sound_send_standstill">L’envoi démarre à l’arrêt. Pendant le transfert, YABA ne lit aucune valeur pendant environ une minute.</string>
+    <string name="sound_custom_wait_transfer">L’envoi attend la fin du transfert en cours.</string>
+    <string name="sound_custom_sending_percent">Envoi de «\u00A0%1$s\u00A0», %2$d\u00A0%%</string>
+    <string name="sound_lab_title">Labo sonore</string>
+    <string name="sound_custom_replace_cd">Choisir ton propre son à la place de «\u00A0%1$s\u00A0»</string>
+</resources>

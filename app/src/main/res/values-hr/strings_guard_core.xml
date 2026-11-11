@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="guard_core_channel_alarm_name">Straža</string>
+    <string name="guard_core_channel_alarm_desc">Javlja kretanje bicikla i prekinutu vezu dok je straža aktivna.</string>
+    <string name="guard_core_channel_status_name">Straža radi</string>
+    <string name="guard_core_channel_status_desc">Pokazuje da je straža aktivna dok YABA ostaje povezana s biciklom.</string>
+    <string name="guard_core_notif_arming_title">Straža se uključuje</string>
+    <string name="guard_core_notif_arming_text">YABA zaključava bicikl i čeka njegovu potvrdu.</string>
+    <string name="guard_core_notif_active_title">Straža aktivna</string>
+    <string name="guard_core_notif_active_text">Od %1$s. Bicikl sam pazi na kretanje, YABA ostaje povezana.</string>
+    <string name="guard_core_notif_active_text_phone">Od %1$s. YABA ostaje povezana s biciklom.</string>
+    <string name="guard_core_notif_searching">Veza prekinuta. YABA traži bicikl.</string>
+    <string name="guard_core_notif_disarming_title">Straža se završava</string>
+    <string name="guard_core_notif_alarm_title">Alarm na biciklu</string>
+    <string name="guard_core_notif_alarm_title_at">Alarm na biciklu u %1$s</string>
+    <string name="guard_core_notif_lost_title">Veza s biciklom izgubljena</string>
+    <string name="guard_core_notif_lost_watch">Veza s biciklom izgubljena. Nadzor kretanja na biciklu radi dalje.</string>
+    <string name="guard_core_notif_lost">Veza s biciklom izgubljena. YABA se ponovno povezuje čim bicikl bude u dometu.</string>
+    <string name="guard_core_notif_restart_title">Straža prekinuta</string>
+    <string name="guard_core_notif_restart_text">Android je zatvorio YABA-u u pozadini. Dodirni ovdje da straža radi dalje.</string>
+    <string name="guard_core_action_end">Završi stražu</string>
+    <string name="guard_core_action_silence">Isključi sirenu</string>
+    <string name="guard_core_trigger_wheel">Bicikl javlja da se kotač okreće.</string>
+    <string name="guard_core_trigger_bike_alarm">Bicikl je sam uključio svoj alarm.</string>
+    <string name="guard_core_trigger_status">Bicikl javlja stanje alarma.</string>
+    <string name="guard_core_trigger_unlock_request">Bicikl je poslao zahtjev za otključavanje. To se događa kad se pritisne tipka ili se bicikl pomakne.</string>
+    <string name="guard_core_trigger_button">Na biciklu je pritisnuta tipka.</string>
+    <string name="guard_core_trigger_battery">Bicikl više ne javlja umetnutu bateriju.</string>
+    <string name="guard_core_trigger_lock_opened">Bicikl javlja da je otključan, a YABA ga nije otključala.</string>
+    <string name="guard_core_trigger_pin">Na biciklu se upisuje kod.</string>
+    <string name="guard_core_trigger_offline">Bicikl je uključio alarm dok tvoj mobitel nije bio povezan.</string>
+    <string name="guard_core_siren_yaba">YABA je uključila sirenu (krug %1$d od %2$d).</string>
+    <string name="guard_core_siren_bike">Sirena bicikla svira.</string>
+    <string name="guard_core_siren_running">Sirena još svira.</string>
+    <string name="guard_core_siren_off_setting">Sirena ostaje isključena jer je „Sirena odmah” isključena.</string>
+    <string name="guard_core_siren_snoozed">Nakon „Isključi sirenu” sirena ostaje isključena dvije minute.</string>
+    <string name="guard_core_siren_cap">Sirena je već svirala %1$d puta. YABA je ponovno uključuje tek nakon deset mirnih minuta.</string>
+    <string name="guard_core_cmd">Straža</string>
+    <string name="guard_core_log_arming">Straža: uključivanje (način alarma %1$s, brava %2$s, stanje alarma %3$s)</string>
+    <string name="guard_core_log_armed_native">Straža uključena: bicikl javlja stanje alarma 2 nakon %1$s sekundi, bez izravnog upisa.</string>
+    <string name="guard_core_log_armed_direct">Straža uključena: stanje alarma 2 tek nakon upisa 5523\u00A0=\u00A02.</string>
+    <string name="guard_core_log_armed_unconfirmed">Straža uključena bez potvrde: stanje alarma %1$s.</string>
+    <string name="guard_core_log_arm_failed">Straža nije uključena: %1$s</string>
+    <string name="guard_core_log_value">Straža: %1$s (%2$s) = %3$s, prije %4$s, %5$s</string>
+    <string name="guard_core_log_pushed">javio bicikl</string>
+    <string name="guard_core_log_read">pročitano</string>
+    <string name="guard_core_log_value_cap">Straža: daljnje promjene vrijednosti u ovom satu nisu zabilježene</string>
+    <string name="guard_core_log_ignored">Straža, ne broji se pri uključivanju: %1$s</string>
+    <string name="guard_core_log_siren">Straža: sirena upisana (5523\u00A0=\u00A03), odgovor %1$s</string>
+    <string name="guard_core_log_rearmed">Straža ponovno uspostavljena: stanje alarma %1$s, brava %2$s</string>
+    <string name="guard_core_log_silence">Straža: sirena isključena</string>
+    <string name="guard_core_log_disarmed">Straža završena: stanje alarma %1$s, brava %2$s</string>
+    <string name="guard_core_log_disarmed_offline">Straža završena bez veze s biciklom</string>
+    <string name="guard_core_log_lost">Straža: veza izgubljena</string>
+    <string name="guard_core_log_back">Straža: veza ponovno uspostavljena, stanje alarma %1$s, brava %2$s</string>
+    <string name="guard_core_log_budget">Straža: dosegnuta granica automatskih naredbi, zasad samo obavijesti</string>
+    <string name="guard_core_log_restored">Straža nastavljena nakon ponovnog pokretanja YABA-e</string>
+    <string name="guard_core_log_sequence_failed">Straža: %1$s nije uspjelo: %2$s</string>
+    <string name="guard_core_log_bike_gone">Straža završena: bicikl više nije spremljen u YABA-i</string>
+    <string name="guard_core_error_active">Straža je aktivna. Prvo završi stražu.</string>
+    <string name="guard_core_error_not_s3">Straža postoji samo za S3 i X3.</string>
+    <string name="guard_core_siren_budget">Sirena ostaje isključena jer je YABA u zadnjih deset minuta već poslala mnogo naredbi biciklu.</string>
+    <string name="guard_core_notif_not_locked_title">Bicikl nije zaključan</string>
+    <string name="guard_core_notif_not_locked">YABA nije mogla ponovno zaključati bicikl (brava javlja %1$s). Otvori YABA-u i dodirni „Pokušaj ponovno”.</string>
+    <string name="guard_core_notif_not_locked_unknown">YABA nema potvrdu da je bicikl ponovno zaključan. Otvori YABA-u i dodirni „Pokušaj ponovno”.</string>
+    <string name="guard_core_log_relocked">Straža: brava ponovno upisana (5521\u00A0=\u00A01), brava javlja %1$s</string>
+    <string name="guard_core_log_not_locked">Straža: bicikl ostaje otključan (brava %1$s). YABA više ne pokušava sama.</string>
+    <string name="guard_core_log_held">Straža: bicikl je bio otključan kad se veza vratila. YABA ga ponovno zaključava tek nakon „Pokušaj ponovno”.</string>
+    <string name="guard_core_log_watch_seen">Straža: bicikl sada javlja stanje alarma 2, njegov nadzor kretanja radi.</string>
+    <string name="guard_core_log_watch_left">Straža: bicikl javlja stanje alarma %1$s, njegov nadzor kretanja više ne radi.</string>
+    <string name="guard_core_log_cancelled">Straža: %1$s prekinuto prije nego što je išta stiglo do bicikla</string>
+    <string name="guard_core_log_disarmed_unconfirmed">Straža završena bez odgovora bicikla</string>
+    <string name="guard_core_step_arm">uključivanje</string>
+    <string name="guard_core_step_verify">provjera nakon povezivanja</string>
+    <string name="guard_core_step_siren">sirena</string>
+    <string name="guard_core_step_rearm">ponovna uspostava</string>
+    <string name="guard_core_step_relock">ponovno zaključavanje</string>
+    <string name="guard_core_step_disarm">završavanje</string>
+    <string name="guard_core_step_internal">interni korak</string>
+</resources>

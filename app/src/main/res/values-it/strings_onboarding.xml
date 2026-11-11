@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Configurazione: accesso o chiave, accesso Bluetooth, cerca la bici, primo sblocco (ui/onboarding). Testi: al massimo due frasi e 190 caratteri. -->
+<resources>
+    <string name="onb_signin_button">Accedi</string>
+    <string name="onb_perm_title">Accesso ai dispositivi nelle vicinanze</string>
+    <string name="onb_perm_text">Per trovare la tua bici, YABA ha bisogno dell’accesso a “Dispositivi nelle vicinanze”. YABA non analizza la tua posizione.</string>
+    <string name="onb_perm_button">Consenti l’accesso</string>
+    <string name="onb_perm_denied">L’accesso è stato negato. Consentilo, per favore, nelle impostazioni dell’app, sotto “Autorizzazioni”.</string>
+    <string name="onb_perm_denied_again">L’accesso è stato negato. Tocca “Consenti l’accesso” per chiedere di nuovo.</string>
+    <string name="onb_find_title">Cerca la bici</string>
+    <string name="onb_find_text">YABA cerca la tua bici via Bluetooth. Resta vicino e chiudi l’app VanMoof, per favore, perché la bici accetta un solo telefono alla volta.</string>
+    <string name="onb_find_button">Cerca ora</string>
+    <string name="onb_notfound_text">YABA non riceve risposta da “%1$s” da più di 12\u00A0secondi. Chiudi l’app VanMoof, per favore, e sveglia la bici con il pulsante del campanello.</string>
+    <string name="onb_official_text">L’app VanMoof tiene spesso in background l’unica connessione Bluetooth con la bici, perché la bici accetta un solo telefono alla volta.</string>
+    <string name="onb_unlock_title">Primo sblocco</string>
+    <string name="onb_unlock_text">YABA ha trovato la tua bici. Trascina il cursore fino in fondo e YABA sblocca la bici direttamente via Bluetooth.</string>
+    <string name="onb_server_text_http">Il server di VanMoof ha risposto alle %1$s con l’errore\u00A0%2$d. Tocca “Riprova” per ripetere la richiesta.</string>
+    <string name="onb_server_text_timeout">Alle %1$s non è arrivata alcuna risposta entro 10\u00A0secondi. Tocca “Riprova” per ripetere la richiesta.</string>
+    <string name="onb_server_text_dead">Il server di VanMoof non risponde ad alcuna richiesta di questo telefono da %1$d\u00A0giorni.</string>
+    <!-- matrix: ASCII only, BLE glyph + 2 empty columns + word must stay within 36 columns -->
+    <string name="onb_matrix_scan">SCAN</string>
+    <string name="onb_step_cd">Passaggio\u00A0%1$d di %2$d</string>
+    <string name="onb_change_key">Cambia chiave</string>
+    <string name="onb_find_idle_text">La ricerca è stata interrotta. Resta vicino e chiudi l’app VanMoof, poi cerca di nuovo.</string>
+</resources>

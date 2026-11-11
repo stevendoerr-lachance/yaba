@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The app language (ui/components/LanguageBits.kt): the button in the onboarding's corner and the shell, and its sheet. -->
+<resources>
+    <!-- The language these resources are in (its BCP-47 tag). The button shows it as two letters in dots and names it
+         in itself, so it says what the screen really is in, also when the app follows a system language it does not have. -->
+    <string name="language_tag">ru</string>
+    <!-- TalkBack: what a double tap on the language button does. -->
+    <string name="language_choose">Выбрать язык</string>
+    <!-- Closes the language sheet without a change. -->
+    <string name="language_close">Закрыть</string>
+    <!-- The sheet's title, also what TalkBack announces when it opens. -->
+    <string name="language_title">Язык</string>
+    <!-- The first option: the app follows the system's language. -->
+    <string name="language_system">Язык системы</string>
+    <!-- In the sheet below Android 13, where an app cannot have a language of its own. -->
+    <string name="language_follows_system">Приложение следует языку системы. Выбрать отдельный язык приложения можно только начиная с Android\u00A013.</string>
+    <!-- TalkBack for the language button: the language the screen is in, named in itself ("Deutsch"). -->
+    <string name="language_current">Язык: %1$s</string>
+</resources>

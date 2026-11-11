@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The official VanMoof app competing for the Bluetooth link -->
+    <string name="official_joined_link">Bicikl je već povezan s ovim telefonom. YABA se pridružuje toj vezi.</string>
+    <string name="official_title">Aplikacija VanMoof je instalirana</string>
+    <string name="official_explain">Aplikacija VanMoof često u pozadini drži jedinu Bluetooth vezu s biciklom jer bicikl prihvaća samo jedan telefon istodobno. YABA se na ovom telefonu može pridružiti toj vezi. Ako to ne uspije, zatvori aplikaciju VanMoof.</string>
+    <string name="official_quit">Zatvori aplikaciju VanMoof</string>
+    <string name="official_quit_done">Aplikacija VanMoof je zatvorena i YABA ponovno traži. Ako blokada ostane, dodirni „Prisilno zaustavi“ na stranici Podaci o aplikaciji aplikacije VanMoof.</string>
+    <string name="official_mute">Povuci Bluetooth pristup</string>
+    <string name="official_mute_steps">Otvori stranicu Podaci o aplikaciji aplikacije VanMoof i odaberi „Dopuštenja“, „Uređaji u blizini“, „Ne dopuštaj“. Nakon toga aplikacija VanMoof više ne doseže bicikl. Ponovno dopusti pristup čim ti zatreba aplikacija VanMoof.</string>
+    <string name="official_open_settings_failed">Postavke aplikacije VanMoof nisu se mogle otvoriti. Otvori, molim te, sam „Postavke“, „Aplikacije“, „VanMoof“.</string>
+    <string name="official_shared_hint">Povezano preko Bluetooth veze koju je uspostavila aplikacija VanMoof.</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Garde (the guard design section 7): the section on Rouler, the hero while it is active, the locked links. -->
+    <string name="guard_section_title">Garde</string>
+    <string name="guard_intro">La garde verrouille ton vélo et active sa surveillance des mouvements. YABA reste connectée et te prévient sur ce téléphone dès qu’elle détecte un mouvement.</string>
+    <string name="guard_arm">Activer la garde</string>
+    <string name="guard_siren_now">Sirène immédiate</string>
+    <string name="guard_siren_now_caption">Au premier mouvement qu’elle détecte, YABA déclenche la sirène du vélo. Sans ce réglage, YABA te prévient seulement ; le vélo ne déclenche alors sa sirène lui-même qu’après plusieurs secousses.</string>
+
+    <!-- Why arming is not offered (GuardRules.armBlocker) -->
+    <string name="guard_blocker_not_connected">Connecte d’abord YABA au vélo.</string>
+    <string name="guard_blocker_not_parked">La garde ne peut être activée que si le vélo est à l’arrêt et qu’aucun bouton n’est enfoncé.</string>
+    <string name="guard_blocker_bike_state">Le vélo met à jour son firmware ou passe en mode expédition. La garde ne peut pas être activée maintenant.</string>
+    <string name="guard_blocker_busy">Le vélo transfère des données. La garde pourra être activée dès que le transfert sera terminé.</string>
+
+    <!-- Phases -->
+    <string name="guard_arming">Activation …</string>
+    <string name="guard_arming_text">YABA verrouille le vélo et attend qu’il confirme sa surveillance des mouvements. Cela prend jusqu’à %1$d secondes.</string>
+    <string name="guard_active_since">Garde active depuis %1$s</string>
+    <string name="guard_watch_bike">Le vélo surveille lui-même les mouvements, et YABA reste connectée.</string>
+    <string name="guard_watch_unconfirmed">Le vélo n’a pas confirmé sa surveillance des mouvements (état d’alarme %1$d). YABA ne détecte donc qu’une roue qui tourne, des boutons enfoncés, le verrou et la batterie.</string>
+    <string name="guard_watch_unconfirmed_unknown">Le vélo n’a pas confirmé sa surveillance des mouvements. YABA ne détecte donc qu’une roue qui tourne, des boutons enfoncés, le verrou et la batterie.</string>
+    <string name="guard_watch_retry">Réessayer</string>
+    <string name="guard_end">Terminer la garde</string>
+    <string name="guard_silence">Couper la sirène</string>
+    <string name="guard_lever_hint">Glisser termine la garde et déverrouille le vélo.</string>
+    <string name="guard_lever_hint_offline">Sans connexion, YABA attend le vélo jusqu’à %1$d secondes après le glissement. Si la connexion revient, le vélo est déverrouillé\u00A0; sinon la garde se termine seulement dans YABA.</string>
+    <string name="guard_alarm_at">Alarme à %1$s</string>
+    <string name="guard_rearming">Rétablit la garde …</string>
+    <string name="guard_disarming">Termine la garde …</string>
+    <string name="guard_disarming_wait">YABA attend la connexion au vélo jusqu’à %1$d secondes.</string>
+    <string name="guard_lost_watch">Connexion au vélo interrompue. La surveillance des mouvements du vélo continue, et YABA se reconnecte.</string>
+    <string name="guard_lost">Connexion au vélo interrompue. YABA se reconnecte.</string>
+
+    <!-- Latest lines -->
+    <string name="guard_events_title">Récemment</string>
+    <string name="guard_events_all">Tous les événements sous Diagnostic</string>
+    <string name="guard_share_journal">Partager le journal de la garde</string>
+
+    <!-- Hints -->
+    <string name="guard_notifications_off">Les notifications sont désactivées pour YABA. La sirène fonctionne, mais ton téléphone ne te signale aucun mouvement.</string>
+    <string name="guard_notifications_allow">Autoriser les notifications</string>
+    <string name="guard_battery_hint">Exclus YABA de l’optimisation de la batterie pour qu’Android ne coupe pas la connexion au vélo pendant la nuit.</string>
+    <string name="guard_battery_open">Ouvrir les réglages de la batterie</string>
+    <string name="guard_alarm_choice_locked">Tant que la garde est active, l’alarme reste activée.</string>
+    <string name="guard_link_locked">Tant que la garde est active, YABA reste connectée au vélo. Termine d’abord la garde.</string>
+
+    <!-- Issues (GuardState.issue) -->
+    <string name="guard_issue_dismiss">Masquer</string>
+    <string name="guard_issue_service">Android n’a pas démarré le service de la garde. La garde reste désactivée.</string>
+    <string name="guard_issue_arm_failed">La garde n’a pas pu être activée. Raison : %1$s</string>
+    <string name="guard_issue_arm_failed_unknown">La garde n’a pas pu être activée.</string>
+    <string name="guard_issue_alarm_during">Le vélo a déclenché lui-même son alarme pendant l’activation. YABA a arrêté l’alarme, et le vélo reste verrouillé. Tiens-le immobile et réessaie.</string>
+    <string name="guard_issue_alarm_mode">Le vélo n’a pas activé son alarme (mode d’alarme %1$s). La garde reste désactivée.</string>
+    <string name="guard_issue_lock">Le vélo ne s’est pas verrouillé (le verrou indique %1$s). La garde reste désactivée.</string>
+    <string name="guard_issue_disarm_unconfirmed">La garde est terminée, mais le vélo indique encore l’état d’alarme %1$s. Sous « Alarme », tu peux arrêter l’alarme.</string>
+    <string name="guard_issue_ended_offline">La garde est terminée. YABA n’a pas pu joindre le vélo, donc rien n’a changé sur le vélo.</string>
+    <string name="guard_issue_bike_gone">La garde est terminée, car le vélo n’est plus enregistré dans YABA.</string>
+
+    <!-- Top tube and header. Matrix words: ASCII, no diacritics (BRAND "Languages"). -->
+    <string name="guard_matrix_armed">GARDE</string>
+    <string name="guard_matrix_alarm">ALARME</string>
+    <string name="guard_tube_armed_cd">Garde active, batterie à %1$d pour cent</string>
+    <string name="guard_tube_armed_nobattery_cd">Garde active</string>
+    <string name="guard_tube_arming_cd">Activation de la garde</string>
+    <string name="guard_tube_alarm_cd">Alarme sur le vélo</string>
+    <string name="guard_tube_lost_cd">Garde active, connexion interrompue</string>
+    <string name="guard_header_armed">Garde</string>
+    <string name="guard_header_alarm">Alarme</string>
+    <string name="guard_issue_arm_failed_partly">La garde n’a pas pu être activée. Raison : %1$s. Le vélo peut quand même être déjà verrouillé ou avoir activé son alarme. Vérifie le curseur et «\u00A0Alarme\u00A0».</string>
+    <string name="guard_issue_disarm_locked">La garde est terminée et l’alarme est coupée, mais le vélo se signale encore verrouillé (verrou %1$s). Tu peux le déverrouiller avec le curseur.</string>
+    <string name="guard_issue_ended_partly">La garde est terminée. YABA a envoyé des commandes au vélo, mais n’a reçu aucune réponse. «\u00A0Rouler\u00A0» montre l’état du vélo après la prochaine connexion.</string>
+    <string name="guard_issue_not_locked">Le vélo n’est pas verrouillé (le verrou indique %1$s). «\u00A0Réessayer\u00A0» le verrouille et rétablit la garde.</string>
+    <string name="guard_issue_not_locked_unknown">YABA n’a pas de confirmation que le vélo est verrouillé. «\u00A0Réessayer\u00A0» le verrouille et rétablit la garde.</string>
+</resources>

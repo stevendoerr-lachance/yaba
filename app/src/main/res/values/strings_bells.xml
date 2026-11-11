@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bundled bells on the sound screen: ten original sounds that ship with the app (tools/bells). -->
+<resources>
+    <string name="bells_hint">A tap plays the sound on your phone.</string>
+    <string name="bells_choose">Choose</string>
+    <string name="bells_muted">Media volume is off. Turn it up to hear the preview.</string>
+    <string name="bells_preview_failed">The preview could not be played.</string>
+    <string name="bells_seconds">%1$s\u00A0s</string>
+
+    <!-- TalkBack -->
+    <string name="bells_row_cd">%1$s, %2$s</string>
+    <string name="bells_play_action">play on phone</string>
+    <string name="bells_stop_action">stop</string>
+    <string name="bells_state_playing">Playing on phone</string>
+
+    <!-- The bell in the custom slot, on its row -->
+    <string name="bells_state_on_bike">On the bike</string>
+
+    <!-- Names -->
+    <string name="bells_name_ringring">Bicycle bell</string>
+    <string name="bells_name_tram">Zagreb tram</string>
+    <string name="bells_name_honk">Clown horn</string>
+    <string name="bells_name_stadium">Stadium horn</string>
+    <string name="bells_name_fanfare">Fanfare</string>
+    <string name="bells_name_cucaracha">La Cucaracha</string>
+    <string name="bells_name_trombone">Sad trombone</string>
+    <string name="bells_name_nightshift">Night shift</string>
+    <string name="bells_name_jingle">YABA jingle</string>
+    <string name="bells_name_ufo">UFO</string>
+    <string name="bells_caption_phone">On your phone</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="labx_cmd_boost_rolling_on">Boost tijdens het rollen aan</string>
+    <string name="labx_cmd_boost_rolling_off">Boost tijdens het rollen uit</string>
+
+    <string name="labx_error_level_unknown">De ondersteuningsstand is nog niet uitgelezen. Wacht even en tik opnieuw.</string>
+    <string name="labx_error_clock_readback">Klok-teruglezing onwaarschijnlijk. De klok is mogelijk gezet; controleer opnieuw.</string>
+    <string name="labx_error_clock_jump">Alleen zonder ingedrukte knop: springt de klok meer dan 20\u00A0seconden terwijl Bel of Boost ingedrukt is, dan beschouwt de fiets de knop als vastzittend.</string>
+    <string name="labx_error_boost_rolling">Test het stilstaand: met “aan” kan de stand per ongeluk wisselen zodra de fiets gaat rollen.</string>
+    <string name="labx_error_assist_cut">Alleen stilstaand en terwijl de fiets niet rolt; dit schakelt de ondersteuning uit.</string>
+    <string name="labx_error_not_confirmed">Niet bevestigd. De waarde is geschreven, maar de teruglezing bevestigt hem niet; de opgeslagen waarde blijft ongewijzigd.</string>
+    <string name="labx_error_lamp_read">De lampkanalen kunnen niet worden gelezen; er is niets gewijzigd.</string>
+    <string name="labx_error_lamp_restore">De lampen zijn teruggeschreven, maar de teruglezing wijkt af. Een echte toestandswissel (modus, vergrendelen, herstart) haalt ze terug.</string>
+
+    <string name="labx_board_temp_waiting">wacht op wijziging</string>
+    <string name="labx_not_read">niet gelezen</string>
+    <string name="labx_threshold_factory">Fabriekswaarde 200</string>
+
+    <string name="labx_alarm_stop_note">Stopt een lopend alarm zonder de back-upcode. Het commando wist ook de softwarevergrendeling; was de fiets vergrendeld, dan biedt YABA daarna “Opnieuw vergrendelen” aan.</string>
+    <string name="labx_relock_button">Opnieuw vergrendelen</string>
+    <string name="labx_relock_hint">De alarmstop heeft de softwarevergrendeling gewist. Zonder ingeschakelde Kick Lock geldt de fiets als ontgrendeld.</string>
+
+    <string name="labx_siren_note">Alarm uit beëindigt elk niveau en heft de softwarevergrendeling op. Vergrendel de fiets daarna opnieuw indien nodig.</string>
+    <string name="labx_siren_stage2">Bewegingswacht. De fiets reageert pas op een schok en escaleert na meerdere stoten.</string>
+    <string name="labx_siren_stage3">Ongeveer 30\u00A0seconden sirene, daarna lokalisatiemodus. De 2G-modem meldt zich dan ongeveer elke 30\u00A0minuten in plaats van elke 2\u00A0uur en gebruikt accustroom.</string>
+    <string name="labx_siren_stage4">Direct naar lokalisatiemodus met de softwarevergrendeling gezet, zonder sirene.</string>
+
+    <string name="labx_selftest_dialog_text">YABA laadt eerst het logboek van de fiets en bewaart het op de telefoon; daarna loopt de diagnose en gaat de fiets in stand-by. Het rapport duwt de oudste logregels eruit, daarom wordt het vooraf bewaard.</string>
+
+
+    <!-- lamp channel accessibility -->
+    <string name="labx_lamp_channel">Kanaal\u00A0%1$d</string>
+    <string name="labx_lamp_state_on">aan</string>
+    <string name="labx_lamp_state_off">uit</string>
+
+    <!-- Fahrtenschreiber: firmware tokens as a secondary line -->
+    <string name="labx_firmware_text">Firmware-tekst: %1$s</string>
+    <string name="labx_derate_bat_temp">Accutemperatuur %1$s</string>
+
+    <!-- Sound-Lab: factory clip cannot be recovered -->
+    <string name="labx_clip_factory_warning">De fabriekstoon kan niet van de fiets worden teruggelezen. Na het vervangen is hij voorgoed weg; YABA kan hem niet herstellen. Bewaar zelf een kopie als je hem terug wilt.</string>
+</resources>

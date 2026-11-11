@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speedplus_title">Speed++ (kotači od 24″)</string>
+    <string name="speedplus_text" formatted="false">Postavlja tvoj bicikl na kotače od 24″. Tada broji 84\u00A0% stvarne brzine i isključuje pomoć tek na oko 29,7\u00A0km/h (EU) ili 38\u00A0km/h (US). YABA ti posvuda pokazuje stvarnu brzinu; brzinomjer bicikla pokazuje manje.</string>
+    <string name="speedplus_on">Uključi Speed++</string>
+    <string name="speedplus_off">Natrag na 28″</string>
+    <string name="speedplus_active">Uključeno. YABA množi brzinu bicikla s 1,1875.</string>
+    <string name="speedplus_odometer" formatted="false">Dok je uključeno, brojač kilometara na biciklu broji oko 16\u00A0% premalo.</string>
+    <string name="speedplus_unknown">YABA čita veličinu kotača pri spajanju s biciklom.</string>
+    <string name="speedplus_unread">YABA nije uspio pročitati veličinu kotača.</string>
+    <string name="speedplus_read">Pročitaj veličinu kotača</string>
+    <string name="speedplus_not_28">Speed++ radi samo na biciklima s tvorničkim kotačima od 28″.</string>
+    <string name="speedplus_cmd">Veličina kotača %1$d″</string>
+    <string name="speedplus_error_rolling">Samo u mirovanju: bicikl prosljeđuje veličinu kotača upravljaču motora.</string>
+    <string name="speedplus_error_rejected">Bicikl nije prihvatio veličinu kotača.</string>
+    <string name="speedplus_choice_28">28″ tvornički</string>
+    <string name="speedplus_stock_title">Tvornička veličina kotača</string>
+    <string name="speedplus_stock_question">Tvoj bicikl je trenutačno postavljen na kotače od 24″. YABA ne može prepoznati je li iz tvornice izašao kao S3 s kotačima od 28″ ili kao X3 s kotačima od 24″. O tvom odgovoru ovisi koju brzinu YABA pokazuje.</string>
+    <string name="speedplus_stock_next">Dalje</string>
+    <string name="speedplus_stock_later">Odgovor možeš kasnije promijeniti pod %1$s › %2$s.</string>
+    <string name="speedplus_read_none">Bicikl ni ovaj put nije javio veličinu kotača.</string>
+    <string name="speedplus_x3_on_28">Tvoj bicikl je postavljen na kotače od 28″, a iz tvornice ima kotače od 24″. Tada pokazuje veću brzinu nego što vozi i ranije isključuje pomoć. YABA ti pokazuje stvarnu brzinu.</string>
+    <string name="speedplus_back_to_24">Natrag na 24″</string>
+    <string name="speedplus_stock_open_note">YABA još ne zna tvorničku veličinu kotača pa pokazuje brzinu onako kako je javlja tvoj bicikl. Možeš je navesti pod %1$s › %2$s.</string>
+</resources>

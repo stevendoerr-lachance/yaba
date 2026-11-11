@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lab_char_cadence">Cadenza</string>
+    <string name="lab_char_torque">Forza sui pedali</string>
+
+    <string name="lab_sound_update_failed">Aggiornamento non riuscito</string>
+    <string name="lab_sound_update_ok">Aggiornamento riuscito</string>
+    <string name="lab_sound_find_loud">Tono di ricerca forte</string>
+
+    <string name="lab_clip_lock">Blocca</string>
+    <string name="lab_clip_unlock">Sblocca</string>
+    <string name="lab_clip_startup">Accensione</string>
+    <string name="lab_clip_shutdown">Spegnimento</string>
+    <string name="lab_clip_charging">In carica</string>
+
+    <string name="lab_error_clock_readback">La rilettura dell’orologio non è plausibile. L’orologio non è stato impostato.</string>
+    <string name="lab_error_backup_first">Scarica e salva il registro della bici prima dell’autotest.</string>
+    <string name="lab_error_not_parked">Solo da fermo e fuori dalla modalità di guida; questo toglie l’assistenza.</string>
+    <string name="lab_error_clip">Trasferimento non riuscito.</string>
+    <string name="lab_error_generic">Il comando non è stato eseguito.</string>
+
+    <string name="lab_log_siren">Sirena livello\u00A0%d</string>
+    <string name="lab_log_clip">Suono sostituito: %s</string>
+
+</resources>

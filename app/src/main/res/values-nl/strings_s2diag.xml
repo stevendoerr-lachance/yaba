@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- S2 drive diagnosis (ui/s2): wiggle test, error catcher, GPS comparison, live status block, S2 test mode. -->
+    <string name="s2diag_title">S2-aandrijving</string>
+    <string name="s2diag_entry_intro">Voor een motor die af en toe uitvalt: een buigtest aan de kabel, een vanger voor zeldzame foutcodes, een vergelijking met gps tijdens het rijden en het statusblok live.</string>
+    <string name="s2diag_entry_open">Aandrijving controleren</string>
+    <string name="s2diag_entry_waiting">Nog geen statusblok gelezen.</string>
+    <string name="s2diag_entry_quiet">Sinds %1$s geen foutcode in het statusblok.</string>
+    <plurals name="s2diag_entry_caught">
+        <item quantity="one">Eén foutcode gevangen: storing\u00A0%2$d om %3$s.</item>
+        <item quantity="other">%1$d foutcodes gevangen, als laatste storing\u00A0%2$d om %3$s.</item>
+    </plurals>
+    <string name="s2diag_close">Sluiten</string>
+    <string name="s2diag_intro">Het statusblok van de S2 meldt geen motorstroom, geen temperatuur en geen hallsignalen. YABA leidt de kabel of het onderdeel daarom af uit wegvallende snelheid en de foutcode.</string>
+    <string name="s2diag_connect_reason">De aandrijving kan alleen worden gecontroleerd als de fiets verbonden is.</string>
+    <string name="s2diag_clock">%1$s</string>
+    <string name="s2diag_copied">Naar het klembord gekopieerd.</string>
+
+    <!-- Wiggle test -->
+    <string name="s2diag_wiggle_title">Buigtest</string>
+    <string name="s2diag_wiggle_speed_cd">Snelheid volgens de fiets: %1$d\u00A0km/u</string>
+    <string name="s2diag_wiggle_speed_none_cd">Nog geen snelheid van de fiets.</string>
+    <string name="s2diag_wiggle_unit">km/u volgens de fiets</string>
+    <plurals name="s2diag_wiggle_stale">
+        <item quantity="one">Al meer dan %1$d\u00A0seconde geen statusblok.</item>
+        <item quantity="other">Al meer dan %1$d\u00A0seconden geen statusblok.</item>
+    </plurals>
+    <string name="s2diag_wiggle_step1">Til het voorwiel op, bijvoorbeeld met een krat onder de onderbuis, zodat de fiets stevig staat en er niet af kan rollen. De fiets is ontgrendeld en staat aan.</string>
+    <string name="s2diag_wiggle_step2">Tik hierboven op Buigtest starten. Draai daarna het voorwiel met de hand rond tot de weergave minstens 10\u00A0km/u toont.</string>
+    <string name="s2diag_wiggle_step3">Doe het met z’n tweeën: de een draait, de ander buigt de motorkabel bij de voorvork, bij het balhoofd en waar hij het frame in gaat. Houd je vingers weg van de spaken en de remschijf, en trap niet en druk niet op boost.</string>
+    <string name="s2diag_wiggle_step4">Valt de snelheid naar 0 terwijl het wiel draait, dan trilt de telefoon, piept hij en zet hij een markering met de tijd. Een markering vlak nadat iemand het wiel aanraakte, telt niet.</string>
+    <string name="s2diag_wiggle_steps_show">Stappen tonen</string>
+    <string name="s2diag_wiggle_zero_hint">Blijft de snelheid bij het draaien op 0\u00A0km/u, dan meet de fiets haar waarschijnlijk alleen als de motor loopt. Dan helpt de rit met gps verder.</string>
+    <string name="s2diag_wiggle_spot">Plek op de kabel</string>
+    <string name="s2diag_spot_fork">Voorvork</string>
+    <string name="s2diag_spot_head">Balhoofd</string>
+    <string name="s2diag_spot_frame">Frame</string>
+    <string name="s2diag_wiggle_start">Buigtest starten</string>
+    <string name="s2diag_wiggle_stop">Buigtest beëindigen</string>
+    <string name="s2diag_wiggle_running">De test loopt: YABA leest het statusblok ongeveer elke seconde en het scherm blijft aan.</string>
+    <string name="s2diag_mark">Markering zetten</string>
+    <string name="s2diag_marks_title">Markeringen</string>
+    <string name="s2diag_marks_clear">Markeringen wissen</string>
+    <string name="s2diag_mark_drop">Weggevallen van %1$d naar 0\u00A0km/u</string>
+    <string name="s2diag_mark_manual">Met de hand gezet bij %1$d\u00A0km/u</string>
+    <string name="s2diag_log_drop">Buigtest: weggevallen van %1$d naar 0\u00A0km/u</string>
+    <string name="s2diag_log_mark">Buigtest: markering bij %1$d\u00A0km/u</string>
+
+    <!-- Error catcher -->
+    <string name="s2diag_catch_title">Foutvanger</string>
+    <string name="s2diag_catch_intro">YABA controleert elk statusblok dat binnenkomt: de blokken die het om de paar seconden zelf leest en de blokken die de fiets uit zichzelf stuurt. Elke foutcode daarin komt hier terecht, ook een in één enkel blok.</string>
+    <plurals name="s2diag_catch_blocks">
+        <item quantity="one">Eén statusblok gecontroleerd sinds %2$s.</item>
+        <item quantity="other">%1$s statusblokken gecontroleerd sinds %2$s.</item>
+    </plurals>
+    <plurals name="s2diag_catch_implausible">
+        <item quantity="one">Eén statusblok met onmogelijke waarden overgeslagen; dat komt meestal door een verkeerde sleutel.</item>
+        <item quantity="other">%1$d statusblokken met onmogelijke waarden overgeslagen; dat komt meestal door een verkeerde sleutel.</item>
+    </plurals>
+    <string name="s2diag_catch_none">Nog geen foutcode.</string>
+    <string name="s2diag_hit_title">Storing\u00A0%1$d: %2$s</string>
+    <plurals name="s2diag_hit_group">
+        <item quantity="one">Storing\u00A0%1$d, %2$d×, om %3$s</item>
+        <item quantity="other">Storing\u00A0%1$d, %2$d×, laatst om %3$s</item>
+    </plurals>
+    <string name="s2diag_hit_meta">%1$s, %2$d\u00A0km/u, accu %3$d%%, module %4$d%%</string>
+    <plurals name="s2diag_hit_blocks">
+        <item quantity="one">Gemeld in één statusblok.</item>
+        <item quantity="other">Gemeld in %1$d statusblokken, tot %2$s.</item>
+    </plurals>
+    <string name="s2diag_hit_part">Waarschijnlijk: %1$s</string>
+    <string name="s2diag_part_stall">hallsensoren of fasedraden van de motor</string>
+    <string name="s2diag_part_voltage_high">accu of lader</string>
+    <string name="s2diag_part_supply">accucontact of voedingskabel</string>
+    <string name="s2diag_part_speed_signal">het snelheidssignaal van de motor, dus hallsensoren of sensorkabel</string>
+    <string name="s2diag_part_phase_short">kortsluiting op een motorfase, in de kabel of bij de stekker</string>
+    <string name="s2diag_part_torque">de kabel van de koppelsensor</string>
+    <string name="s2diag_part_heat">motor of motorcontroller te warm, meestal geen kabel</string>
+    <string name="s2diag_part_hall_cable">hallsensoren in de motor of de sensorkabel door voorvork en balhoofd</string>
+    <string name="s2diag_part_module">de elektronica in het frame, niet de aandrijving</string>
+    <string name="s2diag_part_gsm">het mobiele modem in de module, niet de aandrijving</string>
+    <string name="s2diag_part_controller_line">de datalijn tussen de elektronica in het frame en de motorcontroller</string>
+    <string name="s2diag_part_unknown">een onbekende code; het hele statusblok staat in de ritregistratie</string>
+    <string name="s2diag_note_disputed">De bronnen zijn het oneens of 4 of 5 “motor te snel” betekent. Zet alsjeblieft de S2-testmodus aan: dan komt elk gewijzigd statusblok in het logboek en kan de code later worden toegewezen.</string>
+    <string name="s2diag_note_disputed_on">De bronnen zijn het oneens of 4 of 5 “motor te snel” betekent. De S2-testmodus staat aan, dus elk gewijzigd statusblok staat in het logboek.</string>
+    <string name="s2diag_catch_copy">Lijst kopiëren</string>
+    <string name="s2diag_catch_clear">Lijst leegmaken</string>
+
+    <!-- Ride with GPS -->
+    <string name="s2diag_gps_title">Rit met gps</string>
+    <string name="s2diag_gps_intro">Tijdens het rijden schrijft YABA de gps-snelheid van de telefoon naast de snelheid van de fiets in de ritregistratie. Waar de fiets 0\u00A0km/u meldt terwijl gps meer dan 8\u00A0km/u meet, toont de weergave daar een signaalonderbreking.</string>
+    <string name="s2diag_gps_switch">Gps-snelheid vastleggen</string>
+    <string name="s2diag_gps_switch_hint">Alleen de snelheid komt in de ritregistratie, nooit de locatie.</string>
+    <string name="s2diag_gps_denied">Zonder toegang tot de precieze locatie meet de telefoon geen gps-snelheid. Sta die alsjeblieft toe in de app-instellingen.</string>
+    <string name="s2diag_gps_coarse">Alleen de geschatte locatie is toegestaan. Voor de gps-snelheid heeft YABA de precieze nodig.</string>
+    <string name="s2diag_gps_app_settings">App-instellingen openen</string>
+    <string name="s2diag_gps_off">Locatie staat uit op de telefoon.</string>
+    <string name="s2diag_gps_location_settings">Locatie inschakelen</string>
+    <string name="s2diag_gps_waiting">Wacht op gps. Onder open hemel duurt dat meestal minder dan een minuut.</string>
+    <string name="s2diag_gps_fact_bike">Fiets</string>
+    <string name="s2diag_gps_fact_gps">Gps</string>
+    <string name="s2diag_kmh">%1$s\u00A0km/u</string>
+    <string name="s2diag_gps_steps">Zet gps aan en rijd een paar minuten op een rustige route, en trap de hele tijd mee met ondersteuning 1 of hoger. Open daarvoor de cockpit onder Diagnose: die start de ritregistratie, en een volumeknop markeert het moment waarop de motor uitvalt.</string>
+    <string name="s2diag_gps_open_log">Laatste ritregistratie openen</string>
+
+    <!-- Live status block -->
+    <string name="s2diag_raw_title">Statusblok live</string>
+    <string name="s2diag_raw_intro">De 16 bytes zoals de fiets ze nu meldt. Licht zijn de bytes die bij het laatste blok veranderden; het kleine getal telt hun wijzigingen.</string>
+    <string name="s2diag_raw_legend">Byte 2 toestand en alarm, 3 slot, 4 snelheid, 5 accu, 6 module-accu, 7 licht en eenheid, 8 stand en regio, 10 geluiden, 11 tot 14 afstand, 15 foutcode en bedrijfsbits.</string>
+    <string name="s2diag_raw_none">Nog geen statusblok.</string>
+    <plurals name="s2diag_raw_byte_cd">
+        <item quantity="one">Byte %1$d: %2$s, één keer gewijzigd</item>
+        <item quantity="other">Byte %1$d: %2$s, %3$d keer gewijzigd</item>
+    </plurals>
+    <string name="s2diag_raw_copy">Blok kopiëren</string>
+
+    <!-- S2 test mode -->
+    <string name="s2diag_test_title">S2-testmodus</string>
+    <string name="s2diag_test_switch">Onbevestigde opdrachten toestaan</string>
+    <string name="s2diag_test_hint">Geeft vrij wat op een echte S2 nog niet bevestigd is: vergrendelen vanuit de app en het alarm onder Rijden, de back-upcode onder Fiets, dempen en 37\u00A0km/u hieronder.</string>
+    <string name="s2diag_test_gatt">GATT-overzicht kopiëren</string>
+
+    <!-- Ride log viewer: GPS speed and signal dropouts -->
+    <string name="s2diag_view_legend_gps">Gps-snelheid in km/u</string>
+    <string name="s2diag_view_legend_dropout">Signaalonderbreking</string>
+    <string name="s2diag_view_readout_gps">Gps %1$s</string>
+    <string name="s2diag_view_fact_gps_top">Gps-topsnelheid</string>
+    <string name="s2diag_view_fact_dropouts">Signaalonderbrekingen</string>
+    <string name="s2diag_view_signal">Signaalonderbreking: fiets 0\u00A0km/u, gps boven 8\u00A0km/u</string>
+    <string name="s2diag_view_dropout_total">samen %1$s, gps tot %2$s</string>
+    <string name="s2diag_view_dropout_none">Geen signaalonderbreking: waar gps meer dan 8\u00A0km/u mat, meldde ook de fiets een snelheid.</string>
+    <plurals name="s2diag_view_summary_dropouts">
+        <item quantity="one">Eén keer meldde de fiets 0\u00A0km/u terwijl gps meer dan 8\u00A0km/u mat, %2$s.</item>
+        <item quantity="other">%1$s keer meldde de fiets 0\u00A0km/u terwijl gps meer dan 8\u00A0km/u mat, eerst %2$s.</item>
+    </plurals>
+</resources>

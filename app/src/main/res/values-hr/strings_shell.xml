@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Destinations -->
+    <string name="shell_dest_ride">Vožnja</string>
+    <string name="shell_dest_sound">Zvuk</string>
+    <string name="shell_dest_diagnosis">Dijagnoza</string>
+    <string name="shell_dest_bike">Bicikl</string>
+    <string name="shell_tab_alert_cd">%1$s, prijavljena greška</string>
+
+    <!-- Bluetooth readiness (hero) -->
+    <string name="shell_ble_location_off">Lokacija je isključena. Bez lokacije Android ne može pronaći Bluetooth uređaje.</string>
+    <string name="shell_ble_off">Bluetooth je isključen.</string>
+    <string name="shell_ble_needs_nearby">Za Bluetooth aplikacija treba pristup uređajima u blizini.</string>
+    <string name="shell_ble_needs_location">Za traženje Bluetooth uređaja aplikacija treba pristup tvojoj lokaciji.</string>
+    <string name="shell_ble_action_location">Uključi lokaciju</string>
+    <string name="shell_ble_action_allow">Dopusti Bluetooth</string>
+    <string name="shell_ble_action_enable">Uključi Bluetooth</string>
+    <string name="shell_ble_settings_hint">Ako se upit više ne pojavljuje, dopusti pristup u postavkama aplikacije, pod „Dopuštenja“.</string>
+    <string name="shell_ble_open_settings">Otvori postavke aplikacije</string>
+
+    <!-- Hero -->
+    <string name="shell_hero_which_bike">Nije odabran nijedan bicikl</string>
+    <string name="shell_hero_no_bike">Nema bicikla</string>
+    <plurals name="shell_hero_bikes_saved">
+        <item quantity="one">Spremljen je %1$d bicikl. Odaberi, molim te, jedan.</item>
+        <item quantity="few">Spremljena su %1$d bicikla. Odaberi, molim te, jedan.</item>
+        <item quantity="other">Spremljeno je %1$d bicikala. Odaberi, molim te, jedan.</item>
+    </plurals>
+    <string name="shell_hero_add_bike">Dodaj bicikl u garaži.</string>
+    <string name="shell_hero_choose_bike">Odaberi bicikl</string>
+    <string name="shell_hero_link_lost">Bluetooth veza je prekinuta. Aplikacija i dalje traži tvoj bicikl.</string>
+    <string name="shell_hero_search_again">Traži ponovno odmah</string>
+    <string name="shell_hero_connect">Poveži</string>
+    <string name="shell_hero_close_vanmoof">Molim te, prvo zatvori aplikaciju VanMoof jer bicikl prihvaća samo jedan telefon istodobno.</string>
+    <string name="shell_hero_lock_offline">Bicikl se može zaključati i otključati čim je povezan.</string>
+    <string name="shell_hero_lock_parked">Zaključavanje radi samo kad bicikl stoji.</string>
+    <string name="shell_hero_pin_entry">Bicikl čeka rezervni kod.</string>
+    <string name="shell_bike_caption_owner">%1$s, vlasnik: %2$s</string>
+
+    <!-- Connection state -->
+    <string name="shell_link_searching">Traži tvoj bicikl</string>
+    <string name="shell_link_connecting">Povezivanje</string>
+    <string name="shell_link_authenticating">Autentikacija na biciklu</string>
+    <string name="shell_link_ready">Povezano</string>
+    <string name="shell_link_lost">Veza prekinuta</string>
+    <string name="shell_link_offline">Nije povezano</string>
+
+    <!-- Lock state -->
+    <string name="shell_lock_unlocked">Otključan</string>
+    <string name="shell_lock_locked">Zaključan</string>
+    <string name="shell_lock_pin_entry">Čeka rezervni kod</string>
+    <string name="shell_lock_unknown">Stanje brave nepoznato</string>
+
+    <!-- Top tube, read by TalkBack -->
+    <string name="shell_tube_riding_cd">Vožnja brzinom %1$d\u00A0km/h</string>
+    <string name="shell_tube_charging_cd">Punjenje, baterija na %1$d posto</string>
+    <string name="shell_tube_charging_unknown_cd">Punjenje</string>
+    <string name="shell_tube_lock_battery_cd">%1$s, baterija na %2$d posto</string>
+    <string name="shell_tube_connecting_cd">Povezivanje s tvojim biciklom</string>
+    <string name="shell_tube_ble_off_cd">Bluetooth je isključen</string>
+    <string name="shell_tube_upload_cd">Šalje zvuk, %1$d%%</string>
+    <string name="shell_fault_title">Greška\u00A0%1$d: %2$s</string>
+
+    <!-- Top tube matrix -->
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_speed">%1$d KMH</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_fault">E%1$d</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_offline">OFFLINE</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_ble_off">ISKLJ</string>
+
+    <!-- Hero facts -->
+    <string name="shell_fact_battery">Baterija</string>
+    <string name="shell_fact_battery_charging">Puni se</string>
+    <string name="shell_fact_battery_value">%1$d\u00A0%%</string>
+    <string name="shell_fact_odometer">Kilometraža</string>
+    <string name="shell_fact_odometer_value">%1$s\u00A0km</string>
+    <string name="shell_fact_level">Potpora</string>
+    <string name="shell_fact_limit">Ograničenje brzine</string>
+    <string name="shell_fact_limit_value">%1$d\u00A0km/h</string>
+    <string name="shell_facts_stale">Stanje u %1$s</string>
+
+    <!-- Faults -->
+    <string name="shell_fault_open_cd">Otvori dijagnozu</string>
+    <string name="shell_fault_tap">Dodirni za dijagnozu.</string>
+    <string name="shell_fault_42_tap">Provjeri utikač i kabel Kick Locka. Dodirni za dijagnozu.</string>
+    <string name="shell_fault_last">Zadnje javljeno: greška\u00A0%1$d</string>
+    <plurals name="shell_fault_more">
+        <item quantity="one">Još %1$d greška. Dodirni za dijagnozu.</item>
+        <item quantity="few">Još %1$d greške. Dodirni za dijagnozu.</item>
+        <item quantity="other">Još %1$d grešaka. Dodirni za dijagnozu.</item>
+    </plurals>
+
+    <!-- Ride controls -->
+    <string name="shell_controls_almost">Veza se uspostavlja. Zatim ovdje možeš namjestiti sve.</string>
+    <string name="shell_controls_connect_first">Poveži bicikl da njime upravljaš.</string>
+    <string name="shell_section_speed">Ograničenje brzine</string>
+    <string name="shell_section_assist">Potpora</string>
+    <string name="shell_section_light">Svjetlo</string>
+    <string name="shell_section_alarm">Alarm</string>
+    <string name="shell_speedplus_note">Speed++ je uključen. Brzinomjer na biciklu pokazuje manje, YABA pokazuje stvarnu brzinu.</string>
+    <string name="shell_alarm_off">Isključen</string>
+    <string name="shell_alarm_on">Uključen</string>
+    <string name="shell_alarm_running">Alarm zvoni: %1$s</string>
+    <string name="shell_touch_unlock_hint">Otključavanje tipkom je uključeno: pritisak na tipku zvona ili boost otključava bicikl dok je tvoj telefon povezan.</string>
+    <string name="shell_cancel">Odustani</string>
+    <string name="shell_sending">Slanje</string>
+
+    <!-- Assist ladder -->
+    <string name="shell_power_off">Isklj.</string>
+    <string name="shell_power_off_cd">Potpora isključena</string>
+    <string name="shell_power_level_cd">Razina\u00A0%1$d</string>
+
+    <!-- Lock slider -->
+    <string name="shell_slider_cd">Brava</string>
+    <string name="shell_slider_state_unknown">Nepoznato</string>
+    <string name="shell_slider_action_unlock">Otključaj</string>
+    <string name="shell_slider_action_lock">Zaključaj</string>
+    <string name="shell_slider_unlocking">Otključavanje…</string>
+    <string name="shell_slider_locking">Zaključavanje…</string>
+    <string name="shell_slider_slide_unlock">Povuci za otključavanje</string>
+    <string name="shell_slider_slide_lock">Povuci za zaključavanje</string>
+    <string name="shell_ride_link_lost_title">Veza s biciklom prekinuta</string>
+    <string name="shell_ride_link_lost_text">Bicikl se vozi dalje nepromijenjen. Pogledaj telefon, molim te, tek kad staneš.</string>
+    <string name="shell_ride_link_lost_after_text">Bluetooth veza je prekinuta u %1$s. Motor, svjetlo i ograničenje brzine ostaju kako su bili postavljeni. YABA se ponovno povezuje čim primi bicikl.</string>
+    <string name="shell_ride_shipping_title">Molim te, stani odmah.</string>
+    <string name="shell_ride_shipping_text">Motor, svjetlo i Bluetooth vjerojatno će se isključiti za otprilike 10\u00A0sekundi.</string>
+    <string name="shell_ride_shipping_after_title">Bicikl je javio transportni način</string>
+    <string name="shell_ride_shipping_after_text">Bicikl je u %1$s javio transportni način, a zatim isključio motor, svjetlo i Bluetooth. Ako je još isključen, kratko pritisni tipku ispod gornje cijevi ili priključi punjač. Zatim odmah pročitaj interni dnevnik pod „Dijagnoza“. Do tada ne odspajaj bateriju.</string>
+    <string name="shell_notfound_title">Bicikl nije pronađen</string>
+    <string name="shell_notfound_text">YABA već više od 12\u00A0sekundi ne prima odgovor od „%1$s“. Zatvori, molim te, aplikaciju VanMoof i probudi bicikl tipkom zvona.</string>
+    <string name="shell_unlock_done_text">Bicikl je otključan za %1$s\u00A0sekundi, izravno preko Bluetootha. Razina baterije je %2$d\u00A0%%.</string>
+    <string name="shell_unlock_first_ride">Sretan put.</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Охрана (the guard design section 7): the section on Езда, the hero while it is active, the locked links. -->
+    <string name="guard_section_title">Охрана</string>
+    <string name="guard_intro">Охрана блокирует твой велосипед и включает его собственное наблюдение за движением. YABA остаётся на связи и уведомляет тебя на этом телефоне, как только распознаёт движение.</string>
+    <string name="guard_arm">Поставить на охрану</string>
+    <string name="guard_siren_now">Сирена сразу</string>
+    <string name="guard_siren_now_caption">При первом движении, которое распознаёт YABA, она включает сирену велосипеда. Без этой настройки YABA только уведомляет тебя; тогда велосипед сам включает сирену лишь после нескольких толчков.</string>
+
+    <!-- Why arming is not offered (GuardRules.armBlocker) -->
+    <string name="guard_blocker_not_connected">Сначала подключи YABA к велосипеду.</string>
+    <string name="guard_blocker_not_parked">Охрану можно включить, только пока велосипед стоит и ни одна кнопка не нажата.</string>
+    <string name="guard_blocker_bike_state">Велосипед обновляет прошивку или переходит в транспортный режим. Сейчас охрану включить нельзя.</string>
+    <string name="guard_blocker_busy">Велосипед передаёт данные. Охрану можно будет включить, как только передача закончится.</string>
+
+    <!-- Phases -->
+    <string name="guard_arming">Включение …</string>
+    <string name="guard_arming_text">YABA блокирует велосипед и ждёт, пока он подтвердит наблюдение за движением. Это занимает до %1$d секунд.</string>
+    <string name="guard_active_since">Охрана включена с %1$s</string>
+    <string name="guard_watch_bike">Велосипед сам следит за движением, а YABA остаётся на связи.</string>
+    <string name="guard_watch_unconfirmed">Велосипед не подтвердил наблюдение за движением (состояние сигнализации %1$d). Поэтому YABA распознаёт только вращающееся колесо, нажатые кнопки, замок и батарею.</string>
+    <string name="guard_watch_unconfirmed_unknown">Велосипед не подтвердил наблюдение за движением. Поэтому YABA распознаёт только вращающееся колесо, нажатые кнопки, замок и батарею.</string>
+    <string name="guard_watch_retry">Повторить</string>
+    <string name="guard_end">Снять с охраны</string>
+    <string name="guard_silence">Выключить сирену</string>
+    <string name="guard_lever_hint">Сдвиг снимает велосипед с охраны и разблокирует его.</string>
+    <string name="guard_lever_hint_offline">Без связи YABA после сдвига ждёт велосипед до %1$d секунд. Если связь вернётся, велосипед разблокируется, иначе охрана снимается только в YABA.</string>
+    <string name="guard_alarm_at">Тревога в %1$s</string>
+    <string name="guard_rearming">Восстанавливает охрану …</string>
+    <string name="guard_disarming">Снимает с охраны …</string>
+    <string name="guard_disarming_wait">YABA ждёт подключения к велосипеду до %1$d секунд.</string>
+    <string name="guard_lost_watch">Связь с велосипедом прервана. Наблюдение за движением на велосипеде продолжается, а YABA подключается заново.</string>
+    <string name="guard_lost">Связь с велосипедом прервана. YABA подключается заново.</string>
+
+    <!-- Latest lines -->
+    <string name="guard_events_title">Последние</string>
+    <string name="guard_events_all">Все события в разделе «Диагностика»</string>
+    <string name="guard_share_journal">Поделиться журналом охраны</string>
+
+    <!-- Hints -->
+    <string name="guard_notifications_off">Уведомления для YABA выключены. Сирена работает, но телефон не сообщит тебе о движении.</string>
+    <string name="guard_notifications_allow">Разрешить уведомления</string>
+    <string name="guard_battery_hint">Исключи YABA из оптимизации батареи, чтобы Android не разрывал ночью связь с велосипедом.</string>
+    <string name="guard_battery_open">Открыть настройки батареи</string>
+    <string name="guard_alarm_choice_locked">Пока охрана включена, сигнализация остаётся включённой.</string>
+    <string name="guard_link_locked">Пока охрана включена, YABA остаётся подключённой к велосипеду. Сначала сними велосипед с охраны.</string>
+
+    <!-- Issues (GuardState.issue) -->
+    <string name="guard_issue_dismiss">Скрыть</string>
+    <string name="guard_issue_service">Android не запустил службу охраны. Охрана остаётся выключенной.</string>
+    <string name="guard_issue_arm_failed">Не удалось включить охрану. Причина: %1$s</string>
+    <string name="guard_issue_arm_failed_unknown">Не удалось включить охрану.</string>
+    <string name="guard_issue_alarm_during">Во время включения велосипед сам поднял тревогу. YABA остановила тревогу, а велосипед остаётся заблокированным. Держи его неподвижно и попробуй ещё раз.</string>
+    <string name="guard_issue_alarm_mode">Велосипед не включил сигнализацию (режим сигнализации %1$s). Охрана остаётся выключенной.</string>
+    <string name="guard_issue_lock">Велосипед не заблокировался (замок сообщает %1$s). Охрана остаётся выключенной.</string>
+    <string name="guard_issue_disarm_unconfirmed">Охрана снята, но велосипед всё ещё сообщает состояние сигнализации %1$s. В разделе «Сигнализация» можно остановить тревогу.</string>
+    <string name="guard_issue_ended_offline">Охрана снята. YABA не смогла связаться с велосипедом, поэтому на велосипеде ничего не изменилось.</string>
+    <string name="guard_issue_bike_gone">Охрана снята, потому что велосипед больше не сохранён в YABA.</string>
+
+    <!-- Top tube and header. Matrix words: ASCII, no diacritics (BRAND "Languages"). -->
+    <string name="guard_matrix_armed">GUARD</string>
+    <string name="guard_matrix_alarm">ALARM</string>
+    <string name="guard_tube_armed_cd">Охрана включена, батарея %1$d %%</string>
+    <string name="guard_tube_armed_nobattery_cd">Охрана включена</string>
+    <string name="guard_tube_arming_cd">Охрана включается</string>
+    <string name="guard_tube_alarm_cd">Тревога на велосипеде</string>
+    <string name="guard_tube_lost_cd">Охрана включена, связь прервана</string>
+    <string name="guard_header_armed">Охрана</string>
+    <string name="guard_header_alarm">Тревога</string>
+    <string name="guard_issue_arm_failed_partly">Не удалось включить охрану. Причина: %1$s. Велосипед всё же может быть уже заблокирован или с включённой сигнализацией. Проверь ползунок и «Сигнализацию».</string>
+    <string name="guard_issue_disarm_locked">Охрана снята и сигнализация выключена, но велосипед всё ещё сообщает, что заблокирован (замок %1$s). Его можно разблокировать ползунком.</string>
+    <string name="guard_issue_ended_partly">Охрана снята. YABA отправила команды велосипеду, но не получила ответа. Состояние велосипеда видно в разделе «Езда» после следующего подключения.</string>
+    <string name="guard_issue_not_locked">Велосипед не заблокирован (замок сообщает %1$s). «Повторить» блокирует его и восстанавливает охрану.</string>
+    <string name="guard_issue_not_locked_unknown">У YABA нет подтверждения, что велосипед заблокирован. «Повторить» блокирует его и восстанавливает охрану.</string>
+</resources>

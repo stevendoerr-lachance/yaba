@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">YABA</string>
+    <string name="ride_channel_name">YABA ride logger</string>
+    <string name="ride_channel_description">Keeps the connection to the bike while the ride logger is running.</string>
+</resources>

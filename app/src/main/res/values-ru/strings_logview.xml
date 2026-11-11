@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Просмотр журналов: запись поездки (CSV) и журнал велосипеда (текст), ui/screens/RideLogViewer.kt. -->
+<resources>
+    <string name="logview_open">Открыть</string>
+    <string name="logview_close">Закрыть</string>
+    <string name="logview_share">Поделиться</string>
+    <string name="logview_loading">Чтение файла…</string>
+    <string name="logview_read_failed">Не удалось прочитать файл. Возможно, он был удалён.</string>
+    <string name="logview_share_failed">Не удалось записать файл. Возможно, память заполнена.</string>
+
+    <string name="logview_fmt_time">HH:mm:ss</string>
+    <string name="logview_fmt_time_short">HH:mm</string>
+    <string name="logview_fmt_date_time">EEEE, d MMMM yyyy, HH:mm</string>
+    <string name="logview_fmt_date">d MMM yyyy, HH:mm</string>
+    <string name="logview_at_time">%s</string>
+    <string name="logview_unit_kmh">%s км/ч</string>
+    <string name="logview_unit_km">%s км</string>
+    <string name="logview_unit_min_sec">%1$d\u00A0мин %2$d\u00A0с</string>
+    <string name="logview_unit_h_min">%1$d\u00A0ч %2$d\u00A0мин</string>
+    <string name="logview_unit_pct">%s %%</string>
+
+    <string name="logview_ride_share_title">Поделиться записью поездки</string>
+    <string name="logview_ride_live">Этот файл сейчас записывается. YABA перечитывает его каждые %1$d секунд.</string>
+    <string name="logview_ride_partial">Последняя строка была обрезана при записи и не показана.</string>
+    <plurals name="logview_ride_skipped">
+        <item quantity="one">%d строка не относится к записи поездки и не показана.</item>
+        <item quantity="few">%d строки не относятся к записи поездки и не показаны.</item>
+        <item quantity="many">%d строк не относятся к записи поездки и не показаны.</item>
+        <item quantity="other">%d строки не относятся к записи поездки и не показаны.</item>
+    </plurals>
+    <string name="logview_ride_folded">Эта запись очень длинная. Каждая точка графиков объединяет %1$d измерений; максимальная скорость, расстояние и сигналы по-прежнему учитывают каждое измерение.</string>
+    <string name="logview_ride_empty">В этой записи пока нет измерений.</string>
+
+    <string name="logview_tube_fault">Ошибка %1$d</string>
+    <string name="logview_tube_fault_note">Последний код на верхней трубе, %1$s.</string>
+    <string name="logview_tube_top_note">Максимальная скорость этой поездки.</string>
+    <string name="logview_tube_none_note">В этой записи велосипед не сообщал скорость.</string>
+    <string name="logview_fact_start">Начало</string>
+    <string name="logview_fact_duration">Длительность</string>
+    <string name="logview_fact_distance">Расстояние</string>
+    <string name="logview_fact_top">Макс. скорость</string>
+    <string name="logview_fact_avg">Средняя в движении</string>
+    <string name="logview_fact_battery_start">Батарея в начале</string>
+    <string name="logview_fact_battery_end">Батарея в конце</string>
+    <string name="logview_fact_events">События</string>
+    <string name="logview_fact_marks">Метки</string>
+    <string name="logview_distance_note">YABA вычисляет расстояние и среднюю скорость по скорости, считанной каждые 2 секунды; средняя учитывает только время, когда велосипед ехал.</string>
+
+    <string name="logview_chart_title">Ход поездки</string>
+    <string name="logview_chart_hint">Коснись графика или события.</string>
+    <string name="logview_lane_battery">Батарея</string>
+    <string name="logview_lane_supply">20 В</string>
+    <string name="logview_lane_shipping">Трансп.</string>
+    <string name="logview_legend_speed">Скорость, км/ч</string>
+    <string name="logview_legend_battery">Батарея, %</string>
+    <string name="logview_legend_supply">Питание от 20 В</string>
+    <string name="logview_legend_mark">Метка</string>
+    <string name="logview_chart_cd">Ход поездки с %1$s до %2$s. Максимальная скорость %3$s, батарея с %4$s до %5$s. %6$s</string>
+    <string name="logview_readout_at">%1$s: %2$s</string>
+    <string name="logview_readout_lock">Kick Lock %1$s</string>
+    <string name="logview_readout_supply">питание %1$s</string>
+    <string name="logview_readout_battery">батарея %1$s</string>
+    <string name="logview_readout_offline">%1$s: велосипед не подключён</string>
+    <string name="logview_supply_ok">20 В и выше</string>
+    <string name="logview_supply_low">ниже 20 В</string>
+    <string name="logview_lock_locked">заблокирован</string>
+    <string name="logview_lock_unlocked">разблокирован</string>
+    <string name="logview_lock_pin">ввод PIN</string>
+    <string name="logview_action_next_event">Следующее событие</string>
+    <string name="logview_action_prev_event">Предыдущее событие</string>
+
+    <string name="logview_signals_title">Сигналы правила транспортного режима</string>
+    <string name="logview_signals_intro">По данным анализа прошивки велосипед переходит в транспортный режим, когда катушка Kick Lock, выключатель Kick Lock и обнаружение батареи пропадают одновременно. Коснись строки, чтобы увидеть её первый момент на графике.</string>
+    <string name="logview_signal_locked">Kick Lock сообщает «заблокирован»</string>
+    <string name="logview_signal_fault">Ошибка %1$d: %2$s</string>
+    <string name="logview_signal_shipping">Сообщён транспортный режим</string>
+    <string name="logview_signal_supply">Питание ниже 20 В</string>
+    <string name="logview_short_locked">Kick Lock заблокирован</string>
+    <string name="logview_short_shipping">Транспортный режим</string>
+    <string name="logview_signal_not_seen">не замечено</string>
+    <plurals name="logview_signal_seen">
+        <item quantity="one">%1$s раз, %2$s</item>
+        <item quantity="few">%1$s раза, впервые %2$s</item>
+        <item quantity="many">%1$s раз, впервые %2$s</item>
+        <item quantity="other">%1$s раза, впервые %2$s</item>
+    </plurals>
+    <plurals name="logview_signal_riding">
+        <item quantity="one">из них %1$s раз во время езды, %2$s</item>
+        <item quantity="few">из них %1$s раза во время езды, впервые %2$s</item>
+        <item quantity="many">из них %1$s раз во время езды, впервые %2$s</item>
+        <item quantity="other">из них %1$s раза во время езды, впервые %2$s</item>
+    </plurals>
+    <string name="logview_signals_none">YABA не заметил ни одного из этих сигналов в этой записи.</string>
+    <string name="logview_signals_seen_cd">Сигналы правила транспортного режима: %1$s.</string>
+
+    <string name="logview_events_title">События</string>
+    <string name="logview_events_all">Все</string>
+    <string name="logview_events_incidents">Сбои</string>
+    <plurals name="logview_events_incidents_count">
+        <item quantity="one">%1$s сбой</item>
+        <item quantity="few">%1$s сбоя</item>
+        <item quantity="many">%1$s сбоев</item>
+        <item quantity="other">%1$s сбоя</item>
+    </plurals>
+    <string name="logview_events_empty">В этой записи нет событий.</string>
+    <string name="logview_events_no_incidents">В этой записи нет сбоев.</string>
+    <string name="logview_event_show">Показать на графике</string>
+    <string name="logview_event_chosen">Выбрано на графике</string>
+
+    <string name="logview_bike_title">Журнал велосипеда</string>
+    <string name="logview_bike_read_at">Считан %1$s</string>
+    <plurals name="logview_bike_lines">
+        <item quantity="one">%1$s строка</item>
+        <item quantity="few">%1$s строки</item>
+        <item quantity="many">%1$s строк</item>
+        <item quantity="other">%1$s строки</item>
+    </plurals>
+    <string name="logview_bike_tail">Файл очень большой. Показаны его последние %1$s строк.</string>
+    <string name="logview_bike_empty">Журнал пуст.</string>
+    <string name="logview_search">Поиск</string>
+    <string name="logview_search_count">%1$d из %2$d</string>
+    <string name="logview_search_none">Нет совпадений</string>
+    <string name="logview_search_prev">Предыдущее совпадение</string>
+    <string name="logview_search_next">Следующее совпадение</string>
+    <string name="logview_jump_newest">К последней записи</string>
+    <string name="logview_bike_share_title">Поделиться журналом велосипеда</string>
+    <string name="logview_bike_share_subject">Журнал велосипеда S3 %1$s</string>
+    <string name="logview_bike_saved">Последнее считывание от %1$s сохранено на этом телефоне.</string>
+
+    <!-- Days, zoom, link, accessibility -->
+    <string name="logview_fmt_day_time">EE, d MMM, HH:mm</string>
+    <string name="logview_fmt_day_time_sec">EE, d MMM, HH:mm:ss</string>
+    <string name="logview_fmt_day">EE, d MMM</string>
+    <string name="logview_fmt_day_header">EEEE, d MMMM yyyy</string>
+    <string name="logview_at_moment">в %1$s</string>
+    <string name="logview_at_day_moment">%1$s в %2$s</string>
+    <string name="logview_unit_sec">%1$d\u00A0с</string>
+    <string name="logview_ride_incidents_kept">Все сбои и метки включены.</string>
+    <string name="logview_tube_fault_note_shipping">На верхней трубе, когда велосипед сообщил о транспортном режиме, %1$s.</string>
+    <string name="logview_never_connected">Велосипед не был подключён во время этой записи.</string>
+    <string name="logview_never_connected_note">Поэтому скорость, батарея и сигналы неизвестны.</string>
+    <string name="logview_legend_link_down">Без связи</string>
+    <string name="logview_zoom_in">Увеличить</string>
+    <string name="logview_zoom_out">Уменьшить</string>
+    <string name="logview_zoom_all">Вся запись</string>
+    <string name="logview_zoom_window">Фрагмент: %1$s</string>
+    <string name="logview_signal_fault_8">Ошибка 8: батарея отключает свой выход</string>
+    <string name="logview_signal_unknown">неизвестно</string>
+    <string name="logview_signal_parked_only">заблокирован только на стоянке</string>
+    <string name="logview_signals_none_riding">Кроме Kick Lock на стоянке, YABA не заметил ни одного из этих сигналов.</string>
+    <string name="logview_event_incident">Сбой</string>
+    <string name="logview_open_ride_cd">Открыть запись поездки от %1$s</string>
+    <string name="logview_open_bike_cd">Открыть журнал велосипеда</string>
+    <string name="logview_search_count_cd">Совпадение %1$d из %2$d, строка %3$d: %4$s</string>
+    <string name="logview_line_cd">Строка %1$d: %2$s</string>
+    <string name="logview_wrap_title">Длинные строки</string>
+    <string name="logview_wrap_on">Переносить</string>
+    <string name="logview_wrap_off">В одну строку</string>
+    <plurals name="logview_ride_events_cut">
+        <item quantity="one">В списке показаны %1$s из %2$s событий; %3$s более раннее не показано.</item>
+        <item quantity="few">В списке показаны %1$s из %2$s событий; %3$s более ранних не показаны.</item>
+        <item quantity="many">В списке показаны %1$s из %2$s событий; %3$s более ранних не показаны.</item>
+        <item quantity="other">В списке показаны %1$s из %2$s событий; %3$s более ранних не показаны.</item>
+    </plurals>
+    <plurals name="logview_ride_marks_cut">
+        <item quantity="one">Также не показана %1$s более ранняя метка.</item>
+        <item quantity="few">Также не показаны %1$s более ранние метки.</item>
+        <item quantity="many">Также не показаны %1$s более ранних меток.</item>
+        <item quantity="other">Также не показаны %1$s более ранней метки.</item>
+    </plurals>
+    <string name="logview_fmt_heading">EE, d MMM, HH:mm</string>
+    <string name="logview_delete">Удалить</string>
+    <string name="logview_verdict_lock">Kick Lock заблокирован %1$d× во время езды</string>
+    <string name="logview_verdict_lock_none">Kick Lock ни разу не заблокирован во время езды</string>
+    <string name="logview_verdict_coil">катушка не обнаружена %1$d×</string>
+    <string name="logview_verdict_coil_none">катушка всегда обнаружена</string>
+    <string name="logview_verdict_battery">определение батареи пропало %1$d×</string>
+    <string name="logview_verdict_battery_none">определение батареи ни разу не пропало</string>
+    <string name="logview_verdict_short_lock">Замок %1$d× на ходу</string>
+    <string name="logview_verdict_short_coil">Катушка %1$d×</string>
+    <string name="logview_verdict_short_battery">Батарея %1$d×</string>
+    <string name="logview_fact_battery">Батарея</string>
+    <string name="logview_fact_battery_value">с %1$d до %2$d\u00A0%%</string>
+    <string name="logview_lane_lock">Замок</string>
+    <string name="logview_lane_f42">О42</string>
+    <string name="logview_lane_f18">О18</string>
+    <string name="logview_lane_f8">О8</string>
+    <string name="logview_lane_link">Связь</string>
+    <string name="logview_lane_signals">Сигналы</string>
+    <string name="logview_legend_rule">Сигнал правила транспортного режима</string>
+    <string name="logview_zoom_whole">Вся поездка</string>
+    <string name="logview_action_expand">Показать все дорожки</string>
+    <string name="logview_signals_unseen">Не замечены: %1$s</string>
+    <string name="logview_events_no_marks">В этой записи нет меток.</string>
+    <plurals name="logview_events_marks_count">
+        <item quantity="one">%1$s метка</item>
+        <item quantity="few">%1$s метки</item>
+        <item quantity="many">%1$s меток</item>
+        <item quantity="other">%1$s метки</item>
+    </plurals>
+</resources>

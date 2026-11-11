@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speedplus_title">Speed++ (wielmaat 24″)</string>
+    <string name="speedplus_text" formatted="false">Zet je fiets op 24″-wielen. Hij telt dan 84% van de echte snelheid en stopt de ondersteuning pas bij ongeveer 29,7\u00A0km/u (EU) of 38\u00A0km/u (US). YABA toont je overal de echte snelheid; de snelheidsmeter van de fiets toont minder.</string>
+    <string name="speedplus_on">Speed++ aanzetten</string>
+    <string name="speedplus_off">Terug naar 28″</string>
+    <string name="speedplus_active">Aan. YABA vermenigvuldigt de snelheid van de fiets met 1,1875.</string>
+    <string name="speedplus_odometer" formatted="false">Zolang het aan staat, telt de kilometerstand van de fiets ongeveer 16% te weinig.</string>
+    <string name="speedplus_unknown">YABA leest de wielmaat bij het verbinden met de fiets.</string>
+    <string name="speedplus_unread">YABA kon de wielmaat niet lezen.</string>
+    <string name="speedplus_read">Wielmaat lezen</string>
+    <string name="speedplus_not_28">Speed++ werkt alleen bij fietsen met 28″-wielen af fabriek.</string>
+    <string name="speedplus_cmd">Wielmaat %1$d″</string>
+    <string name="speedplus_error_rolling">Alleen stilstaand: de fiets geeft de wielmaat door aan de motorcontroller.</string>
+    <string name="speedplus_error_rejected">De fiets heeft de wielmaat niet overgenomen.</string>
+    <string name="speedplus_choice_28">28″ af fabriek</string>
+    <string name="speedplus_stock_title">Wielmaat af fabriek</string>
+    <string name="speedplus_stock_question">Je fiets staat nu ingesteld op 24″-wielen. YABA kan niet zien of hij af fabriek een S3 met 28″ of een X3 met 24″ is. Van je antwoord hangt af welke snelheid YABA toont.</string>
+    <string name="speedplus_stock_next">Verder</string>
+    <string name="speedplus_stock_later">Je kunt je antwoord later wijzigen onder %1$s › %2$s.</string>
+    <string name="speedplus_read_none">De fiets heeft de wielmaat ook deze keer niet doorgegeven.</string>
+    <string name="speedplus_x3_on_28">Je fiets staat ingesteld op 28″-wielen, maar heeft af fabriek 24″. Hij toont dan meer snelheid dan hij rijdt en stopt de ondersteuning eerder. YABA toont je de echte snelheid.</string>
+    <string name="speedplus_back_to_24">Terug naar 24″</string>
+    <string name="speedplus_stock_open_note">YABA kent de wielmaat af fabriek nog niet en toont de snelheid daarom zoals je fiets die doorgeeft. Je kunt die opgeven onder %1$s › %2$s.</string>
+</resources>

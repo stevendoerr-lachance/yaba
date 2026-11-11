@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tahograf (ui/screens/LogInsightsScreen.kt). -->
+<resources>
+    <string name="loginsights_title">Tahograf</string>
+    <string name="loginsights_close">Zatvori</string>
+    <string name="loginsights_intro">Dok je budan, bicikl svakih 30\u00A0sekundi upisuje jedan mjerni redak u svoj dnevnik. YABA od toga radi grafove po vožnji, i za vožnje bez telefona.</string>
+    <string name="loginsights_loading">Čita spremljeni dnevnik …</string>
+    <string name="loginsights_more">Prikaži još</string>
+    <string name="loginsights_yes">da</string>
+    <string name="loginsights_no">ne</string>
+
+    <string name="loginsights_fmt_time">HH:mm</string>
+    <string name="loginsights_fmt_time_seconds">HH:mm:ss</string>
+    <string name="loginsights_fmt_ride">EEE d. M., HH:mm</string>
+    <string name="loginsights_fmt_day">EEEE, d. M. yyyy.</string>
+    <string name="loginsights_fmt_day_short">EEE d. M.</string>
+    <string name="loginsights_fmt_date">d. M. yyyy.</string>
+    <string name="loginsights_at_time">%s\u00A0h</string>
+    <string name="loginsights_unit_kmh">%s\u00A0km/h</string>
+    <string name="loginsights_unit_km">%s\u00A0km</string>
+    <string name="loginsights_unit_pct">%s\u00A0%%</string>
+    <string name="loginsights_unit_amp">%s\u00A0A</string>
+    <string name="loginsights_unit_celsius">%s\u00A0°C</string>
+    <string name="loginsights_unit_min">%d\u00A0min</string>
+    <string name="loginsights_unit_h_min">%1$d\u00A0h %2$d\u00A0min</string>
+
+    <string name="loginsights_entry_intro">Tahograf prikazuje vožnje, ograničenje struje, mijenjanje brzina i buđenja iz dnevnika bicikla.</string>
+    <string name="loginsights_entry_empty">Na ovom telefonu još nije spremljen nijedan dnevnik. Jednom pročitaj dnevnik bicikla i ovdje će se pojaviti vožnje.</string>
+    <string name="loginsights_entry_no_rides">Spremljeni dnevnik još ne sadrži nijednu vožnju.</string>
+    <string name="loginsights_entry_open">Otvori tahograf</string>
+    <plurals name="loginsights_entry_summary">
+        <item quantity="one">%1$d vožnja, %2$s, posljednja %3$s</item>
+        <item quantity="few">%1$d vožnje, ukupno %2$s, posljednja %3$s</item>
+        <item quantity="other">%1$d vožnji, ukupno %2$s, posljednja %3$s</item>
+    </plurals>
+
+    <string name="loginsights_archive_title">Spremljeni dnevnik</string>
+    <plurals name="loginsights_archive_lines_unit">
+        <item quantity="one">redak</item>
+        <item quantity="few">retka</item>
+        <item quantity="other">redaka</item>
+    </plurals>
+    <plurals name="loginsights_archive_downloads">
+        <item quantity="one">Spojeno iz %d očitanja</item>
+        <item quantity="few">Spojeno iz %d očitanja</item>
+        <item quantity="other">Spojeno iz %d očitanja</item>
+    </plurals>
+    <string name="loginsights_archive_span">Od %1$s do %2$s, prema satu bicikla</string>
+    <string name="loginsights_archive_empty">Na ovom telefonu još nije spremljen nijedan mjerni redak.</string>
+    <string name="loginsights_archive_hint">Svako očitanje ostaje na telefonu. YABA ih spaja, pa ostaju i vožnje koje je bicikl već prebrisao u svojoj memoriji od 128\u00A0KB.</string>
+    <string name="loginsights_archive_read">Pročitaj dnevnik sada</string>
+    <string name="loginsights_archive_read_again">Pročitaj ponovno</string>
+    <string name="loginsights_archive_reading">Čita dnevnik …</string>
+    <string name="loginsights_archive_reading_percent">Čita dnevnik, %d\u00A0%%</string>
+    <string name="loginsights_archive_offline">Za čitanje bicikl mora biti povezan.</string>
+    <string name="loginsights_archive_failed">Dnevnik nije stigao. Ostani uz bicikl i pročitaj ga ponovno.</string>
+    <string name="loginsights_archive_partial">Posljednje očitanje stalo je prije kraja dnevnika. Ono što je stiglo, spremljeno je.</string>
+
+    <string name="loginsights_rides_title">Vožnje</string>
+    <plurals name="loginsights_rides_count">
+        <item quantity="one">%d vožnja</item>
+        <item quantity="few">%d vožnje</item>
+        <item quantity="other">%d vožnji</item>
+    </plurals>
+    <string name="loginsights_rides_none">Spremljeni dnevnik ne sadrži nijednu vožnju. Vožnja se računa kad se kotač okreće u barem dva mjerna retka.</string>
+    <string name="loginsights_rides_all">Sve vožnje</string>
+    <string name="loginsights_rides_more">Prikaži još vožnji</string>
+    <string name="loginsights_ride_row">%1$s za %2$s, najviše %3$s</string>
+    <string name="loginsights_ride_sampling">Bicikl mjeri svakih 30\u00A0sekundi. Vrhovi između mjerenja nedostaju, pa je najviša izmjerena vrijednost obično ispod stvarnog maksimuma.</string>
+    <string name="loginsights_fact_distance">Udaljenost</string>
+    <string name="loginsights_fact_duration">Trajanje</string>
+    <string name="loginsights_fact_avg">Prosjek</string>
+    <string name="loginsights_fact_max">Najviša izmjerena</string>
+    <string name="loginsights_fact_battery">Potrošena baterija</string>
+    <string name="loginsights_fact_motor_temp">Motor najviše</string>
+    <string name="loginsights_fact_boost">S Boostom</string>
+
+    <string name="loginsights_chart_scrub_hint">Povuci prstom preko grafa i ispod svakog grafa pojavit će se vrijednosti u tom trenutku.</string>
+    <string name="loginsights_chart_speed">Brzina u km/h</string>
+    <string name="loginsights_chart_battery">Baterija u postocima</string>
+    <string name="loginsights_chart_current">Struja motora u amperima</string>
+    <string name="loginsights_chart_temps">Temperature u °C</string>
+    <string name="loginsights_chart_battery_note" formatted="false">Ispod crte na 22\u00A0% firmver daje motoru manje struje. Baterija modula je mala ćelija u elektroničkom modulu, a ne pogonska baterija.</string>
+    <string name="loginsights_chart_current_no_limit">Za ovu vožnju spremljeni dnevnik ne sadrži granicu struje. Bicikl je upisuje samo kad se promijeni.</string>
+    <string name="loginsights_chart_cd">%1$s, od %2$s do %3$s. Najmanja vrijednost %4$s, najveća vrijednost %5$s.</string>
+    <string name="loginsights_series_speed">Brzina</string>
+    <string name="loginsights_series_main_battery">Glavna baterija</string>
+    <string name="loginsights_series_module_battery">Baterija modula</string>
+    <string name="loginsights_series_motor_current">Struja motora</string>
+    <string name="loginsights_series_limit">Granica firmvera</string>
+    <string name="loginsights_series_temp_battery">Baterija</string>
+    <string name="loginsights_series_temp_motor">Motor</string>
+    <string name="loginsights_series_temp_driver">Kontroler</string>
+    <string name="loginsights_series_shift_retry">Ponovljena promjena brzine</string>
+    <string name="loginsights_readout">%1$s: %2$s</string>
+    <string name="loginsights_readout_two">%1$s: %2$s %3$s, %4$s %5$s</string>
+    <string name="loginsights_readout_three">%1$s: %2$s %3$s, %4$s %5$s, %6$s %7$s</string>
+    <string name="loginsights_rows_show">Prikaži mjerne retke</string>
+    <string name="loginsights_rows_hide">Sakrij mjerne retke</string>
+    <string name="loginsights_col_time">Vrijeme</string>
+    <string name="loginsights_col_speed">km/h</string>
+    <string name="loginsights_col_soc">Baterija</string>
+    <string name="loginsights_col_current">Struja</string>
+    <string name="loginsights_col_battemp">Bat. °C</string>
+    <string name="loginsights_col_motortemp">Motor °C</string>
+
+    <string name="loginsights_derate_title">Ograničenje struje</string>
+    <string name="loginsights_derate_intro">Koliko struje motor smije povući, firmver određuje prema napunjenosti i temperaturi baterije. Bicikl tu vrijednost ne javlja preko Bluetootha, ali dnevnik bilježi svaku promjenu.</string>
+    <string name="loginsights_derate_of_max">od najviše %s</string>
+    <string name="loginsights_derate_full">Pri %1$s baterije i %2$s motor smije povući punih %3$s.</string>
+    <string name="loginsights_derate_empty">Pri %1$s baterije firmver više ne daje struju i motor ne pomaže.</string>
+    <string name="loginsights_derate_battery">Pri %1$s baterije firmver daje samo %2$s umjesto %3$s.</string>
+    <string name="loginsights_derate_next_soc">Od %1$s baterije to je %2$s.</string>
+    <string name="loginsights_derate_cold">Pri temperaturi baterije od %1$s firmver daje samo %2$s umjesto %3$s.</string>
+    <string name="loginsights_derate_next_warmer">Iznad %1$s to je %2$s.</string>
+    <string name="loginsights_derate_heat">Pri temperaturi baterije od %1$s firmver daje samo %2$s umjesto %3$s.</string>
+    <string name="loginsights_derate_next_cooler">Do %1$s to je ponovno %2$s.</string>
+    <string name="loginsights_derate_both">Pri %1$s baterije i temperaturi baterije od %2$s firmver daje samo %3$s umjesto %4$s. Ograničava oboje.</string>
+    <string name="loginsights_derate_unknown">Za procjenu nedostaje napunjenost ili temperatura baterije. Pročitaj dnevnik i YABA će uzeti temperaturu iz posljednjeg mjernog retka.</string>
+    <string name="loginsights_derate_basis_live">Napunjenost izravno s bicikla, temperatura baterije iz mjernog retka od %s. Temperatura se upisuje samo svakih 30\u00A0sekundi, pa je podatak približan.</string>
+    <string name="loginsights_derate_basis_log">Napunjenost i temperatura baterije iz mjernog retka od %s. S povezanim biciklom YABA uzima trenutnu napunjenost.</string>
+    <string name="loginsights_derate_grid_title">Granica struje prema napunjenosti i temperaturi</string>
+    <string name="loginsights_derate_grid_cd">Tablica granica struje: retci prema temperaturi baterije, stupci prema napunjenosti.</string>
+    <string name="loginsights_derate_now">trenutno stanje</string>
+    <string name="loginsights_derate_grid_note">Tablica potječe iz firmvera 1.07.06 i provjerena je redak po redak. Na 1.9.3 vjerojatno je jednaka.</string>
+    <string name="loginsights_derate_log_title">Promjene u dnevniku</string>
+    <string name="loginsights_derate_log_row">%1$s pri %2$s baterije</string>
+    <string name="loginsights_derate_log_row_nosoc">%1$s, napunjenost nepoznata</string>
+    <string name="loginsights_derate_log_none">Spremljeni dnevnik ne sadrži nijednu promjenu granice struje.</string>
+
+    <string name="loginsights_shift_title">Mijenjanje brzina</string>
+    <string name="loginsights_shift_intro">Dnevnik bilježi svaku ponovljenu promjenu brzine, svaku grešku položaja, isključivanje mjenjača i njegovu kalibraciju nulte točke.</string>
+    <string name="loginsights_shift_summary_ok">U %s vožnje mjenjač je radio bez ponavljanja i bez greške položaja.</string>
+    <plurals name="loginsights_shift_summary_retries">
+        <item quantity="one">U %1$s vožnje mjenjač je morao ponoviti promjenu %2$d put.</item>
+        <item quantity="few">U %1$s vožnje mjenjač je morao ponoviti promjenu %2$d puta.</item>
+        <item quantity="other">U %1$s vožnje mjenjač je morao ponoviti promjenu %2$d puta.</item>
+    </plurals>
+    <plurals name="loginsights_shift_summary_position">
+        <item quantity="one">Mjenjač %d put nije pronašao svoj položaj. Molim te, daj provjeriti mjenjač.</item>
+        <item quantity="few">Mjenjač %d puta nije pronašao svoj položaj. Molim te, daj provjeriti mjenjač.</item>
+        <item quantity="other">Mjenjač %d puta nije pronašao svoj položaj. Molim te, daj provjeriti mjenjač.</item>
+    </plurals>
+    <string name="loginsights_shift_retries">Ponovljene promjene</string>
+    <string name="loginsights_shift_retries_hint">Brzina nije ušla iz prvog pokušaja.</string>
+    <string name="loginsights_shift_per_hour">%s po satu vožnje</string>
+    <string name="loginsights_shift_position">Greške položaja</string>
+    <string name="loginsights_shift_position_hint">Mjenjač nije pronašao svoj položaj.</string>
+    <string name="loginsights_shift_off">Mjenjač isključen</string>
+    <string name="loginsights_shift_off_hint">Obično uobičajeno isključivanje nakon stanke.</string>
+    <string name="loginsights_shift_zero">Kalibracije nulte točke</string>
+    <string name="loginsights_shift_zero_hint">Mjenjač traži svoju nultu točku, obično nakon uključivanja.</string>
+    <string name="loginsights_shift_by_gear">Ponavljanja po brzini</string>
+    <string name="loginsights_shift_gear">Brzina\u00A0%d</string>
+    <string name="loginsights_shift_by_gear_cd">Ponavljanja po brzini. Brzina\u00A01: %1$d, brzina\u00A02: %2$d, brzina\u00A03: %3$d, brzina\u00A04: %4$d.</string>
+    <string name="loginsights_shift_events">Unosi</string>
+    <string name="loginsights_shift_event_retry">Brzina\u00A0%1$s, povratna vrijednost %2$s, novi pokušaj</string>
+    <string name="loginsights_shift_event_position">Greška položaja</string>
+    <string name="loginsights_shift_event_off">Mjenjač isključen</string>
+    <string name="loginsights_shift_event_zero">Nulta točka kalibrirana</string>
+    <string name="loginsights_shift_event_speed">pri %s</string>
+    <string name="loginsights_shift_event_parked">u mirovanju</string>
+    <string name="loginsights_shift_none">Spremljeni dnevnik ne sadrži nijedan unos mjenjača.</string>
+    <string name="loginsights_shift_caveat">Poruke potječu iz firmvera 1.07.06. Tvoj Revotronics mjenjač možda javlja drukčije, zato provjeri retke na dnevniku vlastitog bicikla.</string>
+
+    <string name="loginsights_wake_title">Dnevnik buđenja</string>
+    <string name="loginsights_wake_intro">Dnevnik bilježi zašto se bicikl probudio. Potres bez vožnje nakon toga obično znači da je netko pomaknuo bicikl.</string>
+    <string name="loginsights_wake_clock_skew">Sat bicikla odstupa za %s od vremena na telefonu. Namjesti sat bicikla i vremena će biti točna.</string>
+    <string name="loginsights_wake_legend_ride">Vožnja</string>
+    <string name="loginsights_wake_legend_wake">Buđenje</string>
+    <string name="loginsights_wake_legend_moved">Potres bez vožnje</string>
+    <string name="loginsights_wake_day_cd">%1$s. Vožnje: %2$d. Buđenja: %3$d. Od toga pomaknut bez vožnje: %4$d.</string>
+    <string name="loginsights_wake_none">Razlog nije javljen</string>
+    <string name="loginsights_wake_rtc">Budilica bicikla</string>
+    <string name="loginsights_wake_button1">Tipka\u00A01</string>
+    <string name="loginsights_wake_button2">Tipka\u00A02</string>
+    <string name="loginsights_wake_ble">Bluetooth</string>
+    <string name="loginsights_wake_mems">Potres</string>
+    <string name="loginsights_wake_charger">Punjač</string>
+    <string name="loginsights_wake_wheel">Kotač se okreće</string>
+    <string name="loginsights_wake_key">Kontakt baterije</string>
+    <string name="loginsights_wake_kicklock">Kick Lock</string>
+    <string name="loginsights_wake_cold">Hladno pokretanje, dnevnik obrisan</string>
+    <string name="loginsights_wake_counter_only">Buđenje</string>
+    <string name="loginsights_wake_other">Drugi razlog</string>
+    <string name="loginsights_wake_moved">%s bez vožnje</string>
+    <string name="loginsights_wake_ride_after">zatim vožnja od %s</string>
+    <string name="loginsights_wake_counter">brojač buđenja %1$d od %2$d</string>
+    <string name="loginsights_wake_deepsleep">Bluetooth u dubokom snu</string>
+    <string name="loginsights_wake_deepsleep_detail">%1$s baterije, %2$s buđenja</string>
+    <string name="loginsights_wake_deepsleep_hint" formatted="false">Ispod 19\u00A0% baterije i nakon više od 167 buđenja firmver šalje Bluetooth u dublji san.</string>
+    <string name="loginsights_wake_none_found">Spremljeni dnevnik ne sadrži nijedan redak buđenja.</string>
+    <string name="loginsights_wake_more">Prikaži još dana</string>
+    <string name="loginsights_wake_caveat">Redak buđenja dospije u memoriju samo ako bicikl nakon toga ostane budan otprilike minutu. Vremena slijede sat bicikla.</string>
+
+    <string name="loginsights_seek_title">Čitaj samo nove retke</string>
+    <string name="loginsights_seek_intro">Pomiče pokazivač čitanja bicikla iza najnovijeg spremljenog retka. Nakon toga YABA čita samo nove retke, što je brže.</string>
+    <string name="loginsights_seek_warning">To se ne može poništiti. Starije retke bicikl nakon toga ne predaje nijednoj aplikaciji ni servisu; ostaju samo na ovom telefonu.</string>
+    <string name="loginsights_seek_check_link">Bicikl povezan</string>
+    <string name="loginsights_seek_check_complete">Dnevnik pročitan do kraja</string>
+    <string name="loginsights_seek_check_complete_hint">Pročitaj dnevnik do kraja, ovdje ili u Dijagnozi.</string>
+    <string name="loginsights_seek_check_saved">Očitanje spremljeno na telefonu</string>
+    <string name="loginsights_seek_check_saved_hint">Datoteka posljednjeg očitanja nalazi se u memoriji aplikacije YABA i podudara se znak po znak.</string>
+    <string name="loginsights_seek_check_fresh">Starost očitanja</string>
+    <string name="loginsights_seek_check_fresh_hint">Najviše %d\u00A0minuta i iz trenutne veze, tako da se ne preskoči nijedan novi redak.</string>
+    <string name="loginsights_seek_check_newest">Najnoviji spremljeni redak</string>
+    <string name="loginsights_seek_check_newest_hint">Pokazivač ide do neposredno prije tog vremena na satu bicikla, nikad prema vremenu telefona.</string>
+    <string name="loginsights_seek_check_clock_hint">Sat bicikla nije namješten. Najprije ga namjesti, inače najnoviji redak nije jednoznačan.</string>
+    <string name="loginsights_seek_button">Pomakni pokazivač do %s\u00A0h</string>
+    <string name="loginsights_seek_button_plain">Pomakni pokazivač</string>
+    <string name="loginsights_seek_busy">Pomiče pokazivač …</string>
+    <string name="loginsights_seek_blocked">Moguće tek kad su ispunjene sve točke iznad.</string>
+    <string name="loginsights_seek_confirm_title">Pomakni pokazivač čitanja</string>
+    <string name="loginsights_seek_confirm_text">Bicikl će nakon toga predavati samo retke od %1$s\u00A0h dana %2$s. Prethodnih %3$s redaka ostat će samo na ovom telefonu.</string>
+    <string name="loginsights_seek_confirm">Pomakni</string>
+    <string name="loginsights_seek_cancel">Odustani</string>
+    <string name="loginsights_seek_done">Pokazivač je prije %s\u00A0h. Sljedeće čitanje vraća samo nove retke.</string>
+    <string name="loginsights_archive_read_where">Novi redci dolaze čim očitaš dnevnik u Dijagnozi pod „Dnevnik bicikla“.</string>
+</resources>

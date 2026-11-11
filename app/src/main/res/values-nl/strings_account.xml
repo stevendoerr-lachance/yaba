@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Account: welkomstscherm, garage en de gedeelde formulieren uit AccountBits.kt. -->
+<resources>
+    <!-- Gedeelde formulieren -->
+    <string name="account_disclosure_expanded">Uitgevouwen</string>
+    <string name="account_disclosure_collapsed">Samengevouwen</string>
+    <string name="account_field_email">E-mail</string>
+    <string name="account_field_password">Wachtwoord</string>
+    <string name="account_password_show">Tonen</string>
+    <string name="account_password_hide">Verbergen</string>
+    <string name="account_password_show_description">Wachtwoord tonen</string>
+    <string name="account_password_hide_description">Wachtwoord verbergen</string>
+    <string name="account_login_submit">Inloggen en sleutel ophalen</string>
+    <string name="account_login_running">Inloggen…</string>
+    <string name="account_login_privacy">YABA slaat je wachtwoord niet op. Alleen de sleutel van je fiets en een inlogtoken worden bewaard.</string>
+    <string name="account_default_bike_name">Mijn S3</string>
+    <string name="account_default_bike_name_s2">Mijn S2</string>
+    <string name="account_field_name">Naam</string>
+    <string name="account_field_mac">MAC-adres</string>
+    <string name="account_mac_hint">Vul het MAC-adres uit de Bluetooth-naam van de fiets in (bijvoorbeeld ES3-A1B2C3D4E5F6, de hele naam mag ook) en de sleutel van 32 tekens uit een sleutelbestand van mooovy of YABA.</string>
+    <string name="account_mac_hint_s2">Vul het MAC-adres en de sleutel van 32 tekens uit een sleutelbestand van mooovy of YABA in. De Bluetooth-naam van een S2 bevat alleen de laatste 6 tekens van het MAC-adres.</string>
+    <string name="account_field_key">Sleutel</string>
+    <string name="account_key_complete">Sleutel compleet.</string>
+    <plurals name="account_key_remaining">
+        <item quantity="one">32 hexadecimale tekens, er ontbreekt nog %1$d.</item>
+        <item quantity="other">32 hexadecimale tekens, er ontbreken nog %1$d.</item>
+    </plurals>
+    <string name="account_field_user_key_id">Nummer van de gebruikerssleutel</string>
+    <string name="account_user_key_id_hint">Meestal 1. Het nummer staat bij de sleutel in de export van je account (0–255).</string>
+    <string name="account_manual_add">Fiets toevoegen</string>
+    <string name="account_import_title">Sleutelbestand importeren</string>
+    <string name="account_import_field">Tekst van het sleutelbestand</string>
+    <string name="account_import_submit">Importeren</string>
+    <string name="account_import_pick_file">Bestand kiezen</string>
+    <string name="account_import_hint">Kies het .json-sleutelbestand dat je uit mooovy of uit YABA op een andere telefoon hebt bewaard.</string>
+    <string name="account_import_file_too_large">Het bestand is te groot voor een sleutelbestand. Kies alsjeblieft de YABA-export of het mooovy-sleutelbestand.</string>
+    <string name="account_import_file_unreadable">Het bestand is leeg of kan niet worden gelezen. Kies alsjeblieft een ander bestand of plak de tekst.</string>
+
+    <!-- Welkom -->
+    <string name="account_welcome_slogan">Rijdt door. Wat er ook gebeurt.</string>
+    <string name="account_welcome_slogan_1">Rijdt door.</string>
+    <string name="account_welcome_slogan_2">Wat er ook gebeurt.</string>
+    <string name="account_welcome_intro">YABA bedient je VanMoof S3, X3, S2 of X2 rechtstreeks via Bluetooth. Na één keer inloggen werken ontgrendelen, licht en bel zonder de server van VanMoof.</string>
+    <string name="account_welcome_disclaimer">Yet Another Bike App. Niet gelieerd aan VanMoof.</string>
+    <string name="account_welcome_hero_description">YABA</string>
+    <string name="account_welcome_login_title">Inloggen met je VanMoof-account</string>
+    <string name="account_welcome_login_button">Inloggen met VanMoof-account</string>
+    <string name="account_welcome_import_button">Sleutelbestand importeren</string>
+    <string name="account_welcome_login_text">Bij het inloggen haalt YABA de sleutel van je fiets op bij de server van VanMoof. YABA slaat je wachtwoord niet op.</string>
+    <string name="account_welcome_login_caption">Op deze telefoon worden alleen die sleutel en een inlogtoken opgeslagen, allebei versleuteld.</string>
+    <string name="account_welcome_login_fallback">Antwoordt de server niet, importeer dan een sleutelbestand.</string>
+
+    <!-- Garage -->
+    <string name="account_garage_title">Garage</string>
+    <string name="account_garage_done">Sluiten</string>
+    <string name="account_garage_empty">Nog geen fiets opgeslagen. Log in of voeg hieronder handmatig een fiets toe.</string>
+    <string name="account_garage_backup_title">Back-up van sleutels</string>
+    <string name="account_garage_backup_hint">Met het sleutelbestand ontgrendel je je fiets. Wie het bezit, heeft toegang tot je fiets. Bewaar het alsjeblieft veilig.</string>
+    <string name="account_garage_export">Sleutels exporteren</string>
+    <string name="account_garage_export_subject">Sleutelbestand</string>
+    <string name="account_garage_export_chooser">Sleutels veiligstellen</string>
+    <string name="account_garage_copy">Naar het klembord kopiëren</string>
+    <string name="account_garage_copied">De sleutels zijn naar het klembord gekopieerd. Plak ze alsjeblieft in een wachtwoord- of notitie-app.</string>
+    <string name="account_garage_account_title">Account</string>
+    <string name="account_garage_signed_in_as">Ingelogd als %1$s</string>
+    <string name="account_garage_refresh">Fietsen opnieuw laden</string>
+    <string name="account_garage_refreshing">Laden…</string>
+    <string name="account_garage_logout">Uitloggen</string>
+    <string name="account_garage_login_hint">Log in om je fietsen uit je account te laden. De sleutels blijven op deze telefoon.</string>
+    <string name="account_garage_add_manual">Fiets handmatig toevoegen</string>
+    <string name="account_garage_source_account">uit je account</string>
+    <string name="account_garage_source_manual">handmatig toegevoegd</string>
+    <string name="account_garage_connected">Verbonden</string>
+    <string name="account_garage_connect">Verbinden</string>
+    <string name="account_garage_connect_description">Verbinden met %1$s</string>
+    <string name="account_garage_rename">Hernoemen</string>
+    <string name="account_garage_rename_description">%1$s hernoemen</string>
+    <string name="account_garage_rename_title">Fiets hernoemen</string>
+    <string name="account_garage_save">Opslaan</string>
+    <string name="account_garage_cancel">Annuleren</string>
+    <string name="account_garage_delete">Verwijderen</string>
+    <string name="account_garage_delete_title">%1$s verwijderen</string>
+    <string name="account_garage_delete_body">De sleutel wordt van deze telefoon verwijderd. Zonder inloggen of back-up is daarna geen toegang tot de fiets meer mogelijk.</string>
+    <string name="account_import_paste_hint">Plak de tekst van het .json-sleutelbestand dat je uit mooovy of uit YABA op een andere telefoon hebt bewaard.</string>
+    <string name="account_import_paste_button">Tekst in plaats daarvan plakken</string>
+    <string name="account_key_show_description">Sleutel tonen</string>
+    <string name="account_key_hide_description">Sleutel verbergen</string>
+    <string name="account_garage_edit">Bewerken</string>
+    <string name="account_garage_edit_description">%1$s bewerken</string>
+    <string name="account_garage_backup_first">Eerst back-up maken</string>
+</resources>

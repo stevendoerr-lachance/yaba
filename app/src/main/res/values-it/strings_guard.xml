@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Guardia (the guard design section 7): the section on Guida, the hero while it is active, the locked links. -->
+    <string name="guard_section_title">Guardia</string>
+    <string name="guard_intro">La guardia blocca la tua bici e attiva la sua sorveglianza del movimento. YABA resta connessa e ti avvisa su questo telefono non appena rileva un movimento.</string>
+    <string name="guard_arm">Attiva la guardia</string>
+    <string name="guard_siren_now">Sirena subito</string>
+    <string name="guard_siren_now_caption">Al primo movimento che rileva, YABA accende la sirena della bici. Senza questa impostazione YABA ti avvisa soltanto; la bici accende allora la sirena da sola solo dopo diversi scossoni.</string>
+
+    <!-- Why arming is not offered (GuardRules.armBlocker) -->
+    <string name="guard_blocker_not_connected">Collega prima YABA alla bici.</string>
+    <string name="guard_blocker_not_parked">La guardia si può attivare solo mentre la bici è ferma e nessun pulsante è premuto.</string>
+    <string name="guard_blocker_bike_state">La bici sta aggiornando il firmware o sta entrando in modalità spedizione. Ora la guardia non si può attivare.</string>
+    <string name="guard_blocker_busy">La bici sta trasferendo dati. La guardia si può attivare appena il trasferimento è finito.</string>
+
+    <!-- Phases -->
+    <string name="guard_arming">Attivazione …</string>
+    <string name="guard_arming_text">YABA blocca la bici e aspetta che confermi la sua sorveglianza del movimento. Ci vogliono fino a %1$d secondi.</string>
+    <string name="guard_active_since">Guardia attiva dalle %1$s</string>
+    <string name="guard_watch_bike">La bici sorveglia da sola il movimento, e YABA resta connessa.</string>
+    <string name="guard_watch_unconfirmed">La bici non ha confermato la sua sorveglianza del movimento (stato d’allarme %1$d). Per questo YABA rileva solo una ruota che gira, pulsanti premuti, il blocco e la batteria.</string>
+    <string name="guard_watch_unconfirmed_unknown">La bici non ha confermato la sua sorveglianza del movimento. Per questo YABA rileva solo una ruota che gira, pulsanti premuti, il blocco e la batteria.</string>
+    <string name="guard_watch_retry">Riprova</string>
+    <string name="guard_end">Termina la guardia</string>
+    <string name="guard_silence">Spegni la sirena</string>
+    <string name="guard_lever_hint">Scorrere termina la guardia e sblocca la bici.</string>
+    <string name="guard_lever_hint_offline">Senza connessione, dopo lo scorrimento YABA aspetta la bici fino a %1$d secondi. Se la connessione torna, la bici viene sbloccata; altrimenti la guardia termina solo in YABA.</string>
+    <string name="guard_alarm_at">Allarme alle %1$s</string>
+    <string name="guard_rearming">Ripristina la guardia …</string>
+    <string name="guard_disarming">Termina la guardia …</string>
+    <string name="guard_disarming_wait">YABA aspetta la connessione alla bici fino a %1$d secondi.</string>
+    <string name="guard_lost_watch">Connessione alla bici interrotta. La sorveglianza del movimento della bici continua, e YABA si ricollega.</string>
+    <string name="guard_lost">Connessione alla bici interrotta. YABA si ricollega.</string>
+
+    <!-- Latest lines -->
+    <string name="guard_events_title">Recenti</string>
+    <string name="guard_events_all">Tutti gli eventi in Diagnostica</string>
+    <string name="guard_share_journal">Condividi il registro della guardia</string>
+
+    <!-- Hints -->
+    <string name="guard_notifications_off">Le notifiche di YABA sono disattivate. La sirena funziona, ma il telefono non ti segnala alcun movimento.</string>
+    <string name="guard_notifications_allow">Consenti le notifiche</string>
+    <string name="guard_battery_hint">Escludi YABA dall’ottimizzazione della batteria, così Android non chiude di notte la connessione alla bici.</string>
+    <string name="guard_battery_open">Apri le impostazioni della batteria</string>
+    <string name="guard_alarm_choice_locked">Finché la guardia è attiva, l’allarme resta acceso.</string>
+    <string name="guard_link_locked">Finché la guardia è attiva, YABA resta connessa alla bici. Termina prima la guardia.</string>
+
+    <!-- Issues (GuardState.issue) -->
+    <string name="guard_issue_dismiss">Nascondi</string>
+    <string name="guard_issue_service">Android non ha avviato il servizio della guardia. La guardia resta spenta.</string>
+    <string name="guard_issue_arm_failed">Non è stato possibile attivare la guardia. Motivo: %1$s</string>
+    <string name="guard_issue_arm_failed_unknown">Non è stato possibile attivare la guardia.</string>
+    <string name="guard_issue_alarm_during">Durante l’attivazione la bici ha fatto scattare da sola l’allarme. YABA ha fermato l’allarme, e la bici resta bloccata. Tienila ferma e riprova.</string>
+    <string name="guard_issue_alarm_mode">La bici non ha acceso l’allarme (modalità allarme %1$s). La guardia resta spenta.</string>
+    <string name="guard_issue_lock">La bici non si è bloccata (il blocco segnala %1$s). La guardia resta spenta.</string>
+    <string name="guard_issue_disarm_unconfirmed">La guardia è terminata, ma la bici segnala ancora lo stato d’allarme %1$s. In “Allarme” puoi fermare l’allarme.</string>
+    <string name="guard_issue_ended_offline">La guardia è terminata. YABA non ha raggiunto la bici, quindi sulla bici non è cambiato nulla.</string>
+    <string name="guard_issue_bike_gone">La guardia è terminata perché la bici non è più salvata in YABA.</string>
+
+    <!-- Top tube and header. Matrix words: ASCII, no diacritics (BRAND "Languages"). -->
+    <string name="guard_matrix_armed">GUARD</string>
+    <string name="guard_matrix_alarm">ALARM</string>
+    <string name="guard_tube_armed_cd">Guardia attiva, batteria al %1$d percento</string>
+    <string name="guard_tube_armed_nobattery_cd">Guardia attiva</string>
+    <string name="guard_tube_arming_cd">Attivazione della guardia</string>
+    <string name="guard_tube_alarm_cd">Allarme sulla bici</string>
+    <string name="guard_tube_lost_cd">Guardia attiva, connessione interrotta</string>
+    <string name="guard_header_armed">Guardia</string>
+    <string name="guard_header_alarm">Allarme</string>
+    <string name="guard_issue_arm_failed_partly">Non è stato possibile attivare la guardia. Motivo: %1$s. La bici potrebbe comunque essere già bloccata o avere l’allarme acceso. Controlla il cursore e «Allarme».</string>
+    <string name="guard_issue_disarm_locked">La guardia è terminata e l’allarme è spento, ma la bici risulta ancora bloccata (blocco %1$s). Puoi sbloccarla con il cursore.</string>
+    <string name="guard_issue_ended_partly">La guardia è terminata. YABA ha inviato comandi alla bici, ma non ha ricevuto risposta. «In sella» mostra lo stato della bici dopo la prossima connessione.</string>
+    <string name="guard_issue_not_locked">La bici non è bloccata (il blocco segnala %1$s). «Riprova» la blocca e ripristina la guardia.</string>
+    <string name="guard_issue_not_locked_unknown">YABA non ha la conferma che la bici sia bloccata. «Riprova» la blocca e ripristina la guardia.</string>
+</resources>

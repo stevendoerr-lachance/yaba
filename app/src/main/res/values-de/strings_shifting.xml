@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Schalten auf dem Fahren-Screen: Schaltmodus (5538) und Schaltpunkte (5537). -->
+<resources>
+    <string name="shift_section">Schalten</string>
+    <string name="shift_mode_auto">Automatisch</string>
+    <string name="shift_mode_manual">Manuell</string>
+    <string name="shift_gear">Gang</string>
+    <string name="shift_gear_cd">Gang\u00A0%1$d</string>
+    <string name="shift_gear_unknown_cd">Gang unbekannt</string>
+
+    <!-- Profile -->
+    <string name="shift_profile_standard">Standard</string>
+    <string name="shift_profile_flat">Flach</string>
+    <string name="shift_profile_hilly">Hügelig</string>
+    <string name="shift_profile_custom">Eigene</string>
+    <string name="shift_reason_standard">Werkseinstellung von VanMoof.</string>
+    <string name="shift_reason_flat">Gang\u00A03 hält von 14 bis 27\u00A0km/h. Bei Stadttempo wird kaum geschaltet.</string>
+    <string name="shift_reason_hilly">Gang\u00A02 hält von 9 bis 21\u00A0km/h. Am Berg wird seltener unter Last geschaltet.</string>
+    <string name="shift_reason_custom">Deine eigenen Schaltpunkte.</string>
+    <string name="shift_custom_empty">Noch keine eigenen Schaltpunkte.</string>
+    <string name="shift_row_cd">%1$s. Hochschalten bei %2$d, %3$d und %4$d\u00A0km/h, runterschalten bei %5$d, %6$d und %7$d\u00A0km/h.</string>
+    <string name="shift_points_short">hoch %1$d, %2$d, %3$d, runter %4$d, %5$d, %6$d\u00A0km/h</string>
+    <string name="shift_limit_cd">Unterstützung endet bei %1$d\u00A0km/h.</string>
+    <string name="shift_axis_kmh">%1$d\u00A0km/h</string>
+    <string name="shift_units_note">Schaltpunkte stellst du immer in km/h ein.</string>
+    <string name="shift_reading">Schaltpunkte werden gelesen …</string>
+    <string name="shift_invalid_on_bike">Die Schaltpunkte am Bike können ständiges Hin- und Herschalten auslösen. Wähle ein Profil oder passe sie an.</string>
+    <string name="shift_fault">Shifter meldet Fehler\u00A0%1$d: %2$s</string>
+    <string name="shift_ease_off">Nimm beim Schalten kurz den Druck von den Pedalen. Das schont den Shifter.</string>
+
+    <!-- Eigene: Editor -->
+    <string name="shift_handle_up">Hochschalten von %1$d auf %2$d</string>
+    <string name="shift_handle_down">Runterschalten von %1$d auf %2$d</string>
+    <string name="shift_lane_up">hoch</string>
+    <string name="shift_lane_down">runter</string>
+    <string name="shift_allowed">Möglich: %1$d bis %2$d\u00A0km/h</string>
+    <string name="shift_step_higher">1\u00A0km/h höher</string>
+    <string name="shift_step_lower">1\u00A0km/h niedriger</string>
+    <string name="shift_blocked_by">Begrenzt durch: %1$s</string>
+    <string name="shift_rules">Runterschalten liegt mindestens 2\u00A0km/h unter Hochschalten. Punkte in derselben Richtung liegen mindestens 3\u00A0km/h auseinander. In Gang\u00A01 schaltet das Bike spätestens bei 5\u00A0km/h.</string>
+    <string name="shift_apply">Übernehmen</string>
+    <string name="shift_discard">Verwerfen</string>
+    <string name="shift_draft_matches">Entspricht %1$s.</string>
+    <string name="shift_draft_from_standard">Die Werte am Bike waren nicht verwendbar. Du startest mit Standard.</string>
+
+    <!-- Manuell -->
+    <string name="shift_manual_up">Hochschalten: Während der Fahrt zweimal kurz Boost drücken.</string>
+    <string name="shift_manual_down">Runterschalten: Klingeltaste halten und zweimal kurz Boost drücken.</string>
+    <string name="shift_manual_stop">Im Stand schaltet das Bike selbst in Gang\u00A01.</string>
+    <string name="shift_manual_boost">Boost gedrückt halten gibt weiter Schub.</string>
+    <string name="shift_manual_points_kept">Deine Schaltpunkte bleiben für Automatisch gespeichert.</string>
+    <string name="shift_key_bell">Klingel</string>
+    <string name="shift_key_boost">Boost</string>
+    <string name="shift_key_pressed">gedrückt</string>
+
+    <!-- Protokoll und Fehler -->
+    <string name="shift_cmd_mode">Schaltmodus: %1$s</string>
+    <string name="shift_cmd_points">Schaltpunkte: %1$s</string>
+    <string name="shift_log_state">Schalten: %1$s (%2$s)</string>
+    <string name="shift_unknown">unbekannt</string>
+    <string name="shift_error_mode_rejected">Das Bike hat %1$s nicht übernommen. Es meldet: %2$s.</string>
+    <string name="shift_error_points_rejected">Das Bike hat die Schaltpunkte nicht übernommen. Es meldet: %1$s.</string>
+    <string name="shift_error_points_invalid">Diese Schaltpunkte würden ständiges Hin- und Herschalten auslösen. Es wurde nichts gesendet.</string>
+    <string name="shift_error_too_many">Zu viele Schaltänderungen hintereinander. Verbinde dich neu, um weiterzumachen.</string>
+    <string name="shift_error_region_changed">Die Region hat sich beim Speichern geändert. Prüf die Schaltpunkte noch einmal.</string>
+
+    <!-- Notes, conflicts, editor actions, checks (second round) -->
+    <string name="shift_riding_note">Während der Fahrt gilt eine Änderung sofort: Das Bike kann direkt schalten.</string>
+    <string name="shift_region_short">Gilt für Region %1$s (jede Region speichert eigene).</string>
+    <string name="shift_legend">Hell: dieser Gang. Lücke: Das Bike bleibt im Gang, aus dem es kommt. Unterstrichen: dein Gang jetzt.</string>
+    <string name="shift_profiles_show">Alle Profile zeigen</string>
+    <string name="shift_profiles_hide">Profile ausblenden</string>
+    <string name="shift_reason_invalid">Ungültige Werte am Bike.</string>
+    <string name="shift_invalid_zero">Das Bike meldet alle Schaltpunkte als 0\u00A0km/h. Damit schaltet es beim Anrollen bis in Gang\u00A04 hoch und fährt in Gang\u00A04 an. Wähle Standard.</string>
+    <string name="shift_conflict_gap">„%1$s“ (%2$d\u00A0km/h) liegt nicht mindestens 2\u00A0km/h unter „%3$s“ (%4$d\u00A0km/h).</string>
+    <string name="shift_conflict_spacing">„%1$s“ (%2$d\u00A0km/h) liegt nicht mindestens 3\u00A0km/h über „%3$s“ (%4$d\u00A0km/h).</string>
+    <string name="shift_conflict_min">„%1$s“ (%2$d\u00A0km/h) liegt unter %3$d\u00A0km/h.</string>
+    <string name="shift_conflict_range">„%1$s“ (%2$d\u00A0km/h) liegt außerhalb von %3$d bis %4$d\u00A0km/h.</string>
+    <string name="shift_conflict_max">„%1$s“ (%2$d\u00A0km/h) liegt über %3$d\u00A0km/h.</string>
+    <string name="shift_conflict_more">… und %1$d weitere.</string>
+    <string name="shift_edit">Bearbeiten</string>
+    <string name="shift_edit_set">Festlegen</string>
+    <string name="shift_edit_close">Schließen</string>
+    <string name="shift_expanded">ausgeklappt</string>
+    <string name="shift_collapsed">eingeklappt</string>
+    <string name="shift_edit_action">Schaltpunkte bearbeiten</string>
+    <string name="shift_edit_close_action">Editor schließen</string>
+    <string name="shift_editor_hint">Zieh einen Punkt oder tipp ihn an, dann stell ihn mit − und + genau ein.</string>
+    <string name="shift_top_gear_above_limit">Gang\u00A04 kommt erst ab %1$d\u00A0km/h, über der Unterstützungsgrenze von %2$d\u00A0km/h, also nur ohne Unterstützung. Bis dahin hält Gang\u00A03.</string>
+    <string name="shift_keys_live">Lenkertasten (in Echtzeit)</string>
+    <string name="shift_gesture_hold">halten</string>
+    <string name="shift_check_failed">Firmware\u00A0%1$s meldet Schaltwerte, die YABA nicht kennt (%2$s). YABA ändert hier nichts.</string>
+    <string name="shift_persist_ok">Schalteinstellungen nach dem Neuverbinden noch am Bike (Firmware\u00A0%1$s).</string>
+    <string name="shift_persist_mode_lost">YABA hat zuletzt %1$s eingestellt, das Bike meldet jetzt %2$s. Eine andere App hat es geändert, oder das Bike hat es nicht behalten.</string>
+    <string name="shift_persist_points_lost">Am Bike stehen nicht mehr die Schaltpunkte, die YABA zuletzt geschrieben hat (geschrieben %1$s, jetzt %2$s). Eine andere App hat sie geändert, oder das Bike hat sie nicht behalten.</string>
+    <string name="shift_log_fw">%1$s (Firmware\u00A0%2$s)</string>
+    <string name="shift_error_read">Die aktuellen Schalteinstellungen ließen sich nicht lesen. Es wurde nichts gesendet.</string>
+    <string name="shift_error_no_region">Die Region des Bikes ist unbekannt, daher weiß YABA nicht, welcher Schaltpunkt-Speicher gilt. Es wurde nichts gesendet.</string>
+    <string name="shift_error_region_moved">Die Region hat sich geändert, seit du diese Punkte eingestellt hast. Es wurde nichts gesendet. Prüf sie noch einmal.</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intro_skip">Überspringen</string>
+    <string name="intro_description">Intro: Ein Stiefel tritt dreimal auf ein Bike, während sein Display den Fehler 42 blinkt. Das Bike platzt auseinander und steht dann leuchtend wieder auf.</string>
+    <string name="intro_slogan_1">Fährt weiter.</string>
+    <string name="intro_slogan_2">Egal, was kommt.</string>
+    <string name="intro_replay">Intro noch einmal abspielen</string>
+</resources>

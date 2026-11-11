@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mitgelieferte Klingeltöne im Klang-Screen: zehn eigene Töne, die mit der App kommen (tools/bells). -->
+<resources>
+    <string name="bells_hint">Ein Tipp spielt den Ton am Handy.</string>
+    <string name="bells_choose">Wählen</string>
+    <string name="bells_muted">Die Medienlautstärke ist aus. Dreh sie auf, dann hörst du die Vorschau.</string>
+    <string name="bells_preview_failed">Die Vorschau ließ sich nicht abspielen.</string>
+    <string name="bells_seconds">%1$s\u00A0s</string>
+
+    <!-- TalkBack -->
+    <string name="bells_row_cd">%1$s, %2$s</string>
+    <string name="bells_play_action">am Handy abspielen</string>
+    <string name="bells_stop_action">stoppen</string>
+    <string name="bells_state_playing">Läuft am Handy</string>
+
+    <!-- Der Ton im eigenen Platz, an seiner Zeile -->
+    <string name="bells_state_on_bike">Auf dem Bike</string>
+
+    <!-- Namen -->
+    <string name="bells_name_ringring">Fahrradklingel</string>
+    <string name="bells_name_tram">Tram Zagreb</string>
+    <string name="bells_name_honk">Clownshupe</string>
+    <string name="bells_name_stadium">Stadionhorn</string>
+    <string name="bells_name_fanfare">Fanfare</string>
+    <string name="bells_name_cucaracha">La Cucaracha</string>
+    <string name="bells_name_trombone">Trauerposaune</string>
+    <string name="bells_name_nightshift">Nachtschicht</string>
+    <string name="bells_name_jingle">YABA-Jingle</string>
+    <string name="bells_name_ufo">Ufo</string>
+    <string name="bells_caption_phone">Am Handy</string>
+</resources>

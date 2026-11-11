@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bike screen, Diagnose screen and the shared bike components (BikeBits): Italian. -->
+<resources>
+    <!-- Shared -->
+    <string name="bike_needs_link">È possibile solo finché la bici è connessa.</string>
+    <string name="bike_add_bike">Aggiungi bici</string>
+    <string name="bike_delete">Elimina</string>
+    <string name="bike_keep">Tieni</string>
+    <string name="bike_cancel">Annulla</string>
+    <string name="bike_share">Condividi</string>
+    <string name="bike_yes">Sì</string>
+    <string name="bike_no">No</string>
+    <string name="bike_value_percent">%1$d%%</string>
+
+    <!-- Live-check verdicts, read by TalkBack -->
+    <string name="bike_health_ok">OK</string>
+    <string name="bike_health_problem">Problema</string>
+    <string name="bike_health_attention">Da controllare</string>
+    <string name="bike_health_unknown">Sconosciuto</string>
+
+    <!-- Link state line -->
+    <string name="bike_link_ready">Connessa</string>
+    <string name="bike_link_searching">Ricerca della bici…</string>
+    <string name="bike_link_connecting">Connessione…</string>
+    <string name="bike_link_authenticating">Autenticazione sulla bici…</string>
+    <string name="bike_link_lost">Connessione interrotta, ricerca in corso</string>
+    <string name="bike_link_offline">Non connessa</string>
+
+    <!-- Connect prompt -->
+    <string name="bike_prompt_no_bike">Su questo telefono non c’è ancora nessuna bici.</string>
+    <string name="bike_prompt_permission_nearby">Senza l’autorizzazione “Dispositivi nelle vicinanze” l’app non trova la bici.</string>
+    <string name="bike_prompt_permission_location">Senza l’autorizzazione alla posizione Android non trova i dispositivi Bluetooth.</string>
+    <string name="bike_prompt_grant_permission">Concedi autorizzazione</string>
+    <string name="bike_prompt_bluetooth_off">Il Bluetooth è disattivato.</string>
+    <string name="bike_prompt_bluetooth_on">Attiva Bluetooth</string>
+    <string name="bike_prompt_connect">Connetti</string>
+    <string name="bike_prompt_close_vanmoof">Chiudi prima l’app VanMoof, per favore, perché la bici accetta una sola connessione alla volta.</string>
+    <string name="bike_prompt_searching">YABA cerca %1$s. La bici si sveglia quando la muovi o premi il pulsante del campanello.</string>
+    <string name="bike_prompt_retry">Cerca di nuovo ora</string>
+    <string name="bike_prompt_stop">Interrompi la ricerca</string>
+
+    <!-- Bike screen: header and facts -->
+    <string name="bike_no_bike_title">Nessuna bici</string>
+    <string name="bike_model_of_owner">%1$s, di proprietà di %2$s</string>
+    <string name="bike_owned_by">Di proprietà di %1$s</string>
+    <string name="bike_manage_bikes">Gestisci bici</string>
+    <string name="bike_no_bike_text">Aggiungi il tuo S3 per vedere qui chilometraggio, batteria e firmware.</string>
+    <string name="bike_fact_distance">Chilometraggio</string>
+    <string name="bike_fact_battery">Batteria</string>
+    <string name="bike_fact_battery_charging">Batteria in carica</string>
+    <string name="bike_fact_firmware">Firmware</string>
+    <string name="bike_fact_frame">Numero di telaio</string>
+    <string name="bike_fact_mac">MAC</string>
+    <string name="bike_fact_model">Modello</string>
+
+    <!-- Bike screen: connection -->
+    <string name="bike_connection_title">Connessione</string>
+    <string name="bike_connection_wake">Risveglia</string>
+    <string name="bike_connection_waking">Risveglio…</string>
+    <string name="bike_connection_refresh">Ricarica valori</string>
+    <string name="bike_connection_refreshing">Caricamento…</string>
+    <string name="bike_connection_disconnect">Disconnetti</string>
+    <string name="bike_connection_wake_done">La bici ha ricevuto il comando di risveglio.</string>
+    <string name="bike_connection_refresh_done">Tutti i valori sono stati letti di nuovo.</string>
+
+    <!-- Bike screen: versions -->
+    <string name="bike_versions_title">Versioni e identificativi</string>
+    <string name="bike_versions_none">La bici non ha comunicato alcuna versione.</string>
+    <string name="bike_versions_offline">L’app legge le versioni quando si connette.</string>
+
+    <!-- Bike screen: settings -->
+    <string name="bike_settings_title">Impostazioni</string>
+    <string name="bike_units">Unità</string>
+    <string name="bike_units_hint">Come la bici mostra velocità e distanza.</string>
+    <string name="bike_unit_metric">km/h</string>
+    <string name="bike_unit_imperial">mph</string>
+    <string name="bike_theme">Colori</string>
+    <string name="bike_theme_system">Sistema</string>
+    <string name="bike_theme_dark">Notte</string>
+    <string name="bike_theme_light">Giorno</string>
+    <string name="bike_auto_connect">Connetti automaticamente</string>
+    <string name="bike_auto_connect_caption">All’apertura dell’app si connette all’ultima bici usata.</string>
+    <string name="bike_touch_unlock">Sblocco con il pulsante</string>
+    <string name="bike_touch_unlock_caption">Premere il pulsante del campanello o del boost sblocca la bici finché il telefono è connesso.</string>
+    <string name="bike_touch_unlock_range">Funziona anche per altre persone, finché sei nel raggio Bluetooth.</string>
+
+    <!-- Bike screen: backup code -->
+    <string name="bike_code_title">Codice di backup</string>
+    <string name="bike_code_intro">Tre cifre che sbloccano la bici senza telefono. Le inserisci sulla bici con il pulsante del campanello.</string>
+    <string name="bike_code_field">Nuovo codice</string>
+    <string name="bike_code_field_hint">Cifre da 1 a 9</string>
+    <string name="bike_code_set">Imposta codice</string>
+    <string name="bike_code_setting">Impostazione…</string>
+    <string name="bike_code_set_done">Il codice di backup è stato impostato. Provalo subito sulla bici, per favore.</string>
+    <string name="bike_code_clear">Elimina codice</string>
+    <string name="bike_code_clearing">Eliminazione…</string>
+    <string name="bike_code_clear_done">Il codice di backup è stato eliminato. L’allarme è ora spento.</string>
+    <string name="bike_code_clear_title">Eliminare il codice di backup?</string>
+    <string name="bike_code_clear_text">Senza codice di backup la bici si può sbloccare solo con il telefono. Eliminando il codice si spegne anche l’allarme della bici.</string>
+
+    <!-- Bike screen: experiments -->
+    <string name="bike_exp_title">Esperimenti</string>
+    <string name="bike_exp_intro">Dal firmware\u00A01.8.2 la bici non accetta più 37\u00A0km/h né il livello\u00A05 via Bluetooth, e nemmeno con la 1.9.3. All’avvio il firmware reimposta entrambi. Solo un firmware modificato potrebbe ripristinarli, e questa app non ne contiene uno.</string>
+    <string name="bike_exp_fw">La tua bici funziona con il firmware\u00A0%1$s.</string>
+    <string name="bike_exp_fw_knows_37">Questa versione supporta ancora 37\u00A0km/h.</string>
+    <string name="bike_exp_fw_knows_level5">Questa versione supporta ancora il livello\u00A05.</string>
+    <string name="bike_exp_fw_knows_both">Questa versione supporta ancora 37\u00A0km/h e il livello\u00A05.</string>
+    <string name="bike_exp_test_37">Prova 37\u00A0km/h</string>
+    <string name="bike_exp_test_level5">Prova il livello\u00A05</string>
+    <string name="bike_exp_sending">Invio…</string>
+    <string name="bike_exp_37">37\u00A0km/h</string>
+    <string name="bike_exp_level5">Livello\u00A05</string>
+    <string name="bike_exp_37_accepted">La bici ha accettato 37\u00A0km/h. Dopo il prossimo riavvio vale di nuovo il valore precedente.</string>
+    <string name="bike_exp_level5_accepted">La bici ha accettato il livello\u00A05. Dopo il prossimo riavvio vale di nuovo il valore precedente.</string>
+    <string name="bike_exp_reports_both">La bici indica attualmente %1$d\u00A0km/h e il livello\u00A0%2$d.</string>
+    <string name="bike_exp_reports_speed">La bici indica attualmente %1$d\u00A0km/h.</string>
+    <string name="bike_exp_reports_level">La bici indica attualmente il livello\u00A0%1$d.</string>
+    <string name="bike_exp_back_25">Torna a 25\u00A0km/h</string>
+    <string name="bike_exp_back_level4">Torna al livello\u00A04</string>
+    <string name="bike_exp_setting">Impostazione…</string>
+
+    <!-- Bike screen: about -->
+    <string name="bike_about_title">Info</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="bike_about_matrix">YABA</string>
+    <string name="bike_about_name">YABA</string>
+    <string name="bike_about_version">Yet Another Bike App, versione\u00A0%1$s</string>
+    <string name="bike_about_slogan">Va avanti. Comunque vada.</string>
+    <string name="bike_about_disclaimer">Per VanMoof S3, X3, S2 e X2. Non affiliata a VanMoof e non è un’app ufficiale VanMoof.</string>
+    <string name="bike_about_credits">YABA si basa sul lavoro aperto di mooovy (mjarkk), VanMoofKit (SvenTiigi) e pymoof (quantsini) e sulla decompilazione del firmware dell’S3 di Knight1. Grazie mille per questo. Grazie anche a tutti coloro che hanno progettato e costruito l’S3.</string>
+
+    <!-- Diagnose screen -->
+    <string name="bike_diag_title">Diagnostica</string>
+    <string name="bike_diag_intro">YABA registra ciò che la bici segnala. Se la bici si spegne durante il percorso, le registrazioni restano qui.</string>
+
+    <!-- Diagnose: live check -->
+    <string name="bike_live_title">Controllo da fermo</string>
+    <string name="bike_live_connect_reason">Questi valori arrivano direttamente dalla bici. Appena ti connetti, l’elenco si riempie.</string>
+    <string name="bike_live_status">Stato di funzionamento della bici</string>
+    <string name="bike_live_status_shipping_hint">La bici sta passando alla modalità spedizione. Per svegliarla collega il caricabatterie o premi brevemente il pulsante sotto il tubo orizzontale.</string>
+    <plurals name="bike_live_shipping_count">
+        <item quantity="one">%1$d× modalità spedizione dall’avvio dell’app</item>
+        <item quantity="many">%1$d× modalità spedizione dall’avvio dell’app</item>
+        <item quantity="other">%1$d× modalità spedizione dall’avvio dell’app</item>
+    </plurals>
+    <string name="bike_live_supply">Alimentazione sopra 20\u00A0V</string>
+    <plurals name="bike_live_supply_drops">
+        <item quantity="one">%1$d× scesa sotto 20\u00A0V</item>
+        <item quantity="many">%1$d× scesa sotto 20\u00A0V</item>
+        <item quantity="other">%1$d× scesa sotto 20\u00A0V</item>
+    </plurals>
+    <string name="bike_live_kicklock_switch">Interruttore del Kick Lock</string>
+    <string name="bike_live_kicklock_reports_locked">Segnala bloccato</string>
+    <string name="bike_live_kicklock_normal">Normale</string>
+    <string name="bike_live_kicklock_switch_hint">Se durante la marcia il blocco segnala “bloccato”, la causa è probabilmente l’interruttore del Kick Lock o il suo cavo.</string>
+    <plurals name="bike_live_kicklock_riding">
+        <item quantity="one">%1$d× in marcia</item>
+        <item quantity="many">%1$d× in marcia</item>
+        <item quantity="other">%1$d× in marcia</item>
+    </plurals>
+    <string name="bike_live_kicklock_coil">Bobina del Kick Lock</string>
+    <string name="bike_live_kicklock_coil_missing">Non rilevata (42)</string>
+    <string name="bike_live_kicklock_coil_ok">Rilevata</string>
+    <string name="bike_live_kicklock_coil_hint">Errore\u00A042: la linea di ritorno della bobina è aperta. Se contemporaneamente salta il rilevamento della batteria, la bici passa probabilmente alla modalità spedizione.</string>
+    <string name="bike_live_wheel">Ruota in movimento</string>
+    <string name="bike_live_lock">Blocco</string>
+    <string name="bike_live_charger">Caricabatterie</string>
+    <string name="bike_live_buttons">Pulsanti premuti</string>
+    <string name="bike_live_button_bell">Campanello</string>
+    <string name="bike_live_button_boost">Boost</string>
+    <string name="bike_live_button_power">Accensione/riavvio</string>
+    <string name="bike_live_buttons_none">Nessuno</string>
+    <string name="bike_live_buttons_hint">Se l’indicazione resta attiva senza alcun dito sul pulsante, il pulsante è bloccato (errore\u00A040 o 41). Premere il pulsante di accensione/riavvio durante la marcia riavvia la bici.</string>
+    <string name="bike_live_connected_for">Connessa da</string>
+    <string name="bike_live_reconnects">Riconnessioni</string>
+    <string name="bike_live_reconnects_hint">Quante volte la connessione è stata interrotta e ripristinata.</string>
+
+    <!-- Diagnose: faults -->
+    <string name="bike_faults_title">Errori</string>
+    <plurals name="bike_faults_active">
+        <item quantity="one">%1$d attivo</item>
+        <item quantity="many">%1$d attivi</item>
+        <item quantity="other">%1$d attivi</item>
+    </plurals>
+    <string name="bike_faults_offline">YABA legge gli errori attivi direttamente dalla bici. Appena la bici è connessa, vengono mostrati qui.</string>
+    <string name="bike_faults_none">Nessun errore attivo.</string>
+    <string name="bike_fault_spoken">Errore\u00A0%1$d: %2$s. %3$s</string>
+    <string name="bike_lookup_title">Cerca un codice</string>
+    <string name="bike_lookup_hint">Inserisci il numero che la bici mostra sul display, per esempio 42.</string>
+    <string name="bike_lookup_field">Codice</string>
+    <string name="bike_lookup_display_empty">Display vuoto</string>
+    <string name="bike_lookup_display_shows">Il display mostra %1$s</string>
+    <string name="bike_lookup_unknown_name">Non esiste</string>
+    <string name="bike_lookup_unknown_hint">La bici usa solo i codici da 0 a 63.</string>
+    <string name="bike_lookup_active">Attualmente attivo sulla tua bici.</string>
+
+    <!-- Diagnose: ride logger -->
+    <string name="bike_logger_title">Registrazione dei tragitti</string>
+    <string name="bike_logger_intro">La registrazione dei tragitti scrive un valore misurato ogni 2\u00A0secondi e ogni evento in un file CSV. Una notifica la mantiene attiva anche a schermo spento.</string>
+    <string name="bike_logger_coloros">ColorOS interrompe comunque la registrazione dei tragitti finché YABA non può funzionare in background.</string>
+    <string name="bike_logger_stop">Ferma la registrazione</string>
+    <string name="bike_logger_start">Avvia la registrazione</string>
+    <string name="bike_logger_offline">In questo momento la bici non è connessa. La registrazione dei tragitti prosegue comunque e annota anche ogni tentativo di connessione.</string>
+    <string name="bike_logger_start_failed">Non è stato possibile avviare la registrazione dei tragitti: %1$s</string>
+    <string name="bike_logger_battery_settings">Apri ottimizzazione batteria</string>
+    <string name="bike_logger_coloros_path">Su ColorOS apri “Impostazioni”, “Batteria”, “Consumo batteria delle app” e “YABA”, poi consenti l’attività in background.</string>
+    <string name="bike_logger_unrestricted">L’ottimizzazione della batteria è disattivata per YABA, perciò la registrazione dei tragitti prosegue in background.</string>
+    <string name="bike_logger_recordings">Registrazioni</string>
+    <string name="bike_logger_empty">Nessun tragitto registrato finora. Avvia la registrazione dei tragitti prima del prossimo tragitto, per favore.</string>
+    <string name="bike_logger_share_title">Condividi la registrazione del tragitto</string>
+    <string name="bike_logger_delete_title">Eliminare la registrazione?</string>
+    <string name="bike_logger_delete_text">Il tragitto del %1$s verrà eliminato.</string>
+    <string name="bike_logger_running_since">Attivo da %1$s</string>
+    <string name="bike_logger_samples">Misure</string>
+    <string name="bike_logger_incidents">Anomalie</string>
+    <string name="bike_logger_duration">Durata</string>
+    <string name="bike_logger_live_file">In registrazione</string>
+    <!-- java.time DateTimeFormatter pattern for the start of a recording -->
+    <string name="bike_logger_entry_date">d MMM yyyy, HH:mm</string>
+
+    <!-- Diagnose: events -->
+    <string name="bike_events_title">Eventi</string>
+    <string name="bike_events_all">Tutti</string>
+    <string name="bike_events_incidents">Anomalie</string>
+    <plurals name="bike_events_incidents_count">
+        <item quantity="one">%1$d anomalia</item>
+        <item quantity="many">%1$d anomalie</item>
+        <item quantity="other">%1$d anomalie</item>
+    </plurals>
+    <string name="bike_events_no_incidents">Nessuna anomalia. Interruzioni, modalità spedizione ed errori vengono elencati qui.</string>
+    <string name="bike_events_empty">Ancora nulla di registrato. Appena la bici è connessa, qui viene elencata ogni modifica.</string>
+    <string name="bike_events_showing">Mostrati %1$d di %2$d.</string>
+    <string name="bike_events_more">Mostra altri</string>
+    <string name="bike_events_clear">Svuota</string>
+
+    <!-- Diagnose: bike log -->
+    <string name="bike_log_title">Registro della bici</string>
+    <string name="bike_log_intro">La bici tiene un proprio registro. La lettura può richiedere alcuni minuti e la lettura continua dei valori resta in pausa nel frattempo.</string>
+    <string name="bike_log_reading">Lettura…</string>
+    <string name="bike_log_reading_percent">Lettura… %1$d%%</string>
+    <string name="bike_log_read">Leggi il registro interno</string>
+    <string name="bike_log_read_again">Leggi di nuovo</string>
+    <string name="bike_log_failed">Non è stato possibile leggere il registro.</string>
+    <string name="bike_log_empty">La bici ha restituito un registro vuoto.</string>
+    <plurals name="bike_log_lines_unit">
+        <item quantity="one">riga</item>
+        <item quantity="many">righe</item>
+        <item quantity="other">righe</item>
+    </plurals>
+    <string name="bike_log_read_at">Letto alle %1$s.</string>
+    <plurals name="bike_log_tail">
+        <item quantity="one">L’ultima riga:</item>
+        <item quantity="many">Le ultime %1$d righe:</item>
+        <item quantity="other">Le ultime %1$d righe:</item>
+    </plurals>
+    <string name="bike_log_all">Il registro completo:</string>
+    <string name="bike_log_share">Condividi il registro</string>
+    <string name="bike_log_share_failed">Non è stato possibile scrivere il file. Forse la memoria è piena.</string>
+    <string name="bike_log_share_subject">Registro della bici S3 %1$s</string>
+    <string name="bike_log_share_title">Condividi il registro della bici</string>
+
+    <!-- Diagnose: raw data -->
+    <string name="bike_raw_title">Dati grezzi</string>
+    <string name="bike_raw_hint">Byte decifrati per caratteristica, così come la bici li ha inviati per ultimi.</string>
+    <string name="bike_raw_read">Leggi tutti i valori</string>
+    <string name="bike_raw_reading">Lettura…</string>
+    <string name="bike_raw_done">Tutti i valori letti.</string>
+    <string name="bike_raw_empty">vuoto</string>
+    <string name="bike_about_origin">YABA è nata a Francoforte sul Meno per un S3 di seconda mano e per ogni bici che deve continuare a viaggiare. È stata provata con il firmware\u00A01.9.3 dell’S3.</string>
+    <string name="bike_outbursts_title">Imprecazioni olandesi</string>
+    <string name="bike_outbursts_caption">Ogni tanto YABA impreca in olandese, sulla matrice a punti qui nell’app, mai mentre pedali. YABA non può scrivere sul display della bici.</string>
+    <string name="bike_outbursts_list_title">Le parole</string>
+    <string name="bike_outbursts_list_hint">Tieni premuta una parola per vederla sulla matrice.</string>
+    <string name="bike_outburst_meaning_balen">Letteralmente: arrabbiarsi. Significato: peccato.</string>
+    <string name="bike_outburst_meaning_gedoe">Letteralmente: fastidio. Significato: complicazione, noia.</string>
+    <string name="bike_outburst_meaning_nou_ja">Letteralmente: beh, sì. Significato: pazienza.</string>
+    <string name="bike_outburst_meaning_he_he">Letteralmente: finalmente. Significato: meno male.</string>
+    <string name="bike_outburst_meaning_auw">Letteralmente: ahi. Significato: ha fatto male.</string>
+    <string name="bike_outburst_meaning_verdorie">Letteralmente: forma attenuata di “verdomme”. Significato: accidenti.</string>
+    <string name="bike_outburst_meaning_de_pijp_uit">Letteralmente: fuori dalla pipa. Significato: finito, concluso.</string>
+    <string name="bike_outburst_meaning_bek_dicht">Letteralmente: becco chiuso. Significato: silenzio.</string>
+    <string name="bike_outburst_meaning_verdomme">Letteralmente: dannami. Significato: maledizione. La bici non lo dice mai da sola.</string>
+    <string name="bike_live_coil_see_fault">Vedi l’errore\u00A042 in “Errori”.</string>
+    <string name="bike_events_since">Dall’avvio di YABA alle %1$s</string>
+    <string name="bike_events_since_day">Dall’avvio di YABA, %1$s alle %2$s</string>
+    <string name="bike_events_since_clear">Dallo svuotamento alle %1$s</string>
+    <string name="bike_events_no_marks">Nessun marcatore. Nel cockpit lo imposti con “Segna” o con un tasto del volume.</string>
+    <string name="bike_events_expand">Mostra tutto</string>
+    <string name="bike_events_collapse">Mostra meno</string>
+    <string name="bike_events_clear_title">Svuotare gli eventi?</string>
+    <string name="bike_events_clear_text">I contatori del controllo da fermo ripartono poi da zero.</string>
+    <string name="bike_logger_intro_short">La registrazione dei tragitti scrive un valore misurato ogni 2\u00A0secondi e ogni evento in un file CSV.</string>
+    <string name="bike_logger_show_all">Mostra tutte (%1$d)</string>
+    <string name="bike_logger_no_ride">senza tragitto</string>
+    <string name="bike_log_view_text">Vedi come testo</string>
+    <string name="bike_theme_hint">Giorno è il tema chiaro, il più leggibile al sole.</string>
+    <string name="bike_code_set_at">Codice di backup impostato alle %1$s. Provalo ora sulla bici, per favore.</string>
+    <string name="bike_code_clear_link">Elimina il codice di backup</string>
+    <string name="bike_exp_fold">Prove di 37\u00A0km/h e del livello\u00A05</string>
+    <string name="bike_fact_wheel">Ruota</string>
+    <string name="bike_fact_distance_speedplus" formatted="false">Chilometraggio, con Speed++ conta circa il 16\u00A0% in meno</string>
+    <plurals name="bike_events_marks_count">
+        <item quantity="one">%1$d marcatore</item>
+        <item quantity="many">%1$d marcatori</item>
+        <item quantity="other">%1$d marcatori</item>
+    </plurals>
+    <plurals name="bike_logger_entry_incidents">
+        <item quantity="one">%1$d anomalia</item>
+        <item quantity="many">%1$d anomalie</item>
+        <item quantity="other">%1$d anomalie</item>
+    </plurals>
+    <plurals name="bike_raw_without_value">
+        <item quantity="one">%1$d caratteristica senza valore</item>
+        <item quantity="many">%1$d caratteristiche senza valore</item>
+        <item quantity="other">%1$d caratteristiche senza valore</item>
+    </plurals>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars. Days without an answer from VanMoof's server, shown on the top tube. -->
+    <string name="curse_matrix_days">%1$d DANA</string>
+    <string name="curse_probe_show">Prikaži na zaslonu</string>
+</resources>

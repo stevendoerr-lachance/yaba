@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Log viewer: one ride log (CSV) and the bike's own log (text), ui/screens/RideLogViewer.kt. English is the default. -->
+<resources>
+    <string name="logview_open">View</string>
+    <string name="logview_close">Close</string>
+    <string name="logview_share">Share</string>
+    <string name="logview_loading">Reading the file …</string>
+    <string name="logview_read_failed">The file could not be read. It may have been deleted.</string>
+    <string name="logview_share_failed">The file could not be written. The storage may be full.</string>
+
+    <!-- Formats (java.time patterns) and units. U+00A0 between number and unit, none before %. -->
+    <string name="logview_fmt_time">h:mm:ss a</string>
+    <string name="logview_fmt_time_short">h:mm a</string>
+    <string name="logview_fmt_date_time">EEEE, MMM d, yyyy, h:mm a</string>
+    <string name="logview_fmt_date">MMM d, yyyy, h:mm a</string>
+    <string name="logview_at_time">%s</string>
+    <string name="logview_unit_kmh">%s km/h</string>
+    <string name="logview_unit_km">%s km</string>
+    <string name="logview_unit_min_sec">%1$d\u00A0min %2$d\u00A0s</string>
+    <string name="logview_unit_h_min">%1$d\u00A0h %2$d\u00A0min</string>
+    <string name="logview_unit_pct">%s%%</string>
+
+    <!-- Ride log -->
+    <string name="logview_ride_share_title">Share ride log</string>
+    <string name="logview_ride_live">This file is being written right now. YABA reads it again every %1$d seconds.</string>
+    <string name="logview_ride_partial">The last line was cut off while being written and is left out.</string>
+    <plurals name="logview_ride_skipped">
+        <item quantity="one">%d line is not part of a ride log and is left out.</item>
+        <item quantity="other">%d lines are not part of a ride log and are left out.</item>
+    </plurals>
+    <string name="logview_ride_folded">This log is very long. Each point of the curves combines %1$d readings; top speed, distance and signals still count every reading.</string>
+    <string name="logview_ride_empty">This recording has no readings yet.</string>
+
+    <!-- Top tube and summary -->
+    <string name="logview_tube_fault">Fault %1$d</string>
+    <string name="logview_tube_fault_note">Last on the top tube %1$s.</string>
+    <string name="logview_tube_top_note">The top speed of this ride.</string>
+    <string name="logview_tube_none_note">The bike reported no speed in this recording.</string>
+    <string name="logview_fact_start">Start</string>
+    <string name="logview_fact_duration">Duration</string>
+    <string name="logview_fact_distance">Distance</string>
+    <string name="logview_fact_top">Top speed</string>
+    <string name="logview_fact_avg">Average rolling</string>
+    <string name="logview_fact_battery_start">Battery at start</string>
+    <string name="logview_fact_battery_end">Battery at end</string>
+    <string name="logview_fact_events">Events</string>
+    <string name="logview_fact_marks">Marks</string>
+    <string name="logview_distance_note">YABA works out distance and average from the speed it read every 2 seconds; the average counts only the time the bike was rolling.</string>
+
+    <!-- Timeline -->
+    <string name="logview_chart_title">Timeline</string>
+    <string name="logview_chart_hint">Tap the timeline or an event.</string>
+    <string name="logview_lane_battery">Battery</string>
+    <string name="logview_lane_supply">20 V</string>
+    <string name="logview_lane_shipping">Shipping</string>
+    <string name="logview_legend_speed">Speed in km/h</string>
+    <string name="logview_legend_battery">Battery in %</string>
+    <string name="logview_legend_supply">Supply 20 V or more</string>
+    <string name="logview_legend_mark">Mark</string>
+    <string name="logview_chart_cd">Timeline from %1$s to %2$s. Top speed %3$s, battery from %4$s to %5$s. %6$s</string>
+    <string name="logview_readout_at">%1$s: %2$s</string>
+    <string name="logview_readout_lock">Kick Lock %1$s</string>
+    <string name="logview_readout_supply">supply %1$s</string>
+    <string name="logview_readout_battery">battery %1$s</string>
+    <string name="logview_readout_offline">%1$s: bike not connected</string>
+    <string name="logview_supply_ok">20 V or more</string>
+    <string name="logview_supply_low">below 20 V</string>
+    <string name="logview_lock_locked">locked</string>
+    <string name="logview_lock_unlocked">unlocked</string>
+    <string name="logview_lock_pin">PIN entry</string>
+    <string name="logview_action_next_event">Next event</string>
+    <string name="logview_action_prev_event">Previous event</string>
+
+    <!-- Shipping rule signals -->
+    <string name="logview_signals_title">Shipping rule signals</string>
+    <string name="logview_signals_intro">According to the firmware analysis, the bike switches to shipping mode when the Kick Lock coil, the Kick Lock switch and battery detection drop out at the same moment. Tap a row to see its first moment on the timeline.</string>
+    <string name="logview_signal_locked">Kick Lock reports locked</string>
+    <string name="logview_signal_fault">Fault %1$d: %2$s</string>
+    <string name="logview_signal_shipping">Shipping mode reported</string>
+    <string name="logview_signal_supply">Supply below 20 V</string>
+    <string name="logview_short_locked">Kick Lock locked</string>
+    <string name="logview_short_shipping">Shipping mode</string>
+    <string name="logview_signal_not_seen">not seen</string>
+    <plurals name="logview_signal_seen">
+        <item quantity="one">once, %2$s</item>
+        <item quantity="other">%1$s times, first %2$s</item>
+    </plurals>
+    <plurals name="logview_signal_riding">
+        <item quantity="one">once while riding, %2$s</item>
+        <item quantity="other">%1$s times while riding, first %2$s</item>
+    </plurals>
+    <string name="logview_signals_none">YABA saw none of these signals in this recording.</string>
+    <string name="logview_signals_seen_cd">Shipping rule signals: %1$s.</string>
+
+    <!-- Events -->
+    <string name="logview_events_title">Events</string>
+    <string name="logview_events_all">All</string>
+    <string name="logview_events_incidents">Incidents</string>
+    <plurals name="logview_events_incidents_count">
+        <item quantity="one">%1$s incident</item>
+        <item quantity="other">%1$s incidents</item>
+    </plurals>
+    <string name="logview_events_empty">This recording has no events.</string>
+    <string name="logview_events_no_incidents">No incidents in this recording.</string>
+    <string name="logview_event_show">Show on the timeline</string>
+    <string name="logview_event_chosen">Chosen on the timeline</string>
+
+    <!-- The bike's own log as text -->
+    <string name="logview_bike_title">Bike log</string>
+    <string name="logview_bike_read_at">Read on %1$s</string>
+    <plurals name="logview_bike_lines">
+        <item quantity="one">%1$s line</item>
+        <item quantity="other">%1$s lines</item>
+    </plurals>
+    <string name="logview_bike_tail">The file is very large. The view shows its newest %1$s lines.</string>
+    <string name="logview_bike_empty">The log is empty.</string>
+    <string name="logview_search">Search</string>
+    <string name="logview_search_count">%1$d of %2$d</string>
+    <string name="logview_search_none">No match</string>
+    <string name="logview_search_prev">Previous match</string>
+    <string name="logview_search_next">Next match</string>
+    <string name="logview_jump_newest">Jump to newest</string>
+    <string name="logview_bike_share_title">Share bike log</string>
+    <string name="logview_bike_share_subject">S3 bike log %1$s</string>
+    <string name="logview_bike_saved">The last readout from %1$s is saved on this phone.</string>
+
+    <!-- Days, zoom, link, accessibility -->
+    <string name="logview_fmt_day_time">EEE, MMM d, h:mm a</string>
+    <string name="logview_fmt_day_time_sec">EEE, MMM d, h:mm:ss a</string>
+    <string name="logview_fmt_day">EEE, MMM d</string>
+    <string name="logview_fmt_day_header">EEEE, MMMM d, yyyy</string>
+    <string name="logview_at_moment">at %1$s</string>
+    <string name="logview_at_day_moment">on %1$s at %2$s</string>
+    <string name="logview_unit_sec">%1$d\u00A0s</string>
+    <string name="logview_ride_incidents_kept">Every incident and mark is included.</string>
+    <string name="logview_tube_fault_note_shipping">On the top tube when the bike reported shipping mode %1$s.</string>
+    <string name="logview_never_connected">The bike was not connected during this recording.</string>
+    <string name="logview_never_connected_note">Speed, battery and signals are therefore unknown.</string>
+    <string name="logview_legend_link_down">No connection</string>
+    <string name="logview_zoom_in">Zoom in</string>
+    <string name="logview_zoom_out">Zoom out</string>
+    <string name="logview_zoom_all">Whole recording</string>
+    <string name="logview_zoom_window">Section: %1$s</string>
+    <string name="logview_signal_fault_8">Fault 8: battery switches its output off</string>
+    <string name="logview_signal_unknown">unknown</string>
+    <string name="logview_signal_parked_only">locked only while standing</string>
+    <string name="logview_signals_none_riding">Apart from the Kick Lock while standing, YABA saw none of these signals.</string>
+    <string name="logview_event_incident">Incident</string>
+    <string name="logview_open_ride_cd">View ride log from %1$s</string>
+    <string name="logview_open_bike_cd">View bike log</string>
+    <string name="logview_search_count_cd">Match %1$d of %2$d, line %3$d: %4$s</string>
+    <string name="logview_line_cd">Line %1$d: %2$s</string>
+    <string name="logview_wrap_title">Long lines</string>
+    <string name="logview_wrap_on">Wrap</string>
+    <string name="logview_wrap_off">Single line</string>
+    <plurals name="logview_ride_events_cut">
+        <item quantity="one">The list shows %1$s of %2$s events; %3$s older one is left out.</item>
+        <item quantity="other">The list shows %1$s of %2$s events; %3$s older ones are left out.</item>
+    </plurals>
+    <plurals name="logview_ride_marks_cut">
+        <item quantity="one">%1$s older mark is left out as well.</item>
+        <item quantity="other">%1$s older marks are left out as well.</item>
+    </plurals>
+    <string name="logview_fmt_heading">EEE, MMM d, h:mm a</string>
+    <string name="logview_delete">Delete</string>
+    <string name="logview_verdict_lock">Kick Lock locked %1$d× while riding</string>
+    <string name="logview_verdict_lock_none">Kick Lock never locked while riding</string>
+    <string name="logview_verdict_coil">coil not detected %1$d×</string>
+    <string name="logview_verdict_coil_none">coil always detected</string>
+    <string name="logview_verdict_battery">battery detection failed %1$d×</string>
+    <string name="logview_verdict_battery_none">battery detection never failed</string>
+    <!-- The verdict as counts in one line, joined by " · "; the sentences above are what TalkBack reads. The lock is named as
+         its lane in the timeline (logview_lane_lock), so the line fits the cover screen at a large font. -->
+    <string name="logview_verdict_short_lock">Lock %1$d× while riding</string>
+    <string name="logview_verdict_short_coil">Coil %1$d×</string>
+    <string name="logview_verdict_short_battery">Battery %1$d×</string>
+    <string name="logview_fact_battery">Battery</string>
+    <string name="logview_fact_battery_value">%1$d to %2$d%%</string>
+    <string name="logview_lane_lock">Lock</string>
+    <string name="logview_lane_f42">F42</string>
+    <string name="logview_lane_f18">F18</string>
+    <string name="logview_lane_f8">F8</string>
+    <string name="logview_lane_link">Radio</string>
+    <string name="logview_lane_signals">Signals</string>
+    <string name="logview_legend_rule">Shipping rule signal</string>
+    <string name="logview_zoom_whole">Whole ride</string>
+    <string name="logview_action_expand">Show all lanes</string>
+    <string name="logview_signals_unseen">Not seen: %1$s</string>
+    <string name="logview_events_no_marks">No marks in this recording.</string>
+    <plurals name="logview_events_marks_count">
+        <item quantity="one">%1$s mark</item>
+        <item quantity="other">%1$s marks</item>
+    </plurals>
+</resources>

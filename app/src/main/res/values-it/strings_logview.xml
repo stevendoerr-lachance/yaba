@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Visualizzatore dei registri: una registrazione del tragitto (CSV) e il registro della bici (testo), ui/screens/RideLogViewer.kt. -->
+<resources>
+    <string name="logview_open">Visualizza</string>
+    <string name="logview_close">Chiudi</string>
+    <string name="logview_share">Condividi</string>
+    <string name="logview_loading">Lettura del file…</string>
+    <string name="logview_read_failed">Non è stato possibile leggere il file. Forse è stato eliminato.</string>
+    <string name="logview_share_failed">Non è stato possibile scrivere il file. Forse la memoria è piena.</string>
+
+    <string name="logview_fmt_time">HH:mm:ss</string>
+    <string name="logview_fmt_time_short">HH:mm</string>
+    <string name="logview_fmt_date_time">EEEE d MMMM yyyy, HH:mm</string>
+    <string name="logview_fmt_date">d MMM yyyy, HH:mm</string>
+    <string name="logview_at_time">%s</string>
+    <string name="logview_unit_kmh">%s km/h</string>
+    <string name="logview_unit_km">%s km</string>
+    <string name="logview_unit_min_sec">%1$d\u00A0min %2$d\u00A0s</string>
+    <string name="logview_unit_h_min">%1$d\u00A0h %2$d\u00A0min</string>
+    <string name="logview_unit_pct">%s%%</string>
+
+    <string name="logview_ride_share_title">Condividi la registrazione del tragitto</string>
+    <string name="logview_ride_live">Questo file è in fase di scrittura. YABA lo rilegge ogni %1$d secondi.</string>
+    <string name="logview_ride_partial">L’ultima riga è stata interrotta durante la scrittura e non viene mostrata.</string>
+    <plurals name="logview_ride_skipped">
+        <item quantity="one">%d riga non fa parte di una registrazione del tragitto e non viene mostrata.</item>
+        <item quantity="other">%d righe non fanno parte di una registrazione del tragitto e non vengono mostrate.</item>
+    </plurals>
+    <string name="logview_ride_folded">Questa registrazione è molto lunga. Ogni punto delle curve riunisce %1$d misure; velocità massima, distanza e segnali contano comunque ogni misura.</string>
+    <string name="logview_ride_empty">Questa registrazione non contiene ancora misure.</string>
+
+    <string name="logview_tube_fault">Errore %1$d</string>
+    <string name="logview_tube_fault_note">Ultimo codice sul tubo orizzontale, %1$s.</string>
+    <string name="logview_tube_top_note">La velocità massima di questo tragitto.</string>
+    <string name="logview_tube_none_note">In questa registrazione la bici non ha segnalato alcuna velocità.</string>
+    <string name="logview_fact_start">Inizio</string>
+    <string name="logview_fact_duration">Durata</string>
+    <string name="logview_fact_distance">Distanza</string>
+    <string name="logview_fact_top">Velocità max.</string>
+    <string name="logview_fact_avg">Media in marcia</string>
+    <string name="logview_fact_battery_start">Batteria all’inizio</string>
+    <string name="logview_fact_battery_end">Batteria alla fine</string>
+    <string name="logview_fact_events">Eventi</string>
+    <string name="logview_fact_marks">Marcatori</string>
+    <string name="logview_distance_note">YABA calcola distanza e media dalla velocità letta ogni 2 secondi; la media conta solo il tempo in cui la bici era in movimento.</string>
+
+    <string name="logview_chart_title">Andamento</string>
+    <string name="logview_chart_hint">Tocca l’andamento o un evento.</string>
+    <string name="logview_lane_battery">Batteria</string>
+    <string name="logview_lane_supply">20 V</string>
+    <string name="logview_lane_shipping">Spediz.</string>
+    <string name="logview_legend_speed">Velocità in km/h</string>
+    <string name="logview_legend_battery">Batteria in %</string>
+    <string name="logview_legend_supply">Alimentazione da 20 V in su</string>
+    <string name="logview_legend_mark">Marcatore</string>
+    <string name="logview_chart_cd">Andamento dalle %1$s alle %2$s. Velocità massima %3$s, batteria da %4$s a %5$s. %6$s</string>
+    <string name="logview_readout_at">%1$s: %2$s</string>
+    <string name="logview_readout_lock">Kick Lock %1$s</string>
+    <string name="logview_readout_supply">alimentazione %1$s</string>
+    <string name="logview_readout_battery">batteria %1$s</string>
+    <string name="logview_readout_offline">%1$s: bici non connessa</string>
+    <string name="logview_supply_ok">20 V o più</string>
+    <string name="logview_supply_low">sotto 20 V</string>
+    <string name="logview_lock_locked">bloccato</string>
+    <string name="logview_lock_unlocked">sbloccato</string>
+    <string name="logview_lock_pin">inserimento PIN</string>
+    <string name="logview_action_next_event">Evento successivo</string>
+    <string name="logview_action_prev_event">Evento precedente</string>
+
+    <string name="logview_signals_title">Segnali della regola di spedizione</string>
+    <string name="logview_signals_intro">Secondo l’analisi del firmware, la bici passa alla modalità spedizione quando la bobina del Kick Lock, l’interruttore del Kick Lock e il rilevamento della batteria vengono meno nello stesso momento. Tocca una riga per vederne il primo momento nell’andamento.</string>
+    <string name="logview_signal_locked">Il Kick Lock segnala “bloccato”</string>
+    <string name="logview_signal_fault">Errore %1$d: %2$s</string>
+    <string name="logview_signal_shipping">Modalità spedizione segnalata</string>
+    <string name="logview_signal_supply">Alimentazione sotto 20 V</string>
+    <string name="logview_short_locked">Kick Lock bloccato</string>
+    <string name="logview_short_shipping">Modalità spedizione</string>
+    <string name="logview_signal_not_seen">non rilevato</string>
+    <plurals name="logview_signal_seen">
+        <item quantity="one">una volta, %2$s</item>
+        <item quantity="other">%1$s volte, la prima %2$s</item>
+    </plurals>
+    <plurals name="logview_signal_riding">
+        <item quantity="one">di cui una volta in marcia, %2$s</item>
+        <item quantity="other">di cui %1$s volte in marcia, la prima %2$s</item>
+    </plurals>
+    <string name="logview_signals_none">YABA non ha rilevato nessuno di questi segnali in questa registrazione.</string>
+    <string name="logview_signals_seen_cd">Segnali della regola di spedizione: %1$s.</string>
+
+    <string name="logview_events_title">Eventi</string>
+    <string name="logview_events_all">Tutti</string>
+    <string name="logview_events_incidents">Anomalie</string>
+    <plurals name="logview_events_incidents_count">
+        <item quantity="one">%1$s anomalia</item>
+        <item quantity="other">%1$s anomalie</item>
+    </plurals>
+    <string name="logview_events_empty">Questa registrazione non contiene eventi.</string>
+    <string name="logview_events_no_incidents">Nessuna anomalia in questa registrazione.</string>
+    <string name="logview_event_show">Mostra nell’andamento</string>
+    <string name="logview_event_chosen">Scelto nell’andamento</string>
+
+    <string name="logview_bike_title">Registro della bici</string>
+    <string name="logview_bike_read_at">Letto il %1$s</string>
+    <plurals name="logview_bike_lines">
+        <item quantity="one">%1$s riga</item>
+        <item quantity="other">%1$s righe</item>
+    </plurals>
+    <string name="logview_bike_tail">Il file è molto grande. La vista mostra le sue %1$s righe più recenti.</string>
+    <string name="logview_bike_empty">Il registro è vuoto.</string>
+    <string name="logview_search">Cerca</string>
+    <string name="logview_search_count">%1$d di %2$d</string>
+    <string name="logview_search_none">Nessun risultato</string>
+    <string name="logview_search_prev">Risultato precedente</string>
+    <string name="logview_search_next">Risultato successivo</string>
+    <string name="logview_jump_newest">Vai al più recente</string>
+    <string name="logview_bike_share_title">Condividi il registro della bici</string>
+    <string name="logview_bike_share_subject">Registro della bici S3 %1$s</string>
+    <string name="logview_bike_saved">L’ultima lettura del %1$s è salvata su questo telefono.</string>
+
+    <!-- Days, zoom, link, accessibility -->
+    <string name="logview_fmt_day_time">EEE d MMM, HH:mm</string>
+    <string name="logview_fmt_day_time_sec">EEE d MMM, HH:mm:ss</string>
+    <string name="logview_fmt_day">EEE d MMM</string>
+    <string name="logview_fmt_day_header">EEEE d MMMM yyyy</string>
+    <string name="logview_at_moment">alle %1$s</string>
+    <string name="logview_at_day_moment">%1$s alle %2$s</string>
+    <string name="logview_unit_sec">%1$d\u00A0s</string>
+    <string name="logview_ride_incidents_kept">Tutte le anomalie e tutti i marcatori sono inclusi.</string>
+    <string name="logview_tube_fault_note_shipping">Sul tubo orizzontale quando la bici ha segnalato la modalità spedizione, %1$s.</string>
+    <string name="logview_never_connected">La bici non era connessa durante questa registrazione.</string>
+    <string name="logview_never_connected_note">Velocità, batteria e segnali sono quindi sconosciuti.</string>
+    <string name="logview_legend_link_down">Senza connessione</string>
+    <string name="logview_zoom_in">Ingrandisci</string>
+    <string name="logview_zoom_out">Riduci</string>
+    <string name="logview_zoom_all">Registrazione intera</string>
+    <string name="logview_zoom_window">Sezione: %1$s</string>
+    <string name="logview_signal_fault_8">Errore 8: la batteria spegne la sua uscita</string>
+    <string name="logview_signal_unknown">sconosciuto</string>
+    <string name="logview_signal_parked_only">bloccato solo da fermo</string>
+    <string name="logview_signals_none_riding">A parte il Kick Lock da fermo, YABA non ha rilevato nessuno di questi segnali.</string>
+    <string name="logview_event_incident">Anomalia</string>
+    <string name="logview_open_ride_cd">Visualizza la registrazione del tragitto del %1$s</string>
+    <string name="logview_open_bike_cd">Visualizza il registro della bici</string>
+    <string name="logview_search_count_cd">Risultato %1$d di %2$d, riga %3$d: %4$s</string>
+    <string name="logview_line_cd">Riga %1$d: %2$s</string>
+    <string name="logview_wrap_title">Righe lunghe</string>
+    <string name="logview_wrap_on">A capo</string>
+    <string name="logview_wrap_off">Su una riga</string>
+    <plurals name="logview_ride_events_cut">
+        <item quantity="one">L’elenco mostra %1$s di %2$s eventi; %3$s più vecchio non viene mostrato.</item>
+        <item quantity="other">L’elenco mostra %1$s di %2$s eventi; %3$s più vecchi non vengono mostrati.</item>
+    </plurals>
+    <plurals name="logview_ride_marks_cut">
+        <item quantity="one">Anche %1$s marcatore più vecchio non viene mostrato.</item>
+        <item quantity="other">Anche %1$s marcatori più vecchi non vengono mostrati.</item>
+    </plurals>
+    <string name="logview_fmt_heading">EEE d MMM, HH:mm</string>
+    <string name="logview_delete">Elimina</string>
+    <string name="logview_verdict_lock">Kick Lock bloccato %1$d× in marcia</string>
+    <string name="logview_verdict_lock_none">Kick Lock mai bloccato in marcia</string>
+    <string name="logview_verdict_coil">bobina non rilevata %1$d×</string>
+    <string name="logview_verdict_coil_none">bobina sempre rilevata</string>
+    <string name="logview_verdict_battery">rilevamento della batteria saltato %1$d×</string>
+    <string name="logview_verdict_battery_none">rilevamento della batteria mai saltato</string>
+    <string name="logview_verdict_short_lock">Blocco %1$d× in marcia</string>
+    <string name="logview_verdict_short_coil">Bobina %1$d×</string>
+    <string name="logview_verdict_short_battery">Batteria %1$d×</string>
+    <string name="logview_fact_battery">Batteria</string>
+    <string name="logview_fact_battery_value">da %1$d a %2$d\u00A0%%</string>
+    <string name="logview_lane_lock">Blocco</string>
+    <string name="logview_lane_f42">E42</string>
+    <string name="logview_lane_f18">E18</string>
+    <string name="logview_lane_f8">E8</string>
+    <string name="logview_lane_link">Radio</string>
+    <string name="logview_lane_signals">Segnali</string>
+    <string name="logview_legend_rule">Segnale della regola di spedizione</string>
+    <string name="logview_zoom_whole">Corsa intera</string>
+    <string name="logview_action_expand">Mostra tutte le tracce</string>
+    <string name="logview_signals_unseen">Non visti: %1$s</string>
+    <string name="logview_events_no_marks">Nessun marcatore in questa registrazione.</string>
+    <plurals name="logview_events_marks_count">
+        <item quantity="one">%1$s marcatore</item>
+        <item quantity="many">%1$s marcatori</item>
+        <item quantity="other">%1$s marcatori</item>
+    </plurals>
+</resources>

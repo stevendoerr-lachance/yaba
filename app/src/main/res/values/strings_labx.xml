@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bike-Lab fixes (ble/BikeLab.kt, ble/BikeController.kt, ui/components/BikeLabBits.kt). New file so the
+     existing strings_*.xml stay untouched. English is the default. -->
+<resources>
+    <string name="labx_cmd_boost_rolling_on">Boost while rolling on</string>
+    <string name="labx_cmd_boost_rolling_off">Boost while rolling off</string>
+
+    <string name="labx_error_level_unknown">The assist level has not been read yet. Please wait a moment and tap again.</string>
+    <string name="labx_error_clock_readback">Clock read-back implausible. The clock may have been set; please check again.</string>
+    <string name="labx_error_clock_jump">Only with no button held: a clock jump of more than 20\u00A0seconds while Bell or Boost is held makes the bike treat the button as stuck.</string>
+    <string name="labx_error_boost_rolling">Test it at a standstill: with “on”, the level can change by accident as the bike starts rolling.</string>
+    <string name="labx_error_assist_cut">Only at a standstill and while the bike is not rolling; this cuts motor assist.</string>
+    <string name="labx_error_not_confirmed">Not confirmed. The value was written, but the read-back does not confirm it; the stored value is unchanged.</string>
+    <string name="labx_error_lamp_read">The lamp channels cannot be read; nothing was changed.</string>
+    <string name="labx_error_lamp_restore">The lamps were written back, but the read-back differs. A real state change (mode, lock, restart) brings them back.</string>
+
+    <string name="labx_board_temp_waiting">waiting for a change</string>
+    <string name="labx_not_read">not read</string>
+    <string name="labx_threshold_factory">Factory value 200</string>
+
+    <string name="labx_alarm_stop_note">Stops a running alarm without the backup code. It also clears the soft-lock; if the bike was locked, YABA then offers “Lock again”.</string>
+    <string name="labx_relock_button">Lock again</string>
+    <string name="labx_relock_hint">The alarm stop cleared the soft-lock. Without the Kick Lock engaged, the bike reads as unlocked.</string>
+
+    <string name="labx_siren_note">Alarm off ends every stage and lifts the software lock. Lock the bike again afterwards if needed.</string>
+    <string name="labx_siren_stage2">Motion watch. The bike reacts only to a shake and escalates after several knocks.</string>
+    <string name="labx_siren_stage3">About 30\u00A0seconds of siren, then tracking mode. The 2G modem then reports about every 30\u00A0minutes instead of every 2\u00A0hours and uses battery power.</string>
+    <string name="labx_siren_stage4">Straight into tracking mode with the soft-lock set, no siren.</string>
+
+    <string name="labx_selftest_dialog_text">YABA first downloads the bike’s log and saves it on the phone; then the diagnosis runs and the bike goes to standby. The report pushes the oldest log lines out, so it is saved beforehand.</string>
+
+
+    <!-- lamp channel accessibility -->
+    <string name="labx_lamp_channel">Channel\u00A0%1$d</string>
+    <string name="labx_lamp_state_on">on</string>
+    <string name="labx_lamp_state_off">off</string>
+
+    <!-- Fahrtenschreiber: firmware tokens as a secondary line -->
+    <string name="labx_firmware_text">Firmware text: %1$s</string>
+    <string name="labx_derate_bat_temp">Battery temperature %1$s</string>
+
+    <!-- Sound-Lab: factory clip cannot be recovered -->
+    <string name="labx_clip_factory_warning">The factory tone cannot be read back from the bike. Once replaced it is gone for good; YABA cannot restore it. Keep a copy yourself if you want it back.</string>
+</resources>

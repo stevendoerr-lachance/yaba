@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Core layers (ble, data, ride, audio, view model): French. -->
+<resources>
+
+    <!-- GATT characteristics (diagnosis page, version list) -->
+    <string name="core_char_challenge">Challenge</string>
+    <string name="core_char_key_index">Numéro de clé</string>
+    <string name="core_char_backup_code">Code de secours</string>
+    <string name="core_char_bike_message">Back-office</string>
+    <string name="core_char_firmware_metadata">Métadonnées du fichier</string>
+    <string name="core_char_firmware_block">Bloc de fichier</string>
+    <string name="core_char_oad_status">État du transfert</string>
+    <string name="core_char_lock_state">Antivol</string>
+    <string name="core_char_unlock_request">Demande de déverrouillage</string>
+    <string name="core_char_alarm_state">Mode d’alarme</string>
+    <string name="core_char_alarm_mode">Alarme activée ou désactivée</string>
+    <string name="core_char_distance">Kilométrage</string>
+    <string name="core_char_speed">Vitesse</string>
+    <string name="core_char_unit_system">Unités</string>
+    <string name="core_char_power_level">Niveau d’assistance</string>
+    <string name="core_char_speed_limit">Limite de vitesse</string>
+    <string name="core_char_e_shifter_gear">Rapport</string>
+    <string name="core_char_e_shift_points">Points de passage</string>
+    <string name="core_char_e_shifter_mode">Mode de passage</string>
+    <string name="core_char_motor_battery_level">Batterie</string>
+    <string name="core_char_motor_battery_state">Prise de charge</string>
+    <string name="core_char_module_battery_level">Chargeur et batterie du module</string>
+    <string name="core_char_module_battery_state">État de la batterie du module</string>
+    <string name="core_char_environment">Température et humidité</string>
+    <string name="core_char_motor_telemetry_a">Télémétrie moteur A</string>
+    <string name="core_char_motor_telemetry_b">Télémétrie moteur B</string>
+    <string name="core_char_motor_errors">Bits d’erreur moteur</string>
+    <string name="core_char_model">Modèle</string>
+    <string name="core_char_bike_firmware">Firmware du vélo</string>
+    <string name="core_char_ble_firmware">Firmware Bluetooth</string>
+    <string name="core_char_controller_firmware">Contrôleur du moteur</string>
+    <string name="core_char_pcba_hardware">Carte électronique</string>
+    <string name="core_char_gsm_firmware">Module GSM</string>
+    <string name="core_char_e_shifter_firmware">E-shifter</string>
+    <string name="core_char_battery_firmware">Firmware de la batterie</string>
+    <string name="core_char_frame_number">Numéro de cadre</string>
+    <string name="core_char_module_mode">État de fonctionnement</string>
+    <string name="core_char_module_state">Veille</string>
+    <string name="core_char_errors">Bits d’erreur</string>
+    <string name="core_char_wheel_size">Type de roue</string>
+    <string name="core_char_clock">Horloge du vélo</string>
+    <string name="core_char_buttons">Boutons et Kick Lock</string>
+    <string name="core_char_supply_ok">Alimentation ≥\u00A020\u00A0V</string>
+    <string name="core_char_play_sound">Jouer un son</string>
+    <string name="core_char_sound_groups">Groupes de volume</string>
+    <string name="core_char_bell_sound">Sonnerie</string>
+    <string name="core_char_light_mode">Éclairage</string>
+    <string name="core_char_led_state">Canaux LED</string>
+    <string name="core_char_light_sensor">Seuil de luminosité</string>
+    <string name="core_char_log_mode">Mode du journal</string>
+    <string name="core_char_log_size">Taille du journal</string>
+    <string name="core_char_log_block">Bloc du journal</string>
+
+    <!-- Speed limit regions (under the road sign) -->
+    <string name="core_region_japan">Japon</string>
+    <string name="core_region_europe">Europe</string>
+    <string name="core_region_usa">USA</string>
+    <string name="core_region_private">Tout-terrain</string>
+
+    <!-- Lock / alarm phase (ALARM_STATE) -->
+    <string name="core_defence_unlocked">Déverrouillé</string>
+    <string name="core_defence_locked">Verrouillé</string>
+    <string name="core_defence_alarm_one">Alarme niveau\u00A01</string>
+    <string name="core_defence_alarm_two">Alarme niveau\u00A02</string>
+    <string name="core_defence_tracking">Localisation</string>
+
+    <!-- Alarm switch (ALARM_MODE) -->
+    <string name="core_alarm_stage_disarmed">Désactivée</string>
+    <string name="core_alarm_stage_armed">Activée</string>
+
+    <!-- Charger state -->
+    <string name="core_charge_charging">En charge</string>
+    <string name="core_charge_not_charging">Pas en charge</string>
+    <string name="core_charge_battery_missing">Batterie non détectée</string>
+    <string name="core_log_battery_missing">Batterie non détectée\u00A0: le vélo ne détecte plus la batterie</string>
+    <string name="core_log_battery_back">Batterie de nouveau détectée</string>
+
+    <!-- Light modes -->
+    <string name="core_light_auto">Auto</string>
+    <string name="core_light_on">Allumé</string>
+    <string name="core_light_off">Éteint</string>
+
+    <!-- Coarse bike status (MODULE_MODE) -->
+    <string name="core_status_ready">Prêt</string>
+    <string name="core_status_riding">Prêt à rouler</string>
+    <string name="core_status_alarm">Alarme/localisation</string>
+    <string name="core_status_updating">Mise à jour en cours</string>
+    <string name="core_status_shipping">Mode expédition</string>
+    <string name="core_status_sleeping">En veille</string>
+    <string name="core_status_other">Change d’état</string>
+
+    <!-- Bell tones -->
+    <string name="core_bell_bell">Double tonalité</string>
+    <string name="core_bell_sonar">Sous-marin</string>
+    <string name="core_bell_party">Klaxon</string>
+    <string name="core_bell_foghorn">Corne de brume</string>
+
+    <!-- Sound board groups -->
+    <string name="core_sound_group_horn">Sonnettes et klaxons</string>
+    <string name="core_sound_group_signal">Signaux du vélo</string>
+    <string name="core_sound_group_alarm">Alarme</string>
+    <string name="core_sound_group_system">Système</string>
+
+    <!-- Sound board sounds -->
+    <string name="core_sound_ding_dong">Double tonalité</string>
+    <string name="core_sound_toot">Klaxon</string>
+    <string name="core_sound_foghorn">Corne de brume</string>
+    <string name="core_sound_submarine">Sous-marin</string>
+    <string name="core_sound_urgent_whistle">Sifflet d’urgence</string>
+    <string name="core_sound_click">Clic</string>
+    <string name="core_sound_positive">Signal positif</string>
+    <string name="core_sound_negative">Signal négatif</string>
+    <string name="core_sound_lock">Son de verrouillage</string>
+    <string name="core_sound_unlock">Son de déverrouillage</string>
+    <string name="core_sound_unlock_countdown">Décompte déverrouillage</string>
+    <string name="core_sound_backup_code">Saisie du code de secours</string>
+    <string name="core_sound_pairing_ok">Appairage réussi</string>
+    <string name="core_sound_pairing_failed">Échec de l’appairage</string>
+    <string name="core_sound_find_my">Son de recherche</string>
+    <string name="core_sound_alarm_one">Alarme niveau\u00A01</string>
+    <string name="core_sound_alarm_two">Alarme niveau\u00A02</string>
+    <string name="core_sound_noise">Bruit</string>
+    <string name="core_sound_startup">Son de démarrage</string>
+    <string name="core_sound_shutdown">Son d’extinction</string>
+    <string name="core_sound_charging">Son de charge</string>
+    <string name="core_sound_diagnostics">Son de diagnostic</string>
+    <string name="core_sound_reset_countdown">Compte à rebours de redémarrage</string>
+    <string name="core_sound_firmware_loading">Chargement du firmware</string>
+    <string name="core_sound_firmware_failed">Échec du firmware</string>
+    <string name="core_sound_unpair">Dissociation</string>
+
+    <!-- Fault table: name and what to do -->
+    <string name="core_fault_0_name">Batterie\u00A0: protection contre les courts-circuits</string>
+    <string name="core_fault_0_hint">La batterie s’est coupée après avoir détecté un court-circuit\u00A0; son fusible a peut-être sauté. Vérifie le câblage et le connecteur de la batterie.</string>
+    <string name="core_fault_1_name">Batterie\u00A0: MOSFET trop chaud</string>
+    <string name="core_fault_1_hint">L’interrupteur de puissance (MOSFET) de la batterie est trop chaud. Laisse refroidir le vélo, puis réessaie.</string>
+    <string name="core_fault_2_name">Batterie\u00A0: court-circuit en pré-décharge</string>
+    <string name="core_fault_2_hint">La batterie a détecté un court-circuit à l’allumage. Vérifie le câblage entre la batterie et le vélo.</string>
+    <string name="core_fault_3_name">Batterie\u00A0: surcharge en pré-décharge</string>
+    <string name="core_fault_3_hint">La batterie a détecté une surcharge à l’allumage. Cherche un court-circuit dans le câblage entre la batterie et le vélo.</string>
+    <string name="core_fault_4_name">Batterie\u00A0: sous-tension niveau\u00A02</string>
+    <string name="core_fault_4_hint">La tension de la batterie est tombée très bas. Recharge-la plus longtemps. Si le code reste, le BMS doit être réinitialisé (atelier).</string>
+    <string name="core_fault_5_name">Batterie\u00A0: sous-tension niveau\u00A01</string>
+    <string name="core_fault_5_hint">La tension de la batterie est basse. Recharge la batterie.</string>
+    <string name="core_fault_6_name">Batterie\u00A0: surtension niveau\u00A02</string>
+    <string name="core_fault_6_hint">La tension de la batterie est trop élevée. Débranche le chargeur et vérifie que c’est le bon (42\u00A0V). Un défaut de niveau\u00A02 demande une réinitialisation du BMS.</string>
+    <string name="core_fault_7_name">Batterie\u00A0: surtension niveau\u00A01</string>
+    <string name="core_fault_7_hint">La tension de la batterie est trop élevée. Débranche le chargeur et vérifie que c’est le bon (42\u00A0V).</string>
+    <string name="core_fault_8_name">Batterie\u00A0: courant de charge trop élevé (niveau\u00A01)</string>
+    <string name="core_fault_8_hint">La batterie a absorbé trop de courant de charge. Vérifie le chargeur (42\u00A0V).</string>
+    <string name="core_fault_9_name">Batterie\u00A0: courant de charge trop élevé (niveau\u00A02)</string>
+    <string name="core_fault_9_hint">Trop de courant de charge. Vérifie le chargeur (42\u00A0V). Un défaut de niveau\u00A02 demande une réinitialisation du BMS.</string>
+    <string name="core_fault_10_name">Batterie\u00A0: courant de décharge trop élevé (niveau\u00A02)</string>
+    <string name="core_fault_10_hint">Le vélo a tiré trop de courant. Cherche un court-circuit dans le câblage ou un problème de moteur. Un défaut de niveau\u00A02 demande une réinitialisation du BMS.</string>
+    <string name="core_fault_11_name">Batterie\u00A0: courant de décharge trop élevé (niveau\u00A01)</string>
+    <string name="core_fault_11_hint">Le vélo a tiré brièvement trop de courant, par exemple dans une forte montée ou avec le Boost. Si le code revient sur le plat, vérifie le moteur et son câble.</string>
+    <string name="core_fault_12_name">Batterie\u00A0: trop froide pour charger</string>
+    <string name="core_fault_12_hint">La batterie est trop froide pour être chargée. Charge-la à température ambiante. Si le code apparaît aussi à température normale, un capteur de température de la batterie est peut-être défectueux.</string>
+    <string name="core_fault_13_name">Batterie\u00A0: trop chaude pour charger</string>
+    <string name="core_fault_13_hint">La batterie est trop chaude pour être chargée. Laisse-la refroidir, puis charge-la. Si le code apparaît aussi à température normale, un capteur de température de la batterie est peut-être défectueux.</string>
+    <string name="core_fault_14_name">Batterie\u00A0: trop froide pour rouler</string>
+    <string name="core_fault_14_hint">La batterie est trop froide pour fournir du courant. Laisse le vélo se réchauffer. Si le code apparaît aussi à température normale, un capteur de température de la batterie est peut-être défectueux.</string>
+    <string name="core_fault_15_name">Batterie\u00A0: trop chaude pour rouler</string>
+    <string name="core_fault_15_hint">La batterie est trop chaude pour fournir du courant. Laisse refroidir le vélo. Si le code apparaît aussi à température normale, un capteur de température de la batterie est peut-être défectueux.</string>
+    <string name="core_fault_16_name">Batterie\u00A0: défaillance permanente (BMS)</string>
+    <string name="core_fault_16_hint">La batterie signale une défaillance permanente ou ne répond pas du tout. Souvent son fusible a grillé, probablement à cause d’un court-circuit à la prise de la batterie. Vérifie le connecteur et la prise\u00A0: cherche des traces de brûlure. Ensuite, un atelier doit contrôler la batterie.</string>
+    <string name="core_fault_17_name">La batterie n’autorise ni la charge ni la décharge</string>
+    <string name="core_fault_17_hint">La batterie n’a pas activé sa sortie de charge ou de décharge. Vérifie le connecteur et le câble de la batterie, puis redémarre le vélo.</string>
+    <string name="core_fault_18_name">Batterie non détectée</string>
+    <string name="core_fault_18_hint">Le vélo ne voit pas la batterie (le signal de détection reste bas). Vérifie que la batterie est enfoncée à fond, puis le connecteur et le câble. Si le 42 s’affiche en même temps, le vélo peut passer en mode expédition.</string>
+    <string name="core_fault_19_name">Erreur de bus batterie</string>
+    <string name="core_fault_19_hint">Le vélo ne peut pas communiquer avec la batterie par la ligne de données (Modbus). Vérifie le connecteur et le câble de la batterie. Si le défaut reste, la puce d’interface du module ou le BMS est peut-être défectueux.</string>
+    <string name="core_fault_20_name">Tension d’alimentation trop basse</string>
+    <string name="core_fault_20_hint">La tension d’alimentation est inférieure à 25\u00A0V, comme si la batterie avait coupé sa sortie. Recharge la batterie et vérifie son connecteur. Un bref 20 juste après une réinitialisation est normal.</string>
+    <string name="core_fault_21_name">Charge sans courant</string>
+    <string name="core_fault_21_hint">Le vélo détecte un chargeur, mais aucun courant de charge ne circule. Vérifie le chargeur (42\u00A0V) et la prise de charge. Une limite de charge atteinte peut aussi provoquer ce code.</string>
+    <string name="core_fault_22_name">Le contrôleur du moteur ne répond pas</string>
+    <string name="core_fault_22_hint">Le module ne reçoit aucune réponse du contrôleur du moteur, donc il n’y a pas d’assistance. À l’arrêt, le vélo essaie de le redémarrer tout seul. Éteins puis rallume le vélo. Si le code reste, le contrôleur n’est plus alimenté ou est défectueux (atelier).</string>
+    <string name="core_fault_23_name">Redémarrage de la puce Bluetooth</string>
+    <string name="core_fault_23_hint">Le module a perdu le contact avec sa puce Bluetooth et la redémarre, donc l’appli ne se connecte peut-être pas. Tu peux quand même déverrouiller avec le code de secours. Si le code reste, la puce ou son firmware est défectueux (atelier).</string>
+    <string name="core_fault_24_name">Transfert de mise à jour interrompu</string>
+    <string name="core_fault_24_hint">Le transfert du firmware depuis l’appli a été interrompu. Redémarre le vélo et relance la mise à jour, téléphone près du vélo.</string>
+    <string name="core_fault_25_name">Transfert de mise à jour\u00A0: erreur de somme de contrôle</string>
+    <string name="core_fault_25_hint">L’image du firmware transférée a échoué au contrôle de la somme. Redémarre le vélo et transfère à nouveau la mise à jour.</string>
+    <string name="core_fault_26_name">Transfert de mise à jour trop long</string>
+    <string name="core_fault_26_hint">Le transfert du firmware a pris trop de temps. Redémarre le vélo et réessaie, téléphone près du vélo.</string>
+    <string name="core_fault_27_name">Paquet de mise à jour absent ou invalide</string>
+    <string name="core_fault_27_hint">Un fichier du paquet de mise à jour manque ou est invalide. Redémarre le vélo et charge à nouveau le paquet.</string>
+    <string name="core_fault_28_name">Programmation flash\u00A0: délai dépassé</string>
+    <string name="core_fault_28_hint">Le module n’a pas fini à temps d’écrire le nouveau firmware. Redémarre le vélo et répète la mise à jour. Si elle échoue encore, un atelier doit contrôler le module.</string>
+    <string name="core_fault_29_name">Paquet de mise à jour\u00A0: en-tête introuvable</string>
+    <string name="core_fault_29_hint">Le module n’a pas trouvé d’en-tête (header) dans le fichier de firmware du paquet de mise à jour. Le paquet est abîmé ou ne convient pas. Répète la mise à jour avec un paquet intact.</string>
+    <string name="core_fault_30_name">Paquet de mise à jour\u00A0: aucun fichier</string>
+    <string name="core_fault_30_hint">Le paquet de mise à jour ne contient aucun fichier. Répète la mise à jour avec un paquet complet.</string>
+    <string name="core_fault_31_name">Effacement flash échoué</string>
+    <string name="core_fault_31_hint">Le module n’a pas pu effacer son ancien firmware. Redémarre le vélo et répète la mise à jour. Si elle échoue encore, un atelier doit contrôler le module.</string>
+    <string name="core_fault_32_name">Écriture flash échouée</string>
+    <string name="core_fault_32_hint">Le module n’a pas pu écrire le nouveau firmware. Redémarre le vélo et répète la mise à jour. Si elle échoue encore, un atelier doit contrôler le module.</string>
+    <string name="core_fault_33_name">Paquet de mise à jour\u00A0: erreur de somme de contrôle</string>
+    <string name="core_fault_33_hint">Un fichier du paquet de mise à jour a une erreur de somme de contrôle. Répète la mise à jour avec un paquet neuf.</string>
+    <string name="core_fault_34_name">Mise à jour du moteur échouée</string>
+    <string name="core_fault_34_hint">La mise à jour du contrôleur du moteur (motorware) ne s’est pas terminée. Redémarre le vélo et répète la mise à jour. Si le moteur ne répond plus ensuite (code\u00A022), un atelier doit restaurer son firmware.</string>
+    <string name="core_fault_35_name">Mise à jour de la batterie échouée</string>
+    <string name="core_fault_35_hint">La mise à jour du contrôleur de la batterie (BMS) ne s’est pas terminée. Redémarre le vélo et répète la mise à jour. Si la batterie reste muette, un atelier doit la reflasher.</string>
+    <string name="core_fault_36_name">Mise à jour du shifter échouée</string>
+    <string name="core_fault_36_hint">La mise à jour du contrôleur du shifter ne s’est pas terminée. Redémarre le vélo et répète la mise à jour. Si le shifter reste muet (code\u00A044), un atelier doit le reflasher.</string>
+    <string name="core_fault_37_name">Mise à jour Bluetooth échouée</string>
+    <string name="core_fault_37_hint">La mise à jour du contrôleur Bluetooth ne s’est pas terminée. Redémarre le vélo et répète la mise à jour. Si l’appli ne se connecte plus, tu peux quand même déverrouiller avec le code de secours\u00A0; un atelier peut reflasher la puce.</string>
+    <string name="core_fault_38_name">Lecture de la batterie du module perturbée</string>
+    <string name="core_fault_38_hint">Le vélo ne peut pas lire la petite batterie de la Smart Cartridge\u00A0; elle manque peut-être, est vide ou usée. Charge le vélo et vérifie que la batterie du module se recharge. Si le code reste, remplace la batterie du module.</string>
+    <string name="core_fault_39_name">Erreur du capteur de luminosité</string>
+    <string name="core_fault_39_hint">Le module ne peut pas lire le capteur de luminosité (erreur I²C), donc l’éclairage automatique peut mal réagir. Redémarre le vélo. Si le code reste, le module doit être réparé.</string>
+    <string name="core_fault_40_name">Bouton de sonnette coincé</string>
+    <string name="core_fault_40_hint">Le vélo a détecté le bouton de sonnette comme enfoncé pendant plus de 20\u00A0s. Nettoie le bouton ou remplace-le, et vérifie que son câble n’a ni humidité ni court-circuit.</string>
+    <string name="core_fault_41_name">Bouton boost coincé</string>
+    <string name="core_fault_41_hint">Le vélo a détecté le bouton boost comme enfoncé pendant plus de 20\u00A0s. Nettoie le bouton ou remplace-le, et vérifie que son câble n’a ni humidité ni court-circuit.</string>
+    <string name="core_fault_42_name">Bobine du Kick Lock non détectée</string>
+    <string name="core_fault_42_hint">Le vélo ne détecte pas la bobine du Kick Lock. En général, un connecteur est desserré ou un câble est écrasé. Vérifie le connecteur du Kick Lock et suis le câble pour repérer les pliures, s’il te plaît. Si la détection de la batterie décroche en même temps, le vélo passe probablement en mode expédition.</string>
+    <string name="core_fault_43_name">Rapport non engagé</string>
+    <string name="core_fault_43_hint">Le shifter a essayé dix fois sans atteindre le rapport. Vérifie le câble et le connecteur du shifter au moyeu arrière, puis change de rapport à nouveau.</string>
+    <string name="core_fault_44_name">L’E-shifter ne répond pas</string>
+    <string name="core_fault_44_hint">Le vélo n’a reçu aucune réponse du shifter cinq fois de suite. Vérifie le connecteur et le câble du shifter au moyeu arrière. Si les deux sont en bon état, la carte du shifter est probablement défectueuse (atelier).</string>
+    <string name="core_fault_45_name">Câble moteur ou capteur de température ouvert</string>
+    <string name="core_fault_45_hint">Le capteur de température (NTC) du moteur indique une ligne ouverte, comme si le câble du moteur était débranché ou rompu. Vérifie le connecteur du moteur et le faisceau de câbles vers la roue avant (pliures, ruptures). Si le moteur tourne encore, c’est souvent le premier signe d’un faisceau défaillant\u00A0; sans le capteur, le moteur n’a plus de protection contre la surchauffe. Fais tourner la roue avant\u00A0: si la vitesse s’affiche, le fil de vitesse est encore intact.</string>
+    <string name="core_fault_46_name">Pilote du moteur\u00A0: surchauffe ou surintensité</string>
+    <string name="core_fault_46_hint">La puce pilote du moteur (DRV8301) a signalé une erreur. Le tableau d’atelier parle de surchauffe, le nom du code de surintensité. Laisse refroidir le vélo et redémarre-le. Si le code revient, vérifie que le câble du moteur n’est pas abîmé\u00A0; ensuite, un atelier doit contrôler le contrôleur.</string>
+    <string name="core_fault_47_name">La batterie n’indique aucun niveau de charge</string>
+    <string name="core_fault_47_hint">La batterie n’indique pas son niveau de charge. Vérifie le connecteur et le câble de la batterie, puis redémarre le vélo.</string>
+    <string name="core_fault_48_name">Bit d’état de la vitesse de roue</string>
+    <string name="core_fault_48_hint">YABA ne compte pas le 48 comme un défaut\u00A0: le firmware active ce bit à partir des impulsions de vitesse de la roue. Le tableau d’atelier appelle le 48 une erreur du contrôleur du moteur (erreur de paramètres, remplacer le moteur). Si le vélo affiche 48 à l’écran ou si la vitesse est fausse, vérifie le connecteur du moteur et le fil de vitesse du faisceau de câbles.</string>
+    <string name="core_fault_49_name">Moteur\u00A0: mesure du courant faussée</string>
+    <string name="core_fault_49_hint">Au démarrage, le contrôleur du moteur a mesuré un décalage de courant trop éloigné de sa valeur par défaut (1,0), donc sa mesure de courant est faussée. Redémarre le vélo. Si le code reste, un atelier doit contrôler le contrôleur.</string>
+    <string name="core_fault_50_name">Moteur\u00A0: mesure de la tension faussée</string>
+    <string name="core_fault_50_hint">Au démarrage, la mesure de tension du contrôleur du moteur était faussée. Redémarre le vélo et vérifie le connecteur de la batterie. Si le code reste, un atelier doit contrôler le contrôleur.</string>
+    <string name="core_fault_51_name">Puissance du moteur limitée par la chaleur</string>
+    <string name="core_fault_51_hint">Le contrôleur du moteur a réduit le courant maximal parce qu’il est chaud. Laisse refroidir le vélo. C’est un avertissement, pas une panne.</string>
+    <string name="core_fault_52_name">Capteur de couple en panne</string>
+    <string name="core_fault_52_hint">Le contrôleur du moteur signale une panne du capteur de couple. Vérifie le connecteur et le câble du capteur de couple, puis redémarre le vélo.</string>
+    <string name="core_fault_53_name">Erreur moteur critique (moteur pas prêt)</string>
+    <string name="core_fault_53_hint">Le contrôleur du moteur signale une erreur grave (erreur de paramètres plus état pas prêt) et ne démarre pas. Redémarre le vélo une fois. Si le code reste, le tableau d’atelier conseille de remplacer le moteur\u00A0; fais contrôler le moteur et le contrôleur par un atelier.</string>
+    <string name="core_fault_54_name">Pas de carte SIM</string>
+    <string name="core_fault_54_hint">Le vélo ne détecte pas la carte SIM de son traceur, donc la localisation ne fonctionne pas. La conduite n’en est pas affectée. Vérifie que la SIM est bien dans son logement et qu’elle fonctionne dans un autre appareil.</string>
+    <string name="core_fault_55_name">Erreur de démarrage du bus interne</string>
+    <string name="core_fault_55_hint">Plusieurs puces du bus I²C interne du module n’ont pas répondu au démarrage. Redémarre le vélo. Si le code reste, le module (Smart Cartridge) est probablement défectueux.</string>
+    <string name="core_fault_56_name">Mauvaise carte SIM</string>
+    <string name="core_fault_56_hint">Ce n’est pas une SIM VanMoof (son numéro n’a pas le bon préfixe). Insère la SIM qui appartient au vélo.</string>
+    <string name="core_fault_57_name">SIM illisible</string>
+    <string name="core_fault_57_hint">Le modem détecte la SIM, mais ne peut pas la lire. Retire la SIM, nettoie ses contacts et remets-la. Si le code reste, essaie une autre SIM VanMoof.</string>
+    <string name="core_fault_58_name">Le modem GSM ne démarre pas</string>
+    <string name="core_fault_58_hint">Le démarrage du modem a échoué. Redémarre le vélo\u00A0; le code disparaît souvent après une réinitialisation. S’il reste, la puce du modem est probablement défectueuse (elle se remplace facilement).</string>
+    <string name="core_fault_60_name">Mode usine</string>
+    <string name="core_fault_60_hint">Le vélo exécute son firmware d’usine au lieu du firmware normal. Un atelier doit réinstaller le firmware normal.</string>
+    <string name="core_fault_unknown_name">Code inconnu</string>
+    <string name="core_fault_unknown_hint">Ce code n’est pas dans le tableau des défauts. Note le numéro et le moment où il apparaît.</string>
+
+    <!-- Lock state, used inside sentences (lower case) -->
+    <string name="core_lock_unlocked">déverrouillé</string>
+    <string name="core_lock_locked">verrouillé</string>
+    <string name="core_lock_pin_entry">saisie du code</string>
+
+    <!-- Link messages and connection errors -->
+    <string name="core_link_key_invalid">La clé n’est pas valide. Ajoute de nouveau le vélo dans le garage ou recharge-le.</string>
+    <string name="core_link_bike_not_found">Vélo introuvable. Pour le réveiller, déplace brièvement le vélo ou appuie sur le bouton de la sonnette. L’application VanMoof doit être fermée.</string>
+    <string name="core_link_location_off">La localisation est désactivée. Sans localisation, Android ne trouve pas les appareils Bluetooth.</string>
+    <string name="core_error_bluetooth_off">Le Bluetooth est désactivé.</string>
+    <string name="core_error_connect_failed">Échec de la connexion</string>
+    <string name="core_error_invalid_mac">Adresse MAC invalide\u00A0: %1$s</string>
+    <string name="core_error_not_s3">Ce n’est pas un S3 ou un X3, ou le cache Bluetooth est corrompu.</string>
+    <string name="core_error_not_connected_wake">Non connecté. Réveille le vélo, s’il te plaît, et patiente un instant.</string>
+    <string name="core_error_not_connected">Non connecté</string>
+    <string name="core_error_link_lost">Connexion interrompue</string>
+    <string name="core_error_no_challenge">Le vélo n’a envoyé aucun challenge</string>
+    <string name="core_error_read_failed">%1$s\u00A0: échec de la lecture</string>
+    <string name="core_error_connect_gatt_null">Android n’a pas pu ouvrir de connexion (connectGatt a renvoyé null)</string>
+    <string name="core_error_no_answer">Aucune réponse du vélo. En général, le vélo dort, ou l’application VanMoof est connectée au vélo en ce moment.</string>
+    <string name="core_error_connect_133">La connexion a été interrompue (133). Le vélo n’accepte qu’une seule connexion à la fois.</string>
+    <string name="core_error_connect_status">Échec de la connexion (statut %1$s)</string>
+    <string name="core_error_services">Les services du vélo n’ont pas pu être lus</string>
+    <string name="core_error_services_status">Les services du vélo n’ont pas pu être lus (état %1$s)</string>
+    <string name="core_error_missing_char">Caractéristique %1$s absente du vélo</string>
+    <string name="core_error_op_not_started">%1$s\u00A0: impossible de démarrer</string>
+    <string name="core_error_op_timeout">%1$s\u00A0: délai dépassé</string>
+    <string name="core_error_op_failed">%1$s\u00A0: échec (statut %2$d)</string>
+    <string name="core_op_read">Lecture</string>
+    <string name="core_op_write">Écriture</string>
+    <string name="core_op_notify">Activation des notifications</string>
+    <string name="core_op_mtu">Demande de MTU</string>
+
+    <!-- Commands: event log entry and error prefix -->
+    <string name="core_cmd_failed">%1$s\u00A0: échec</string>
+    <string name="core_cmd_refresh">Actualisation</string>
+    <string name="core_cmd_read_raw">Lecture des données brutes</string>
+    <string name="core_cmd_unlock">Déverrouillage</string>
+    <string name="core_cmd_lock">Verrouillage</string>
+    <string name="core_cmd_speed_limit">Limite de vitesse %1$d\u00A0km/h</string>
+    <string name="core_cmd_level">Niveau\u00A0%1$d</string>
+    <string name="core_cmd_light">Éclairage\u00A0: %1$s</string>
+    <string name="core_cmd_bell">Sonnerie\u00A0: %1$s</string>
+    <string name="core_cmd_unit">Unité\u00A0: %1$s</string>
+    <string name="core_cmd_wake">Réveil</string>
+    <string name="core_cmd_backup_cleared">Code de secours supprimé</string>
+    <string name="core_cmd_backup_set">Code de secours défini</string>
+    <string name="core_cmd_bike_log">Journal du vélo lu</string>
+    <string name="core_cmd_custom_bell">Sonnerie personnalisée</string>
+    <string name="core_alarm_on">Alarme activée</string>
+    <string name="core_alarm_off">Alarme désactivée</string>
+
+    <!-- Command errors -->
+    <string name="core_error_speed_rejected">Le vélo n’a pas accepté %1$d\u00A0km/h (il indique %2$s\u00A0km/h).</string>
+    <string name="core_error_speed_rejected_lock">Le vélo n’a pas accepté %1$d\u00A0km/h (il indique %2$s\u00A0km/h, restriction de région\u00A0%3$d).</string>
+    <string name="core_error_region_locked">La région du vélo est restreinte. Il conserve sa limite de vitesse et a refusé %1$d\u00A0km/h.</string>
+    <string name="core_error_level_rejected">Le vélo n’a pas accepté le niveau\u00A0%1$d (il indique %2$s).</string>
+    <string name="core_error_wake_riding">Inutile en roulant.</string>
+    <string name="core_error_backup_digits">Trois chiffres de 1 à 9.</string>
+    <string name="core_error_no_bike_log">Ce vélo ne propose pas de journal.</string>
+
+    <!-- Event log -->
+    <string name="core_log_key_invalid">Clé invalide pour %1$s</string>
+    <string name="core_log_searching">Recherche\u00A0: %1$s</string>
+    <string name="core_log_disconnected">Déconnecté</string>
+    <string name="core_log_connected">Connecté et authentifié</string>
+    <string name="core_log_link_lost_riding">Connexion interrompue pendant la conduite</string>
+    <string name="core_log_link_lost">Connexion interrompue</string>
+    <plurals name="core_log_subscribed">
+        <item quantity="one">Abonnement à %1$d valeur en direct</item>
+        <item quantity="many">Abonnement à %1$d valeurs en direct</item>
+        <item quantity="other">Abonnement à %1$d valeurs en direct</item>
+    </plurals>
+    <string name="core_log_firmware">Firmware\u00A0%1$s</string>
+    <string name="core_log_transfer">Transfert\u00A0: %1$s</string>
+    <string name="core_log_shipping">Le vélo signale le mode expédition</string>
+    <string name="core_log_kicklock_riding">Kick Lock signalé verrouillé en roulant</string>
+    <string name="core_log_lock">Antivol\u00A0: %1$s</string>
+    <string name="core_log_status">État\u00A0: %1$s</string>
+    <string name="core_log_fault">Erreur\u00A0%1$d\u00A0: %2$s</string>
+    <string name="core_log_faults_cleared">Erreurs qui ne sont plus actives\u00A0: %1$s</string>
+    <string name="core_log_power_button_riding">Le bouton marche/redémarrage signale un appui pendant la conduite</string>
+    <string name="core_log_supply_low">Tension d’alimentation sous 20\u00A0V</string>
+    <string name="core_log_supply_ok">Alimentation de nouveau normale</string>
+    <string name="core_log_charger_in">Chargeur branché</string>
+    <string name="core_log_charger_out">Chargeur débranché</string>
+    <string name="core_log_alarm">Alarme\u00A0: %1$s</string>
+    <string name="core_log_unlock_request">Le vélo demande à être déverrouillé</string>
+    <string name="core_log_ride_started">Enregistreur de trajet démarré</string>
+    <string name="core_log_ride_stopped">Enregistreur de trajet arrêté</string>
+
+    <!-- Event details (parts are joined with commas) -->
+    <string name="core_detail_status">État %1$s</string>
+    <string name="core_detail_status_before">Avant\u00A0: %1$s</string>
+    <string name="core_detail_shipping">mode expédition signalé</string>
+    <string name="core_detail_battery">batterie %1$d\u00A0%%</string>
+    <string name="core_detail_speed">%1$d\u00A0km/h</string>
+    <string name="core_detail_supply_ok">alimentation en ordre</string>
+    <string name="core_detail_supply_low">alimentation faible</string>
+    <string name="core_detail_lock">antivol %1$s</string>
+    <string name="core_detail_faults">erreurs\u00A0%1$s</string>
+    <string name="core_detail_shipping_state">%1$d\u00A0km/h, antivol %2$s, erreurs\u00A0%3$s</string>
+    <string name="core_detail_supply_low_state">%1$d\u00A0km/h, batterie %2$s\u00A0%%</string>
+    <string name="core_none">aucune</string>
+
+    <!-- Custom bell transfer status (OAD) -->
+    <string name="core_oad_started">démarré</string>
+    <string name="core_oad_done">terminé, somme de contrôle correcte</string>
+    <string name="core_oad_block_ok">bloc accepté</string>
+    <string name="core_oad_bad_checksum">somme de contrôle incorrecte</string>
+    <string name="core_oad_not_writable">mémoire non inscriptible</string>
+    <string name="core_oad_bad_type">type de fichier invalide</string>
+    <string name="core_oad_too_large">fichier trop volumineux</string>
+    <string name="core_oad_code">code\u00A0%1$s</string>
+
+    <!-- Account and cloud -->
+    <string name="core_default_bike_name">Mon S3</string>
+    <string name="core_error_no_valid_keys">Aucune clé valide trouvée.</string>
+    <string name="core_error_not_logged_in">Pas connecté au compte.</string>
+    <string name="core_vault_unavailable">Le coffre de clés n’est pas disponible.</string>
+    <string name="core_vault_unreadable">Le coffre de clés est illisible pour le moment. Redémarre l’application, s’il te plaît.</string>
+    <string name="core_vault_save_failed">Le coffre de clés n’a pas pu être enregistré.</string>
+    <string name="core_api_wrong_credentials">E-mail ou mot de passe incorrect.</string>
+    <string name="core_api_no_token">La réponse à la connexion au compte ne contenait aucun jeton d’accès.</string>
+    <string name="core_api_session_expired">La session a expiré. Connecte-toi de nouveau à ton compte, s’il te plaît.</string>
+    <string name="core_api_refresh_no_token">Le renouvellement de la session n’a fourni aucun jeton d’accès.</string>
+    <string name="core_api_rate_limited">Le serveur de VanMoof limite actuellement les requêtes. Patiente une minute, s’il te plaît.</string>
+    <string name="core_api_not_authenticated">Compte non connecté ou session expirée.</string>
+    <string name="core_api_not_owner">Tu n’as pas l’autorisation nécessaire. Seul le propriétaire peut le faire.</string>
+    <string name="core_api_no_permission">Pas d’autorisation.</string>
+    <string name="core_api_server_error">Le serveur de VanMoof a répondu avec l’erreur\u00A0%1$d.</string>
+    <string name="core_api_unexpected">Réponse inattendue du serveur de VanMoof.</string>
+    <string name="core_api_timeout">Délai dépassé. L’action a peut-être quand même été exécutée. Recharge la liste, s’il te plaît.</string>
+    <string name="core_api_connection_dropped">La connexion au serveur de VanMoof a été interrompue.</string>
+    <string name="core_api_unreachable">Le serveur de VanMoof est injoignable. Vérifie ta connexion Internet, s’il te plaît.</string>
+
+    <!-- Account messages -->
+    <plurals name="core_account_bikes_loaded">
+        <item quantity="one">%1$d vélo chargé.</item>
+        <item quantity="many">%1$d vélos chargés.</item>
+        <item quantity="other">%1$d vélos chargés.</item>
+    </plurals>
+    <string name="core_account_without_key">Pas encore de clé\u00A0: %1$s.</string>
+    <plurals name="core_account_bikes_refreshed">
+        <item quantity="one">%1$d vélo mis à jour.</item>
+        <item quantity="many">%1$d vélos mis à jour.</item>
+        <item quantity="other">%1$d vélos mis à jour.</item>
+    </plurals>
+    <string name="core_account_logged_out">Compte déconnecté. Tes clés restent sur ce téléphone.</string>
+    <string name="core_account_bike_added">%1$s ajouté.</string>
+    <plurals name="core_account_imported">
+        <item quantity="one">%1$d vélo importé.</item>
+        <item quantity="many">%1$d vélos importés.</item>
+        <item quantity="other">%1$d vélos importés.</item>
+    </plurals>
+    <plurals name="core_account_import_skipped">
+        <item quantity="one">%1$d entrée invalide ignorée.</item>
+        <item quantity="many">%1$d entrées invalides ignorées.</item>
+        <item quantity="other">%1$d entrées invalides ignorées.</item>
+    </plurals>
+    <string name="core_account_import_failed">Échec de l’import.</string>
+    <string name="core_error_unknown">Erreur inconnue.</string>
+    <string name="core_share_shared_with">Partagé avec %1$s.</string>
+    <string name="core_share_revoked">Partage arrêté.</string>
+
+    <!-- Custom bell conversion and upload -->
+    <string name="core_bell_silent">Le fichier ne contient que du silence.</string>
+    <string name="core_bell_too_long">Le son est trop long. Choisis-en un plus court.</string>
+    <string name="core_bell_cannot_open">Le fichier ne peut pas être ouvert.</string>
+    <string name="core_bell_no_audio">Le fichier n’a pas de piste audio.</string>
+    <string name="core_bell_unsupported">Ce téléphone ne peut pas décoder ce format.</string>
+    <string name="core_bell_no_data">Le fichier ne contient aucune donnée audio lisible.</string>
+    <string name="core_bell_convert_failed">Échec de la conversion.</string>
+    <string name="core_bell_upload_aborted">Le transfert a été interrompu. Garde le téléphone près du vélo, s’il te plaît, et envoie de nouveau.</string>
+
+    <!-- Ride logger -->
+    <string name="core_ride_error_permission">L’accès Bluetooth manque. Autorise d’abord l’accès aux appareils à proximité, s’il te plaît.</string>
+    <string name="core_ride_share_subject">Enregistrement de trajet S3 %1$s</string>
+    <string name="core_ride_notif_running">Enregistreur de trajet actif</string>
+    <plurals name="core_ride_notif_incidents">
+        <item quantity="one">Enregistreur de trajet\u00A0: %1$d incident</item>
+        <item quantity="many">Enregistreur de trajet\u00A0: %1$d incidents</item>
+        <item quantity="other">Enregistreur de trajet\u00A0: %1$d incidents</item>
+    </plurals>
+    <string name="core_ride_notif_connecting">Connexion…</string>
+    <string name="core_ride_notif_battery">Batterie %1$d\u00A0%%</string>
+    <string name="core_ride_notif_lost">Connexion interrompue, recherche en cours</string>
+    <string name="core_ride_notif_searching">Recherche du vélo</string>
+    <string name="core_ride_notif_stop">Arrêter</string>
+
+    <!-- Debug builds only: demo data and component gallery -->
+    <string name="core_demo_kicklock_contact">Contact Kick Lock\u00A0: actif</string>
+    <string name="core_gallery_connected">Connecté</string>
+    <string name="core_gallery_battery">Batterie</string>
+    <string name="core_gallery_percent">%1$d\u00A0%%</string>
+    <string name="core_gallery_distance">Kilomètres</string>
+    <string name="core_gallery_level">Niveau</string>
+    <string name="core_gallery_limit">Limite</string>
+    <string name="core_gallery_speed_limit">Limite de vitesse</string>
+    <string name="core_gallery_assist">Assistance</string>
+    <string name="core_gallery_light">Éclairage</string>
+    <string name="core_gallery_soundboard">Boîte à sons</string>
+    <string name="core_gallery_send_bell">Envoyer la sonnerie</string>
+    <string name="core_gallery_search_again">Rechercher à nouveau</string>
+    <string name="core_notif_link_lost_riding">Connexion au vélo interrompue. Le vélo continue de rouler sans changement, et YABA se reconnecte.</string>
+    <string name="core_server_error_title">Erreur du serveur de VanMoof</string>
+    <string name="core_server_error_text">Le serveur de VanMoof a répondu à %1$s avec l’erreur\u00A0%2$d. Ton vélo n’est pas concerné\u00A0: le déverrouillage, l’éclairage, la sonnette et le diagnostic fonctionnent directement par Bluetooth. Seules la connexion au compte et le partage attendent le serveur. Touche «\u00A0Réessayer\u00A0» pour répéter la requête.</string>
+    <string name="core_server_timeout_title">Aucune réponse du serveur de VanMoof</string>
+    <string name="core_server_timeout_text">À %1$s, aucune réponse n’est arrivée en 10\u00A0secondes. Ton vélo n’est pas concerné\u00A0: le déverrouillage, l’éclairage, la sonnette et le diagnostic fonctionnent directement par Bluetooth. Seules la connexion au compte et le partage attendent le serveur. Touche «\u00A0Réessayer\u00A0» pour répéter la requête.</string>
+    <string name="core_server_dead_title">Le serveur de VanMoof ne répond pas</string>
+    <string name="core_server_dead_text">Le serveur de VanMoof n’a répondu à aucune requête de ce téléphone depuis %1$d\u00A0jours. Ton vélo n’en a pas besoin\u00A0: le déverrouillage, l’éclairage, la sonnette et le diagnostic continuent de fonctionner directement par Bluetooth. Seules la connexion au compte et le partage sont impossibles tant que le serveur ne répond pas.</string>
+    <string name="core_server_retry">Réessayer</string>
+</resources>

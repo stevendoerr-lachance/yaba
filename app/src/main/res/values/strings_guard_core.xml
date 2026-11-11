@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Wache (guard) core: notifications, trigger and siren sentences, journal and log lines, errors (the guard design 7.8).
+     English is the default language. -->
+<resources>
+    <!-- Notification channels -->
+    <string name="guard_core_channel_alarm_name">Guard</string>
+    <string name="guard_core_channel_alarm_desc">Reports movement at the bike and a lost connection while the guard is on.</string>
+    <string name="guard_core_channel_status_name">Guard running</string>
+    <string name="guard_core_channel_status_desc">Shows that the guard is on while YABA stays connected to the bike.</string>
+
+    <!-- Notifications -->
+    <string name="guard_core_notif_arming_title">Arming the guard</string>
+    <string name="guard_core_notif_arming_text">YABA locks the bike and waits for its confirmation.</string>
+    <string name="guard_core_notif_active_title">Guard on</string>
+    <string name="guard_core_notif_active_text">Since %1$s. The bike watches for movement itself, and YABA stays connected.</string>
+    <string name="guard_core_notif_active_text_phone">Since %1$s. YABA stays connected to the bike.</string>
+    <string name="guard_core_notif_searching">Connection interrupted. YABA is looking for the bike.</string>
+    <string name="guard_core_notif_disarming_title">Ending the guard</string>
+    <string name="guard_core_notif_alarm_title">Alarm at the bike</string>
+    <string name="guard_core_notif_alarm_title_at">Alarm at the bike at %1$s</string>
+    <string name="guard_core_notif_lost_title">Connection to the bike lost</string>
+    <string name="guard_core_notif_lost_watch">Connection to the bike lost. The bike’s motion watch keeps running.</string>
+    <string name="guard_core_notif_lost">Connection to the bike lost. YABA reconnects as soon as the bike is in reach.</string>
+    <string name="guard_core_notif_restart_title">Guard interrupted</string>
+    <string name="guard_core_notif_restart_text">Android closed YABA in the background. Tap here to keep the guard running.</string>
+    <string name="guard_core_action_end">End guard</string>
+    <string name="guard_core_action_silence">Siren off</string>
+
+    <!-- What counted as movement -->
+    <string name="guard_core_trigger_wheel">The bike reports a turning wheel.</string>
+    <string name="guard_core_trigger_bike_alarm">The bike raised its own alarm.</string>
+    <string name="guard_core_trigger_status">The bike reports the alarm state.</string>
+    <string name="guard_core_trigger_unlock_request">The bike sent an unlock request. This happens when a button is pressed or the bike is moved.</string>
+    <string name="guard_core_trigger_button">A button on the bike was pressed.</string>
+    <string name="guard_core_trigger_battery">The bike no longer reports an inserted battery.</string>
+    <string name="guard_core_trigger_lock_opened">The bike reports itself unlocked, and YABA did not unlock it.</string>
+    <string name="guard_core_trigger_pin">A code is being entered at the bike.</string>
+    <string name="guard_core_trigger_offline">The bike raised the alarm while your phone was not connected.</string>
+
+    <!-- What happened with the siren -->
+    <string name="guard_core_siren_yaba">YABA turned on the siren (round %1$d of %2$d).</string>
+    <string name="guard_core_siren_bike">The bike’s siren is sounding.</string>
+    <string name="guard_core_siren_running">The siren is still sounding.</string>
+    <string name="guard_core_siren_off_setting">The siren stays off because “Siren right away” is turned off.</string>
+    <string name="guard_core_siren_snoozed">After “Siren off” the siren stays off for two minutes.</string>
+    <string name="guard_core_siren_cap">The siren has already sounded %1$d times. YABA turns it on again only after ten quiet minutes.</string>
+
+    <!-- Event log and journal -->
+    <string name="guard_core_cmd">Guard</string>
+    <string name="guard_core_log_arming">Guard: arming (alarm mode %1$s, lock %2$s, alarm state %3$s)</string>
+    <string name="guard_core_log_armed_native">Guard armed: the bike reports alarm state 2 after %1$s seconds, without a direct write.</string>
+    <string name="guard_core_log_armed_direct">Guard armed: alarm state 2 only after writing 5523 = 2.</string>
+    <string name="guard_core_log_armed_unconfirmed">Guard armed without confirmation: alarm state %1$s.</string>
+    <string name="guard_core_log_arm_failed">Guard not armed: %1$s</string>
+    <string name="guard_core_log_value">Guard: %1$s (%2$s) = %3$s, before %4$s, %5$s</string>
+    <string name="guard_core_log_pushed">reported by the bike</string>
+    <string name="guard_core_log_read">read</string>
+    <string name="guard_core_log_value_cap">Guard: further value changes this hour not logged</string>
+    <string name="guard_core_log_ignored">Guard, not counted while arming: %1$s</string>
+    <string name="guard_core_log_siren">Guard: siren written (5523 = 3), answer %1$s</string>
+    <string name="guard_core_log_rearmed">Guard restored: alarm state %1$s, lock %2$s</string>
+    <string name="guard_core_log_silence">Guard: siren off</string>
+    <string name="guard_core_log_disarmed">Guard ended: alarm state %1$s, lock %2$s</string>
+    <string name="guard_core_log_disarmed_offline">Guard ended without a connection to the bike</string>
+    <string name="guard_core_log_lost">Guard: connection lost</string>
+    <string name="guard_core_log_back">Guard: connected again, alarm state %1$s, lock %2$s</string>
+    <string name="guard_core_log_budget">Guard: limit for automatic commands reached, notifications only for now</string>
+    <string name="guard_core_log_restored">Guard resumed after YABA restarted</string>
+    <string name="guard_core_log_sequence_failed">Guard: %1$s failed: %2$s</string>
+    <string name="guard_core_log_bike_gone">Guard ended: the bike is no longer saved in YABA</string>
+
+    <!-- Errors -->
+    <string name="guard_core_error_active">The guard is on. End the guard first.</string>
+    <string name="guard_core_error_not_s3">The guard exists only for the S3 and the X3.</string>
+    <string name="guard_core_siren_budget">The siren stays off because YABA has already sent many commands to the bike in the last ten minutes.</string>
+    <string name="guard_core_notif_not_locked_title">Bike not locked</string>
+    <string name="guard_core_notif_not_locked">YABA could not lock the bike again (lock reports %1$s). Open YABA and tap “Try again”.</string>
+    <string name="guard_core_notif_not_locked_unknown">YABA has no confirmation that the bike is locked again. Open YABA and tap “Try again”.</string>
+    <string name="guard_core_log_relocked">Guard: lock written again (5521\u00A0=\u00A01), lock reports %1$s</string>
+    <string name="guard_core_log_not_locked">Guard: the bike stays unlocked (lock %1$s). YABA does not try again by itself.</string>
+    <string name="guard_core_log_held">Guard: the bike was unlocked when the connection came back. YABA locks it again only after “Try again”.</string>
+    <string name="guard_core_log_watch_seen">Guard: the bike now reports alarm state 2, its motion watch is on.</string>
+    <string name="guard_core_log_watch_left">Guard: the bike reports alarm state %1$s, its motion watch is off.</string>
+    <string name="guard_core_log_cancelled">Guard: %1$s dropped before anything reached the bike</string>
+    <string name="guard_core_log_disarmed_unconfirmed">Guard ended without an answer from the bike</string>
+    <string name="guard_core_step_arm">arming</string>
+    <string name="guard_core_step_verify">check after reconnecting</string>
+    <string name="guard_core_step_siren">siren</string>
+    <string name="guard_core_step_rearm">restoring</string>
+    <string name="guard_core_step_relock">locking again</string>
+    <string name="guard_core_step_disarm">ending</string>
+    <string name="guard_core_step_internal">internal step</string>
+</resources>

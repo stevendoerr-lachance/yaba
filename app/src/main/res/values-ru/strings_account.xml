@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Аккаунт: приветствие, гараж и общие формы из AccountBits.kt. -->
+<resources>
+    <!-- Общие формы -->
+    <string name="account_disclosure_expanded">Развёрнуто</string>
+    <string name="account_disclosure_collapsed">Свёрнуто</string>
+    <string name="account_field_email">Эл. почта</string>
+    <string name="account_field_password">Пароль</string>
+    <string name="account_password_show">Показать</string>
+    <string name="account_password_hide">Скрыть</string>
+    <string name="account_password_show_description">Показать пароль</string>
+    <string name="account_password_hide_description">Скрыть пароль</string>
+    <string name="account_login_submit">Войти и получить ключ</string>
+    <string name="account_login_running">Вход…</string>
+    <string name="account_login_privacy">YABA не сохраняет твой пароль. Сохраняются только ключ твоего велосипеда и токен входа.</string>
+    <string name="account_default_bike_name">Мой S3</string>
+    <string name="account_default_bike_name_s2">Мой S2</string>
+    <string name="account_field_name">Название</string>
+    <string name="account_field_mac">MAC-адрес</string>
+    <string name="account_mac_hint">Введи MAC-адрес из Bluetooth-имени велосипеда (например, ES3-A1B2C3D4E5F6, можно и имя целиком) и ключ из 32 символов из файла ключа mooovy или YABA.</string>
+    <string name="account_mac_hint_s2">Введи MAC-адрес и ключ из 32 символов из файла ключа mooovy или YABA. Bluetooth-имя S2 содержит только последние 6 знаков MAC-адреса.</string>
+    <string name="account_field_key">Ключ</string>
+    <string name="account_key_complete">Ключ введён полностью.</string>
+    <plurals name="account_key_remaining">
+        <item quantity="one">32 шестнадцатеричных символа, не хватает ещё %1$d символа.</item>
+        <item quantity="few">32 шестнадцатеричных символа, не хватает ещё %1$d символов.</item>
+        <item quantity="many">32 шестнадцатеричных символа, не хватает ещё %1$d символов.</item>
+        <item quantity="other">32 шестнадцатеричных символа, не хватает ещё %1$d символа.</item>
+    </plurals>
+    <string name="account_field_user_key_id">Номер ключа пользователя</string>
+    <string name="account_user_key_id_hint">Обычно 1. Номер указан рядом с ключом в экспорте аккаунта (0–255).</string>
+    <string name="account_manual_add">Добавить велосипед</string>
+    <string name="account_import_title">Импортировать файл ключа</string>
+    <string name="account_import_field">Текст файла ключа</string>
+    <string name="account_import_submit">Импортировать</string>
+    <string name="account_import_pick_file">Выбрать файл</string>
+    <string name="account_import_hint">Выбери файл ключа .json, сохранённый из mooovy или из YABA на другом телефоне.</string>
+    <string name="account_import_file_too_large">Файл слишком велик для файла ключей. Выбери, пожалуйста, экспорт YABA или файл ключей mooovy.</string>
+    <string name="account_import_file_unreadable">Файл пуст или не читается. Выбери, пожалуйста, другой файл или вставь текст.</string>
+
+    <!-- Приветствие -->
+    <string name="account_welcome_slogan">Едет дальше. Что бы ни случилось.</string>
+    <string name="account_welcome_slogan_1">Едет дальше.</string>
+    <string name="account_welcome_slogan_2">Что бы ни случилось.</string>
+    <string name="account_welcome_intro">YABA управляет твоим VanMoof S3, X3, S2 или X2 напрямую по Bluetooth. После единственного входа разблокировка, свет и звонок работают без сервера VanMoof.</string>
+    <string name="account_welcome_disclaimer">Yet Another Bike App. Не аффилировано с VanMoof.</string>
+    <string name="account_welcome_hero_description">YABA</string>
+    <string name="account_welcome_login_title">Вход через аккаунт VanMoof</string>
+    <string name="account_welcome_login_button">Войти через аккаунт VanMoof</string>
+    <string name="account_welcome_import_button">Импортировать файл ключа</string>
+    <string name="account_welcome_login_text">При входе YABA получает ключ твоего велосипеда с сервера VanMoof. YABA не сохраняет твой пароль.</string>
+    <string name="account_welcome_login_caption">На этом телефоне сохраняются только этот ключ и токен входа, оба в зашифрованном виде.</string>
+    <string name="account_welcome_login_fallback">Если сервер не отвечает, импортируй вместо этого файл ключа.</string>
+
+    <!-- Гараж -->
+    <string name="account_garage_title">Гараж</string>
+    <string name="account_garage_done">Закрыть</string>
+    <string name="account_garage_empty">Сохранённых велосипедов пока нет. Войди в аккаунт или добавь велосипед вручную ниже.</string>
+    <string name="account_garage_backup_title">Резервная копия ключей</string>
+    <string name="account_garage_backup_hint">Файл ключей разблокирует твой велосипед. Тот, у кого он есть, получает доступ к твоему велосипеду. Храни его, пожалуйста, в надёжном месте.</string>
+    <string name="account_garage_export">Экспортировать ключи</string>
+    <string name="account_garage_export_subject">Файл ключей</string>
+    <string name="account_garage_export_chooser">Резервная копия ключей</string>
+    <string name="account_garage_copy">Копировать в буфер обмена</string>
+    <string name="account_garage_copied">Ключи скопированы в буфер обмена. Вставь их, пожалуйста, в приложение для паролей или заметок.</string>
+    <string name="account_garage_account_title">Аккаунт</string>
+    <string name="account_garage_signed_in_as">Вход выполнен как %1$s</string>
+    <string name="account_garage_refresh">Обновить список</string>
+    <string name="account_garage_refreshing">Загрузка…</string>
+    <string name="account_garage_logout">Выйти</string>
+    <string name="account_garage_login_hint">Войди в аккаунт, чтобы загрузить свои велосипеды. Ключи остаются на этом телефоне.</string>
+    <string name="account_garage_add_manual">Добавить велосипед вручную</string>
+    <string name="account_garage_source_account">из твоего аккаунта</string>
+    <string name="account_garage_source_manual">добавлен вручную</string>
+    <string name="account_garage_connected">Подключено</string>
+    <string name="account_garage_connect">Подключить</string>
+    <string name="account_garage_connect_description">Подключить %1$s</string>
+    <string name="account_garage_rename">Переименовать</string>
+    <string name="account_garage_rename_description">Переименовать %1$s</string>
+    <string name="account_garage_rename_title">Переименовать велосипед</string>
+    <string name="account_garage_save">Сохранить</string>
+    <string name="account_garage_cancel">Отмена</string>
+    <string name="account_garage_delete">Удалить</string>
+    <string name="account_garage_delete_title">Удалить %1$s</string>
+    <string name="account_garage_delete_body">Ключ будет удалён с этого телефона. Без входа в аккаунт или резервной копии доступа к велосипеду больше не будет.</string>
+    <string name="account_import_paste_hint">Вставь текст файла ключа .json, сохранённого из mooovy или из YABA на другом телефоне.</string>
+    <string name="account_import_paste_button">Вместо этого вставить текст</string>
+    <string name="account_key_show_description">Показать ключ</string>
+    <string name="account_key_hide_description">Скрыть ключ</string>
+    <string name="account_garage_edit">Изменить</string>
+    <string name="account_garage_edit_description">Изменить %1$s</string>
+    <string name="account_garage_backup_first">Сначала сохранить копию</string>
+</resources>

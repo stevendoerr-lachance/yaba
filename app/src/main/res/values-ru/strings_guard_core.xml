@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="guard_core_channel_alarm_name">Охрана</string>
+    <string name="guard_core_channel_alarm_desc">Сообщает о движении велосипеда и о потере связи, пока охрана включена.</string>
+    <string name="guard_core_channel_status_name">Охрана работает</string>
+    <string name="guard_core_channel_status_desc">Показывает, что охрана включена, пока YABA остаётся на связи с велосипедом.</string>
+    <string name="guard_core_notif_arming_title">Охрана включается</string>
+    <string name="guard_core_notif_arming_text">YABA блокирует велосипед и ждёт его подтверждения.</string>
+    <string name="guard_core_notif_active_title">Охрана включена</string>
+    <string name="guard_core_notif_active_text">С %1$s. Велосипед сам следит за движением, YABA остаётся на связи.</string>
+    <string name="guard_core_notif_active_text_phone">С %1$s. YABA остаётся на связи с велосипедом.</string>
+    <string name="guard_core_notif_searching">Связь прервана. YABA ищет велосипед.</string>
+    <string name="guard_core_notif_disarming_title">Охрана снимается</string>
+    <string name="guard_core_notif_alarm_title">Тревога на велосипеде</string>
+    <string name="guard_core_notif_alarm_title_at">Тревога на велосипеде в %1$s</string>
+    <string name="guard_core_notif_lost_title">Связь с велосипедом потеряна</string>
+    <string name="guard_core_notif_lost_watch">Связь с велосипедом потеряна. Наблюдение за движением на велосипеде продолжается.</string>
+    <string name="guard_core_notif_lost">Связь с велосипедом потеряна. YABA подключится заново, как только велосипед будет в зоне досягаемости.</string>
+    <string name="guard_core_notif_restart_title">Охрана прервана</string>
+    <string name="guard_core_notif_restart_text">Android закрыл YABA в фоне. Нажми здесь, чтобы охрана продолжала работать.</string>
+    <string name="guard_core_action_end">Снять с охраны</string>
+    <string name="guard_core_action_silence">Выключить сирену</string>
+    <string name="guard_core_trigger_wheel">Велосипед сообщает о вращении колеса.</string>
+    <string name="guard_core_trigger_bike_alarm">Велосипед сам включил свою тревогу.</string>
+    <string name="guard_core_trigger_status">Велосипед сообщает о состоянии тревоги.</string>
+    <string name="guard_core_trigger_unlock_request">Велосипед отправил запрос на разблокировку. Так бывает при нажатии кнопки или при движении велосипеда.</string>
+    <string name="guard_core_trigger_button">На велосипеде нажата кнопка.</string>
+    <string name="guard_core_trigger_battery">Велосипед больше не сообщает о вставленной батарее.</string>
+    <string name="guard_core_trigger_lock_opened">Велосипед сообщает, что разблокирован, хотя YABA его не разблокировала.</string>
+    <string name="guard_core_trigger_pin">На велосипеде вводится код.</string>
+    <string name="guard_core_trigger_offline">Велосипед включил тревогу, пока твой телефон не был подключён.</string>
+    <string name="guard_core_siren_yaba">YABA включила сирену (раунд %1$d из %2$d).</string>
+    <string name="guard_core_siren_bike">Звучит сирена велосипеда.</string>
+    <string name="guard_core_siren_running">Сирена ещё звучит.</string>
+    <string name="guard_core_siren_off_setting">Сирена остаётся выключенной, потому что «Сирена сразу» выключена.</string>
+    <string name="guard_core_siren_snoozed">После «Выключить сирену» сирена остаётся выключенной две минуты.</string>
+    <string name="guard_core_siren_cap">Включений сирены уже: %1$d. YABA включит её снова только после десяти спокойных минут.</string>
+    <string name="guard_core_cmd">Охрана</string>
+    <string name="guard_core_log_arming">Охрана: включение (режим сигнализации %1$s, замок %2$s, состояние тревоги %3$s)</string>
+    <string name="guard_core_log_armed_native">Охрана включена: велосипед сообщает состояние тревоги 2 через %1$s\u00A0с, без прямой записи.</string>
+    <string name="guard_core_log_armed_direct">Охрана включена: состояние тревоги 2 только после записи 5523\u00A0=\u00A02.</string>
+    <string name="guard_core_log_armed_unconfirmed">Охрана включена без подтверждения: состояние тревоги %1$s.</string>
+    <string name="guard_core_log_arm_failed">Охрана не включена: %1$s</string>
+    <string name="guard_core_log_value">Охрана: %1$s (%2$s) = %3$s, раньше %4$s, %5$s</string>
+    <string name="guard_core_log_pushed">сообщено велосипедом</string>
+    <string name="guard_core_log_read">прочитано</string>
+    <string name="guard_core_log_value_cap">Охрана: дальнейшие изменения значений в этот час не записаны</string>
+    <string name="guard_core_log_ignored">Охрана, не учтено при включении: %1$s</string>
+    <string name="guard_core_log_siren">Охрана: сирена записана (5523\u00A0=\u00A03), ответ %1$s</string>
+    <string name="guard_core_log_rearmed">Охрана восстановлена: состояние тревоги %1$s, замок %2$s</string>
+    <string name="guard_core_log_silence">Охрана: сирена выключена</string>
+    <string name="guard_core_log_disarmed">Охрана снята: состояние тревоги %1$s, замок %2$s</string>
+    <string name="guard_core_log_disarmed_offline">Охрана снята без связи с велосипедом</string>
+    <string name="guard_core_log_lost">Охрана: связь потеряна</string>
+    <string name="guard_core_log_back">Охрана: связь восстановлена, состояние тревоги %1$s, замок %2$s</string>
+    <string name="guard_core_log_budget">Охрана: достигнут предел автоматических команд, пока только уведомления</string>
+    <string name="guard_core_log_restored">Охрана продолжена после перезапуска YABA</string>
+    <string name="guard_core_log_sequence_failed">Охрана: %1$s не удалось: %2$s</string>
+    <string name="guard_core_log_bike_gone">Охрана снята: велосипед больше не сохранён в YABA</string>
+    <string name="guard_core_error_active">Охрана включена. Сначала сними охрану.</string>
+    <string name="guard_core_error_not_s3">Охрана есть только для S3 и X3.</string>
+    <string name="guard_core_siren_budget">Сирена остаётся выключенной, потому что за последние десять минут YABA уже отправила велосипеду много команд.</string>
+    <string name="guard_core_notif_not_locked_title">Велосипед не заблокирован</string>
+    <string name="guard_core_notif_not_locked">YABA не смогла снова заблокировать велосипед (замок сообщает %1$s). Открой YABA и нажми «Повторить».</string>
+    <string name="guard_core_notif_not_locked_unknown">У YABA нет подтверждения, что велосипед снова заблокирован. Открой YABA и нажми «Повторить».</string>
+    <string name="guard_core_log_relocked">Охрана: замок записан снова (5521\u00A0=\u00A01), замок сообщает %1$s</string>
+    <string name="guard_core_log_not_locked">Охрана: велосипед остаётся разблокированным (замок %1$s). YABA больше не пробует сама.</string>
+    <string name="guard_core_log_held">Охрана: когда связь вернулась, велосипед был разблокирован. YABA заблокирует его снова только после «Повторить».</string>
+    <string name="guard_core_log_watch_seen">Охрана: велосипед теперь сообщает состояние тревоги 2, его наблюдение за движением работает.</string>
+    <string name="guard_core_log_watch_left">Охрана: велосипед сообщает состояние тревоги %1$s, его наблюдение за движением больше не работает.</string>
+    <string name="guard_core_log_cancelled">Охрана: «%1$s» отменено, прежде чем что-либо дошло до велосипеда</string>
+    <string name="guard_core_log_disarmed_unconfirmed">Охрана снята без ответа велосипеда</string>
+    <string name="guard_core_step_arm">включение</string>
+    <string name="guard_core_step_verify">проверка после подключения</string>
+    <string name="guard_core_step_siren">сирена</string>
+    <string name="guard_core_step_rearm">восстановление</string>
+    <string name="guard_core_step_relock">повторная блокировка</string>
+    <string name="guard_core_step_disarm">снятие</string>
+    <string name="guard_core_step_internal">внутренний шаг</string>
+</resources>

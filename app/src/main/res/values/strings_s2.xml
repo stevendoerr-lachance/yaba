@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VanMoof S2/X2 error codes (ble/S2Protocol.kt S2Faults); not the S3 fault table. -->
+    <string name="core_fault_s2_0_name">No error</string>
+    <string name="core_fault_s2_0_hint">The bike reports no fault.</string>
+    <string name="core_fault_s2_1_name">Motor stalled</string>
+    <string name="core_fault_s2_1_hint">The motor could not turn. Make sure nothing blocks the wheels, then switch the bike off and on.</string>
+    <string name="core_fault_s2_2_name">Overvoltage</string>
+    <string name="core_fault_s2_2_hint">Battery voltage too high. Unplug the charger and restart the bike.</string>
+    <string name="core_fault_s2_3_name">Undervoltage</string>
+    <string name="core_fault_s2_3_hint">Battery voltage too low. Charge the battery.</string>
+    <string name="core_fault_s2_motor_fast_alt_name">Motor too fast (unconfirmed)</string>
+    <string name="core_fault_s2_motor_fast_alt_hint">The sources disagree on this code; one reads it as motor too fast. Note when it appears.</string>
+    <string name="core_fault_s2_motor_fast_name">Motor too fast</string>
+    <string name="core_fault_s2_motor_fast_hint">The motor turned faster than allowed, for example downhill. Usually clears on its own.</string>
+    <string name="core_fault_s2_6_name">Overcurrent</string>
+    <string name="core_fault_s2_6_hint">The motor drew too much current. Restart the bike; if it comes back, have the motor checked.</string>
+    <string name="core_fault_s2_7_name">Torque sensor abnormal</string>
+    <string name="core_fault_s2_7_hint">The pedal sensor reports implausible values. Restart the bike with no weight on the pedals.</string>
+    <string name="core_fault_s2_8_name">Torque sensor abnormal at start-up</string>
+    <string name="core_fault_s2_8_hint">The pedal sensor gave odd values when the bike switched on. Restart it with no weight on the pedals.</string>
+    <string name="core_fault_s2_9_name">Overtemperature</string>
+    <string name="core_fault_s2_9_hint">Let the bike cool down.</string>
+    <string name="core_fault_s2_16_name">Hall sensor mismatch</string>
+    <string name="core_fault_s2_16_hint">The motor’s position sensors do not agree. Check the motor/sensor cable at the head tube.</string>
+    <string name="core_fault_s2_25_name">I²C bus error</string>
+    <string name="core_fault_s2_25_hint">Internal communication fault in the module. Restart the bike.</string>
+    <string name="core_fault_s2_26_name">GSM modem not responding</string>
+    <string name="core_fault_s2_26_hint">The mobile modem does not answer, so tracking may not work. Restart the bike.</string>
+    <string name="core_fault_s2_27_name">Motor controller not responding</string>
+    <string name="core_fault_s2_27_hint">The motor controller does not answer. Restart the bike; if it stays, check the controller cable.</string>
+    <string name="core_fault_s2_28_name">GSM registration failed</string>
+    <string name="core_fault_s2_28_hint">The modem could not log on to the mobile network, so tracking may not work.</string>
+    <string name="core_fault_s2_29_name">No battery output</string>
+    <string name="core_fault_s2_29_hint">The battery delivers no power. Charge it and check the battery connector.</string>
+
+    <!-- S2 and Device Information characteristic names (error texts, GATT overview); a command this bike family lacks. -->
+    <string name="core_char_s2_functions">Commands (S2)</string>
+    <string name="core_char_s2_parameters">Status block (S2)</string>
+    <string name="core_char_s2_key_change">Key change (S2)</string>
+    <string name="core_char_device_model">Model number</string>
+    <string name="core_char_device_serial">Serial number</string>
+    <string name="core_char_device_firmware">Firmware revision</string>
+    <string name="core_char_device_hardware">Hardware revision</string>
+    <string name="core_char_device_software">Software revision</string>
+    <string name="core_error_not_on_this_bike">This bike model does not support that.</string>
+
+    <!-- S2 driver (ble/S2Driver.kt) and the driver choice (BikeController.chooseDriver). -->
+    <string name="core_status_standby">Standby</string>
+    <string name="core_alarm_stage_automatic">Automatic</string>
+    <string name="core_cmd_alarm_stage">Alarm: %1$s</string>
+    <string name="core_cmd_s2_mute">Muted sounds changed</string>
+    <string name="core_error_not_s2">No S2 status service found. This is not an S2 or X2, or the Bluetooth cache is corrupted.</string>
+    <string name="core_error_older_vanmoof">An older VanMoof answered (S/X 1, S/X 2 or SmartBike). If it is an S2 or X2, set that model for this bike in the garage.</string>
+    <string name="core_error_legacy_unsupported">YABA does not support this VanMoof model (SmartBike or Electrified S/X 1).</string>
+    <string name="core_error_s2_test_mode">Only in S2 test mode: not yet confirmed on a real S2.</string>
+    <string name="core_error_s2_frame">The bike sent no valid status block.</string>
+    <string name="core_error_s2_level_unknown">The assist level is not known yet, and the S2 sets region and level together. Try again in a moment.</string>
+    <string name="core_error_s2_region_unknown">The region is not known yet, and the S2 sets region and level together. Try again in a moment.</string>
+    <string name="core_log_s2_driver">S2/X2 driver (experimental, not yet tested on a real S2)</string>
+    <string name="core_log_s3_despite_profile">The account says %1$s, but the bike has S3 services: using the S3 driver.</string>
+    <string name="core_log_s2_frame">S2 frame %1$s</string>
+    <string name="core_detail_s2_frame_changed">Changed bytes: %1$s</string>
+    <string name="core_error_s2_offroad_level">The bike reports the off-road region (37 km/h). The S2 sets region and level together, so changing the level here needs S2 test mode.</string>
+    <string name="core_error_s2_pair_mismatch">The S2 sets region and level together, and it now reports %3$s km/h at level %4$s instead of %1$d km/h at level %2$d. Check both settings.</string>
+    <string name="core_log_s2_implausible">S2 status block implausible (battery %1$d%%, module %2$d%%, speed %3$d): is the bike’s key right?</string>
+    <string name="core_detail_s2_frame_implausible">Changed bytes: %1$s. Implausible values: is the key right?</string>
+</resources>

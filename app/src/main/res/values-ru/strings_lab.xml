@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lab_char_cadence">Каденс</string>
+    <string name="lab_char_torque">Усилие на педалях</string>
+
+    <string name="lab_sound_update_failed">Обновление не удалось</string>
+    <string name="lab_sound_update_ok">Обновление выполнено</string>
+    <string name="lab_sound_find_loud">Громкий сигнал поиска</string>
+
+    <string name="lab_clip_lock">Блокировка</string>
+    <string name="lab_clip_unlock">Разблокировка</string>
+    <string name="lab_clip_startup">Включение</string>
+    <string name="lab_clip_shutdown">Выключение</string>
+    <string name="lab_clip_charging">Зарядка</string>
+
+    <string name="lab_error_clock_readback">Обратное чтение часов неправдоподобно. Часы не установлены.</string>
+    <string name="lab_error_backup_first">Скачай и сохрани журнал велосипеда перед самотестом.</string>
+    <string name="lab_error_not_parked">Только на месте и вне режима езды; это отключает помощь мотора.</string>
+    <string name="lab_error_clip">Передача не удалась.</string>
+    <string name="lab_error_generic">Команда не выполнена.</string>
+
+    <string name="lab_log_siren">Сирена, уровень\u00A0%d</string>
+    <string name="lab_log_clip">Звук заменён: %s</string>
+
+</resources>

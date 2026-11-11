@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Экран «Звук», свой звук звонка, звуковая панель, общий доступ и общие звуковые компоненты. -->
+<resources>
+    <!-- SoundScreen -->
+    <string name="sound_title">Звук</string>
+    <string name="sound_connect_needed">Подключи велосипед, чтобы воспроизводить звуки.</string>
+
+    <!-- Звук звонка -->
+    <string name="sound_bell_title">Звук звонка</string>
+    <string name="sound_bell_hint">Звук, который играет кнопка звонка.</string>
+    <string name="sound_listen">Прослушать</string>
+    <string name="sound_bell_switching">Переключение на «%1$s»…</string>
+    <string name="sound_bell_unknown">Велосипед ещё не сообщил звук своего звонка.</string>
+    <string name="sound_bell_plays">Велосипед играет «%1$s».</string>
+    <string name="sound_tone_custom">Свой звук</string>
+    <string name="sound_tone_custom_option">Или свой звук</string>
+    <string name="sound_tile_busy">Переключение</string>
+
+    <!-- Свой звук звонка -->
+    <plurals name="sound_custom_intro">
+        <item quantity="one">Звук заменяет «Туманный горн» и может длиться до %1$d\u00A0секунды. Отправка занимает около минуты.</item>
+        <item quantity="few">Звук заменяет «Туманный горн» и может длиться до %1$d\u00A0секунд. Отправка занимает около минуты.</item>
+        <item quantity="many">Звук заменяет «Туманный горн» и может длиться до %1$d\u00A0секунд. Отправка занимает около минуты.</item>
+        <item quantity="other">Звук заменяет «Туманный горн» и может длиться до %1$d\u00A0секунды. Отправка занимает около минуты.</item>
+    </plurals>
+    <string name="sound_custom_sending_named">Отправка: %1$s</string>
+    <string name="sound_custom_keep_close" formatted="false">Пожалуйста, держи телефон рядом с велосипедом, пока передача не достигнет 100\u00A0%.</string>
+    <string name="sound_custom_pick">Выбрать свой файл</string>
+    <string name="sound_custom_converting">Конвертация…</string>
+    <string name="sound_custom_done">Звук звонка передан. Теперь велосипед играет его сам, даже когда YABA не запущена. Пожалуйста, нажми кнопку звонка на руле, чтобы проверить.</string>
+    <string name="sound_custom_sound_name">Свой звук</string>
+    <string name="sound_custom_waveform">Форма волны: %1$s</string>
+    <string name="sound_custom_trimmed">Обрезано до %1$d\u00A0с</string>
+    <string name="sound_fact_length">Длительность</string>
+    <string name="sound_fact_sample_rate">Частота дискретизации</string>
+    <string name="sound_fact_size">Размер</string>
+    <string name="sound_value_seconds">%1$s\u00A0с</string>
+    <string name="sound_value_khz">%1$s\u00A0кГц</string>
+    <string name="sound_value_kb">%1$d\u00A0КБ</string>
+    <string name="sound_custom_send">Отправить на велосипед</string>
+    <string name="sound_custom_connect_first">Пожалуйста, сначала подключись к велосипеду.</string>
+    <string name="sound_custom_other_file">Выбрать другой файл</string>
+    <string name="sound_audio_file">Аудиофайл</string>
+
+    <!-- Звуковая панель -->
+    <string name="sound_board_title">Все звуки велосипеда</string>
+    <string name="sound_board_quiet">Во время передачи велосипед молчит.</string>
+    <string name="sound_board_hint">Нажатие воспроизводит звук на велосипеде.</string>
+    <string name="sound_board_alarm_warning">Очень громко. Пожалуйста, не проверяй этот звук рядом с другими людьми.</string>
+
+    <!-- Индикатор передачи (TalkBack + число) -->
+    <string name="sound_upload_done_state">Передача завершена</string>
+    <string name="sound_upload_progress_state">Передано %1$d\u00A0%%</string>
+    <string name="sound_upload_percent">%1$d\u00A0%%</string>
+
+    <!-- Подсказка о подключении -->
+    <string name="sound_connect_ble_denied">Bluetooth не разрешён</string>
+    <string name="sound_connect_ble_off">Bluetooth выключен</string>
+    <string name="sound_connect_searching">Поиск велосипеда…</string>
+    <string name="sound_connect_connecting">Подключение…</string>
+    <string name="sound_connect_authenticating">Авторизация на велосипеде…</string>
+    <string name="sound_connect_lost">Подключение прервано</string>
+    <string name="sound_connect_offline">Не подключено</string>
+    <string name="sound_connect_allow">Разрешить Bluetooth</string>
+    <string name="sound_connect_enable">Включить Bluetooth</string>
+    <string name="sound_connect_connect">Подключить</string>
+    <string name="sound_open_garage">Открыть гараж</string>
+
+    <!-- Общий доступ -->
+    <string name="sound_share_title">Общий доступ</string>
+    <string name="sound_share_gate_login">Предоставление доступа работает через твой аккаунт VanMoof. Пожалуйста, войди в аккаунт в гараже.</string>
+    <string name="sound_share_gate_pick">Выбери в гараже велосипед из своего аккаунта, и тогда сможешь предоставить к нему доступ.</string>
+    <string name="sound_share_gate_manual">Этот велосипед добавлен не из твоего аккаунта VanMoof. Доступ можно предоставить только к велосипедам из аккаунта.</string>
+    <string name="sound_share_shared_with">Доступ открыт для %1$s.</string>
+    <string name="sound_share_ended_for">Доступ для %1$s закрыт.</string>
+    <string name="sound_share_ended">Доступ закрыт.</string>
+    <string name="sound_share_bad_email">Это недействительный адрес электронной почты.</string>
+    <string name="sound_share_intro">Дай человеку доступ к своему велосипеду, на ограниченное время или без ограничений.</string>
+    <string name="sound_share_email_label">Адрес эл. почты</string>
+    <string name="sound_share_open_ended">Действует, пока ты не завершишь доступ.</string>
+    <string name="sound_share_sharing">Открытие доступа…</string>
+    <string name="sound_share_submit">Открыть доступ</string>
+    <string name="sound_share_end_title">Закрыть доступ?</string>
+    <string name="sound_share_end_text">%1$s потеряет доступ к твоему велосипеду.</string>
+    <string name="sound_share_someone">Этот человек</string>
+    <string name="sound_share_end">Закрыть</string>
+    <string name="sound_share_end_for">Закрыть доступ для %1$s</string>
+    <string name="sound_share_cancel">Отмена</string>
+    <string name="sound_share_list_title">Кому открыт доступ</string>
+    <string name="sound_share_loading">Загрузка списка доступа…</string>
+    <string name="sound_share_none">Пока доступ к твоему велосипеду никому не предоставлен. Дать доступ можно любому, у кого есть аккаунт VanMoof: введи адрес электронной почты и выбери срок или «без ограничений». Любой доступ можно завершить в любой момент. Предоставление доступа идёт через сервер VanMoof и работает, пока он отвечает.</string>
+    <string name="sound_share_reload">Загрузить снова</string>
+    <string name="sound_share_no_email">Без эл. почты</string>
+    <string name="sound_share_until">До %1$s</string>
+    <string name="sound_share_expired">Истёк %1$s</string>
+    <string name="sound_share_unlimited_row">Бессрочно</string>
+    <string name="sound_share_for_row">Срок: %1$s</string>
+    <string name="sound_share_unlimited">Бессрочно</string>
+    <string name="sound_share_for">Срок: %1$s</string>
+    <plurals name="sound_share_minutes">
+        <item quantity="one">%1$d\u00A0минута</item>
+        <item quantity="few">%1$d\u00A0минуты</item>
+        <item quantity="many">%1$d\u00A0минут</item>
+        <item quantity="other">%1$d\u00A0минуты</item>
+    </plurals>
+    <plurals name="sound_share_hours">
+        <item quantity="one">%1$d\u00A0час</item>
+        <item quantity="few">%1$d\u00A0часа</item>
+        <item quantity="many">%1$d\u00A0часов</item>
+        <item quantity="other">%1$d\u00A0часа</item>
+    </plurals>
+    <plurals name="sound_share_days">
+        <item quantity="one">%1$d\u00A0день</item>
+        <item quantity="few">%1$d\u00A0дня</item>
+        <item quantity="many">%1$d\u00A0дней</item>
+        <item quantity="other">%1$d\u00A0дня</item>
+    </plurals>
+    <plurals name="sound_share_weeks">
+        <item quantity="one">%1$d\u00A0неделя</item>
+        <item quantity="few">%1$d\u00A0недели</item>
+        <item quantity="many">%1$d\u00A0недель</item>
+        <item quantity="other">%1$d\u00A0недели</item>
+    </plurals>
+    <string name="sound_custom_row_none">Заменяет «%1$s»</string>
+    <string name="sound_tone_custom_record">Свой звук вместо «%1$s»</string>
+    <string name="sound_custom_failed_at">Передача прервалась на %1$d\u00A0%%. «%2$s» молчит, пока файл не придёт целиком.</string>
+    <string name="sound_custom_failed_before">Передача не началась. «%1$s» сохраняет прежний звук.</string>
+    <string name="sound_custom_resend">Отправить снова</string>
+    <string name="sound_send_standstill">Отправка начинается, когда велосипед стоит. Во время передачи YABA около минуты не считывает значения.</string>
+    <string name="sound_custom_wait_transfer">Отправка ждёт окончания текущей передачи.</string>
+    <string name="sound_custom_sending_percent">Отправка «%1$s», %2$d\u00A0%%</string>
+    <string name="sound_lab_title">Звуковая лаборатория</string>
+    <string name="sound_custom_replace_cd">Выбрать свой звук вместо «%1$s»</string>
+</resources>

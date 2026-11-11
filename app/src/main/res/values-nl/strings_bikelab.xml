@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bikelab_title">Bike-Lab</string>
+    <string name="bikelab_intro">Waarden die de firmware kent en geen app toont, plus de commando’s die alleen stilstaand werken.</string>
+    <string name="bikelab_needs_link">De fiets is niet verbonden. De waarden blijven leeg tot de verbinding er is.</string>
+
+    <string name="bikelab_live_title">Live-waarden</string>
+    <string name="bikelab_temp_motor">Motortemperatuur</string>
+    <string name="bikelab_temp_controller">Controllertemperatuur</string>
+    <string name="bikelab_temp_board">Printplaattemperatuur</string>
+    <string name="bikelab_temp_value">%1$d\u00A0°C</string>
+    <string name="bikelab_torque_calibrate">Nulpunt instellen</string>
+    <string name="bikelab_torque_calibrated">Trapkracht (gekalibreerd)</string>
+    <string name="bikelab_torque_hint">Stel het nulpunt in terwijl je niet trapt; de ruwe waarde heeft geen geijkte eenheid.</string>
+
+    <string name="bikelab_config_title">Configuratie</string>
+    <string name="bikelab_cycles">Laadcycli</string>
+    <string name="bikelab_powerbank_cycles">PowerBank-cycli</string>
+    <string name="bikelab_lux">Helderheid (ruw)</string>
+    <string name="bikelab_threshold">Inschakeldrempel</string>
+    <string name="bikelab_threshold_save">Drempel opslaan</string>
+    <string name="bikelab_threshold_hint">In de automodus gaat het licht aan zodra de helderheid onder de drempel zakt. De waarde staat in flash; hij wordt pas bij Opslaan geschreven.</string>
+    <string name="bikelab_working">…</string>
+
+    <string name="bikelab_clock">Klok van de fiets</string>
+    <string name="bikelab_clock_set">Klok instellen</string>
+    <string name="bikelab_clock_ok">klopt</string>
+    <string name="bikelab_clock_ahead">loopt %1$d\u00A0seconden voor</string>
+    <string name="bikelab_clock_behind">loopt %1$d\u00A0seconden achter</string>
+    <string name="bikelab_clock_unknown">onbekend</string>
+    <string name="bikelab_parked_only">Alleen stilstaand en buiten de rijmodus; anders schakelt dit de ondersteuning uit.</string>
+
+    <string name="bikelab_lamps_title">Lampkanalen</string>
+    <string name="bikelab_lamp_on">Kanaal\u00A0%1$d aan</string>
+    <string name="bikelab_lamp_off">Kanaal\u00A0%1$d uit</string>
+    <string name="bikelab_lamps_restore">Lampen herstellen</string>
+    <string name="bikelab_lamps_hint">Elk kanaal is alleen aan of uit. Een via de app uitgezette lamp blijft uit tot een echte toestandswissel of dit herstellen hem terugbrengt.</string>
+
+    <string name="bikelab_boost">Boost tijdens het rollen</string>
+    <string name="bikelab_boost_caption">Boost vasthouden wisselt de stand ook tijdens het rollen, niet alleen stilstaand.</string>
+
+    <string name="bikelab_actions_title">Stilstaand</string>
+    <string name="bikelab_sleep">Nu slapen</string>
+    <string name="bikelab_alarm_stop">Alarm stoppen</string>
+    <string name="bikelab_alarm_stop_note">Stopt een lopend alarm zonder back-upcode. Het commando wist ook de softwarevergrendeling; de fiets geldt daarna mogelijk als ontgrendeld.</string>
+    <string name="bikelab_selftest">Zelftest starten</string>
+    <string name="bikelab_selftest_hint">De fiets speelt de diagnosetoon, schrijft zijn toestand naar het logboek en gaat daarna in stand-by. Het logboek wordt eerst bewaard.</string>
+    <string name="bikelab_selftest_archiving">Bewaart het logboek …</string>
+    <string name="bikelab_selftest_dialog_title">Zelftest starten</string>
+    <string name="bikelab_selftest_dialog_text">De fiets bewaart eerst zijn logboek, doorloopt dan de diagnose en gaat in stand-by. Het rapport duwt de oudste logregels eruit; daarom wordt eerst bewaard.</string>
+    <string name="bikelab_selftest_dialog_confirm">Starten</string>
+    <string name="bikelab_cancel">Annuleren</string>
+
+    <string name="bikelab_exp_title">Experimenten</string>
+    <string name="bikelab_siren_title">Sirene</string>
+    <string name="bikelab_siren_stage">Niveau\u00A0%1$d</string>
+    <string name="bikelab_siren_stop">Alarm uit</string>
+    <string name="bikelab_siren_active">Sirene loopt (niveau\u00A0%1$d).</string>
+    <string name="bikelab_siren_dialog_title">Sirene niveau\u00A0%1$d activeren</string>
+    <string name="bikelab_siren_dialog_confirm">Activeren</string>
+</resources>

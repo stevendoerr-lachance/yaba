@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Core layers (ble, data, ride, audio, view model): Croatian. -->
+<resources>
+
+    <!-- GATT characteristics (diagnosis page, version list) -->
+    <string name="core_char_challenge">Izazov</string>
+    <string name="core_char_key_index">Broj ključa</string>
+    <string name="core_char_backup_code">Rezervni kod</string>
+    <string name="core_char_bike_message">Back office</string>
+    <string name="core_char_firmware_metadata">Metapodaci datoteke</string>
+    <string name="core_char_firmware_block">Blok datoteke</string>
+    <string name="core_char_oad_status">Status prijenosa</string>
+    <string name="core_char_lock_state">Brava</string>
+    <string name="core_char_unlock_request">Zahtjev za otključavanje</string>
+    <string name="core_char_alarm_state">Način alarma</string>
+    <string name="core_char_alarm_mode">Alarm uključen ili isključen</string>
+    <string name="core_char_distance">Kilometraža</string>
+    <string name="core_char_speed">Brzina</string>
+    <string name="core_char_unit_system">Jedinice</string>
+    <string name="core_char_power_level">Razina potpore</string>
+    <string name="core_char_speed_limit">Ograničenje brzine</string>
+    <string name="core_char_e_shifter_gear">Brzina mjenjača</string>
+    <string name="core_char_e_shift_points">Točke mijenjanja</string>
+    <string name="core_char_e_shifter_mode">Način mijenjanja</string>
+    <string name="core_char_motor_battery_level">Baterija</string>
+    <string name="core_char_motor_battery_state">Utikač punjača</string>
+    <string name="core_char_module_battery_level">Punjač i baterija modula</string>
+    <string name="core_char_module_battery_state">Status baterije modula</string>
+    <string name="core_char_environment">Temperatura i vlažnost</string>
+    <string name="core_char_motor_telemetry_a">Telemetrija motora A</string>
+    <string name="core_char_motor_telemetry_b">Telemetrija motora B</string>
+    <string name="core_char_motor_errors">Bitovi grešaka motora</string>
+    <string name="core_char_model">Model</string>
+    <string name="core_char_bike_firmware">Firmver bicikla</string>
+    <string name="core_char_ble_firmware">Bluetooth firmver</string>
+    <string name="core_char_controller_firmware">Upravljačka jedinica motora</string>
+    <string name="core_char_pcba_hardware">Tiskana pločica</string>
+    <string name="core_char_gsm_firmware">GSM modul</string>
+    <string name="core_char_e_shifter_firmware">E-mjenjač</string>
+    <string name="core_char_battery_firmware">Firmver baterije</string>
+    <string name="core_char_frame_number">Broj okvira</string>
+    <string name="core_char_module_mode">Radno stanje</string>
+    <string name="core_char_module_state">Pripravnost</string>
+    <string name="core_char_errors">Bitovi grešaka</string>
+    <string name="core_char_wheel_size">Vrsta kotača</string>
+    <string name="core_char_clock">Sat bicikla</string>
+    <string name="core_char_buttons">Tipke i Kick Lock</string>
+    <string name="core_char_supply_ok">Napajanje ≥\u00A020\u00A0V</string>
+    <string name="core_char_play_sound">Reprodukcija zvuka</string>
+    <string name="core_char_sound_groups">Grupe glasnoće</string>
+    <string name="core_char_bell_sound">Zvuk zvona</string>
+    <string name="core_char_light_mode">Svjetlo</string>
+    <string name="core_char_led_state">LED kanali</string>
+    <string name="core_char_light_sensor">Prag svjetla</string>
+    <string name="core_char_log_mode">Način dnevnika</string>
+    <string name="core_char_log_size">Veličina dnevnika</string>
+    <string name="core_char_log_block">Blok dnevnika</string>
+
+    <!-- Speed limit regions (under the road sign) -->
+    <string name="core_region_japan">Japan</string>
+    <string name="core_region_europe">Europa</string>
+    <string name="core_region_usa">SAD</string>
+    <string name="core_region_private">Terenski</string>
+
+    <!-- Lock / alarm phase (ALARM_STATE) -->
+    <string name="core_defence_unlocked">Otključan</string>
+    <string name="core_defence_locked">Zaključan</string>
+    <string name="core_defence_alarm_one">Alarm, razina\u00A01</string>
+    <string name="core_defence_alarm_two">Alarm, razina\u00A02</string>
+    <string name="core_defence_tracking">Praćenje</string>
+
+    <!-- Alarm switch (ALARM_MODE) -->
+    <string name="core_alarm_stage_disarmed">Isključen</string>
+    <string name="core_alarm_stage_armed">Uključen</string>
+
+    <!-- Charger state -->
+    <string name="core_charge_charging">Puni se</string>
+    <string name="core_charge_not_charging">Ne puni se</string>
+    <string name="core_charge_battery_missing">Baterija nije prepoznata</string>
+    <string name="core_log_battery_missing">Baterija nije prepoznata: bicikl više ne prepoznaje bateriju</string>
+    <string name="core_log_battery_back">Baterija ponovno prepoznata</string>
+
+    <!-- Light modes -->
+    <string name="core_light_auto">Auto</string>
+    <string name="core_light_on">Uključeno</string>
+    <string name="core_light_off">Isključeno</string>
+
+    <!-- Coarse bike status (MODULE_MODE) -->
+    <string name="core_status_ready">Spreman</string>
+    <string name="core_status_riding">Spreman za vožnju</string>
+    <string name="core_status_alarm">Alarm/praćenje</string>
+    <string name="core_status_updating">Ažuriranje u tijeku</string>
+    <string name="core_status_shipping">Transportni način</string>
+    <string name="core_status_sleeping">Spava</string>
+    <string name="core_status_other">Mijenja stanje</string>
+
+    <!-- Bell tones -->
+    <string name="core_bell_bell">Dvozvuk</string>
+    <string name="core_bell_sonar">Podmornica</string>
+    <string name="core_bell_party">Truba</string>
+    <string name="core_bell_foghorn">Brodska sirena</string>
+
+    <!-- Sound board groups -->
+    <string name="core_sound_group_horn">Zvona i trube</string>
+    <string name="core_sound_group_signal">Signali bicikla</string>
+    <string name="core_sound_group_alarm">Alarm</string>
+    <string name="core_sound_group_system">Sustav</string>
+
+    <!-- Sound board sounds -->
+    <string name="core_sound_ding_dong">Dvozvuk</string>
+    <string name="core_sound_toot">Truba</string>
+    <string name="core_sound_foghorn">Brodska sirena</string>
+    <string name="core_sound_submarine">Podmornica</string>
+    <string name="core_sound_urgent_whistle">Hitni zvižduk</string>
+    <string name="core_sound_click">Klik</string>
+    <string name="core_sound_positive">Pozitivan signal</string>
+    <string name="core_sound_negative">Negativan signal</string>
+    <string name="core_sound_lock">Ton zaključavanja</string>
+    <string name="core_sound_unlock">Ton otključavanja</string>
+    <string name="core_sound_unlock_countdown">Odbrojavanje otključavanja</string>
+    <string name="core_sound_backup_code">Unos rezervnog koda</string>
+    <string name="core_sound_pairing_ok">Uparivanje uspjelo</string>
+    <string name="core_sound_pairing_failed">Uparivanje nije uspjelo</string>
+    <string name="core_sound_find_my">Ton traženja</string>
+    <string name="core_sound_alarm_one">Alarm, razina\u00A01</string>
+    <string name="core_sound_alarm_two">Alarm, razina\u00A02</string>
+    <string name="core_sound_noise">Buka</string>
+    <string name="core_sound_startup">Ton pokretanja</string>
+    <string name="core_sound_shutdown">Ton gašenja</string>
+    <string name="core_sound_charging">Ton punjenja</string>
+    <string name="core_sound_diagnostics">Ton dijagnoze</string>
+    <string name="core_sound_reset_countdown">Odbrojavanje do ponovnog pokretanja</string>
+    <string name="core_sound_firmware_loading">Učitavanje firmvera</string>
+    <string name="core_sound_firmware_failed">Greška firmvera</string>
+    <string name="core_sound_unpair">Prekid uparivanja</string>
+
+    <!-- Fault table: name and what to do -->
+    <string name="core_fault_0_name">Baterija: zaštita od kratkog spoja</string>
+    <string name="core_fault_0_hint">Baterija se isključila nakon što je otkrila kratki spoj; možda je proradio njezin osigurač. Provjeri ožičenje i utikač na bateriji.</string>
+    <string name="core_fault_1_name">Baterija: MOSFET prevruć</string>
+    <string name="core_fault_1_hint">Snažna sklopka (MOSFET) u bateriji je prevruća. Pusti da se bicikl ohladi, pa pokušaj ponovno.</string>
+    <string name="core_fault_2_name">Baterija: kratki spoj pri pretpražnjenju</string>
+    <string name="core_fault_2_hint">Baterija je pri uključivanju otkrila kratki spoj. Provjeri ožičenje između baterije i bicikla.</string>
+    <string name="core_fault_3_name">Baterija: preopterećenje pri pretpražnjenju</string>
+    <string name="core_fault_3_hint">Baterija je pri uključivanju otkrila preopterećenje. Potraži kratki spoj u ožičenju između baterije i bicikla.</string>
+    <string name="core_fault_4_name">Baterija: podnapon, razina\u00A02</string>
+    <string name="core_fault_4_hint">Napon baterije pao je jako nisko. Puni bateriju dulje. Ako kod ostane, BMS treba resetirati (servis).</string>
+    <string name="core_fault_5_name">Baterija: podnapon, razina\u00A01</string>
+    <string name="core_fault_5_hint">Napon baterije je nizak. Napuni bateriju.</string>
+    <string name="core_fault_6_name">Baterija: prenapon, razina\u00A02</string>
+    <string name="core_fault_6_hint">Napon baterije je previsok. Odspoji punjač i provjeri je li pravi (42\u00A0V). Greška razine\u00A02 traži reset BMS-a.</string>
+    <string name="core_fault_7_name">Baterija: prenapon, razina\u00A01</string>
+    <string name="core_fault_7_hint">Napon baterije je previsok. Odspoji punjač i provjeri je li pravi (42\u00A0V).</string>
+    <string name="core_fault_8_name">Baterija: prevelika struja punjenja (razina\u00A01)</string>
+    <string name="core_fault_8_hint">Baterija je primila preveliku struju punjenja. Provjeri punjač (42\u00A0V).</string>
+    <string name="core_fault_9_name">Baterija: prevelika struja punjenja (razina\u00A02)</string>
+    <string name="core_fault_9_hint">Prevelika struja punjenja. Provjeri punjač (42\u00A0V). Greška razine\u00A02 traži reset BMS-a.</string>
+    <string name="core_fault_10_name">Baterija: prevelika struja pražnjenja (razina\u00A02)</string>
+    <string name="core_fault_10_hint">Bicikl je povukao previše struje. Potraži kratki spoj u ožičenju ili kvar motora. Greška razine\u00A02 traži reset BMS-a.</string>
+    <string name="core_fault_11_name">Baterija: prevelika struja pražnjenja (razina\u00A01)</string>
+    <string name="core_fault_11_hint">Bicikl je nakratko povukao previše struje, na primjer na strmom usponu ili s Boostom. Ako se kod vrati i na ravnom, provjeri motor i njegov kabel.</string>
+    <string name="core_fault_12_name">Baterija: prehladno za punjenje</string>
+    <string name="core_fault_12_hint">Baterija je prehladna za punjenje. Puni je na sobnoj temperaturi. Ako se kod pojavi i pri normalnoj temperaturi, možda je neispravan temperaturni senzor u bateriji.</string>
+    <string name="core_fault_13_name">Baterija: prevruće za punjenje</string>
+    <string name="core_fault_13_hint">Baterija je prevruća za punjenje. Pusti da se ohladi, pa je napuni. Ako se kod pojavi i pri normalnoj temperaturi, možda je neispravan temperaturni senzor u bateriji.</string>
+    <string name="core_fault_14_name">Baterija: prehladno za vožnju</string>
+    <string name="core_fault_14_hint">Baterija je prehladna za isporuku struje. Pusti da se bicikl ugrije. Ako se kod pojavi i pri normalnoj temperaturi, možda je neispravan temperaturni senzor u bateriji.</string>
+    <string name="core_fault_15_name">Baterija: prevruće za vožnju</string>
+    <string name="core_fault_15_hint">Baterija je prevruća za isporuku struje. Pusti da se bicikl ohladi. Ako se kod pojavi i pri normalnoj temperaturi, možda je neispravan temperaturni senzor u bateriji.</string>
+    <string name="core_fault_16_name">Baterija: trajni kvar (BMS)</string>
+    <string name="core_fault_16_hint">Baterija javlja trajni kvar ili uopće ne odgovara. Često joj je pregorio osigurač, vjerojatno zbog kratkog spoja na utičnici baterije. Provjeri utikač i utičnicu ima li tragova paljenja. Nakon toga bateriju mora pregledati servis.</string>
+    <string name="core_fault_17_name">Baterija ne dopušta punjenje ni pražnjenje</string>
+    <string name="core_fault_17_hint">Baterija nije uključila izlaz za punjenje ili pražnjenje. Provjeri utikač i kabel baterije, pa ponovno pokreni bicikl.</string>
+    <string name="core_fault_18_name">Baterija nije prepoznata</string>
+    <string name="core_fault_18_hint">Bicikl ne vidi bateriju (signal prepoznavanja ostaje nizak). Provjeri je li baterija umetnuta do kraja, pa utikač i kabel. Ako se istodobno pojavi 42, bicikl može prijeći u transportni način.</string>
+    <string name="core_fault_19_name">Greška sabirnice baterije</string>
+    <string name="core_fault_19_hint">Bicikl ne može komunicirati s baterijom preko podatkovnog voda (Modbus). Provjeri utikač i kabel baterije. Ako greška ostane, možda je neispravan sučeljni čip u modulu ili sam BMS.</string>
+    <string name="core_fault_20_name">Prenizak napon napajanja</string>
+    <string name="core_fault_20_hint">Napon napajanja je ispod 25\u00A0V, kao da je baterija isključila svoj izlaz. Napuni bateriju i provjeri njezin utikač. Kratko 20 odmah nakon resetiranja je normalno.</string>
+    <string name="core_fault_21_name">Punjenje bez struje</string>
+    <string name="core_fault_21_hint">Bicikl vidi punjač, ali struja punjenja ne teče. Provjeri punjač (42\u00A0V) i utičnicu za punjenje. To može uzrokovati i dosegnuto ograničenje punjenja.</string>
+    <string name="core_fault_22_name">Upravljačka jedinica motora ne odgovara</string>
+    <string name="core_fault_22_hint">Modul ne dobiva odgovor od upravljačke jedinice motora, pa nema potpore motora. Dok miruje, bicikl je pokušava sam ponovno pokrenuti. Isključi pa uključi bicikl. Ako kod ostane, jedinica nema napajanje ili je neispravna (servis).</string>
+    <string name="core_fault_23_name">Bluetooth čip se ponovno pokreće</string>
+    <string name="core_fault_23_hint">Modul je izgubio vezu sa svojim Bluetooth čipom i ponovno ga pokreće, pa se aplikacija možda neće povezati. Rezervnim kodom i dalje možeš otključati. Ako kod ostane, čip ili njegov firmver je neispravan (servis).</string>
+    <string name="core_fault_24_name">Prijenos ažuriranja prekinut</string>
+    <string name="core_fault_24_hint">Prijenos firmvera iz aplikacije je prekinut. Ponovno pokreni bicikl i ponovno pokreni ažuriranje, s mobitelom blizu bicikla.</string>
+    <string name="core_fault_25_name">Prijenos ažuriranja: greška kontrolnog zbroja</string>
+    <string name="core_fault_25_hint">Preneseni firmver nije prošao provjeru kontrolnog zbroja. Ponovno pokreni bicikl i ponovno prenesi ažuriranje.</string>
+    <string name="core_fault_26_name">Prijenos ažuriranja predugo traje</string>
+    <string name="core_fault_26_hint">Prijenos firmvera trajao je predugo. Ponovno pokreni bicikl i pokušaj opet s mobitelom blizu bicikla.</string>
+    <string name="core_fault_27_name">Paket ažuriranja nedostaje ili je neispravan</string>
+    <string name="core_fault_27_hint">U paketu ažuriranja nedostaje datoteka ili je neispravna. Ponovno pokreni bicikl i ponovno učitaj paket.</string>
+    <string name="core_fault_28_name">Programiranje flasha: isteklo vrijeme</string>
+    <string name="core_fault_28_hint">Modul nije na vrijeme dovršio zapisivanje novog firmvera. Ponovno pokreni bicikl i ponovi ažuriranje. Ako opet ne uspije, modul mora pregledati servis.</string>
+    <string name="core_fault_29_name">Paket ažuriranja: zaglavlje nije pronađeno</string>
+    <string name="core_fault_29_hint">Modul nije pronašao zaglavlje (header) u datoteci firmvera u paketu ažuriranja. Paket je oštećen ili pogrešan. Ponovi ažuriranje s neoštećenim paketom.</string>
+    <string name="core_fault_30_name">Paket ažuriranja: nema datoteka</string>
+    <string name="core_fault_30_hint">Paket ažuriranja ne sadrži nijednu datoteku. Ponovi ažuriranje s potpunim paketom.</string>
+    <string name="core_fault_31_name">Brisanje flasha nije uspjelo</string>
+    <string name="core_fault_31_hint">Modul nije mogao izbrisati svoj stari firmver. Ponovno pokreni bicikl i ponovi ažuriranje. Ako opet ne uspije, modul mora pregledati servis.</string>
+    <string name="core_fault_32_name">Pisanje u flash nije uspjelo</string>
+    <string name="core_fault_32_hint">Modul nije mogao zapisati novi firmver. Ponovno pokreni bicikl i ponovi ažuriranje. Ako opet ne uspije, modul mora pregledati servis.</string>
+    <string name="core_fault_33_name">Paket ažuriranja: greška kontrolnog zbroja</string>
+    <string name="core_fault_33_hint">Datoteka u paketu ažuriranja ima grešku kontrolnog zbroja. Ponovi ažuriranje sa svježim paketom.</string>
+    <string name="core_fault_34_name">Ažuriranje motora nije uspjelo</string>
+    <string name="core_fault_34_hint">Ažuriranje upravljačke jedinice motora (motorware) nije dovršeno. Ponovno pokreni bicikl i ponovi ažuriranje. Ako motor nakon toga ne odgovara (kod\u00A022), servis mora vratiti njegov firmver.</string>
+    <string name="core_fault_35_name">Ažuriranje baterije nije uspjelo</string>
+    <string name="core_fault_35_hint">Ažuriranje upravljačke jedinice baterije (BMS) nije dovršeno. Ponovno pokreni bicikl i ponovi ažuriranje. Ako baterija ostane nijema, servis je mora ponovno flashati.</string>
+    <string name="core_fault_36_name">Ažuriranje shiftera nije uspjelo</string>
+    <string name="core_fault_36_hint">Ažuriranje upravljačke jedinice shiftera nije dovršeno. Ponovno pokreni bicikl i ponovi ažuriranje. Ako shifter ostane nijem (kod\u00A044), servis ga mora ponovno flashati.</string>
+    <string name="core_fault_37_name">Ažuriranje Bluetootha nije uspjelo</string>
+    <string name="core_fault_37_hint">Ažuriranje Bluetooth upravljačke jedinice nije dovršeno. Ponovno pokreni bicikl i ponovi ažuriranje. Ako se aplikacija više ne može povezati, rezervnim kodom i dalje možeš otključati; servis može ponovno flashati čip.</string>
+    <string name="core_fault_38_name">Očitanje baterije modula poremećeno</string>
+    <string name="core_fault_38_hint">Bicikl ne može očitati malu bateriju u Smart Cartridgeu; možda nedostaje, prazna je ili istrošena. Napuni bicikl i provjeri puni li se baterija modula. Ako kod ostane, zamijeni bateriju modula.</string>
+    <string name="core_fault_39_name">Greška senzora svjetla</string>
+    <string name="core_fault_39_hint">Modul ne može očitati senzor svjetla (I²C greška), pa se automatsko svjetlo možda ponaša čudno. Ponovno pokreni bicikl. Ako kod ostane, modul treba popraviti.</string>
+    <string name="core_fault_40_name">Tipka zvona je zapela</string>
+    <string name="core_fault_40_hint">Bicikl je prepoznao tipku zvona kao pritisnutu dulje od 20\u00A0s. Očisti tipku ili je zamijeni i provjeri ima li na njezinu kabelu vlage ili kratkog spoja.</string>
+    <string name="core_fault_41_name">Tipka za boost je zapela</string>
+    <string name="core_fault_41_hint">Bicikl je prepoznao tipku za boost kao pritisnutu dulje od 20\u00A0s. Očisti tipku ili je zamijeni i provjeri ima li na njezinu kabelu vlage ili kratkog spoja.</string>
+    <string name="core_fault_42_name">Zavojnica Kick Locka nije prepoznata</string>
+    <string name="core_fault_42_hint">Bicikl ne prepoznaje zavojnicu u Kick Locku. Najčešće je utikač labav ili je kabel priklješten. Provjeri, molim te, utikač Kick Locka i prijeđi kabel tražeći pregibe. Ako istodobno otkaže i prepoznavanje baterije, bicikl će vjerojatno prijeći u transportni način.</string>
+    <string name="core_fault_43_name">Brzina nije ubačena</string>
+    <string name="core_fault_43_hint">Shifter je pokušao deset puta i nije stigao u brzinu. Provjeri kabel i utikač shiftera na stražnjem glavčini, pa ponovno mijenjaj brzinu.</string>
+    <string name="core_fault_44_name">E-mjenjač ne odgovara</string>
+    <string name="core_fault_44_hint">Bicikl pet puta nije dobio odgovor od shiftera. Provjeri utikač i kabel shiftera na stražnjem glavčini. Ako su u redu, vjerojatno je neispravna ploča shiftera (servis).</string>
+    <string name="core_fault_45_name">Kabel motora ili temperaturni senzor prekinut</string>
+    <string name="core_fault_45_hint">Temperaturni senzor (NTC) motora javlja prekinut vod, kao da je kabel motora izvučen ili puknuo. Provjeri utikač motora i kabelski snop prema prednjem kotaču ima li pregiba i puknuća. Ako motor još radi, to je često prvi znak da snop popušta; bez senzora motor nema zaštitu od pregrijavanja. Zavrti prednji kotač: ako se prikaže brzina, vod brzine je još čitav.</string>
+    <string name="core_fault_46_name">Pokretač motora: pregrijavanje ili prevelika struja</string>
+    <string name="core_fault_46_hint">Čip pokretača motora (DRV8301) javio je grešku. Servisna tablica navodi pregrijavanje, a naziv koda preveliku struju. Pusti da se bicikl ohladi i ponovno ga pokreni. Ako se kod vrati, provjeri je li kabel motora oštećen; nakon toga upravljačku jedinicu mora pregledati servis.</string>
+    <string name="core_fault_47_name">Baterija ne javlja razinu napunjenosti</string>
+    <string name="core_fault_47_hint">Baterija ne javlja razinu napunjenosti. Provjeri utikač i kabel baterije, pa ponovno pokreni bicikl.</string>
+    <string name="core_fault_48_name">Statusni bit brzine kotača</string>
+    <string name="core_fault_48_hint">YABA ne broji 48 kao grešku: firmver postavlja taj bit iz impulsa brzine kotača. Servisna tablica 48 naziva greškom upravljačke jedinice motora (greška parametara, zamijeniti motor). Ako bicikl na zaslonu pokazuje 48 ili brzina ne štima, provjeri utikač motora i vod brzine u kabelskom snopu.</string>
+    <string name="core_fault_49_name">Motor: mjerenje struje odstupa</string>
+    <string name="core_fault_49_hint">Pri pokretanju je upravljačka jedinica motora izmjerila pomak struje predaleko od zadane vrijednosti (1,0), pa njezino mjerenje struje ne štima. Ponovno pokreni bicikl. Ako kod ostane, upravljačku jedinicu mora pregledati servis.</string>
+    <string name="core_fault_50_name">Motor: mjerenje napona odstupa</string>
+    <string name="core_fault_50_hint">Pri pokretanju mjerenje napona upravljačke jedinice motora nije štimalo. Ponovno pokreni bicikl i provjeri utikač baterije. Ako kod ostane, upravljačku jedinicu mora pregledati servis.</string>
+    <string name="core_fault_51_name">Snaga motora ograničena vrućinom</string>
+    <string name="core_fault_51_hint">Upravljačka jedinica motora smanjila je najveću struju jer je vruća. Pusti da se bicikl ohladi. To je upozorenje, a ne kvar.</string>
+    <string name="core_fault_52_name">Senzor zakretnog momenta ne radi</string>
+    <string name="core_fault_52_hint">Upravljačka jedinica motora javlja da senzor zakretnog momenta ne radi. Provjeri utikač i kabel senzora zakretnog momenta i ponovno pokreni bicikl.</string>
+    <string name="core_fault_53_name">Kritična greška motora (nije spreman)</string>
+    <string name="core_fault_53_hint">Upravljačka jedinica motora javlja tešku grešku (greška parametara i stanje nije spreman) i ne pokreće se. Jednom ponovno pokreni bicikl. Ako kod ostane, servisna tablica savjetuje zamjenu motora; neka motor i upravljačku jedinicu pregleda servis.</string>
+    <string name="core_fault_54_name">Nema SIM kartice</string>
+    <string name="core_fault_54_hint">Bicikl ne prepoznaje SIM karticu svog trackera, pa praćenje ne radi. To ne utječe na vožnju. Provjeri sjedi li SIM u svom ležištu i radi li u drugom uređaju.</string>
+    <string name="core_fault_55_name">Greška pokretanja interne sabirnice</string>
+    <string name="core_fault_55_hint">Više čipova na internoj I²C sabirnici modula nije odgovorilo pri pokretanju. Ponovno pokreni bicikl. Ako kod ostane, modul (Smart Cartridge) je vjerojatno neispravan.</string>
+    <string name="core_fault_56_name">Pogrešna SIM kartica</string>
+    <string name="core_fault_56_hint">To nije VanMoof SIM (njegov broj ima pogrešan prefiks). Umetni SIM koji pripada biciklu.</string>
+    <string name="core_fault_57_name">SIM nije čitljiv</string>
+    <string name="core_fault_57_hint">Modem prepoznaje SIM, ali ga ne može pročitati. Izvadi SIM, očisti kontakte i vrati ga. Ako kod ostane, probaj drugi VanMoof SIM.</string>
+    <string name="core_fault_58_name">GSM modem se ne pokreće</string>
+    <string name="core_fault_58_hint">Pokretanje modema nije uspjelo. Ponovno pokreni bicikl; kod često nestane nakon resetiranja. Ako ostane, čip modema je vjerojatno neispravan (lako se zamjenjuje).</string>
+    <string name="core_fault_60_name">Tvornički način</string>
+    <string name="core_fault_60_hint">Bicikl radi s tvorničkim firmverom umjesto s normalnim firmverom. Servis mora ponovno instalirati normalni firmver.</string>
+    <string name="core_fault_unknown_name">Nepoznat kod</string>
+    <string name="core_fault_unknown_hint">Ovog koda nema u tablici grešaka. Zabilježi broj i kada se pojavljuje.</string>
+
+    <!-- Lock state, used inside sentences (lower case) -->
+    <string name="core_lock_unlocked">otključan</string>
+    <string name="core_lock_locked">zaključan</string>
+    <string name="core_lock_pin_entry">unos koda</string>
+
+    <!-- Link messages and connection errors -->
+    <string name="core_link_key_invalid">Ključ nije valjan. Ponovno dodaj bicikl u garaži ili ga ponovno učitaj.</string>
+    <string name="core_link_bike_not_found">Bicikl nije pronađen. Da ga probudiš, kratko ga pomakni ili pritisni tipku zvona. Aplikacija VanMoof mora biti zatvorena.</string>
+    <string name="core_link_location_off">Lokacija je isključena. Bez lokacije Android ne može pronaći Bluetooth uređaje.</string>
+    <string name="core_error_bluetooth_off">Bluetooth je isključen.</string>
+    <string name="core_error_connect_failed">Povezivanje nije uspjelo</string>
+    <string name="core_error_invalid_mac">Neispravna MAC adresa %1$s</string>
+    <string name="core_error_not_s3">Ovo nije S3 ni X3 ili je Bluetooth predmemorija oštećena.</string>
+    <string name="core_error_not_connected_wake">Nije povezano. Probudi bicikl, molim te, i pričekaj trenutak.</string>
+    <string name="core_error_not_connected">Nije povezano</string>
+    <string name="core_error_link_lost">Veza prekinuta</string>
+    <string name="core_error_no_challenge">Bicikl nije poslao nijedan challenge</string>
+    <string name="core_error_read_failed">%1$s: čitanje nije uspjelo</string>
+    <string name="core_error_connect_gatt_null">Android nije mogao otvoriti vezu (connectGatt je vratio null)</string>
+    <string name="core_error_no_answer">Nema odgovora s bicikla. Najčešće bicikl spava ili je aplikacija VanMoof upravo povezana s biciklom.</string>
+    <string name="core_error_connect_133">Veza je prekinuta (133). Bicikl prihvaća samo jednu vezu istodobno.</string>
+    <string name="core_error_connect_status">Povezivanje nije uspjelo (status %1$s)</string>
+    <string name="core_error_services">Usluge bicikla nisu se mogle pročitati</string>
+    <string name="core_error_services_status">Usluge bicikla nisu se mogle pročitati (status %1$s)</string>
+    <string name="core_error_missing_char">Na biciklu nedostaje karakteristika %1$s</string>
+    <string name="core_error_op_not_started">%1$s: nije moguće pokrenuti</string>
+    <string name="core_error_op_timeout">%1$s: isteklo je vrijeme</string>
+    <string name="core_error_op_failed">%1$s: nije uspjelo (status %2$d)</string>
+    <string name="core_op_read">Čitanje</string>
+    <string name="core_op_write">Pisanje</string>
+    <string name="core_op_notify">Postavljanje obavijesti</string>
+    <string name="core_op_mtu">Zahtjev za MTU</string>
+
+    <!-- Commands: event log entry and error prefix -->
+    <string name="core_cmd_failed">%1$s: nije uspjelo</string>
+    <string name="core_cmd_refresh">Osvježavanje</string>
+    <string name="core_cmd_read_raw">Čitanje sirovih podataka</string>
+    <string name="core_cmd_unlock">Otključavanje</string>
+    <string name="core_cmd_lock">Zaključavanje</string>
+    <string name="core_cmd_speed_limit">Ograničenje brzine %1$d\u00A0km/h</string>
+    <string name="core_cmd_level">Razina\u00A0%1$d</string>
+    <string name="core_cmd_light">Svjetlo: %1$s</string>
+    <string name="core_cmd_bell">Zvuk zvona: %1$s</string>
+    <string name="core_cmd_unit">Jedinica: %1$s</string>
+    <string name="core_cmd_wake">Buđenje</string>
+    <string name="core_cmd_backup_cleared">Rezervni kod izbrisan</string>
+    <string name="core_cmd_backup_set">Rezervni kod postavljen</string>
+    <string name="core_cmd_bike_log">Dnevnik bicikla pročitan</string>
+    <string name="core_cmd_custom_bell">Vlastiti zvuk zvona</string>
+    <string name="core_alarm_on">Alarm uključen</string>
+    <string name="core_alarm_off">Alarm isključen</string>
+
+    <!-- Command errors -->
+    <string name="core_error_speed_rejected">Bicikl nije prihvatio %1$d\u00A0km/h (javlja %2$s\u00A0km/h).</string>
+    <string name="core_error_speed_rejected_lock">Bicikl nije prihvatio %1$d\u00A0km/h (javlja %2$s\u00A0km/h, ograničenje regije %3$d).</string>
+    <string name="core_error_region_locked">Regija bicikla je ograničena. Bicikl zadržava svoje ograničenje brzine i odbio je %1$d\u00A0km/h.</string>
+    <string name="core_error_level_rejected">Bicikl nije prihvatio razinu\u00A0%1$d (javlja %2$s).</string>
+    <string name="core_error_wake_riding">Nije potrebno tijekom vožnje.</string>
+    <string name="core_error_backup_digits">Tri znamenke od 1 do 9.</string>
+    <string name="core_error_no_bike_log">Ovaj bicikl ne nudi dnevnik.</string>
+
+    <!-- Event log -->
+    <string name="core_log_key_invalid">Ključ za %1$s nije ispravan</string>
+    <string name="core_log_searching">Traženje: %1$s</string>
+    <string name="core_log_disconnected">Veza prekinuta</string>
+    <string name="core_log_connected">Povezano i prijavljeno</string>
+    <string name="core_log_link_lost_riding">Veza prekinuta tijekom vožnje</string>
+    <string name="core_log_link_lost">Veza prekinuta</string>
+    <plurals name="core_log_subscribed">
+        <item quantity="one">Pretplata na %1$d vrijednost uživo</item>
+        <item quantity="few">Pretplata na %1$d vrijednosti uživo</item>
+        <item quantity="other">Pretplata na %1$d vrijednosti uživo</item>
+    </plurals>
+    <string name="core_log_firmware">Firmver\u00A0%1$s</string>
+    <string name="core_log_transfer">Prijenos: %1$s</string>
+    <string name="core_log_shipping">Bicikl javlja transportni način</string>
+    <string name="core_log_kicklock_riding">Kick Lock javlja zaključano tijekom vožnje</string>
+    <string name="core_log_lock">Brava: %1$s</string>
+    <string name="core_log_status">Status: %1$s</string>
+    <string name="core_log_fault">Greška\u00A0%1$d: %2$s</string>
+    <string name="core_log_faults_cleared">Greške koje više nisu aktivne: %1$s</string>
+    <string name="core_log_power_button_riding">Tipka za uključivanje/ponovno pokretanje javlja pritisak tijekom vožnje</string>
+    <string name="core_log_supply_low">Napon napajanja ispod 20\u00A0V</string>
+    <string name="core_log_supply_ok">Napajanje je opet normalno</string>
+    <string name="core_log_charger_in">Punjač priključen</string>
+    <string name="core_log_charger_out">Punjač odspojen</string>
+    <string name="core_log_alarm">Alarm: %1$s</string>
+    <string name="core_log_unlock_request">Bicikl traži otključavanje</string>
+    <string name="core_log_ride_started">Zapisnik vožnje pokrenut</string>
+    <string name="core_log_ride_stopped">Zapisnik vožnje zaustavljen</string>
+
+    <!-- Event details (parts are joined with commas) -->
+    <string name="core_detail_status">Status %1$s</string>
+    <string name="core_detail_status_before">Prethodno %1$s</string>
+    <string name="core_detail_shipping">javljen transportni način</string>
+    <string name="core_detail_battery">baterija %1$d\u00A0%%</string>
+    <string name="core_detail_speed">%1$d\u00A0km/h</string>
+    <string name="core_detail_supply_ok">napajanje u redu</string>
+    <string name="core_detail_supply_low">napajanje nisko</string>
+    <string name="core_detail_lock">brava %1$s</string>
+    <string name="core_detail_faults">greške\u00A0%1$s</string>
+    <string name="core_detail_shipping_state">%1$d\u00A0km/h, brava %2$s, greške\u00A0%3$s</string>
+    <string name="core_detail_supply_low_state">%1$d\u00A0km/h, baterija %2$s\u00A0%%</string>
+    <string name="core_none">nema</string>
+
+    <!-- Custom bell transfer status (OAD) -->
+    <string name="core_oad_started">pokrenuto</string>
+    <string name="core_oad_done">završeno, kontrolni zbroj odgovara</string>
+    <string name="core_oad_block_ok">blok prihvaćen</string>
+    <string name="core_oad_bad_checksum">kontrolni zbroj ne odgovara</string>
+    <string name="core_oad_not_writable">u memoriju nije moguće pisati</string>
+    <string name="core_oad_bad_type">nevažeća vrsta datoteke</string>
+    <string name="core_oad_too_large">datoteka je prevelika</string>
+    <string name="core_oad_code">kod\u00A0%1$s</string>
+
+    <!-- Account and cloud -->
+    <string name="core_default_bike_name">Moj S3</string>
+    <string name="core_error_no_valid_keys">Nije pronađen nijedan valjan ključ.</string>
+    <string name="core_error_not_logged_in">Prijava nije aktivna.</string>
+    <string name="core_vault_unavailable">Trezor ključeva nije dostupan.</string>
+    <string name="core_vault_unreadable">Trezor ključeva trenutačno nije čitljiv. Ponovno pokreni aplikaciju, molim te.</string>
+    <string name="core_vault_save_failed">Trezor ključeva nije se mogao spremiti.</string>
+    <string name="core_api_wrong_credentials">E-pošta ili lozinka nisu točni.</string>
+    <string name="core_api_no_token">Odgovor na prijavu nije sadržavao token za prijavu.</string>
+    <string name="core_api_session_expired">Sesija je istekla. Prijavi se ponovno, molim te.</string>
+    <string name="core_api_refresh_no_token">Obnova sesije nije vratila token za prijavu.</string>
+    <string name="core_api_rate_limited">VanMoofov poslužitelj trenutačno ograničava broj zahtjeva. Pričekaj, molim te, jednu minutu.</string>
+    <string name="core_api_not_authenticated">Prijava nije aktivna ili je sesija istekla.</string>
+    <string name="core_api_not_owner">Za to nemaš dopuštenje. To može samo vlasnik.</string>
+    <string name="core_api_no_permission">Nema dopuštenja.</string>
+    <string name="core_api_server_error">VanMoofov poslužitelj odgovorio je greškom\u00A0%1$d.</string>
+    <string name="core_api_unexpected">Neočekivan odgovor VanMoofova poslužitelja.</string>
+    <string name="core_api_timeout">Isteklo je vrijeme. Radnja je možda ipak izvršena. Ponovno učitaj popis, molim te.</string>
+    <string name="core_api_connection_dropped">Veza s VanMoofovim poslužiteljem je prekinuta.</string>
+    <string name="core_api_unreachable">VanMoofov poslužitelj nije dostupan. Provjeri, molim te, svoju internetsku vezu.</string>
+
+    <!-- Account messages -->
+    <plurals name="core_account_bikes_loaded">
+        <item quantity="one">%1$d bicikl učitan.</item>
+        <item quantity="few">%1$d bicikla učitana.</item>
+        <item quantity="other">%1$d bicikala učitano.</item>
+    </plurals>
+    <string name="core_account_without_key">Još bez ključa: %1$s.</string>
+    <plurals name="core_account_bikes_refreshed">
+        <item quantity="one">%1$d bicikl ažuriran.</item>
+        <item quantity="few">%1$d bicikla ažurirana.</item>
+        <item quantity="other">%1$d bicikala ažurirano.</item>
+    </plurals>
+    <string name="core_account_logged_out">Odjava je izvršena. Tvoji ključevi ostaju na ovom telefonu.</string>
+    <string name="core_account_bike_added">Dodano: %1$s.</string>
+    <plurals name="core_account_imported">
+        <item quantity="one">%1$d bicikl uvezen.</item>
+        <item quantity="few">%1$d bicikla uvezena.</item>
+        <item quantity="other">%1$d bicikala uvezeno.</item>
+    </plurals>
+    <plurals name="core_account_import_skipped">
+        <item quantity="one">Preskočen %1$d nevažeći unos.</item>
+        <item quantity="few">Preskočena %1$d nevažeća unosa.</item>
+        <item quantity="other">Preskočeno %1$d nevažećih unosa.</item>
+    </plurals>
+    <string name="core_account_import_failed">Uvoz nije uspio.</string>
+    <string name="core_error_unknown">Nepoznata greška.</string>
+    <string name="core_share_shared_with">Podijeljeno s %1$s.</string>
+    <string name="core_share_revoked">Dijeljenje završeno.</string>
+
+    <!-- Custom bell conversion and upload -->
+    <string name="core_bell_silent">Datoteka sadrži samo tišinu.</string>
+    <string name="core_bell_too_long">Zvuk je predug. Odaberi kraći.</string>
+    <string name="core_bell_cannot_open">Datoteka se ne može otvoriti.</string>
+    <string name="core_bell_no_audio">Datoteka nema zvučni zapis.</string>
+    <string name="core_bell_unsupported">Ovaj telefon ne može dekodirati ovaj format.</string>
+    <string name="core_bell_no_data">Datoteka ne sadrži čitljive zvučne podatke.</string>
+    <string name="core_bell_convert_failed">Pretvorba nije uspjela.</string>
+    <string name="core_bell_upload_aborted">Prijenos je prekinut. Drži telefon, molim te, blizu bicikla i pošalji ponovno.</string>
+
+    <!-- Ride logger -->
+    <string name="core_ride_error_permission">Nedostaje Bluetooth pristup. Prvo dopusti pristup uređajima u blizini, molim te.</string>
+    <string name="core_ride_share_subject">Zapisnik vožnje S3 %1$s</string>
+    <string name="core_ride_notif_running">Zapisnik vožnje radi</string>
+    <plurals name="core_ride_notif_incidents">
+        <item quantity="one">Zapisnik vožnje: %1$d incident</item>
+        <item quantity="few">Zapisnik vožnje: %1$d incidenta</item>
+        <item quantity="other">Zapisnik vožnje: %1$d incidenata</item>
+    </plurals>
+    <string name="core_ride_notif_connecting">Povezivanje…</string>
+    <string name="core_ride_notif_battery">Baterija %1$d\u00A0%%</string>
+    <string name="core_ride_notif_lost">Veza prekinuta, pretraga se nastavlja</string>
+    <string name="core_ride_notif_searching">Traženje bicikla</string>
+    <string name="core_ride_notif_stop">Zaustavi</string>
+
+    <!-- Debug builds only: demo data and component gallery -->
+    <string name="core_demo_kicklock_contact">Kontakt Kick Locka: aktivan</string>
+    <string name="core_gallery_connected">Povezano</string>
+    <string name="core_gallery_battery">Baterija</string>
+    <string name="core_gallery_percent">%1$d\u00A0%%</string>
+    <string name="core_gallery_distance">Kilometri</string>
+    <string name="core_gallery_level">Razina</string>
+    <string name="core_gallery_limit">Limit</string>
+    <string name="core_gallery_speed_limit">Ograničenje brzine</string>
+    <string name="core_gallery_assist">Potpora</string>
+    <string name="core_gallery_light">Svjetlo</string>
+    <string name="core_gallery_soundboard">Ploča zvukova</string>
+    <string name="core_gallery_send_bell">Pošalji zvuk zvona</string>
+    <string name="core_gallery_search_again">Traži ponovno</string>
+    <string name="core_notif_link_lost_riding">Veza s biciklom je prekinuta. Bicikl se vozi dalje nepromijenjen, a YABA se ponovno povezuje.</string>
+    <string name="core_server_error_title">Greška VanMoofova poslužitelja</string>
+    <string name="core_server_error_text">VanMoofov poslužitelj odgovorio je u %1$s greškom\u00A0%2$d. Tvoj bicikl to ne pogađa: otključavanje, svjetlo, zvono i dijagnostika rade izravno preko Bluetootha. Samo prijava i dijeljenje čekaju poslužitelj. Dodirni „Pokušaj ponovno“ da ponoviš zahtjev.</string>
+    <string name="core_server_timeout_title">Nema odgovora VanMoofova poslužitelja</string>
+    <string name="core_server_timeout_text">U %1$s nije stigao odgovor u roku od 10\u00A0sekundi. Tvoj bicikl to ne pogađa: otključavanje, svjetlo, zvono i dijagnostika rade izravno preko Bluetootha. Samo prijava i dijeljenje čekaju poslužitelj. Dodirni „Pokušaj ponovno“ da ponoviš zahtjev.</string>
+    <string name="core_server_dead_title">VanMoofov poslužitelj ne odgovara</string>
+    <string name="core_server_dead_text">VanMoofov poslužitelj ne odgovara ni na jedan zahtjev s ovog telefona. Dana bez odgovora: %1$d. Tvoj bicikl ga ne treba: otključavanje, svjetlo, zvono i dijagnostika i dalje rade izravno preko Bluetootha. Samo prijava i dijeljenje nisu moguće dok poslužitelj ne odgovara.</string>
+    <string name="core_server_retry">Pokušaj ponovno</string>
+</resources>

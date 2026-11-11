@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="official_joined_link">Das Bike ist bereits mit diesem Handy verbunden. YABA tritt dieser Verbindung bei.</string>
+    <string name="official_title">VanMoof-App installiert</string>
+    <string name="official_explain">Die VanMoof-App hält im Hintergrund oft die einzige Bluetooth-Verbindung zum Bike, denn das Bike nimmt nur ein Handy gleichzeitig an. YABA kann dieser Verbindung auf diesem Handy beitreten. Gelingt das nicht, beende die VanMoof-App.</string>
+    <string name="official_quit">VanMoof-App beenden</string>
+    <string name="official_quit_done">Die VanMoof-App wurde beendet, YABA sucht erneut. Besteht die Blockade weiter, tipp auf der App-Info-Seite der VanMoof-App auf „Beenden erzwingen“.</string>
+    <string name="official_mute">Bluetooth-Zugriff entziehen</string>
+    <string name="official_mute_steps">Öffne die App-Info-Seite der VanMoof-App und wähl „Berechtigungen“, „Geräte in der Nähe“, „Nicht zulassen“. Danach erreicht die VanMoof-App das Bike nicht mehr. Erlaub den Zugriff wieder, sobald du die VanMoof-App brauchst.</string>
+    <string name="official_open_settings_failed">Die Einstellungen der VanMoof-App ließen sich nicht öffnen. Bitte öffne selbst „Einstellungen“, „Apps“, „VanMoof“.</string>
+    <string name="official_shared_hint">Verbunden über die Bluetooth-Verbindung, die die VanMoof-App aufgebaut hat.</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VanMoof S2/X2 error codes (ble/S2Protocol.kt S2Faults); not the S3 fault table. -->
+    <string name="core_fault_s2_0_name">Нет ошибки</string>
+    <string name="core_fault_s2_0_hint">Велосипед не сообщает о неисправностях.</string>
+    <string name="core_fault_s2_1_name">Мотор заблокирован</string>
+    <string name="core_fault_s2_1_hint">Мотор не смог провернуться. Проверить, что ничто не блокирует колёса, затем выключить и снова включить велосипед.</string>
+    <string name="core_fault_s2_2_name">Повышенное напряжение</string>
+    <string name="core_fault_s2_2_hint">Напряжение батареи слишком высокое. Отключить зарядку и перезапустить велосипед.</string>
+    <string name="core_fault_s2_3_name">Пониженное напряжение</string>
+    <string name="core_fault_s2_3_hint">Напряжение батареи слишком низкое. Зарядить батарею.</string>
+    <string name="core_fault_s2_motor_fast_alt_name">Мотор слишком быстрый (не подтверждено)</string>
+    <string name="core_fault_s2_motor_fast_alt_hint">Источники расходятся в этом коде; один читает его как «мотор слишком быстрый». Записать, когда он появляется.</string>
+    <string name="core_fault_s2_motor_fast_name">Мотор слишком быстрый</string>
+    <string name="core_fault_s2_motor_fast_hint">Мотор вращался быстрее допустимого, например на спуске. Обычно проходит само.</string>
+    <string name="core_fault_s2_6_name">Перегрузка по току</string>
+    <string name="core_fault_s2_6_hint">Мотор потребил слишком большой ток. Перезапустить велосипед; если повторяется, проверить мотор в сервисе.</string>
+    <string name="core_fault_s2_7_name">Датчик крутящего момента неисправен</string>
+    <string name="core_fault_s2_7_hint">Датчик педалей выдаёт неправдоподобные значения. Перезапустить велосипед без нагрузки на педали.</string>
+    <string name="core_fault_s2_8_name">Датчик крутящего момента неисправен при запуске</string>
+    <string name="core_fault_s2_8_hint">Датчик педалей выдал странные значения при включении. Перезапустить велосипед без нагрузки на педали.</string>
+    <string name="core_fault_s2_9_name">Перегрев</string>
+    <string name="core_fault_s2_9_hint">Дать велосипеду остыть.</string>
+    <string name="core_fault_s2_16_name">Датчики Холла не согласованы</string>
+    <string name="core_fault_s2_16_hint">Датчики положения мотора не совпадают. Проверить кабель мотора/датчика у рулевой трубы.</string>
+    <string name="core_fault_s2_25_name">Ошибка шины I²C</string>
+    <string name="core_fault_s2_25_hint">Внутренняя ошибка связи в модуле. Перезапустить велосипед.</string>
+    <string name="core_fault_s2_26_name">GSM-модем не отвечает</string>
+    <string name="core_fault_s2_26_hint">Мобильный модем не отвечает, поэтому отслеживание может не работать. Перезапустить велосипед.</string>
+    <string name="core_fault_s2_27_name">Контроллер мотора не отвечает</string>
+    <string name="core_fault_s2_27_hint">Контроллер мотора не отвечает. Перезапустить велосипед; если не проходит, проверить кабель контроллера.</string>
+    <string name="core_fault_s2_28_name">Регистрация GSM не удалась</string>
+    <string name="core_fault_s2_28_hint">Модем не смог зарегистрироваться в мобильной сети, поэтому отслеживание может не работать.</string>
+    <string name="core_fault_s2_29_name">Нет тока от батареи</string>
+    <string name="core_fault_s2_29_hint">Батарея не отдаёт ток. Зарядить её и проверить разъём батареи.</string>
+
+    <!-- S2 and Device Information characteristic names (error texts, GATT overview); a command this bike family lacks. -->
+    <string name="core_char_s2_functions">Команды (S2)</string>
+    <string name="core_char_s2_parameters">Блок состояния (S2)</string>
+    <string name="core_char_s2_key_change">Смена ключа (S2)</string>
+    <string name="core_char_device_model">Номер модели</string>
+    <string name="core_char_device_serial">Серийный номер</string>
+    <string name="core_char_device_firmware">Версия прошивки</string>
+    <string name="core_char_device_hardware">Версия оборудования</string>
+    <string name="core_char_device_software">Версия ПО</string>
+    <string name="core_error_not_on_this_bike">Эта модель велосипеда это не поддерживает.</string>
+
+    <!-- S2 driver (ble/S2Driver.kt) and the driver choice (BikeController.chooseDriver). -->
+    <string name="core_status_standby">Ожидание</string>
+    <string name="core_alarm_stage_automatic">Автоматически</string>
+    <string name="core_cmd_alarm_stage">Сигнализация: %1$s</string>
+    <string name="core_cmd_s2_mute">Отключённые звуки изменены</string>
+    <string name="core_error_not_s2">Служба статуса S2 не найдена. Это не S2 или X2, либо кэш Bluetooth повреждён.</string>
+    <string name="core_error_older_vanmoof">Ответил более старый VanMoof (S/X 1, S/X 2 или SmartBike). Если это S2 или X2, выбери эту модель для велосипеда в гараже.</string>
+    <string name="core_error_legacy_unsupported">YABA не поддерживает эту модель VanMoof (SmartBike или Electrified S/X 1).</string>
+    <string name="core_error_s2_test_mode">Только в тестовом режиме S2: на настоящем S2 ещё не подтверждено.</string>
+    <string name="core_error_s2_frame">Велосипед не прислал корректный блок статуса.</string>
+    <string name="core_error_s2_level_unknown">Уровень поддержки ещё неизвестен, а S2 задаёт регион и уровень вместе. Попробуйте ещё раз через мгновение.</string>
+    <string name="core_error_s2_region_unknown">Регион ещё неизвестен, а S2 задаёт регион и уровень вместе. Попробуйте ещё раз через мгновение.</string>
+    <string name="core_log_s2_driver">Драйвер S2/X2 (экспериментальный, на настоящем S2 ещё не проверен)</string>
+    <string name="core_log_s3_despite_profile">В аккаунте указано %1$s, но у велосипеда службы S3: используется драйвер S3.</string>
+    <string name="core_log_s2_frame">Блок статуса S2 %1$s</string>
+    <string name="core_detail_s2_frame_changed">Изменённые байты: %1$s</string>
+    <string name="core_error_s2_offroad_level">Велосипед сообщает регион «Бездорожье» (37 км/ч). S2 задаёт регион и уровень вместе, поэтому сменить уровень здесь можно только в тестовом режиме S2.</string>
+    <string name="core_error_s2_pair_mismatch">S2 задаёт регион и уровень вместе и теперь сообщает %3$s км/ч на уровне %4$s вместо %1$d км/ч на уровне %2$d. Проверьте обе настройки.</string>
+    <string name="core_log_s2_implausible">Блок статуса S2 неправдоподобен (батарея %1$d %%, модуль %2$d %%, скорость %3$d): верен ли ключ велосипеда?</string>
+    <string name="core_detail_s2_frame_implausible">Изменённые байты: %1$s. Неправдоподобные значения: верен ли ключ?</string>
+</resources>

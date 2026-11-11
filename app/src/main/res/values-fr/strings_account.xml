@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Compte : écran d'accueil, garage et les formulaires communs d'AccountBits.kt. -->
+<resources>
+    <!-- Shared forms -->
+    <string name="account_disclosure_expanded">Développé</string>
+    <string name="account_disclosure_collapsed">Réduit</string>
+    <string name="account_field_email">E-mail</string>
+    <string name="account_field_password">Mot de passe</string>
+    <string name="account_password_show">Afficher</string>
+    <string name="account_password_hide">Masquer</string>
+    <string name="account_password_show_description">Afficher le mot de passe</string>
+    <string name="account_password_hide_description">Masquer le mot de passe</string>
+    <string name="account_login_submit">Se connecter et récupérer la clé</string>
+    <string name="account_login_running">Connexion…</string>
+    <string name="account_login_privacy">YABA n’enregistre pas ton mot de passe. Seuls la clé de ton vélo et un jeton d’accès sont conservés.</string>
+    <string name="account_default_bike_name">Mon S3</string>
+    <string name="account_default_bike_name_s2">Mon S2</string>
+    <string name="account_field_name">Nom</string>
+    <string name="account_field_mac">Adresse MAC</string>
+    <string name="account_mac_hint">Saisis l’adresse MAC tirée du nom Bluetooth du vélo (par exemple ES3-A1B2C3D4E5F6, le nom entier convient aussi) et la clé de 32 caractères d’un fichier de clé de mooovy ou de YABA.</string>
+    <string name="account_mac_hint_s2">Saisis l’adresse MAC et la clé de 32 caractères d’un fichier de clé de mooovy ou de YABA. Le nom Bluetooth d’un S2 ne contient que les 6 derniers caractères de l’adresse MAC.</string>
+    <string name="account_field_key">Clé</string>
+    <string name="account_key_complete">Clé complète.</string>
+    <plurals name="account_key_remaining">
+        <item quantity="one">32 caractères hexadécimaux, il en manque encore %1$d.</item>
+        <item quantity="many">32 caractères hexadécimaux, il en manque encore %1$d.</item>
+        <item quantity="other">32 caractères hexadécimaux, il en manque encore %1$d.</item>
+    </plurals>
+    <string name="account_field_user_key_id">Numéro de la clé utilisateur</string>
+    <string name="account_user_key_id_hint">En général 1. Le numéro figure à côté de la clé dans l’export du compte (0–255).</string>
+    <string name="account_manual_add">Ajouter le vélo</string>
+    <string name="account_import_title">Importer un fichier de clé</string>
+    <string name="account_import_field">Texte du fichier de clé</string>
+    <string name="account_import_submit">Importer</string>
+    <string name="account_import_pick_file">Choisir un fichier</string>
+    <string name="account_import_hint">Choisis le fichier de clé .json que tu as enregistré depuis mooovy ou depuis YABA sur un autre téléphone.</string>
+    <string name="account_import_file_too_large">Ce fichier est trop volumineux pour un fichier de clés. Choisis l’export YABA ou le fichier de clés mooovy, s’il te plaît.</string>
+    <string name="account_import_file_unreadable">Ce fichier est vide ou illisible. Choisis un autre fichier ou colle le texte, s’il te plaît.</string>
+
+    <!-- Welcome -->
+    <string name="account_welcome_slogan">Roule toujours. Quoi qu’il arrive.</string>
+    <string name="account_welcome_slogan_1">Roule toujours.</string>
+    <string name="account_welcome_slogan_2">Quoi qu’il arrive.</string>
+    <string name="account_welcome_intro">YABA pilote ton VanMoof S3, X3, S2 ou X2 directement par Bluetooth. Après une seule connexion, le déverrouillage, l’éclairage et la sonnette fonctionnent sans le serveur de VanMoof.</string>
+    <string name="account_welcome_disclaimer">Yet Another Bike App. Non affilié à VanMoof.</string>
+    <string name="account_welcome_hero_description">YABA</string>
+    <string name="account_welcome_login_title">Se connecter avec ton compte VanMoof</string>
+    <string name="account_welcome_login_button">Se connecter avec un compte VanMoof</string>
+    <string name="account_welcome_import_button">Importer un fichier de clé</string>
+    <string name="account_welcome_login_text">À la connexion, YABA récupère la clé de ton vélo sur le serveur de VanMoof. YABA n’enregistre pas ton mot de passe.</string>
+    <string name="account_welcome_login_caption">Sur ce téléphone, seuls cette clé et un jeton d’accès sont conservés, tous deux chiffrés.</string>
+    <string name="account_welcome_login_fallback">Si le serveur ne répond pas, importe plutôt un fichier de clé.</string>
+
+    <!-- Garage -->
+    <string name="account_garage_title">Garage</string>
+    <string name="account_garage_done">Fermer</string>
+    <string name="account_garage_empty">Aucun vélo enregistré pour l’instant. Connecte-toi au compte ou ajoute un vélo à la main ci-dessous.</string>
+    <string name="account_garage_backup_title">Sauvegarder les clés</string>
+    <string name="account_garage_backup_hint">Le fichier de clés déverrouille ton vélo. Quiconque le possède a accès à ton vélo. Conserve-le en lieu sûr, s’il te plaît.</string>
+    <string name="account_garage_export">Exporter les clés</string>
+    <string name="account_garage_export_subject">Fichier de clés</string>
+    <string name="account_garage_export_chooser">Sauvegarder les clés</string>
+    <string name="account_garage_copy">Copier dans le presse-papiers</string>
+    <string name="account_garage_copied">Les clés ont été copiées dans le presse-papiers. Colle-les dans un gestionnaire de mots de passe ou une application de notes, s’il te plaît.</string>
+    <string name="account_garage_account_title">Compte</string>
+    <string name="account_garage_signed_in_as">Compte connecté\u00A0: %1$s</string>
+    <string name="account_garage_refresh">Recharger les vélos</string>
+    <string name="account_garage_refreshing">Chargement…</string>
+    <string name="account_garage_logout">Se déconnecter</string>
+    <string name="account_garage_login_hint">Connecte-toi au compte pour charger tes vélos. Les clés restent sur ce téléphone.</string>
+    <string name="account_garage_add_manual">Ajouter un vélo à la main</string>
+    <string name="account_garage_source_account">issu de ton compte</string>
+    <string name="account_garage_source_manual">ajouté à la main</string>
+    <string name="account_garage_connected">Connecté</string>
+    <string name="account_garage_connect">Connecter</string>
+    <string name="account_garage_connect_description">Se connecter à %1$s</string>
+    <string name="account_garage_rename">Renommer</string>
+    <string name="account_garage_rename_description">Renommer %1$s</string>
+    <string name="account_garage_rename_title">Renommer le vélo</string>
+    <string name="account_garage_save">Enregistrer</string>
+    <string name="account_garage_cancel">Annuler</string>
+    <string name="account_garage_delete">Supprimer</string>
+    <string name="account_garage_delete_title">Supprimer %1$s</string>
+    <string name="account_garage_delete_body">La clé sera supprimée de ce téléphone. Sans connexion au compte ni sauvegarde, tu n’auras plus accès au vélo.</string>
+    <string name="account_import_paste_hint">Colle le texte du fichier de clé .json que tu as enregistré depuis mooovy ou depuis YABA sur un autre téléphone.</string>
+    <string name="account_import_paste_button">Coller le texte à la place</string>
+    <string name="account_key_show_description">Afficher la clé</string>
+    <string name="account_key_hide_description">Masquer la clé</string>
+    <string name="account_garage_edit">Modifier</string>
+    <string name="account_garage_edit_description">Modifier %1$s</string>
+    <string name="account_garage_backup_first">Sauvegarder d’abord</string>
+</resources>

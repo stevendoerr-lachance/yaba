@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Destinations -->
+    <string name="shell_dest_ride">Rijden</string>
+    <string name="shell_dest_sound">Geluid</string>
+    <string name="shell_dest_diagnosis">Diagnose</string>
+    <string name="shell_dest_bike">Fiets</string>
+    <string name="shell_tab_alert_cd">%1$s, storing gemeld</string>
+
+    <!-- Bluetooth readiness (hero) -->
+    <string name="shell_ble_location_off">De locatie staat uit. Zonder locatie vindt Android geen Bluetooth-apparaten.</string>
+    <string name="shell_ble_off">Bluetooth staat uit.</string>
+    <string name="shell_ble_needs_nearby">Voor Bluetooth heeft de app toegang nodig tot apparaten in de buurt.</string>
+    <string name="shell_ble_needs_location">Om naar Bluetooth-apparaten te zoeken heeft de app toegang tot je locatie nodig.</string>
+    <string name="shell_ble_action_location">Locatie aanzetten</string>
+    <string name="shell_ble_action_allow">Bluetooth toestaan</string>
+    <string name="shell_ble_action_enable">Bluetooth aanzetten</string>
+    <string name="shell_ble_settings_hint">Verschijnt er geen vraag meer, geef de toegang dan in de app-instellingen onder “Rechten”.</string>
+    <string name="shell_ble_open_settings">App-instellingen openen</string>
+
+    <!-- Hero -->
+    <string name="shell_hero_which_bike">Geen fiets gekozen</string>
+    <string name="shell_hero_no_bike">Geen fiets</string>
+    <plurals name="shell_hero_bikes_saved">
+        <item quantity="one">Er is %1$d fiets opgeslagen. Kies er alsjeblieft een.</item>
+        <item quantity="other">Er zijn %1$d fietsen opgeslagen. Kies er alsjeblieft een.</item>
+    </plurals>
+    <string name="shell_hero_add_bike">Voeg een fiets toe in de garage.</string>
+    <string name="shell_hero_choose_bike">Kies een fiets</string>
+    <string name="shell_hero_link_lost">De Bluetooth-verbinding is onderbroken. De app blijft naar je fiets zoeken.</string>
+    <string name="shell_hero_search_again">Nu opnieuw zoeken</string>
+    <string name="shell_hero_connect">Verbinden</string>
+    <string name="shell_hero_close_vanmoof">Sluit alsjeblieft eerst de VanMoof-app, want de fiets accepteert maar één telefoon tegelijk.</string>
+    <string name="shell_hero_lock_offline">De fiets kan worden vergrendeld en ontgrendeld zodra hij verbonden is.</string>
+    <string name="shell_hero_lock_parked">Vergrendelen kan als de fiets stilstaat.</string>
+    <string name="shell_hero_pin_entry">De fiets wacht op de back-upcode.</string>
+    <string name="shell_bike_caption_owner">%1$s, eigendom van %2$s</string>
+
+    <!-- Connection state -->
+    <string name="shell_link_searching">Zoekt je fiets</string>
+    <string name="shell_link_connecting">Verbinden</string>
+    <string name="shell_link_authenticating">Meldt zich aan bij de fiets</string>
+    <string name="shell_link_ready">Verbonden</string>
+    <string name="shell_link_lost">Verbinding onderbroken</string>
+    <string name="shell_link_offline">Niet verbonden</string>
+
+    <!-- Lock state -->
+    <string name="shell_lock_unlocked">Ontgrendeld</string>
+    <string name="shell_lock_locked">Vergrendeld</string>
+    <string name="shell_lock_pin_entry">Wacht op back-upcode</string>
+    <string name="shell_lock_unknown">Toestand van het slot onbekend</string>
+
+    <!-- Top tube, read by TalkBack -->
+    <string name="shell_tube_riding_cd">Rijdt met %1$d\u00A0km/u</string>
+    <string name="shell_tube_charging_cd">Laadt op, accu op %1$d procent</string>
+    <string name="shell_tube_charging_unknown_cd">Laadt op</string>
+    <string name="shell_tube_lock_battery_cd">%1$s, accu op %2$d procent</string>
+    <string name="shell_tube_connecting_cd">Verbinden met je fiets</string>
+    <string name="shell_tube_ble_off_cd">Bluetooth staat uit</string>
+    <string name="shell_tube_upload_cd">Verstuurt een geluid, %1$d%%</string>
+    <string name="shell_fault_title">Storing\u00A0%1$d: %2$s</string>
+
+    <!-- Top tube matrix -->
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_speed">%1$d KMH</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_fault">E%1$d</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_offline">OFFLINE</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_ble_off">UIT</string>
+
+    <!-- Hero facts -->
+    <string name="shell_fact_battery">Accu</string>
+    <string name="shell_fact_battery_charging">Laadt op</string>
+    <string name="shell_fact_battery_value">%1$d%%</string>
+    <string name="shell_fact_odometer">Kilometerstand</string>
+    <string name="shell_fact_odometer_value">%1$s\u00A0km</string>
+    <string name="shell_fact_level">Ondersteuning</string>
+    <string name="shell_fact_limit">Snelheidslimiet</string>
+    <string name="shell_fact_limit_value">%1$d\u00A0km/u</string>
+    <string name="shell_facts_stale">Stand van %1$s\u00A0uur</string>
+
+    <!-- Faults -->
+    <string name="shell_fault_open_cd">Diagnose openen</string>
+    <string name="shell_fault_tap">Tik voor de diagnose.</string>
+    <string name="shell_fault_42_tap">Controleer stekker en kabel van de Kick Lock. Tik voor de diagnose.</string>
+    <string name="shell_fault_last">Laatst gemeld: storing\u00A0%1$d</string>
+    <plurals name="shell_fault_more">
+        <item quantity="one">En nog %1$d storing. Tik voor de diagnose.</item>
+        <item quantity="other">En nog %1$d storingen. Tik voor de diagnose.</item>
+    </plurals>
+
+    <!-- Ride controls -->
+    <string name="shell_controls_almost">De verbinding wordt opgebouwd. Daarna kun je hier alles instellen.</string>
+    <string name="shell_controls_connect_first">Maak verbinding met de fiets om hem te bedienen.</string>
+    <string name="shell_section_speed">Snelheidslimiet</string>
+    <string name="shell_section_assist">Ondersteuning</string>
+    <string name="shell_section_light">Licht</string>
+    <string name="shell_section_alarm">Alarm</string>
+    <string name="shell_speedplus_note">Speed++ staat aan. De snelheidsmeter op de fiets toont minder, YABA toont de echte snelheid.</string>
+    <string name="shell_alarm_off">Uit</string>
+    <string name="shell_alarm_on">Aan</string>
+    <string name="shell_alarm_running">Alarm klinkt: %1$s</string>
+    <string name="shell_touch_unlock_hint">Ontgrendelen met knop is ingeschakeld: een druk op de bel- of boostknop ontgrendelt de fiets, zolang je telefoon verbonden is.</string>
+    <string name="shell_cancel">Annuleren</string>
+    <string name="shell_sending">Verzenden</string>
+
+    <!-- Assist ladder -->
+    <string name="shell_power_off">Uit</string>
+    <string name="shell_power_off_cd">Ondersteuning uit</string>
+    <string name="shell_power_level_cd">Stand\u00A0%1$d</string>
+
+    <!-- Lock slider -->
+    <string name="shell_slider_cd">Slot</string>
+    <string name="shell_slider_state_unknown">Onbekend</string>
+    <string name="shell_slider_action_unlock">Ontgrendelen</string>
+    <string name="shell_slider_action_lock">Vergrendelen</string>
+    <string name="shell_slider_unlocking">Ontgrendelen…</string>
+    <string name="shell_slider_locking">Vergrendelen…</string>
+    <string name="shell_slider_slide_unlock">Schuif om te ontgrendelen</string>
+    <string name="shell_slider_slide_lock">Schuif om te vergrendelen</string>
+    <string name="shell_ride_link_lost_title">Verbinding met de fiets onderbroken</string>
+    <string name="shell_ride_link_lost_text">De fiets rijdt ongewijzigd door. Kijk alsjeblieft pas op je telefoon als je stilstaat.</string>
+    <string name="shell_ride_link_lost_after_text">De Bluetooth-verbinding is om %1$s\u00A0uur onderbroken. Motor, licht en snelheidslimiet blijven zoals ze waren ingesteld. YABA maakt opnieuw verbinding zodra het de fiets ontvangt.</string>
+    <string name="shell_ride_shipping_title">Stop nu, alsjeblieft.</string>
+    <string name="shell_ride_shipping_text">Motor, licht en Bluetooth schakelen waarschijnlijk over ongeveer 10\u00A0seconden uit.</string>
+    <string name="shell_ride_shipping_after_title">De fiets heeft de transportmodus gemeld</string>
+    <string name="shell_ride_shipping_after_text">De fiets heeft om %1$s\u00A0uur de transportmodus gemeld en daarna motor, licht en Bluetooth uitgeschakeld. Is hij nog uit, druk dan kort op de knop onder de bovenbuis of sluit de oplader aan. Lees daarna meteen het interne logboek uit onder “Diagnose”. Koppel de accu daarvoor niet los.</string>
+    <string name="shell_notfound_title">Fiets niet gevonden</string>
+    <string name="shell_notfound_text">YABA ontvangt al meer dan 12\u00A0seconden geen antwoord van “%1$s”. Sluit alsjeblieft de VanMoof-app en wek de fiets met de belknop.</string>
+    <string name="shell_unlock_done_text">De fiets is in %1$s\u00A0seconden ontgrendeld, rechtstreeks via Bluetooth. De accu staat op %2$d%%.</string>
+    <string name="shell_unlock_first_ride">Goede rit.</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="labx_cmd_boost_rolling_on">Boost en roulant activé</string>
+    <string name="labx_cmd_boost_rolling_off">Boost en roulant désactivé</string>
+
+    <string name="labx_error_level_unknown">Le niveau d’assistance n’a pas encore été lu. Patiente un instant et touche à nouveau.</string>
+    <string name="labx_error_clock_readback">Relecture de l’horloge peu plausible. L’horloge a peut-être été réglée\u00A0; vérifie à nouveau.</string>
+    <string name="labx_error_clock_jump">Seulement sans bouton maintenu\u00A0: si l’horloge saute de plus de 20\u00A0secondes pendant que Sonnette ou Boost est maintenu, le vélo considère le bouton comme bloqué.</string>
+    <string name="labx_error_boost_rolling">Teste à l’arrêt\u00A0: avec «\u00A0activé\u00A0», le niveau peut changer par accident dès que le vélo se met à rouler.</string>
+    <string name="labx_error_assist_cut">Seulement à l’arrêt et tant que le vélo ne roule pas\u00A0; cela coupe l’assistance moteur.</string>
+    <string name="labx_error_not_confirmed">Non confirmé. La valeur a été écrite, mais la relecture ne la confirme pas\u00A0; la valeur enregistrée reste inchangée.</string>
+    <string name="labx_error_lamp_read">Les canaux de lampe ne peuvent pas être lus\u00A0; rien n’a été modifié.</string>
+    <string name="labx_error_lamp_restore">Les lampes ont été réécrites, mais la relecture diffère. Un vrai changement d’état (mode, verrouillage, redémarrage) les ramène.</string>
+
+    <string name="labx_board_temp_waiting">en attente d’un changement</string>
+    <string name="labx_not_read">non lu</string>
+    <string name="labx_threshold_factory">Valeur d’usine 200</string>
+
+    <string name="labx_alarm_stop_note">Arrête une alarme en cours sans le code de secours. La commande efface aussi le verrou logiciel\u00A0; si le vélo était verrouillé, YABA propose ensuite «\u00A0Reverrouiller\u00A0».</string>
+    <string name="labx_relock_button">Reverrouiller</string>
+    <string name="labx_relock_hint">L’arrêt de l’alarme a effacé le verrou logiciel. Sans le Kick Lock engagé, le vélo est considéré comme déverrouillé.</string>
+
+    <string name="labx_siren_note">Alarme désactivée met fin à chaque niveau et lève le verrou logiciel. Reverrouille ensuite le vélo si besoin.</string>
+    <string name="labx_siren_stage2">Veille de mouvement. Le vélo ne réagit qu’à une secousse et s’intensifie après plusieurs chocs.</string>
+    <string name="labx_siren_stage3">Environ 30\u00A0secondes de sirène, puis mode de localisation. Le modem 2G se manifeste alors environ toutes les 30\u00A0minutes au lieu de toutes les 2\u00A0heures et consomme de la batterie.</string>
+    <string name="labx_siren_stage4">Directement en mode de localisation avec le verrou logiciel posé, sans sirène.</string>
+
+    <string name="labx_selftest_dialog_text">YABA télécharge d’abord le journal du vélo et l’enregistre sur le téléphone\u00A0; ensuite le diagnostic s’exécute et le vélo passe en veille. Le rapport évince les lignes les plus anciennes du journal, c’est pourquoi il est enregistré d’abord.</string>
+
+
+    <!-- lamp channel accessibility -->
+    <string name="labx_lamp_channel">Canal\u00A0%1$d</string>
+    <string name="labx_lamp_state_on">activé</string>
+    <string name="labx_lamp_state_off">désactivé</string>
+
+    <!-- Fahrtenschreiber: firmware tokens as a secondary line -->
+    <string name="labx_firmware_text">Texte du firmware\u00A0: %1$s</string>
+    <string name="labx_derate_bat_temp">Température de la batterie %1$s</string>
+
+    <!-- Sound-Lab: factory clip cannot be recovered -->
+    <string name="labx_clip_factory_warning">Le son d’usine ne peut pas être relu depuis le vélo. Une fois remplacé, il est perdu pour de bon\u00A0; YABA ne peut pas le restaurer. Garde une copie toi-même si tu veux le récupérer.</string>
+</resources>

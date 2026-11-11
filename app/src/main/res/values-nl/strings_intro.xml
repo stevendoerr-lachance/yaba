@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intro_skip">Overslaan</string>
+    <string name="intro_description">Intro: een laars trapt drie keer op een fiets, terwijl het display fout 42 knippert. De fiets spat uit elkaar en staat daarna gloeiend weer op.</string>
+    <string name="intro_slogan_1">Rijdt door.</string>
+    <string name="intro_slogan_2">Wat er ook gebeurt.</string>
+    <string name="intro_replay">Intro opnieuw afspelen</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Straža (the guard design section 7): the section on Vožnja, the hero while it is active, the locked links. -->
+    <string name="guard_section_title">Straža</string>
+    <string name="guard_intro">Straža zaključava tvoj bicikl i uključuje njegov nadzor kretanja. YABA ostaje povezana i obavještava te na ovom telefonu čim prepozna kretanje.</string>
+    <string name="guard_arm">Uključi stražu</string>
+    <string name="guard_siren_now">Sirena odmah</string>
+    <string name="guard_siren_now_caption">Pri prvom kretanju koje YABA prepozna uključuje sirenu bicikla. Bez ove postavke YABA te samo obavještava; bicikl tada sam uključuje sirenu tek nakon više potresanja.</string>
+
+    <!-- Why arming is not offered (GuardRules.armBlocker) -->
+    <string name="guard_blocker_not_connected">Najprije poveži YABA s biciklom.</string>
+    <string name="guard_blocker_not_parked">Straža se može uključiti samo dok bicikl stoji i nijedna tipka nije pritisnuta.</string>
+    <string name="guard_blocker_bike_state">Bicikl upravo ažurira firmware ili prelazi u transportni način. Straža se sada ne može uključiti.</string>
+    <string name="guard_blocker_busy">Bicikl upravo prenosi podatke. Straža se može uključiti čim prijenos završi.</string>
+
+    <!-- Phases -->
+    <string name="guard_arming">Uključuje se …</string>
+    <string name="guard_arming_text">YABA zaključava bicikl i čeka da potvrdi svoj nadzor kretanja. To traje do %1$d sekundi.</string>
+    <string name="guard_active_since">Straža aktivna od %1$s</string>
+    <string name="guard_watch_bike">Bicikl sam pazi na kretanje, a YABA ostaje povezana.</string>
+    <string name="guard_watch_unconfirmed">Bicikl nije potvrdio svoj nadzor kretanja (stanje alarma %1$d). Zato YABA prepoznaje samo kotač koji se okreće, pritisnute tipke, bravu i bateriju.</string>
+    <string name="guard_watch_unconfirmed_unknown">Bicikl nije potvrdio svoj nadzor kretanja. Zato YABA prepoznaje samo kotač koji se okreće, pritisnute tipke, bravu i bateriju.</string>
+    <string name="guard_watch_retry">Pokušaj ponovno</string>
+    <string name="guard_end">Završi stražu</string>
+    <string name="guard_silence">Isključi sirenu</string>
+    <string name="guard_lever_hint">Povlačenje završava stražu i otključava bicikl.</string>
+    <string name="guard_lever_hint_offline">Bez veze YABA nakon povlačenja čeka bicikl do %1$d sekundi. Ako se veza vrati, bicikl se otključava; inače straža završava samo u YABA.</string>
+    <string name="guard_alarm_at">Alarm u %1$s</string>
+    <string name="guard_rearming">Obnavlja stražu …</string>
+    <string name="guard_disarming">Završava stražu …</string>
+    <string name="guard_disarming_wait">YABA čeka vezu s biciklom do %1$d sekundi.</string>
+    <string name="guard_lost_watch">Veza s biciklom je prekinuta. Nadzor kretanja na biciklu radi dalje, a YABA se ponovno povezuje.</string>
+    <string name="guard_lost">Veza s biciklom je prekinuta. YABA se ponovno povezuje.</string>
+
+    <!-- Latest lines -->
+    <string name="guard_events_title">Nedavno</string>
+    <string name="guard_events_all">Svi događaji pod Dijagnoza</string>
+    <string name="guard_share_journal">Podijeli zapisnik straže</string>
+
+    <!-- Hints -->
+    <string name="guard_notifications_off">Obavijesti su za YABA isključene. Sirena radi, ali telefon ti ne javlja kretanje.</string>
+    <string name="guard_notifications_allow">Dopusti obavijesti</string>
+    <string name="guard_battery_hint">Izuzmi YABA iz optimizacije baterije kako Android preko noći ne bi prekinuo vezu s biciklom.</string>
+    <string name="guard_battery_open">Otvori postavke baterije</string>
+    <string name="guard_alarm_choice_locked">Dok je straža aktivna, alarm ostaje uključen.</string>
+    <string name="guard_link_locked">Dok je straža aktivna, YABA ostaje povezana s biciklom. Najprije završi stražu.</string>
+
+    <!-- Issues (GuardState.issue) -->
+    <string name="guard_issue_dismiss">Sakrij</string>
+    <string name="guard_issue_service">Android nije pokrenuo uslugu za stražu. Straža ostaje isključena.</string>
+    <string name="guard_issue_arm_failed">Straža se nije mogla uključiti. Razlog: %1$s</string>
+    <string name="guard_issue_arm_failed_unknown">Straža se nije mogla uključiti.</string>
+    <string name="guard_issue_alarm_during">Bicikl je pri uključivanju sam aktivirao alarm. YABA je zaustavila alarm, a bicikl ostaje zaključan. Drži ga mirno i pokušaj ponovno.</string>
+    <string name="guard_issue_alarm_mode">Bicikl nije uključio alarm (način alarma %1$s). Straža ostaje isključena.</string>
+    <string name="guard_issue_lock">Bicikl se nije zaključao (brava javlja %1$s). Straža ostaje isključena.</string>
+    <string name="guard_issue_disarm_unconfirmed">Straža je završena, ali bicikl još javlja stanje alarma %1$s. Pod „Alarm“ možeš zaustaviti alarm.</string>
+    <string name="guard_issue_ended_offline">Straža je završena. YABA nije dosegnula bicikl, pa se na biciklu ništa nije promijenilo.</string>
+    <string name="guard_issue_bike_gone">Straža je završena jer bicikl više nije spremljen u YABA.</string>
+
+    <!-- Top tube and header. Matrix words: ASCII, no diacritics (BRAND "Languages"). -->
+    <string name="guard_matrix_armed">GUARD</string>
+    <string name="guard_matrix_alarm">ALARM</string>
+    <string name="guard_tube_armed_cd">Straža aktivna, baterija na %1$d posto</string>
+    <string name="guard_tube_armed_nobattery_cd">Straža aktivna</string>
+    <string name="guard_tube_arming_cd">Straža se uključuje</string>
+    <string name="guard_tube_alarm_cd">Alarm na biciklu</string>
+    <string name="guard_tube_lost_cd">Straža aktivna, veza prekinuta</string>
+    <string name="guard_header_armed">Straža</string>
+    <string name="guard_header_alarm">Alarm</string>
+    <string name="guard_issue_arm_failed_partly">Straža se nije mogla uključiti. Razlog: %1$s. Bicikl ipak može već biti zaključan ili imati uključen alarm. Provjeri klizač i „Alarm”.</string>
+    <string name="guard_issue_disarm_locked">Straža je završena i alarm je isključen, ali bicikl još javlja da je zaključan (brava %1$s). Možeš ga otključati klizačem.</string>
+    <string name="guard_issue_ended_partly">Straža je završena. YABA je poslala naredbe biciklu, ali nije dobila odgovor. „Vožnja” pokazuje stanje bicikla nakon sljedećeg povezivanja.</string>
+    <string name="guard_issue_not_locked">Bicikl nije zaključan (brava javlja %1$s). „Pokušaj ponovno” ga zaključava i ponovno uspostavlja stražu.</string>
+    <string name="guard_issue_not_locked_unknown">YABA nema potvrdu da je bicikl zaključan. „Pokušaj ponovno” ga zaključava i ponovno uspostavlja stražu.</string>
+</resources>

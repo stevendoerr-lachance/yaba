@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bike screen, Diagnose screen and the shared bike components (BikeBits). -->
+<resources>
+    <!-- Shared -->
+    <string name="bike_needs_link">Dat is alleen mogelijk zolang de fiets verbonden is.</string>
+    <string name="bike_add_bike">Fiets toevoegen</string>
+    <string name="bike_delete">Verwijderen</string>
+    <string name="bike_keep">Bewaren</string>
+    <string name="bike_cancel">Annuleren</string>
+    <string name="bike_share">Delen</string>
+    <string name="bike_yes">Ja</string>
+    <string name="bike_no">Nee</string>
+    <string name="bike_value_percent">%1$d%%</string>
+
+    <!-- Live-check verdicts, read by TalkBack -->
+    <string name="bike_health_ok">In orde</string>
+    <string name="bike_health_problem">Probleem</string>
+    <string name="bike_health_attention">Aandacht nodig</string>
+    <string name="bike_health_unknown">Onbekend</string>
+
+    <!-- Link state line -->
+    <string name="bike_link_ready">Verbonden</string>
+    <string name="bike_link_searching">De fiets zoeken…</string>
+    <string name="bike_link_connecting">Verbinden…</string>
+    <string name="bike_link_authenticating">Aanmelden bij de fiets…</string>
+    <string name="bike_link_lost">Verbinding onderbroken, blijft zoeken</string>
+    <string name="bike_link_offline">Niet verbonden</string>
+
+    <!-- Connect prompt -->
+    <string name="bike_prompt_no_bike">Er is nog geen fiets ingesteld op deze telefoon.</string>
+    <string name="bike_prompt_permission_nearby">Zonder de toestemming “Apparaten in de buurt” vindt de app de fiets niet.</string>
+    <string name="bike_prompt_permission_location">Zonder locatietoestemming vindt Android geen Bluetooth-apparaten.</string>
+    <string name="bike_prompt_grant_permission">Toegang geven</string>
+    <string name="bike_prompt_bluetooth_off">Bluetooth staat uit.</string>
+    <string name="bike_prompt_bluetooth_on">Bluetooth aanzetten</string>
+    <string name="bike_prompt_connect">Verbinden</string>
+    <string name="bike_prompt_close_vanmoof">Sluit alsjeblieft eerst de VanMoof-app, want de fiets accepteert maar één verbinding tegelijk.</string>
+    <string name="bike_prompt_searching">YABA zoekt naar %1$s. De fiets wordt wakker als je hem beweegt of op de belknop drukt.</string>
+    <string name="bike_prompt_retry">Nu opnieuw zoeken</string>
+    <string name="bike_prompt_stop">Zoeken beëindigen</string>
+
+    <!-- Bike screen: header and facts -->
+    <string name="bike_no_bike_title">Geen fiets</string>
+    <string name="bike_model_of_owner">%1$s, eigendom van %2$s</string>
+    <string name="bike_owned_by">Eigendom van %1$s</string>
+    <string name="bike_manage_bikes">Fietsen beheren</string>
+    <string name="bike_no_bike_text">Voeg je S3 toe, dan zie je hier kilometerstand, accu en firmware.</string>
+    <string name="bike_fact_distance">Kilometerstand</string>
+    <string name="bike_fact_battery">Accu</string>
+    <string name="bike_fact_battery_charging">Accu laadt op</string>
+    <string name="bike_fact_firmware">Firmware</string>
+    <string name="bike_fact_frame">Framenummer</string>
+    <string name="bike_fact_mac">MAC</string>
+    <string name="bike_fact_model">Model</string>
+
+    <!-- Bike screen: connection -->
+    <string name="bike_connection_title">Verbinding</string>
+    <string name="bike_connection_wake">Wekken</string>
+    <string name="bike_connection_waking">Wekken…</string>
+    <string name="bike_connection_refresh">Waarden opnieuw laden</string>
+    <string name="bike_connection_refreshing">Laden…</string>
+    <string name="bike_connection_disconnect">Verbinding verbreken</string>
+    <string name="bike_connection_wake_done">De fiets heeft het commando om wakker te worden ontvangen.</string>
+    <string name="bike_connection_refresh_done">Alle waarden zijn opnieuw gelezen.</string>
+
+    <!-- Bike screen: versions -->
+    <string name="bike_versions_title">Versies en kenmerken</string>
+    <string name="bike_versions_none">De fiets heeft geen versies doorgegeven.</string>
+    <string name="bike_versions_offline">De app leest de versies uit bij het verbinden.</string>
+
+    <!-- Bike screen: settings -->
+    <string name="bike_settings_title">Instellingen</string>
+    <string name="bike_units">Eenheden</string>
+    <string name="bike_units_hint">Hoe de fiets snelheid en afstand weergeeft.</string>
+    <string name="bike_unit_metric">km/u</string>
+    <string name="bike_unit_imperial">mph</string>
+    <string name="bike_theme">Kleuren</string>
+    <string name="bike_theme_system">Systeem</string>
+    <string name="bike_theme_dark">Nacht</string>
+    <string name="bike_theme_light">Dag</string>
+    <string name="bike_auto_connect">Automatisch verbinden</string>
+    <string name="bike_auto_connect_caption">Verbindt met je laatste fiets zodra je de app opent.</string>
+    <string name="bike_touch_unlock">Ontgrendelen met knop</string>
+    <string name="bike_touch_unlock_caption">Een druk op de bel- of boostknop ontgrendelt de fiets, zolang je telefoon verbonden is.</string>
+    <string name="bike_touch_unlock_range">Dat werkt ook voor andere personen, zolang jij binnen Bluetooth-bereik bent.</string>
+
+    <!-- Bike screen: backup code -->
+    <string name="bike_code_title">Back-upcode</string>
+    <string name="bike_code_intro">Drie cijfers waarmee je de fiets zonder telefoon ontgrendelt. Je voert ze op de fiets in met de belknop.</string>
+    <string name="bike_code_field">Nieuwe code</string>
+    <string name="bike_code_field_hint">Cijfers 1 t/m 9</string>
+    <string name="bike_code_set">Code instellen</string>
+    <string name="bike_code_setting">Code instellen…</string>
+    <string name="bike_code_set_done">De back-upcode is ingesteld. Probeer hem alsjeblieft meteen uit op de fiets.</string>
+    <string name="bike_code_clear">Code verwijderen</string>
+    <string name="bike_code_clearing">Verwijderen…</string>
+    <string name="bike_code_clear_done">De back-upcode is verwijderd. Het alarm is nu uitgeschakeld.</string>
+    <string name="bike_code_clear_title">Back-upcode verwijderen?</string>
+    <string name="bike_code_clear_text">Zonder back-upcode kan de fiets alleen nog met de telefoon worden ontgrendeld. Bij het verwijderen wordt ook het alarm van de fiets uitgeschakeld.</string>
+
+    <!-- Bike screen: experiments -->
+    <string name="bike_exp_title">Experimenten</string>
+    <string name="bike_exp_intro">Sinds firmware\u00A01.8.2 accepteert de fiets 37\u00A0km/u en stand\u00A05 niet meer via Bluetooth, ook niet met 1.9.3. Bij het opstarten zet de firmware beide terug. Alleen een aangepaste firmware kan ze terugbrengen, en die zit niet in deze app.</string>
+    <string name="bike_exp_fw">Je fiets draait op firmware\u00A0%1$s.</string>
+    <string name="bike_exp_fw_knows_37">Deze versie ondersteunt 37\u00A0km/u nog.</string>
+    <string name="bike_exp_fw_knows_level5">Deze versie ondersteunt stand\u00A05 nog.</string>
+    <string name="bike_exp_fw_knows_both">Deze versie ondersteunt 37\u00A0km/u en stand\u00A05 nog.</string>
+    <string name="bike_exp_test_37">37\u00A0km/u testen</string>
+    <string name="bike_exp_test_level5">Stand\u00A05 testen</string>
+    <string name="bike_exp_sending">Verzenden…</string>
+    <string name="bike_exp_37">37\u00A0km/u</string>
+    <string name="bike_exp_level5">Stand\u00A05</string>
+    <string name="bike_exp_37_accepted">De fiets heeft 37\u00A0km/u overgenomen. Na de volgende herstart geldt weer de vorige waarde.</string>
+    <string name="bike_exp_level5_accepted">De fiets heeft stand\u00A05 overgenomen. Na de volgende herstart geldt weer de vorige waarde.</string>
+    <string name="bike_exp_reports_both">De fiets meldt momenteel %1$d\u00A0km/u en stand\u00A0%2$d.</string>
+    <string name="bike_exp_reports_speed">De fiets meldt momenteel %1$d\u00A0km/u.</string>
+    <string name="bike_exp_reports_level">De fiets meldt momenteel stand\u00A0%1$d.</string>
+    <string name="bike_exp_back_25">Terug naar 25\u00A0km/u</string>
+    <string name="bike_exp_back_level4">Terug naar stand\u00A04</string>
+    <string name="bike_exp_setting">Instellen…</string>
+
+    <!-- Bike screen: about -->
+    <string name="bike_about_title">Over</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="bike_about_matrix">YABA</string>
+    <string name="bike_about_name">YABA</string>
+    <string name="bike_about_version">Yet Another Bike App, versie\u00A0%1$s</string>
+    <string name="bike_about_slogan">Rijdt door. Wat er ook gebeurt.</string>
+    <string name="bike_about_disclaimer">Voor VanMoof S3, X3, S2 en X2. Niet gelieerd aan VanMoof en geen officiële VanMoof-app.</string>
+    <string name="bike_about_credits">YABA bouwt voort op het open werk van mooovy (mjarkk), VanMoofKit (SvenTiigi), pymoof (quantsini) en op de decompilatie van de S3-firmware door Knight1. Hartelijk dank daarvoor. Dank ook aan iedereen die de S3 heeft ontworpen en gebouwd.</string>
+
+    <!-- Diagnose screen -->
+    <string name="bike_diag_title">Diagnose</string>
+    <string name="bike_diag_intro">YABA legt vast wat de fiets meldt. Schakelt de fiets onderweg uit, dan blijven de gegevens hier bewaard.</string>
+
+    <!-- Diagnose: live check -->
+    <string name="bike_live_title">Controle bij stilstand</string>
+    <string name="bike_live_connect_reason">Deze waarden komen rechtstreeks van de fiets. Zodra je verbinding maakt, vult de lijst zich.</string>
+    <string name="bike_live_status">Bedrijfstoestand van de fiets</string>
+    <string name="bike_live_status_shipping_hint">De fiets gaat over naar de transportmodus. Sluit om hem te wekken de oplader aan of druk kort op de knop onder de bovenbuis.</string>
+    <plurals name="bike_live_shipping_count">
+        <item quantity="one">%1$d× transportmodus sinds de start van de app</item>
+        <item quantity="other">%1$d× transportmodus sinds de start van de app</item>
+    </plurals>
+    <string name="bike_live_supply">Voeding boven 20\u00A0V</string>
+    <plurals name="bike_live_supply_drops">
+        <item quantity="one">%1$d× onder 20\u00A0V gezakt</item>
+        <item quantity="other">%1$d× onder 20\u00A0V gezakt</item>
+    </plurals>
+    <string name="bike_live_kicklock_switch">Kick Lock-schakelaar</string>
+    <string name="bike_live_kicklock_reports_locked">Meldt vergrendeld</string>
+    <string name="bike_live_kicklock_normal">Normaal</string>
+    <string name="bike_live_kicklock_switch_hint">Meldt het slot tijdens het rijden “vergrendeld”, dan ligt de oorzaak waarschijnlijk bij de Kick Lock-schakelaar of de kabel ervan.</string>
+    <plurals name="bike_live_kicklock_riding">
+        <item quantity="one">%1$d× tijdens het rijden</item>
+        <item quantity="other">%1$d× tijdens het rijden</item>
+    </plurals>
+    <string name="bike_live_kicklock_coil">Kick Lock-spoel</string>
+    <string name="bike_live_kicklock_coil_missing">Niet gedetecteerd (42)</string>
+    <string name="bike_live_kicklock_coil_ok">Gedetecteerd</string>
+    <string name="bike_live_kicklock_coil_hint">Storing\u00A042: de terugmeldlijn van de spoel is open. Valt tegelijk de accudetectie weg, dan gaat de fiets waarschijnlijk over naar de transportmodus.</string>
+    <string name="bike_live_wheel">Wiel draait</string>
+    <string name="bike_live_lock">Slot</string>
+    <string name="bike_live_charger">Oplader</string>
+    <string name="bike_live_buttons">Knoppen ingedrukt</string>
+    <string name="bike_live_button_bell">Bel</string>
+    <string name="bike_live_button_boost">Boost</string>
+    <string name="bike_live_button_power">Aan/herstart</string>
+    <string name="bike_live_buttons_none">Geen</string>
+    <string name="bike_live_buttons_hint">Blijft de weergave zonder vingerdruk bestaan, dan klemt de knop (storing\u00A040 of 41). Een druk op de aan/herstart-knop tijdens het rijden start de fiets opnieuw op.</string>
+    <string name="bike_live_connected_for">Verbindingsduur</string>
+    <string name="bike_live_reconnects">Herverbindingen</string>
+    <string name="bike_live_reconnects_hint">Hoe vaak de verbinding is onderbroken en hersteld.</string>
+
+    <!-- Diagnose: faults -->
+    <string name="bike_faults_title">Storingen</string>
+    <plurals name="bike_faults_active">
+        <item quantity="one">%1$d actief</item>
+        <item quantity="other">%1$d actief</item>
+    </plurals>
+    <string name="bike_faults_offline">YABA leest actieve storingen rechtstreeks van de fiets. Zodra de fiets verbonden is, worden ze hier getoond.</string>
+    <string name="bike_faults_none">Geen actieve storingen.</string>
+    <string name="bike_fault_spoken">Storing\u00A0%1$d: %2$s. %3$s</string>
+    <string name="bike_lookup_title">Foutcode opzoeken</string>
+    <string name="bike_lookup_hint">Voer het getal in dat de fiets op het display toont, bijvoorbeeld 42.</string>
+    <string name="bike_lookup_field">Code</string>
+    <string name="bike_lookup_display_empty">Display leeg</string>
+    <string name="bike_lookup_display_shows">Display toont %1$s</string>
+    <string name="bike_lookup_unknown_name">Bestaat niet</string>
+    <string name="bike_lookup_unknown_hint">De fiets gebruikt alleen codes van 0 tot 63.</string>
+    <string name="bike_lookup_active">Momenteel actief op je fiets.</string>
+
+    <!-- Diagnose: ride logger -->
+    <string name="bike_logger_title">Ritregistratie</string>
+    <string name="bike_logger_intro">De ritregistratie schrijft elke 2\u00A0seconden een meetwaarde en elke gebeurtenis naar één CSV-bestand. Een melding houdt haar ook bij uitgeschakeld scherm actief.</string>
+    <string name="bike_logger_coloros">ColorOS stopt de ritregistratie toch, zolang YABA niet op de achtergrond mag draaien.</string>
+    <string name="bike_logger_stop">Ritregistratie stoppen</string>
+    <string name="bike_logger_start">Ritregistratie starten</string>
+    <string name="bike_logger_offline">De fiets is momenteel niet verbonden. De ritregistratie loopt toch door en legt ook elke verbindingspoging vast.</string>
+    <string name="bike_logger_start_failed">De ritregistratie kon niet worden gestart: %1$s</string>
+    <string name="bike_logger_battery_settings">Batterijoptimalisatie openen</string>
+    <string name="bike_logger_coloros_path">Open op ColorOS “Instellingen”, “Batterij”, “Batterijgebruik van apps” en “YABA”, en sta activiteit op de achtergrond toe.</string>
+    <string name="bike_logger_unrestricted">Batterijoptimalisatie staat uit voor YABA, daarom blijft de ritregistratie op de achtergrond doorlopen.</string>
+    <string name="bike_logger_recordings">Opnames</string>
+    <string name="bike_logger_empty">Nog geen rit opgenomen. Start de ritregistratie alsjeblieft vóór je volgende rit.</string>
+    <string name="bike_logger_share_title">Ritregistratie delen</string>
+    <string name="bike_logger_delete_title">Opname verwijderen?</string>
+    <string name="bike_logger_delete_text">De rit van %1$s wordt verwijderd.</string>
+    <string name="bike_logger_running_since">Loopt sinds %1$s</string>
+    <string name="bike_logger_samples">Metingen</string>
+    <string name="bike_logger_incidents">Incidenten</string>
+    <string name="bike_logger_duration">Duur</string>
+    <string name="bike_logger_live_file">Wordt nu opgenomen</string>
+    <!-- java.time DateTimeFormatter pattern for the start of a recording -->
+    <string name="bike_logger_entry_date">d MMM yyyy, HH:mm</string>
+
+    <!-- Diagnose: events -->
+    <string name="bike_events_title">Gebeurtenissen</string>
+    <string name="bike_events_all">Alle</string>
+    <string name="bike_events_incidents">Incidenten</string>
+    <plurals name="bike_events_incidents_count">
+        <item quantity="one">%1$d incident</item>
+        <item quantity="other">%1$d incidenten</item>
+    </plurals>
+    <string name="bike_events_no_incidents">Geen incidenten. Onderbrekingen, transportmodus en storingen worden hier vermeld.</string>
+    <string name="bike_events_empty">Nog niets vastgelegd. Zodra de fiets verbonden is, wordt hier elke wijziging vermeld.</string>
+    <string name="bike_events_showing">%1$d van %2$d getoond.</string>
+    <string name="bike_events_more">Meer tonen</string>
+    <string name="bike_events_clear">Wissen</string>
+
+    <!-- Diagnose: bike log -->
+    <string name="bike_log_title">Logboek van de fiets</string>
+    <string name="bike_log_intro">De fiets houdt een eigen logboek bij. Het uitlezen kan enkele minuten duren, en het uitlezen van de actuele waarden pauzeert zolang.</string>
+    <string name="bike_log_reading">Uitlezen…</string>
+    <string name="bike_log_reading_percent">Uitlezen… %1$d%%</string>
+    <string name="bike_log_read">Intern logboek uitlezen</string>
+    <string name="bike_log_read_again">Opnieuw uitlezen</string>
+    <string name="bike_log_failed">Het logboek kon niet worden gelezen.</string>
+    <string name="bike_log_empty">De fiets heeft een leeg logboek geleverd.</string>
+    <plurals name="bike_log_lines_unit">
+        <item quantity="one">regel</item>
+        <item quantity="other">regels</item>
+    </plurals>
+    <string name="bike_log_read_at">Uitgelezen om %1$s\u00A0uur.</string>
+    <plurals name="bike_log_tail">
+        <item quantity="one">De laatste regel:</item>
+        <item quantity="other">De laatste %1$d regels:</item>
+    </plurals>
+    <string name="bike_log_all">Het volledige logboek:</string>
+    <string name="bike_log_share">Logboek delen</string>
+    <string name="bike_log_share_failed">Het bestand kon niet worden geschreven. Mogelijk is de opslag vol.</string>
+    <string name="bike_log_share_subject">S3-logboek %1$s</string>
+    <string name="bike_log_share_title">Logboek van de fiets delen</string>
+
+    <!-- Diagnose: raw data -->
+    <string name="bike_raw_title">Ruwe data</string>
+    <string name="bike_raw_hint">Ontsleutelde bytes per kenmerk, zoals de fiets ze het laatst heeft verzonden.</string>
+    <string name="bike_raw_read">Alle waarden lezen</string>
+    <string name="bike_raw_reading">Lezen…</string>
+    <string name="bike_raw_done">Alle waarden gelezen.</string>
+    <string name="bike_raw_empty">leeg</string>
+    <string name="bike_about_origin">YABA is gebouwd in Frankfurt am Main voor één tweedehands S3 en voor elke fiets die moet blijven rijden. De app is getest met S3-firmware\u00A01.9.3.</string>
+    <string name="bike_outbursts_title">Nederlandse vloeken</string>
+    <string name="bike_outbursts_caption">Af en toe vloekt YABA in het Nederlands, op de puntmatrix hier in de app, nooit tijdens het rijden. Op het display van de fiets zelf kan YABA niet schrijven.</string>
+    <string name="bike_outbursts_list_title">De woorden</string>
+    <string name="bike_outbursts_list_hint">Houd een woord ingedrukt om het op de matrix te zien.</string>
+    <string name="bike_outburst_meaning_balen">Letterlijk: zich ergeren. Bedoeld: wat jammer.</string>
+    <string name="bike_outburst_meaning_gedoe">Letterlijk: ophef. Bedoeld: omslag, last.</string>
+    <string name="bike_outburst_meaning_nou_ja">Letterlijk: nu ja. Bedoeld: dan maar.</string>
+    <string name="bike_outburst_meaning_he_he">Letterlijk: eindelijk. Bedoeld: gelukt.</string>
+    <string name="bike_outburst_meaning_auw">Letterlijk: au. Bedoeld: dat deed pijn.</string>
+    <string name="bike_outburst_meaning_verdorie">Letterlijk: een verzachte vorm van “verdomme”. Bedoeld: verdraaid.</string>
+    <string name="bike_outburst_meaning_de_pijp_uit">Letterlijk: uit de pijp. Bedoeld: voorbij, afgelopen.</string>
+    <string name="bike_outburst_meaning_bek_dicht">Letterlijk: snavel dicht. Bedoeld: stilte.</string>
+    <string name="bike_outburst_meaning_verdomme">Letterlijk: verdoem mij. Bedoeld: verdraaid, in sterkere vorm. De fiets zegt het nooit uit zichzelf.</string>
+    <string name="bike_live_coil_see_fault">Zie storing\u00A042 onder “Storingen”.</string>
+    <string name="bike_events_since">Sinds de start van YABA om %1$s</string>
+    <string name="bike_events_since_day">Sinds de start van YABA op %1$s om %2$s</string>
+    <string name="bike_events_since_clear">Sinds het wissen om %1$s</string>
+    <string name="bike_events_no_marks">Geen markeringen. In de cockpit zet je er een met “Markeren” of een volumeknop.</string>
+    <string name="bike_events_expand">Volledig tonen</string>
+    <string name="bike_events_collapse">Minder tonen</string>
+    <string name="bike_events_clear_title">Gebeurtenissen wissen?</string>
+    <string name="bike_events_clear_text">De tellers van de controle bij stilstand beginnen daarna bij nul.</string>
+    <string name="bike_logger_intro_short">De ritregistratie schrijft elke 2\u00A0seconden een meetwaarde en elke gebeurtenis naar één CSV-bestand.</string>
+    <string name="bike_logger_show_all">Alle tonen (%1$d)</string>
+    <string name="bike_logger_no_ride">zonder rit</string>
+    <string name="bike_log_view_text">Als tekst bekijken</string>
+    <string name="bike_theme_hint">Dag is het lichte thema en is in de zon het best leesbaar.</string>
+    <string name="bike_code_set_at">Back-upcode ingesteld om %1$s. Probeer hem alsjeblieft nu uit op de fiets.</string>
+    <string name="bike_code_clear_link">Back-upcode verwijderen</string>
+    <string name="bike_exp_fold">Tests voor 37\u00A0km/u en stand\u00A05</string>
+    <string name="bike_fact_wheel">Wiel</string>
+    <string name="bike_fact_distance_speedplus" formatted="false">Kilometerstand, telt met Speed++ ongeveer 16% te weinig</string>
+    <plurals name="bike_events_marks_count">
+        <item quantity="one">%1$d markering</item>
+        <item quantity="other">%1$d markeringen</item>
+    </plurals>
+    <plurals name="bike_logger_entry_incidents">
+        <item quantity="one">%1$d incident</item>
+        <item quantity="other">%1$d incidenten</item>
+    </plurals>
+    <plurals name="bike_raw_without_value">
+        <item quantity="one">%1$d kenmerk zonder waarde</item>
+        <item quantity="other">%1$d kenmerken zonder waarde</item>
+    </plurals>
+</resources>

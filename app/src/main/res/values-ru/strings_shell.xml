@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Destinations -->
+    <string name="shell_dest_ride">Езда</string>
+    <string name="shell_dest_sound">Звук</string>
+    <string name="shell_dest_diagnosis">Диагностика</string>
+    <string name="shell_dest_bike">Велосипед</string>
+    <string name="shell_tab_alert_cd">%1$s, есть ошибка</string>
+
+    <!-- Bluetooth readiness (hero) -->
+    <string name="shell_ble_location_off">Местоположение выключено. Без местоположения Android не находит устройства Bluetooth.</string>
+    <string name="shell_ble_off">Bluetooth выключен.</string>
+    <string name="shell_ble_needs_nearby">Для Bluetooth приложению нужен доступ к устройствам поблизости.</string>
+    <string name="shell_ble_needs_location">Для поиска Bluetooth-устройств приложению нужен доступ к геолокации.</string>
+    <string name="shell_ble_action_location">Включить геолокацию</string>
+    <string name="shell_ble_action_allow">Разрешить Bluetooth</string>
+    <string name="shell_ble_action_enable">Включить Bluetooth</string>
+    <string name="shell_ble_settings_hint">Если запрос больше не появляется, разреши доступ в настройках приложения, в разделе «Разрешения».</string>
+    <string name="shell_ble_open_settings">Открыть настройки приложения</string>
+
+    <!-- Hero -->
+    <string name="shell_hero_which_bike">Велосипед не выбран</string>
+    <string name="shell_hero_no_bike">Нет велосипеда</string>
+    <plurals name="shell_hero_bikes_saved">
+        <item quantity="one">Сохранён %1$d велосипед. Выбери, пожалуйста, один.</item>
+        <item quantity="few">Сохранено %1$d велосипеда. Выбери, пожалуйста, один.</item>
+        <item quantity="many">Сохранено %1$d велосипедов. Выбери, пожалуйста, один.</item>
+        <item quantity="other">Сохранено %1$d велосипеда. Выбери, пожалуйста, один.</item>
+    </plurals>
+    <string name="shell_hero_add_bike">Добавь велосипед в гараже.</string>
+    <string name="shell_hero_choose_bike">Выбрать велосипед</string>
+    <string name="shell_hero_link_lost">Bluetooth-подключение прервано. Приложение продолжает искать твой велосипед.</string>
+    <string name="shell_hero_search_again">Искать снова</string>
+    <string name="shell_hero_connect">Подключить</string>
+    <string name="shell_hero_close_vanmoof">Пожалуйста, сначала закрой приложение VanMoof: велосипед принимает только один телефон за раз.</string>
+    <string name="shell_hero_lock_offline">Заблокировать и разблокировать велосипед можно, как только он подключён.</string>
+    <string name="shell_hero_lock_parked">Заблокировать можно, только когда велосипед стоит.</string>
+    <string name="shell_hero_pin_entry">Велосипед ждёт резервный код.</string>
+    <string name="shell_bike_caption_owner">%1$s, владелец: %2$s</string>
+
+    <!-- Connection state -->
+    <string name="shell_link_searching">Поиск твоего велосипеда</string>
+    <string name="shell_link_connecting">Подключение</string>
+    <string name="shell_link_authenticating">Авторизация на велосипеде</string>
+    <string name="shell_link_ready">Подключено</string>
+    <string name="shell_link_lost">Подключение прервано</string>
+    <string name="shell_link_offline">Нет подключения</string>
+
+    <!-- Lock state -->
+    <string name="shell_lock_unlocked">Разблокирован</string>
+    <string name="shell_lock_locked">Заблокирован</string>
+    <string name="shell_lock_pin_entry">Ожидание резервного кода</string>
+    <string name="shell_lock_unknown">Состояние замка неизвестно</string>
+
+    <!-- Top tube, read by TalkBack -->
+    <string name="shell_tube_riding_cd">Едет со скоростью %1$d\u00A0км/ч</string>
+    <string name="shell_tube_charging_cd">Заряжается, батарея %1$d\u00A0%%</string>
+    <string name="shell_tube_charging_unknown_cd">Заряжается</string>
+    <string name="shell_tube_lock_battery_cd">%1$s, батарея %2$d\u00A0%%</string>
+    <string name="shell_tube_connecting_cd">Подключение к велосипеду</string>
+    <string name="shell_tube_ble_off_cd">Bluetooth выключен</string>
+    <string name="shell_tube_upload_cd">Отправляет звук, %1$d\u00A0%%</string>
+    <string name="shell_fault_title">Ошибка\u00A0%1$d: %2$s</string>
+
+    <!-- Top tube matrix -->
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_speed">%1$d KMH</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_fault">E%1$d</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_offline">OFFLINE</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_ble_off">VYKL</string>
+
+    <!-- Hero facts -->
+    <string name="shell_fact_battery">Батарея</string>
+    <string name="shell_fact_battery_charging">Заряжается</string>
+    <string name="shell_fact_battery_value">%1$d\u00A0%%</string>
+    <string name="shell_fact_odometer">Пробег</string>
+    <string name="shell_fact_odometer_value">%1$s\u00A0км</string>
+    <string name="shell_fact_level">Поддержка</string>
+    <string name="shell_fact_limit">Лимит скорости</string>
+    <string name="shell_fact_limit_value">%1$d\u00A0км/ч</string>
+    <string name="shell_facts_stale">Данные на %1$s</string>
+
+    <!-- Faults -->
+    <string name="shell_fault_open_cd">Открыть диагностику</string>
+    <string name="shell_fault_tap">Нажми, чтобы открыть диагностику.</string>
+    <string name="shell_fault_42_tap">Проверь разъём и кабель Kick Lock. Нажми, чтобы открыть диагностику.</string>
+    <string name="shell_fault_last">Последнее сообщение: ошибка\u00A0%1$d</string>
+    <plurals name="shell_fault_more">
+        <item quantity="one">И ещё %1$d ошибка. Нажми, чтобы открыть диагностику.</item>
+        <item quantity="few">И ещё %1$d ошибки. Нажми, чтобы открыть диагностику.</item>
+        <item quantity="many">И ещё %1$d ошибок. Нажми, чтобы открыть диагностику.</item>
+        <item quantity="other">И ещё %1$d ошибки. Нажми, чтобы открыть диагностику.</item>
+    </plurals>
+
+    <!-- Ride controls -->
+    <string name="shell_controls_almost">Подключение устанавливается. После этого ты сможешь настроить здесь всё.</string>
+    <string name="shell_controls_connect_first">Подключи велосипед, чтобы управлять им.</string>
+    <string name="shell_section_speed">Лимит скорости</string>
+    <string name="shell_section_assist">Поддержка</string>
+    <string name="shell_section_light">Свет</string>
+    <string name="shell_section_alarm">Сигнализация</string>
+    <string name="shell_speedplus_note">Speed++ включён. Спидометр велосипеда показывает меньше, YABA показывает реальную скорость.</string>
+    <string name="shell_alarm_off">Выкл.</string>
+    <string name="shell_alarm_on">Вкл.</string>
+    <string name="shell_alarm_running">Сигнализация звучит: %1$s</string>
+    <string name="shell_touch_unlock_hint">Разблокировка кнопкой включена: нажатие на кнопку звонка или Boost разблокирует велосипед, пока твой телефон подключён.</string>
+    <string name="shell_cancel">Отмена</string>
+    <string name="shell_sending">Отправка</string>
+
+    <!-- Assist ladder -->
+    <string name="shell_power_off">Выкл.</string>
+    <string name="shell_power_off_cd">Поддержка выключена</string>
+    <string name="shell_power_level_cd">Уровень\u00A0%1$d</string>
+
+    <!-- Lock slider -->
+    <string name="shell_slider_cd">Замок</string>
+    <string name="shell_slider_state_unknown">Неизвестно</string>
+    <string name="shell_slider_action_unlock">Разблокировать</string>
+    <string name="shell_slider_action_lock">Заблокировать</string>
+    <string name="shell_slider_unlocking">Разблокировка…</string>
+    <string name="shell_slider_locking">Блокировка…</string>
+    <string name="shell_slider_slide_unlock">Сдвинь для разблокировки</string>
+    <string name="shell_slider_slide_lock">Сдвинь для блокировки</string>
+    <string name="shell_ride_link_lost_title">Подключение к велосипеду прервано</string>
+    <string name="shell_ride_link_lost_text">Велосипед едет без изменений. Пожалуйста, смотри на телефон, только когда остановишься.</string>
+    <string name="shell_ride_link_lost_after_text">Bluetooth-подключение прервано в %1$s. Мотор, свет и лимит скорости остаются такими, как были настроены. YABA подключится заново, как только примет сигнал велосипеда.</string>
+    <string name="shell_ride_shipping_title">Остановись сейчас, пожалуйста.</string>
+    <string name="shell_ride_shipping_text">Мотор, свет и Bluetooth, вероятно, отключатся примерно через 10\u00A0секунд.</string>
+    <string name="shell_ride_shipping_after_title">Велосипед сообщил о транспортном режиме</string>
+    <string name="shell_ride_shipping_after_text">В %1$s велосипед сообщил о транспортном режиме, а затем отключил мотор, свет и Bluetooth. Если он всё ещё выключен, коротко нажми кнопку под верхней трубой рамы или подключи зарядное устройство. Затем сразу считай внутренний журнал в разделе «Диагностика». До этого не отключай батарею.</string>
+    <string name="shell_notfound_title">Велосипед не найден</string>
+    <string name="shell_notfound_text">YABA уже более 12\u00A0секунд не получает ответа от «%1$s». Пожалуйста, закрой приложение VanMoof и разбуди велосипед кнопкой звонка.</string>
+    <string name="shell_unlock_done_text">Велосипед разблокирован за %1$s\u00A0секунды, напрямую по Bluetooth. Заряд батареи: %2$d\u00A0%%.</string>
+    <string name="shell_unlock_first_ride">Хорошей поездки.</string>
+</resources>

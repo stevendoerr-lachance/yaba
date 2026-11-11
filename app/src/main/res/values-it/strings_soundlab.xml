@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sound-Lab nella schermata Suono (ui/components/SoundLabBits.kt): volume per suono (5572) e i cinque suoni sostituibili. -->
+<resources>
+    <!-- Volume per suono -->
+    <string name="soundlab_tiers_title">Volume per suono</string>
+    <string name="soundlab_tiers_hint">Ogni suono viene riprodotto al livello\u00A020, 30 o 38, oppure non viene riprodotto. Il firmware fissa i tre livelli; qui scegli quale suono riceve quale.</string>
+    <string name="soundlab_tiers_unread">La bici non ha ancora comunicato i suoi volumi. Fino ad allora le scale mostrano l’impostazione di fabbrica dal firmware\u00A01.9.1.</string>
+    <string name="soundlab_tiers_read">Leggi dalla bici</string>
+    <string name="soundlab_tiers_reading">Lettura…</string>
+    <string name="soundlab_tiers_none">La bici non comunica alcun volume. Probabilmente il suo firmware non offre questo valore.</string>
+    <string name="soundlab_tiers_offline">Connettiti alla bici per leggere e salvare i volumi, per favore.</string>
+    <string name="soundlab_tier_off">spento</string>
+    <string name="soundlab_tier_silent">Muto</string>
+    <string name="soundlab_tier_low">Basso</string>
+    <string name="soundlab_tier_medium">Medio</string>
+    <string name="soundlab_tier_high">Alto</string>
+    <string name="soundlab_tier_level">%1$s, livello\u00A0%2$d</string>
+    <string name="soundlab_tier_changed">%1$s invece di %2$s</string>
+    <string name="soundlab_tier_step_cd">%1$s: %2$s</string>
+    <plurals name="soundlab_group_sounds">
+        <item quantity="one">%d suono</item>
+        <item quantity="many">%d suoni</item>
+        <item quantity="other">%d suoni</item>
+    </plurals>
+    <plurals name="soundlab_group_muted">
+        <item quantity="one">%d muto</item>
+        <item quantity="many">%d muti</item>
+        <item quantity="other">%d muti</item>
+    </plurals>
+    <plurals name="soundlab_group_changed">
+        <item quantity="one">%d modificato</item>
+        <item quantity="many">%d modificati</item>
+        <item quantity="other">%d modificati</item>
+    </plurals>
+    <string name="soundlab_state_expanded">espanso</string>
+    <string name="soundlab_state_collapsed">compresso</string>
+    <string name="soundlab_note_bell">Il pulsante del campanello riproduce questo suono. In muto resta silenzioso.</string>
+    <string name="soundlab_note_alarm">In muto l’allarme scatta ancora, ma senza suono.</string>
+    <string name="soundlab_note_find">In muto la ricerca della bici resta silenziosa.</string>
+    <string name="soundlab_note_error">In muto la bici mostra gli errori solo sul display.</string>
+    <plurals name="soundlab_tiers_save">
+        <item quantity="one">Salva %d modifica</item>
+        <item quantity="many">Salva %d modifiche</item>
+        <item quantity="other">Salva %d modifiche</item>
+    </plurals>
+    <string name="soundlab_tiers_saving">Salvataggio…</string>
+    <string name="soundlab_tiers_discard">Scarta le modifiche</string>
+    <string name="soundlab_tiers_factory">Carica l’impostazione di fabbrica</string>
+    <string name="soundlab_tiers_flash">Ogni salvataggio riscrive la memoria flash della bici. Per questo YABA scrive solo quando salvi.</string>
+    <string name="soundlab_tiers_wait">Il salvataggio attende la fine del trasferimento in corso.</string>
+    <string name="soundlab_tiers_saved">Salvato. La bici restituisce i nuovi volumi.</string>
+    <string name="soundlab_tiers_not_taken">Dopo il salvataggio la bici comunica un’altra impostazione. Rileggi i valori dalla bici, per favore.</string>
+
+    <!-- Sostituire altri suoni -->
+    <string name="soundlab_clips_title">Suoni nella bici</string>
+    <string name="soundlab_clips_hint">Cinque suoni della bici si possono sostituire. YABA conserva ogni file inviato su questo telefono.</string>
+    <string name="soundlab_clip_factory">Suono di fabbrica</string>
+    <string name="soundlab_clip_custom">“%1$s” dal %2$s</string>
+    <string name="soundlab_clip_empty">Probabilmente muto: l’ultimo trasferimento si è interrotto.</string>
+    <string name="soundlab_clip_replace">Sostituisci</string>
+    <string name="soundlab_clip_factory_note">La bici non restituisce il suono di fabbrica. Dopo l’invio torna solo con il file di fabbrica.</string>
+    <string name="soundlab_clip_bundled">Suoni inclusi</string>
+    <string name="soundlab_clip_history">Già inviati</string>
+    <string name="soundlab_clip_history_line">inviato il %1$s</string>
+    <string name="soundlab_clip_history_unsent">mai arrivato per intero</string>
+    <string name="soundlab_clip_choose_cd">Scegli %1$s per “%2$s”</string>
+    <string name="soundlab_clip_pick_hint">YABA converte i file audio. Un file già nel formato VM_SOUND della bici, come un file di fabbrica, va alla bici senza modifiche.</string>
+    <string name="soundlab_clip_cancel">Annulla</string>
+    <string name="soundlab_clip_send">Invia per “%1$s”</string>
+    <string name="soundlab_clip_keep_close">Tieni il telefono vicino alla bici, per favore. Se il trasferimento si interrompe, il suono resta muto finché un file non arriva per intero.</string>
+    <string name="soundlab_clip_wait_bell">Possibile quando il suono del campanello è arrivato; la bici accetta un trasferimento alla volta.</string>
+    <string name="soundlab_clip_sending">Invio di %1$s per “%2$s”</string>
+    <string name="soundlab_clip_done">“%1$s” è trasferito. La bici lo riproduce da ora per “%2$s”, anche quando YABA non è in esecuzione.</string>
+    <string name="soundlab_clip_finish">Fatto</string>
+    <string name="soundlab_clip_read_failed">Non è stato possibile leggere il file. Scegli un altro file audio, per favore.</string>
+    <string name="soundlab_clip_too_big">Il file supera %1$d\u00A0kB, il massimo che un suono della bici può contenere.</string>
+    <string name="soundlab_clip_not_wav">Il file inizia come un file audio della bici, ma non contiene audio WAV. Scegli un altro file, per favore.</string>
+    <string name="soundlab_clip_store_failed">YABA non è riuscita a conservare il file su questo telefono e quindi non lo invia. Controlla lo spazio libero, per favore.</string>
+    <string name="soundlab_clip_failed_at">Il trasferimento si è interrotto al %1$d%%. “%2$s” resta muto finché un file non arriva per intero.</string>
+    <string name="soundlab_clip_failed_before">Il trasferimento non è partito. “%1$s” mantiene il suono precedente.</string>
+    <string name="soundlab_clip_retry">Invia di nuovo</string>
+    <string name="soundlab_clip_confirm_title">Sovrascrivi il suono di fabbrica</string>
+    <string name="soundlab_clip_confirm_text">La bici non restituisce il suono di fabbrica per “%1$s”, e YABA non lo ha. Dopo l’invio torna solo con il file di fabbrica.</string>
+    <string name="soundlab_clip_confirm_ok">Sovrascrivi</string>
+    <string name="soundlab_clip_play_action">riproduci sulla bici</string>
+    <string name="soundlab_clip_replace_cd">Sostituisci “%1$s”</string>
+    <string name="soundlab_clip_sending_percent">Invio di %1$s per “%2$s”, %3$d%%</string>
+    <string name="soundlab_tiers_standstill">Il salvataggio parte a bici ferma.</string>
+</resources>

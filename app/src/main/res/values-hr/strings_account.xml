@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Account: first-run Welcome screen, Garage and the shared forms in AccountBits.kt: Croatian. -->
+<resources>
+    <!-- Shared forms -->
+    <string name="account_disclosure_expanded">Prošireno</string>
+    <string name="account_disclosure_collapsed">Sažeto</string>
+    <string name="account_field_email">E-pošta</string>
+    <string name="account_field_password">Lozinka</string>
+    <string name="account_password_show">Prikaži</string>
+    <string name="account_password_hide">Sakrij</string>
+    <string name="account_password_show_description">Prikaži lozinku</string>
+    <string name="account_password_hide_description">Sakrij lozinku</string>
+    <string name="account_login_submit">Prijavi se i preuzmi ključ</string>
+    <string name="account_login_running">Prijava…</string>
+    <string name="account_login_privacy">YABA ne sprema tvoju lozinku. Spremaju se samo ključ tvog bicikla i token za prijavu.</string>
+    <string name="account_default_bike_name">Moj S3</string>
+    <string name="account_default_bike_name_s2">Moj S2</string>
+    <string name="account_field_name">Naziv</string>
+    <string name="account_field_mac">MAC adresa</string>
+    <string name="account_mac_hint">Upiši MAC adresu iz Bluetooth imena bicikla (na primjer ES3-A1B2C3D4E5F6, može i cijelo ime) i ključ od 32 znaka iz datoteke ključa iz mooovyja ili YABA-e.</string>
+    <string name="account_mac_hint_s2">Upiši MAC adresu i ključ od 32 znaka iz datoteke ključa iz mooovyja ili YABA-e. Bluetooth ime S2 sadrži samo zadnjih 6 znakova MAC adrese.</string>
+    <string name="account_field_key">Ključ</string>
+    <string name="account_key_complete">Ključ je potpun.</string>
+    <plurals name="account_key_remaining">
+        <item quantity="one">32 heksadecimalna znaka, nedostaje još %1$d znak.</item>
+        <item quantity="few">32 heksadecimalna znaka, nedostaju još %1$d znaka.</item>
+        <item quantity="other">32 heksadecimalna znaka, nedostaje još %1$d znakova.</item>
+    </plurals>
+    <string name="account_field_user_key_id">Broj korisničkog ključa</string>
+    <string name="account_user_key_id_hint">Obično 1. Broj stoji uz ključ u izvozu računa (0–255).</string>
+    <string name="account_manual_add">Dodaj bicikl</string>
+    <string name="account_import_title">Uvezi datoteku ključa</string>
+    <string name="account_import_field">Tekst datoteke ključa</string>
+    <string name="account_import_submit">Uvezi</string>
+    <string name="account_import_pick_file">Odaberi datoteku</string>
+    <string name="account_import_hint">Odaberi .json datoteku ključa spremljenu iz mooovyja ili iz YABA-e na drugom mobitelu.</string>
+    <string name="account_import_file_too_large">Datoteka je prevelika za datoteku s ključevima. Odaberi, molim te, YABA izvoz ili mooovy datoteku s ključevima.</string>
+    <string name="account_import_file_unreadable">Datoteka je prazna ili se ne može pročitati. Odaberi, molim te, drugu datoteku ili zalijepi tekst.</string>
+
+    <!-- Welcome -->
+    <string name="account_welcome_slogan">Vozi dalje. Što god bilo.</string>
+    <string name="account_welcome_slogan_1">Vozi dalje.</string>
+    <string name="account_welcome_slogan_2">Što god bilo.</string>
+    <string name="account_welcome_intro">YABA upravlja tvojim VanMoofom S3, X3, S2 ili X2 izravno preko Bluetootha. Nakon jednokratne prijave otključavanje, svjetlo i zvono rade bez VanMoofova poslužitelja.</string>
+    <string name="account_welcome_disclaimer">Yet Another Bike App. Neovisno o tvrtki VanMoof.</string>
+    <string name="account_welcome_hero_description">YABA</string>
+    <string name="account_welcome_login_title">Prijava VanMoof računom</string>
+    <string name="account_welcome_login_button">Prijavi se VanMoof računom</string>
+    <string name="account_welcome_import_button">Uvezi datoteku ključa</string>
+    <string name="account_welcome_login_text">Pri prijavi YABA preuzima ključ tvog bicikla s VanMoofova poslužitelja. YABA ne sprema tvoju lozinku.</string>
+    <string name="account_welcome_login_caption">Na ovom telefonu spremaju se samo taj ključ i token za prijavu, oboje šifrirano.</string>
+    <string name="account_welcome_login_fallback">Ako poslužitelj ne odgovara, uvezi umjesto toga datoteku ključa.</string>
+
+    <!-- Garage -->
+    <string name="account_garage_title">Garaža</string>
+    <string name="account_garage_done">Zatvori</string>
+    <string name="account_garage_empty">Još nije spremljen nijedan bicikl. Prijavi se ili ispod ručno dodaj bicikl.</string>
+    <string name="account_garage_backup_title">Sigurnosna kopija ključeva</string>
+    <string name="account_garage_backup_hint">Datoteka s ključevima otključava tvoj bicikl. Tko je posjeduje, ima pristup tvom biciklu. Čuvaj je, molim te, na sigurnom.</string>
+    <string name="account_garage_export">Izvezi ključeve</string>
+    <string name="account_garage_export_subject">Datoteka s ključevima</string>
+    <string name="account_garage_export_chooser">Sigurnosna kopija ključeva</string>
+    <string name="account_garage_copy">Kopiraj u međuspremnik</string>
+    <string name="account_garage_copied">Ključevi su kopirani u međuspremnik. Zalijepi ih, molim te, u aplikaciju za lozinke ili bilješke.</string>
+    <string name="account_garage_account_title">Račun</string>
+    <string name="account_garage_signed_in_as">Prijavljeno kao %1$s</string>
+    <string name="account_garage_refresh">Ponovno učitaj bicikle</string>
+    <string name="account_garage_refreshing">Učitavanje…</string>
+    <string name="account_garage_logout">Odjava</string>
+    <string name="account_garage_login_hint">Prijavi se da učitaš bicikle sa svog računa. Ključevi ostaju na ovom telefonu.</string>
+    <string name="account_garage_add_manual">Ručno dodaj bicikl</string>
+    <string name="account_garage_source_account">s tvog računa</string>
+    <string name="account_garage_source_manual">dodano ručno</string>
+    <string name="account_garage_connected">Povezano</string>
+    <string name="account_garage_connect">Poveži</string>
+    <string name="account_garage_connect_description">Poveži bicikl %1$s</string>
+    <string name="account_garage_rename">Preimenuj</string>
+    <string name="account_garage_rename_description">Preimenuj bicikl %1$s</string>
+    <string name="account_garage_rename_title">Preimenuj bicikl</string>
+    <string name="account_garage_save">Spremi</string>
+    <string name="account_garage_cancel">Odustani</string>
+    <string name="account_garage_delete">Obriši</string>
+    <string name="account_garage_delete_title">Obriši bicikl %1$s</string>
+    <string name="account_garage_delete_body">Ključ će se izbrisati s ovog telefona. Bez prijave ili sigurnosne kopije poslije više nećeš moći pristupiti biciklu.</string>
+    <string name="account_import_paste_hint">Zalijepi tekst .json datoteke ključa spremljene iz mooovyja ili iz YABA-e na drugom mobitelu.</string>
+    <string name="account_import_paste_button">Umjesto toga zalijepi tekst</string>
+    <string name="account_key_show_description">Prikaži ključ</string>
+    <string name="account_key_hide_description">Sakrij ključ</string>
+    <string name="account_garage_edit">Uredi</string>
+    <string name="account_garage_edit_description">Uredi %1$s</string>
+    <string name="account_garage_backup_first">Prvo napravi kopiju</string>
+</resources>

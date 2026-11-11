@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VanMoof S2/X2 error codes (ble/S2Protocol.kt S2Faults); not the S3 fault table. -->
+    <string name="core_fault_s2_0_name">Kein Fehler</string>
+    <string name="core_fault_s2_0_hint">Das Rad meldet keinen Fehler.</string>
+    <string name="core_fault_s2_1_name">Motor blockiert</string>
+    <string name="core_fault_s2_1_hint">Der Motor konnte nicht drehen. Prüfen, dass nichts die Räder blockiert, dann Rad aus- und wieder einschalten.</string>
+    <string name="core_fault_s2_2_name">Überspannung</string>
+    <string name="core_fault_s2_2_hint">Akkuspannung zu hoch. Ladegerät abziehen und Rad neu starten.</string>
+    <string name="core_fault_s2_3_name">Unterspannung</string>
+    <string name="core_fault_s2_3_hint">Akkuspannung zu niedrig. Akku laden.</string>
+    <string name="core_fault_s2_motor_fast_alt_name">Motor zu schnell (unbestätigt)</string>
+    <string name="core_fault_s2_motor_fast_alt_hint">Die Quellen sind sich bei diesem Code uneinig; eine liest ihn als „Motor zu schnell“. Notieren, wann er auftritt.</string>
+    <string name="core_fault_s2_motor_fast_name">Motor zu schnell</string>
+    <string name="core_fault_s2_motor_fast_hint">Der Motor hat schneller gedreht als erlaubt, etwa bergab. Verschwindet meist von selbst.</string>
+    <string name="core_fault_s2_6_name">Überstrom</string>
+    <string name="core_fault_s2_6_hint">Der Motor hat zu viel Strom gezogen. Rad neu starten; kommt es wieder, Motor prüfen lassen.</string>
+    <string name="core_fault_s2_7_name">Drehmomentsensor gestört</string>
+    <string name="core_fault_s2_7_hint">Der Pedalsensor liefert unplausible Werte. Rad ohne Last auf den Pedalen neu starten.</string>
+    <string name="core_fault_s2_8_name">Drehmomentsensor beim Start gestört</string>
+    <string name="core_fault_s2_8_hint">Der Pedalsensor lieferte beim Einschalten seltsame Werte. Rad ohne Last auf den Pedalen neu starten.</string>
+    <string name="core_fault_s2_9_name">Übertemperatur</string>
+    <string name="core_fault_s2_9_hint">Rad abkühlen lassen.</string>
+    <string name="core_fault_s2_16_name">Hall-Sensoren passen nicht</string>
+    <string name="core_fault_s2_16_hint">Die Positionssensoren des Motors stimmen nicht überein. Motor-/Sensorkabel am Steuerrohr prüfen.</string>
+    <string name="core_fault_s2_25_name">I²C-Busfehler</string>
+    <string name="core_fault_s2_25_hint">Interner Kommunikationsfehler im Modul. Rad neu starten.</string>
+    <string name="core_fault_s2_26_name">GSM-Modem antwortet nicht</string>
+    <string name="core_fault_s2_26_hint">Das Mobilfunkmodem reagiert nicht, die Ortung geht dann evtl. nicht. Rad neu starten.</string>
+    <string name="core_fault_s2_27_name">Motorsteuerung antwortet nicht</string>
+    <string name="core_fault_s2_27_hint">Die Motorsteuerung reagiert nicht. Rad neu starten; bleibt es, Kabel zur Steuerung prüfen.</string>
+    <string name="core_fault_s2_28_name">GSM-Anmeldung fehlgeschlagen</string>
+    <string name="core_fault_s2_28_hint">Das Modem konnte sich nicht im Mobilfunknetz anmelden, die Ortung geht dann evtl. nicht.</string>
+    <string name="core_fault_s2_29_name">Kein Strom vom Akku</string>
+    <string name="core_fault_s2_29_hint">Der Akku gibt keinen Strom ab. Akku laden und Akkustecker prüfen.</string>
+
+    <!-- S2 and Device Information characteristic names (error texts, GATT overview); a command this bike family lacks. -->
+    <string name="core_char_s2_functions">Befehle (S2)</string>
+    <string name="core_char_s2_parameters">Statusblock (S2)</string>
+    <string name="core_char_s2_key_change">Schlüsselwechsel (S2)</string>
+    <string name="core_char_device_model">Modellnummer</string>
+    <string name="core_char_device_serial">Seriennummer</string>
+    <string name="core_char_device_firmware">Firmware-Version</string>
+    <string name="core_char_device_hardware">Hardware-Version</string>
+    <string name="core_char_device_software">Software-Version</string>
+    <string name="core_error_not_on_this_bike">Das unterstützt dieses Bike-Modell nicht.</string>
+
+    <!-- S2 driver (ble/S2Driver.kt) and the driver choice (BikeController.chooseDriver). -->
+    <string name="core_status_standby">Standby</string>
+    <string name="core_alarm_stage_automatic">Automatisch</string>
+    <string name="core_cmd_alarm_stage">Alarm: %1$s</string>
+    <string name="core_cmd_s2_mute">Stummgeschaltete Töne geändert</string>
+    <string name="core_error_not_s2">Kein S2-Statusdienst gefunden. Das ist kein S2 oder X2, oder der Bluetooth-Zwischenspeicher ist beschädigt.</string>
+    <string name="core_error_older_vanmoof">Ein älteres VanMoof hat geantwortet (S/X 1, S/X 2 oder SmartBike). Ist es ein S2 oder X2, stell dieses Modell in der Garage für das Bike ein.</string>
+    <string name="core_error_legacy_unsupported">YABA unterstützt dieses VanMoof-Modell nicht (SmartBike oder Electrified S/X 1).</string>
+    <string name="core_error_s2_test_mode">Nur im S2-Testmodus: an einem echten S2 noch nicht bestätigt.</string>
+    <string name="core_error_s2_frame">Das Bike hat keinen gültigen Statusblock geschickt.</string>
+    <string name="core_error_s2_level_unknown">Die Unterstützungsstufe ist noch nicht bekannt, und das S2 setzt Region und Stufe zusammen. Versuch es gleich noch einmal.</string>
+    <string name="core_error_s2_region_unknown">Die Region ist noch nicht bekannt, und das S2 setzt Region und Stufe zusammen. Versuch es gleich noch einmal.</string>
+    <string name="core_log_s2_driver">S2/X2-Treiber (experimentell, an einem echten S2 noch nicht getestet)</string>
+    <string name="core_log_s3_despite_profile">Das Konto sagt %1$s, aber das Bike hat S3-Dienste: Der S3-Treiber übernimmt.</string>
+    <string name="core_log_s2_frame">S2-Statusblock %1$s</string>
+    <string name="core_detail_s2_frame_changed">Geänderte Bytes: %1$s</string>
+    <string name="core_error_s2_offroad_level">Das Bike meldet die Offroad-Region (37 km/h). Das S2 setzt Region und Stufe zusammen, deshalb geht ein Stufenwechsel hier nur im S2-Testmodus.</string>
+    <string name="core_error_s2_pair_mismatch">Das S2 setzt Region und Stufe zusammen und meldet jetzt %3$s km/h bei Stufe %4$s statt %1$d km/h bei Stufe %2$d. Prüf beide Einstellungen.</string>
+    <string name="core_log_s2_implausible">S2-Statusblock unplausibel (Akku %1$d %%, Modul %2$d %%, Tempo %3$d): Stimmt der Schlüssel des Bikes?</string>
+    <string name="core_detail_s2_frame_implausible">Geänderte Bytes: %1$s. Unplausible Werte: Stimmt der Schlüssel?</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Postavljanje: prijava ili ključ, Bluetooth pristup, traženje bicikla, prvo otključavanje (ui/onboarding). Tekstovi: najviše dvije rečenice i 190 znakova. -->
+<resources>
+    <string name="onb_signin_button">Prijavi se</string>
+    <string name="onb_perm_title">Pristup uređajima u blizini</string>
+    <string name="onb_perm_text">Za pronalazak tvog bicikla YABA treba pristup „Uređajima u blizini“. YABA pritom ne obrađuje tvoju lokaciju.</string>
+    <string name="onb_perm_button">Dopusti pristup</string>
+    <string name="onb_perm_denied">Pristup je odbijen. Molim te, dopusti ga u postavkama aplikacije, pod „Dopuštenja“.</string>
+    <string name="onb_perm_denied_again">Pristup je odbijen. Dodirni „Dopusti pristup“ da zatražiš ponovno.</string>
+    <string name="onb_find_title">Pronađi bicikl</string>
+    <string name="onb_find_text">YABA traži tvoj bicikl preko Bluetootha. Molim te, ostani u blizini i zatvori aplikaciju VanMoof jer bicikl prihvaća samo jedan telefon istodobno.</string>
+    <string name="onb_find_button">Traži sada</string>
+    <string name="onb_notfound_text">YABA već više od 12\u00A0sekundi ne prima odgovor od „%1$s“. Zatvori, molim te, aplikaciju VanMoof i probudi bicikl tipkom zvona.</string>
+    <string name="onb_official_text">Aplikacija VanMoof često u pozadini drži jedinu Bluetooth vezu s biciklom jer bicikl prihvaća samo jedan telefon istodobno.</string>
+    <string name="onb_unlock_title">Prvo otključavanje</string>
+    <string name="onb_unlock_text">Tvoj bicikl je pronađen. Povuci klizač do kraja i YABA će otključati bicikl izravno preko Bluetootha.</string>
+    <string name="onb_server_text_http">VanMoofov poslužitelj odgovorio je u %1$s greškom\u00A0%2$d. Dodirni „Pokušaj ponovno“ da ponoviš zahtjev.</string>
+    <string name="onb_server_text_timeout">U %1$s nije stigao odgovor u roku od 10\u00A0sekundi. Dodirni „Pokušaj ponovno“ da ponoviš zahtjev.</string>
+    <string name="onb_server_text_dead">VanMoofov poslužitelj ne odgovara ni na jedan zahtjev s ovog telefona. Dana bez odgovora: %1$d.</string>
+    <!-- matrix: ASCII only, BLE glyph + 2 empty columns + word must stay within 36 columns -->
+    <string name="onb_matrix_scan">SCAN</string>
+    <string name="onb_step_cd">Korak\u00A0%1$d od %2$d</string>
+    <string name="onb_change_key">Promijeni ključ</string>
+    <string name="onb_find_idle_text">Pretraga je prekinuta. Ostani u blizini i zatvori aplikaciju VanMoof, zatim ponovno traži.</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Account: first-run Welcome screen, Garage and the shared forms in AccountBits.kt: Italian. -->
+<resources>
+    <!-- Shared forms -->
+    <string name="account_disclosure_expanded">Espanso</string>
+    <string name="account_disclosure_collapsed">Compresso</string>
+    <string name="account_field_email">Email</string>
+    <string name="account_field_password">Password</string>
+    <string name="account_password_show">Mostra</string>
+    <string name="account_password_hide">Nascondi</string>
+    <string name="account_password_show_description">Mostra password</string>
+    <string name="account_password_hide_description">Nascondi password</string>
+    <string name="account_login_submit">Accedi e ottieni la chiave</string>
+    <string name="account_login_running">Accesso…</string>
+    <string name="account_login_privacy">YABA non salva la tua password. Vengono salvati solo la chiave della tua bici e un token di accesso.</string>
+    <string name="account_default_bike_name">La mia S3</string>
+    <string name="account_default_bike_name_s2">La mia S2</string>
+    <string name="account_field_name">Nome</string>
+    <string name="account_field_mac">Indirizzo MAC</string>
+    <string name="account_mac_hint">Inserisci l’indirizzo MAC dal nome Bluetooth della bici (per esempio ES3-A1B2C3D4E5F6, va bene anche il nome intero) e la chiave di 32 caratteri da un file di chiave di mooovy o di YABA.</string>
+    <string name="account_mac_hint_s2">Inserisci l’indirizzo MAC e la chiave di 32 caratteri da un file di chiave di mooovy o di YABA. Il nome Bluetooth di una S2 contiene solo le ultime 6 cifre dell’indirizzo MAC.</string>
+    <string name="account_field_key">Chiave</string>
+    <string name="account_key_complete">Chiave completa.</string>
+    <plurals name="account_key_remaining">
+        <item quantity="one">32 caratteri esadecimali, ne manca ancora %1$d.</item>
+        <item quantity="many">32 caratteri esadecimali, ne mancano ancora %1$d.</item>
+        <item quantity="other">32 caratteri esadecimali, ne mancano ancora %1$d.</item>
+    </plurals>
+    <string name="account_field_user_key_id">Numero della chiave utente</string>
+    <string name="account_user_key_id_hint">Di solito 1. Il numero compare accanto alla chiave nell’esportazione dell’account (0–255).</string>
+    <string name="account_manual_add">Aggiungi bici</string>
+    <string name="account_import_title">Importa file della chiave</string>
+    <string name="account_import_field">Testo del file della chiave</string>
+    <string name="account_import_submit">Importa</string>
+    <string name="account_import_pick_file">Scegli file</string>
+    <string name="account_import_hint">Scegli il file della chiave .json che hai salvato da mooovy o da YABA su un altro telefono.</string>
+    <string name="account_import_file_too_large">Il file è troppo grande per essere un file di chiavi. Scegli l’esportazione YABA o il file di chiavi mooovy, per favore.</string>
+    <string name="account_import_file_unreadable">Il file è vuoto o non può essere letto. Scegli un altro file o incolla il testo, per favore.</string>
+
+    <!-- Welcome -->
+    <string name="account_welcome_slogan">Va avanti. Comunque vada.</string>
+    <string name="account_welcome_slogan_1">Va avanti.</string>
+    <string name="account_welcome_slogan_2">Comunque vada.</string>
+    <string name="account_welcome_intro">YABA controlla la tua VanMoof S3, X3, S2 o X2 direttamente via Bluetooth. Dopo un solo accesso, sblocco, luce e campanello funzionano senza il server di VanMoof.</string>
+    <string name="account_welcome_disclaimer">Yet Another Bike App. Non affiliata a VanMoof.</string>
+    <string name="account_welcome_hero_description">YABA</string>
+    <string name="account_welcome_login_title">Accedi con il tuo account VanMoof</string>
+    <string name="account_welcome_login_button">Accedi con l’account VanMoof</string>
+    <string name="account_welcome_import_button">Importa file della chiave</string>
+    <string name="account_welcome_login_text">Quando accedi, YABA recupera la chiave della tua bici dal server di VanMoof. YABA non salva la tua password.</string>
+    <string name="account_welcome_login_caption">Su questo telefono vengono salvati solo quella chiave e un token di accesso, entrambi cifrati.</string>
+    <string name="account_welcome_login_fallback">Se il server non risponde, importa invece un file della chiave.</string>
+
+    <!-- Garage -->
+    <string name="account_garage_title">Garage</string>
+    <string name="account_garage_done">Chiudi</string>
+    <string name="account_garage_empty">Nessuna bici salvata finora. Accedi oppure aggiungine una a mano qui sotto.</string>
+    <string name="account_garage_backup_title">Backup delle chiavi</string>
+    <string name="account_garage_backup_hint">Il file di chiavi sblocca la tua bici. Chi lo possiede ha accesso alla tua bici. Conservalo al sicuro, per favore.</string>
+    <string name="account_garage_export">Esporta chiavi</string>
+    <string name="account_garage_export_subject">File di chiavi</string>
+    <string name="account_garage_export_chooser">Backup delle chiavi</string>
+    <string name="account_garage_copy">Copia negli appunti</string>
+    <string name="account_garage_copied">Le chiavi sono state copiate negli appunti. Incollale in un gestore di password o in un’app di note, per favore.</string>
+    <string name="account_garage_account_title">Account</string>
+    <string name="account_garage_signed_in_as">Accesso effettuato come %1$s</string>
+    <string name="account_garage_refresh">Ricarica bici</string>
+    <string name="account_garage_refreshing">Caricamento…</string>
+    <string name="account_garage_logout">Esci</string>
+    <string name="account_garage_login_hint">Accedi per caricare le bici dal tuo account. Le chiavi restano su questo telefono.</string>
+    <string name="account_garage_add_manual">Aggiungi una bici a mano</string>
+    <string name="account_garage_source_account">dal tuo account</string>
+    <string name="account_garage_source_manual">aggiunta a mano</string>
+    <string name="account_garage_connected">Connessa</string>
+    <string name="account_garage_connect">Connetti</string>
+    <string name="account_garage_connect_description">Connetti a %1$s</string>
+    <string name="account_garage_rename">Rinomina</string>
+    <string name="account_garage_rename_description">Rinomina %1$s</string>
+    <string name="account_garage_rename_title">Rinomina bici</string>
+    <string name="account_garage_save">Salva</string>
+    <string name="account_garage_cancel">Annulla</string>
+    <string name="account_garage_delete">Elimina</string>
+    <string name="account_garage_delete_title">Elimina %1$s</string>
+    <string name="account_garage_delete_body">La chiave verrà eliminata da questo telefono. Senza accesso all’account o senza backup non sarà più possibile accedere alla bici.</string>
+    <string name="account_import_paste_hint">Incolla il testo del file della chiave .json che hai salvato da mooovy o da YABA su un altro telefono.</string>
+    <string name="account_import_paste_button">Incolla il testo invece</string>
+    <string name="account_key_show_description">Mostra la chiave</string>
+    <string name="account_key_hide_description">Nascondi la chiave</string>
+    <string name="account_garage_edit">Modifica</string>
+    <string name="account_garage_edit_description">Modifica %1$s</string>
+    <string name="account_garage_backup_first">Prima fai il backup</string>
+</resources>

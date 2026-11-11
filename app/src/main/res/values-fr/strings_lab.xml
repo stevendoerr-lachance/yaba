@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lab_char_cadence">Cadence</string>
+    <string name="lab_char_torque">Force de pédalage</string>
+
+    <string name="lab_sound_update_failed">Échec de la mise à jour</string>
+    <string name="lab_sound_update_ok">Mise à jour réussie</string>
+    <string name="lab_sound_find_loud">Tonalité de recherche forte</string>
+
+    <string name="lab_clip_lock">Verrouiller</string>
+    <string name="lab_clip_unlock">Déverrouiller</string>
+    <string name="lab_clip_startup">Allumage</string>
+    <string name="lab_clip_shutdown">Extinction</string>
+    <string name="lab_clip_charging">Charge</string>
+
+    <string name="lab_error_clock_readback">La relecture de l’horloge est peu plausible. L’horloge n’a pas été réglée.</string>
+    <string name="lab_error_backup_first">Télécharge et enregistre le journal du vélo avant l’autotest.</string>
+    <string name="lab_error_not_parked">Seulement à l’arrêt et hors du mode conduite\u00A0; cela coupe l’assistance.</string>
+    <string name="lab_error_clip">Échec de l’envoi.</string>
+    <string name="lab_error_generic">La commande n’a pas été exécutée.</string>
+
+    <string name="lab_log_siren">Sirène niveau\u00A0%d</string>
+    <string name="lab_log_clip">Son remplacé\u00A0: %s</string>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- S2 follow-ups: lock refusal, how the error catcher gets its blocks, the cockpit for the GPS ride, the test-mode
+         controls (mute, off-road), the garage model switch, the S2 backup-code intro and the S2 credits. -->
+    <string name="s2fix_error_lock_riding">Не во время езды: YABA блокирует S2 только на месте.</string>
+    <plurals name="s2fix_catch_pushed">
+        <item quantity="one">Велосипед сам присылает изменения: пока %1$s блок. Даже код, который он показал лишь на мгновение, попадёт сюда.</item>
+        <item quantity="few">Велосипед сам присылает изменения: пока %1$s блока. Даже код, который он показал лишь на мгновение, попадёт сюда.</item>
+        <item quantity="many">Велосипед сам присылает изменения: пока %1$s блоков. Даже код, который он показал лишь на мгновение, попадёт сюда.</item>
+        <item quantity="other">Велосипед сам присылает изменения: пока %1$s блока. Даже код, который он показал лишь на мгновение, попадёт сюда.</item>
+    </plurals>
+    <string name="s2fix_catch_polled">Велосипед ещё не прислал сам ни одного блока, поэтому YABA читает блок каждые %1$s\u00A0с. Более короткий код может проскочить.</string>
+    <string name="s2fix_cockpit_intro">Для поездки с GPS открой кокпит. Он крупно показывает скорость и код ошибки, а как только мотор пропадёт, кнопка громкости ставит метку.</string>
+    <string name="s2fix_mute_title">Звуки блокировки и разблокировки</string>
+    <string name="s2fix_mute_hint">Команда 0x06. Один источник говорит, что она отключает звуки, другой говорит, что она привязывает пульт. Если произойдёт что-то другое, включи звуки обратно и запиши это.</string>
+    <string name="s2fix_mute_reports_on">Велосипед сообщает: звуки выключены.</string>
+    <string name="s2fix_mute_reports_off">Велосипед сообщает: звуки включены.</string>
+    <string name="s2fix_mute_on">Выключить звуки</string>
+    <string name="s2fix_mute_off">Включить звуки</string>
+    <string name="s2fix_offroad_title">37\u00A0км/ч (бездорожье)</string>
+    <string name="s2fix_offroad_hint">Показывает, принимает ли S2 регион 2. Только когда велосипед на подставке, и сразу после этого верни свой регион.</string>
+    <string name="s2fix_offroad_reports">Велосипед сообщает %1$d\u00A0км/ч.</string>
+    <string name="s2fix_offroad_send">Проверить 37\u00A0км/ч</string>
+    <string name="s2fix_offroad_back">Вернуть 25\u00A0км/ч</string>
+    <string name="s2fix_offroad_standstill">Только на месте.</string>
+    <string name="s2fix_offroad_confirm_title">Отправить 37\u00A0км/ч?</string>
+    <string name="s2fix_offroad_confirm_text">На дорогах общего пользования 37\u00A0км/ч запрещены. YABA отправляет это значение только для того, чтобы ты увидел, принимает ли его S2. Оставь велосипед на подставке и сразу после этого верни свой регион.</string>
+    <string name="s2fix_offroad_confirm_send">Отправить</string>
+    <string name="s2fix_offroad_confirm_cancel">Отмена</string>
+    <string name="s2fix_garage_switch_title">Переключить на %1$s?</string>
+    <string name="s2fix_garage_switch_text">%1$s подключён. YABA разорвёт соединение и снова найдёт его как %2$s.</string>
+    <string name="s2fix_garage_switch_confirm">Переключить</string>
+    <string name="s2fix_code_intro_s2">Три цифры от 1 до 9. Ты вводишь их на велосипеде так, как описано в руководстве к твоему S2.</string>
+    <string name="s2fix_about_credits_s2">Поддержка S2/X2 основана на OldMoofKit (Jegge, MIT) и раскладке байтов из vanbike-lib (Poket-Jony).</string>
+</resources>

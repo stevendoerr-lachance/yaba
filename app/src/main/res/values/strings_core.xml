@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Core layers (ble, data, ride, audio, view model). English is the default language. -->
+<resources>
+
+    <!-- GATT characteristics (diagnosis page, version list) -->
+    <string name="core_char_challenge">Challenge</string>
+    <string name="core_char_key_index">Key index</string>
+    <string name="core_char_backup_code">Backup code</string>
+    <string name="core_char_bike_message">Back office</string>
+    <string name="core_char_firmware_metadata">File metadata</string>
+    <string name="core_char_firmware_block">File block</string>
+    <string name="core_char_oad_status">Transfer status</string>
+    <string name="core_char_lock_state">Lock</string>
+    <string name="core_char_unlock_request">Unlock request</string>
+    <string name="core_char_alarm_state">Alarm mode</string>
+    <string name="core_char_alarm_mode">Alarm on or off</string>
+    <string name="core_char_distance">Odometer</string>
+    <string name="core_char_speed">Speed</string>
+    <string name="core_char_unit_system">Units</string>
+    <string name="core_char_power_level">Assist level</string>
+    <string name="core_char_speed_limit">Speed limit</string>
+    <string name="core_char_e_shifter_gear">Gear</string>
+    <string name="core_char_e_shift_points">Shift points</string>
+    <string name="core_char_e_shifter_mode">Shift mode</string>
+    <string name="core_char_motor_battery_level">Battery</string>
+    <string name="core_char_motor_battery_state">Charger plug</string>
+    <string name="core_char_module_battery_level">Charger and module battery</string>
+    <string name="core_char_module_battery_state">Module battery status</string>
+    <string name="core_char_environment">Temperature and humidity</string>
+    <string name="core_char_motor_telemetry_a">Motor telemetry A</string>
+    <string name="core_char_motor_telemetry_b">Motor telemetry B</string>
+    <string name="core_char_motor_errors">Motor fault bits</string>
+    <string name="core_char_model">Model</string>
+    <string name="core_char_bike_firmware">Bike firmware</string>
+    <string name="core_char_ble_firmware">Bluetooth firmware</string>
+    <string name="core_char_controller_firmware">Motor controller</string>
+    <string name="core_char_pcba_hardware">Circuit board</string>
+    <string name="core_char_gsm_firmware">GSM module</string>
+    <string name="core_char_e_shifter_firmware">E-shifter</string>
+    <string name="core_char_battery_firmware">Battery firmware</string>
+    <string name="core_char_frame_number">Frame number</string>
+    <string name="core_char_module_mode">Bike status</string>
+    <string name="core_char_module_state">Standby</string>
+    <string name="core_char_errors">Fault bits</string>
+    <string name="core_char_wheel_size">Wheel type</string>
+    <string name="core_char_clock">Bike clock</string>
+    <string name="core_char_buttons">Buttons and Kick Lock</string>
+    <string name="core_char_supply_ok">Supply ≥\u00A020\u00A0V</string>
+    <string name="core_char_play_sound">Play sound</string>
+    <string name="core_char_sound_groups">Volume groups</string>
+    <string name="core_char_bell_sound">Bell sound</string>
+    <string name="core_char_light_mode">Light</string>
+    <string name="core_char_led_state">LED channels</string>
+    <string name="core_char_light_sensor">Light threshold</string>
+    <string name="core_char_log_mode">Log mode</string>
+    <string name="core_char_log_size">Log size</string>
+    <string name="core_char_log_block">Log block</string>
+
+    <!-- Speed limit regions (under the road sign) -->
+    <string name="core_region_japan">Japan</string>
+    <string name="core_region_europe">Europe</string>
+    <string name="core_region_usa">USA</string>
+    <string name="core_region_private">Offroad</string>
+
+    <!-- Lock / alarm phase (ALARM_STATE) -->
+    <string name="core_defence_unlocked">Unlocked</string>
+    <string name="core_defence_locked">Locked</string>
+    <string name="core_defence_alarm_one">Alarm level\u00A01</string>
+    <string name="core_defence_alarm_two">Alarm level\u00A02</string>
+    <string name="core_defence_tracking">Tracking</string>
+
+    <!-- Alarm switch (ALARM_MODE) -->
+    <string name="core_alarm_stage_disarmed">Off</string>
+    <string name="core_alarm_stage_armed">Armed</string>
+
+    <!-- Charger state -->
+    <string name="core_charge_charging">Charging</string>
+    <string name="core_charge_not_charging">Not charging</string>
+    <string name="core_charge_battery_missing">Battery not detected</string>
+    <string name="core_log_battery_missing">Battery not detected: the bike no longer senses the pack</string>
+    <string name="core_log_battery_back">Battery detected again</string>
+
+    <!-- Light modes -->
+    <string name="core_light_auto">Auto</string>
+    <string name="core_light_on">On</string>
+    <string name="core_light_off">Off</string>
+
+    <!-- Coarse bike status (MODULE_MODE) -->
+    <string name="core_status_ready">Ready</string>
+    <string name="core_status_riding">Ready to ride</string>
+    <string name="core_status_alarm">Alarm/tracking</string>
+    <string name="core_status_updating">Updating</string>
+    <string name="core_status_shipping">Shipping mode</string>
+    <string name="core_status_sleeping">Asleep</string>
+    <string name="core_status_other">In transition</string>
+
+    <!-- Units: symbols, not translated -->
+    <string name="core_unit_metric" translatable="false">km/h</string>
+    <string name="core_unit_imperial" translatable="false">mph</string>
+
+    <!-- Bell tones -->
+    <string name="core_bell_bell">Two-tone chime</string>
+    <string name="core_bell_sonar">Submarine</string>
+    <string name="core_bell_party">Horn</string>
+    <string name="core_bell_foghorn">Foghorn</string>
+
+    <!-- Sound board groups -->
+    <string name="core_sound_group_horn">Bells and horns</string>
+    <string name="core_sound_group_signal">Bike signals</string>
+    <string name="core_sound_group_alarm">Alarm</string>
+    <string name="core_sound_group_system">System</string>
+
+    <!-- Sound board sounds -->
+    <string name="core_sound_ding_dong">Two-tone chime</string>
+    <string name="core_sound_toot">Horn</string>
+    <string name="core_sound_foghorn">Foghorn</string>
+    <string name="core_sound_submarine">Submarine</string>
+    <string name="core_sound_urgent_whistle">Urgent whistle</string>
+    <string name="core_sound_click">Click</string>
+    <string name="core_sound_positive">Positive chime</string>
+    <string name="core_sound_negative">Negative beep</string>
+    <string name="core_sound_lock">Lock tone</string>
+    <string name="core_sound_unlock">Unlock tone</string>
+    <string name="core_sound_unlock_countdown">Unlock countdown</string>
+    <string name="core_sound_backup_code">Backup code entry</string>
+    <string name="core_sound_pairing_ok">Pairing succeeded</string>
+    <string name="core_sound_pairing_failed">Pairing failed</string>
+    <string name="core_sound_find_my">Search tone</string>
+    <string name="core_sound_alarm_one">Alarm level\u00A01</string>
+    <string name="core_sound_alarm_two">Alarm level\u00A02</string>
+    <string name="core_sound_noise">Noise</string>
+    <string name="core_sound_startup">Startup tone</string>
+    <string name="core_sound_shutdown">Shutdown tone</string>
+    <string name="core_sound_charging">Charging tone</string>
+    <string name="core_sound_diagnostics">Diagnostics tone</string>
+    <string name="core_sound_reset_countdown">Reset countdown</string>
+    <string name="core_sound_firmware_loading">Firmware loading</string>
+    <string name="core_sound_firmware_failed">Firmware failed</string>
+    <string name="core_sound_unpair">Unpair</string>
+
+    <!-- Fault table: name and what to do -->
+    <string name="core_fault_0_name">Battery: short-circuit protection</string>
+    <string name="core_fault_0_hint">The battery switched itself off after detecting a short circuit; its fuse may have tripped. Check the wiring and the plug at the battery.</string>
+    <string name="core_fault_1_name">Battery: MOSFET too hot</string>
+    <string name="core_fault_1_hint">The battery’s power switch (MOSFET) is too hot. Let the bike cool down, then try again.</string>
+    <string name="core_fault_2_name">Battery: pre-discharge short circuit</string>
+    <string name="core_fault_2_hint">The battery detected a short circuit while switching on. Check the wiring between battery and bike.</string>
+    <string name="core_fault_3_name">Battery: pre-discharge overload</string>
+    <string name="core_fault_3_hint">The battery detected an overload while switching on. Look for a short circuit in the wiring between battery and bike.</string>
+    <string name="core_fault_4_name">Battery: undervoltage level\u00A02</string>
+    <string name="core_fault_4_hint">The battery voltage dropped very low. Charge it for longer. If the code stays, the BMS needs a reset (workshop).</string>
+    <string name="core_fault_5_name">Battery: undervoltage level\u00A01</string>
+    <string name="core_fault_5_hint">The battery voltage is low. Charge the battery.</string>
+    <string name="core_fault_6_name">Battery: overvoltage level\u00A02</string>
+    <string name="core_fault_6_hint">The battery voltage is too high. Unplug the charger and check that it is the right one (42\u00A0V). A level\u00A02 fault needs a BMS reset.</string>
+    <string name="core_fault_7_name">Battery: overvoltage level\u00A01</string>
+    <string name="core_fault_7_hint">The battery voltage is too high. Unplug the charger and check that it is the right one (42\u00A0V).</string>
+    <string name="core_fault_8_name">Battery: charge current too high (level\u00A01)</string>
+    <string name="core_fault_8_hint">The battery took in too much charging current. Check the charger (42\u00A0V).</string>
+    <string name="core_fault_9_name">Battery: charge current too high (level\u00A02)</string>
+    <string name="core_fault_9_hint">Too much charging current. Check the charger (42\u00A0V). A level\u00A02 fault needs a BMS reset.</string>
+    <string name="core_fault_10_name">Battery: discharge current too high (level\u00A02)</string>
+    <string name="core_fault_10_hint">The bike drew too much current. Look for a short circuit in the wiring or a motor fault. A level\u00A02 fault needs a BMS reset.</string>
+    <string name="core_fault_11_name">Battery: discharge current too high (level\u00A01)</string>
+    <string name="core_fault_11_hint">The bike briefly drew too much current, for example on a steep hill or with Boost. If it comes back on flat ground, check the motor and its cable.</string>
+    <string name="core_fault_12_name">Battery: too cold to charge</string>
+    <string name="core_fault_12_hint">The battery is too cold to charge. Charge it at room temperature. If the code also shows at normal temperature, a temperature sensor in the battery may be faulty.</string>
+    <string name="core_fault_13_name">Battery: too hot to charge</string>
+    <string name="core_fault_13_hint">The battery is too hot to charge. Let it cool down, then charge. If the code also shows at normal temperature, a temperature sensor in the battery may be faulty.</string>
+    <string name="core_fault_14_name">Battery: too cold to ride</string>
+    <string name="core_fault_14_hint">The battery is too cold to deliver power. Let the bike warm up. If the code also shows at normal temperature, a temperature sensor in the battery may be faulty.</string>
+    <string name="core_fault_15_name">Battery: too hot to ride</string>
+    <string name="core_fault_15_hint">The battery is too hot to deliver power. Let the bike cool down. If the code also shows at normal temperature, a temperature sensor in the battery may be faulty.</string>
+    <string name="core_fault_16_name">Battery: permanent failure (BMS)</string>
+    <string name="core_fault_16_hint">The battery reports a permanent failure or does not answer at all. Often its fuse has burned, likely from a short circuit at the battery socket. Check the plug and the socket for burn marks. After that, a workshop has to check the battery.</string>
+    <string name="core_fault_17_name">Battery does not enable charging or discharging</string>
+    <string name="core_fault_17_hint">The battery did not switch on its charge or discharge output. Check the battery plug and cable, then restart the bike.</string>
+    <string name="core_fault_18_name">Battery not detected</string>
+    <string name="core_fault_18_hint">The bike does not see the battery (the detection signal stays low). Check that the battery sits in all the way, then the plug and cable. If 42 shows at the same time, the bike may switch to shipping mode.</string>
+    <string name="core_fault_19_name">Battery bus error</string>
+    <string name="core_fault_19_hint">The bike cannot talk to the battery over its data line (Modbus). Check the battery plug and cable. If the fault stays, the interface chip in the module or the BMS itself may be defective.</string>
+    <string name="core_fault_20_name">Supply voltage too low</string>
+    <string name="core_fault_20_hint">The supply voltage is below 25\u00A0V, as if the battery had switched off its output. Charge the battery and check the battery plug. A short 20 right after a reset is normal.</string>
+    <string name="core_fault_21_name">Charging without current</string>
+    <string name="core_fault_21_hint">The bike sees a charger, but no charging current flows. Check the charger (42\u00A0V) and the charging socket. A charge limit that has been reached can cause this too.</string>
+    <string name="core_fault_22_name">Motor controller not responding</string>
+    <string name="core_fault_22_hint">The module gets no answer from the motor controller, so there is no assist. While parked, the bike tries to restart it by itself. Switch the bike off and on. If the code stays, the controller has no supply or is defective (workshop).</string>
+    <string name="core_fault_23_name">Bluetooth chip restarting</string>
+    <string name="core_fault_23_hint">The module lost contact with its Bluetooth chip and is restarting it, so the app may not connect. You can still unlock with the backup code. If the code stays, the chip or its firmware is defective (workshop).</string>
+    <string name="core_fault_24_name">Update transfer aborted</string>
+    <string name="core_fault_24_hint">The firmware transfer from the app was aborted. Restart the bike and start the update again, with the phone close to the bike.</string>
+    <string name="core_fault_25_name">Update transfer: checksum error</string>
+    <string name="core_fault_25_hint">The transferred firmware image failed its checksum. Restart the bike and transfer the update again.</string>
+    <string name="core_fault_26_name">Update transfer took too long</string>
+    <string name="core_fault_26_hint">The firmware transfer took too long. Restart the bike and try again with the phone close to the bike.</string>
+    <string name="core_fault_27_name">Update package missing or invalid</string>
+    <string name="core_fault_27_hint">A file in the update package is missing or invalid. Restart the bike and load the package again.</string>
+    <string name="core_fault_28_name">Flash programming timed out</string>
+    <string name="core_fault_28_hint">The module did not finish writing the new firmware in time. Restart the bike and repeat the update. If it fails again, a workshop has to check the module.</string>
+    <string name="core_fault_29_name">Update package: header not found</string>
+    <string name="core_fault_29_hint">The module found no header in the firmware file of the update package. The package is damaged or wrong. Repeat the update with an intact package.</string>
+    <string name="core_fault_30_name">Update package: no files</string>
+    <string name="core_fault_30_hint">The update package contains no files. Repeat the update with a complete package.</string>
+    <string name="core_fault_31_name">Flash erase failed</string>
+    <string name="core_fault_31_hint">The module could not erase its old firmware. Restart the bike and repeat the update. If it fails again, a workshop has to check the module.</string>
+    <string name="core_fault_32_name">Flash write failed</string>
+    <string name="core_fault_32_hint">The module could not write the new firmware. Restart the bike and repeat the update. If it fails again, a workshop has to check the module.</string>
+    <string name="core_fault_33_name">Update package: checksum error</string>
+    <string name="core_fault_33_hint">A file in the update package has a checksum error. Repeat the update with a fresh package.</string>
+    <string name="core_fault_34_name">Motor update failed</string>
+    <string name="core_fault_34_hint">The update of the motor controller (motorware) did not finish. Restart the bike and repeat the update. If the motor does not answer afterwards (code\u00A022), a workshop has to recover its firmware.</string>
+    <string name="core_fault_35_name">Battery update failed</string>
+    <string name="core_fault_35_hint">The update of the battery controller (BMS) did not finish. Restart the bike and repeat the update. If the battery stays silent, a workshop has to flash it again.</string>
+    <string name="core_fault_36_name">Shifter update failed</string>
+    <string name="core_fault_36_hint">The update of the shifter controller did not finish. Restart the bike and repeat the update. If the shifter stays silent (code\u00A044), a workshop has to flash it again.</string>
+    <string name="core_fault_37_name">Bluetooth update failed</string>
+    <string name="core_fault_37_hint">The update of the Bluetooth controller did not finish. Restart the bike and repeat the update. If the app can no longer connect, you can still unlock with the backup code; a workshop can flash the chip again.</string>
+    <string name="core_fault_38_name">Module battery reading disrupted</string>
+    <string name="core_fault_38_hint">The bike cannot read the small battery inside the smart cartridge; it may be missing, empty or worn out. Charge the bike and check that the module battery charges. If the code stays, replace the module battery.</string>
+    <string name="core_fault_39_name">Light sensor fault</string>
+    <string name="core_fault_39_hint">The module cannot read the ambient light sensor (I²C error), so the automatic light may misbehave. Restart the bike. If the code stays, the module needs a repair.</string>
+    <string name="core_fault_40_name">Bell button stuck</string>
+    <string name="core_fault_40_hint">The bike saw the bell button pressed for more than 20\u00A0s. Clean the button or replace it, and check its cable for moisture or a short circuit.</string>
+    <string name="core_fault_41_name">Boost button stuck</string>
+    <string name="core_fault_41_hint">The bike saw the Boost button pressed for more than 20\u00A0s. Clean the button or replace it, and check its cable for moisture or a short circuit.</string>
+    <string name="core_fault_42_name">Kick Lock coil not detected</string>
+    <string name="core_fault_42_hint">The bike cannot detect the coil in the Kick Lock. Usually a plug is loose or a cable is pinched. Please check the Kick Lock plug and follow the cable for kinks. If battery detection fails at the same time, the bike will probably switch to shipping mode.</string>
+    <string name="core_fault_43_name">Gear not engaged</string>
+    <string name="core_fault_43_hint">The shifter tried 10 times and did not reach the gear. Check the shifter cable and plug at the rear hub, then shift again.</string>
+    <string name="core_fault_44_name">E-shifter not responding</string>
+    <string name="core_fault_44_hint">The bike got no answer from the shifter five times. Check the shifter plug and cable at the rear hub. If both are fine, the shifter board is probably defective (workshop).</string>
+    <string name="core_fault_45_name">Motor cable or temperature sensor open</string>
+    <string name="core_fault_45_hint">The motor temperature sensor (NTC) reads as an open line, as if the motor cable were unplugged or broken. Check the motor plug and the wiring harness to the front wheel for kinks and breaks. If the motor still works, this is often the first sign of a failing harness; without the sensor the motor has no overheat protection. Spin the front wheel: if the speed shows, the speed line is still intact.</string>
+    <string name="core_fault_46_name">Motor driver: overtemperature or overcurrent</string>
+    <string name="core_fault_46_hint">The motor driver chip (DRV8301) reported an error. The workshop table says overtemperature, the code’s own name says overcurrent. Let the bike cool down and restart it. If the code returns, check the motor cable for damage; after that, a workshop has to check the controller.</string>
+    <string name="core_fault_47_name">Battery reports no charge level</string>
+    <string name="core_fault_47_hint">The battery does not report its charge level. Check the battery plug and cable, then restart the bike.</string>
+    <string name="core_fault_48_name">Wheel-speed status bit</string>
+    <string name="core_fault_48_hint">YABA does not count 48 as a fault: the firmware sets this bit from the wheel-speed pulses. The workshop table calls 48 a motor controller error (parameter error, replace motor). If the bike shows 48 on its display or the speed is wrong, check the motor plug and the speed line in the wiring harness.</string>
+    <string name="core_fault_49_name">Motor: current measurement off</string>
+    <string name="core_fault_49_hint">At start-up the motor controller found a current offset too far from its default value (1.0), so its current measurement is off. Restart the bike. If the code stays, a workshop has to check the controller.</string>
+    <string name="core_fault_50_name">Motor: voltage measurement off</string>
+    <string name="core_fault_50_hint">At start-up the motor controller’s voltage measurement was off. Restart the bike and check the battery plug. If the code stays, a workshop has to check the controller.</string>
+    <string name="core_fault_51_name">Motor power limited by heat</string>
+    <string name="core_fault_51_hint">The motor controller cut the maximum current because it is hot. Let the bike cool down. This is a warning, not a defect.</string>
+    <string name="core_fault_52_name">Torque sensor failed</string>
+    <string name="core_fault_52_hint">The motor controller reports a failed torque sensor. Check the plug and cable of the torque sensor and restart the bike.</string>
+    <string name="core_fault_53_name">Critical motor fault (not ready)</string>
+    <string name="core_fault_53_hint">The motor controller reports a serious fault (parameter error plus not ready) and does not start. Restart the bike once. If the code stays, the workshop table says to replace the motor; have a workshop check motor and controller.</string>
+    <string name="core_fault_54_name">No SIM card</string>
+    <string name="core_fault_54_hint">The bike does not detect the SIM card of its tracker, so tracking does not work. Riding is not affected. Check that the SIM sits in its slot and works in another device.</string>
+    <string name="core_fault_55_name">Internal bus startup error</string>
+    <string name="core_fault_55_hint">Several chips on the module’s internal I²C bus did not answer at start-up. Restart the bike. If the code stays, the module (smart cartridge) is probably defective.</string>
+    <string name="core_fault_56_name">Wrong SIM card</string>
+    <string name="core_fault_56_hint">This is not a VanMoof SIM (its number has the wrong prefix). Insert the SIM that belongs to the bike.</string>
+    <string name="core_fault_57_name">SIM not readable</string>
+    <string name="core_fault_57_hint">The modem detects the SIM but cannot read it. Take the SIM out, clean its contacts and put it back in. If the code stays, try another VanMoof SIM.</string>
+    <string name="core_fault_58_name">GSM modem does not start</string>
+    <string name="core_fault_58_hint">The modem’s start-up failed. Restart the bike; the code often disappears after a reset. If it stays, the modem chip is probably defective (it is easy to replace).</string>
+    <string name="core_fault_60_name">Factory mode</string>
+    <string name="core_fault_60_hint">The bike runs its factory firmware instead of the normal firmware. A workshop has to flash the normal firmware again.</string>
+    <string name="core_fault_unknown_name">Unknown code</string>
+    <string name="core_fault_unknown_hint">This code is not in the fault table. Note the number and when it appears.</string>
+
+    <!-- Lock state, used inside sentences (lower case) -->
+    <string name="core_lock_unlocked">unlocked</string>
+    <string name="core_lock_locked">locked</string>
+    <string name="core_lock_pin_entry">code entry</string>
+
+    <!-- Link messages and connection errors -->
+    <string name="core_link_key_invalid">The key is invalid. Add the bike to the garage again or reload it.</string>
+    <string name="core_link_bike_not_found">Bike not found. To wake it, move the bike briefly or press the bell button. The VanMoof app must be closed.</string>
+    <string name="core_link_location_off">Location is off. Without location, Android cannot find Bluetooth devices.</string>
+    <string name="core_error_bluetooth_off">Bluetooth is off.</string>
+    <string name="core_error_connect_failed">Connection failed</string>
+    <string name="core_error_invalid_mac">Invalid MAC address %1$s</string>
+    <string name="core_error_not_s3">This is not an S3 or X3, or the Bluetooth cache is corrupted.</string>
+    <string name="core_error_not_connected_wake">Not connected. Please wake the bike and wait a moment.</string>
+    <string name="core_error_not_connected">Not connected</string>
+    <string name="core_error_link_lost">Connection interrupted</string>
+    <string name="core_error_no_challenge">The bike sent no challenge</string>
+    <string name="core_error_read_failed">%1$s: read failed</string>
+    <string name="core_error_connect_gatt_null">Android could not open a connection (connectGatt returned null)</string>
+    <string name="core_error_no_answer">No answer from the bike. Usually the bike is asleep, or the VanMoof app is connected to it right now.</string>
+    <string name="core_error_connect_133">Connection interrupted (133). The bike accepts only one connection at a time.</string>
+    <string name="core_error_connect_status">Connection failed (status %1$s)</string>
+    <string name="core_error_services">The services of the bike could not be read</string>
+    <string name="core_error_services_status">The services of the bike could not be read (status %1$s)</string>
+    <string name="core_error_missing_char">Characteristic %1$s is missing on the bike</string>
+    <string name="core_error_op_not_started">%1$s could not be started</string>
+    <string name="core_error_op_timeout">%1$s timed out</string>
+    <string name="core_error_op_failed">%1$s failed (status %2$d)</string>
+    <string name="core_op_read">Read</string>
+    <string name="core_op_write">Write</string>
+    <string name="core_op_notify">Notification setup</string>
+    <string name="core_op_mtu">MTU request</string>
+
+    <!-- Commands: event log entry and error prefix -->
+    <string name="core_cmd_failed">%1$s failed</string>
+    <string name="core_cmd_refresh">Refresh</string>
+    <string name="core_cmd_read_raw">Raw data read</string>
+    <string name="core_cmd_unlock">Unlock</string>
+    <string name="core_cmd_lock">Lock</string>
+    <string name="core_cmd_speed_limit">Speed limit %1$d\u00A0km/h</string>
+    <string name="core_cmd_level">Level\u00A0%1$d</string>
+    <string name="core_cmd_light">Light: %1$s</string>
+    <string name="core_cmd_bell">Bell sound: %1$s</string>
+    <string name="core_cmd_unit">Unit: %1$s</string>
+    <string name="core_cmd_wake">Wake up</string>
+    <string name="core_cmd_backup_cleared">Backup code cleared</string>
+    <string name="core_cmd_backup_set">Backup code set</string>
+    <string name="core_cmd_bike_log">Bike log read</string>
+    <string name="core_cmd_custom_bell">Custom bell sound</string>
+    <string name="core_alarm_on">Alarm on</string>
+    <string name="core_alarm_off">Alarm off</string>
+
+    <!-- Command errors -->
+    <string name="core_error_speed_rejected">The bike did not accept %1$d\u00A0km/h (it reports %2$s\u00A0km/h).</string>
+    <string name="core_error_speed_rejected_lock">The bike did not accept %1$d\u00A0km/h (it reports %2$s\u00A0km/h, region restriction %3$d).</string>
+    <string name="core_error_region_locked">The region of the bike is restricted, so it keeps its speed limit and refused %1$d\u00A0km/h.</string>
+    <string name="core_error_level_rejected">The bike did not accept level\u00A0%1$d (it reports %2$s).</string>
+    <string name="core_error_wake_riding">Not needed while riding.</string>
+    <string name="core_error_backup_digits">Three digits from 1 to 9.</string>
+    <string name="core_error_no_bike_log">This bike does not offer a log.</string>
+
+    <!-- Event log -->
+    <string name="core_log_key_invalid">Key for %1$s is invalid</string>
+    <string name="core_log_searching">Searching for %1$s</string>
+    <string name="core_log_disconnected">Disconnected</string>
+    <string name="core_log_connected">Connected and signed in</string>
+    <string name="core_log_mtu" translatable="false">MTU %1$d</string>
+    <string name="core_log_link_lost_riding">Connection interrupted while riding</string>
+    <string name="core_log_link_lost">Connection interrupted</string>
+    <plurals name="core_log_subscribed">
+        <item quantity="one">Subscribed to %1$d live value</item>
+        <item quantity="other">Subscribed to %1$d live values</item>
+    </plurals>
+    <string name="core_log_firmware">Firmware\u00A0%1$s</string>
+    <string name="core_log_transfer">Transfer: %1$s</string>
+    <string name="core_log_shipping">Bike reports shipping mode</string>
+    <string name="core_log_kicklock_riding">Kick Lock reports locked while riding</string>
+    <string name="core_log_lock">Lock: %1$s</string>
+    <string name="core_log_status">Status: %1$s</string>
+    <string name="core_log_fault">Fault\u00A0%1$d: %2$s</string>
+    <string name="core_log_faults_cleared">Faults no longer active: %1$s</string>
+    <string name="core_log_power_button_riding">Power/reset button reports pressed while riding</string>
+    <string name="core_log_supply_low">Supply voltage below 20\u00A0V</string>
+    <string name="core_log_supply_ok">Supply back to normal</string>
+    <string name="core_log_charger_in">Charger plugged in</string>
+    <string name="core_log_charger_out">Charger unplugged</string>
+    <string name="core_log_alarm">Alarm: %1$s</string>
+    <string name="core_log_unlock_request">Bike requests to be unlocked</string>
+    <string name="core_log_ride_started">Ride logger started</string>
+    <string name="core_log_ride_stopped">Ride logger stopped</string>
+
+    <!-- Event details (parts are joined with commas) -->
+    <string name="core_detail_status">Status %1$s</string>
+    <string name="core_detail_status_before">Previously %1$s</string>
+    <string name="core_detail_shipping">shipping mode reported</string>
+    <string name="core_detail_battery">battery %1$d%%</string>
+    <string name="core_detail_speed">%1$d\u00A0km/h</string>
+    <string name="core_detail_supply_ok">supply in order</string>
+    <string name="core_detail_supply_low">supply low</string>
+    <string name="core_detail_lock">lock %1$s</string>
+    <string name="core_detail_faults">faults\u00A0%1$s</string>
+    <string name="core_detail_shipping_state">%1$d\u00A0km/h, lock %2$s, faults\u00A0%3$s</string>
+    <string name="core_detail_supply_low_state">%1$d\u00A0km/h, battery %2$s%%</string>
+    <string name="core_none">none</string>
+
+    <!-- Custom bell transfer status (OAD) -->
+    <string name="core_oad_started">started</string>
+    <string name="core_oad_done">complete, checksum matches</string>
+    <string name="core_oad_block_ok">block accepted</string>
+    <string name="core_oad_bad_checksum">checksum mismatch</string>
+    <string name="core_oad_not_writable">memory not writable</string>
+    <string name="core_oad_bad_type">invalid file type</string>
+    <string name="core_oad_too_large">file too large</string>
+    <string name="core_oad_code">code\u00A0%1$s</string>
+
+    <!-- Account and cloud -->
+    <string name="core_default_bike_name">My S3</string>
+    <string name="core_error_no_valid_keys">No valid bike keys found.</string>
+    <string name="core_error_not_logged_in">Not signed in.</string>
+    <string name="core_vault_unavailable">The key vault is not available.</string>
+    <string name="core_vault_unreadable">The key vault cannot be read right now. Please restart the app.</string>
+    <string name="core_vault_save_failed">The key vault could not be saved.</string>
+    <string name="core_api_wrong_credentials">Email or password is incorrect.</string>
+    <string name="core_api_no_token">The sign-in response contained no token.</string>
+    <string name="core_api_session_expired">Session expired. Please sign in again.</string>
+    <string name="core_api_refresh_no_token">The session refresh returned no token.</string>
+    <string name="core_api_rate_limited">VanMoof’s server is limiting requests right now. Please wait one minute.</string>
+    <string name="core_api_not_authenticated">Not signed in, or the session has expired.</string>
+    <string name="core_api_not_owner">You do not have permission for this. Only the owner can do it.</string>
+    <string name="core_api_no_permission">No permission.</string>
+    <string name="core_api_server_error">VanMoof’s server answered with error\u00A0%1$d.</string>
+    <string name="core_api_unexpected">Unexpected response from VanMoof’s server.</string>
+    <string name="core_api_timeout">Timed out. The action may have gone through anyway. Please reload the list.</string>
+    <string name="core_api_connection_dropped">The connection to VanMoof’s server was interrupted.</string>
+    <string name="core_api_unreachable">VanMoof’s server cannot be reached. Please check your internet connection.</string>
+
+    <!-- Account messages -->
+    <plurals name="core_account_bikes_loaded">
+        <item quantity="one">%1$d bike loaded.</item>
+        <item quantity="other">%1$d bikes loaded.</item>
+    </plurals>
+    <string name="core_account_without_key">No key yet: %1$s.</string>
+    <plurals name="core_account_bikes_refreshed">
+        <item quantity="one">%1$d bike updated.</item>
+        <item quantity="other">%1$d bikes updated.</item>
+    </plurals>
+    <string name="core_account_logged_out">Signed out. Your bike keys stay on this phone.</string>
+    <string name="core_account_bike_added">%1$s added.</string>
+    <plurals name="core_account_imported">
+        <item quantity="one">%1$d bike imported.</item>
+        <item quantity="other">%1$d bikes imported.</item>
+    </plurals>
+    <plurals name="core_account_import_skipped">
+        <item quantity="one">%1$d invalid entry skipped.</item>
+        <item quantity="other">%1$d invalid entries skipped.</item>
+    </plurals>
+    <string name="core_account_import_failed">Import failed.</string>
+    <string name="core_error_unknown">Unknown error.</string>
+    <string name="core_share_shared_with">Shared with %1$s.</string>
+    <string name="core_share_revoked">Sharing ended.</string>
+
+    <!-- Custom bell conversion and upload -->
+    <string name="core_bell_silent">The file contains only silence.</string>
+    <string name="core_bell_too_long">The sound is too long. Choose a shorter one.</string>
+    <string name="core_bell_cannot_open">The file cannot be opened.</string>
+    <string name="core_bell_no_audio">The file has no audio track.</string>
+    <string name="core_bell_unsupported">This phone cannot decode this format.</string>
+    <string name="core_bell_no_data">The file contains no readable audio data.</string>
+    <string name="core_bell_convert_failed">Conversion failed.</string>
+    <string name="core_bell_upload_aborted">Transfer aborted. Please hold the phone close to the bike and send again.</string>
+
+    <!-- Ride logger -->
+    <string name="core_ride_error_permission">Bluetooth access is missing. Please allow access to nearby devices first.</string>
+    <string name="core_ride_share_subject">S3 ride log %1$s</string>
+    <string name="core_ride_notif_running">Ride logger running</string>
+    <plurals name="core_ride_notif_incidents">
+        <item quantity="one">Ride logger: %1$d incident</item>
+        <item quantity="other">Ride logger: %1$d incidents</item>
+    </plurals>
+    <string name="core_ride_notif_connecting">Connecting…</string>
+    <string name="core_ride_notif_battery">Battery %1$d%%</string>
+    <string name="core_ride_notif_lost">Connection interrupted, still searching</string>
+    <string name="core_ride_notif_searching">Searching for the bike</string>
+    <string name="core_ride_notif_stop">Stop</string>
+
+    <!-- Debug builds only: demo data and component gallery -->
+    <string name="core_demo_kicklock_contact">Kick Lock contact: active</string>
+    <string name="core_gallery_connected">Connected</string>
+    <string name="core_gallery_battery">Battery</string>
+    <string name="core_gallery_percent">%1$d%%</string>
+    <string name="core_gallery_distance">Kilometers</string>
+    <string name="core_gallery_distance_value" translatable="false">%1$,.1f</string>
+    <string name="core_gallery_level">Level</string>
+    <string name="core_gallery_limit">Limit</string>
+    <string name="core_gallery_speed_limit">Speed limit</string>
+    <string name="core_gallery_assist">Assist</string>
+    <string name="core_gallery_light">Light</string>
+    <string name="core_gallery_soundboard">Sound board</string>
+    <string name="core_gallery_send_bell">Send bell sound</string>
+    <string name="core_gallery_search_again">Search again</string>
+    <string name="core_notif_link_lost_riding">Connection to the bike interrupted. The bike rides on unchanged, and YABA reconnects.</string>
+    <string name="core_server_error_title">Error from VanMoof’s server</string>
+    <string name="core_server_error_text">VanMoof’s server answered with error\u00A0%2$d at %1$s. Your bike is not affected: unlocking, lights, bell and diagnostics run directly over Bluetooth. Only signing in and sharing wait for the server. Tap “Try again” to repeat the request.</string>
+    <string name="core_server_timeout_title">No answer from VanMoof’s server</string>
+    <string name="core_server_timeout_text">At %1$s, no answer came within 10\u00A0seconds. Your bike is not affected: unlocking, lights, bell and diagnostics run directly over Bluetooth. Only signing in and sharing wait for the server. Tap “Try again” to repeat the request.</string>
+    <string name="core_server_dead_title">VanMoof’s server does not answer</string>
+    <string name="core_server_dead_text">VanMoof’s server has not answered any request from this phone for %1$d\u00A0days. Your bike does not need it: unlocking, lights, bell and diagnostics keep running directly over Bluetooth. Only signing in and sharing are not possible while the server does not answer.</string>
+    <string name="core_server_retry">Try again</string>
+</resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tachograaf (ui/screens/LogInsightsScreen.kt). -->
+<resources>
+    <string name="loginsights_title">Tachograaf</string>
+    <string name="loginsights_close">Sluiten</string>
+    <string name="loginsights_intro">De fiets schrijft elke 30\u00A0seconden een meetregel in zijn logboek zolang hij wakker is. YABA maakt daar grafieken per rit van, ook van ritten zonder telefoon.</string>
+    <string name="loginsights_loading">Leest het bewaarde logboek …</string>
+    <string name="loginsights_more">Meer tonen</string>
+    <string name="loginsights_yes">ja</string>
+    <string name="loginsights_no">nee</string>
+
+    <string name="loginsights_fmt_time">HH:mm</string>
+    <string name="loginsights_fmt_time_seconds">HH:mm:ss</string>
+    <string name="loginsights_fmt_ride">EEE d MMM, HH:mm</string>
+    <string name="loginsights_fmt_day">EEEE d MMMM yyyy</string>
+    <string name="loginsights_fmt_day_short">EEE d-M</string>
+    <string name="loginsights_fmt_date">d-M-yyyy</string>
+    <string name="loginsights_at_time">%s\u00A0uur</string>
+    <string name="loginsights_unit_kmh">%s\u00A0km/u</string>
+    <string name="loginsights_unit_km">%s\u00A0km</string>
+    <string name="loginsights_unit_pct">%s%%</string>
+    <string name="loginsights_unit_amp">%s\u00A0A</string>
+    <string name="loginsights_unit_celsius">%s\u00A0°C</string>
+    <string name="loginsights_unit_min">%d\u00A0min</string>
+    <string name="loginsights_unit_h_min">%1$d\u00A0u %2$d\u00A0min</string>
+
+    <string name="loginsights_entry_intro">De tachograaf toont ritten, stroombegrenzing, schakelen en ontwaakmomenten uit het logboek van de fiets.</string>
+    <string name="loginsights_entry_empty">Op deze telefoon is nog geen logboek bewaard. Lees het logboek van de fiets één keer uit, dan verschijnen hier de ritten.</string>
+    <string name="loginsights_entry_no_rides">Het bewaarde logboek bevat nog geen rit.</string>
+    <string name="loginsights_entry_open">Tachograaf openen</string>
+    <plurals name="loginsights_entry_summary">
+        <item quantity="one">%1$d rit over %2$s, laatst %3$s</item>
+        <item quantity="other">%1$d ritten over samen %2$s, laatst %3$s</item>
+    </plurals>
+
+    <string name="loginsights_archive_title">Bewaard logboek</string>
+    <plurals name="loginsights_archive_lines_unit">
+        <item quantity="one">regel</item>
+        <item quantity="other">regels</item>
+    </plurals>
+    <plurals name="loginsights_archive_downloads">
+        <item quantity="one">Samengevoegd uit %d uitlezing</item>
+        <item quantity="other">Samengevoegd uit %d uitlezingen</item>
+    </plurals>
+    <string name="loginsights_archive_span">Van %1$s tot %2$s, volgens de klok van de fiets</string>
+    <string name="loginsights_archive_empty">Op deze telefoon is nog geen meetregel bewaard.</string>
+    <string name="loginsights_archive_hint">Elke uitlezing blijft op de telefoon. YABA voegt ze samen, zodat ook ritten bewaard blijven die de fiets in zijn geheugen van 128 KB al heeft overschreven.</string>
+    <string name="loginsights_archive_read">Logboek nu uitlezen</string>
+    <string name="loginsights_archive_read_again">Opnieuw uitlezen</string>
+    <string name="loginsights_archive_reading">Leest het logboek …</string>
+    <string name="loginsights_archive_reading_percent">Leest het logboek, %d%%</string>
+    <string name="loginsights_archive_offline">Om uit te lezen moet de fiets verbonden zijn.</string>
+    <string name="loginsights_archive_failed">Het logboek is niet aangekomen. Blijf bij de fiets en lees het opnieuw uit.</string>
+    <string name="loginsights_archive_partial">De laatste uitlezing stopte voor het einde van het logboek. Wat aankwam, is bewaard.</string>
+
+    <string name="loginsights_rides_title">Ritten</string>
+    <plurals name="loginsights_rides_count">
+        <item quantity="one">%d rit</item>
+        <item quantity="other">%d ritten</item>
+    </plurals>
+    <string name="loginsights_rides_none">Het bewaarde logboek bevat geen rit. Een rit telt als het wiel in minstens twee meetregels draait.</string>
+    <string name="loginsights_rides_all">Alle ritten</string>
+    <string name="loginsights_rides_more">Meer ritten tonen</string>
+    <string name="loginsights_ride_row">%1$s in %2$s, tot %3$s</string>
+    <string name="loginsights_ride_sampling">De fiets meet elke 30\u00A0seconden. Pieken daartussen ontbreken, daarom ligt de hoogste meetwaarde meestal onder de echte topwaarde.</string>
+    <string name="loginsights_fact_distance">Afstand</string>
+    <string name="loginsights_fact_duration">Duur</string>
+    <string name="loginsights_fact_avg">Gemiddeld</string>
+    <string name="loginsights_fact_max">Hoogste meetwaarde</string>
+    <string name="loginsights_fact_battery">Accu verbruikt</string>
+    <string name="loginsights_fact_motor_temp">Motor hoogstens</string>
+    <string name="loginsights_fact_boost">Met Boost</string>
+
+    <string name="loginsights_chart_scrub_hint">Sleep over een grafiek, dan staan onder elke grafiek de waarden op dat moment.</string>
+    <string name="loginsights_chart_speed">Snelheid in km/u</string>
+    <string name="loginsights_chart_battery">Accu in procent</string>
+    <string name="loginsights_chart_current">Motorstroom in ampère</string>
+    <string name="loginsights_chart_temps">Temperaturen in °C</string>
+    <string name="loginsights_chart_battery_note" formatted="false">Onder de lijn bij 22% geeft de firmware de motor minder stroom. De moduleaccu is de kleine cel in de elektronicamodule, niet de rijaccu.</string>
+    <string name="loginsights_chart_current_no_limit">Voor deze rit staat geen stroomgrens in het bewaarde logboek. De fiets schrijft die alleen als hij verandert.</string>
+    <string name="loginsights_chart_cd">%1$s, %2$s tot %3$s. Laagste waarde %4$s, hoogste waarde %5$s.</string>
+    <string name="loginsights_series_speed">Snelheid</string>
+    <string name="loginsights_series_main_battery">Hoofdaccu</string>
+    <string name="loginsights_series_module_battery">Moduleaccu</string>
+    <string name="loginsights_series_motor_current">Motorstroom</string>
+    <string name="loginsights_series_limit">Grens van de firmware</string>
+    <string name="loginsights_series_temp_battery">Accu</string>
+    <string name="loginsights_series_temp_motor">Motor</string>
+    <string name="loginsights_series_temp_driver">Controller</string>
+    <string name="loginsights_series_shift_retry">Schakelherhaling</string>
+    <string name="loginsights_readout">%1$s: %2$s</string>
+    <string name="loginsights_readout_two">%1$s: %2$s %3$s, %4$s %5$s</string>
+    <string name="loginsights_readout_three">%1$s: %2$s %3$s, %4$s %5$s, %6$s %7$s</string>
+    <string name="loginsights_rows_show">Meetregels tonen</string>
+    <string name="loginsights_rows_hide">Meetregels verbergen</string>
+    <string name="loginsights_col_time">Tijd</string>
+    <string name="loginsights_col_speed">km/u</string>
+    <string name="loginsights_col_soc">Accu</string>
+    <string name="loginsights_col_current">Stroom</string>
+    <string name="loginsights_col_battemp">Accu °C</string>
+    <string name="loginsights_col_motortemp">Motor °C</string>
+
+    <string name="loginsights_derate_title">Stroombegrenzing</string>
+    <string name="loginsights_derate_intro">Hoeveel stroom de motor mag trekken, bepaalt de firmware aan de hand van accustand en accutemperatuur. Via Bluetooth meldt de fiets die waarde niet, in het logboek staat elke wijziging.</string>
+    <string name="loginsights_derate_of_max">van hoogstens %s</string>
+    <string name="loginsights_derate_full">Bij %1$s accu en %2$s mag de motor de volle %3$s trekken.</string>
+    <string name="loginsights_derate_empty">Bij %1$s accu geeft de firmware geen stroom meer vrij, de motor ondersteunt niet.</string>
+    <string name="loginsights_derate_battery">Bij %1$s accu geeft de firmware maar %2$s in plaats van %3$s vrij.</string>
+    <string name="loginsights_derate_next_soc">Vanaf %1$s accu is het %2$s.</string>
+    <string name="loginsights_derate_cold">Bij een accutemperatuur van %1$s geeft de firmware maar %2$s in plaats van %3$s vrij.</string>
+    <string name="loginsights_derate_next_warmer">Boven %1$s is het %2$s.</string>
+    <string name="loginsights_derate_heat">Bij een accutemperatuur van %1$s geeft de firmware maar %2$s in plaats van %3$s vrij.</string>
+    <string name="loginsights_derate_next_cooler">Tot %1$s is het weer %2$s.</string>
+    <string name="loginsights_derate_both">Bij %1$s accu en een accutemperatuur van %2$s geeft de firmware maar %3$s in plaats van %4$s vrij. Beide begrenzen.</string>
+    <string name="loginsights_derate_unknown">Voor een inschatting ontbreekt de accustand of de accutemperatuur. Lees het logboek uit, dan neemt YABA de temperatuur uit de laatste meetregel.</string>
+    <string name="loginsights_derate_basis_live">Accustand rechtstreeks van de fiets, accutemperatuur uit de meetregel van %s. De temperatuur staat maar elke 30\u00A0seconden in het logboek, de waarde is dus bij benadering.</string>
+    <string name="loginsights_derate_basis_log">Accustand en accutemperatuur uit de meetregel van %s. Met een verbonden fiets neemt YABA de actuele accustand.</string>
+    <string name="loginsights_derate_grid_title">Stroomgrens naar accustand en temperatuur</string>
+    <string name="loginsights_derate_grid_cd">Tabel van de stroomgrenzen: rijen naar accutemperatuur, kolommen naar accustand.</string>
+    <string name="loginsights_derate_now">huidige stand</string>
+    <string name="loginsights_derate_grid_note">De tabel komt uit firmware\u00A01.07.06 en is regel voor regel gecontroleerd. Op 1.9.3 is hij waarschijnlijk gelijk.</string>
+    <string name="loginsights_derate_log_title">Wijzigingen in het logboek</string>
+    <string name="loginsights_derate_log_row">%1$s bij %2$s accu</string>
+    <string name="loginsights_derate_log_row_nosoc">%1$s, accustand onbekend</string>
+    <string name="loginsights_derate_log_none">Het bewaarde logboek bevat geen wijziging van de stroomgrens.</string>
+
+    <string name="loginsights_shift_title">Schakelen</string>
+    <string name="loginsights_shift_intro">Het logboek noteert elke schakelherhaling, elke positiefout, het uitschakelen van de shifter en zijn nulpuntkalibratie.</string>
+    <string name="loginsights_shift_summary_ok">In %s rijtijd schakelde de fiets zonder herhaling en zonder positiefout.</string>
+    <plurals name="loginsights_shift_summary_retries">
+        <item quantity="one">In %1$s rijtijd moest de schakeling %2$d keer opnieuw beginnen.</item>
+        <item quantity="other">In %1$s rijtijd moest de schakeling %2$d keer opnieuw beginnen.</item>
+    </plurals>
+    <plurals name="loginsights_shift_summary_position">
+        <item quantity="one">De shifter vond %d keer zijn positie niet. Laat de schakeling nakijken.</item>
+        <item quantity="other">De shifter vond %d keer zijn positie niet. Laat de schakeling nakijken.</item>
+    </plurals>
+    <string name="loginsights_shift_retries">Schakelherhalingen</string>
+    <string name="loginsights_shift_retries_hint">Een versnelling kwam niet bij de eerste poging aan.</string>
+    <string name="loginsights_shift_per_hour">%s per rijuur</string>
+    <string name="loginsights_shift_position">Positiefouten</string>
+    <string name="loginsights_shift_position_hint">De shifter vond zijn positie niet.</string>
+    <string name="loginsights_shift_off">Shifter uitgeschakeld</string>
+    <string name="loginsights_shift_off_hint">Meestal het gewone uitschakelen na een rustpauze.</string>
+    <string name="loginsights_shift_zero">Nulpuntkalibraties</string>
+    <string name="loginsights_shift_zero_hint">De shifter zoekt zijn nulpunt, meestal na het inschakelen.</string>
+    <string name="loginsights_shift_by_gear">Herhalingen per versnelling</string>
+    <string name="loginsights_shift_gear">Versnelling\u00A0%d</string>
+    <string name="loginsights_shift_by_gear_cd">Herhalingen per versnelling. Versnelling\u00A01: %1$d, versnelling\u00A02: %2$d, versnelling\u00A03: %3$d, versnelling\u00A04: %4$d.</string>
+    <string name="loginsights_shift_events">Regels</string>
+    <string name="loginsights_shift_event_retry">Versnelling\u00A0%1$s, terugmelding %2$s, nieuwe poging</string>
+    <string name="loginsights_shift_event_position">Positiefout</string>
+    <string name="loginsights_shift_event_off">Shifter uitgeschakeld</string>
+    <string name="loginsights_shift_event_zero">Nulpunt gekalibreerd</string>
+    <string name="loginsights_shift_event_speed">bij %s</string>
+    <string name="loginsights_shift_event_parked">stilstaand</string>
+    <string name="loginsights_shift_none">Het bewaarde logboek bevat geen regel van de schakeling.</string>
+    <string name="loginsights_shift_caveat">De teksten komen uit firmware\u00A01.07.06. Je Revotronics-shifter meldt mogelijk anders, controleer de regels daarom aan een logboek van je eigen fiets.</string>
+
+    <string name="loginsights_wake_title">Ontwaaklogboek</string>
+    <string name="loginsights_wake_intro">Het logboek noteert waarom de fiets wakker werd. Een schok zonder rit daarna betekent meestal dat iemand de fiets heeft bewogen.</string>
+    <string name="loginsights_wake_clock_skew">De klok van de fiets wijkt %s af van de telefoontijd. Zet de klok van de fiets gelijk, dan kloppen de tijden.</string>
+    <string name="loginsights_wake_legend_ride">Rit</string>
+    <string name="loginsights_wake_legend_wake">Ontwaakt</string>
+    <string name="loginsights_wake_legend_moved">Schok zonder rit</string>
+    <string name="loginsights_wake_day_cd">%1$s. Ritten: %2$d. Ontwaakmomenten: %3$d. Daarvan bewogen zonder rit: %4$d.</string>
+    <string name="loginsights_wake_none">Geen reden gemeld</string>
+    <string name="loginsights_wake_rtc">Wekker van de fiets</string>
+    <string name="loginsights_wake_button1">Knop\u00A01</string>
+    <string name="loginsights_wake_button2">Knop\u00A02</string>
+    <string name="loginsights_wake_ble">Bluetooth</string>
+    <string name="loginsights_wake_mems">Schok</string>
+    <string name="loginsights_wake_charger">Lader</string>
+    <string name="loginsights_wake_wheel">Wiel draait</string>
+    <string name="loginsights_wake_key">Accucontact</string>
+    <string name="loginsights_wake_kicklock">Kick Lock</string>
+    <string name="loginsights_wake_cold">Koude start, logboek gewist</string>
+    <string name="loginsights_wake_counter_only">Ontwaakt</string>
+    <string name="loginsights_wake_other">Andere reden</string>
+    <string name="loginsights_wake_moved">%s zonder rit</string>
+    <string name="loginsights_wake_ride_after">daarna rit van %s</string>
+    <string name="loginsights_wake_counter">ontwaakteller %1$d van %2$d</string>
+    <string name="loginsights_wake_deepsleep">Bluetooth in diepe slaap</string>
+    <string name="loginsights_wake_deepsleep_detail">%1$s accu, %2$s ontwaakmomenten</string>
+    <string name="loginsights_wake_deepsleep_hint" formatted="false">Onder 19% accu en na meer dan 167 ontwaakmomenten stuurt de firmware Bluetooth in een diepere slaap.</string>
+    <string name="loginsights_wake_none_found">Het bewaarde logboek bevat geen ontwaakregel.</string>
+    <string name="loginsights_wake_more">Meer dagen tonen</string>
+    <string name="loginsights_wake_caveat">Een ontwaakregel komt alleen in het geheugen als de fiets daarna ongeveer een minuut wakker blijft. De tijden volgen de klok van de fiets.</string>
+
+    <string name="loginsights_seek_title">Alleen nieuwe regels uitlezen</string>
+    <string name="loginsights_seek_intro">Zet de leeswijzer van de fiets achter de nieuwste bewaarde regel. Daarna leest YABA alleen nog nieuwe regels, dat gaat sneller.</string>
+    <string name="loginsights_seek_warning">Dit kun je niet ongedaan maken. Oudere regels geeft de fiets daarna aan geen enkele app of werkplaats meer, ze staan dan alleen nog op deze telefoon.</string>
+    <string name="loginsights_seek_check_link">Fiets verbonden</string>
+    <string name="loginsights_seek_check_complete">Logboek tot het einde uitgelezen</string>
+    <string name="loginsights_seek_check_complete_hint">Lees het logboek hier of bij Diagnose volledig uit.</string>
+    <string name="loginsights_seek_check_saved">Uitlezing op de telefoon bewaard</string>
+    <string name="loginsights_seek_check_saved_hint">Het bestand van de laatste uitlezing staat in de opslag van YABA en klopt teken voor teken.</string>
+    <string name="loginsights_seek_check_fresh">Leeftijd van de uitlezing</string>
+    <string name="loginsights_seek_check_fresh_hint">Hoogstens %d\u00A0minuten oud en uit de huidige verbinding, zodat geen nieuwe regel wordt overgeslagen.</string>
+    <string name="loginsights_seek_check_newest">Nieuwste bewaarde regel</string>
+    <string name="loginsights_seek_check_newest_hint">De wijzer gaat tot vlak voor deze tijd van de fietsklok, nooit volgens de telefoontijd.</string>
+    <string name="loginsights_seek_check_clock_hint">De klok van de fiets is niet gezet. Zet hem eerst, anders is de nieuwste regel niet eenduidig.</string>
+    <string name="loginsights_seek_button">Wijzer naar %s\u00A0uur zetten</string>
+    <string name="loginsights_seek_button_plain">Wijzer verzetten</string>
+    <string name="loginsights_seek_busy">Verzet de wijzer …</string>
+    <string name="loginsights_seek_blocked">Pas mogelijk als aan alle punten hierboven is voldaan.</string>
+    <string name="loginsights_seek_confirm_title">Leeswijzer verzetten</string>
+    <string name="loginsights_seek_confirm_text">De fiets geeft daarna alleen nog regels vanaf %1$s\u00A0uur op %2$s. De %3$s regels daarvoor staan dan alleen nog op deze telefoon.</string>
+    <string name="loginsights_seek_confirm">Verzetten</string>
+    <string name="loginsights_seek_cancel">Annuleren</string>
+    <string name="loginsights_seek_done">De wijzer staat voor %s\u00A0uur. Bij de volgende uitlezing komen alleen nieuwe regels.</string>
+    <string name="loginsights_archive_read_where">Nieuwe regels komen erbij zodra je het logboek uitleest in Diagnose onder “Logboek van de fiets”.</string>
+</resources>

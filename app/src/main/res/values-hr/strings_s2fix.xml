@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- S2 follow-ups: lock refusal, how the error catcher gets its blocks, the cockpit for the GPS ride, the test-mode
+         controls (mute, off-road), the garage model switch, the S2 backup-code intro and the S2 credits. -->
+    <string name="s2fix_error_lock_riding">Ne tijekom vožnje: YABA zaključava S2 samo dok stoji.</string>
+    <plurals name="s2fix_catch_pushed">
+        <item quantity="one">Bicikl sam šalje promjene: dosad %1$s blok. I kod koji pokaže samo na trenutak završi ovdje.</item>
+        <item quantity="few">Bicikl sam šalje promjene: dosad %1$s bloka. I kod koji pokaže samo na trenutak završi ovdje.</item>
+        <item quantity="other">Bicikl sam šalje promjene: dosad %1$s blokova. I kod koji pokaže samo na trenutak završi ovdje.</item>
+    </plurals>
+    <string name="s2fix_catch_polled">Bicikl još nije sam poslao nijedan blok, pa YABA čita jedan svakih %1$s\u00A0s. Kraći kod može promaknuti.</string>
+    <string name="s2fix_cockpit_intro">Za vožnju s GPS-om: otvori kokpit. Prikazuje brzinu i kod greške krupno, a čim motor zakaže, tipka za glasnoću postavlja oznaku.</string>
+    <string name="s2fix_mute_title">Zvukovi zaključavanja i otključavanja</string>
+    <string name="s2fix_mute_hint">Naredba 0x06. Jedan izvor kaže da utišava zvukove, drugi da uparuje daljinski upravljač. Ako se dogodi nešto drugo, ponovno uključi zvukove i zapiši to.</string>
+    <string name="s2fix_mute_reports_on">Bicikl javlja: utišano.</string>
+    <string name="s2fix_mute_reports_off">Bicikl javlja: nije utišano.</string>
+    <string name="s2fix_mute_on">Utišaj</string>
+    <string name="s2fix_mute_off">Uključi zvukove</string>
+    <string name="s2fix_offroad_title">37\u00A0km/h (terenski)</string>
+    <string name="s2fix_offroad_hint">Pokazuje prihvaća li S2 regiju 2. Samo dok je bicikl na stalku, i odmah nakon toga vrati svoju regiju.</string>
+    <string name="s2fix_offroad_reports">Bicikl javlja %1$d\u00A0km/h.</string>
+    <string name="s2fix_offroad_send">Testiraj 37\u00A0km/h</string>
+    <string name="s2fix_offroad_back">Natrag na 25\u00A0km/h</string>
+    <string name="s2fix_offroad_standstill">Samo dok stoji.</string>
+    <string name="s2fix_offroad_confirm_title">Poslati 37\u00A0km/h?</string>
+    <string name="s2fix_offroad_confirm_text">37\u00A0km/h nije dopušteno na javnim cestama. YABA to šalje samo da vidiš prihvaća li S2 tu vrijednost. Ostavi bicikl na stalku i odmah nakon toga vrati svoju regiju.</string>
+    <string name="s2fix_offroad_confirm_send">Pošalji</string>
+    <string name="s2fix_offroad_confirm_cancel">Odustani</string>
+    <string name="s2fix_garage_switch_title">Prebaciti na %1$s?</string>
+    <string name="s2fix_garage_switch_text">%1$s je povezan. YABA prekida vezu i ponovno ga traži kao %2$s.</string>
+    <string name="s2fix_garage_switch_confirm">Prebaci</string>
+    <string name="s2fix_code_intro_s2">Tri znamenke od 1 do 9. Unosiš ih na biciklu kako opisuje priručnik za tvoj S2.</string>
+    <string name="s2fix_about_credits_s2">Podrška za S2/X2 temelji se na OldMoofKitu (Jegge, MIT) i rasporedu bajtova iz vanbike-liba (Poket-Jony).</string>
+</resources>

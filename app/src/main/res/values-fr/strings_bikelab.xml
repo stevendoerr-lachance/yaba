@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bikelab_title">Bike-Lab</string>
+    <string name="bikelab_intro">Des valeurs que le firmware connaît et qu’aucune app n’affiche, avec les commandes qui ne marchent qu’à l’arrêt.</string>
+    <string name="bikelab_needs_link">Le vélo n’est pas connecté. Les valeurs restent vides tant que la liaison n’est pas établie.</string>
+
+    <string name="bikelab_live_title">Valeurs en direct</string>
+    <string name="bikelab_temp_motor">Température moteur</string>
+    <string name="bikelab_temp_controller">Température du contrôleur</string>
+    <string name="bikelab_temp_board">Température de la carte</string>
+    <string name="bikelab_temp_value">%1$d\u00A0°C</string>
+    <string name="bikelab_torque_calibrate">Régler le zéro</string>
+    <string name="bikelab_torque_calibrated">Force de pédalage (calibrée)</string>
+    <string name="bikelab_torque_hint">Règle le zéro pendant que tu ne pédales pas\u00A0; la valeur brute n’a pas d’unité étalonnée.</string>
+
+    <string name="bikelab_config_title">Configuration</string>
+    <string name="bikelab_cycles">Cycles de charge</string>
+    <string name="bikelab_powerbank_cycles">Cycles de la PowerBank</string>
+    <string name="bikelab_lux">Luminosité (brute)</string>
+    <string name="bikelab_threshold">Seuil d’allumage</string>
+    <string name="bikelab_threshold_save">Enregistrer le seuil</string>
+    <string name="bikelab_threshold_hint">En mode auto, la lumière s’allume dès que la luminosité passe sous le seuil. La valeur est en flash\u00A0; elle n’est écrite qu’à l’enregistrement.</string>
+    <string name="bikelab_working">…</string>
+
+    <string name="bikelab_clock">Horloge du vélo</string>
+    <string name="bikelab_clock_set">Régler l’horloge</string>
+    <string name="bikelab_clock_ok">à l’heure</string>
+    <string name="bikelab_clock_ahead">avance de %1$d\u00A0secondes</string>
+    <string name="bikelab_clock_behind">retarde de %1$d\u00A0secondes</string>
+    <string name="bikelab_clock_unknown">inconnu</string>
+    <string name="bikelab_parked_only">Seulement à l’arrêt et hors du mode conduite\u00A0; sinon cela coupe l’assistance.</string>
+
+    <string name="bikelab_lamps_title">Canaux des lampes</string>
+    <string name="bikelab_lamp_on">Canal\u00A0%1$d activé</string>
+    <string name="bikelab_lamp_off">Canal\u00A0%1$d coupé</string>
+    <string name="bikelab_lamps_restore">Réinitialiser les lampes</string>
+    <string name="bikelab_lamps_hint">Chaque canal est seulement activé ou coupé. Une lampe coupée depuis l’app reste coupée jusqu’à un vrai changement d’état ou cette réinitialisation.</string>
+
+    <string name="bikelab_boost">Boost en roulant</string>
+    <string name="bikelab_boost_caption">Maintenir Boost change le niveau aussi en roulant, pas seulement à l’arrêt.</string>
+
+    <string name="bikelab_actions_title">À l’arrêt</string>
+    <string name="bikelab_sleep">Mettre en veille</string>
+    <string name="bikelab_alarm_stop">Arrêter l’alarme</string>
+    <string name="bikelab_alarm_stop_note">Arrête une alarme en cours sans le code de secours. La commande efface aussi le verrou logiciel\u00A0; le vélo peut ensuite être considéré comme déverrouillé.</string>
+    <string name="bikelab_selftest">Lancer l’autotest</string>
+    <string name="bikelab_selftest_hint">Le vélo joue sa tonalité de diagnostic, écrit son état dans le journal, puis passe en veille. Le journal est enregistré d’abord.</string>
+    <string name="bikelab_selftest_archiving">Enregistrement du journal …</string>
+    <string name="bikelab_selftest_dialog_title">Lancer l’autotest</string>
+    <string name="bikelab_selftest_dialog_text">Le vélo enregistre d’abord son journal, exécute ensuite le diagnostic et passe en veille. Le rapport évince les lignes les plus anciennes du journal\u00A0; c’est pourquoi l’enregistrement se fait d’abord.</string>
+    <string name="bikelab_selftest_dialog_confirm">Lancer</string>
+    <string name="bikelab_cancel">Annuler</string>
+
+    <string name="bikelab_exp_title">Expériences</string>
+    <string name="bikelab_siren_title">Sirène</string>
+    <string name="bikelab_siren_stage">Niveau\u00A0%1$d</string>
+    <string name="bikelab_siren_stop">Alarme désactivée</string>
+    <string name="bikelab_siren_active">Sirène en marche (niveau\u00A0%1$d).</string>
+    <string name="bikelab_siren_dialog_title">Déclencher la sirène niveau\u00A0%1$d</string>
+    <string name="bikelab_siren_dialog_confirm">Déclencher</string>
+</resources>

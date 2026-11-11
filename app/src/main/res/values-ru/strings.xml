@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ride_channel_name">Запись поездок YABA</string>
+    <string name="ride_channel_description">Поддерживает подключение к велосипеду, пока идёт запись поездок.</string>
+</resources>

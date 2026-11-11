@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- S2 follow-ups: lock refusal, how the error catcher gets its blocks, the cockpit for the GPS ride, the test-mode
+         controls (mute, off-road), the garage model switch, the S2 backup-code intro and the S2 credits. -->
+    <string name="s2fix_error_lock_riding">Pas en roulant\u00A0: YABA ne verrouille un S2 qu’à l’arrêt.</string>
+    <plurals name="s2fix_catch_pushed">
+        <item quantity="one">Le vélo envoie ses changements de lui-même\u00A0: %1$s bloc jusqu’ici. Même un code affiché un instant arrive ici.</item>
+        <item quantity="other">Le vélo envoie ses changements de lui-même\u00A0: %1$s blocs jusqu’ici. Même un code affiché un instant arrive ici.</item>
+    </plurals>
+    <string name="s2fix_catch_polled">Le vélo n’a encore envoyé aucun bloc de lui-même, YABA en lit donc un toutes les %1$s\u00A0s. Un code plus bref peut passer entre deux lectures.</string>
+    <string name="s2fix_cockpit_intro">Pour le trajet avec GPS\u00A0: ouvre le cockpit. Il affiche en grand la vitesse et le code d’erreur, et dès que le moteur coupe, une touche de volume pose un repère.</string>
+    <string name="s2fix_mute_title">Sons de verrouillage et de déverrouillage</string>
+    <string name="s2fix_mute_hint">Commande 0x06. Une source dit qu’elle coupe les sons, une autre qu’elle appaire une télécommande. S’il se passe autre chose, réactive le son et note-le.</string>
+    <string name="s2fix_mute_reports_on">Le vélo indique\u00A0: sons coupés.</string>
+    <string name="s2fix_mute_reports_off">Le vélo indique\u00A0: sons actifs.</string>
+    <string name="s2fix_mute_on">Couper le son</string>
+    <string name="s2fix_mute_off">Réactiver le son</string>
+    <string name="s2fix_offroad_title">37\u00A0km/h (tout-terrain)</string>
+    <string name="s2fix_offroad_hint">Montre si le S2 accepte la région 2. Seulement vélo sur sa béquille, et remets ta région juste après.</string>
+    <string name="s2fix_offroad_reports">Le vélo indique %1$d\u00A0km/h.</string>
+    <string name="s2fix_offroad_send">Tester 37\u00A0km/h</string>
+    <string name="s2fix_offroad_back">Revenir à 25\u00A0km/h</string>
+    <string name="s2fix_offroad_standstill">Seulement à l’arrêt.</string>
+    <string name="s2fix_offroad_confirm_title">Envoyer 37\u00A0km/h\u00A0?</string>
+    <string name="s2fix_offroad_confirm_text">37\u00A0km/h ne sont pas autorisés sur la voie publique. YABA les envoie seulement pour que tu voies si le S2 les accepte. Laisse le vélo sur sa béquille et remets ta région juste après.</string>
+    <string name="s2fix_offroad_confirm_send">Envoyer</string>
+    <string name="s2fix_offroad_confirm_cancel">Annuler</string>
+    <string name="s2fix_garage_switch_title">Passer à %1$s\u00A0?</string>
+    <string name="s2fix_garage_switch_text">%1$s est connecté. YABA coupe la connexion et le recherche comme %2$s.</string>
+    <string name="s2fix_garage_switch_confirm">Changer</string>
+    <string name="s2fix_code_intro_s2">Trois chiffres de 1 à 9. Tu les saisis sur le vélo comme le décrit le manuel de ton S2.</string>
+    <string name="s2fix_about_credits_s2">La prise en charge du S2/X2 s’appuie sur OldMoofKit (Jegge, MIT) et sur les structures d’octets de vanbike-lib (Poket-Jony).</string>
+</resources>

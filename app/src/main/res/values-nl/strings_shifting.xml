@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Schakelen op het rijscherm: schakelmodus (5538) en schakelpunten (5537). -->
+<resources>
+    <string name="shift_section">Schakelen</string>
+    <string name="shift_mode_auto">Automatisch</string>
+    <string name="shift_mode_manual">Handmatig</string>
+    <string name="shift_gear">Versnelling</string>
+    <string name="shift_gear_cd">Versnelling\u00A0%1$d</string>
+    <string name="shift_gear_unknown_cd">Versnelling onbekend</string>
+
+    <!-- Profielen -->
+    <string name="shift_profile_standard">Standaard</string>
+    <string name="shift_profile_flat">Vlak</string>
+    <string name="shift_profile_hilly">Heuvelachtig</string>
+    <string name="shift_profile_custom">Eigen</string>
+    <string name="shift_reason_standard">Fabrieksinstelling van VanMoof.</string>
+    <string name="shift_reason_flat">Versnelling\u00A03 blijft van 14 tot 27\u00A0km/h. In stadstempo wordt nauwelijks geschakeld.</string>
+    <string name="shift_reason_hilly">Versnelling\u00A02 blijft van 9 tot 21\u00A0km/h. Bergop wordt minder vaak onder belasting geschakeld.</string>
+    <string name="shift_reason_custom">Je eigen schakelpunten.</string>
+    <string name="shift_custom_empty">Nog geen eigen schakelpunten.</string>
+    <string name="shift_row_cd">%1$s. Opschakelen bij %2$d, %3$d en %4$d\u00A0km/h, terugschakelen bij %5$d, %6$d en %7$d\u00A0km/h.</string>
+    <string name="shift_points_short">op %1$d, %2$d, %3$d, terug %4$d, %5$d, %6$d\u00A0km/h</string>
+    <string name="shift_limit_cd">Ondersteuning stopt bij %1$d\u00A0km/h.</string>
+    <string name="shift_axis_kmh">%1$d\u00A0km/h</string>
+    <string name="shift_units_note">Schakelpunten stel je altijd in km/h in.</string>
+    <string name="shift_reading">Schakelpunten worden gelezen …</string>
+    <string name="shift_invalid_on_bike">De schakelpunten op de fiets kunnen voortdurend heen en weer schakelen veroorzaken. Kies een profiel of pas ze aan.</string>
+    <string name="shift_fault">Shifter meldt storing\u00A0%1$d: %2$s</string>
+    <string name="shift_ease_off">Haal tijdens het schakelen even de druk van de pedalen. Dat spaart de shifter.</string>
+
+    <!-- Eigen: editor -->
+    <string name="shift_handle_up">Opschakelen van %1$d naar %2$d</string>
+    <string name="shift_handle_down">Terugschakelen van %1$d naar %2$d</string>
+    <string name="shift_lane_up">op</string>
+    <string name="shift_lane_down">terug</string>
+    <string name="shift_allowed">Mogelijk: %1$d tot %2$d\u00A0km/h</string>
+    <string name="shift_step_higher">1\u00A0km/h hoger</string>
+    <string name="shift_step_lower">1\u00A0km/h lager</string>
+    <string name="shift_blocked_by">Begrensd door: %1$s</string>
+    <string name="shift_rules">Terugschakelen ligt minstens 2\u00A0km/h onder opschakelen. Punten in dezelfde richting liggen minstens 3\u00A0km/h uit elkaar. Naar versnelling\u00A01 schakelt de fiets uiterlijk bij 5\u00A0km/h.</string>
+    <string name="shift_apply">Toepassen</string>
+    <string name="shift_discard">Verwerpen</string>
+    <string name="shift_draft_matches">Gelijk aan %1$s.</string>
+    <string name="shift_draft_from_standard">De waarden op de fiets waren niet bruikbaar. Je begint met Standaard.</string>
+
+    <!-- Handmatig -->
+    <string name="shift_manual_up">Opschakelen: tijdens het rijden twee keer kort op Boost drukken.</string>
+    <string name="shift_manual_down">Terugschakelen: belknop vasthouden en twee keer kort op Boost drukken.</string>
+    <string name="shift_manual_stop">Als je stilstaat, schakelt de fiets zelf naar versnelling\u00A01.</string>
+    <string name="shift_manual_boost">Boost ingedrukt houden geeft nog steeds extra kracht.</string>
+    <string name="shift_manual_points_kept">Je schakelpunten blijven bewaard voor Automatisch.</string>
+    <string name="shift_key_bell">Bel</string>
+    <string name="shift_key_boost">Boost</string>
+    <string name="shift_key_pressed">ingedrukt</string>
+
+    <!-- Logboek en fouten -->
+    <string name="shift_cmd_mode">Schakelmodus: %1$s</string>
+    <string name="shift_cmd_points">Schakelpunten: %1$s</string>
+    <string name="shift_log_state">Schakelen: %1$s (%2$s)</string>
+    <string name="shift_unknown">onbekend</string>
+    <string name="shift_error_mode_rejected">De fiets heeft %1$s niet overgenomen. Hij meldt: %2$s.</string>
+    <string name="shift_error_points_rejected">De fiets heeft de schakelpunten niet overgenomen. Hij meldt: %1$s.</string>
+    <string name="shift_error_points_invalid">Deze schakelpunten zouden voortdurend heen en weer schakelen veroorzaken. Er is niets verzonden.</string>
+    <string name="shift_error_too_many">Te veel schakelwijzigingen achter elkaar. Maak opnieuw verbinding om verder te gaan.</string>
+    <string name="shift_error_region_changed">De regio is tijdens het opslaan veranderd. Controleer de schakelpunten opnieuw.</string>
+
+    <!-- Notes, conflicts, editor actions, checks (second round) -->
+    <string name="shift_riding_note">Tijdens het rijden geldt een wijziging meteen: de fiets kan direct schakelen.</string>
+    <string name="shift_region_short">Geldt voor regio %1$s (elke regio bewaart zijn eigen).</string>
+    <string name="shift_legend">Licht: die versnelling. Gat: de fiets blijft in de versnelling waar hij vandaan komt. Onderstreept: je versnelling nu.</string>
+    <string name="shift_profiles_show">Alle profielen tonen</string>
+    <string name="shift_profiles_hide">Profielen verbergen</string>
+    <string name="shift_reason_invalid">Ongeldige waarden op de fiets.</string>
+    <string name="shift_invalid_zero">De fiets meldt alle schakelpunten als 0\u00A0km/h. Dan schakelt hij bij het wegrijden op tot versnelling\u00A04 en trekt hij op in versnelling\u00A04. Kies Standaard.</string>
+    <string name="shift_conflict_gap">“%1$s” (%2$d\u00A0km/h) ligt niet minstens 2\u00A0km/h onder “%3$s” (%4$d\u00A0km/h).</string>
+    <string name="shift_conflict_spacing">“%1$s” (%2$d\u00A0km/h) ligt niet minstens 3\u00A0km/h boven “%3$s” (%4$d\u00A0km/h).</string>
+    <string name="shift_conflict_min">“%1$s” (%2$d\u00A0km/h) ligt onder %3$d\u00A0km/h.</string>
+    <string name="shift_conflict_range">“%1$s” (%2$d\u00A0km/h) ligt buiten %3$d tot %4$d\u00A0km/h.</string>
+    <string name="shift_conflict_max">“%1$s” (%2$d\u00A0km/h) ligt boven %3$d\u00A0km/h.</string>
+    <string name="shift_conflict_more">… en nog %1$d.</string>
+    <string name="shift_edit">Bewerken</string>
+    <string name="shift_edit_set">Instellen</string>
+    <string name="shift_edit_close">Sluiten</string>
+    <string name="shift_expanded">uitgeklapt</string>
+    <string name="shift_collapsed">ingeklapt</string>
+    <string name="shift_edit_action">Schakelpunten bewerken</string>
+    <string name="shift_edit_close_action">Editor sluiten</string>
+    <string name="shift_editor_hint">Sleep een punt of tik erop, en stel het dan precies in met − en +.</string>
+    <string name="shift_top_gear_above_limit">Versnelling\u00A04 komt pas boven %1$d\u00A0km/h, voorbij de ondersteuningsgrens van %2$d\u00A0km/h, dus alleen zonder ondersteuning. Tot dan houdt versnelling\u00A03 het.</string>
+    <string name="shift_keys_live">Stuurknoppen (live)</string>
+    <string name="shift_gesture_hold">vasthouden</string>
+    <string name="shift_check_failed">Firmware\u00A0%1$s meldt schakelwaarden die YABA niet kent (%2$s). YABA verandert hier niets.</string>
+    <string name="shift_persist_ok">Schakelinstellingen na het opnieuw verbinden nog op de fiets (firmware\u00A0%1$s).</string>
+    <string name="shift_persist_mode_lost">YABA stelde laatst %1$s in, de fiets meldt nu %2$s. Een andere app heeft het veranderd, of de fiets heeft het niet bewaard.</string>
+    <string name="shift_persist_points_lost">Op de fiets staan niet meer de schakelpunten die YABA laatst schreef (geschreven %1$s, nu %2$s). Een andere app heeft ze veranderd, of de fiets heeft ze niet bewaard.</string>
+    <string name="shift_log_fw">%1$s (firmware\u00A0%2$s)</string>
+    <string name="shift_error_read">De huidige schakelinstellingen konden niet worden gelezen. Er is niets verzonden.</string>
+    <string name="shift_error_no_region">De regio van de fiets is onbekend, dus YABA weet niet welk schakelpuntgeheugen geldt. Er is niets verzonden.</string>
+    <string name="shift_error_region_moved">De regio is veranderd sinds je deze punten instelde. Er is niets verzonden; controleer ze opnieuw.</string>
+</resources>

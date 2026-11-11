@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Klang-Screen, eigener Klingelton, Soundboard, Teilen-Abschnitt und die gemeinsamen Sound-Bausteine. -->
+<resources>
+    <!-- SoundScreen -->
+    <string name="sound_title">Klang</string>
+    <string name="sound_connect_needed">Verbinde dich mit dem Bike, um Töne abzuspielen.</string>
+
+    <!-- Klingelton -->
+    <string name="sound_bell_title">Klingelton</string>
+    <string name="sound_bell_hint">Der Ton, den die Klingeltaste spielt.</string>
+    <string name="sound_listen">Anhören</string>
+    <string name="sound_bell_switching">Stellt auf %1$s um …</string>
+    <string name="sound_bell_unknown">Das Bike hat seinen Klingelton noch nicht gemeldet.</string>
+    <string name="sound_bell_plays">Spielt %1$s am Bike.</string>
+    <string name="sound_tone_custom">Dein eigener Ton</string>
+    <string name="sound_tone_custom_option">Oder eigener Ton</string>
+    <string name="sound_tile_busy">Wird eingestellt</string>
+
+    <!-- Eigener Klingelton -->
+    <plurals name="sound_custom_intro">
+        <item quantity="one">Der Ton ersetzt „Nebelhorn“ und darf bis zu %1$d\u00A0Sekunde lang sein. Das Senden dauert etwa eine Minute.</item>
+        <item quantity="other">Der Ton ersetzt „Nebelhorn“ und darf bis zu %1$d\u00A0Sekunden lang sein. Das Senden dauert etwa eine Minute.</item>
+    </plurals>
+    <string name="sound_custom_sending_named">Sendet %1$s</string>
+    <string name="sound_custom_keep_close" formatted="false">Bitte halt das Handy nah am Bike, bis die Übertragung 100\u00A0% erreicht hat.</string>
+    <string name="sound_custom_pick">Eigene Datei wählen</string>
+    <string name="sound_custom_converting">Wandelt um …</string>
+    <string name="sound_custom_done">Klingelton übertragen. Das Bike spielt ihn ab sofort, auch wenn YABA nicht läuft. Bitte drück zur Probe die Klingeltaste am Lenker.</string>
+    <string name="sound_custom_sound_name">Eigener Ton</string>
+    <string name="sound_custom_waveform">Wellenform von %1$s</string>
+    <string name="sound_custom_trimmed">Auf %1$d\u00A0s gekürzt</string>
+    <string name="sound_fact_length">Länge</string>
+    <string name="sound_fact_sample_rate">Abtastrate</string>
+    <string name="sound_fact_size">Größe</string>
+    <string name="sound_value_seconds">%1$s\u00A0s</string>
+    <string name="sound_value_khz">%1$s\u00A0kHz</string>
+    <string name="sound_value_kb">%1$d\u00A0kB</string>
+    <string name="sound_custom_send">An das Bike senden</string>
+    <string name="sound_custom_connect_first">Bitte verbinde dich zuerst mit dem Bike.</string>
+    <string name="sound_custom_other_file">Andere Datei</string>
+    <string name="sound_audio_file">Audiodatei</string>
+
+    <!-- Soundboard -->
+    <string name="sound_board_title">Alle Töne am Bike</string>
+    <string name="sound_board_quiet">Während der Übertragung bleibt das Bike still.</string>
+    <string name="sound_board_hint">Ein Tipp spielt den Ton am Bike.</string>
+    <string name="sound_board_alarm_warning">Sehr laut. Bitte teste den Ton nicht in der Nähe anderer Personen.</string>
+
+    <!-- Upload-Anzeige (TalkBack + Zahl) -->
+    <string name="sound_upload_done_state">Übertragung fertig</string>
+    <string name="sound_upload_progress_state">Übertragung %1$d Prozent</string>
+    <string name="sound_upload_percent">%1$d\u00A0%%</string>
+
+    <!-- Verbindungshinweis -->
+    <string name="sound_connect_ble_denied">Bluetooth nicht erlaubt</string>
+    <string name="sound_connect_ble_off">Bluetooth ist aus</string>
+    <string name="sound_connect_searching">Sucht das Bike …</string>
+    <string name="sound_connect_connecting">Verbindet …</string>
+    <string name="sound_connect_authenticating">Meldet sich am Bike an …</string>
+    <string name="sound_connect_lost">Verbindung unterbrochen</string>
+    <string name="sound_connect_offline">Nicht verbunden</string>
+    <string name="sound_connect_allow">Bluetooth erlauben</string>
+    <string name="sound_connect_enable">Bluetooth einschalten</string>
+    <string name="sound_connect_connect">Verbinden</string>
+    <string name="sound_open_garage">Zur Garage</string>
+
+    <!-- Teilen -->
+    <string name="sound_share_title">Teilen</string>
+    <string name="sound_share_gate_login">Teilen funktioniert über dein VanMoof-Konto. Bitte melde dich in der Garage an.</string>
+    <string name="sound_share_gate_pick">Wähl in der Garage ein Bike aus deinem Konto aus, dann kannst du es teilen.</string>
+    <string name="sound_share_gate_manual">Dieses Bike ist nicht mit deinem VanMoof-Konto verknüpft. Geteilt werden können nur Bikes aus dem Konto.</string>
+    <string name="sound_share_shared_with">Geteilt mit %1$s.</string>
+    <string name="sound_share_ended_for">Freigabe für %1$s beendet.</string>
+    <string name="sound_share_ended">Freigabe beendet.</string>
+    <string name="sound_share_bad_email">Das ist keine gültige E-Mail-Adresse.</string>
+    <string name="sound_share_intro">Gib einer Person Zugang zu deinem Bike, befristet oder unbegrenzt.</string>
+    <string name="sound_share_email_label">E-Mail-Adresse</string>
+    <string name="sound_share_open_ended">Gilt, bis du die Freigabe beendest.</string>
+    <string name="sound_share_sharing">Teilt …</string>
+    <string name="sound_share_submit">Bike teilen</string>
+    <string name="sound_share_end_title">Freigabe beenden?</string>
+    <string name="sound_share_end_text">%1$s verliert dann den Zugang zu deinem Bike.</string>
+    <string name="sound_share_someone">Diese Person</string>
+    <string name="sound_share_end">Beenden</string>
+    <string name="sound_share_end_for">Freigabe für %1$s beenden</string>
+    <string name="sound_share_cancel">Abbrechen</string>
+    <string name="sound_share_list_title">Geteilt mit</string>
+    <string name="sound_share_loading">Lädt deine Freigaben …</string>
+    <string name="sound_share_none">Du hast dein Bike noch mit niemandem geteilt. Teilen ist mit jeder Person möglich, die ein VanMoof-Konto hat: Trag die E-Mail-Adresse ein und wähl eine Dauer oder „unbegrenzt“. Jede Freigabe kannst du jederzeit beenden. Das Teilen läuft über VanMoofs Server und funktioniert, solange dieser antwortet.</string>
+    <string name="sound_share_reload">Erneut laden</string>
+    <string name="sound_share_no_email">Ohne E-Mail</string>
+    <string name="sound_share_until">bis %1$s</string>
+    <string name="sound_share_expired">abgelaufen am %1$s</string>
+    <string name="sound_share_unlimited_row">unbegrenzt</string>
+    <string name="sound_share_for_row">für %1$s</string>
+    <string name="sound_share_unlimited">Unbegrenzt</string>
+    <string name="sound_share_for">Für %1$s</string>
+    <plurals name="sound_share_minutes">
+        <item quantity="one">%1$d\u00A0Minute</item>
+        <item quantity="other">%1$d\u00A0Minuten</item>
+    </plurals>
+    <plurals name="sound_share_hours">
+        <item quantity="one">%1$d\u00A0Stunde</item>
+        <item quantity="other">%1$d\u00A0Stunden</item>
+    </plurals>
+    <plurals name="sound_share_days">
+        <item quantity="one">%1$d\u00A0Tag</item>
+        <item quantity="other">%1$d\u00A0Tage</item>
+    </plurals>
+    <plurals name="sound_share_weeks">
+        <item quantity="one">%1$d\u00A0Woche</item>
+        <item quantity="other">%1$d\u00A0Wochen</item>
+    </plurals>
+    <string name="sound_custom_row_none">Ersetzt „%1$s“</string>
+    <string name="sound_tone_custom_record">Eigener Ton statt %1$s</string>
+    <string name="sound_custom_failed_at">Die Übertragung brach bei %1$d\u00A0%% ab. „%2$s“ bleibt still, bis eine Datei vollständig ankommt.</string>
+    <string name="sound_custom_failed_before">Die Übertragung kam nicht zustande. „%1$s“ behält den bisherigen Ton.</string>
+    <string name="sound_custom_resend">Erneut senden</string>
+    <string name="sound_send_standstill">Das Senden startet im Stand. Während der Übertragung liest YABA etwa eine Minute lang keine Werte.</string>
+    <string name="sound_custom_wait_transfer">Das Senden wartet, bis die laufende Übertragung fertig ist.</string>
+    <string name="sound_custom_sending_percent">Sendet „%1$s“, %2$d\u00A0%%</string>
+    <string name="sound_lab_title">Klang-Labor</string>
+    <string name="sound_custom_replace_cd">Eigenen Ton statt „%1$s“ wählen</string>
+</resources>

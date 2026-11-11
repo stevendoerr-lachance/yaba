@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Guard (the guard design section 7): the section on Ride, the hero while it is active, the locked links. -->
+    <string name="guard_section_title">Guard</string>
+    <string name="guard_intro">Guard locks your bike and turns on its motion watch. YABA stays connected and notifies you on this phone as soon as it detects movement.</string>
+    <string name="guard_arm">Arm guard</string>
+    <string name="guard_siren_now">Siren right away</string>
+    <string name="guard_siren_now_caption">At the first movement YABA detects, it turns on the bike’s siren. Without this setting YABA only notifies you; the bike then sounds its siren itself only after several shakes.</string>
+
+    <!-- Why arming is not offered (GuardRules.armBlocker) -->
+    <string name="guard_blocker_not_connected">Connect YABA to the bike first.</string>
+    <string name="guard_blocker_not_parked">Guard can only be armed while the bike stands still and no button is pressed.</string>
+    <string name="guard_blocker_bike_state">The bike is updating its firmware or entering shipping mode. Guard cannot be armed now.</string>
+    <string name="guard_blocker_busy">The bike is transferring data. Guard can be armed once the transfer is done.</string>
+
+    <!-- Phases -->
+    <string name="guard_arming">Arming …</string>
+    <string name="guard_arming_text">YABA locks the bike and waits until it confirms its motion watch. This takes up to %1$d seconds.</string>
+    <string name="guard_active_since">Guard on since %1$s</string>
+    <string name="guard_watch_bike">The bike watches for movement itself, and YABA stays connected.</string>
+    <string name="guard_watch_unconfirmed">The bike did not confirm its motion watch (alarm state %1$d). So YABA only detects a turning wheel, pressed buttons, the lock and the battery.</string>
+    <string name="guard_watch_unconfirmed_unknown">The bike did not confirm its motion watch. So YABA only detects a turning wheel, pressed buttons, the lock and the battery.</string>
+    <string name="guard_watch_retry">Try again</string>
+    <string name="guard_end">End guard</string>
+    <string name="guard_silence">Siren off</string>
+    <string name="guard_lever_hint">Sliding ends the guard and unlocks the bike.</string>
+    <string name="guard_lever_hint_offline">Without a connection, YABA waits up to %1$d seconds for the bike after you slide. If the connection comes back, the bike is unlocked; otherwise the guard ends in YABA only.</string>
+    <string name="guard_alarm_at">Alarm at %1$s</string>
+    <string name="guard_rearming">Restoring the guard …</string>
+    <string name="guard_disarming">Ending the guard …</string>
+    <string name="guard_disarming_wait">YABA waits up to %1$d seconds for the connection to the bike.</string>
+    <string name="guard_lost_watch">Connection to the bike interrupted. The bike’s motion watch keeps running, and YABA reconnects.</string>
+    <string name="guard_lost">Connection to the bike interrupted. YABA reconnects.</string>
+
+    <!-- Latest lines -->
+    <string name="guard_events_title">Latest</string>
+    <string name="guard_events_all">All events under Diagnostics</string>
+    <string name="guard_share_journal">Share guard log</string>
+
+    <!-- Hints -->
+    <string name="guard_notifications_off">Notifications are off for YABA. The siren works, but your phone will not tell you about movement.</string>
+    <string name="guard_notifications_allow">Allow notifications</string>
+    <string name="guard_battery_hint">Exclude YABA from battery optimization so Android does not end the connection to the bike overnight.</string>
+    <string name="guard_battery_open">Open battery settings</string>
+    <string name="guard_alarm_choice_locked">While the guard is on, the alarm stays on.</string>
+    <string name="guard_link_locked">While the guard is on, YABA stays connected to the bike. End the guard first.</string>
+
+    <!-- Issues (GuardState.issue) -->
+    <string name="guard_issue_dismiss">Dismiss</string>
+    <string name="guard_issue_service">Android did not start the guard service. The guard stays off.</string>
+    <string name="guard_issue_arm_failed">The guard could not be armed. Reason: %1$s</string>
+    <string name="guard_issue_arm_failed_unknown">The guard could not be armed.</string>
+    <string name="guard_issue_alarm_during">The bike raised its own alarm while arming. YABA stopped the alarm, and the bike stays locked. Keep it still and try again.</string>
+    <string name="guard_issue_alarm_mode">The bike did not turn on its alarm (alarm mode %1$s). The guard stays off.</string>
+    <string name="guard_issue_lock">The bike did not lock (lock reports %1$s). The guard stays off.</string>
+    <string name="guard_issue_disarm_unconfirmed">The guard has ended, but the bike still reports alarm state %1$s. You can stop the alarm under “Alarm”.</string>
+    <string name="guard_issue_ended_offline">The guard has ended. YABA could not reach the bike, so nothing changed on the bike.</string>
+    <string name="guard_issue_bike_gone">The guard has ended because the bike is no longer saved in YABA.</string>
+
+    <!-- Top tube and header. Matrix words: ASCII, no diacritics (BRAND "Languages"). -->
+    <string name="guard_matrix_armed">GUARD</string>
+    <string name="guard_matrix_alarm">ALARM</string>
+    <string name="guard_tube_armed_cd">Guard on, battery at %1$d percent</string>
+    <string name="guard_tube_armed_nobattery_cd">Guard on</string>
+    <string name="guard_tube_arming_cd">Guard is being armed</string>
+    <string name="guard_tube_alarm_cd">Alarm at the bike</string>
+    <string name="guard_tube_lost_cd">Guard on, connection interrupted</string>
+    <string name="guard_header_armed">Guard</string>
+    <string name="guard_header_alarm">Alarm</string>
+    <string name="guard_issue_arm_failed_partly">The guard could not be armed. Reason: %1$s. The bike may still be locked already or have its alarm on. Check the lever and “Alarm”.</string>
+    <string name="guard_issue_disarm_locked">The guard has ended and the alarm is off, but the bike still reports itself locked (lock %1$s). You can unlock it with the lever.</string>
+    <string name="guard_issue_ended_partly">The guard has ended. YABA sent commands to the bike but got no answer. “Ride” shows the bike’s state after the next connection.</string>
+    <string name="guard_issue_not_locked">The bike is not locked (lock reports %1$s). “Try again” locks it and restores the guard.</string>
+    <string name="guard_issue_not_locked_unknown">YABA has no confirmation that the bike is locked. “Try again” locks it and restores the guard.</string>
+</resources>

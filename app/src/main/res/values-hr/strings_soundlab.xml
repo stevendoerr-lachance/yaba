@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sound-Lab na zaslonu Zvuk (ui/components/SoundLabBits.kt): glasnoća po zvuku (5572) i pet zamjenjivih zvukova. -->
+<resources>
+    <!-- Glasnoća po zvuku -->
+    <string name="soundlab_tiers_title">Glasnoća po zvuku</string>
+    <string name="soundlab_tiers_hint">Svaki zvuk svira na razini\u00A020, 30 ili 38, ili uopće ne svira. Firmver određuje tri razine; ovdje biraš koji zvuk dobiva koju.</string>
+    <string name="soundlab_tiers_unread">Bicikl još nije javio svoje glasnoće. Do tada ljestvice prikazuju tvorničku postavku od firmvera\u00A01.9.1.</string>
+    <string name="soundlab_tiers_read">Pročitaj s bicikla</string>
+    <string name="soundlab_tiers_reading">Čitanje…</string>
+    <string name="soundlab_tiers_none">Bicikl ne javlja glasnoće. Njegov firmver vjerojatno ne nudi tu vrijednost.</string>
+    <string name="soundlab_tiers_offline">Molim te, poveži se s biciklom da pročitaš i spremiš glasnoće.</string>
+    <string name="soundlab_tier_off">isklj.</string>
+    <string name="soundlab_tier_silent">Utišano</string>
+    <string name="soundlab_tier_low">Tiho</string>
+    <string name="soundlab_tier_medium">Srednje</string>
+    <string name="soundlab_tier_high">Glasno</string>
+    <string name="soundlab_tier_level">%1$s, razina\u00A0%2$d</string>
+    <string name="soundlab_tier_changed">%1$s umjesto %2$s</string>
+    <string name="soundlab_tier_step_cd">%1$s: %2$s</string>
+    <plurals name="soundlab_group_sounds">
+        <item quantity="one">%d zvuk</item>
+        <item quantity="few">%d zvuka</item>
+        <item quantity="other">%d zvukova</item>
+    </plurals>
+    <plurals name="soundlab_group_muted">
+        <item quantity="one">%d utišan</item>
+        <item quantity="few">%d utišana</item>
+        <item quantity="other">%d utišanih</item>
+    </plurals>
+    <plurals name="soundlab_group_changed">
+        <item quantity="one">%d promijenjen</item>
+        <item quantity="few">%d promijenjena</item>
+        <item quantity="other">%d promijenjenih</item>
+    </plurals>
+    <string name="soundlab_state_expanded">rašireno</string>
+    <string name="soundlab_state_collapsed">skupljeno</string>
+    <string name="soundlab_note_bell">Tipka zvona svira ovaj zvuk. Kad je zvuk utišan, tipka ostaje tiha.</string>
+    <string name="soundlab_note_alarm">Kad je zvuk utišan, alarm se i dalje aktivira, ali bez zvuka.</string>
+    <string name="soundlab_note_find">Kad je zvuk utišan, potraga za biciklom ostaje bez zvuka.</string>
+    <string name="soundlab_note_error">Kad je zvuk utišan, bicikl prikazuje greške samo na zaslonu.</string>
+    <plurals name="soundlab_tiers_save">
+        <item quantity="one">Spremi %d promjenu</item>
+        <item quantity="few">Spremi %d promjene</item>
+        <item quantity="other">Spremi %d promjena</item>
+    </plurals>
+    <string name="soundlab_tiers_saving">Spremanje…</string>
+    <string name="soundlab_tiers_discard">Odbaci promjene</string>
+    <string name="soundlab_tiers_factory">Učitaj tvorničku postavku</string>
+    <string name="soundlab_tiers_flash">Svako spremanje prepisuje flash memoriju bicikla. Zato YABA zapisuje tek kad spremiš.</string>
+    <string name="soundlab_tiers_wait">Spremanje čeka dok tekući prijenos ne završi.</string>
+    <string name="soundlab_tiers_saved">Spremljeno. Bicikl javlja nove glasnoće.</string>
+    <string name="soundlab_tiers_not_taken">Nakon spremanja bicikl javlja drugačije stanje. Molim te, ponovno pročitaj vrijednosti s bicikla.</string>
+
+    <!-- Zamijeni još zvukova -->
+    <string name="soundlab_clips_title">Zvukovi u biciklu</string>
+    <string name="soundlab_clips_hint">Pet zvukova bicikla može se zamijeniti. YABA čuva svaku poslanu datoteku na ovom telefonu.</string>
+    <string name="soundlab_clip_factory">Tvornički zvuk</string>
+    <string name="soundlab_clip_custom">„%1$s“ od %2$s</string>
+    <string name="soundlab_clip_empty">Vjerojatno tih: posljednji prijenos se prekinuo.</string>
+    <string name="soundlab_clip_replace">Zamijeni</string>
+    <string name="soundlab_clip_factory_note">Bicikl ne vraća tvornički zvuk. Nakon slanja vraća se samo s tvorničkom datotekom.</string>
+    <string name="soundlab_clip_bundled">Priloženi zvukovi</string>
+    <string name="soundlab_clip_history">Već poslano</string>
+    <string name="soundlab_clip_history_line">poslano %1$s</string>
+    <string name="soundlab_clip_history_unsent">nikad nije stiglo u cijelosti</string>
+    <string name="soundlab_clip_choose_cd">Odaberi %1$s za „%2$s“</string>
+    <string name="soundlab_clip_pick_hint">YABA pretvara audiodatoteke. Datoteka koja je već u formatu VM_SOUND bicikla, primjerice tvornička datoteka, ide na bicikl nepromijenjena.</string>
+    <string name="soundlab_clip_cancel">Odustani</string>
+    <string name="soundlab_clip_send">Pošalji za „%1$s“</string>
+    <string name="soundlab_clip_keep_close">Molim te, drži telefon blizu bicikla. Ako se prijenos prekine, zvuk ostaje tih dok datoteka ne stigne u cijelosti.</string>
+    <string name="soundlab_clip_wait_bell">Moguće kad zvuk zvona stigne; bicikl prima jedan prijenos za drugim.</string>
+    <string name="soundlab_clip_sending">Šalje %1$s za „%2$s“</string>
+    <string name="soundlab_clip_done">„%1$s“ je prenesen. Bicikl ga od sada svira za „%2$s“, čak i kad YABA ne radi.</string>
+    <string name="soundlab_clip_finish">Gotovo</string>
+    <string name="soundlab_clip_read_failed">Datoteku nije bilo moguće pročitati. Molim te, odaberi drugu audiodatoteku.</string>
+    <string name="soundlab_clip_too_big">Datoteka je veća od %1$d\u00A0kB, a više ne stane u jedan zvuk bicikla.</string>
+    <string name="soundlab_clip_not_wav">Datoteka počinje kao zvučna datoteka bicikla, ali ne sadrži WAV zvuk. Molim te, odaberi drugu datoteku.</string>
+    <string name="soundlab_clip_store_failed">YABA nije mogla sačuvati datoteku na ovom telefonu pa je ne šalje. Molim te, provjeri slobodnu memoriju.</string>
+    <string name="soundlab_clip_failed_at">Prijenos se prekinuo na %1$d\u00A0%%. „%2$s“ ostaje tih dok datoteka ne stigne u cijelosti.</string>
+    <string name="soundlab_clip_failed_before">Prijenos nije započeo. „%1$s“ zadržava dosadašnji zvuk.</string>
+    <string name="soundlab_clip_retry">Pošalji ponovno</string>
+    <string name="soundlab_clip_confirm_title">Prepiši tvornički zvuk</string>
+    <string name="soundlab_clip_confirm_text">Bicikl ne vraća tvornički zvuk za „%1$s“, a YABA ga nema. Nakon slanja vraća se samo s tvorničkom datotekom.</string>
+    <string name="soundlab_clip_confirm_ok">Prepiši</string>
+    <string name="soundlab_clip_play_action">pusti na biciklu</string>
+    <string name="soundlab_clip_replace_cd">Zamijeni „%1$s“</string>
+    <string name="soundlab_clip_sending_percent">Šalje %1$s za „%2$s“, %3$d\u00A0%%</string>
+    <string name="soundlab_tiers_standstill">Spremanje počinje dok bicikl stoji.</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <activity
+            android:name=".ComponentGalleryActivity"
+            android:exported="true"
+            android:theme="@style/Theme.S3Control" />
+        <activity
+            android:name=".DemoActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name=".FilmScrubActivity"
+            android:exported="true"
+            android:theme="@style/Theme.S3Control" />
+        <activity
+            android:name=".OnboardingGalleryActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.S3Control" />
+        <activity
+            android:name=".HandoffCheckActivity"
+            android:exported="true"
+            android:theme="@style/Theme.S3Control" />
+        <activity
+            android:name=".FilmBenchActivity"
+            android:exported="true"
+            android:theme="@style/Theme.S3Control" />
+        <activity
+            android:name=".LogInsightsDemoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.S3Control" />
+        <activity
+            android:name=".S2DemoActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+    </application>
+</manifest>

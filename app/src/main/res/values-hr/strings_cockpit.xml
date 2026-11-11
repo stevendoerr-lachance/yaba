@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kokpit na upravljaču (ui/cockpit). Zona 1: jednostavno, točno, kratko; oslovljavanje s ti. -->
+<resources>
+    <!-- Entry in Diagnose -->
+    <string name="cockpit_open">Otvori kokpit</string>
+    <string name="cockpit_open_hint">Za telefon na upravljaču: velike vrijednosti, a zaslon ostaje uključen.</string>
+    <string name="cockpit_settings_link">Postavke kokpita</string>
+    <string name="cockpit_with_logger">Pokreni i zapisnik vožnje</string>
+    <string name="cockpit_with_logger_hint">Pokreće se s kokpitom ako još ne radi. Prvi put Android traži dopuštenje za obavijesti dok još držiš telefon u ruci.</string>
+    <string name="cockpit_theme_title">Boje kokpita</string>
+    <string name="cockpit_theme_app">Kao aplikacija</string>
+    <string name="cockpit_theme_day">Dan</string>
+    <string name="cockpit_theme_night">Noć</string>
+    <string name="cockpit_theme_hint">Dan je svijetla tema i najčitljivija je na suncu.</string>
+    <string name="cockpit_check_hint">Za testove dok bicikl stoji, primjerice test drmanja kabela Kick Locka.</string>
+    <string name="cockpit_events_no_incidents">Nema incidenata ni oznaka. Prekidi, transportni način, greške i oznake iz kokpita pojavljuju se ovdje.</string>
+
+    <!-- Riding suggestion -->
+    <string name="cockpit_suggest">Bicikl se kreće. Na upravljaču je kokpit lakše čitljiv.</string>
+    <string name="cockpit_suggest_later">Ne sada</string>
+
+    <!-- Frame -->
+    <string name="cockpit_pane">Kokpit</string>
+    <string name="cockpit_close">Izađi iz kokpita</string>
+    <string name="cockpit_exit_hold">Drži za izlaz</string>
+    <string name="cockpit_exit_back_again">Još jednom natrag za izlaz</string>
+
+    <!-- Link -->
+    <string name="cockpit_link_live">Povezano</string>
+    <string name="cockpit_link_stale">Nema podataka</string>
+    <string name="cockpit_link_searching">Traži</string>
+    <string name="cockpit_link_connecting">Povezuje</string>
+    <string name="cockpit_link_lost">Veza prekinuta</string>
+    <string name="cockpit_link_offline">Nije povezano</string>
+    <plurals name="cockpit_link_reconnects">
+        <item quantity="one">%d× ponovno povezano</item>
+        <item quantity="few">%d× ponovno povezano</item>
+        <item quantity="other">%d× ponovno povezano</item>
+    </plurals>
+
+    <!-- Matrix -->
+    <string name="cockpit_unit_kmh">km/h</string>
+    <string name="cockpit_speed_spoken">%d\u00A0km/h</string>
+    <string name="cockpit_speed_unknown">Nema vrijednosti brzine</string>
+    <string name="cockpit_matrix_no_data">Nema podataka s bicikla</string>
+    <string name="cockpit_matrix_searching">Traži bicikl</string>
+    <string name="cockpit_matrix_log">Čita interni dnevnik, %d\u00A0%%</string>
+
+    <!-- Battery -->
+    <string name="cockpit_battery">Baterija</string>
+    <string name="cockpit_battery_value">%d\u00A0%%</string>
+    <string name="cockpit_battery_spoken">Baterija %d\u00A0%%</string>
+    <string name="cockpit_charger_in">Punjač priključen</string>
+
+    <!-- Lamps -->
+    <string name="cockpit_lamp_coil">Zavojnica</string>
+    <string name="cockpit_lamp_switch">Prekidač</string>
+    <string name="cockpit_lamp_key">Prepoznavanje baterije</string>
+    <string name="cockpit_lamp_supply">Napajanje</string>
+    <string name="cockpit_val_detected">prepoznata</string>
+    <string name="cockpit_val_missing">nedostaje</string>
+    <string name="cockpit_val_quiet">bez dojave</string>
+    <string name="cockpit_val_open">otključan</string>
+    <string name="cockpit_val_locked">zaključan</string>
+    <string name="cockpit_val_code">unos koda</string>
+    <string name="cockpit_val_supply_ok">iznad 20\u00A0V</string>
+    <string name="cockpit_val_supply_low">ispod 20\u00A0V</string>
+    <string name="cockpit_val_gear">%1$d. brzina</string>
+    <string name="cockpit_val_level">Razina\u00A0%1$d</string>
+    <string name="cockpit_lamp_count">%d×</string>
+    <plurals name="cockpit_lamp_count_spoken">
+        <item quantity="one">%d put od otvaranja</item>
+        <item quantity="few">%d puta od otvaranja</item>
+        <item quantity="other">%d puta od otvaranja</item>
+    </plurals>
+    <string name="cockpit_lamp_spoken">%1$s: %2$s</string>
+    <string name="cockpit_rule">Transportni način kad sva tri ispadnu odjednom</string>
+
+    <!-- Alert line -->
+    <string name="cockpit_alert_link_lost">Veza prekinuta pri %d\u00A0km/h</string>
+    <string name="cockpit_alert_link_lost_plain">Veza prekinuta tijekom vožnje</string>
+    <string name="cockpit_alert_sleeping">Bicikl spava u vožnji</string>
+    <string name="cockpit_alert_lock_riding">Brava javlja zaključano u vožnji</string>
+    <string name="cockpit_alert_fault_42">Zavojnica Kick Locka nije prepoznata</string>
+    <string name="cockpit_alert_fault_18">Baterija nije prepoznata</string>
+    <string name="cockpit_alert_fault_8">BMS baterije javlja grešku</string>
+    <string name="cockpit_alert_power_button">Tipka za uključivanje/ponovno pokretanje javlja pritisak</string>
+    <string name="cockpit_alert_supply_low">Napajanje ispod 20\u00A0V</string>
+    <string name="cockpit_alert_battery_jump">Baterija skače s %1$d\u00A0%% na %2$d\u00A0%%</string>
+    <string name="cockpit_alert_battery_low">Baterija %d\u00A0%%</string>
+    <string name="cockpit_alert_stale">Nema podataka već %d\u00A0s</string>
+    <string name="cockpit_alert_searching">Traži bicikl</string>
+    <string name="cockpit_alert_logger_off">Zapisnik vožnje isključen</string>
+    <string name="cockpit_action_retry">Traži ponovno</string>
+    <string name="cockpit_action_logger">Pokreni</string>
+    <string name="cockpit_alert_since">Od %s</string>
+    <string name="cockpit_alert_more">+%d</string>
+    <plurals name="cockpit_alert_more_spoken">
+        <item quantity="one">još %d upozorenje</item>
+        <item quantity="few">još %d upozorenja</item>
+        <item quantity="other">još %d upozorenja</item>
+    </plurals>
+    <string name="cockpit_alert_memory">%1$s u %2$s. Dodirni za detalje.</string>
+    <string name="cockpit_alert_memory_count">%1$s, %2$d× od %3$s. Dodirni za detalje.</string>
+    <string name="cockpit_alert_last_span">Zadnje: %1$s od %2$s do %3$s</string>
+    <string name="cockpit_alert_last_at">Zadnje: %1$s u %2$s</string>
+    <string name="cockpit_fault_short">Greška\u00A0%d</string>
+
+    <!-- Mark -->
+    <string name="cockpit_mark">Označi</string>
+    <string name="cockpit_mark_none">Još nema oznake</string>
+    <plurals name="cockpit_mark_count">
+        <item quantity="one">%1$d postavljena, zadnja u %2$s</item>
+        <item quantity="few">%1$d postavljene, zadnja u %2$s</item>
+        <item quantity="other">%1$d postavljenih, zadnja u %2$s</item>
+    </plurals>
+    <plurals name="cockpit_mark_state">
+        <item quantity="one">%d postavljena</item>
+        <item quantity="few">%d postavljene</item>
+        <item quantity="other">%d postavljenih</item>
+    </plurals>
+    <string name="cockpit_mark_done">Postavljena u %s</string>
+    <string name="cockpit_mark_logger_on">U zapisniku vožnje od %s</string>
+    <string name="cockpit_mark_logger_off">Samo u dnevniku događaja, do zatvaranja aplikacije</string>
+    <string name="cockpit_mark_event">Oznaka\u00A0%d</string>
+    <string name="cockpit_mark_spoken">Oznaka\u00A0%d postavljena</string>
+
+    <!-- Inner screen only -->
+    <string name="cockpit_recent">Nedavno</string>
+    <string name="cockpit_fact_reconnects">Ponovna povezivanja</string>
+    <string name="cockpit_fact_reconnects_value">%d×</string>
+    <string name="cockpit_fact_samples">Uzorci</string>
+
+    <!-- Takeover -->
+    <string name="cockpit_to_pane">Upozorenje</string>
+    <string name="cockpit_to_off">Bicikl vjerojatno isključen</string>
+    <string name="cockpit_to_kicklock">Kick Lock javlja zaključano</string>
+    <plurals name="cockpit_to_countdown">
+        <item quantity="one">Motor i svjetla gase se za otprilike %d\u00A0sekundu.</item>
+        <item quantity="few">Motor i svjetla gase se za otprilike %d\u00A0sekunde.</item>
+        <item quantity="other">Motor i svjetla gase se za otprilike %d\u00A0sekundi.</item>
+    </plurals>
+    <string name="cockpit_to_soon">Motor i svjetla gase se svakog trena.</string>
+    <string name="cockpit_to_gone">Bicikl je isključen. Veza je prekinuta.</string>
+    <string name="cockpit_to_stop">Molim te, stani čim bude sigurno.</string>
+    <plurals name="cockpit_to_off_after">
+        <item quantity="one">Veza prekinuta %1$d\u00A0sekundu nakon: %2$s.</item>
+        <item quantity="few">Veza prekinuta %1$d\u00A0sekunde nakon: %2$s.</item>
+        <item quantity="other">Veza prekinuta %1$d\u00A0sekundi nakon: %2$s.</item>
+    </plurals>
+    <string name="cockpit_to_kicklock_text">Možeš nastaviti voziti. Na sljedećem zaustavljanju bicikl će se vjerojatno zaključati.</string>
+    <string name="cockpit_to_snapshot">U %1$s pri %2$s\u00A0km/h: bicikl %3$s, napajanje %4$s, %5$s.</string>
+    <string name="cockpit_to_meta">%1$s pri %2$s\u00A0km/h.</string>
+    <string name="cockpit_to_also">Također: %s</string>
+    <string name="cockpit_to_ack">Razumijem</string>
+    <string name="cockpit_step_wake">Kratko pritisni tipku ispod gornje cijevi dok bicikl ne reagira. Ne drži je 8–15\u00A0sekundi.</string>
+    <string name="cockpit_step_battery">Ne odspajaj bateriju: zadnje sekunde prije gašenja nalaze se samo u memoriji bicikla.</string>
+    <string name="cockpit_step_log">Pročitaj interni dnevnik čim se YABA ponovno poveže.</string>
+    <string name="cockpit_step_kl_unlock">Ako bicikl stoji zaključan, otključaj ga ovdje.</string>
+    <string name="cockpit_step_kl_follow">Ako slijedi transportni način, ovaj se zaslon prebacuje na njega.</string>
+    <string name="cockpit_step_kl_test">Kasnije: deset puta zaključaj i otključaj Kick Lock. Zvuk i simbol moraju ostati isti.</string>
+    <string name="cockpit_to_timeline">Zadnjih 12\u00A0s prije %s</string>
+    <string name="cockpit_timeline_row_spoken">%1$s: ispad u %2$d od %3$d uzoraka</string>
+    <string name="cockpit_to_situation">Situacija u tom trenutku</string>
+    <string name="cockpit_tag_bumps">Neravnine</string>
+    <string name="cockpit_tag_steering">Skretanje</string>
+    <string name="cockpit_tag_rain">Kiša</string>
+    <string name="cockpit_tag_climb">Uspon</string>
+    <string name="cockpit_tag_event">Situacija: %s</string>
+    <string name="cockpit_tag_detail">%1$s u %2$s</string>
+    <string name="cockpit_tag_steering_warning">Ispad pri skretanju: molim te, ne nastavljaj voziti i daj provjeriti kabele u cijevi upravljača.</string>
+    <string name="cockpit_to_search_hint">YABA nastavlja tražiti i sama.</string>
+    <string name="cockpit_to_log_saved">Dnevnik spremljen u %1$s, redaka: %2$s</string>
+    <string name="cockpit_to_back">Natrag na kokpit</string>
+    <string name="cockpit_to_diagnosis">Na dijagnostiku</string>
+    <string name="cockpit_pre_fault">greška\u00A0%d</string>
+    <string name="cockpit_pre_lock">brava javila zaključano</string>
+    <string name="cockpit_pre_supply">napajanje ispod 20\u00A0V</string>
+    <string name="cockpit_pre_button">tipka za uključivanje/ponovno pokretanje</string>
+    <string name="cockpit_pre_jump">skok baterije</string>
+
+    <!-- Event log -->
+    <string name="cockpit_log_battery_jump">Baterija skače s %1$d\u00A0%% na %2$d\u00A0%% bez punjača</string>
+    <string name="cockpit_detail_data_age">podaci stari %1$.1f\u00A0s</string>
+    <string name="cockpit_detail_via_key">tipkom za glasnoću</string>
+
+    <!-- Takeover evidence, read at the stop, connection facts -->
+    <string name="cockpit_to_faults_none">bez grešaka</string>
+    <string name="cockpit_to_faults">greške %s</string>
+    <string name="cockpit_to_ack_marks">Postavlja i oznaku\u00A0%d</string>
+    <string name="cockpit_to_read_at_stop">Pročitaj na sljedećem zaustavljanju</string>
+    <string name="cockpit_to_read_at_stop_hint">Tijekom čitanja kokpit ne prikazuje brzinu.</string>
+    <string name="cockpit_to_counting_spoken">Motor i svjetla gase se za nekoliko sekundi.</string>
+    <string name="cockpit_fact_connected">Povezano od</string>
+    <string name="cockpit_fact_connected_value">%s</string>
+    <string name="cockpit_ev_age">%1$.1f\u00A0s</string>
+    <string name="cockpit_ev_coil">Zavojnica nedostajala %1$s ranije (42)</string>
+    <string name="cockpit_ev_key">Prepoznavanje baterije nedostajalo %1$s ranije (18)</string>
+    <string name="cockpit_ev_bms">Greška BMS-a %1$s ranije (8)</string>
+    <string name="cockpit_ev_fault">Greška\u00A0%1$d %2$s ranije</string>
+    <string name="cockpit_ev_lock">Brava javila zaključano %1$s ranije</string>
+    <string name="cockpit_ev_supply">Napajanje ispod 20\u00A0V %1$s ranije</string>
+    <string name="cockpit_ev_button">Tipka za uključivanje/ponovno pokretanje pritisnuta %1$s ranije</string>
+    <string name="cockpit_ev_jump">Skok baterije %1$s ranije</string>
+    <string name="cockpit_ev_sentence">%s.</string>
+</resources>

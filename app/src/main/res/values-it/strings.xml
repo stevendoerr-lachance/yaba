@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ride_channel_name">Registrazione dei tragitti YABA</string>
+    <string name="ride_channel_description">Mantiene la connessione con la bici finché la registrazione dei tragitti è attiva.</string>
+</resources>

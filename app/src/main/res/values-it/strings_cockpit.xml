@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cockpit da manubrio (ui/cockpit). Zona 1: semplice, esatto, breve; del tu. -->
+<resources>
+    <!-- Entry in Diagnose -->
+    <string name="cockpit_open">Apri il cockpit</string>
+    <string name="cockpit_open_hint">Per il telefono sul manubrio: valori grandi, e lo schermo resta acceso.</string>
+    <string name="cockpit_settings_link">Impostazioni del cockpit</string>
+    <string name="cockpit_with_logger">Avvia anche la registrazione</string>
+    <string name="cockpit_with_logger_hint">Parte insieme al cockpit se non è già attiva. La prima volta Android chiede le notifiche mentre hai ancora il telefono in mano.</string>
+    <string name="cockpit_theme_title">Colori del cockpit</string>
+    <string name="cockpit_theme_app">Come l’app</string>
+    <string name="cockpit_theme_day">Giorno</string>
+    <string name="cockpit_theme_night">Notte</string>
+    <string name="cockpit_theme_hint">Giorno è il tema chiaro, il più leggibile al sole.</string>
+    <string name="cockpit_check_hint">Per i test da fermo, ad esempio la prova di scuotimento sul cavo del Kick Lock.</string>
+    <string name="cockpit_events_no_incidents">Nessun incidente né marcatore. Interruzioni, modalità spedizione, errori e marcatori del cockpit compaiono qui.</string>
+
+    <!-- Riding suggestion -->
+    <string name="cockpit_suggest">La bici è in movimento. Sul manubrio il cockpit si legge meglio.</string>
+    <string name="cockpit_suggest_later">Non ora</string>
+
+    <!-- Frame -->
+    <string name="cockpit_pane">Cockpit</string>
+    <string name="cockpit_close">Esci dal cockpit</string>
+    <string name="cockpit_exit_hold">Tieni premuto per uscire</string>
+    <string name="cockpit_exit_back_again">Ancora Indietro per uscire</string>
+
+    <!-- Link -->
+    <string name="cockpit_link_live">Connessa</string>
+    <string name="cockpit_link_stale">Nessun dato</string>
+    <string name="cockpit_link_searching">Ricerca</string>
+    <string name="cockpit_link_connecting">Connessione</string>
+    <string name="cockpit_link_lost">Connessione interrotta</string>
+    <string name="cockpit_link_offline">Non connessa</string>
+    <plurals name="cockpit_link_reconnects">
+        <item quantity="one">%d× riconnessa</item>
+        <item quantity="other">%d× riconnessa</item>
+    </plurals>
+
+    <!-- Matrix -->
+    <string name="cockpit_unit_kmh">km/h</string>
+    <string name="cockpit_speed_spoken">%d\u00A0km/h</string>
+    <string name="cockpit_speed_unknown">Nessun valore di velocità</string>
+    <string name="cockpit_matrix_no_data">Nessun dato dalla bici</string>
+    <string name="cockpit_matrix_searching">Ricerca della bici</string>
+    <string name="cockpit_matrix_log">Lettura del registro interno, %d%%</string>
+
+    <!-- Battery -->
+    <string name="cockpit_battery">Batteria</string>
+    <string name="cockpit_battery_value">%d%%</string>
+    <string name="cockpit_battery_spoken">Batteria %d%%</string>
+    <string name="cockpit_charger_in">Caricabatterie collegato</string>
+
+    <!-- Lamps -->
+    <string name="cockpit_lamp_coil">Bobina</string>
+    <string name="cockpit_lamp_switch">Interruttore</string>
+    <string name="cockpit_lamp_key">Rilevamento batteria</string>
+    <string name="cockpit_lamp_supply">Alimentazione</string>
+    <string name="cockpit_val_detected">rilevata</string>
+    <string name="cockpit_val_missing">assente</string>
+    <string name="cockpit_val_quiet">nessuna segnalazione</string>
+    <string name="cockpit_val_open">sbloccato</string>
+    <string name="cockpit_val_locked">bloccato</string>
+    <string name="cockpit_val_code">inserimento codice</string>
+    <string name="cockpit_val_supply_ok">sopra 20\u00A0V</string>
+    <string name="cockpit_val_supply_low">sotto 20\u00A0V</string>
+    <string name="cockpit_val_gear">Marcia\u00A0%1$d</string>
+    <string name="cockpit_val_level">Livello\u00A0%1$d</string>
+    <string name="cockpit_lamp_count">%d×</string>
+    <plurals name="cockpit_lamp_count_spoken">
+        <item quantity="one">%d volta dall’apertura</item>
+        <item quantity="other">%d volte dall’apertura</item>
+    </plurals>
+    <string name="cockpit_lamp_spoken">%1$s: %2$s</string>
+    <string name="cockpit_rule">Modalità spedizione se mancano tutti e tre insieme</string>
+
+    <!-- Alert line -->
+    <string name="cockpit_alert_link_lost">Connessione interrotta a %d\u00A0km/h</string>
+    <string name="cockpit_alert_link_lost_plain">Connessione interrotta durante la marcia</string>
+    <string name="cockpit_alert_sleeping">Bici a riposo in marcia</string>
+    <string name="cockpit_alert_lock_riding">Il blocco segnala “bloccato” in marcia</string>
+    <string name="cockpit_alert_fault_42">Bobina del Kick Lock non rilevata</string>
+    <string name="cockpit_alert_fault_18">Batteria non rilevata</string>
+    <string name="cockpit_alert_fault_8">Il BMS della batteria segnala un errore</string>
+    <string name="cockpit_alert_power_button">Il pulsante di accensione/riavvio risulta premuto</string>
+    <string name="cockpit_alert_supply_low">Alimentazione sotto 20\u00A0V</string>
+    <string name="cockpit_alert_battery_jump">La batteria salta dal %1$d%% al %2$d%%</string>
+    <string name="cockpit_alert_battery_low">Batteria %d%%</string>
+    <string name="cockpit_alert_stale">Nessun dato da %d\u00A0s</string>
+    <string name="cockpit_alert_searching">Ricerca della bici</string>
+    <string name="cockpit_alert_logger_off">Registrazione spenta</string>
+    <string name="cockpit_action_retry">Cerca di nuovo</string>
+    <string name="cockpit_action_logger">Avvia</string>
+    <string name="cockpit_alert_since">Dalle %s</string>
+    <string name="cockpit_alert_more">+%d</string>
+    <plurals name="cockpit_alert_more_spoken">
+        <item quantity="one">%d altro avviso</item>
+        <item quantity="other">%d altri avvisi</item>
+    </plurals>
+    <string name="cockpit_alert_memory">%1$s alle %2$s. Tocca per i dettagli.</string>
+    <string name="cockpit_alert_memory_count">%1$s, %2$d× dalle %3$s. Tocca per i dettagli.</string>
+    <string name="cockpit_alert_last_span">Ultimo: %1$s dalle %2$s alle %3$s</string>
+    <string name="cockpit_alert_last_at">Ultimo: %1$s alle %2$s</string>
+    <string name="cockpit_fault_short">Errore\u00A0%d</string>
+
+    <!-- Mark -->
+    <string name="cockpit_mark">Segna</string>
+    <string name="cockpit_mark_none">Nessun marcatore</string>
+    <plurals name="cockpit_mark_count">
+        <item quantity="one">%1$d impostato, ultimo alle %2$s</item>
+        <item quantity="other">%1$d impostati, ultimo alle %2$s</item>
+    </plurals>
+    <plurals name="cockpit_mark_state">
+        <item quantity="one">%d impostato</item>
+        <item quantity="other">%d impostati</item>
+    </plurals>
+    <string name="cockpit_mark_done">Impostato alle %s</string>
+    <string name="cockpit_mark_logger_on">Nella registrazione dalle %s</string>
+    <string name="cockpit_mark_logger_off">Solo nel registro eventi, fino alla chiusura dell’app</string>
+    <string name="cockpit_mark_event">Marcatore\u00A0%d</string>
+    <string name="cockpit_mark_spoken">Marcatore\u00A0%d impostato</string>
+
+    <!-- Inner screen only -->
+    <string name="cockpit_recent">Recenti</string>
+    <string name="cockpit_fact_reconnects">Riconnessioni</string>
+    <string name="cockpit_fact_reconnects_value">%d×</string>
+    <string name="cockpit_fact_samples">Campioni</string>
+
+    <!-- Takeover -->
+    <string name="cockpit_to_pane">Avviso</string>
+    <string name="cockpit_to_off">Bici probabilmente spenta</string>
+    <string name="cockpit_to_kicklock">Il Kick Lock segnala “bloccato”</string>
+    <plurals name="cockpit_to_countdown">
+        <item quantity="one">Motore e luci si spengono tra circa %d\u00A0secondo.</item>
+        <item quantity="other">Motore e luci si spengono tra circa %d\u00A0secondi.</item>
+    </plurals>
+    <string name="cockpit_to_soon">Motore e luci si spengono a momenti.</string>
+    <string name="cockpit_to_gone">La bici è spenta. La connessione è interrotta.</string>
+    <string name="cockpit_to_stop">Fermati appena è sicuro.</string>
+    <plurals name="cockpit_to_off_after">
+        <item quantity="one">Connessione interrotta %1$d\u00A0secondo dopo: %2$s.</item>
+        <item quantity="other">Connessione interrotta %1$d\u00A0secondi dopo: %2$s.</item>
+    </plurals>
+    <string name="cockpit_to_kicklock_text">Puoi continuare a pedalare. Alla prossima sosta la bici probabilmente si bloccherà.</string>
+    <string name="cockpit_to_snapshot">Alle %1$s a %2$s\u00A0km/h: bici %3$s, alimentazione %4$s, %5$s.</string>
+    <string name="cockpit_to_meta">%1$s a %2$s\u00A0km/h.</string>
+    <string name="cockpit_to_also">Inoltre: %s</string>
+    <string name="cockpit_to_ack">Capito</string>
+    <string name="cockpit_step_wake">Premi brevemente il tasto sotto il tubo orizzontale finché la bici reagisce. Non tenerlo premuto per 8–15\u00A0secondi.</string>
+    <string name="cockpit_step_battery">Non scollegare la batteria: gli ultimi secondi prima dello spegnimento sono solo nella memoria della bici.</string>
+    <string name="cockpit_step_log">Leggi il registro interno appena YABA è di nuovo connessa.</string>
+    <string name="cockpit_step_kl_unlock">Se la bici è ferma e bloccata, sbloccala qui.</string>
+    <string name="cockpit_step_kl_follow">Se segue la modalità spedizione, questa schermata passa a quella.</string>
+    <string name="cockpit_step_kl_test">Più tardi: blocca e sblocca il Kick Lock dieci volte. Suono e simbolo devono restare uguali.</string>
+    <string name="cockpit_to_timeline">Gli ultimi 12\u00A0s prima delle %s</string>
+    <string name="cockpit_timeline_row_spoken">%1$s: assente in %2$d campioni su %3$d</string>
+    <string name="cockpit_to_situation">Situazione in quel momento</string>
+    <string name="cockpit_tag_bumps">Buche</string>
+    <string name="cockpit_tag_steering">Sterzata</string>
+    <string name="cockpit_tag_rain">Pioggia</string>
+    <string name="cockpit_tag_climb">Salita</string>
+    <string name="cockpit_tag_event">Situazione: %s</string>
+    <string name="cockpit_tag_detail">%1$s alle %2$s</string>
+    <string name="cockpit_tag_steering_warning">Guasto in sterzata: per favore non proseguire e fai controllare il cablaggio nel tubo sterzo.</string>
+    <string name="cockpit_to_search_hint">YABA continua a cercare anche da sola.</string>
+    <string name="cockpit_to_log_saved">Registro salvato alle %1$s, %2$s righe</string>
+    <string name="cockpit_to_back">Torna al cockpit</string>
+    <string name="cockpit_to_diagnosis">Vai alla diagnosi</string>
+    <string name="cockpit_pre_fault">errore\u00A0%d</string>
+    <string name="cockpit_pre_lock">blocco segnalato “bloccato”</string>
+    <string name="cockpit_pre_supply">alimentazione sotto 20\u00A0V</string>
+    <string name="cockpit_pre_button">pulsante di accensione/riavvio</string>
+    <string name="cockpit_pre_jump">salto della batteria</string>
+
+    <!-- Event log -->
+    <string name="cockpit_log_battery_jump">La batteria salta dal %1$d%% al %2$d%% senza caricatore</string>
+    <string name="cockpit_detail_data_age">dati di %1$.1f\u00A0s fa</string>
+    <string name="cockpit_detail_via_key">con tasto volume</string>
+
+    <!-- Takeover evidence, read at the stop, connection facts -->
+    <string name="cockpit_to_faults_none">nessun errore</string>
+    <string name="cockpit_to_faults">errori %s</string>
+    <string name="cockpit_to_ack_marks">Imposta anche il marcatore\u00A0%d</string>
+    <string name="cockpit_to_read_at_stop">Leggi alla prossima sosta</string>
+    <string name="cockpit_to_read_at_stop_hint">Durante la lettura il cockpit non mostra la velocità.</string>
+    <string name="cockpit_to_counting_spoken">Motore e luci si spengono tra pochi secondi.</string>
+    <string name="cockpit_fact_connected">Connessa dalle</string>
+    <string name="cockpit_fact_connected_value">%s</string>
+    <string name="cockpit_ev_age">%1$.1f\u00A0s</string>
+    <string name="cockpit_ev_coil">Bobina assente %1$s prima (42)</string>
+    <string name="cockpit_ev_key">Rilevamento batteria assente %1$s prima (18)</string>
+    <string name="cockpit_ev_bms">Errore BMS %1$s prima (8)</string>
+    <string name="cockpit_ev_fault">Errore\u00A0%1$d %2$s prima</string>
+    <string name="cockpit_ev_lock">Blocco segnalato “bloccato” %1$s prima</string>
+    <string name="cockpit_ev_supply">Alimentazione sotto 20\u00A0V %1$s prima</string>
+    <string name="cockpit_ev_button">Pulsante di accensione/riavvio premuto %1$s prima</string>
+    <string name="cockpit_ev_jump">Salto della batteria %1$s prima</string>
+    <string name="cockpit_ev_sentence">%s.</string>
+</resources>

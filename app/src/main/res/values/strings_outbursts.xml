@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dutch exclamations shown on the bike matrix. Never translated. -->
+<resources>
+    <string name="outburst_welcome" translatable="false">DE|PIJP|UIT</string>
+    <string name="outburst_notfound" translatable="false">BALEN</string>
+    <string name="outburst_vanmoof_app" translatable="false">GEDOE</string>
+    <string name="outburst_relief" translatable="false">HÈ HÈ</string>
+    <string name="outburst_fault42" translatable="false">VER-|DORIE</string>
+    <string name="outburst_server_first" translatable="false">NOU JA</string>
+    <string name="outburst_server_third" translatable="false">BEK|DICHT</string>
+    <string name="outburst_server_dead" translatable="false">DE|PIJP|UIT</string>
+    <string name="outburst_probe3" translatable="false">VER-|DOMME</string>
+</resources>

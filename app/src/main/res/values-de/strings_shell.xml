@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Destinations -->
+    <string name="shell_dest_ride">Fahren</string>
+    <string name="shell_dest_sound">Klang</string>
+    <string name="shell_dest_diagnosis">Diagnose</string>
+    <string name="shell_dest_bike">Bike</string>
+    <string name="shell_tab_alert_cd">%1$s, Fehler gemeldet</string>
+
+    <!-- Bluetooth readiness (hero) -->
+    <string name="shell_ble_location_off">Der Standort ist ausgeschaltet. Ohne Standort findet Android keine Bluetooth-Geräte.</string>
+    <string name="shell_ble_off">Bluetooth ist aus.</string>
+    <string name="shell_ble_needs_nearby">Für Bluetooth braucht die App den Zugriff auf Geräte in der Nähe.</string>
+    <string name="shell_ble_needs_location">Für die Bluetooth-Suche braucht die App den Zugriff auf deinen Standort.</string>
+    <string name="shell_ble_action_location">Standort einschalten</string>
+    <string name="shell_ble_action_allow">Bluetooth erlauben</string>
+    <string name="shell_ble_action_enable">Bluetooth einschalten</string>
+    <string name="shell_ble_settings_hint">Erscheint keine Abfrage mehr, erlaub den Zugriff in den App-Einstellungen unter „Berechtigungen“.</string>
+    <string name="shell_ble_open_settings">App-Einstellungen öffnen</string>
+
+    <!-- Hero -->
+    <string name="shell_hero_which_bike">Kein Bike ausgewählt</string>
+    <string name="shell_hero_no_bike">Kein Bike</string>
+    <plurals name="shell_hero_bikes_saved">
+        <item quantity="one">Es ist %1$d Bike gespeichert. Bitte wähl eins aus.</item>
+        <item quantity="other">Es sind %1$d Bikes gespeichert. Bitte wähl eins aus.</item>
+    </plurals>
+    <string name="shell_hero_add_bike">Leg in der Garage ein Bike an.</string>
+    <string name="shell_hero_choose_bike">Bike auswählen</string>
+    <string name="shell_hero_link_lost">Die Bluetooth-Verbindung wurde unterbrochen. Die App sucht weiter nach deinem Bike.</string>
+    <string name="shell_hero_search_again">Jetzt erneut suchen</string>
+    <string name="shell_hero_connect">Verbinden</string>
+    <string name="shell_hero_close_vanmoof">Bitte schließ zuerst die VanMoof-App, denn das Bike nimmt nur ein Handy gleichzeitig an.</string>
+    <string name="shell_hero_lock_offline">Das Bike lässt sich sperren und entsperren, sobald es verbunden ist.</string>
+    <string name="shell_hero_lock_parked">Sperren geht im Stand.</string>
+    <string name="shell_hero_pin_entry">Das Bike wartet auf den Ersatzcode.</string>
+    <string name="shell_bike_caption_owner">%1$s im Besitz von %2$s</string>
+
+    <!-- Connection state -->
+    <string name="shell_link_searching">Sucht das Bike</string>
+    <string name="shell_link_connecting">Verbindet</string>
+    <string name="shell_link_authenticating">Meldet sich am Bike an</string>
+    <string name="shell_link_ready">Verbunden</string>
+    <string name="shell_link_lost">Verbindung unterbrochen</string>
+    <string name="shell_link_offline">Nicht verbunden</string>
+
+    <!-- Lock state -->
+    <string name="shell_lock_unlocked">Entsperrt</string>
+    <string name="shell_lock_locked">Gesperrt</string>
+    <string name="shell_lock_pin_entry">Wartet auf Ersatzcode</string>
+    <string name="shell_lock_unknown">Zustand des Schlosses unbekannt</string>
+
+    <!-- Top tube, read by TalkBack -->
+    <string name="shell_tube_riding_cd">Fährt mit %1$d\u00A0km/h</string>
+    <string name="shell_tube_charging_cd">Lädt, Akku %1$d Prozent</string>
+    <string name="shell_tube_charging_unknown_cd">Lädt</string>
+    <string name="shell_tube_lock_battery_cd">%1$s, Akku %2$d Prozent</string>
+    <string name="shell_tube_connecting_cd">Verbindet mit deinem Bike</string>
+    <string name="shell_tube_ble_off_cd">Bluetooth ist ausgeschaltet</string>
+    <string name="shell_tube_upload_cd">Sendet einen Ton, %1$d\u00A0%%</string>
+    <string name="shell_fault_title">Fehler\u00A0%1$d: %2$s</string>
+
+    <!-- Top tube matrix -->
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_speed">%1$d KMH</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_fault">E%1$d</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_offline">OFFLINE</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="shell_matrix_ble_off">AUS</string>
+
+    <!-- Hero facts -->
+    <string name="shell_fact_battery">Akku</string>
+    <string name="shell_fact_battery_charging">Akku lädt</string>
+    <string name="shell_fact_battery_value">%1$d\u00A0%%</string>
+    <string name="shell_fact_odometer">Kilometerstand</string>
+    <string name="shell_fact_odometer_value">%1$s\u00A0km</string>
+    <string name="shell_fact_level">Unterstützung</string>
+    <string name="shell_fact_limit">Tempolimit</string>
+    <string name="shell_fact_limit_value">%1$d\u00A0km/h</string>
+    <string name="shell_facts_stale">Stand %1$s\u00A0Uhr</string>
+
+    <!-- Faults -->
+    <string name="shell_fault_open_cd">Diagnose öffnen</string>
+    <string name="shell_fault_tap">Antippen für die Diagnose.</string>
+    <string name="shell_fault_42_tap">Stecker und Kabel am Kick-Lock prüfen. Antippen für die Diagnose.</string>
+    <string name="shell_fault_last">Zuletzt gemeldet: Fehler\u00A0%1$d</string>
+    <plurals name="shell_fault_more">
+        <item quantity="one">Dazu %1$d weiterer Fehler. Antippen für die Diagnose.</item>
+        <item quantity="other">Dazu %1$d weitere Fehler. Antippen für die Diagnose.</item>
+    </plurals>
+
+    <!-- Ride controls -->
+    <string name="shell_controls_almost">Die Verbindung wird aufgebaut. Danach kannst du hier alles einstellen.</string>
+    <string name="shell_controls_connect_first">Verbinde dich mit dem Bike, um es zu steuern.</string>
+    <string name="shell_section_speed">Tempolimit</string>
+    <string name="shell_section_assist">Unterstützung</string>
+    <string name="shell_section_light">Licht</string>
+    <string name="shell_section_alarm">Alarm</string>
+    <string name="shell_speedplus_note">Speed++ ist an. Der Tacho am Bike zeigt weniger, YABA zeigt das echte Tempo.</string>
+    <string name="shell_alarm_off">Aus</string>
+    <string name="shell_alarm_on">An</string>
+    <string name="shell_alarm_running">Alarm läuft: %1$s</string>
+    <string name="shell_touch_unlock_hint">Entsperren per Tastendruck ist eingeschaltet: Ein Druck auf Klingel oder Boost entsperrt das Bike, solange dein Handy verbunden ist.</string>
+    <string name="shell_cancel">Abbrechen</string>
+    <string name="shell_sending">Sendet</string>
+
+    <!-- Assist ladder -->
+    <string name="shell_power_off">Aus</string>
+    <string name="shell_power_off_cd">Unterstützung aus</string>
+    <string name="shell_power_level_cd">Stufe\u00A0%1$d</string>
+
+    <!-- Lock slider -->
+    <string name="shell_slider_cd">Schloss</string>
+    <string name="shell_slider_state_unknown">Unbekannt</string>
+    <string name="shell_slider_action_unlock">Entsperren</string>
+    <string name="shell_slider_action_lock">Sperren</string>
+    <string name="shell_slider_unlocking">Entsperren läuft …</string>
+    <string name="shell_slider_locking">Sperren läuft …</string>
+    <string name="shell_slider_slide_unlock">Zum Entsperren ziehen</string>
+    <string name="shell_slider_slide_lock">Zum Sperren ziehen</string>
+    <string name="shell_ride_link_lost_title">Verbindung zum Bike unterbrochen</string>
+    <string name="shell_ride_link_lost_text">Das Bike fährt unverändert weiter. Bitte schau erst auf das Handy, wenn du stehst.</string>
+    <string name="shell_ride_link_lost_after_text">Die Bluetooth-Verbindung wurde um %1$s\u00A0Uhr unterbrochen. Motor, Licht und Tempolimit bleiben, wie sie eingestellt waren. YABA verbindet sich neu, sobald es das Bike empfängt.</string>
+    <string name="shell_ride_shipping_title">Bitte jetzt anhalten.</string>
+    <string name="shell_ride_shipping_text">Motor, Licht und Bluetooth schalten sich voraussichtlich in etwa 10\u00A0Sekunden ab.</string>
+    <string name="shell_ride_shipping_after_title">Das Bike hat den Versandmodus gemeldet</string>
+    <string name="shell_ride_shipping_after_text">Das Bike hat um %1$s\u00A0Uhr den Versandmodus gemeldet und danach Motor, Licht und Bluetooth abgeschaltet. Ist es noch aus, drück kurz die Taste unter dem Oberrohr oder steck das Ladegerät an. Lies danach sofort das interne Protokoll unter „Diagnose“ aus. Klemm den Akku bis dahin nicht ab.</string>
+    <string name="shell_notfound_title">Bike nicht gefunden</string>
+    <string name="shell_notfound_text">YABA erhält seit mehr als 12\u00A0Sekunden keine Antwort von „%1$s“. Bitte schließ die VanMoof-App und weck das Bike mit der Klingeltaste.</string>
+    <string name="shell_unlock_done_text">Das Bike wurde in %1$s\u00A0Sekunden entsperrt, direkt über Bluetooth. Der Akkustand beträgt %2$d\u00A0%%.</string>
+    <string name="shell_unlock_first_ride">Gute Fahrt.</string>
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stuurcockpit (ui/cockpit). Zone 1: eenvoudig, exact, kort; je-vorm. -->
+<resources>
+    <!-- Entry in Diagnose -->
+    <string name="cockpit_open">Cockpit openen</string>
+    <string name="cockpit_open_hint">Voor een telefoon op het stuur: grote waarden, en het scherm blijft aan.</string>
+    <string name="cockpit_settings_link">Cockpitinstellingen</string>
+    <string name="cockpit_with_logger">Ritregistratie ook starten</string>
+    <string name="cockpit_with_logger_hint">Start mee met de cockpit als die nog niet loopt. De eerste keer vraagt Android om meldingen, terwijl je de telefoon nog in de hand hebt.</string>
+    <string name="cockpit_theme_title">Cockpitkleuren</string>
+    <string name="cockpit_theme_app">Zoals de app</string>
+    <string name="cockpit_theme_day">Dag</string>
+    <string name="cockpit_theme_night">Nacht</string>
+    <string name="cockpit_theme_hint">Dag is het lichte thema en is in de zon het best leesbaar.</string>
+    <string name="cockpit_check_hint">Voor tests in stilstand, bijvoorbeeld de wiebeltest aan de kabel van de Kick Lock.</string>
+    <string name="cockpit_events_no_incidents">Geen incidenten of markeringen. Uitval, transportmodus, storingen en cockpitmarkeringen verschijnen hier.</string>
+
+    <!-- Riding suggestion -->
+    <string name="cockpit_suggest">De fiets rijdt. Op het stuur is de cockpit makkelijker te lezen.</string>
+    <string name="cockpit_suggest_later">Niet nu</string>
+
+    <!-- Frame -->
+    <string name="cockpit_pane">Cockpit</string>
+    <string name="cockpit_close">Cockpit verlaten</string>
+    <string name="cockpit_exit_hold">Vasthouden om te verlaten</string>
+    <string name="cockpit_exit_back_again">Nog een keer terug om te verlaten</string>
+
+    <!-- Link -->
+    <string name="cockpit_link_live">Verbonden</string>
+    <string name="cockpit_link_stale">Geen gegevens</string>
+    <string name="cockpit_link_searching">Zoekt</string>
+    <string name="cockpit_link_connecting">Verbindt</string>
+    <string name="cockpit_link_lost">Verbinding onderbroken</string>
+    <string name="cockpit_link_offline">Niet verbonden</string>
+    <plurals name="cockpit_link_reconnects">
+        <item quantity="one">%d× opnieuw verbonden</item>
+        <item quantity="other">%d× opnieuw verbonden</item>
+    </plurals>
+
+    <!-- Matrix -->
+    <string name="cockpit_unit_kmh">km/u</string>
+    <string name="cockpit_speed_spoken">%d\u00A0km/u</string>
+    <string name="cockpit_speed_unknown">Geen snelheidswaarde</string>
+    <string name="cockpit_matrix_no_data">Geen gegevens van de fiets</string>
+    <string name="cockpit_matrix_searching">Zoekt de fiets</string>
+    <string name="cockpit_matrix_log">Leest het interne logboek, %d%%</string>
+
+    <!-- Battery -->
+    <string name="cockpit_battery">Accu</string>
+    <string name="cockpit_battery_value">%d%%</string>
+    <string name="cockpit_battery_spoken">Accu %d%%</string>
+    <string name="cockpit_charger_in">Oplader aangesloten</string>
+
+    <!-- Lamps -->
+    <string name="cockpit_lamp_coil">Spoel</string>
+    <string name="cockpit_lamp_switch">Schakelaar</string>
+    <string name="cockpit_lamp_key">Accudetectie</string>
+    <string name="cockpit_lamp_supply">Voeding</string>
+    <string name="cockpit_val_detected">herkend</string>
+    <string name="cockpit_val_missing">ontbreekt</string>
+    <string name="cockpit_val_quiet">geen melding</string>
+    <string name="cockpit_val_open">ontgrendeld</string>
+    <string name="cockpit_val_locked">vergrendeld</string>
+    <string name="cockpit_val_code">code-invoer</string>
+    <string name="cockpit_val_supply_ok">boven 20\u00A0V</string>
+    <string name="cockpit_val_supply_low">onder 20\u00A0V</string>
+    <string name="cockpit_val_gear">Versnelling\u00A0%1$d</string>
+    <string name="cockpit_val_level">Stand\u00A0%1$d</string>
+    <string name="cockpit_lamp_count">%d×</string>
+    <plurals name="cockpit_lamp_count_spoken">
+        <item quantity="one">%d keer sinds het openen</item>
+        <item quantity="other">%d keer sinds het openen</item>
+    </plurals>
+    <string name="cockpit_lamp_spoken">%1$s: %2$s</string>
+    <string name="cockpit_rule">Transportmodus als alle drie tegelijk wegvallen</string>
+
+    <!-- Alert line -->
+    <string name="cockpit_alert_link_lost">Verbinding onderbroken bij %d\u00A0km/u</string>
+    <string name="cockpit_alert_link_lost_plain">Verbinding onderbroken tijdens het rijden</string>
+    <string name="cockpit_alert_sleeping">Fiets slaapt tijdens het rijden</string>
+    <string name="cockpit_alert_lock_riding">Slot meldt vergrendeld tijdens het rijden</string>
+    <string name="cockpit_alert_fault_42">Spoel van de Kick Lock niet herkend</string>
+    <string name="cockpit_alert_fault_18">Accu niet herkend</string>
+    <string name="cockpit_alert_fault_8">Accu-BMS meldt een storing</string>
+    <string name="cockpit_alert_power_button">Aan/herstart-knop meldt ingedrukt</string>
+    <string name="cockpit_alert_supply_low">Voeding onder 20\u00A0V</string>
+    <string name="cockpit_alert_battery_jump">Accu springt van %1$d%% naar %2$d%%</string>
+    <string name="cockpit_alert_battery_low">Accu %d%%</string>
+    <string name="cockpit_alert_stale">Geen gegevens sinds %d\u00A0s</string>
+    <string name="cockpit_alert_searching">Zoekt de fiets</string>
+    <string name="cockpit_alert_logger_off">Ritregistratie uit</string>
+    <string name="cockpit_action_retry">Opnieuw zoeken</string>
+    <string name="cockpit_action_logger">Starten</string>
+    <string name="cockpit_alert_since">Sinds %s</string>
+    <string name="cockpit_alert_more">+%d</string>
+    <plurals name="cockpit_alert_more_spoken">
+        <item quantity="one">nog %d melding</item>
+        <item quantity="other">nog %d meldingen</item>
+    </plurals>
+    <string name="cockpit_alert_memory">%1$s om %2$s. Tik voor details.</string>
+    <string name="cockpit_alert_memory_count">%1$s, %2$d× sinds %3$s. Tik voor details.</string>
+    <string name="cockpit_alert_last_span">Laatst: %1$s van %2$s tot %3$s</string>
+    <string name="cockpit_alert_last_at">Laatst: %1$s om %2$s</string>
+    <string name="cockpit_fault_short">Storing\u00A0%d</string>
+
+    <!-- Mark -->
+    <string name="cockpit_mark">Markeren</string>
+    <string name="cockpit_mark_none">Nog geen markering</string>
+    <plurals name="cockpit_mark_count">
+        <item quantity="one">%1$d gezet, laatste om %2$s</item>
+        <item quantity="other">%1$d gezet, laatste om %2$s</item>
+    </plurals>
+    <plurals name="cockpit_mark_state">
+        <item quantity="one">%d gezet</item>
+        <item quantity="other">%d gezet</item>
+    </plurals>
+    <string name="cockpit_mark_done">Gezet om %s</string>
+    <string name="cockpit_mark_logger_on">In de ritregistratie sinds %s</string>
+    <string name="cockpit_mark_logger_off">Alleen in het gebeurtenislogboek, tot de app sluit</string>
+    <string name="cockpit_mark_event">Markering\u00A0%d</string>
+    <string name="cockpit_mark_spoken">Markering\u00A0%d gezet</string>
+
+    <!-- Inner screen only -->
+    <string name="cockpit_recent">Recent</string>
+    <string name="cockpit_fact_reconnects">Opnieuw verbonden</string>
+    <string name="cockpit_fact_reconnects_value">%d×</string>
+    <string name="cockpit_fact_samples">Meetwaarden</string>
+
+    <!-- Takeover -->
+    <string name="cockpit_to_pane">Waarschuwing</string>
+    <string name="cockpit_to_off">Fiets waarschijnlijk uit</string>
+    <string name="cockpit_to_kicklock">Kick Lock meldt vergrendeld</string>
+    <plurals name="cockpit_to_countdown">
+        <item quantity="one">Motor en licht schakelen over ongeveer %d\u00A0seconde uit.</item>
+        <item quantity="other">Motor en licht schakelen over ongeveer %d\u00A0seconden uit.</item>
+    </plurals>
+    <string name="cockpit_to_soon">Motor en licht schakelen zo meteen uit.</string>
+    <string name="cockpit_to_gone">De fiets is uit. De verbinding is onderbroken.</string>
+    <string name="cockpit_to_stop">Stop alsjeblieft zodra het veilig is.</string>
+    <plurals name="cockpit_to_off_after">
+        <item quantity="one">Verbinding onderbroken, %1$d\u00A0seconde na: %2$s.</item>
+        <item quantity="other">Verbinding onderbroken, %1$d\u00A0seconden na: %2$s.</item>
+    </plurals>
+    <string name="cockpit_to_kicklock_text">Doorrijden kan. Bij de volgende stop vergrendelt de fiets waarschijnlijk.</string>
+    <string name="cockpit_to_snapshot">Om %1$s bij %2$s\u00A0km/u: slot %3$s, voeding %4$s, %5$s.</string>
+    <string name="cockpit_to_meta">%1$s bij %2$s\u00A0km/u.</string>
+    <string name="cockpit_to_also">Ook: %s</string>
+    <string name="cockpit_to_ack">Begrepen</string>
+    <string name="cockpit_step_wake">Druk kort op de knop onder de bovenbuis tot de fiets reageert. Houd hem niet 8–15\u00A0seconden ingedrukt.</string>
+    <string name="cockpit_step_battery">Koppel de accu niet los: de laatste seconden voor de uitval staan alleen in het geheugen van de fiets.</string>
+    <string name="cockpit_step_log">Lees het interne logboek uit zodra YABA weer verbonden is.</string>
+    <string name="cockpit_step_kl_unlock">Staat de fiets vergrendeld, ontgrendel hem dan hier.</string>
+    <string name="cockpit_step_kl_follow">Volgt de transportmodus, dan schakelt dit scherm daarnaar over.</string>
+    <string name="cockpit_step_kl_test">Later: vergrendel en ontgrendel de Kick Lock tien keer. Geluid en symbool moeten gelijk blijven.</string>
+    <string name="cockpit_to_timeline">De laatste 12\u00A0s vóór %s</string>
+    <string name="cockpit_timeline_row_spoken">%1$s: uitgevallen in %2$d van %3$d metingen</string>
+    <string name="cockpit_to_situation">Situatie op dat moment</string>
+    <string name="cockpit_tag_bumps">Hobbels</string>
+    <string name="cockpit_tag_steering">Sturen</string>
+    <string name="cockpit_tag_rain">Regen</string>
+    <string name="cockpit_tag_climb">Klim</string>
+    <string name="cockpit_tag_event">Situatie: %s</string>
+    <string name="cockpit_tag_detail">%1$s om %2$s</string>
+    <string name="cockpit_tag_steering_warning">Uitgevallen bij het sturen: rijd alsjeblieft niet verder en laat de kabelboom in de balhoofdbuis controleren.</string>
+    <string name="cockpit_to_search_hint">YABA blijft ook zelf zoeken.</string>
+    <string name="cockpit_to_log_saved">Logboek opgeslagen om %1$s, %2$s regels</string>
+    <string name="cockpit_to_back">Terug naar cockpit</string>
+    <string name="cockpit_to_diagnosis">Naar diagnose</string>
+    <string name="cockpit_pre_fault">storing\u00A0%d</string>
+    <string name="cockpit_pre_lock">slot meldde vergrendeld</string>
+    <string name="cockpit_pre_supply">voeding onder 20\u00A0V</string>
+    <string name="cockpit_pre_button">aan/herstart-knop</string>
+    <string name="cockpit_pre_jump">accusprong</string>
+
+    <!-- Event log -->
+    <string name="cockpit_log_battery_jump">Accu springt zonder lader van %1$d%% naar %2$d%%</string>
+    <string name="cockpit_detail_data_age">gegevens %1$.1f\u00A0s oud</string>
+    <string name="cockpit_detail_via_key">via volumetoets</string>
+
+    <!-- Takeover evidence, read at the stop, connection facts -->
+    <string name="cockpit_to_faults_none">geen storingen</string>
+    <string name="cockpit_to_faults">storingen %s</string>
+    <string name="cockpit_to_ack_marks">Zet ook markering\u00A0%d</string>
+    <string name="cockpit_to_read_at_stop">Bij de volgende stop uitlezen</string>
+    <string name="cockpit_to_read_at_stop_hint">Tijdens het uitlezen toont de cockpit geen snelheid.</string>
+    <string name="cockpit_to_counting_spoken">Motor en licht schakelen over enkele seconden uit.</string>
+    <string name="cockpit_fact_connected">Verbonden sinds</string>
+    <string name="cockpit_fact_connected_value">%s</string>
+    <string name="cockpit_ev_age">%1$.1f\u00A0s</string>
+    <string name="cockpit_ev_coil">Spoel ontbrak %1$s eerder (42)</string>
+    <string name="cockpit_ev_key">Accudetectie ontbrak %1$s eerder (18)</string>
+    <string name="cockpit_ev_bms">Accu-BMS meldde %1$s eerder een storing (8)</string>
+    <string name="cockpit_ev_fault">Storing\u00A0%1$d %2$s eerder</string>
+    <string name="cockpit_ev_lock">Slot meldde %1$s eerder vergrendeld</string>
+    <string name="cockpit_ev_supply">Voeding %1$s eerder onder 20\u00A0V</string>
+    <string name="cockpit_ev_button">Aan/herstart-knop %1$s eerder ingedrukt</string>
+    <string name="cockpit_ev_jump">Accusprong %1$s eerder</string>
+    <string name="cockpit_ev_sentence">%s.</string>
+</resources>

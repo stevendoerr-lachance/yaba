@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cronotachigrafo (ui/screens/LogInsightsScreen.kt). -->
+<resources>
+    <string name="loginsights_title">Cronotachigrafo</string>
+    <string name="loginsights_close">Chiudi</string>
+    <string name="loginsights_intro">Finché è sveglia, la bici scrive ogni 30\u00A0secondi una riga di misura nel suo registro. YABA ne ricava grafici per ogni tragitto, anche per i tragitti fatti senza telefono.</string>
+    <string name="loginsights_loading">Lettura del registro salvato …</string>
+    <string name="loginsights_more">Mostra altri</string>
+    <string name="loginsights_yes">sì</string>
+    <string name="loginsights_no">no</string>
+
+    <string name="loginsights_fmt_time">HH:mm</string>
+    <string name="loginsights_fmt_time_seconds">HH:mm:ss</string>
+    <string name="loginsights_fmt_ride">EEE d MMM, HH:mm</string>
+    <string name="loginsights_fmt_day">EEEE d MMMM yyyy</string>
+    <string name="loginsights_fmt_day_short">EEE d/M</string>
+    <string name="loginsights_fmt_date">dd/MM/yyyy</string>
+    <string name="loginsights_at_time">%s</string>
+    <string name="loginsights_unit_kmh">%s\u00A0km/h</string>
+    <string name="loginsights_unit_km">%s\u00A0km</string>
+    <string name="loginsights_unit_pct">%s%%</string>
+    <string name="loginsights_unit_amp">%s\u00A0A</string>
+    <string name="loginsights_unit_celsius">%s\u00A0°C</string>
+    <string name="loginsights_unit_min">%d\u00A0min</string>
+    <string name="loginsights_unit_h_min">%1$d\u00A0h %2$d\u00A0min</string>
+
+    <string name="loginsights_entry_intro">Il cronotachigrafo mostra tragitti, limitazione di corrente, cambio e risvegli ricavati dal registro della bici.</string>
+    <string name="loginsights_entry_empty">Su questo telefono non è ancora salvato alcun registro. Leggi una volta il registro della bici e qui compariranno i tragitti.</string>
+    <string name="loginsights_entry_no_rides">Il registro salvato non contiene ancora alcun tragitto.</string>
+    <string name="loginsights_entry_open">Apri il cronotachigrafo</string>
+    <plurals name="loginsights_entry_summary">
+        <item quantity="one">%1$d tragitto per %2$s, l’ultimo %3$s</item>
+        <item quantity="many">%1$d tragitti per %2$s in tutto, l’ultimo %3$s</item>
+        <item quantity="other">%1$d tragitti per %2$s in tutto, l’ultimo %3$s</item>
+    </plurals>
+
+    <string name="loginsights_archive_title">Registro salvato</string>
+    <plurals name="loginsights_archive_lines_unit">
+        <item quantity="one">riga</item>
+        <item quantity="many">righe</item>
+        <item quantity="other">righe</item>
+    </plurals>
+    <plurals name="loginsights_archive_downloads">
+        <item quantity="one">Unito da %d lettura</item>
+        <item quantity="many">Unito da %d letture</item>
+        <item quantity="other">Unito da %d letture</item>
+    </plurals>
+    <string name="loginsights_archive_span">Dal %1$s al %2$s, secondo l’orologio della bici</string>
+    <string name="loginsights_archive_empty">Su questo telefono non è ancora salvata alcuna riga di misura.</string>
+    <string name="loginsights_archive_hint">Ogni lettura resta sul telefono. YABA le unisce, così restano anche i tragitti che la bici ha già sovrascritto nella sua memoria da 128\u00A0KB.</string>
+    <string name="loginsights_archive_read">Leggi il registro ora</string>
+    <string name="loginsights_archive_read_again">Leggi di nuovo</string>
+    <string name="loginsights_archive_reading">Lettura del registro …</string>
+    <string name="loginsights_archive_reading_percent">Lettura del registro, %d%%</string>
+    <string name="loginsights_archive_offline">Per la lettura la bici deve essere connessa.</string>
+    <string name="loginsights_archive_failed">Il registro non è arrivato. Resta vicino alla bici e leggilo di nuovo.</string>
+    <string name="loginsights_archive_partial">L’ultima lettura si è fermata prima della fine del registro. Ciò che è arrivato è salvato.</string>
+
+    <string name="loginsights_rides_title">Tragitti</string>
+    <plurals name="loginsights_rides_count">
+        <item quantity="one">%d tragitto</item>
+        <item quantity="many">%d tragitti</item>
+        <item quantity="other">%d tragitti</item>
+    </plurals>
+    <string name="loginsights_rides_none">Il registro salvato non contiene alcun tragitto. Un tragitto conta quando la ruota gira in almeno due righe di misura.</string>
+    <string name="loginsights_rides_all">Tutti i tragitti</string>
+    <string name="loginsights_rides_more">Mostra altri tragitti</string>
+    <string name="loginsights_ride_row">%1$s in %2$s, fino a %3$s</string>
+    <string name="loginsights_ride_sampling">La bici misura ogni 30\u00A0secondi. I picchi intermedi mancano, quindi la misura più alta di solito resta sotto il vero massimo.</string>
+    <string name="loginsights_fact_distance">Distanza</string>
+    <string name="loginsights_fact_duration">Durata</string>
+    <string name="loginsights_fact_avg">Media</string>
+    <string name="loginsights_fact_max">Misura più alta</string>
+    <string name="loginsights_fact_battery">Batteria consumata</string>
+    <string name="loginsights_fact_motor_temp">Motore al massimo</string>
+    <string name="loginsights_fact_boost">Con Boost</string>
+
+    <string name="loginsights_chart_scrub_hint">Trascina il dito su un grafico e sotto ogni grafico compaiono i valori in quel momento.</string>
+    <string name="loginsights_chart_speed">Velocità in km/h</string>
+    <string name="loginsights_chart_battery">Batteria in percentuale</string>
+    <string name="loginsights_chart_current">Corrente del motore in ampere</string>
+    <string name="loginsights_chart_temps">Temperature in °C</string>
+    <string name="loginsights_chart_battery_note" formatted="false">Sotto la linea del 22% il firmware concede meno corrente al motore. La batteria del modulo è la piccola cella nel modulo elettronico, non la batteria di marcia.</string>
+    <string name="loginsights_chart_current_no_limit">Per questo tragitto il registro salvato non contiene alcun limite di corrente. La bici lo scrive solo quando cambia.</string>
+    <string name="loginsights_chart_cd">%1$s, dalle %2$s alle %3$s. Valore minimo %4$s, valore massimo %5$s.</string>
+    <string name="loginsights_series_speed">Velocità</string>
+    <string name="loginsights_series_main_battery">Batteria principale</string>
+    <string name="loginsights_series_module_battery">Batteria del modulo</string>
+    <string name="loginsights_series_motor_current">Corrente del motore</string>
+    <string name="loginsights_series_limit">Limite del firmware</string>
+    <string name="loginsights_series_temp_battery">Batteria</string>
+    <string name="loginsights_series_temp_motor">Motore</string>
+    <string name="loginsights_series_temp_driver">Controller</string>
+    <string name="loginsights_series_shift_retry">Nuovo tentativo di cambio</string>
+    <string name="loginsights_readout">%1$s: %2$s</string>
+    <string name="loginsights_readout_two">%1$s: %2$s %3$s, %4$s %5$s</string>
+    <string name="loginsights_readout_three">%1$s: %2$s %3$s, %4$s %5$s, %6$s %7$s</string>
+    <string name="loginsights_rows_show">Mostra le righe di misura</string>
+    <string name="loginsights_rows_hide">Nascondi le righe di misura</string>
+    <string name="loginsights_col_time">Ora</string>
+    <string name="loginsights_col_speed">km/h</string>
+    <string name="loginsights_col_soc">Batteria</string>
+    <string name="loginsights_col_current">Corrente</string>
+    <string name="loginsights_col_battemp">Batt. °C</string>
+    <string name="loginsights_col_motortemp">Motore °C</string>
+
+    <string name="loginsights_derate_title">Limitazione di corrente</string>
+    <string name="loginsights_derate_intro">Quanta corrente può assorbire il motore lo stabilisce il firmware in base a carica e temperatura della batteria. La bici non trasmette questo valore via Bluetooth, ma il registro ne annota ogni cambiamento.</string>
+    <string name="loginsights_derate_of_max">su un massimo di %s</string>
+    <string name="loginsights_derate_full">Con il %1$s di batteria e %2$s il motore può assorbire tutti i %3$s.</string>
+    <string name="loginsights_derate_empty">Con il %1$s di batteria il firmware non concede più corrente e il motore non assiste.</string>
+    <string name="loginsights_derate_battery">Con il %1$s di batteria il firmware concede solo %2$s invece di %3$s.</string>
+    <string name="loginsights_derate_next_soc">Dal %1$s di batteria sono %2$s.</string>
+    <string name="loginsights_derate_cold">Con una temperatura della batteria di %1$s il firmware concede solo %2$s invece di %3$s.</string>
+    <string name="loginsights_derate_next_warmer">Sopra %1$s sono %2$s.</string>
+    <string name="loginsights_derate_heat">Con una temperatura della batteria di %1$s il firmware concede solo %2$s invece di %3$s.</string>
+    <string name="loginsights_derate_next_cooler">Fino a %1$s sono di nuovo %2$s.</string>
+    <string name="loginsights_derate_both">Con il %1$s di batteria e una temperatura della batteria di %2$s il firmware concede solo %3$s invece di %4$s. Limitano entrambe.</string>
+    <string name="loginsights_derate_unknown">Per una stima mancano la carica o la temperatura della batteria. Leggi il registro e YABA userà la temperatura dell’ultima riga di misura.</string>
+    <string name="loginsights_derate_basis_live">Carica letta direttamente dalla bici, temperatura della batteria dalla riga di misura delle %s. La temperatura entra nel registro solo ogni 30\u00A0secondi, quindi il valore è approssimativo.</string>
+    <string name="loginsights_derate_basis_log">Carica e temperatura della batteria dalla riga di misura delle %s. Con la bici connessa YABA usa la carica attuale.</string>
+    <string name="loginsights_derate_grid_title">Limite di corrente per carica e temperatura</string>
+    <string name="loginsights_derate_grid_cd">Tabella dei limiti di corrente: righe per temperatura della batteria, colonne per carica.</string>
+    <string name="loginsights_derate_now">stato attuale</string>
+    <string name="loginsights_derate_grid_note">La tabella proviene dal firmware\u00A01.07.06 ed è stata verificata riga per riga. Sull’1.9.3 è probabilmente uguale.</string>
+    <string name="loginsights_derate_log_title">Cambiamenti nel registro</string>
+    <string name="loginsights_derate_log_row">%1$s con il %2$s di batteria</string>
+    <string name="loginsights_derate_log_row_nosoc">%1$s, carica sconosciuta</string>
+    <string name="loginsights_derate_log_none">Il registro salvato non contiene alcun cambiamento del limite di corrente.</string>
+
+    <string name="loginsights_shift_title">Cambio</string>
+    <string name="loginsights_shift_intro">Il registro annota ogni nuovo tentativo di cambio, ogni errore di posizione, lo spegnimento del cambio e la sua calibrazione del punto zero.</string>
+    <string name="loginsights_shift_summary_ok">In %s di guida il cambio ha funzionato senza nuovi tentativi e senza errori di posizione.</string>
+    <plurals name="loginsights_shift_summary_retries">
+        <item quantity="one">In %1$s di guida il cambio ha dovuto ritentare %2$d volta.</item>
+        <item quantity="many">In %1$s di guida il cambio ha dovuto ritentare %2$d volte.</item>
+        <item quantity="other">In %1$s di guida il cambio ha dovuto ritentare %2$d volte.</item>
+    </plurals>
+    <plurals name="loginsights_shift_summary_position">
+        <item quantity="one">Il cambio non ha trovato la sua posizione %d volta. Fai controllare il cambio, per favore.</item>
+        <item quantity="many">Il cambio non ha trovato la sua posizione %d volte. Fai controllare il cambio, per favore.</item>
+        <item quantity="other">Il cambio non ha trovato la sua posizione %d volte. Fai controllare il cambio, per favore.</item>
+    </plurals>
+    <string name="loginsights_shift_retries">Nuovi tentativi</string>
+    <string name="loginsights_shift_retries_hint">Un rapporto non è entrato al primo tentativo.</string>
+    <string name="loginsights_shift_per_hour">%s per ora di guida</string>
+    <string name="loginsights_shift_position">Errori di posizione</string>
+    <string name="loginsights_shift_position_hint">Il cambio non ha trovato la sua posizione.</string>
+    <string name="loginsights_shift_off">Cambio spento</string>
+    <string name="loginsights_shift_off_hint">Di solito il normale spegnimento dopo una pausa.</string>
+    <string name="loginsights_shift_zero">Calibrazioni del punto zero</string>
+    <string name="loginsights_shift_zero_hint">Il cambio cerca il suo punto zero, di solito dopo l’accensione.</string>
+    <string name="loginsights_shift_by_gear">Nuovi tentativi per rapporto</string>
+    <string name="loginsights_shift_gear">Rapporto\u00A0%d</string>
+    <string name="loginsights_shift_by_gear_cd">Nuovi tentativi per rapporto. Rapporto\u00A01: %1$d, rapporto\u00A02: %2$d, rapporto\u00A03: %3$d, rapporto\u00A04: %4$d.</string>
+    <string name="loginsights_shift_events">Voci</string>
+    <string name="loginsights_shift_event_retry">Rapporto\u00A0%1$s, risposta %2$s, nuovo tentativo</string>
+    <string name="loginsights_shift_event_position">Errore di posizione</string>
+    <string name="loginsights_shift_event_off">Cambio spento</string>
+    <string name="loginsights_shift_event_zero">Punto zero calibrato</string>
+    <string name="loginsights_shift_event_speed">a %s</string>
+    <string name="loginsights_shift_event_parked">da fermo</string>
+    <string name="loginsights_shift_none">Il registro salvato non contiene alcuna voce del cambio.</string>
+    <string name="loginsights_shift_caveat">I messaggi provengono dal firmware\u00A01.07.06. Il tuo cambio Revotronics potrebbe rispondere in modo diverso, quindi verifica le righe su un registro della tua bici.</string>
+
+    <string name="loginsights_wake_title">Registro dei risvegli</string>
+    <string name="loginsights_wake_intro">Il registro annota perché la bici si è svegliata. Uno scossone senza un tragitto successivo di solito significa che qualcuno ha spostato la bici.</string>
+    <string name="loginsights_wake_clock_skew">L’orologio della bici si discosta di %s dall’ora del telefono. Regola l’orologio della bici e gli orari saranno corretti.</string>
+    <string name="loginsights_wake_legend_ride">Tragitto</string>
+    <string name="loginsights_wake_legend_wake">Risveglio</string>
+    <string name="loginsights_wake_legend_moved">Scossone senza tragitto</string>
+    <string name="loginsights_wake_day_cd">%1$s. Tragitti: %2$d. Risvegli: %3$d. Di cui spostata senza tragitto: %4$d.</string>
+    <string name="loginsights_wake_none">Nessun motivo indicato</string>
+    <string name="loginsights_wake_rtc">Timer della bici</string>
+    <string name="loginsights_wake_button1">Pulsante\u00A01</string>
+    <string name="loginsights_wake_button2">Pulsante\u00A02</string>
+    <string name="loginsights_wake_ble">Bluetooth</string>
+    <string name="loginsights_wake_mems">Scossone</string>
+    <string name="loginsights_wake_charger">Caricabatterie</string>
+    <string name="loginsights_wake_wheel">Ruota che gira</string>
+    <string name="loginsights_wake_key">Contatto della batteria</string>
+    <string name="loginsights_wake_kicklock">Kick Lock</string>
+    <string name="loginsights_wake_cold">Avvio a freddo, registro cancellato</string>
+    <string name="loginsights_wake_counter_only">Risveglio</string>
+    <string name="loginsights_wake_other">Altro motivo</string>
+    <string name="loginsights_wake_moved">%s senza tragitto</string>
+    <string name="loginsights_wake_ride_after">poi tragitto di %s</string>
+    <string name="loginsights_wake_counter">contatore risvegli %1$d su %2$d</string>
+    <string name="loginsights_wake_deepsleep">Bluetooth in sonno profondo</string>
+    <string name="loginsights_wake_deepsleep_detail">%1$s di batteria, %2$s risvegli</string>
+    <string name="loginsights_wake_deepsleep_hint" formatted="false">Sotto il 19% di batteria e dopo più di 167 risvegli, il firmware manda il Bluetooth in un sonno più profondo.</string>
+    <string name="loginsights_wake_none_found">Il registro salvato non contiene alcuna riga di risveglio.</string>
+    <string name="loginsights_wake_more">Mostra altri giorni</string>
+    <string name="loginsights_wake_caveat">Una riga di risveglio arriva in memoria solo se la bici resta sveglia per circa un minuto dopo. Gli orari seguono l’orologio della bici.</string>
+
+    <string name="loginsights_seek_title">Leggi solo le righe nuove</string>
+    <string name="loginsights_seek_intro">Sposta il puntatore di lettura della bici dopo la riga salvata più recente. Poi YABA legge solo le righe nuove, ed è più veloce.</string>
+    <string name="loginsights_seek_warning">Non si può annullare. Le righe più vecchie la bici non le consegna più ad alcuna app né ad alcuna officina; restano solo su questo telefono.</string>
+    <string name="loginsights_seek_check_link">Bici connessa</string>
+    <string name="loginsights_seek_check_complete">Registro letto fino alla fine</string>
+    <string name="loginsights_seek_check_complete_hint">Leggi il registro per intero, qui o in Diagnostica.</string>
+    <string name="loginsights_seek_check_saved">Lettura salvata sul telefono</string>
+    <string name="loginsights_seek_check_saved_hint">Il file dell’ultima lettura si trova nella memoria di YABA e corrisponde carattere per carattere.</string>
+    <string name="loginsights_seek_check_fresh">Età della lettura</string>
+    <string name="loginsights_seek_check_fresh_hint">Al massimo %d\u00A0minuti e dalla connessione in corso, così nessuna riga nuova viene saltata.</string>
+    <string name="loginsights_seek_check_newest">Riga salvata più recente</string>
+    <string name="loginsights_seek_check_newest_hint">Il puntatore va fin poco prima di quest’ora dell’orologio della bici, mai secondo l’ora del telefono.</string>
+    <string name="loginsights_seek_check_clock_hint">L’orologio della bici non è regolato. Regolalo prima, altrimenti la riga più recente non è univoca.</string>
+    <string name="loginsights_seek_button">Sposta il puntatore alle %s</string>
+    <string name="loginsights_seek_button_plain">Sposta il puntatore</string>
+    <string name="loginsights_seek_busy">Spostamento del puntatore …</string>
+    <string name="loginsights_seek_blocked">Possibile solo quando tutti i punti qui sopra sono soddisfatti.</string>
+    <string name="loginsights_seek_confirm_title">Spostare il puntatore di lettura</string>
+    <string name="loginsights_seek_confirm_text">La bici consegnerà poi solo le righe dalle %1$s del %2$s in poi. Le %3$s righe precedenti resteranno solo su questo telefono.</string>
+    <string name="loginsights_seek_confirm">Sposta</string>
+    <string name="loginsights_seek_cancel">Annulla</string>
+    <string name="loginsights_seek_done">Il puntatore si trova prima delle %s. La prossima lettura restituisce solo righe nuove.</string>
+    <string name="loginsights_archive_read_where">Le nuove righe si aggiungono appena leggi il registro in Diagnostica, sotto “Registro della bici”.</string>
+</resources>

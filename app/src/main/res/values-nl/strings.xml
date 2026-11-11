@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ride_channel_name">YABA-ritregistratie</string>
+    <string name="ride_channel_description">Houdt de verbinding met de fiets in stand, zolang de ritregistratie loopt.</string>
+</resources>

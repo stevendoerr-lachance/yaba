@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intro_skip">Preskoči</string>
+    <string name="intro_description">Uvod: čizma triput gazi bicikl dok na njegovu zaslonu treperi pogreška 42. Bicikl se raspadne, a zatim se ponovno uspravi i zasvijetli.</string>
+    <string name="intro_slogan_1">Vozi dalje.</string>
+    <string name="intro_slogan_2">Što god bilo.</string>
+    <string name="intro_replay">Ponovno pusti uvod</string>
+</resources>

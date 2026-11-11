@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Logweergave: één ritregistratie (CSV) en het logboek van de fiets (tekst), ui/screens/RideLogViewer.kt. -->
+<resources>
+    <string name="logview_open">Bekijken</string>
+    <string name="logview_close">Sluiten</string>
+    <string name="logview_share">Delen</string>
+    <string name="logview_loading">Leest het bestand …</string>
+    <string name="logview_read_failed">Het bestand kon niet worden gelezen. Mogelijk is het verwijderd.</string>
+    <string name="logview_share_failed">Het bestand kon niet worden geschreven. Mogelijk is de opslag vol.</string>
+
+    <string name="logview_fmt_time">HH:mm:ss</string>
+    <string name="logview_fmt_time_short">HH:mm</string>
+    <string name="logview_fmt_date_time">EEEE d MMMM yyyy, HH:mm</string>
+    <string name="logview_fmt_date">d MMM yyyy, HH:mm</string>
+    <string name="logview_at_time">%s</string>
+    <string name="logview_unit_kmh">%s km/u</string>
+    <string name="logview_unit_km">%s km</string>
+    <string name="logview_unit_min_sec">%1$d\u00A0min %2$d\u00A0s</string>
+    <string name="logview_unit_h_min">%1$d\u00A0u %2$d\u00A0min</string>
+    <string name="logview_unit_pct">%s%%</string>
+
+    <string name="logview_ride_share_title">Ritregistratie delen</string>
+    <string name="logview_ride_live">Dit bestand wordt op dit moment geschreven. YABA leest het elke %1$d seconden opnieuw.</string>
+    <string name="logview_ride_partial">De laatste regel is tijdens het schrijven afgebroken en ontbreekt in de weergave.</string>
+    <plurals name="logview_ride_skipped">
+        <item quantity="one">%d regel hoort niet bij een ritregistratie en ontbreekt in de weergave.</item>
+        <item quantity="other">%d regels horen niet bij een ritregistratie en ontbreken in de weergave.</item>
+    </plurals>
+    <string name="logview_ride_folded">Deze registratie is erg lang. Elk punt van de curves combineert %1$d metingen; topsnelheid, afstand en signalen tellen nog steeds elke meting.</string>
+    <string name="logview_ride_empty">Deze registratie bevat nog geen metingen.</string>
+
+    <string name="logview_tube_fault">Storing %1$d</string>
+    <string name="logview_tube_fault_note">Als laatste op de bovenbuis, %1$s.</string>
+    <string name="logview_tube_top_note">De topsnelheid van deze rit.</string>
+    <string name="logview_tube_none_note">In deze registratie heeft de fiets geen snelheid gemeld.</string>
+    <string name="logview_fact_start">Begin</string>
+    <string name="logview_fact_duration">Duur</string>
+    <string name="logview_fact_distance">Afstand</string>
+    <string name="logview_fact_top">Topsnelheid</string>
+    <string name="logview_fact_avg">Gemiddeld rijdend</string>
+    <string name="logview_fact_battery_start">Accu bij begin</string>
+    <string name="logview_fact_battery_end">Accu aan het eind</string>
+    <string name="logview_fact_events">Gebeurtenissen</string>
+    <string name="logview_fact_marks">Markeringen</string>
+    <string name="logview_distance_note">YABA berekent afstand en gemiddelde uit de snelheid die het elke 2 seconden las; het gemiddelde telt alleen de tijd waarin de fiets reed.</string>
+
+    <string name="logview_chart_title">Verloop</string>
+    <string name="logview_chart_hint">Tik op het verloop of een gebeurtenis.</string>
+    <string name="logview_lane_battery">Accu</string>
+    <string name="logview_lane_supply">20 V</string>
+    <string name="logview_lane_shipping">Transport</string>
+    <string name="logview_legend_speed">Snelheid in km/u</string>
+    <string name="logview_legend_battery">Accu in %</string>
+    <string name="logview_legend_supply">Voeding 20 V of meer</string>
+    <string name="logview_legend_mark">Markering</string>
+    <string name="logview_chart_cd">Verloop van %1$s tot %2$s. Topsnelheid %3$s, accu van %4$s naar %5$s. %6$s</string>
+    <string name="logview_readout_at">%1$s: %2$s</string>
+    <string name="logview_readout_lock">Kick Lock %1$s</string>
+    <string name="logview_readout_supply">voeding %1$s</string>
+    <string name="logview_readout_battery">accu %1$s</string>
+    <string name="logview_readout_offline">%1$s: fiets niet verbonden</string>
+    <string name="logview_supply_ok">20 V of meer</string>
+    <string name="logview_supply_low">onder 20 V</string>
+    <string name="logview_lock_locked">vergrendeld</string>
+    <string name="logview_lock_unlocked">ontgrendeld</string>
+    <string name="logview_lock_pin">pincode-invoer</string>
+    <string name="logview_action_next_event">Volgende gebeurtenis</string>
+    <string name="logview_action_prev_event">Vorige gebeurtenis</string>
+
+    <string name="logview_signals_title">Signalen van de transportregel</string>
+    <string name="logview_signals_intro">Volgens de firmware-analyse schakelt de fiets naar de transportmodus als de Kick Lock-spoel, de Kick Lock-schakelaar en de accudetectie op hetzelfde moment wegvallen. Tik op een regel om het eerste moment in het verloop te zien.</string>
+    <string name="logview_signal_locked">Kick Lock meldt vergrendeld</string>
+    <string name="logview_signal_fault">Storing %1$d: %2$s</string>
+    <string name="logview_signal_shipping">Transportmodus gemeld</string>
+    <string name="logview_signal_supply">Voeding onder 20 V</string>
+    <string name="logview_short_locked">Kick Lock vergrendeld</string>
+    <string name="logview_short_shipping">Transportmodus</string>
+    <string name="logview_signal_not_seen">niet gezien</string>
+    <plurals name="logview_signal_seen">
+        <item quantity="one">één keer, %2$s</item>
+        <item quantity="other">%1$s keer, eerst %2$s</item>
+    </plurals>
+    <plurals name="logview_signal_riding">
+        <item quantity="one">waarvan één keer tijdens het rijden, %2$s</item>
+        <item quantity="other">waarvan %1$s keer tijdens het rijden, eerst %2$s</item>
+    </plurals>
+    <string name="logview_signals_none">YABA heeft in deze registratie geen van deze signalen gezien.</string>
+    <string name="logview_signals_seen_cd">Signalen van de transportregel: %1$s.</string>
+
+    <string name="logview_events_title">Gebeurtenissen</string>
+    <string name="logview_events_all">Alle</string>
+    <string name="logview_events_incidents">Incidenten</string>
+    <plurals name="logview_events_incidents_count">
+        <item quantity="one">%1$s incident</item>
+        <item quantity="other">%1$s incidenten</item>
+    </plurals>
+    <string name="logview_events_empty">Deze registratie bevat geen gebeurtenissen.</string>
+    <string name="logview_events_no_incidents">Geen incidenten in deze registratie.</string>
+    <string name="logview_event_show">In het verloop tonen</string>
+    <string name="logview_event_chosen">Gekozen in het verloop</string>
+
+    <string name="logview_bike_title">Logboek van de fiets</string>
+    <string name="logview_bike_read_at">Uitgelezen op %1$s</string>
+    <plurals name="logview_bike_lines">
+        <item quantity="one">%1$s regel</item>
+        <item quantity="other">%1$s regels</item>
+    </plurals>
+    <string name="logview_bike_tail">Het bestand is erg groot. De weergave toont de nieuwste %1$s regels.</string>
+    <string name="logview_bike_empty">Het logboek is leeg.</string>
+    <string name="logview_search">Zoeken</string>
+    <string name="logview_search_count">%1$d van %2$d</string>
+    <string name="logview_search_none">Geen resultaat</string>
+    <string name="logview_search_prev">Vorige treffer</string>
+    <string name="logview_search_next">Volgende treffer</string>
+    <string name="logview_jump_newest">Naar de nieuwste regel</string>
+    <string name="logview_bike_share_title">Logboek van de fiets delen</string>
+    <string name="logview_bike_share_subject">S3-logboek %1$s</string>
+    <string name="logview_bike_saved">De laatste uitlezing van %1$s staat op deze telefoon.</string>
+
+    <!-- Days, zoom, link, accessibility -->
+    <string name="logview_fmt_day_time">EE d MMM, HH:mm</string>
+    <string name="logview_fmt_day_time_sec">EE d MMM, HH:mm:ss</string>
+    <string name="logview_fmt_day">EE d MMM</string>
+    <string name="logview_fmt_day_header">EEEE d MMMM yyyy</string>
+    <string name="logview_at_moment">om %1$s</string>
+    <string name="logview_at_day_moment">op %1$s om %2$s</string>
+    <string name="logview_unit_sec">%1$d\u00A0s</string>
+    <string name="logview_ride_incidents_kept">Alle incidenten en markeringen staan erin.</string>
+    <string name="logview_tube_fault_note_shipping">Op de bovenbuis toen de fiets %1$s de transportmodus meldde.</string>
+    <string name="logview_never_connected">De fiets was tijdens deze registratie niet verbonden.</string>
+    <string name="logview_never_connected_note">Snelheid, accu en signalen zijn daarom onbekend.</string>
+    <string name="logview_legend_link_down">Geen verbinding</string>
+    <string name="logview_zoom_in">Inzoomen</string>
+    <string name="logview_zoom_out">Uitzoomen</string>
+    <string name="logview_zoom_all">Hele registratie</string>
+    <string name="logview_zoom_window">Uitsnede: %1$s</string>
+    <string name="logview_signal_fault_8">Storing 8: accu schakelt zijn uitgang uit</string>
+    <string name="logview_signal_unknown">onbekend</string>
+    <string name="logview_signal_parked_only">alleen bij stilstand vergrendeld</string>
+    <string name="logview_signals_none_riding">Behalve de Kick Lock bij stilstand heeft YABA geen van deze signalen gezien.</string>
+    <string name="logview_event_incident">Incident</string>
+    <string name="logview_open_ride_cd">Ritregistratie van %1$s bekijken</string>
+    <string name="logview_open_bike_cd">Logboek van de fiets bekijken</string>
+    <string name="logview_search_count_cd">Resultaat %1$d van %2$d, regel %3$d: %4$s</string>
+    <string name="logview_line_cd">Regel %1$d: %2$s</string>
+    <string name="logview_wrap_title">Lange regels</string>
+    <string name="logview_wrap_on">Afbreken</string>
+    <string name="logview_wrap_off">Op één regel</string>
+    <plurals name="logview_ride_events_cut">
+        <item quantity="one">De lijst toont %1$s van %2$s gebeurtenissen; %3$s oudere ontbreekt.</item>
+        <item quantity="other">De lijst toont %1$s van %2$s gebeurtenissen; %3$s oudere ontbreken.</item>
+    </plurals>
+    <plurals name="logview_ride_marks_cut">
+        <item quantity="one">Ook %1$s oudere markering ontbreekt.</item>
+        <item quantity="other">Ook %1$s oudere markeringen ontbreken.</item>
+    </plurals>
+    <string name="logview_fmt_heading">EE d MMM, HH:mm</string>
+    <string name="logview_delete">Verwijderen</string>
+    <string name="logview_verdict_lock">Kick Lock %1$d× vergrendeld tijdens het rijden</string>
+    <string name="logview_verdict_lock_none">Kick Lock nooit vergrendeld tijdens het rijden</string>
+    <string name="logview_verdict_coil">spoel %1$d× niet gedetecteerd</string>
+    <string name="logview_verdict_coil_none">spoel altijd gedetecteerd</string>
+    <string name="logview_verdict_battery">accudetectie %1$d× weggevallen</string>
+    <string name="logview_verdict_battery_none">accudetectie nooit weggevallen</string>
+    <string name="logview_verdict_short_lock">Slot %1$d× tijdens het rijden</string>
+    <string name="logview_verdict_short_coil">Spoel %1$d×</string>
+    <string name="logview_verdict_short_battery">Accu %1$d×</string>
+    <string name="logview_fact_battery">Accu</string>
+    <string name="logview_fact_battery_value">%1$d naar %2$d%%</string>
+    <string name="logview_lane_lock">Slot</string>
+    <string name="logview_lane_f42">S42</string>
+    <string name="logview_lane_f18">S18</string>
+    <string name="logview_lane_f8">S8</string>
+    <string name="logview_lane_link">Radio</string>
+    <string name="logview_lane_signals">Signalen</string>
+    <string name="logview_legend_rule">Signaal van de transportregel</string>
+    <string name="logview_zoom_whole">Hele rit</string>
+    <string name="logview_action_expand">Alle sporen tonen</string>
+    <string name="logview_signals_unseen">Niet gezien: %1$s</string>
+    <string name="logview_events_no_marks">Geen markeringen in deze registratie.</string>
+    <plurals name="logview_events_marks_count">
+        <item quantity="one">%1$s markering</item>
+        <item quantity="other">%1$s markeringen</item>
+    </plurals>
+</resources>

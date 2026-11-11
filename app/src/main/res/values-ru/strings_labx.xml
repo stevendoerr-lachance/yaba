@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="labx_cmd_boost_rolling_on">Boost на ходу включён</string>
+    <string name="labx_cmd_boost_rolling_off">Boost на ходу выключен</string>
+
+    <string name="labx_error_level_unknown">Уровень поддержки ещё не считан. Подожди немного и нажми снова.</string>
+    <string name="labx_error_clock_readback">Обратное чтение часов неправдоподобно. Часы, возможно, были установлены; проверь ещё раз.</string>
+    <string name="labx_error_clock_jump">Только без нажатой кнопки: если часы прыгают больше чем на 20\u00A0секунд, пока удерживается «Звонок» или Boost, велосипед считает кнопку залипшей.</string>
+    <string name="labx_error_boost_rolling">Проверяй на месте: при «включено» уровень может случайно смениться, как только велосипед тронется.</string>
+    <string name="labx_error_assist_cut">Только на месте и пока велосипед не катится; это отключает помощь мотора.</string>
+    <string name="labx_error_not_confirmed">Не подтверждено. Значение записано, но обратное чтение его не подтверждает; сохранённое значение не изменилось.</string>
+    <string name="labx_error_lamp_read">Каналы ламп не читаются; ничего не изменено.</string>
+    <string name="labx_error_lamp_restore">Лампы записаны обратно, но обратное чтение отличается. Настоящая смена состояния (режим, блокировка, перезапуск) вернёт их.</string>
+
+    <string name="labx_board_temp_waiting">ожидает изменения</string>
+    <string name="labx_not_read">не считано</string>
+    <string name="labx_threshold_factory">Заводское значение 200</string>
+
+    <string name="labx_alarm_stop_note">Останавливает идущую тревогу без резервного кода. Команда также снимает программную блокировку; если велосипед был заблокирован, YABA затем предлагает «Заблокировать снова».</string>
+    <string name="labx_relock_button">Заблокировать снова</string>
+    <string name="labx_relock_hint">Остановка тревоги сняла программную блокировку. Без включённого Kick Lock велосипед считается разблокированным.</string>
+
+    <string name="labx_siren_note">«Сигнализация выключена» завершает любой уровень и снимает программную блокировку. При необходимости заблокируй велосипед снова.</string>
+    <string name="labx_siren_stage2">Слежение за движением. Велосипед срабатывает лишь на толчок и усиливается после нескольких ударов.</string>
+    <string name="labx_siren_stage3">Около 30\u00A0секунд сирены, затем режим отслеживания. Тогда 2G-модем выходит на связь примерно каждые 30\u00A0минут вместо каждых 2\u00A0часов и расходует заряд батареи.</string>
+    <string name="labx_siren_stage4">Сразу в режим отслеживания с установленной программной блокировкой, без сирены.</string>
+
+    <string name="labx_selftest_dialog_text">YABA сначала загружает журнал велосипеда и сохраняет его на телефоне; затем выполняется диагностика, после чего велосипед уходит в режим ожидания. Отчёт вытесняет самые старые строки журнала, поэтому он сохраняется заранее.</string>
+
+
+    <!-- lamp channel accessibility -->
+    <string name="labx_lamp_channel">Канал\u00A0%1$d</string>
+    <string name="labx_lamp_state_on">вкл</string>
+    <string name="labx_lamp_state_off">выкл</string>
+
+    <!-- Fahrtenschreiber: firmware tokens as a secondary line -->
+    <string name="labx_firmware_text">Текст прошивки: %1$s</string>
+    <string name="labx_derate_bat_temp">Температура батареи %1$s</string>
+
+    <!-- Sound-Lab: factory clip cannot be recovered -->
+    <string name="labx_clip_factory_warning">Заводской звук нельзя считать обратно с велосипеда. После замены он потерян навсегда; YABA не может его восстановить. Сохрани копию сам, если хочешь вернуть.</string>
+</resources>

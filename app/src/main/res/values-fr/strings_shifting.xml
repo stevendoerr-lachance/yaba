@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vitesses sur l'écran de conduite : mode de passage (5538) et points de passage (5537). -->
+<resources>
+    <string name="shift_section">Vitesses</string>
+    <string name="shift_mode_auto">Automatique</string>
+    <string name="shift_mode_manual">Manuel</string>
+    <string name="shift_gear">Rapport</string>
+    <string name="shift_gear_cd">Rapport\u00A0%1$d</string>
+    <string name="shift_gear_unknown_cd">Rapport inconnu</string>
+
+    <!-- Profils -->
+    <string name="shift_profile_standard">Standard</string>
+    <string name="shift_profile_flat">Plat</string>
+    <string name="shift_profile_hilly">Vallonné</string>
+    <string name="shift_profile_custom">Personnalisé</string>
+    <string name="shift_reason_standard">Réglage d’usine de VanMoof.</string>
+    <string name="shift_reason_flat">Le 3e rapport tient de 14 à 27\u00A0km/h. En ville, le vélo ne change presque pas de rapport.</string>
+    <string name="shift_reason_hilly">Le 2e rapport tient de 9 à 21\u00A0km/h. En montée, moins de changements sous l’effort.</string>
+    <string name="shift_reason_custom">Tes propres points de passage.</string>
+    <string name="shift_custom_empty">Pas encore de points de passage personnalisés.</string>
+    <string name="shift_row_cd">%1$s. Montée à %2$d, %3$d et %4$d\u00A0km/h, descente à %5$d, %6$d et %7$d\u00A0km/h.</string>
+    <string name="shift_points_short">montée %1$d, %2$d, %3$d, descente %4$d, %5$d, %6$d\u00A0km/h</string>
+    <string name="shift_limit_cd">L’assistance s’arrête à %1$d\u00A0km/h.</string>
+    <string name="shift_axis_kmh">%1$d\u00A0km/h</string>
+    <string name="shift_units_note">Les points de passage se règlent toujours en km/h.</string>
+    <string name="shift_reading">Lecture des points de passage…</string>
+    <string name="shift_invalid_on_bike">Les points de passage du vélo peuvent provoquer des changements de rapport incessants. Choisis un profil ou ajuste-les.</string>
+    <string name="shift_fault">Le shifter signale l’erreur\u00A0%1$d\u00A0: %2$s</string>
+    <string name="shift_ease_off">Relâche un instant les pédales quand le vélo change de rapport. Cela ménage le shifter.</string>
+
+    <!-- Personnalisé : éditeur -->
+    <string name="shift_handle_up">Monter du rapport\u00A0%1$d au %2$d</string>
+    <string name="shift_handle_down">Descendre du rapport\u00A0%1$d au %2$d</string>
+    <string name="shift_lane_up">montée</string>
+    <string name="shift_lane_down">descente</string>
+    <string name="shift_allowed">Possible de %1$d à %2$d\u00A0km/h</string>
+    <string name="shift_step_higher">1\u00A0km/h de plus</string>
+    <string name="shift_step_lower">1\u00A0km/h de moins</string>
+    <string name="shift_blocked_by">Limité par\u00A0: %1$s</string>
+    <string name="shift_rules">La descente se situe au moins 2\u00A0km/h sous la montée. Les points dans le même sens sont espacés d’au moins 3\u00A0km/h. Le vélo repasse en 1re au plus tard à 5\u00A0km/h.</string>
+    <string name="shift_apply">Appliquer</string>
+    <string name="shift_discard">Abandonner</string>
+    <string name="shift_draft_matches">Identique à %1$s.</string>
+    <string name="shift_draft_from_standard">Les valeurs du vélo n’étaient pas utilisables. Tu pars de «\u00A0Standard\u00A0».</string>
+
+    <!-- Manuel -->
+    <string name="shift_manual_up">Monter\u00A0: en roulant, appuie deux fois rapidement sur Boost.</string>
+    <string name="shift_manual_down">Descendre\u00A0: maintiens le bouton de sonnette et appuie deux fois rapidement sur Boost.</string>
+    <string name="shift_manual_stop">À l’arrêt, le vélo repasse seul en 1re.</string>
+    <string name="shift_manual_boost">Maintenir Boost donne toujours plus de puissance.</string>
+    <string name="shift_manual_points_kept">Tes points de passage restent enregistrés pour le mode Automatique.</string>
+    <string name="shift_key_bell">Sonnette</string>
+    <string name="shift_key_boost">Boost</string>
+    <string name="shift_key_pressed">appuyé</string>
+
+    <!-- Journal et erreurs -->
+    <string name="shift_cmd_mode">Mode de passage\u00A0: %1$s</string>
+    <string name="shift_cmd_points">Points de passage\u00A0: %1$s</string>
+    <string name="shift_log_state">Vitesses\u00A0: %1$s (%2$s)</string>
+    <string name="shift_unknown">inconnu</string>
+    <string name="shift_error_mode_rejected">Le vélo n’a pas pris %1$s. Il indique\u00A0: %2$s.</string>
+    <string name="shift_error_points_rejected">Le vélo n’a pas pris les points de passage. Il indique\u00A0: %1$s.</string>
+    <string name="shift_error_points_invalid">Ces points de passage provoqueraient des changements de rapport incessants. Rien n’a été envoyé.</string>
+    <string name="shift_error_too_many">Trop de modifications d’affilée. Reconnecte-toi pour continuer.</string>
+    <string name="shift_error_region_changed">La région a changé pendant l’enregistrement. Vérifie à nouveau les points de passage.</string>
+
+    <!-- Notes, conflicts, editor actions, checks (second round) -->
+    <string name="shift_riding_note">En roulant, un changement s’applique tout de suite\u00A0: le vélo peut changer de rapport aussitôt.</string>
+    <string name="shift_region_short">Vaut pour la région %1$s (chaque région garde les siens).</string>
+    <string name="shift_legend">Clair\u00A0: ce rapport. Vide\u00A0: le vélo garde le rapport d’où il vient. Souligné\u00A0: ton rapport actuel.</string>
+    <string name="shift_profiles_show">Afficher tous les profils</string>
+    <string name="shift_profiles_hide">Masquer les profils</string>
+    <string name="shift_reason_invalid">Valeurs non valides sur le vélo.</string>
+    <string name="shift_invalid_zero">Le vélo indique 0\u00A0km/h pour tous les points de passage. Il monte alors jusqu’au 4e rapport dès qu’il roule et démarre en 4e. Choisis Standard.</string>
+    <string name="shift_conflict_gap">«\u00A0%1$s\u00A0» (%2$d\u00A0km/h) n’est pas au moins 2\u00A0km/h sous «\u00A0%3$s\u00A0» (%4$d\u00A0km/h).</string>
+    <string name="shift_conflict_spacing">«\u00A0%1$s\u00A0» (%2$d\u00A0km/h) n’est pas au moins 3\u00A0km/h au-dessus de «\u00A0%3$s\u00A0» (%4$d\u00A0km/h).</string>
+    <string name="shift_conflict_min">«\u00A0%1$s\u00A0» (%2$d\u00A0km/h) est sous %3$d\u00A0km/h.</string>
+    <string name="shift_conflict_range">«\u00A0%1$s\u00A0» (%2$d\u00A0km/h) est hors de %3$d à %4$d\u00A0km/h.</string>
+    <string name="shift_conflict_max">«\u00A0%1$s\u00A0» (%2$d\u00A0km/h) dépasse %3$d\u00A0km/h.</string>
+    <string name="shift_conflict_more">… et %1$d de plus.</string>
+    <string name="shift_edit">Modifier</string>
+    <string name="shift_edit_set">Définir</string>
+    <string name="shift_edit_close">Fermer</string>
+    <string name="shift_expanded">développé</string>
+    <string name="shift_collapsed">réduit</string>
+    <string name="shift_edit_action">Modifier les points de passage</string>
+    <string name="shift_edit_close_action">Fermer l’éditeur</string>
+    <string name="shift_editor_hint">Fais glisser un point ou touche-le, puis ajuste avec − et +.</string>
+    <string name="shift_top_gear_above_limit">Le 4e rapport n’arrive qu’au-dessus de %1$d\u00A0km/h, au-delà de la limite d’assistance de %2$d\u00A0km/h\u00A0: donc seulement sans assistance. Jusque-là, le 3e tient.</string>
+    <string name="shift_keys_live">Boutons du guidon (en direct)</string>
+    <string name="shift_gesture_hold">maintenir</string>
+    <string name="shift_check_failed">Le firmware\u00A0%1$s indique des valeurs de passage que YABA ne connaît pas (%2$s). YABA ne modifie rien ici.</string>
+    <string name="shift_persist_ok">Réglages de passage toujours sur le vélo après reconnexion (firmware\u00A0%1$s).</string>
+    <string name="shift_persist_mode_lost">YABA avait réglé %1$s, le vélo indique maintenant %2$s. Une autre app l’a modifié, ou le vélo ne l’a pas gardé.</string>
+    <string name="shift_persist_points_lost">Le vélo n’a plus les points de passage écrits par YABA la dernière fois (écrits %1$s, maintenant %2$s). Une autre app les a modifiés, ou le vélo ne les a pas gardés.</string>
+    <string name="shift_log_fw">%1$s (firmware\u00A0%2$s)</string>
+    <string name="shift_error_read">Impossible de lire les réglages de passage actuels. Rien n’a été envoyé.</string>
+    <string name="shift_error_no_region">La région du vélo est inconnue\u00A0: YABA ne sait pas quel emplacement de points de passage est utilisé. Rien n’a été envoyé.</string>
+    <string name="shift_error_region_moved">La région a changé depuis que tu as réglé ces points. Rien n’a été envoyé\u00A0; vérifie-les à nouveau.</string>
+</resources>

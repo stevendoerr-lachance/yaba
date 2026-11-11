@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lab_char_cadence">Kadenca</string>
+    <string name="lab_char_torque">Sila na pedalama</string>
+
+    <string name="lab_sound_update_failed">Ažuriranje nije uspjelo</string>
+    <string name="lab_sound_update_ok">Ažuriranje uspjelo</string>
+    <string name="lab_sound_find_loud">Glasni ton za pronalazak</string>
+
+    <string name="lab_clip_lock">Zaključaj</string>
+    <string name="lab_clip_unlock">Otključaj</string>
+    <string name="lab_clip_startup">Uključivanje</string>
+    <string name="lab_clip_shutdown">Isključivanje</string>
+    <string name="lab_clip_charging">Punjenje</string>
+
+    <string name="lab_error_clock_readback">Očitavanje sata nije uvjerljivo. Sat nije postavljen.</string>
+    <string name="lab_error_backup_first">Preuzmi i spremi dnevnik bicikla prije samotesta.</string>
+    <string name="lab_error_not_parked">Samo u mirovanju i izvan načina vožnje; ovo isključuje pomoć motora.</string>
+    <string name="lab_error_clip">Prijenos nije uspio.</string>
+    <string name="lab_error_generic">Naredba nije izvršena.</string>
+
+    <string name="lab_log_siren">Sirena razina\u00A0%d</string>
+    <string name="lab_log_clip">Zvuk zamijenjen: %s</string>
+
+</resources>

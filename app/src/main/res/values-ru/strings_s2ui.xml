@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fahren (RideScreen): what an S2 offers instead of the S3 controls (the S2 plan A1, B6). -->
+    <string name="s2ui_alarm_manual">Вручную</string>
+    <string name="s2ui_alarm_read_only">YABA переключает сигнализацию S2 только после того, как тест на настоящем велосипеде это подтвердит. В тестовом режиме S2 это уже работает; переключатель находится в разделе «Диагностика», в блоке «Привод S2», в самом низу.</string>
+    <string name="s2ui_roll_to_unlock">S2 обычно освобождает Kick Lock, только если покатить велосипед, пока идёт анимация разблокировки.</string>
+    <string name="s2ui_lock_by_foot">Чтобы заблокировать S2, нажми Kick Lock ногой вниз.</string>
+    <!-- Klang (SoundScreen): an S2 has no sound command at all. -->
+    <string name="s2ui_sound_none">У S2 нет Bluetooth-команды для звонка, звуков или своего звонка.</string>
+    <!-- Bike (BikeScreen). -->
+    <string name="s2ui_fact_module_battery">Батарея модуля</string>
+    <string name="s2ui_code_s2">S2 может только задать резервный код, но не удалить и не показать его. Хорошо запомни новый код, прежде чем отправить его.</string>
+    <!-- Diagnose (DiagnosisScreen): the S2 code lookup. -->
+    <string name="s2ui_lookup_hint">Введи число, которое велосипед показывает на дисплее, например 16.</string>
+    <!-- Cockpit: an S2 shows its error code in place of the four S3 lamps. -->
+    <string name="s2ui_cockpit_lamp_error">Код ошибки</string>
+    <string name="s2ui_cockpit_val_no_error">нет</string>
+    <!-- Garage: model line per bike and the model choice for bikes the account does not describe. -->
+    <string name="s2ui_garage_family_s3">Модель S3/X3</string>
+    <string name="s2ui_garage_family_s2">Модель S2/X2, поддержка в тесте</string>
+    <string name="s2ui_garage_family_legacy">Более старый VanMoof: YABA не поддерживает эту модель.</string>
+    <string name="s2ui_garage_model_title">Модель</string>
+    <string name="s2ui_garage_model_hint">S2 и X2 используют другой протокол Bluetooth, чем S3 и X3. Выбери модель своего велосипеда, чтобы YABA обращался к нему правильно.</string>
+</resources>

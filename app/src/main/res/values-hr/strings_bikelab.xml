@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bikelab_title">Bike-Lab</string>
+    <string name="bikelab_intro">Vrijednosti koje firmver poznaje, a nijedna aplikacija ne prikazuje, uz naredbe koje rade samo u mirovanju.</string>
+    <string name="bikelab_needs_link">Bicikl nije povezan. Vrijednosti ostaju prazne dok veza ne proradi.</string>
+
+    <string name="bikelab_live_title">Vrijednosti uživo</string>
+    <string name="bikelab_temp_motor">Temperatura motora</string>
+    <string name="bikelab_temp_controller">Temperatura kontrolera</string>
+    <string name="bikelab_temp_board">Temperatura pločice</string>
+    <string name="bikelab_temp_value">%1$d\u00A0°C</string>
+    <string name="bikelab_torque_calibrate">Postavi nulu</string>
+    <string name="bikelab_torque_calibrated">Sila na pedalama (kalibrirano)</string>
+    <string name="bikelab_torque_hint">Postavi nulu dok ne pedaliraš; sirova vrijednost nema baždarenu jedinicu.</string>
+
+    <string name="bikelab_config_title">Konfiguracija</string>
+    <string name="bikelab_cycles">Ciklusi punjenja</string>
+    <string name="bikelab_powerbank_cycles">Ciklusi PowerBanka</string>
+    <string name="bikelab_lux">Svjetlina (sirovo)</string>
+    <string name="bikelab_threshold">Prag uključivanja</string>
+    <string name="bikelab_threshold_save">Spremi prag</string>
+    <string name="bikelab_threshold_hint">U automatskom načinu svjetlo se pali čim svjetlina padne ispod praga. Vrijednost je u flashu; upisuje se tek pri spremanju.</string>
+    <string name="bikelab_working">…</string>
+
+    <string name="bikelab_clock">Sat bicikla</string>
+    <string name="bikelab_clock_set">Postavi sat</string>
+    <string name="bikelab_clock_ok">točno</string>
+    <string name="bikelab_clock_ahead">žuri %1$d\u00A0sekundi</string>
+    <string name="bikelab_clock_behind">kasni %1$d\u00A0sekundi</string>
+    <string name="bikelab_clock_unknown">nepoznato</string>
+    <string name="bikelab_parked_only">Samo u mirovanju i izvan načina vožnje; inače ovo isključuje pomoć motora.</string>
+
+    <string name="bikelab_lamps_title">Kanali svjetala</string>
+    <string name="bikelab_lamp_on">Kanal\u00A0%1$d uključen</string>
+    <string name="bikelab_lamp_off">Kanal\u00A0%1$d isključen</string>
+    <string name="bikelab_lamps_restore">Vrati svjetla</string>
+    <string name="bikelab_lamps_hint">Svaki je kanal samo uključen ili isključen. Svjetlo isključeno iz aplikacije ostaje isključeno dok ga prava promjena stanja ili ovo vraćanje ne vrati.</string>
+
+    <string name="bikelab_boost">Boost u vožnji</string>
+    <string name="bikelab_boost_caption">Držanje Boosta mijenja razinu i u vožnji, ne samo u mirovanju.</string>
+
+    <string name="bikelab_actions_title">U mirovanju</string>
+    <string name="bikelab_sleep">Uspavaj sada</string>
+    <string name="bikelab_alarm_stop">Zaustavi alarm</string>
+    <string name="bikelab_alarm_stop_note">Zaustavlja alarm u tijeku bez rezervnog koda. Naredba briše i softversko zaključavanje; bicikl se nakon toga može očitati kao otključan.</string>
+    <string name="bikelab_selftest">Pokreni samotest</string>
+    <string name="bikelab_selftest_hint">Bicikl odsvira dijagnostički ton, zapiše svoje stanje u dnevnik i zatim ide u stanje mirovanja. Dnevnik se prvo sprema.</string>
+    <string name="bikelab_selftest_archiving">Sprema dnevnik …</string>
+    <string name="bikelab_selftest_dialog_title">Pokreni samotest</string>
+    <string name="bikelab_selftest_dialog_text">Bicikl prvo sprema svoj dnevnik, zatim prolazi dijagnozu i ide u stanje mirovanja. Izvještaj izgura najstarije retke dnevnika; zato se prvo sprema.</string>
+    <string name="bikelab_selftest_dialog_confirm">Pokreni</string>
+    <string name="bikelab_cancel">Odustani</string>
+
+    <string name="bikelab_exp_title">Eksperimenti</string>
+    <string name="bikelab_siren_title">Sirena</string>
+    <string name="bikelab_siren_stage">Razina\u00A0%1$d</string>
+    <string name="bikelab_siren_stop">Alarm isključen</string>
+    <string name="bikelab_siren_active">Sirena radi (razina\u00A0%1$d).</string>
+    <string name="bikelab_siren_dialog_title">Pokreni sirenu razine\u00A0%1$d</string>
+    <string name="bikelab_siren_dialog_confirm">Pokreni</string>
+</resources>

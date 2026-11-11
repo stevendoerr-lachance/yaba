@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bike screen, Diagnose screen and the shared bike components (BikeBits): Croatian. -->
+<resources>
+    <!-- Shared -->
+    <string name="bike_needs_link">To je moguće samo dok je bicikl povezan.</string>
+    <string name="bike_add_bike">Dodaj bicikl</string>
+    <string name="bike_delete">Obriši</string>
+    <string name="bike_keep">Zadrži</string>
+    <string name="bike_cancel">Odustani</string>
+    <string name="bike_share">Podijeli</string>
+    <string name="bike_yes">Da</string>
+    <string name="bike_no">Ne</string>
+    <string name="bike_value_percent">%1$d\u00A0%%</string>
+
+    <!-- Live-check verdicts, read by TalkBack -->
+    <string name="bike_health_ok">U redu</string>
+    <string name="bike_health_problem">Problem</string>
+    <string name="bike_health_attention">Treba provjeriti</string>
+    <string name="bike_health_unknown">Nepoznato</string>
+
+    <!-- Link state line -->
+    <string name="bike_link_ready">Povezano</string>
+    <string name="bike_link_searching">Traženje bicikla…</string>
+    <string name="bike_link_connecting">Povezivanje…</string>
+    <string name="bike_link_authenticating">Autentikacija na biciklu…</string>
+    <string name="bike_link_lost">Veza prekinuta, pretraga se nastavlja</string>
+    <string name="bike_link_offline">Nije povezano</string>
+
+    <!-- Connect prompt -->
+    <string name="bike_prompt_no_bike">Na ovom telefonu još nije postavljen nijedan bicikl.</string>
+    <string name="bike_prompt_permission_nearby">Bez dopuštenja „Uređaji u blizini“ aplikacija ne može pronaći bicikl.</string>
+    <string name="bike_prompt_permission_location">Bez dopuštenja za lokaciju Android ne može pronaći Bluetooth uređaje.</string>
+    <string name="bike_prompt_grant_permission">Daj dopuštenje</string>
+    <string name="bike_prompt_bluetooth_off">Bluetooth je isključen.</string>
+    <string name="bike_prompt_bluetooth_on">Uključi Bluetooth</string>
+    <string name="bike_prompt_connect">Poveži</string>
+    <string name="bike_prompt_close_vanmoof">Molim te, prvo zatvori aplikaciju VanMoof jer bicikl prihvaća samo jednu vezu istodobno.</string>
+    <string name="bike_prompt_searching">YABA traži %1$s. Bicikl se budi kad ga pomakneš ili pritisneš tipku zvona.</string>
+    <string name="bike_prompt_retry">Traži ponovno odmah</string>
+    <string name="bike_prompt_stop">Prekini pretragu</string>
+
+    <!-- Bike screen: header and facts -->
+    <string name="bike_no_bike_title">Nema bicikla</string>
+    <string name="bike_model_of_owner">%1$s, vlasnik: %2$s</string>
+    <string name="bike_owned_by">Vlasnik: %1$s</string>
+    <string name="bike_manage_bikes">Upravljaj biciklima</string>
+    <string name="bike_no_bike_text">Dodaj svoj S3 pa ćeš ovdje vidjeti kilometražu, bateriju i firmver.</string>
+    <string name="bike_fact_distance">Kilometraža</string>
+    <string name="bike_fact_battery">Baterija</string>
+    <string name="bike_fact_battery_charging">Baterija se puni</string>
+    <string name="bike_fact_firmware">Firmver</string>
+    <string name="bike_fact_frame">Broj okvira</string>
+    <string name="bike_fact_mac">MAC</string>
+    <string name="bike_fact_model">Model</string>
+
+    <!-- Bike screen: connection -->
+    <string name="bike_connection_title">Veza</string>
+    <string name="bike_connection_wake">Probudi</string>
+    <string name="bike_connection_waking">Buđenje…</string>
+    <string name="bike_connection_refresh">Osvježi vrijednosti</string>
+    <string name="bike_connection_refreshing">Učitavanje…</string>
+    <string name="bike_connection_disconnect">Prekini vezu</string>
+    <string name="bike_connection_wake_done">Bicikl je primio naredbu za buđenje.</string>
+    <string name="bike_connection_refresh_done">Sve su vrijednosti ponovno pročitane.</string>
+
+    <!-- Bike screen: versions -->
+    <string name="bike_versions_title">Verzije i oznake</string>
+    <string name="bike_versions_none">Bicikl nije javio nijednu verziju.</string>
+    <string name="bike_versions_offline">Aplikacija čita verzije pri povezivanju.</string>
+
+    <!-- Bike screen: settings -->
+    <string name="bike_settings_title">Postavke</string>
+    <string name="bike_units">Jedinice</string>
+    <string name="bike_units_hint">Kako bicikl prikazuje brzinu i udaljenost.</string>
+    <string name="bike_unit_metric">km/h</string>
+    <string name="bike_unit_imperial">mph</string>
+    <string name="bike_theme">Boje</string>
+    <string name="bike_theme_system">Sustav</string>
+    <string name="bike_theme_dark">Noć</string>
+    <string name="bike_theme_light">Dan</string>
+    <string name="bike_auto_connect">Automatski poveži</string>
+    <string name="bike_auto_connect_caption">Kad otvoriš aplikaciju, povezuje se sa zadnjim biciklom.</string>
+    <string name="bike_touch_unlock">Otključavanje tipkom</string>
+    <string name="bike_touch_unlock_caption">Pritisak na tipku zvona ili boost otključava bicikl dok je tvoj telefon povezan.</string>
+    <string name="bike_touch_unlock_range">To vrijedi i za druge osobe, sve dok si u dometu Bluetootha.</string>
+
+    <!-- Bike screen: backup code -->
+    <string name="bike_code_title">Rezervni kod</string>
+    <string name="bike_code_intro">Tri znamenke kojima otključavaš bicikl bez telefona. Unosiš ih na biciklu tipkom zvona.</string>
+    <string name="bike_code_field">Novi kod</string>
+    <string name="bike_code_field_hint">Znamenke od 1 do 9</string>
+    <string name="bike_code_set">Postavi kod</string>
+    <string name="bike_code_setting">Postavljanje koda…</string>
+    <string name="bike_code_set_done">Rezervni kod je postavljen. Isprobaj ga, molim te, odmah na biciklu.</string>
+    <string name="bike_code_clear">Obriši kod</string>
+    <string name="bike_code_clearing">Brisanje…</string>
+    <string name="bike_code_clear_done">Rezervni kod je izbrisan. Alarm je sada isključen.</string>
+    <string name="bike_code_clear_title">Izbrisati rezervni kod?</string>
+    <string name="bike_code_clear_text">Bez rezervnog koda bicikl se može otključati samo telefonom. Brisanjem koda isključuje se i alarm bicikla.</string>
+
+    <!-- Bike screen: experiments -->
+    <string name="bike_exp_title">Eksperimenti</string>
+    <string name="bike_exp_intro">Od firmvera\u00A01.8.2 bicikl preko Bluetootha više ne prihvaća 37\u00A0km/h ni razinu\u00A05, a ne prihvaća ih ni verzija\u00A01.9.3. Pri pokretanju firmver oboje vraća na staro. Vratiti ih može samo izmijenjeni firmver, a ova ga aplikacija ne sadrži.</string>
+    <string name="bike_exp_fw">Tvoj bicikl radi s firmverom\u00A0%1$s.</string>
+    <string name="bike_exp_fw_knows_37">Ova verzija još podržava 37\u00A0km/h.</string>
+    <string name="bike_exp_fw_knows_level5">Ova verzija još podržava razinu\u00A05.</string>
+    <string name="bike_exp_fw_knows_both">Ova verzija još podržava 37\u00A0km/h i razinu\u00A05.</string>
+    <string name="bike_exp_test_37">Testiraj 37\u00A0km/h</string>
+    <string name="bike_exp_test_level5">Testiraj razinu\u00A05</string>
+    <string name="bike_exp_sending">Slanje…</string>
+    <string name="bike_exp_37">37\u00A0km/h</string>
+    <string name="bike_exp_level5">Razina\u00A05</string>
+    <string name="bike_exp_37_accepted">Bicikl je prihvatio 37\u00A0km/h. Nakon sljedećeg ponovnog pokretanja ponovno vrijedi prijašnja vrijednost.</string>
+    <string name="bike_exp_level5_accepted">Bicikl je prihvatio razinu\u00A05. Nakon sljedećeg ponovnog pokretanja ponovno vrijedi prijašnja vrijednost.</string>
+    <string name="bike_exp_reports_both">Bicikl trenutačno javlja %1$d\u00A0km/h i razinu\u00A0%2$d.</string>
+    <string name="bike_exp_reports_speed">Bicikl trenutačno javlja %1$d\u00A0km/h.</string>
+    <string name="bike_exp_reports_level">Bicikl trenutačno javlja razinu\u00A0%1$d.</string>
+    <string name="bike_exp_back_25">Natrag na 25\u00A0km/h</string>
+    <string name="bike_exp_back_level4">Natrag na razinu\u00A04</string>
+    <string name="bike_exp_setting">Postavljanje…</string>
+
+    <!-- Bike screen: about -->
+    <string name="bike_about_title">O aplikaciji</string>
+    <!-- matrix: ASCII A-Z 0-9 only, max 7 chars -->
+    <string name="bike_about_matrix">YABA</string>
+    <string name="bike_about_name">YABA</string>
+    <string name="bike_about_version">Yet Another Bike App, verzija\u00A0%1$s</string>
+    <string name="bike_about_slogan">Vozi dalje. Što god bilo.</string>
+    <string name="bike_about_disclaimer">Za VanMoof S3, X3, S2 i X2. Neovisno o tvrtki VanMoof i nije službena aplikacija VanMoof.</string>
+    <string name="bike_about_credits">YABA se temelji na otvorenom radu projekata mooovy (mjarkk), VanMoofKit (SvenTiigi) i pymoof (quantsini) te na dekompilaciji firmvera S3 koju je izradio Knight1. Hvala na tome. Hvala i svima koji su osmislili i izgradili S3.</string>
+
+    <!-- Diagnose screen -->
+    <string name="bike_diag_title">Dijagnoza</string>
+    <string name="bike_diag_intro">YABA bilježi što bicikl javlja. Ako se bicikl isključi tijekom vožnje, zapisi ostaju ovdje.</string>
+
+    <!-- Diagnose: live check -->
+    <string name="bike_live_title">Provjera u mirovanju</string>
+    <string name="bike_live_connect_reason">Ove vrijednosti dolaze izravno s bicikla. Čim se povežeš, popis se puni.</string>
+    <string name="bike_live_status">Radno stanje bicikla</string>
+    <string name="bike_live_status_shipping_hint">Bicikl prelazi u transportni način. Da ga probudiš, priključi punjač ili kratko pritisni tipku ispod gornje cijevi.</string>
+    <plurals name="bike_live_shipping_count">
+        <item quantity="one">%1$d× transportni način od pokretanja aplikacije</item>
+        <item quantity="few">%1$d× transportni način od pokretanja aplikacije</item>
+        <item quantity="other">%1$d× transportni način od pokretanja aplikacije</item>
+    </plurals>
+    <string name="bike_live_supply">Napajanje iznad 20\u00A0V</string>
+    <plurals name="bike_live_supply_drops">
+        <item quantity="one">%1$d× palo ispod 20\u00A0V</item>
+        <item quantity="few">%1$d× palo ispod 20\u00A0V</item>
+        <item quantity="other">%1$d× palo ispod 20\u00A0V</item>
+    </plurals>
+    <string name="bike_live_kicklock_switch">Prekidač Kick Locka</string>
+    <string name="bike_live_kicklock_reports_locked">Javlja zaključano</string>
+    <string name="bike_live_kicklock_normal">Normalno</string>
+    <string name="bike_live_kicklock_switch_hint">Ako brava tijekom vožnje javlja „zaključano“, uzrok je vjerojatno prekidač Kick Locka ili njegov kabel.</string>
+    <plurals name="bike_live_kicklock_riding">
+        <item quantity="one">%1$d× tijekom vožnje</item>
+        <item quantity="few">%1$d× tijekom vožnje</item>
+        <item quantity="other">%1$d× tijekom vožnje</item>
+    </plurals>
+    <string name="bike_live_kicklock_coil">Zavojnica Kick Locka</string>
+    <string name="bike_live_kicklock_coil_missing">Nije prepoznata (42)</string>
+    <string name="bike_live_kicklock_coil_ok">Prepoznata</string>
+    <string name="bike_live_kicklock_coil_hint">Greška\u00A042: povratni vod zavojnice je prekinut. Ako istodobno otkaže i prepoznavanje baterije, bicikl će vjerojatno prijeći u transportni način.</string>
+    <string name="bike_live_wheel">Kotač se okreće</string>
+    <string name="bike_live_lock">Brava</string>
+    <string name="bike_live_charger">Punjač</string>
+    <string name="bike_live_buttons">Pritisnute tipke</string>
+    <string name="bike_live_button_bell">Zvono</string>
+    <string name="bike_live_button_boost">Boost</string>
+    <string name="bike_live_button_power">Uključivanje/ponovno pokretanje</string>
+    <string name="bike_live_buttons_none">Nijedna</string>
+    <string name="bike_live_buttons_hint">Ako prikaz ostane bez pritiska prsta, tipka je zaglavljena (greška\u00A040 ili 41). Pritisak na tipku za uključivanje/ponovno pokretanje tijekom vožnje ponovno pokreće bicikl.</string>
+    <string name="bike_live_connected_for">Trajanje veze</string>
+    <string name="bike_live_reconnects">Ponovna povezivanja</string>
+    <string name="bike_live_reconnects_hint">Koliko je puta veza prekinuta i ponovno uspostavljena.</string>
+
+    <!-- Diagnose: faults -->
+    <string name="bike_faults_title">Greške</string>
+    <plurals name="bike_faults_active">
+        <item quantity="one">%1$d aktivna</item>
+        <item quantity="few">%1$d aktivne</item>
+        <item quantity="other">%1$d aktivnih</item>
+    </plurals>
+    <string name="bike_faults_offline">YABA čita aktivne greške izravno s bicikla. Čim je bicikl povezan, prikazuju se ovdje.</string>
+    <string name="bike_faults_none">Nema aktivnih grešaka.</string>
+    <string name="bike_fault_spoken">Greška\u00A0%1$d: %2$s. %3$s</string>
+    <string name="bike_lookup_title">Potraži kod</string>
+    <string name="bike_lookup_hint">Unesi broj koji bicikl prikazuje na zaslonu, na primjer 42.</string>
+    <string name="bike_lookup_field">Kod</string>
+    <string name="bike_lookup_display_empty">Zaslon prazan</string>
+    <string name="bike_lookup_display_shows">Zaslon prikazuje %1$s</string>
+    <string name="bike_lookup_unknown_name">Ne postoji</string>
+    <string name="bike_lookup_unknown_hint">Bicikl koristi samo kodove od 0 do 63.</string>
+    <string name="bike_lookup_active">Trenutačno aktivno na tvom biciklu.</string>
+
+    <!-- Diagnose: ride logger -->
+    <string name="bike_logger_title">Zapisnik vožnje</string>
+    <string name="bike_logger_intro">Zapisnik vožnje svake 2\u00A0sekunde zapisuje jednu izmjerenu vrijednost i svaki događaj u jednu CSV datoteku. Obavijest ga drži aktivnim i kad je zaslon isključen.</string>
+    <string name="bike_logger_coloros">ColorOS ipak zaustavlja zapisnik vožnje sve dok YABA ne smije raditi u pozadini.</string>
+    <string name="bike_logger_stop">Zaustavi zapisnik vožnje</string>
+    <string name="bike_logger_start">Pokreni zapisnik vožnje</string>
+    <string name="bike_logger_offline">Bicikl trenutačno nije povezan. Zapisnik vožnje svejedno nastavlja raditi i bilježi i svaki pokušaj povezivanja.</string>
+    <string name="bike_logger_start_failed">Zapisnik vožnje nije se mogao pokrenuti: %1$s</string>
+    <string name="bike_logger_battery_settings">Otvori optimizaciju baterije</string>
+    <string name="bike_logger_coloros_path">Na ColorOS-u otvori „Postavke“, „Baterija“, „Potrošnja baterije po aplikaciji“ i „YABA“, pa dopusti aktivnost u pozadini.</string>
+    <string name="bike_logger_unrestricted">Optimizacija baterije isključena je za YABA-u, zato zapisnik vožnje nastavlja raditi u pozadini.</string>
+    <string name="bike_logger_recordings">Snimke</string>
+    <string name="bike_logger_empty">Još nije zabilježena nijedna vožnja. Pokreni zapisnik vožnje, molim te, prije sljedeće vožnje.</string>
+    <string name="bike_logger_share_title">Podijeli zapisnik vožnje</string>
+    <string name="bike_logger_delete_title">Obrisati snimku?</string>
+    <string name="bike_logger_delete_text">Vožnja od %1$s bit će izbrisana.</string>
+    <string name="bike_logger_running_since">Radi od %1$s</string>
+    <string name="bike_logger_samples">Mjerenja</string>
+    <string name="bike_logger_incidents">Incidenti</string>
+    <string name="bike_logger_duration">Trajanje</string>
+    <string name="bike_logger_live_file">Upravo se snima</string>
+    <!-- java.time DateTimeFormatter pattern for the start of a recording -->
+    <string name="bike_logger_entry_date">d. M. yyyy., HH:mm</string>
+
+    <!-- Diagnose: events -->
+    <string name="bike_events_title">Događaji</string>
+    <string name="bike_events_all">Svi</string>
+    <string name="bike_events_incidents">Incidenti</string>
+    <plurals name="bike_events_incidents_count">
+        <item quantity="one">%1$d incident</item>
+        <item quantity="few">%1$d incidenta</item>
+        <item quantity="other">%1$d incidenata</item>
+    </plurals>
+    <string name="bike_events_no_incidents">Nema incidenata. Prekidi, transportni način i greške navode se ovdje.</string>
+    <string name="bike_events_empty">Još ništa nije zabilježeno. Čim je bicikl povezan, ovdje se navodi svaka promjena.</string>
+    <string name="bike_events_showing">Prikazano %1$d od %2$d.</string>
+    <string name="bike_events_more">Prikaži više</string>
+    <string name="bike_events_clear">Očisti</string>
+
+    <!-- Diagnose: bike log -->
+    <string name="bike_log_title">Dnevnik bicikla</string>
+    <string name="bike_log_intro">Bicikl vodi vlastiti dnevnik. Čitanje može trajati nekoliko minuta, a neprekidno čitanje vrijednosti u tom je vremenu pauzirano.</string>
+    <string name="bike_log_reading">Čitanje…</string>
+    <string name="bike_log_reading_percent">Čitanje… %1$d\u00A0%%</string>
+    <string name="bike_log_read">Pročitaj interni dnevnik</string>
+    <string name="bike_log_read_again">Pročitaj ponovno</string>
+    <string name="bike_log_failed">Dnevnik se nije mogao pročitati.</string>
+    <string name="bike_log_empty">Bicikl je vratio prazan dnevnik.</string>
+    <plurals name="bike_log_lines_unit">
+        <item quantity="one">redak</item>
+        <item quantity="few">retka</item>
+        <item quantity="other">redaka</item>
+    </plurals>
+    <string name="bike_log_read_at">Pročitano u %1$s.</string>
+    <plurals name="bike_log_tail">
+        <item quantity="one">Zadnji %1$d redak:</item>
+        <item quantity="few">Zadnja %1$d retka:</item>
+        <item quantity="other">Zadnjih %1$d redaka:</item>
+    </plurals>
+    <string name="bike_log_all">Cijeli dnevnik:</string>
+    <string name="bike_log_share">Podijeli dnevnik</string>
+    <string name="bike_log_share_failed">Datoteka se nije mogla zapisati. Možda je memorija puna.</string>
+    <string name="bike_log_share_subject">Dnevnik bicikla S3 %1$s</string>
+    <string name="bike_log_share_title">Podijeli dnevnik bicikla</string>
+
+    <!-- Diagnose: raw data -->
+    <string name="bike_raw_title">Sirovi podaci</string>
+    <string name="bike_raw_hint">Dešifrirani bajtovi po karakteristici, onako kako ih je bicikl zadnji put poslao.</string>
+    <string name="bike_raw_read">Pročitaj sve vrijednosti</string>
+    <string name="bike_raw_reading">Čitanje…</string>
+    <string name="bike_raw_done">Sve vrijednosti pročitane.</string>
+    <string name="bike_raw_empty">prazno</string>
+    <string name="bike_about_origin">YABA je nastala u Frankfurtu na Majni za jedan rabljeni S3 i za svaki bicikl koji treba voziti dalje. Testirana je s firmverom\u00A01.9.3 za S3.</string>
+    <string name="bike_outbursts_title">Nizozemske psovke</string>
+    <string name="bike_outbursts_caption">Ponekad YABA opsuje na nizozemskom, na točkastom prikazu ovdje u aplikaciji, nikad dok voziš. Na zaslon samog bicikla YABA ne može pisati.</string>
+    <string name="bike_outbursts_list_title">Riječi</string>
+    <string name="bike_outbursts_list_hint">Drži riječ pritisnutom da je vidiš na prikazu.</string>
+    <string name="bike_outburst_meaning_balen">Doslovno: ljutiti se. Značenje: šteta.</string>
+    <string name="bike_outburst_meaning_gedoe">Doslovno: gnjavaža. Značenje: smetnja, briga.</string>
+    <string name="bike_outburst_meaning_nou_ja">Doslovno: pa da. Značenje: dobro, neka bude.</string>
+    <string name="bike_outburst_meaning_he_he">Doslovno: napokon. Značenje: uspjelo je.</string>
+    <string name="bike_outburst_meaning_auw">Doslovno: jao. Značenje: to je zaboljelo.</string>
+    <string name="bike_outburst_meaning_verdorie">Doslovno: ublažen oblik riječi „verdomme“. Značenje: kvragu.</string>
+    <string name="bike_outburst_meaning_de_pijp_uit">Doslovno: iz lule. Značenje: gotovo, završeno.</string>
+    <string name="bike_outburst_meaning_bek_dicht">Doslovno: kljun zatvoren. Značenje: tišina.</string>
+    <string name="bike_outburst_meaning_verdomme">Doslovno: prokuni me. Značenje: prokletstvo. Bicikl to nikad ne kaže sam od sebe.</string>
+    <string name="bike_live_coil_see_fault">Vidi grešku\u00A042 pod „Greške“.</string>
+    <string name="bike_events_since">Od pokretanja YABA-e u %1$s</string>
+    <string name="bike_events_since_day">Od pokretanja YABA-e %1$s u %2$s</string>
+    <string name="bike_events_since_clear">Od čišćenja u %1$s</string>
+    <string name="bike_events_no_marks">Nema oznaka. U kokpitu oznaku postavljaš s „Označi“ ili tipkom za glasnoću.</string>
+    <string name="bike_events_expand">Prikaži cijelo</string>
+    <string name="bike_events_collapse">Prikaži manje</string>
+    <string name="bike_events_clear_title">Očistiti događaje?</string>
+    <string name="bike_events_clear_text">Brojači provjere u mirovanju nakon toga kreću od nule.</string>
+    <string name="bike_logger_intro_short">Zapisnik vožnje svake 2\u00A0sekunde zapisuje jednu izmjerenu vrijednost i svaki događaj u jednu CSV datoteku.</string>
+    <string name="bike_logger_show_all">Prikaži sve (%1$d)</string>
+    <string name="bike_logger_no_ride">bez vožnje</string>
+    <string name="bike_log_view_text">Prikaži kao tekst</string>
+    <string name="bike_theme_hint">Dan je svijetla tema i najčitljivija je na suncu.</string>
+    <string name="bike_code_set_at">Rezervni kod postavljen u %1$s. Isprobaj ga, molim te, sada na biciklu.</string>
+    <string name="bike_code_clear_link">Izbriši rezervni kod</string>
+    <string name="bike_exp_fold">Testovi za 37\u00A0km/h i razinu\u00A05</string>
+    <string name="bike_fact_wheel">Kotač</string>
+    <string name="bike_fact_distance_speedplus" formatted="false">Kilometraža, sa Speed++ broji oko 16\u00A0% premalo</string>
+    <plurals name="bike_events_marks_count">
+        <item quantity="one">%1$d oznaka</item>
+        <item quantity="few">%1$d oznake</item>
+        <item quantity="other">%1$d oznaka</item>
+    </plurals>
+    <plurals name="bike_logger_entry_incidents">
+        <item quantity="one">%1$d incident</item>
+        <item quantity="few">%1$d incidenta</item>
+        <item quantity="other">%1$d incidenata</item>
+    </plurals>
+    <plurals name="bike_raw_without_value">
+        <item quantity="one">%1$d karakteristika bez vrijednosti</item>
+        <item quantity="few">%1$d karakteristike bez vrijednosti</item>
+        <item quantity="other">%1$d karakteristika bez vrijednosti</item>
+    </plurals>
+</resources>

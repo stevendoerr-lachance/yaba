@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speedplus_title">Speed++ (roues de 24″)</string>
+    <string name="speedplus_text" formatted="false">Règle ton vélo sur des roues de 24″. Il compte alors 84\u00A0% de la vitesse réelle et ne coupe l’assistance qu’à environ 29,7\u00A0km/h (EU) ou 38\u00A0km/h (US). YABA t’affiche partout la vitesse réelle\u00A0; le compteur du vélo affiche moins.</string>
+    <string name="speedplus_on">Activer Speed++</string>
+    <string name="speedplus_off">Revenir à 28″</string>
+    <string name="speedplus_active">Activé. YABA multiplie la vitesse du vélo par 1,1875.</string>
+    <string name="speedplus_odometer" formatted="false">Tant que c’est activé, le compteur kilométrique du vélo compte environ 16\u00A0% de moins.</string>
+    <string name="speedplus_unknown">YABA lit la taille des roues à la connexion au vélo.</string>
+    <string name="speedplus_unread">YABA n’a pas pu lire la taille des roues.</string>
+    <string name="speedplus_read">Lire la taille des roues</string>
+    <string name="speedplus_not_28">Speed++ ne fonctionne qu’avec des vélos équipés d’usine de roues de 28″.</string>
+    <string name="speedplus_cmd">Taille de roue %1$d″</string>
+    <string name="speedplus_error_rolling">Seulement à l’arrêt\u00A0: le vélo transmet la taille des roues au contrôleur moteur.</string>
+    <string name="speedplus_error_rejected">Le vélo n’a pas pris la taille des roues.</string>
+    <string name="speedplus_choice_28">28″ d’origine</string>
+    <string name="speedplus_stock_title">Taille des roues d’origine</string>
+    <string name="speedplus_stock_question">Ton vélo est réglé en ce moment sur des roues de 24″. YABA ne peut pas savoir s’il est sorti d’usine comme S3 en 28″ ou comme X3 en 24″. La vitesse affichée par YABA dépend de ta réponse.</string>
+    <string name="speedplus_stock_next">Continuer</string>
+    <string name="speedplus_stock_later">Tu peux modifier ta réponse plus tard sous %1$s › %2$s.</string>
+    <string name="speedplus_read_none">Le vélo n’a pas non plus indiqué la taille des roues cette fois.</string>
+    <string name="speedplus_x3_on_28">Ton vélo est réglé sur des roues de 28″, mais il est sorti d’usine en 24″. Il affiche alors plus de vitesse qu’il n’en fait et coupe l’assistance plus tôt. YABA t’affiche la vitesse réelle.</string>
+    <string name="speedplus_back_to_24">Revenir à 24″</string>
+    <string name="speedplus_stock_open_note">YABA ne connaît pas encore la taille des roues d’origine et affiche donc la vitesse telle que ton vélo la transmet. Tu peux l’indiquer sous %1$s › %2$s.</string>
+</resources>

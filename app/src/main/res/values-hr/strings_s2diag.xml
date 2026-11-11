@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- S2 drive diagnosis (ui/s2): wiggle test, error catcher, GPS comparison, live status block, S2 test mode. -->
+    <string name="s2diag_title">S2 pogon</string>
+    <string name="s2diag_entry_intro">Za motor koji povremeno zakazuje: test savijanja kabela, hvatač rijetkih kodova grešaka, usporedba s GPS-om tijekom vožnje i statusni blok uživo.</string>
+    <string name="s2diag_entry_open">Provjeri pogon</string>
+    <string name="s2diag_entry_waiting">Još nije pročitan nijedan statusni blok.</string>
+    <string name="s2diag_entry_quiet">Od %1$s nema koda greške u statusnom bloku.</string>
+    <plurals name="s2diag_entry_caught">
+        <item quantity="one">Uhvaćen %1$d kod greške, posljednji greška\u00A0%2$d u %3$s.</item>
+        <item quantity="few">Uhvaćena %1$d koda grešaka, posljednji greška\u00A0%2$d u %3$s.</item>
+        <item quantity="other">Uhvaćeno %1$d kodova grešaka, posljednji greška\u00A0%2$d u %3$s.</item>
+    </plurals>
+    <string name="s2diag_close">Zatvori</string>
+    <string name="s2diag_intro">Statusni blok S2 ne javlja ni struju motora ni temperaturu ni signale Hallovih senzora. Zato YABA iz prekida brzine i koda greške zaključuje o kojem je kabelu ili dijelu riječ.</string>
+    <string name="s2diag_connect_reason">Pogon se može provjeriti samo kad je bicikl povezan.</string>
+    <string name="s2diag_clock">%1$s</string>
+    <string name="s2diag_copied">Kopirano u međuspremnik.</string>
+
+    <!-- Wiggle test -->
+    <string name="s2diag_wiggle_title">Test savijanja</string>
+    <string name="s2diag_wiggle_speed_cd">Brzina prema biciklu: %1$d\u00A0km/h</string>
+    <string name="s2diag_wiggle_speed_none_cd">Još nema brzine s bicikla.</string>
+    <string name="s2diag_wiggle_unit">km/h prema biciklu</string>
+    <plurals name="s2diag_wiggle_stale">
+        <item quantity="one">Više od %1$d\u00A0sekunde nema statusnog bloka.</item>
+        <item quantity="few">Više od %1$d\u00A0sekunde nema statusnog bloka.</item>
+        <item quantity="other">Više od %1$d\u00A0sekundi nema statusnog bloka.</item>
+    </plurals>
+    <string name="s2diag_wiggle_step1">Podigni prednji kotač, na primjer kutijom ispod donje cijevi, tako da bicikl čvrsto stoji i ne može se otkotrljati. Bicikl je otključan i uključen.</string>
+    <string name="s2diag_wiggle_step2">Dodirni Pokreni test savijanja iznad. Zatim rukom zavrti prednji kotač dok prikaz ne pokaže barem 10\u00A0km/h.</string>
+    <string name="s2diag_wiggle_step3">Radite to u dvoje: jedan vrti kotač, drugi savija kabel motora na vilici, na glavi okvira i ondje gdje ulazi u okvir. Drži prste dalje od žbica i kočionog diska, i ne okreći pedale ni ne pritišći boost.</string>
+    <string name="s2diag_wiggle_step4">Ako brzina padne na 0 iako se kotač vrti, mobitel zavibrira, zapišti i postavi oznaku s vremenom. Oznaka odmah nakon što je netko dotaknuo kotač ne vrijedi.</string>
+    <string name="s2diag_wiggle_steps_show">Prikaži korake</string>
+    <string name="s2diag_wiggle_zero_hint">Ako brzina pri vrtnji ostane na 0\u00A0km/h, bicikl je vjerojatno mjeri samo dok motor radi. Tada pomaže vožnja s GPS-om.</string>
+    <string name="s2diag_wiggle_spot">Mjesto na kabelu</string>
+    <string name="s2diag_spot_fork">Vilica</string>
+    <string name="s2diag_spot_head">Glava okvira</string>
+    <string name="s2diag_spot_frame">Okvir</string>
+    <string name="s2diag_wiggle_start">Pokreni test savijanja</string>
+    <string name="s2diag_wiggle_stop">Završi test savijanja</string>
+    <string name="s2diag_wiggle_running">Test je u tijeku: YABA čita statusni blok otprilike svake sekunde, a zaslon ostaje uključen.</string>
+    <string name="s2diag_mark">Postavi oznaku</string>
+    <string name="s2diag_marks_title">Oznake</string>
+    <string name="s2diag_marks_clear">Ukloni oznake</string>
+    <string name="s2diag_mark_drop">Pad s %1$d na 0\u00A0km/h</string>
+    <string name="s2diag_mark_manual">Ručno postavljeno pri %1$d\u00A0km/h</string>
+    <string name="s2diag_log_drop">Test savijanja: pad s %1$d na 0\u00A0km/h</string>
+    <string name="s2diag_log_mark">Test savijanja: oznaka pri %1$d\u00A0km/h</string>
+
+    <!-- Error catcher -->
+    <string name="s2diag_catch_title">Hvatač grešaka</string>
+    <string name="s2diag_catch_intro">YABA provjerava svaki statusni blok koji primi: one koje sam čita svakih nekoliko sekundi i one koje bicikl pošalje sam. Svaki kod greške u njima završi ovdje, čak i onaj u samo jednom bloku.</string>
+    <plurals name="s2diag_catch_blocks">
+        <item quantity="one">%1$s statusni blok provjeren od %2$s.</item>
+        <item quantity="few">%1$s statusna bloka provjerena od %2$s.</item>
+        <item quantity="other">%1$s statusnih blokova provjereno od %2$s.</item>
+    </plurals>
+    <plurals name="s2diag_catch_implausible">
+        <item quantity="one">%1$d statusni blok s nemogućim vrijednostima preskočen; to obično dolazi od pogrešnog ključa.</item>
+        <item quantity="few">%1$d statusna bloka s nemogućim vrijednostima preskočena; to obično dolazi od pogrešnog ključa.</item>
+        <item quantity="other">%1$d statusnih blokova s nemogućim vrijednostima preskočeno; to obično dolazi od pogrešnog ključa.</item>
+    </plurals>
+    <string name="s2diag_catch_none">Zasad nema koda greške.</string>
+    <string name="s2diag_hit_title">Greška\u00A0%1$d: %2$s</string>
+    <plurals name="s2diag_hit_group">
+        <item quantity="one">Greška\u00A0%1$d, %2$d×, u %3$s</item>
+        <item quantity="few">Greška\u00A0%1$d, %2$d×, zadnja u %3$s</item>
+        <item quantity="other">Greška\u00A0%1$d, %2$d×, zadnja u %3$s</item>
+    </plurals>
+    <string name="s2diag_hit_meta">%1$s, %2$d\u00A0km/h, baterija %3$d\u00A0%%, modul %4$d\u00A0%%</string>
+    <plurals name="s2diag_hit_blocks">
+        <item quantity="one">Javljeno u %1$d statusnom bloku.</item>
+        <item quantity="few">Javljeno u %1$d statusna bloka, do %2$s.</item>
+        <item quantity="other">Javljeno u %1$d statusnih blokova, do %2$s.</item>
+    </plurals>
+    <string name="s2diag_hit_part">Vjerojatno: %1$s</string>
+    <string name="s2diag_part_stall">Hallovi senzori ili fazni kabeli motora</string>
+    <string name="s2diag_part_voltage_high">baterija ili punjač</string>
+    <string name="s2diag_part_supply">kontakt baterije ili kabel napajanja</string>
+    <string name="s2diag_part_speed_signal">signal brzine iz motora, dakle Hallovi senzori ili kabel senzora</string>
+    <string name="s2diag_part_phase_short">kratki spoj na fazi motora, u kabelu ili na konektoru</string>
+    <string name="s2diag_part_torque">kabel senzora zakretnog momenta</string>
+    <string name="s2diag_part_heat">motor ili kontroler motora prevruć, obično nije kabel</string>
+    <string name="s2diag_part_hall_cable">Hallovi senzori u motoru ili kabel senzora kroz vilicu i glavu okvira</string>
+    <string name="s2diag_part_module">elektronika u okviru, ne pogon</string>
+    <string name="s2diag_part_gsm">mobilni modem u modulu, ne pogon</string>
+    <string name="s2diag_part_controller_line">podatkovni vod između elektronike u okviru i kontrolera motora</string>
+    <string name="s2diag_part_unknown">nepoznat kod; cijeli statusni blok nalazi se u zapisniku vožnje</string>
+    <string name="s2diag_note_disputed">Izvori se ne slažu znači li „motor prebrz“ kod 4 ili 5. Molim te, uključi S2 testni način: tada svaki promijenjeni statusni blok završi u zapisniku, pa se kod kasnije može razvrstati.</string>
+    <string name="s2diag_note_disputed_on">Izvori se ne slažu znači li „motor prebrz“ kod 4 ili 5. S2 testni način je uključen, pa je svaki promijenjeni statusni blok u zapisniku.</string>
+    <string name="s2diag_catch_copy">Kopiraj popis</string>
+    <string name="s2diag_catch_clear">Isprazni popis</string>
+
+    <!-- Ride with GPS -->
+    <string name="s2diag_gps_title">Vožnja s GPS-om</string>
+    <string name="s2diag_gps_intro">Tijekom vožnje YABA upisuje GPS brzinu mobitela pokraj brzine bicikla u zapisnik vožnje. Gdje bicikl javlja 0\u00A0km/h, a GPS mjeri više od 8\u00A0km/h, pregled zapisnika ondje prikazuje prekid signala.</string>
+    <string name="s2diag_gps_switch">Bilježi GPS brzinu</string>
+    <string name="s2diag_gps_switch_hint">U zapisnik vožnje ide samo brzina, nikad lokacija.</string>
+    <string name="s2diag_gps_denied">Bez pristupa preciznoj lokaciji mobitel ne mjeri GPS brzinu. Molim te, dopusti ga u postavkama aplikacije.</string>
+    <string name="s2diag_gps_coarse">Dopuštena je samo približna lokacija. Za GPS brzinu YABA treba preciznu.</string>
+    <string name="s2diag_gps_app_settings">Otvori postavke aplikacije</string>
+    <string name="s2diag_gps_off">Lokacija je na mobitelu isključena.</string>
+    <string name="s2diag_gps_location_settings">Uključi lokaciju</string>
+    <string name="s2diag_gps_waiting">Čeka se GPS. Pod vedrim nebom to obično traje manje od minute.</string>
+    <string name="s2diag_gps_fact_bike">Bicikl</string>
+    <string name="s2diag_gps_fact_gps">GPS</string>
+    <string name="s2diag_kmh">%1$s\u00A0km/h</string>
+    <string name="s2diag_gps_steps">Uključi GPS i vozi nekoliko minuta mirnom dionicom, cijelo vrijeme okrećući pedale uz razinu pomoći 1 ili višu. Za to otvori kokpit u Dijagnozi: pokreće zapisnik vožnje, a tipka za glasnoću označi trenutak kad motor zakaže.</string>
+    <string name="s2diag_gps_open_log">Otvori posljednji zapisnik vožnje</string>
+
+    <!-- Live status block -->
+    <string name="s2diag_raw_title">Statusni blok uživo</string>
+    <string name="s2diag_raw_intro">16 bajtova, onako kako ih bicikl upravo javlja. Svijetli su bajtovi koji su se promijenili s posljednjim blokom; mali broj broji njihove promjene.</string>
+    <string name="s2diag_raw_legend">Bajt 2 stanje i alarm, 3 brava, 4 brzina, 5 baterija, 6 baterija modula, 7 svjetlo i jedinica, 8 razina i regija, 10 zvukovi, 11 do 14 kilometri, 15 kod greške i radni bitovi.</string>
+    <string name="s2diag_raw_none">Još nema statusnog bloka.</string>
+    <plurals name="s2diag_raw_byte_cd">
+        <item quantity="one">Bajt %1$d: %2$s, promijenjen %3$d put</item>
+        <item quantity="few">Bajt %1$d: %2$s, promijenjen %3$d puta</item>
+        <item quantity="other">Bajt %1$d: %2$s, promijenjen %3$d puta</item>
+    </plurals>
+    <string name="s2diag_raw_copy">Kopiraj blok</string>
+
+    <!-- S2 test mode -->
+    <string name="s2diag_test_title">S2 testni način</string>
+    <string name="s2diag_test_switch">Dopusti nepotvrđene naredbe</string>
+    <string name="s2diag_test_hint">Omogućuje ono što na pravom S2 još nije potvrđeno: zaključavanje iz aplikacije i alarm pod Vožnja, rezervni kod pod Bicikl, utišavanje i 37\u00A0km/h ovdje ispod.</string>
+    <string name="s2diag_test_gatt">Kopiraj GATT pregled</string>
+
+    <!-- Ride log viewer: GPS speed and signal dropouts -->
+    <string name="s2diag_view_legend_gps">GPS brzina u km/h</string>
+    <string name="s2diag_view_legend_dropout">Prekid signala</string>
+    <string name="s2diag_view_readout_gps">GPS %1$s</string>
+    <string name="s2diag_view_fact_gps_top">Najveća GPS brzina</string>
+    <string name="s2diag_view_fact_dropouts">Prekidi signala</string>
+    <string name="s2diag_view_signal">Prekid signala: bicikl 0\u00A0km/h, GPS iznad 8\u00A0km/h</string>
+    <string name="s2diag_view_dropout_total">ukupno %1$s, GPS do %2$s</string>
+    <string name="s2diag_view_dropout_none">Nema prekida signala: gdje je GPS mjerio više od 8\u00A0km/h, i bicikl je javljao brzinu.</string>
+    <plurals name="s2diag_view_summary_dropouts">
+        <item quantity="one">%1$s put je bicikl javio 0\u00A0km/h dok je GPS mjerio više od 8\u00A0km/h, %2$s.</item>
+        <item quantity="few">%1$s puta je bicikl javio 0\u00A0km/h dok je GPS mjerio više od 8\u00A0km/h, prvi put %2$s.</item>
+        <item quantity="other">%1$s puta je bicikl javio 0\u00A0km/h dok je GPS mjerio više od 8\u00A0km/h, prvi put %2$s.</item>
+    </plurals>
+</resources>

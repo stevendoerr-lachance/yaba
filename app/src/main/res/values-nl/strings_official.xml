@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- De officiële VanMoof-app die om de Bluetooth-verbinding concurreert -->
+    <string name="official_joined_link">De fiets is al verbonden met deze telefoon. YABA sluit zich bij die verbinding aan.</string>
+    <string name="official_title">VanMoof-app geïnstalleerd</string>
+    <string name="official_explain">De VanMoof-app houdt op de achtergrond vaak de enige Bluetooth-verbinding met de fiets vast, want de fiets accepteert maar één telefoon tegelijk. YABA kan zich op deze telefoon bij die verbinding aansluiten. Lukt dat niet, sluit dan de VanMoof-app af.</string>
+    <string name="official_quit">VanMoof-app afsluiten</string>
+    <string name="official_quit_done">De VanMoof-app is afgesloten en YABA zoekt opnieuw. Blijft de blokkade bestaan, tik dan op de App-infopagina van de VanMoof-app op “Forceer stop”.</string>
+    <string name="official_mute">Bluetooth-toegang intrekken</string>
+    <string name="official_mute_steps">Open de App-infopagina van de VanMoof-app en kies “Rechten”, “Apparaten in de buurt”, “Niet toestaan”. Daarna bereikt de VanMoof-app de fiets niet meer. Sta de toegang weer toe zodra je de VanMoof-app nodig hebt.</string>
+    <string name="official_open_settings_failed">De instellingen van de VanMoof-app konden niet worden geopend. Open alsjeblieft zelf “Instellingen”, “Apps”, “VanMoof”.</string>
+    <string name="official_shared_hint">Verbonden via de Bluetooth-verbinding die de VanMoof-app heeft opgebouwd.</string>
+</resources>

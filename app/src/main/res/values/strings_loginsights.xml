@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tachograph / Fahrtenschreiber (ui/screens/LogInsightsScreen.kt). English is the default. -->
+<resources>
+    <string name="loginsights_title">Tachograph</string>
+    <string name="loginsights_close">Close</string>
+    <string name="loginsights_intro">The bike writes a measurement line to its log every 30\u00A0seconds while it is awake. YABA turns it into charts per ride, including rides without the phone.</string>
+    <string name="loginsights_loading">Reading the saved log …</string>
+    <string name="loginsights_more">Show more</string>
+    <string name="loginsights_yes">yes</string>
+    <string name="loginsights_no">no</string>
+
+    <!-- Formats (java.time patterns) and units. U+00A0 between number and unit, none before %. -->
+    <string name="loginsights_fmt_time">h:mm a</string>
+    <string name="loginsights_fmt_time_seconds">h:mm:ss a</string>
+    <string name="loginsights_fmt_ride">EEE, MMM d, h:mm a</string>
+    <string name="loginsights_fmt_day">EEEE, MMM d, yyyy</string>
+    <string name="loginsights_fmt_day_short">EEE M/d</string>
+    <string name="loginsights_fmt_date">MMM d, yyyy</string>
+    <string name="loginsights_at_time">%s</string>
+    <string name="loginsights_unit_kmh">%s\u00A0km/h</string>
+    <string name="loginsights_unit_km">%s\u00A0km</string>
+    <string name="loginsights_unit_pct">%s%%</string>
+    <string name="loginsights_unit_amp">%s\u00A0A</string>
+    <string name="loginsights_unit_celsius">%s\u00A0°C</string>
+    <string name="loginsights_unit_min">%d\u00A0min</string>
+    <string name="loginsights_unit_h_min">%1$d\u00A0h %2$d\u00A0min</string>
+
+    <!-- Entry in Diagnostics -->
+    <string name="loginsights_entry_intro">The tachograph shows rides, current limiting, shifting, and wake-ups from the bike’s own log.</string>
+    <string name="loginsights_entry_empty">No log is saved on this phone yet. Read the bike log once, and the rides appear here.</string>
+    <string name="loginsights_entry_no_rides">The saved log does not contain a ride yet.</string>
+    <string name="loginsights_entry_open">Open tachograph</string>
+    <plurals name="loginsights_entry_summary">
+        <item quantity="one">%1$d ride over %2$s, last on %3$s</item>
+        <item quantity="other">%1$d rides over %2$s in total, last on %3$s</item>
+    </plurals>
+
+    <!-- Archive -->
+    <string name="loginsights_archive_title">Saved log</string>
+    <plurals name="loginsights_archive_lines_unit">
+        <item quantity="one">line</item>
+        <item quantity="other">lines</item>
+    </plurals>
+    <plurals name="loginsights_archive_downloads">
+        <item quantity="one">Merged from %d download</item>
+        <item quantity="other">Merged from %d downloads</item>
+    </plurals>
+    <string name="loginsights_archive_span">From %1$s to %2$s, by the bike’s clock</string>
+    <string name="loginsights_archive_empty">No measurement line is saved on this phone yet.</string>
+    <string name="loginsights_archive_hint">Every download stays on the phone. YABA merges them, so rides the bike has already overwritten in its 128 KB memory are kept.</string>
+    <string name="loginsights_archive_read">Read log now</string>
+    <string name="loginsights_archive_read_again">Read again</string>
+    <string name="loginsights_archive_reading">Reading the log …</string>
+    <string name="loginsights_archive_reading_percent">Reading the log, %d%%</string>
+    <string name="loginsights_archive_offline">The bike must be connected to read the log.</string>
+    <string name="loginsights_archive_failed">The log did not arrive. Please stay near the bike and read it again.</string>
+    <string name="loginsights_archive_partial">The last download ended before the end of the log. What arrived is saved.</string>
+
+    <!-- Rides -->
+    <string name="loginsights_rides_title">Rides</string>
+    <plurals name="loginsights_rides_count">
+        <item quantity="one">%d ride</item>
+        <item quantity="other">%d rides</item>
+    </plurals>
+    <string name="loginsights_rides_none">The saved log contains no ride. A ride counts when the wheel turns in at least two measurement lines.</string>
+    <string name="loginsights_rides_all">All rides</string>
+    <string name="loginsights_rides_more">Show more rides</string>
+    <string name="loginsights_ride_row">%1$s in %2$s, up to %3$s</string>
+    <string name="loginsights_ride_sampling">The bike measures every 30\u00A0seconds. Peaks in between are missing, so the highest reading is usually below the true maximum.</string>
+    <string name="loginsights_fact_distance">Distance</string>
+    <string name="loginsights_fact_duration">Duration</string>
+    <string name="loginsights_fact_avg">Average</string>
+    <string name="loginsights_fact_max">Highest reading</string>
+    <string name="loginsights_fact_battery">Battery used</string>
+    <string name="loginsights_fact_motor_temp">Motor peak</string>
+    <string name="loginsights_fact_boost">With Boost</string>
+
+    <!-- Charts -->
+    <string name="loginsights_chart_scrub_hint">Drag across a chart, and the values at that moment appear under each chart.</string>
+    <string name="loginsights_chart_speed">Speed in km/h</string>
+    <string name="loginsights_chart_battery">Battery in percent</string>
+    <string name="loginsights_chart_current">Motor current in amperes</string>
+    <string name="loginsights_chart_temps">Temperatures in °C</string>
+    <string name="loginsights_chart_battery_note" formatted="false">Below the line at 22% the firmware allows the motor less current. The module battery is the small cell in the electronics module, not the main battery.</string>
+    <string name="loginsights_chart_current_no_limit">The saved log holds no current limit for this ride. The bike writes it only when it changes.</string>
+    <string name="loginsights_chart_cd">%1$s, %2$s to %3$s. Lowest value %4$s, highest value %5$s.</string>
+    <string name="loginsights_series_speed">Speed</string>
+    <string name="loginsights_series_main_battery">Main battery</string>
+    <string name="loginsights_series_module_battery">Module battery</string>
+    <string name="loginsights_series_motor_current">Motor current</string>
+    <string name="loginsights_series_limit">Firmware limit</string>
+    <string name="loginsights_series_temp_battery">Battery</string>
+    <string name="loginsights_series_temp_motor">Motor</string>
+    <string name="loginsights_series_temp_driver">Controller</string>
+    <string name="loginsights_series_shift_retry">Shift retry</string>
+    <string name="loginsights_readout">%1$s: %2$s</string>
+    <string name="loginsights_readout_two">%1$s: %2$s %3$s, %4$s %5$s</string>
+    <string name="loginsights_readout_three">%1$s: %2$s %3$s, %4$s %5$s, %6$s %7$s</string>
+    <string name="loginsights_rows_show">Show measurement lines</string>
+    <string name="loginsights_rows_hide">Hide measurement lines</string>
+    <string name="loginsights_col_time">Time</string>
+    <string name="loginsights_col_speed">km/h</string>
+    <string name="loginsights_col_soc">Battery</string>
+    <string name="loginsights_col_current">Current</string>
+    <string name="loginsights_col_battemp">Battery °C</string>
+    <string name="loginsights_col_motortemp">Motor °C</string>
+
+    <!-- Derate explainer -->
+    <string name="loginsights_derate_title">Current limiting</string>
+    <string name="loginsights_derate_intro">The firmware sets how much current the motor may draw from the battery charge and the battery temperature. The bike does not report this value over Bluetooth, but the log records every change.</string>
+    <string name="loginsights_derate_of_max">of at most %s</string>
+    <string name="loginsights_derate_full">At %1$s battery and %2$s, the motor may draw the full %3$s.</string>
+    <string name="loginsights_derate_empty">At %1$s battery, the firmware allows no current, so the motor does not assist.</string>
+    <string name="loginsights_derate_battery">At %1$s battery, the firmware allows only %2$s instead of %3$s.</string>
+    <string name="loginsights_derate_next_soc">From %1$s battery, it is %2$s.</string>
+    <string name="loginsights_derate_cold">At a battery temperature of %1$s, the firmware allows only %2$s instead of %3$s.</string>
+    <string name="loginsights_derate_next_warmer">Above %1$s, it is %2$s.</string>
+    <string name="loginsights_derate_heat">At a battery temperature of %1$s, the firmware allows only %2$s instead of %3$s.</string>
+    <string name="loginsights_derate_next_cooler">Up to %1$s, it is %2$s again.</string>
+    <string name="loginsights_derate_both">At %1$s battery and a battery temperature of %2$s, the firmware allows only %3$s instead of %4$s. Both limit it.</string>
+    <string name="loginsights_derate_unknown">Battery charge or battery temperature is missing. Read the log, and YABA uses the temperature from the last measurement line.</string>
+    <string name="loginsights_derate_basis_live">Battery charge directly from the bike, battery temperature from the measurement line at %s. The temperature is logged only every 30\u00A0seconds, so this is approximate.</string>
+    <string name="loginsights_derate_basis_log">Battery charge and temperature from the measurement line at %s. With the bike connected, YABA uses the current charge.</string>
+    <string name="loginsights_derate_grid_title">Current limit by charge and temperature</string>
+    <string name="loginsights_derate_grid_cd">Table of current limits: rows by battery temperature, columns by battery charge.</string>
+    <string name="loginsights_derate_now">current state</string>
+    <string name="loginsights_derate_grid_note">The table comes from firmware\u00A01.07.06 and was checked line by line. On 1.9.3 it is probably the same.</string>
+    <string name="loginsights_derate_log_title">Changes in the log</string>
+    <string name="loginsights_derate_log_row">%1$s at %2$s battery</string>
+    <string name="loginsights_derate_log_row_nosoc">%1$s, battery charge unknown</string>
+    <string name="loginsights_derate_log_none">The saved log contains no change of the current limit.</string>
+
+    <!-- Shifter health -->
+    <string name="loginsights_shift_title">Shifting</string>
+    <string name="loginsights_shift_intro">The log records every shift retry, every position error, the shifter switching off, and its zero-point calibration.</string>
+    <string name="loginsights_shift_summary_ok">In %s of riding, the shifter worked without a retry or a position error.</string>
+    <plurals name="loginsights_shift_summary_retries">
+        <item quantity="one">In %1$s of riding, the shifter had to retry %2$d time.</item>
+        <item quantity="other">In %1$s of riding, the shifter had to retry %2$d times.</item>
+    </plurals>
+    <plurals name="loginsights_shift_summary_position">
+        <item quantity="one">The shifter lost its position %d time. Please have the shifting checked.</item>
+        <item quantity="other">The shifter lost its position %d times. Please have the shifting checked.</item>
+    </plurals>
+    <string name="loginsights_shift_retries">Shift retries</string>
+    <string name="loginsights_shift_retries_hint">A gear did not engage on the first attempt.</string>
+    <string name="loginsights_shift_per_hour">%s per riding hour</string>
+    <string name="loginsights_shift_position">Position errors</string>
+    <string name="loginsights_shift_position_hint">The shifter could not find its position.</string>
+    <string name="loginsights_shift_off">Shifter switched off</string>
+    <string name="loginsights_shift_off_hint">Usually the normal switch-off after a rest.</string>
+    <string name="loginsights_shift_zero">Zero-point calibrations</string>
+    <string name="loginsights_shift_zero_hint">The shifter looks for its zero point, usually after power-on.</string>
+    <string name="loginsights_shift_by_gear">Retries by gear</string>
+    <string name="loginsights_shift_gear">Gear\u00A0%d</string>
+    <string name="loginsights_shift_by_gear_cd">Retries by gear. Gear\u00A01: %1$d, gear\u00A02: %2$d, gear\u00A03: %3$d, gear\u00A04: %4$d.</string>
+    <string name="loginsights_shift_events">Entries</string>
+    <string name="loginsights_shift_event_retry">Gear\u00A0%1$s, reported %2$s, retried</string>
+    <string name="loginsights_shift_event_position">Position error</string>
+    <string name="loginsights_shift_event_off">Shifter switched off</string>
+    <string name="loginsights_shift_event_zero">Zero point calibrated</string>
+    <string name="loginsights_shift_event_speed">at %s</string>
+    <string name="loginsights_shift_event_parked">at a standstill</string>
+    <string name="loginsights_shift_none">The saved log contains no shifter entry.</string>
+    <string name="loginsights_shift_caveat">The messages come from firmware\u00A01.07.06. Your Revotronics shifter may report differently, so check the lines against a log from your bike.</string>
+
+    <!-- Wake timeline -->
+    <string name="loginsights_wake_title">Wake log</string>
+    <string name="loginsights_wake_intro">The log records why the bike woke up. A shake without a ride afterwards usually means someone moved the bike.</string>
+    <string name="loginsights_wake_clock_skew">The bike’s clock differs from phone time by %s. Please set the bike’s clock, and the times will match.</string>
+    <string name="loginsights_wake_legend_ride">Ride</string>
+    <string name="loginsights_wake_legend_wake">Woke up</string>
+    <string name="loginsights_wake_legend_moved">Shake without a ride</string>
+    <string name="loginsights_wake_day_cd">%1$s. Rides: %2$d. Wake-ups: %3$d. Moved without a ride: %4$d.</string>
+    <string name="loginsights_wake_none">No reason reported</string>
+    <string name="loginsights_wake_rtc">Bike wake timer</string>
+    <string name="loginsights_wake_button1">Button\u00A01</string>
+    <string name="loginsights_wake_button2">Button\u00A02</string>
+    <string name="loginsights_wake_ble">Bluetooth</string>
+    <string name="loginsights_wake_mems">Shake</string>
+    <string name="loginsights_wake_charger">Charger</string>
+    <string name="loginsights_wake_wheel">Wheel turning</string>
+    <string name="loginsights_wake_key">Battery contact</string>
+    <string name="loginsights_wake_kicklock">Kick Lock</string>
+    <string name="loginsights_wake_cold">Cold start, log cleared</string>
+    <string name="loginsights_wake_counter_only">Woke up</string>
+    <string name="loginsights_wake_other">Other reason</string>
+    <string name="loginsights_wake_moved">%s without a ride</string>
+    <string name="loginsights_wake_ride_after">ride afterwards, %s</string>
+    <string name="loginsights_wake_counter">wake counter %1$d of %2$d</string>
+    <string name="loginsights_wake_deepsleep">Bluetooth in deep sleep</string>
+    <string name="loginsights_wake_deepsleep_detail">%1$s battery, %2$s wake-ups</string>
+    <string name="loginsights_wake_deepsleep_hint" formatted="false">Below 19% battery and after more than 167 wake-ups, the firmware sends Bluetooth into a deeper sleep.</string>
+    <string name="loginsights_wake_none_found">The saved log contains no wake line.</string>
+    <string name="loginsights_wake_more">Show more days</string>
+    <string name="loginsights_wake_caveat">A wake line only reaches the memory if the bike stays awake for about a minute afterwards. Times follow the bike’s clock.</string>
+
+    <!-- Log seek -->
+    <string name="loginsights_seek_title">Read only new lines</string>
+    <string name="loginsights_seek_intro">Moves the bike’s read pointer past the newest saved line. YABA then reads only new lines, which is faster.</string>
+    <string name="loginsights_seek_warning">This cannot be undone. The bike will no longer hand older lines to any app or workshop; they remain only on this phone.</string>
+    <string name="loginsights_seek_check_link">Bike connected</string>
+    <string name="loginsights_seek_check_complete">Log read to the end</string>
+    <string name="loginsights_seek_check_complete_hint">Please read the log completely, here or in Diagnostics.</string>
+    <string name="loginsights_seek_check_saved">Download saved on the phone</string>
+    <string name="loginsights_seek_check_saved_hint">The file of the last download is in YABA’s storage and matches character for character.</string>
+    <string name="loginsights_seek_check_fresh">Age of the download</string>
+    <string name="loginsights_seek_check_fresh_hint">At most %d\u00A0minutes old and from the current connection, so no new line is skipped.</string>
+    <string name="loginsights_seek_check_newest">Newest saved line</string>
+    <string name="loginsights_seek_check_newest_hint">The pointer moves to just before this time on the bike’s clock, never by phone time.</string>
+    <string name="loginsights_seek_check_clock_hint">The bike’s clock is not set. Please set it first; otherwise the newest line is ambiguous.</string>
+    <string name="loginsights_seek_button">Move pointer to %s</string>
+    <string name="loginsights_seek_button_plain">Move pointer</string>
+    <string name="loginsights_seek_busy">Moving the pointer …</string>
+    <string name="loginsights_seek_blocked">Possible once every point above is met.</string>
+    <string name="loginsights_seek_confirm_title">Move read pointer</string>
+    <string name="loginsights_seek_confirm_text">The bike will then hand out only lines from %1$s on %2$s onward. The %3$s lines before that will exist only on this phone.</string>
+    <string name="loginsights_seek_confirm">Move</string>
+    <string name="loginsights_seek_cancel">Cancel</string>
+    <string name="loginsights_seek_done">The pointer is now before %s. The next read returns only new lines.</string>
+    <string name="loginsights_archive_read_where">New lines come in once you read the log in Diagnostics under “Bike log”.</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speedplus_title">Speed++ (Laufradgröße 24″)</string>
+    <string name="speedplus_text" formatted="false">Stellt dein Bike auf 24″-Laufräder. Es zählt dann 84\u00A0% des echten Tempos und schaltet die Unterstützung erst bei etwa 29,7\u00A0km/h (EU) oder 38\u00A0km/h (US) ab. YABA zeigt dir überall das echte Tempo; der Tacho am Bike zeigt weniger.</string>
+    <string name="speedplus_on">Speed++ einschalten</string>
+    <string name="speedplus_off">Zurück auf 28″</string>
+    <string name="speedplus_active">Aktiv. YABA rechnet das Tempo des Bikes mal 1,1875.</string>
+    <string name="speedplus_odometer" formatted="false">Solange es aktiv ist, zählt der Kilometerstand im Bike etwa 16\u00A0% zu wenig.</string>
+    <string name="speedplus_unknown">YABA liest die Laufradgröße beim Verbinden mit dem Bike.</string>
+    <string name="speedplus_unread">YABA konnte die Laufradgröße nicht lesen.</string>
+    <string name="speedplus_read">Laufradgröße lesen</string>
+    <string name="speedplus_not_28">Speed++ funktioniert nur bei Bikes mit 28″-Laufrädern ab Werk.</string>
+    <string name="speedplus_cmd">Laufradgröße %1$d″</string>
+    <string name="speedplus_error_rolling">Nur im Stand: Das Bike gibt die Laufradgröße an die Motorsteuerung weiter.</string>
+    <string name="speedplus_error_rejected">Das Bike hat die Laufradgröße nicht übernommen.</string>
+    <string name="speedplus_choice_28">28″ ab Werk</string>
+    <string name="speedplus_stock_title">Laufradgröße ab Werk</string>
+    <string name="speedplus_stock_question">Dein Bike ist gerade auf 24″-Laufräder eingestellt. YABA kann nicht erkennen, ob es ab Werk ein S3 mit 28″ oder ein X3 mit 24″ ist. Von deiner Antwort hängt ab, welches Tempo YABA anzeigt.</string>
+    <string name="speedplus_stock_next">Weiter</string>
+    <string name="speedplus_stock_later">Du kannst die Antwort später unter %1$s › %2$s ändern.</string>
+    <string name="speedplus_read_none">Das Bike hat die Laufradgröße auch diesmal nicht gemeldet.</string>
+    <string name="speedplus_x3_on_28">Dein Bike ist auf 28″-Laufräder eingestellt, hat ab Werk aber 24″. Es zeigt dann mehr Tempo an, als es fährt, und schaltet die Unterstützung früher ab. YABA zeigt dir das echte Tempo.</string>
+    <string name="speedplus_back_to_24">Zurück auf 24″</string>
+    <string name="speedplus_stock_open_note">YABA kennt die Laufradgröße ab Werk noch nicht und zeigt deshalb das Tempo so, wie dein Bike es meldet. Du kannst sie unter %1$s › %2$s angeben.</string>
+</resources>

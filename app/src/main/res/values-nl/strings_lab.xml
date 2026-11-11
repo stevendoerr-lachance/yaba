@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lab_char_cadence">Cadans</string>
+    <string name="lab_char_torque">Trapkracht</string>
+
+    <string name="lab_sound_update_failed">Update mislukt</string>
+    <string name="lab_sound_update_ok">Update geslaagd</string>
+    <string name="lab_sound_find_loud">Luide zoektoon</string>
+
+    <string name="lab_clip_lock">Vergrendelen</string>
+    <string name="lab_clip_unlock">Ontgrendelen</string>
+    <string name="lab_clip_startup">Aanzetten</string>
+    <string name="lab_clip_shutdown">Uitzetten</string>
+    <string name="lab_clip_charging">Laden</string>
+
+    <string name="lab_error_clock_readback">De teruglezing van de klok is onwaarschijnlijk. De klok is niet ingesteld.</string>
+    <string name="lab_error_backup_first">Download en bewaar het logboek van de fiets vóór de zelftest.</string>
+    <string name="lab_error_not_parked">Alleen stilstaand en buiten de rijmodus; dit schakelt de ondersteuning uit.</string>
+    <string name="lab_error_clip">Overdracht mislukt.</string>
+    <string name="lab_error_generic">Het commando is niet uitgevoerd.</string>
+
+    <string name="lab_log_siren">Sirene niveau\u00A0%d</string>
+    <string name="lab_log_clip">Toon vervangen: %s</string>
+
+</resources>

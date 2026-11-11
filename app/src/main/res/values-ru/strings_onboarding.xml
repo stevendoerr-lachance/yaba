@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Настройка: вход или ключ, доступ к Bluetooth, поиск велосипеда, первая разблокировка (ui/onboarding). Тексты: не больше двух предложений и 190 знаков. -->
+<resources>
+    <string name="onb_signin_button">Войти</string>
+    <string name="onb_perm_title">Доступ к устройствам поблизости</string>
+    <string name="onb_perm_text">Чтобы найти твой велосипед, YABA нужен доступ к «Устройствам поблизости». YABA при этом не использует твоё местоположение.</string>
+    <string name="onb_perm_button">Разрешить доступ</string>
+    <string name="onb_perm_denied">Доступ отклонён. Пожалуйста, разреши его в настройках приложения, в разделе «Разрешения».</string>
+    <string name="onb_perm_denied_again">Доступ отклонён. Нажми «Разрешить доступ», чтобы запросить снова.</string>
+    <string name="onb_find_title">Поиск велосипеда</string>
+    <string name="onb_find_text">YABA ищет твой велосипед по Bluetooth. Пожалуйста, оставайся рядом и закрой приложение VanMoof: велосипед принимает только один телефон за раз.</string>
+    <string name="onb_find_button">Искать сейчас</string>
+    <string name="onb_notfound_text">YABA уже более 12\u00A0секунд не получает ответа от «%1$s». Пожалуйста, закрой приложение VanMoof и разбуди велосипед кнопкой звонка.</string>
+    <string name="onb_official_text">Приложение VanMoof часто удерживает в фоне единственное Bluetooth-подключение к велосипеду, потому что велосипед принимает только один телефон за раз.</string>
+    <string name="onb_unlock_title">Первая разблокировка</string>
+    <string name="onb_unlock_text">Твой велосипед найден. Сдвинь ползунок до конца, и YABA разблокирует велосипед напрямую по Bluetooth.</string>
+    <string name="onb_server_text_http">Сервер VanMoof в %1$s ответил ошибкой\u00A0%2$d. Нажми «Повторить», чтобы повторить запрос.</string>
+    <string name="onb_server_text_timeout">В %1$s ответ не пришёл в течение 10\u00A0секунд. Нажми «Повторить», чтобы повторить запрос.</string>
+    <string name="onb_server_text_dead">Сервер VanMoof не отвечает ни на один запрос с этого телефона. Дней без ответа: %1$d.</string>
+    <!-- matrix: ASCII only, BLE glyph + 2 empty columns + word must stay within 36 columns -->
+    <string name="onb_matrix_scan">SCAN</string>
+    <string name="onb_step_cd">Шаг\u00A0%1$d из %2$d</string>
+    <string name="onb_change_key">Изменить ключ</string>
+    <string name="onb_find_idle_text">Поиск остановлен. Оставайся рядом и закрой приложение VanMoof, затем начни поиск заново.</string>
+</resources>

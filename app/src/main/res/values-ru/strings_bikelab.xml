@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bikelab_title">Bike-Lab</string>
+    <string name="bikelab_intro">Значения, которые знает прошивка и не показывает ни одно приложение, вместе с командами, работающими только на месте.</string>
+    <string name="bikelab_needs_link">Велосипед не подключён. Значения остаются пустыми, пока нет связи.</string>
+
+    <string name="bikelab_live_title">Значения в реальном времени</string>
+    <string name="bikelab_temp_motor">Температура мотора</string>
+    <string name="bikelab_temp_controller">Температура контроллера</string>
+    <string name="bikelab_temp_board">Температура платы</string>
+    <string name="bikelab_temp_value">%1$d\u00A0°C</string>
+    <string name="bikelab_torque_calibrate">Задать ноль</string>
+    <string name="bikelab_torque_calibrated">Усилие на педалях (калибровано)</string>
+    <string name="bikelab_torque_hint">Задай ноль, пока не крутишь педали; сырое значение не имеет калиброванной единицы.</string>
+
+    <string name="bikelab_config_title">Конфигурация</string>
+    <string name="bikelab_cycles">Циклы заряда</string>
+    <string name="bikelab_powerbank_cycles">Циклы PowerBank</string>
+    <string name="bikelab_lux">Яркость (сырая)</string>
+    <string name="bikelab_threshold">Порог включения</string>
+    <string name="bikelab_threshold_save">Сохранить порог</string>
+    <string name="bikelab_threshold_hint">В авторежиме свет включается, когда яркость падает ниже порога. Значение во флеше; оно записывается только при сохранении.</string>
+    <string name="bikelab_working">…</string>
+
+    <string name="bikelab_clock">Часы велосипеда</string>
+    <string name="bikelab_clock_set">Установить часы</string>
+    <string name="bikelab_clock_ok">точно</string>
+    <string name="bikelab_clock_ahead">спешат на %1$d\u00A0секунд</string>
+    <string name="bikelab_clock_behind">отстают на %1$d\u00A0секунд</string>
+    <string name="bikelab_clock_unknown">неизвестно</string>
+    <string name="bikelab_parked_only">Только на месте и вне режима езды; иначе это отключает помощь мотора.</string>
+
+    <string name="bikelab_lamps_title">Каналы ламп</string>
+    <string name="bikelab_lamp_on">Канал\u00A0%1$d включён</string>
+    <string name="bikelab_lamp_off">Канал\u00A0%1$d выключен</string>
+    <string name="bikelab_lamps_restore">Сбросить лампы</string>
+    <string name="bikelab_lamps_hint">Каждый канал только включён или выключен. Лампа, выключенная из приложения, остаётся выключенной, пока её не вернёт настоящая смена состояния или этот сброс.</string>
+
+    <string name="bikelab_boost">Boost на ходу</string>
+    <string name="bikelab_boost_caption">Удержание Boost меняет уровень и на ходу, не только на месте.</string>
+
+    <string name="bikelab_actions_title">На месте</string>
+    <string name="bikelab_sleep">Усыпить сейчас</string>
+    <string name="bikelab_alarm_stop">Остановить тревогу</string>
+    <string name="bikelab_alarm_stop_note">Останавливает идущую тревогу без резервного кода. Команда также снимает программную блокировку; после этого велосипед может считаться разблокированным.</string>
+    <string name="bikelab_selftest">Запустить самотест</string>
+    <string name="bikelab_selftest_hint">Велосипед проигрывает диагностический тон, пишет своё состояние в журнал и затем уходит в режим ожидания. Журнал сохраняется заранее.</string>
+    <string name="bikelab_selftest_archiving">Сохраняет журнал …</string>
+    <string name="bikelab_selftest_dialog_title">Запустить самотест</string>
+    <string name="bikelab_selftest_dialog_text">Велосипед сначала сохраняет свой журнал, затем проходит диагностику и уходит в режим ожидания. Отчёт выталкивает самые старые строки журнала; поэтому сначала сохраняется.</string>
+    <string name="bikelab_selftest_dialog_confirm">Запустить</string>
+    <string name="bikelab_cancel">Отмена</string>
+
+    <string name="bikelab_exp_title">Эксперименты</string>
+    <string name="bikelab_siren_title">Сирена</string>
+    <string name="bikelab_siren_stage">Уровень\u00A0%1$d</string>
+    <string name="bikelab_siren_stop">Сигнализация выключена</string>
+    <string name="bikelab_siren_active">Сирена работает (уровень\u00A0%1$d).</string>
+    <string name="bikelab_siren_dialog_title">Включить сирену уровня\u00A0%1$d</string>
+    <string name="bikelab_siren_dialog_confirm">Включить</string>
+</resources>

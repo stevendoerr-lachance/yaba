@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fahren (RideScreen): what an S2 offers instead of the S3 controls (the S2 plan A1, B6). -->
+    <string name="s2ui_alarm_manual">Manual</string>
+    <string name="s2ui_alarm_read_only">YABA changes the S2’s alarm only once the test on a real bike has confirmed it. In S2 test mode it works already; the switch is in Diagnostics under S2 drive, at the bottom.</string>
+    <string name="s2ui_roll_to_unlock">An S2 usually releases the Kick Lock only once you roll the bike while the unlock animation runs.</string>
+    <string name="s2ui_lock_by_foot">To lock an S2, push the Kick Lock down with your foot.</string>
+    <!-- Klang (SoundScreen): an S2 has no sound command at all. -->
+    <string name="s2ui_sound_none">The S2 has no Bluetooth command for the bell tone, sounds or a custom bell.</string>
+    <!-- Bike (BikeScreen). -->
+    <string name="s2ui_fact_module_battery">Module battery</string>
+    <string name="s2ui_code_s2">An S2 can only set a backup code; it cannot clear or show it. Please remember the new code before you send it.</string>
+    <!-- Diagnose (DiagnosisScreen): the S2 code lookup. -->
+    <string name="s2ui_lookup_hint">Enter the number the bike shows on its display, for example 16.</string>
+    <!-- Cockpit: an S2 shows its error code in place of the four S3 lamps. -->
+    <string name="s2ui_cockpit_lamp_error">Error code</string>
+    <string name="s2ui_cockpit_val_no_error">none</string>
+    <!-- Garage: model line per bike and the model choice for bikes the account does not describe. -->
+    <string name="s2ui_garage_family_s3">Model S3/X3</string>
+    <string name="s2ui_garage_family_s2">Model S2/X2, support in testing</string>
+    <string name="s2ui_garage_family_legacy">Older VanMoof: YABA does not support this model.</string>
+    <string name="s2ui_garage_model_title">Model</string>
+    <string name="s2ui_garage_model_hint">The S2 and X2 use a different Bluetooth protocol than the S3 and X3. Choose your bike’s model so YABA talks to it correctly.</string>
+</resources>

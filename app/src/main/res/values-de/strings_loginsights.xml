@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fahrtenschreiber (ui/screens/LogInsightsScreen.kt). -->
+<resources>
+    <string name="loginsights_title">Fahrtenschreiber</string>
+    <string name="loginsights_close">Schließen</string>
+    <string name="loginsights_intro">Das Bike schreibt alle 30\u00A0Sekunden eine Messzeile in sein Protokoll, solange es wach ist. YABA macht daraus Kurven pro Fahrt, auch für Fahrten ohne Handy.</string>
+    <string name="loginsights_loading">Liest das gesicherte Protokoll …</string>
+    <string name="loginsights_more">Weitere anzeigen</string>
+    <string name="loginsights_yes">ja</string>
+    <string name="loginsights_no">nein</string>
+
+    <!-- Formats (java.time patterns) and units. U+00A0 between number and unit. -->
+    <string name="loginsights_fmt_time">HH:mm</string>
+    <string name="loginsights_fmt_time_seconds">HH:mm:ss</string>
+    <string name="loginsights_fmt_ride">EEE dd.MM., HH:mm \'Uhr\'</string>
+    <string name="loginsights_fmt_day">EEEE, dd.MM.yyyy</string>
+    <string name="loginsights_fmt_day_short">EEE dd.MM.</string>
+    <string name="loginsights_fmt_date">dd.MM.yyyy</string>
+    <string name="loginsights_at_time">%s\u00A0Uhr</string>
+    <string name="loginsights_unit_kmh">%s\u00A0km/h</string>
+    <string name="loginsights_unit_km">%s\u00A0km</string>
+    <string name="loginsights_unit_pct">%s\u00A0%%</string>
+    <string name="loginsights_unit_amp">%s\u00A0A</string>
+    <string name="loginsights_unit_celsius">%s\u00A0°C</string>
+    <string name="loginsights_unit_min">%d\u00A0min</string>
+    <string name="loginsights_unit_h_min">%1$d\u00A0h %2$d\u00A0min</string>
+
+    <!-- Entry in Diagnose -->
+    <string name="loginsights_entry_intro">Der Fahrtenschreiber zeigt Fahrten, Drosselung, Schaltung und Weckvorgänge aus dem Protokoll des Bikes.</string>
+    <string name="loginsights_entry_empty">Auf diesem Handy ist noch kein Protokoll gesichert. Lies das Protokoll des Bikes einmal aus, dann erscheinen hier die Fahrten.</string>
+    <string name="loginsights_entry_no_rides">Im gesicherten Protokoll steht noch keine Fahrt.</string>
+    <string name="loginsights_entry_open">Fahrtenschreiber öffnen</string>
+    <plurals name="loginsights_entry_summary">
+        <item quantity="one">%1$d Fahrt, %2$s, zuletzt %3$s</item>
+        <item quantity="other">%1$d Fahrten, zusammen %2$s, zuletzt %3$s</item>
+    </plurals>
+
+    <!-- Archive -->
+    <string name="loginsights_archive_title">Gesichertes Protokoll</string>
+    <plurals name="loginsights_archive_lines_unit">
+        <item quantity="one">Zeile</item>
+        <item quantity="other">Zeilen</item>
+    </plurals>
+    <plurals name="loginsights_archive_downloads">
+        <item quantity="one">Zusammengeführt aus %d Auslesung</item>
+        <item quantity="other">Zusammengeführt aus %d Auslesungen</item>
+    </plurals>
+    <string name="loginsights_archive_span">Vom %1$s bis %2$s, nach der Uhr des Bikes</string>
+    <string name="loginsights_archive_empty">Auf diesem Handy ist noch keine Messzeile gesichert.</string>
+    <string name="loginsights_archive_hint">Jede Auslesung bleibt auf dem Handy. YABA führt sie zusammen, so bleiben auch Fahrten erhalten, die das Bike in seinem 128-KB-Speicher schon überschrieben hat.</string>
+    <string name="loginsights_archive_read">Protokoll jetzt auslesen</string>
+    <string name="loginsights_archive_read_again">Erneut auslesen</string>
+    <string name="loginsights_archive_reading">Liest das Protokoll …</string>
+    <string name="loginsights_archive_reading_percent">Liest das Protokoll, %d\u00A0%%</string>
+    <string name="loginsights_archive_offline">Zum Auslesen muss das Bike verbunden sein.</string>
+    <string name="loginsights_archive_failed">Das Protokoll kam nicht an. Bitte bleib beim Bike und lies es erneut aus.</string>
+    <string name="loginsights_archive_partial">Die letzte Auslesung endete vor dem Ende des Protokolls. Was ankam, ist gesichert.</string>
+
+    <!-- Rides -->
+    <string name="loginsights_rides_title">Fahrten</string>
+    <plurals name="loginsights_rides_count">
+        <item quantity="one">%d Fahrt</item>
+        <item quantity="other">%d Fahrten</item>
+    </plurals>
+    <string name="loginsights_rides_none">Im gesicherten Protokoll steht keine Fahrt. Eine Fahrt liegt vor, wenn sich das Laufrad in mindestens zwei Messzeilen dreht.</string>
+    <string name="loginsights_rides_all">Alle Fahrten</string>
+    <string name="loginsights_rides_more">Weitere Fahrten anzeigen</string>
+    <string name="loginsights_ride_row">%1$s in %2$s, höchstens %3$s</string>
+    <string name="loginsights_ride_sampling">Das Bike misst alle 30\u00A0Sekunden. Spitzen dazwischen fehlen, der höchste Messwert liegt darum meist unter dem echten Höchstwert.</string>
+    <string name="loginsights_fact_distance">Strecke</string>
+    <string name="loginsights_fact_duration">Dauer</string>
+    <string name="loginsights_fact_avg">Durchschnitt</string>
+    <string name="loginsights_fact_max">Höchster Messwert</string>
+    <string name="loginsights_fact_battery">Akku verbraucht</string>
+    <string name="loginsights_fact_motor_temp">Motor höchstens</string>
+    <string name="loginsights_fact_boost">Mit Boost</string>
+
+    <!-- Charts -->
+    <string name="loginsights_chart_scrub_hint">Zieh über eine Kurve, dann stehen unter jeder Kurve die Werte zu diesem Zeitpunkt.</string>
+    <string name="loginsights_chart_speed">Tempo in km/h</string>
+    <string name="loginsights_chart_battery">Akkustand in Prozent</string>
+    <string name="loginsights_chart_current">Motorstrom in Ampere</string>
+    <string name="loginsights_chart_temps">Temperaturen in °C</string>
+    <string name="loginsights_chart_battery_note" formatted="false">Unter der Linie bei 22\u00A0% gibt die Firmware dem Motor weniger Strom frei. Die Modulbatterie ist der kleine Akku im Elektronikmodul, nicht der Fahrakku.</string>
+    <string name="loginsights_chart_current_no_limit">Für diese Fahrt steht keine Stromgrenze im gesicherten Protokoll. Das Bike schreibt sie nur, wenn sie sich ändert.</string>
+    <string name="loginsights_chart_cd">%1$s, %2$s bis %3$s. Kleinster Wert %4$s, größter Wert %5$s.</string>
+    <string name="loginsights_series_speed">Tempo</string>
+    <string name="loginsights_series_main_battery">Hauptakku</string>
+    <string name="loginsights_series_module_battery">Modulbatterie</string>
+    <string name="loginsights_series_motor_current">Motorstrom</string>
+    <string name="loginsights_series_limit">Grenze der Firmware</string>
+    <string name="loginsights_series_temp_battery">Akku</string>
+    <string name="loginsights_series_temp_motor">Motor</string>
+    <string name="loginsights_series_temp_driver">Controller</string>
+    <string name="loginsights_series_shift_retry">Schaltwiederholung</string>
+    <string name="loginsights_readout">%1$s: %2$s</string>
+    <string name="loginsights_readout_two">%1$s: %2$s %3$s, %4$s %5$s</string>
+    <string name="loginsights_readout_three">%1$s: %2$s %3$s, %4$s %5$s, %6$s %7$s</string>
+    <string name="loginsights_rows_show">Messzeilen anzeigen</string>
+    <string name="loginsights_rows_hide">Messzeilen ausblenden</string>
+    <string name="loginsights_col_time">Zeit</string>
+    <string name="loginsights_col_speed">km/h</string>
+    <string name="loginsights_col_soc">Akku</string>
+    <string name="loginsights_col_current">Strom</string>
+    <string name="loginsights_col_battemp">Akku °C</string>
+    <string name="loginsights_col_motortemp">Motor °C</string>
+
+    <!-- Derate explainer -->
+    <string name="loginsights_derate_title">Drosselung</string>
+    <string name="loginsights_derate_intro">Wie viel Strom der Motor ziehen darf, legt die Firmware nach Akkustand und Akkutemperatur fest. Über Bluetooth meldet das Bike diesen Wert nicht, im Protokoll steht er bei jeder Änderung.</string>
+    <string name="loginsights_derate_of_max">von höchstens %s</string>
+    <string name="loginsights_derate_full">Bei %1$s Akku und %2$s darf der Motor die vollen %3$s ziehen.</string>
+    <string name="loginsights_derate_empty">Bei %1$s Akku gibt die Firmware keinen Strom mehr frei, der Motor unterstützt nicht.</string>
+    <string name="loginsights_derate_battery">Bei %1$s Akku gibt die Firmware nur %2$s statt %3$s frei.</string>
+    <string name="loginsights_derate_next_soc">Ab %1$s Akku sind es %2$s.</string>
+    <string name="loginsights_derate_cold">Bei %1$s Akkutemperatur gibt die Firmware nur %2$s statt %3$s frei.</string>
+    <string name="loginsights_derate_next_warmer">Über %1$s sind es %2$s.</string>
+    <string name="loginsights_derate_heat">Bei %1$s Akkutemperatur gibt die Firmware nur %2$s statt %3$s frei.</string>
+    <string name="loginsights_derate_next_cooler">Bis %1$s sind es wieder %2$s.</string>
+    <string name="loginsights_derate_both">Bei %1$s Akku und %2$s Akkutemperatur gibt die Firmware nur %3$s statt %4$s frei. Beides drosselt.</string>
+    <string name="loginsights_derate_unknown">Für eine Einschätzung fehlen Akkustand oder Akkutemperatur. Lies das Protokoll aus, dann nimmt YABA die Temperatur der letzten Messzeile.</string>
+    <string name="loginsights_derate_basis_live">Akkustand direkt vom Bike, Akkutemperatur aus der Messzeile von %s. Die Temperatur steht nur alle 30\u00A0Sekunden im Protokoll, die Angabe ist darum ungefähr.</string>
+    <string name="loginsights_derate_basis_log">Akkustand und Akkutemperatur aus der Messzeile von %s. Mit verbundenem Bike nimmt YABA den aktuellen Akkustand.</string>
+    <string name="loginsights_derate_grid_title">Stromgrenze nach Akkustand und Temperatur</string>
+    <string name="loginsights_derate_grid_cd">Tabelle der Stromgrenzen: Zeilen nach Akkutemperatur, Spalten nach Akkustand.</string>
+    <string name="loginsights_derate_now">aktuell</string>
+    <string name="loginsights_derate_grid_note">Die Tabelle stammt aus der Firmware\u00A01.07.06 und ist Zeile für Zeile geprüft. Auf 1.9.3 ist sie wahrscheinlich gleich.</string>
+    <string name="loginsights_derate_log_title">Wechsel im Protokoll</string>
+    <string name="loginsights_derate_log_row">%1$s bei %2$s Akku</string>
+    <string name="loginsights_derate_log_row_nosoc">%1$s, Akkustand unbekannt</string>
+    <string name="loginsights_derate_log_none">Im gesicherten Protokoll steht kein Wechsel der Stromgrenze.</string>
+
+    <!-- Shifter health -->
+    <string name="loginsights_shift_title">Schaltung</string>
+    <string name="loginsights_shift_intro">Das Protokoll notiert jede Schaltwiederholung, jeden Positionsfehler, das Abschalten des Shifters und seine Nullpunkt-Kalibrierung.</string>
+    <string name="loginsights_shift_summary_ok">In %s Fahrzeit lief die Schaltung ohne Wiederholung und ohne Positionsfehler.</string>
+    <plurals name="loginsights_shift_summary_retries">
+        <item quantity="one">In %1$s Fahrzeit setzte die Schaltung %2$d-mal neu an.</item>
+        <item quantity="other">In %1$s Fahrzeit setzte die Schaltung %2$d-mal neu an.</item>
+    </plurals>
+    <plurals name="loginsights_shift_summary_position">
+        <item quantity="one">Der Shifter fand %d-mal seine Position nicht. Bitte lass die Schaltung prüfen.</item>
+        <item quantity="other">Der Shifter fand %d-mal seine Position nicht. Bitte lass die Schaltung prüfen.</item>
+    </plurals>
+    <string name="loginsights_shift_retries">Schaltwiederholungen</string>
+    <string name="loginsights_shift_retries_hint">Ein Gang wurde nicht beim ersten Versuch eingelegt.</string>
+    <string name="loginsights_shift_per_hour">%s je Fahrstunde</string>
+    <string name="loginsights_shift_position">Positionsfehler</string>
+    <string name="loginsights_shift_position_hint">Der Shifter fand seine Position nicht.</string>
+    <string name="loginsights_shift_off">Shifter abgeschaltet</string>
+    <string name="loginsights_shift_off_hint">Meist das normale Abschalten nach einer Ruhepause.</string>
+    <string name="loginsights_shift_zero">Nullpunkt-Kalibrierungen</string>
+    <string name="loginsights_shift_zero_hint">Der Shifter sucht seinen Nullpunkt, meist nach dem Einschalten.</string>
+    <string name="loginsights_shift_by_gear">Wiederholungen nach Gang</string>
+    <string name="loginsights_shift_gear">Gang\u00A0%d</string>
+    <string name="loginsights_shift_by_gear_cd">Wiederholungen nach Gang. Gang\u00A01: %1$d, Gang\u00A02: %2$d, Gang\u00A03: %3$d, Gang\u00A04: %4$d.</string>
+    <string name="loginsights_shift_events">Einträge</string>
+    <string name="loginsights_shift_event_retry">Gang\u00A0%1$s, Rückmeldung %2$s, neuer Versuch</string>
+    <string name="loginsights_shift_event_position">Positionsfehler</string>
+    <string name="loginsights_shift_event_off">Shifter abgeschaltet</string>
+    <string name="loginsights_shift_event_zero">Nullpunkt kalibriert</string>
+    <string name="loginsights_shift_event_speed">bei %s</string>
+    <string name="loginsights_shift_event_parked">im Stand</string>
+    <string name="loginsights_shift_none">Im gesicherten Protokoll steht kein Eintrag der Schaltung.</string>
+    <string name="loginsights_shift_caveat">Die Texte stammen aus der Firmware\u00A01.07.06. Dein Revotronics-Shifter meldet möglicherweise anders, prüf die Zeilen darum an einem Protokoll deines Bikes.</string>
+
+    <!-- Wake timeline -->
+    <string name="loginsights_wake_title">Weckprotokoll</string>
+    <string name="loginsights_wake_intro">Das Protokoll notiert, warum das Bike aufgewacht ist. Eine Erschütterung ohne anschließende Fahrt heißt meist, dass jemand das Bike bewegt hat.</string>
+    <string name="loginsights_wake_clock_skew">Die Uhr des Bikes weicht um %s von der Handyzeit ab. Bitte stell die Uhr des Bikes, dann stimmen die Zeiten.</string>
+    <string name="loginsights_wake_legend_ride">Fahrt</string>
+    <string name="loginsights_wake_legend_wake">Aufgewacht</string>
+    <string name="loginsights_wake_legend_moved">Erschütterung ohne Fahrt</string>
+    <string name="loginsights_wake_day_cd">%1$s. Fahrten: %2$d. Weckvorgänge: %3$d. Davon bewegt ohne Fahrt: %4$d.</string>
+    <string name="loginsights_wake_none">Kein Grund gemeldet</string>
+    <string name="loginsights_wake_rtc">Weckuhr des Bikes</string>
+    <string name="loginsights_wake_button1">Taste\u00A01</string>
+    <string name="loginsights_wake_button2">Taste\u00A02</string>
+    <string name="loginsights_wake_ble">Bluetooth</string>
+    <string name="loginsights_wake_mems">Erschütterung</string>
+    <string name="loginsights_wake_charger">Ladegerät</string>
+    <string name="loginsights_wake_wheel">Laufrad dreht</string>
+    <string name="loginsights_wake_key">Akkukontakt</string>
+    <string name="loginsights_wake_kicklock">Kick-Lock</string>
+    <string name="loginsights_wake_cold">Kaltstart, Protokoll gelöscht</string>
+    <string name="loginsights_wake_counter_only">Aufgewacht</string>
+    <string name="loginsights_wake_other">Anderer Grund</string>
+    <string name="loginsights_wake_moved">%s ohne Fahrt</string>
+    <string name="loginsights_wake_ride_after">danach Fahrt über %s</string>
+    <string name="loginsights_wake_counter">Weckzähler %1$d von %2$d</string>
+    <string name="loginsights_wake_deepsleep">Bluetooth im Tiefschlaf</string>
+    <string name="loginsights_wake_deepsleep_detail">%1$s Akku, %2$s Weckvorgänge</string>
+    <string name="loginsights_wake_deepsleep_hint" formatted="false">Unter 19\u00A0% Akku und nach mehr als 167 Weckvorgängen schickt die Firmware Bluetooth in einen tieferen Schlaf.</string>
+    <string name="loginsights_wake_none_found">Im gesicherten Protokoll steht keine Weckzeile.</string>
+    <string name="loginsights_wake_more">Weitere Tage anzeigen</string>
+    <string name="loginsights_wake_caveat">Eine Weckzeile landet nur im Speicher, wenn das Bike danach etwa eine Minute wach bleibt. Die Zeiten folgen der Uhr des Bikes.</string>
+
+    <!-- Log seek -->
+    <string name="loginsights_seek_title">Nur neue Zeilen auslesen</string>
+    <string name="loginsights_seek_intro">Schiebt den Lesezeiger des Bikes hinter die neueste gesicherte Zeile. Danach liest YABA nur noch neue Zeilen, das geht schneller.</string>
+    <string name="loginsights_seek_warning">Das lässt sich nicht rückgängig machen. Ältere Zeilen gibt das Bike danach keiner App und keiner Werkstatt mehr heraus, sie liegen nur noch auf diesem Handy.</string>
+    <string name="loginsights_seek_check_link">Bike verbunden</string>
+    <string name="loginsights_seek_check_complete">Protokoll bis zum Ende ausgelesen</string>
+    <string name="loginsights_seek_check_complete_hint">Bitte lies das Protokoll hier oder in der Diagnose vollständig aus.</string>
+    <string name="loginsights_seek_check_saved">Auslesung auf dem Handy gesichert</string>
+    <string name="loginsights_seek_check_saved_hint">Die Datei der letzten Auslesung liegt im Speicher von YABA und stimmt Zeichen für Zeichen.</string>
+    <string name="loginsights_seek_check_fresh">Alter der Auslesung</string>
+    <string name="loginsights_seek_check_fresh_hint">Höchstens %d\u00A0Minuten alt und aus der laufenden Verbindung, damit keine neue Zeile übersprungen wird.</string>
+    <string name="loginsights_seek_check_newest">Neueste gesicherte Zeile</string>
+    <string name="loginsights_seek_check_newest_hint">Der Zeiger wird bis kurz vor diese Zeit auf der Uhr des Bikes geschoben, nie nach der Handyzeit.</string>
+    <string name="loginsights_seek_check_clock_hint">Die Uhr des Bikes ist nicht gestellt. Bitte stell sie zuerst, sonst ist die neueste Zeile nicht eindeutig.</string>
+    <string name="loginsights_seek_button">Zeiger bis %s\u00A0Uhr vorschieben</string>
+    <string name="loginsights_seek_button_plain">Zeiger vorschieben</string>
+    <string name="loginsights_seek_busy">Schiebt den Zeiger vor …</string>
+    <string name="loginsights_seek_blocked">Erst möglich, wenn alle Punkte oben erfüllt sind.</string>
+    <string name="loginsights_seek_confirm_title">Lesezeiger vorschieben</string>
+    <string name="loginsights_seek_confirm_text">Das Bike gibt danach nur noch Zeilen ab %1$s\u00A0Uhr am %2$s heraus. Die %3$s Zeilen davor liegen dann nur noch auf diesem Handy.</string>
+    <string name="loginsights_seek_confirm">Vorschieben</string>
+    <string name="loginsights_seek_cancel">Abbrechen</string>
+    <string name="loginsights_seek_done">Der Zeiger steht vor %s\u00A0Uhr. Beim nächsten Auslesen kommen nur neue Zeilen.</string>
+    <string name="loginsights_archive_read_where">Neue Zeilen kommen dazu, sobald du das Protokoll in der Diagnose unter „Protokoll des Bikes“ ausliest.</string>
+</resources>

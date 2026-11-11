@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bike-Lab / Sound-Lab / Experimente (ble/BikeLab.kt, audio/ClipSlots.kt). English is the default. -->
+<resources>
+    <string name="lab_char_cadence">Cadence</string>
+    <string name="lab_char_torque">Pedal force</string>
+
+    <string name="lab_sound_update_failed">Update failed</string>
+    <string name="lab_sound_update_ok">Update succeeded</string>
+    <string name="lab_sound_find_loud">Loud search tone</string>
+
+    <string name="lab_clip_lock">Lock</string>
+    <string name="lab_clip_unlock">Unlock</string>
+    <string name="lab_clip_startup">Power on</string>
+    <string name="lab_clip_shutdown">Power off</string>
+    <string name="lab_clip_charging">Charging</string>
+
+    <string name="lab_error_clock_readback">Clock read-back implausible. The clock was not set.</string>
+    <string name="lab_error_backup_first">Download and save the bike log before the self-test.</string>
+    <string name="lab_error_not_parked">Only at a standstill and out of riding mode; this cuts motor assist.</string>
+    <string name="lab_error_clip">Clip upload failed.</string>
+    <string name="lab_error_generic">The command was not carried out.</string>
+
+    <string name="lab_log_siren">Siren stage\u00A0%d</string>
+    <string name="lab_log_clip">Clip replaced: %s</string>
+
+</resources>

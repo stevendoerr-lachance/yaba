@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sound-Lab op het Klank-scherm (ui/components/SoundLabBits.kt): volume per geluid (5572) en de vijf vervangbare geluiden. -->
+<resources>
+    <!-- Volume per geluid -->
+    <string name="soundlab_tiers_title">Volume per geluid</string>
+    <string name="soundlab_tiers_hint">Elk geluid speelt op niveau\u00A020, 30 of 38, of helemaal niet. De firmware legt de drie niveaus vast; hier kies je welk geluid welk niveau krijgt.</string>
+    <string name="soundlab_tiers_unread">De fiets heeft zijn volumes nog niet doorgegeven. Tot dan tonen de ladders de fabrieksinstelling vanaf firmware\u00A01.9.1.</string>
+    <string name="soundlab_tiers_read">Van de fiets lezen</string>
+    <string name="soundlab_tiers_reading">Lezen…</string>
+    <string name="soundlab_tiers_none">De fiets geeft geen volumes door. Zijn firmware biedt deze waarde waarschijnlijk niet aan.</string>
+    <string name="soundlab_tiers_offline">Maak alsjeblieft verbinding met de fiets om de volumes te lezen en op te slaan.</string>
+    <string name="soundlab_tier_off">uit</string>
+    <string name="soundlab_tier_silent">Stil</string>
+    <string name="soundlab_tier_low">Zacht</string>
+    <string name="soundlab_tier_medium">Middel</string>
+    <string name="soundlab_tier_high">Luid</string>
+    <string name="soundlab_tier_level">%1$s, niveau\u00A0%2$d</string>
+    <string name="soundlab_tier_changed">%1$s in plaats van %2$s</string>
+    <string name="soundlab_tier_step_cd">%1$s: %2$s</string>
+    <plurals name="soundlab_group_sounds">
+        <item quantity="one">%d geluid</item>
+        <item quantity="other">%d geluiden</item>
+    </plurals>
+    <plurals name="soundlab_group_muted">
+        <item quantity="one">%d stil</item>
+        <item quantity="other">%d stil</item>
+    </plurals>
+    <plurals name="soundlab_group_changed">
+        <item quantity="one">%d gewijzigd</item>
+        <item quantity="other">%d gewijzigd</item>
+    </plurals>
+    <string name="soundlab_state_expanded">uitgeklapt</string>
+    <string name="soundlab_state_collapsed">ingeklapt</string>
+    <string name="soundlab_note_bell">De belknop speelt dit geluid. Op stil blijft de knop stil.</string>
+    <string name="soundlab_note_alarm">Op stil gaat het alarm nog steeds af, maar zonder geluid.</string>
+    <string name="soundlab_note_find">Op stil blijft het zoeken naar de fiets zonder geluid.</string>
+    <string name="soundlab_note_error">Op stil toont de fiets storingen alleen nog op het display.</string>
+    <plurals name="soundlab_tiers_save">
+        <item quantity="one">%d wijziging opslaan</item>
+        <item quantity="other">%d wijzigingen opslaan</item>
+    </plurals>
+    <string name="soundlab_tiers_saving">Opslaan…</string>
+    <string name="soundlab_tiers_discard">Wijzigingen verwerpen</string>
+    <string name="soundlab_tiers_factory">Fabrieksinstelling laden</string>
+    <string name="soundlab_tiers_flash">Elke keer opslaan herschrijft het flashgeheugen van de fiets. Daarom schrijft YABA pas als je opslaat.</string>
+    <string name="soundlab_tiers_wait">Opslaan wacht tot de lopende overdracht klaar is.</string>
+    <string name="soundlab_tiers_saved">Opgeslagen. De fiets geeft de nieuwe volumes terug.</string>
+    <string name="soundlab_tiers_not_taken">Na het opslaan geeft de fiets een andere stand door. Lees de waarden alsjeblieft opnieuw van de fiets.</string>
+
+    <!-- Meer geluiden vervangen -->
+    <string name="soundlab_clips_title">Geluiden in de fiets</string>
+    <string name="soundlab_clips_hint">Vijf geluiden van de fiets kun je vervangen. YABA bewaart elk verstuurd bestand op deze telefoon.</string>
+    <string name="soundlab_clip_factory">Fabrieksgeluid</string>
+    <string name="soundlab_clip_custom">“%1$s” sinds %2$s</string>
+    <string name="soundlab_clip_empty">Waarschijnlijk stil: de laatste overdracht brak af.</string>
+    <string name="soundlab_clip_replace">Vervangen</string>
+    <string name="soundlab_clip_factory_note">De fiets geeft het fabrieksgeluid niet terug. Na het versturen krijg je het alleen terug met het fabrieksbestand.</string>
+    <string name="soundlab_clip_bundled">Meegeleverde geluiden</string>
+    <string name="soundlab_clip_history">Eerder verstuurd</string>
+    <string name="soundlab_clip_history_line">verstuurd op %1$s</string>
+    <string name="soundlab_clip_history_unsent">nooit volledig aangekomen</string>
+    <string name="soundlab_clip_choose_cd">%1$s kiezen voor “%2$s”</string>
+    <string name="soundlab_clip_pick_hint">YABA zet audiobestanden om. Een bestand dat al in het VM_SOUND-formaat van de fiets staat, zoals een fabrieksbestand, gaat ongewijzigd naar de fiets.</string>
+    <string name="soundlab_clip_cancel">Annuleren</string>
+    <string name="soundlab_clip_send">Versturen voor “%1$s”</string>
+    <string name="soundlab_clip_keep_close">Houd de telefoon alsjeblieft dicht bij de fiets. Breekt de overdracht af, dan blijft het geluid stil tot er een bestand volledig aankomt.</string>
+    <string name="soundlab_clip_wait_bell">Pas als de beltoon is aangekomen; de fiets neemt één overdracht tegelijk aan.</string>
+    <string name="soundlab_clip_sending">Verstuurt %1$s voor “%2$s”</string>
+    <string name="soundlab_clip_done">“%1$s” is overgedragen. De fiets speelt het vanaf nu bij “%2$s”, ook als YABA niet draait.</string>
+    <string name="soundlab_clip_finish">Klaar</string>
+    <string name="soundlab_clip_read_failed">Het bestand kon niet worden gelezen. Kies alsjeblieft een ander audiobestand.</string>
+    <string name="soundlab_clip_too_big">Het bestand is groter dan %1$d\u00A0kB, meer past er niet in een geluid van de fiets.</string>
+    <string name="soundlab_clip_not_wav">Het bestand begint als een geluidsbestand van de fiets, maar bevat geen WAV-geluid. Kies alsjeblieft een ander bestand.</string>
+    <string name="soundlab_clip_store_failed">YABA kon het bestand niet op deze telefoon bewaren en verstuurt het daarom niet. Controleer alsjeblieft de vrije opslag.</string>
+    <string name="soundlab_clip_failed_at">De overdracht brak af bij %1$d%%. “%2$s” blijft stil tot er een bestand volledig aankomt.</string>
+    <string name="soundlab_clip_failed_before">De overdracht kwam niet tot stand. “%1$s” houdt zijn vorige geluid.</string>
+    <string name="soundlab_clip_retry">Opnieuw versturen</string>
+    <string name="soundlab_clip_confirm_title">Fabrieksgeluid overschrijven</string>
+    <string name="soundlab_clip_confirm_text">De fiets geeft het fabrieksgeluid voor “%1$s” niet terug, en YABA heeft het niet. Na het versturen krijg je het alleen terug met het fabrieksbestand.</string>
+    <string name="soundlab_clip_confirm_ok">Overschrijven</string>
+    <string name="soundlab_clip_play_action">op de fiets afspelen</string>
+    <string name="soundlab_clip_replace_cd">“%1$s” vervangen</string>
+    <string name="soundlab_clip_sending_percent">Verstuurt %1$s voor “%2$s”, %3$d%%</string>
+    <string name="soundlab_tiers_standstill">Opslaan start als de fiets stilstaat.</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Wache (the guard design section 7): the section on Fahren, the hero while it is active, the locked links. -->
+    <string name="guard_section_title">Wache</string>
+    <string name="guard_intro">Die Wache sperrt dein Bike und schaltet seine Bewegungswache ein. YABA bleibt verbunden und benachrichtigt dich auf diesem Handy, sobald es eine Bewegung erkennt.</string>
+    <string name="guard_arm">Wache scharf schalten</string>
+    <string name="guard_siren_now">Sirene sofort</string>
+    <string name="guard_siren_now_caption">Bei der ersten erkannten Bewegung schaltet YABA die Sirene am Bike ein. Ohne diese Einstellung benachrichtigt dich YABA nur; die Sirene schaltet das Bike dann erst nach mehreren Erschütterungen selbst ein.</string>
+
+    <!-- Why arming is not offered (GuardRules.armBlocker) -->
+    <string name="guard_blocker_not_connected">Verbinde YABA zuerst mit dem Bike.</string>
+    <string name="guard_blocker_not_parked">Die Wache lässt sich nur einschalten, solange das Bike steht und keine Taste gedrückt ist.</string>
+    <string name="guard_blocker_bike_state">Das Bike aktualisiert gerade seine Firmware oder geht in den Versandmodus. Die Wache lässt sich jetzt nicht einschalten.</string>
+    <string name="guard_blocker_busy">Das Bike überträgt gerade Daten. Die Wache lässt sich einschalten, sobald die Übertragung fertig ist.</string>
+
+    <!-- Phases -->
+    <string name="guard_arming">Schaltet scharf …</string>
+    <string name="guard_arming_text">YABA sperrt das Bike und wartet, bis es seine Bewegungswache bestätigt. Das dauert bis zu %1$d Sekunden.</string>
+    <string name="guard_active_since">Wache aktiv seit %1$s</string>
+    <string name="guard_watch_bike">Das Bike achtet selbst auf Bewegung, und YABA bleibt verbunden.</string>
+    <string name="guard_watch_unconfirmed">Das Bike hat seine Bewegungswache nicht bestätigt (Alarmzustand %1$d). YABA erkennt deshalb nur ein drehendes Laufrad, gedrückte Tasten, das Schloss und den Akku.</string>
+    <string name="guard_watch_unconfirmed_unknown">Das Bike hat seine Bewegungswache nicht bestätigt. YABA erkennt deshalb nur ein drehendes Laufrad, gedrückte Tasten, das Schloss und den Akku.</string>
+    <string name="guard_watch_retry">Erneut versuchen</string>
+    <string name="guard_end">Wache beenden</string>
+    <string name="guard_silence">Sirene aus</string>
+    <string name="guard_lever_hint">Schieben beendet die Wache und entsperrt das Bike.</string>
+    <string name="guard_lever_hint_offline">Ohne Verbindung wartet YABA nach dem Schieben bis zu %1$d Sekunden auf das Bike. Kommt die Verbindung zurück, wird das Bike entsperrt, sonst endet die Wache nur in YABA.</string>
+    <string name="guard_alarm_at">Alarm um %1$s</string>
+    <string name="guard_rearming">Stellt die Wache wieder her …</string>
+    <string name="guard_disarming">Beendet die Wache …</string>
+    <string name="guard_disarming_wait">YABA wartet bis zu %1$d Sekunden auf die Verbindung zum Bike.</string>
+    <string name="guard_lost_watch">Verbindung zum Bike unterbrochen. Die Bewegungswache am Bike läuft weiter, und YABA verbindet sich neu.</string>
+    <string name="guard_lost">Verbindung zum Bike unterbrochen. YABA verbindet sich neu.</string>
+
+    <!-- Latest lines -->
+    <string name="guard_events_title">Zuletzt</string>
+    <string name="guard_events_all">Alle Ereignisse unter Diagnose</string>
+    <string name="guard_share_journal">Wache-Protokoll teilen</string>
+
+    <!-- Hints -->
+    <string name="guard_notifications_off">Benachrichtigungen sind für YABA ausgeschaltet. Die Sirene funktioniert, aber dein Handy meldet dir keine Bewegung.</string>
+    <string name="guard_notifications_allow">Benachrichtigungen erlauben</string>
+    <string name="guard_battery_hint">Nimm YABA von der Akku-Optimierung aus, damit Android die Verbindung zum Bike über Nacht nicht beendet.</string>
+    <string name="guard_battery_open">Akku-Einstellungen öffnen</string>
+    <string name="guard_alarm_choice_locked">Solange die Wache aktiv ist, bleibt der Alarm eingeschaltet.</string>
+    <string name="guard_link_locked">Solange die Wache aktiv ist, bleibt YABA mit dem Bike verbunden. Beende zuerst die Wache.</string>
+
+    <!-- Issues (GuardState.issue) -->
+    <string name="guard_issue_dismiss">Ausblenden</string>
+    <string name="guard_issue_service">Android hat den Dienst für die Wache nicht gestartet. Die Wache bleibt aus.</string>
+    <string name="guard_issue_arm_failed">Die Wache ließ sich nicht einschalten. Grund: %1$s</string>
+    <string name="guard_issue_arm_failed_unknown">Die Wache ließ sich nicht einschalten.</string>
+    <string name="guard_issue_alarm_during">Das Bike hat beim Einschalten selbst Alarm ausgelöst. YABA hat den Alarm gestoppt, das Bike bleibt gesperrt. Halte es still und versuche es erneut.</string>
+    <string name="guard_issue_alarm_mode">Das Bike hat den Alarm nicht eingeschaltet (Alarm-Modus %1$s). Die Wache bleibt aus.</string>
+    <string name="guard_issue_lock">Das Bike hat sich nicht gesperrt (Schloss meldet %1$s). Die Wache bleibt aus.</string>
+    <string name="guard_issue_disarm_unconfirmed">Die Wache ist beendet, aber das Bike meldet noch Alarmzustand %1$s. Unter „Alarm“ kannst du den Alarm stoppen.</string>
+    <string name="guard_issue_ended_offline">Die Wache ist beendet. YABA hat das Bike nicht erreicht, darum hat sich am Bike nichts geändert.</string>
+    <string name="guard_issue_bike_gone">Die Wache ist beendet, weil das Bike nicht mehr in YABA gespeichert ist.</string>
+
+    <!-- Top tube and header. Matrix words: ASCII, no diacritics (BRAND "Languages"). -->
+    <string name="guard_matrix_armed">WACHE</string>
+    <string name="guard_matrix_alarm">ALARM</string>
+    <string name="guard_tube_armed_cd">Wache aktiv, Akku %1$d Prozent</string>
+    <string name="guard_tube_armed_nobattery_cd">Wache aktiv</string>
+    <string name="guard_tube_arming_cd">Wache wird eingeschaltet</string>
+    <string name="guard_tube_alarm_cd">Alarm am Bike</string>
+    <string name="guard_tube_lost_cd">Wache aktiv, Verbindung unterbrochen</string>
+    <string name="guard_header_armed">Wache</string>
+    <string name="guard_header_alarm">Alarm</string>
+    <string name="guard_issue_arm_failed_partly">Die Wache ließ sich nicht einschalten. Grund: %1$s. Das Bike kann trotzdem schon gesperrt sein oder seinen Alarm eingeschaltet haben. Prüfe den Hebel und „Alarm“.</string>
+    <string name="guard_issue_disarm_locked">Die Wache ist beendet und der Alarm ist aus, aber das Bike meldet sich noch als gesperrt (Schloss %1$s). Du kannst es mit dem Hebel entsperren.</string>
+    <string name="guard_issue_ended_partly">Die Wache ist beendet. YABA hat Befehle an das Bike geschickt, aber keine Antwort bekommen. „Fahren“ zeigt nach dem nächsten Verbinden, wie das Bike steht.</string>
+    <string name="guard_issue_not_locked">Das Bike ist nicht gesperrt (Schloss meldet %1$s). „Erneut versuchen“ sperrt es und stellt die Wache wieder her.</string>
+    <string name="guard_issue_not_locked_unknown">YABA hat keine Bestätigung, dass das Bike gesperrt ist. „Erneut versuchen“ sperrt es und stellt die Wache wieder her.</string>
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tachygraphe (ui/screens/LogInsightsScreen.kt). U+00A0 avant : ; ? ! et entre nombre et unité. -->
+<resources>
+    <string name="loginsights_title">Tachygraphe</string>
+    <string name="loginsights_close">Fermer</string>
+    <string name="loginsights_intro">Le vélo écrit une ligne de mesure dans son journal toutes les 30\u00A0secondes tant qu’il est éveillé. YABA en tire des courbes par trajet, même pour les trajets faits sans téléphone.</string>
+    <string name="loginsights_loading">Lecture du journal enregistré …</string>
+    <string name="loginsights_more">Afficher plus</string>
+    <string name="loginsights_yes">oui</string>
+    <string name="loginsights_no">non</string>
+
+    <string name="loginsights_fmt_time">HH:mm</string>
+    <string name="loginsights_fmt_time_seconds">HH:mm:ss</string>
+    <string name="loginsights_fmt_ride">EEE d MMM \'à\' HH:mm</string>
+    <string name="loginsights_fmt_day">EEEE d MMMM yyyy</string>
+    <string name="loginsights_fmt_day_short">EEE d/M</string>
+    <string name="loginsights_fmt_date">dd/MM/yyyy</string>
+    <string name="loginsights_at_time">%s</string>
+    <string name="loginsights_unit_kmh">%s\u00A0km/h</string>
+    <string name="loginsights_unit_km">%s\u00A0km</string>
+    <string name="loginsights_unit_pct">%s\u00A0%%</string>
+    <string name="loginsights_unit_amp">%s\u00A0A</string>
+    <string name="loginsights_unit_celsius">%s\u00A0°C</string>
+    <string name="loginsights_unit_min">%d\u00A0min</string>
+    <string name="loginsights_unit_h_min">%1$d\u00A0h %2$d\u00A0min</string>
+
+    <string name="loginsights_entry_intro">Le tachygraphe montre les trajets, la limitation de courant, le changement de vitesse et les réveils tirés du journal du vélo.</string>
+    <string name="loginsights_entry_empty">Aucun journal n’est encore enregistré sur ce téléphone. Lis une fois le journal du vélo, et les trajets apparaîtront ici.</string>
+    <string name="loginsights_entry_no_rides">Le journal enregistré ne contient encore aucun trajet.</string>
+    <string name="loginsights_entry_open">Ouvrir le tachygraphe</string>
+    <plurals name="loginsights_entry_summary">
+        <item quantity="one">%1$d trajet sur %2$s, le dernier %3$s</item>
+        <item quantity="many">%1$d trajets sur %2$s au total, le dernier %3$s</item>
+        <item quantity="other">%1$d trajets sur %2$s au total, le dernier %3$s</item>
+    </plurals>
+
+    <string name="loginsights_archive_title">Journal enregistré</string>
+    <plurals name="loginsights_archive_lines_unit">
+        <item quantity="one">ligne</item>
+        <item quantity="many">lignes</item>
+        <item quantity="other">lignes</item>
+    </plurals>
+    <plurals name="loginsights_archive_downloads">
+        <item quantity="one">Fusionné à partir de %d lecture</item>
+        <item quantity="many">Fusionné à partir de %d lectures</item>
+        <item quantity="other">Fusionné à partir de %d lectures</item>
+    </plurals>
+    <string name="loginsights_archive_span">Du %1$s au %2$s, selon l’horloge du vélo</string>
+    <string name="loginsights_archive_empty">Aucune ligne de mesure n’est encore enregistrée sur ce téléphone.</string>
+    <string name="loginsights_archive_hint">Chaque lecture reste sur le téléphone. YABA les fusionne, ainsi les trajets que le vélo a déjà écrasés dans sa mémoire de 128\u00A0Ko sont conservés.</string>
+    <string name="loginsights_archive_read">Lire le journal maintenant</string>
+    <string name="loginsights_archive_read_again">Lire à nouveau</string>
+    <string name="loginsights_archive_reading">Lecture du journal …</string>
+    <string name="loginsights_archive_reading_percent">Lecture du journal, %d\u00A0%%</string>
+    <string name="loginsights_archive_offline">Pour lire le journal, le vélo doit être connecté.</string>
+    <string name="loginsights_archive_failed">Le journal n’est pas arrivé. Reste près du vélo et lis-le à nouveau.</string>
+    <string name="loginsights_archive_partial">La dernière lecture s’est arrêtée avant la fin du journal. Ce qui est arrivé est enregistré.</string>
+
+    <string name="loginsights_rides_title">Trajets</string>
+    <plurals name="loginsights_rides_count">
+        <item quantity="one">%d trajet</item>
+        <item quantity="many">%d trajets</item>
+        <item quantity="other">%d trajets</item>
+    </plurals>
+    <string name="loginsights_rides_none">Le journal enregistré ne contient aucun trajet. Un trajet compte dès que la roue tourne dans au moins deux lignes de mesure.</string>
+    <string name="loginsights_rides_all">Tous les trajets</string>
+    <string name="loginsights_rides_more">Afficher plus de trajets</string>
+    <string name="loginsights_ride_row">%1$s en %2$s, jusqu’à %3$s</string>
+    <string name="loginsights_ride_sampling">Le vélo mesure toutes les 30\u00A0secondes. Les pointes entre deux mesures manquent, la valeur la plus haute reste donc en général sous le vrai maximum.</string>
+    <string name="loginsights_fact_distance">Distance</string>
+    <string name="loginsights_fact_duration">Durée</string>
+    <string name="loginsights_fact_avg">Moyenne</string>
+    <string name="loginsights_fact_max">Mesure la plus haute</string>
+    <string name="loginsights_fact_battery">Batterie consommée</string>
+    <string name="loginsights_fact_motor_temp">Moteur au maximum</string>
+    <string name="loginsights_fact_boost">Avec Boost</string>
+
+    <string name="loginsights_chart_scrub_hint">Fais glisser le doigt sur une courbe, et les valeurs à cet instant s’affichent sous chaque courbe.</string>
+    <string name="loginsights_chart_speed">Vitesse en km/h</string>
+    <string name="loginsights_chart_battery">Batterie en pourcentage</string>
+    <string name="loginsights_chart_current">Courant moteur en ampères</string>
+    <string name="loginsights_chart_temps">Températures en °C</string>
+    <string name="loginsights_chart_battery_note" formatted="false">Sous la ligne de 22\u00A0% le firmware accorde moins de courant au moteur. La batterie du module est la petite cellule du module électronique, pas la batterie de conduite.</string>
+    <string name="loginsights_chart_current_no_limit">Le journal enregistré ne contient aucune limite de courant pour ce trajet. Le vélo ne l’écrit que lorsqu’elle change.</string>
+    <string name="loginsights_chart_cd">%1$s, de %2$s à %3$s. Valeur la plus basse %4$s, valeur la plus haute %5$s.</string>
+    <string name="loginsights_series_speed">Vitesse</string>
+    <string name="loginsights_series_main_battery">Batterie principale</string>
+    <string name="loginsights_series_module_battery">Batterie du module</string>
+    <string name="loginsights_series_motor_current">Courant moteur</string>
+    <string name="loginsights_series_limit">Limite du firmware</string>
+    <string name="loginsights_series_temp_battery">Batterie</string>
+    <string name="loginsights_series_temp_motor">Moteur</string>
+    <string name="loginsights_series_temp_driver">Contrôleur</string>
+    <string name="loginsights_series_shift_retry">Nouvel essai de vitesse</string>
+    <string name="loginsights_readout">%1$s\u00A0: %2$s</string>
+    <string name="loginsights_readout_two">%1$s\u00A0: %2$s %3$s, %4$s %5$s</string>
+    <string name="loginsights_readout_three">%1$s\u00A0: %2$s %3$s, %4$s %5$s, %6$s %7$s</string>
+    <string name="loginsights_rows_show">Afficher les lignes de mesure</string>
+    <string name="loginsights_rows_hide">Masquer les lignes de mesure</string>
+    <string name="loginsights_col_time">Heure</string>
+    <string name="loginsights_col_speed">km/h</string>
+    <string name="loginsights_col_soc">Batterie</string>
+    <string name="loginsights_col_current">Courant</string>
+    <string name="loginsights_col_battemp">Batt. °C</string>
+    <string name="loginsights_col_motortemp">Moteur °C</string>
+
+    <string name="loginsights_derate_title">Limitation de courant</string>
+    <string name="loginsights_derate_intro">Le firmware fixe le courant que le moteur peut tirer selon la charge et la température de la batterie. Le vélo ne transmet pas cette valeur par Bluetooth, mais le journal en note chaque changement.</string>
+    <string name="loginsights_derate_of_max">sur %s au maximum</string>
+    <string name="loginsights_derate_full">Avec %1$s de batterie et %2$s, le moteur peut tirer les %3$s complets.</string>
+    <string name="loginsights_derate_empty">Avec %1$s de batterie, le firmware n’accorde plus de courant et le moteur n’assiste plus.</string>
+    <string name="loginsights_derate_battery">Avec %1$s de batterie, le firmware n’accorde que %2$s au lieu de %3$s.</string>
+    <string name="loginsights_derate_next_soc">À partir de %1$s de batterie, c’est %2$s.</string>
+    <string name="loginsights_derate_cold">Avec une température de batterie de %1$s, le firmware n’accorde que %2$s au lieu de %3$s.</string>
+    <string name="loginsights_derate_next_warmer">Au-dessus de %1$s, c’est %2$s.</string>
+    <string name="loginsights_derate_heat">Avec une température de batterie de %1$s, le firmware n’accorde que %2$s au lieu de %3$s.</string>
+    <string name="loginsights_derate_next_cooler">Jusqu’à %1$s, c’est de nouveau %2$s.</string>
+    <string name="loginsights_derate_both">Avec %1$s de batterie et une température de batterie de %2$s, le firmware n’accorde que %3$s au lieu de %4$s. Les deux limitent.</string>
+    <string name="loginsights_derate_unknown">La charge ou la température de la batterie manque pour une estimation. Lis le journal, et YABA prendra la température de la dernière ligne de mesure.</string>
+    <string name="loginsights_derate_basis_live">Charge directement du vélo, température de la batterie tirée de la ligne de mesure de %s. La température n’est notée que toutes les 30\u00A0secondes, la valeur est donc approximative.</string>
+    <string name="loginsights_derate_basis_log">Charge et température de la batterie tirées de la ligne de mesure de %s. Avec le vélo connecté, YABA prend la charge actuelle.</string>
+    <string name="loginsights_derate_grid_title">Limite de courant selon la charge et la température</string>
+    <string name="loginsights_derate_grid_cd">Tableau des limites de courant\u00A0: lignes selon la température de la batterie, colonnes selon la charge.</string>
+    <string name="loginsights_derate_now">état actuel</string>
+    <string name="loginsights_derate_grid_note">Le tableau vient du firmware\u00A01.07.06 et a été vérifié ligne par ligne. Sur 1.9.3, il est probablement identique.</string>
+    <string name="loginsights_derate_log_title">Changements dans le journal</string>
+    <string name="loginsights_derate_log_row">%1$s avec %2$s de batterie</string>
+    <string name="loginsights_derate_log_row_nosoc">%1$s, charge inconnue</string>
+    <string name="loginsights_derate_log_none">Le journal enregistré ne contient aucun changement de la limite de courant.</string>
+
+    <string name="loginsights_shift_title">Changement de vitesse</string>
+    <string name="loginsights_shift_intro">Le journal note chaque nouvel essai de vitesse, chaque erreur de position, l’arrêt du shifter et son étalonnage du point zéro.</string>
+    <string name="loginsights_shift_summary_ok">En %s de conduite, le changement de vitesse a fonctionné sans nouvel essai ni erreur de position.</string>
+    <plurals name="loginsights_shift_summary_retries">
+        <item quantity="one">En %1$s de conduite, le changement de vitesse a dû réessayer %2$d fois.</item>
+        <item quantity="many">En %1$s de conduite, le changement de vitesse a dû réessayer %2$d fois.</item>
+        <item quantity="other">En %1$s de conduite, le changement de vitesse a dû réessayer %2$d fois.</item>
+    </plurals>
+    <plurals name="loginsights_shift_summary_position">
+        <item quantity="one">Le shifter n’a pas trouvé sa position %d fois. Fais contrôler le changement de vitesse, s’il te plaît.</item>
+        <item quantity="many">Le shifter n’a pas trouvé sa position %d fois. Fais contrôler le changement de vitesse, s’il te plaît.</item>
+        <item quantity="other">Le shifter n’a pas trouvé sa position %d fois. Fais contrôler le changement de vitesse, s’il te plaît.</item>
+    </plurals>
+    <string name="loginsights_shift_retries">Nouveaux essais</string>
+    <string name="loginsights_shift_retries_hint">Une vitesse n’est pas passée du premier coup.</string>
+    <string name="loginsights_shift_per_hour">%s par heure de conduite</string>
+    <string name="loginsights_shift_position">Erreurs de position</string>
+    <string name="loginsights_shift_position_hint">Le shifter n’a pas trouvé sa position.</string>
+    <string name="loginsights_shift_off">Shifter éteint</string>
+    <string name="loginsights_shift_off_hint">En général l’arrêt normal après une pause.</string>
+    <string name="loginsights_shift_zero">Étalonnages du point zéro</string>
+    <string name="loginsights_shift_zero_hint">Le shifter cherche son point zéro, en général après la mise en marche.</string>
+    <string name="loginsights_shift_by_gear">Nouveaux essais par vitesse</string>
+    <string name="loginsights_shift_gear">Vitesse\u00A0%d</string>
+    <string name="loginsights_shift_by_gear_cd">Nouveaux essais par vitesse. Vitesse\u00A01\u00A0: %1$d, vitesse\u00A02\u00A0: %2$d, vitesse\u00A03\u00A0: %3$d, vitesse\u00A04\u00A0: %4$d.</string>
+    <string name="loginsights_shift_events">Entrées</string>
+    <string name="loginsights_shift_event_retry">Vitesse\u00A0%1$s, retour %2$s, nouvel essai</string>
+    <string name="loginsights_shift_event_position">Erreur de position</string>
+    <string name="loginsights_shift_event_off">Shifter éteint</string>
+    <string name="loginsights_shift_event_zero">Point zéro étalonné</string>
+    <string name="loginsights_shift_event_speed">à %s</string>
+    <string name="loginsights_shift_event_parked">à l’arrêt</string>
+    <string name="loginsights_shift_none">Le journal enregistré ne contient aucune entrée du changement de vitesse.</string>
+    <string name="loginsights_shift_caveat">Les messages viennent du firmware\u00A01.07.06. Ton shifter Revotronics peut répondre autrement, vérifie donc les lignes sur un journal de ton propre vélo.</string>
+
+    <string name="loginsights_wake_title">Journal des réveils</string>
+    <string name="loginsights_wake_intro">Le journal note pourquoi le vélo s’est réveillé. Une secousse sans trajet ensuite signifie en général que quelqu’un a déplacé le vélo.</string>
+    <string name="loginsights_wake_clock_skew">L’horloge du vélo s’écarte de %s de l’heure du téléphone. Règle l’horloge du vélo, et les heures seront justes.</string>
+    <string name="loginsights_wake_legend_ride">Trajet</string>
+    <string name="loginsights_wake_legend_wake">Réveil</string>
+    <string name="loginsights_wake_legend_moved">Secousse sans trajet</string>
+    <string name="loginsights_wake_day_cd">%1$s. Trajets\u00A0: %2$d. Réveils\u00A0: %3$d. Dont déplacé sans trajet\u00A0: %4$d.</string>
+    <string name="loginsights_wake_none">Aucune raison indiquée</string>
+    <string name="loginsights_wake_rtc">Minuterie du vélo</string>
+    <string name="loginsights_wake_button1">Bouton\u00A01</string>
+    <string name="loginsights_wake_button2">Bouton\u00A02</string>
+    <string name="loginsights_wake_ble">Bluetooth</string>
+    <string name="loginsights_wake_mems">Secousse</string>
+    <string name="loginsights_wake_charger">Chargeur</string>
+    <string name="loginsights_wake_wheel">Roue qui tourne</string>
+    <string name="loginsights_wake_key">Contact de batterie</string>
+    <string name="loginsights_wake_kicklock">Kick Lock</string>
+    <string name="loginsights_wake_cold">Démarrage à froid, journal effacé</string>
+    <string name="loginsights_wake_counter_only">Réveil</string>
+    <string name="loginsights_wake_other">Autre raison</string>
+    <string name="loginsights_wake_moved">%s sans trajet</string>
+    <string name="loginsights_wake_ride_after">trajet ensuite, %s</string>
+    <string name="loginsights_wake_counter">compteur de réveils %1$d sur %2$d</string>
+    <string name="loginsights_wake_deepsleep">Bluetooth en sommeil profond</string>
+    <string name="loginsights_wake_deepsleep_detail">%1$s de batterie, %2$s réveils</string>
+    <string name="loginsights_wake_deepsleep_hint" formatted="false">Sous 19\u00A0% de batterie et après plus de 167 réveils, le firmware met le Bluetooth dans un sommeil plus profond.</string>
+    <string name="loginsights_wake_none_found">Le journal enregistré ne contient aucune ligne de réveil.</string>
+    <string name="loginsights_wake_more">Afficher plus de jours</string>
+    <string name="loginsights_wake_caveat">Une ligne de réveil n’arrive dans la mémoire que si le vélo reste éveillé environ une minute ensuite. Les heures suivent l’horloge du vélo.</string>
+
+    <string name="loginsights_seek_title">Lire seulement les nouvelles lignes</string>
+    <string name="loginsights_seek_intro">Avance le pointeur de lecture du vélo après la ligne enregistrée la plus récente. YABA ne lit ensuite que les nouvelles lignes, c’est plus rapide.</string>
+    <string name="loginsights_seek_warning">Cette action est irréversible. Le vélo ne transmet ensuite plus les lignes anciennes à aucune application ni à aucun atelier\u00A0; elles ne restent que sur ce téléphone.</string>
+    <string name="loginsights_seek_check_link">Vélo connecté</string>
+    <string name="loginsights_seek_check_complete">Journal lu jusqu’au bout</string>
+    <string name="loginsights_seek_check_complete_hint">Lis le journal en entier, ici ou dans Diagnostic.</string>
+    <string name="loginsights_seek_check_saved">Lecture enregistrée sur le téléphone</string>
+    <string name="loginsights_seek_check_saved_hint">Le fichier de la dernière lecture se trouve dans le stockage de YABA et correspond caractère pour caractère.</string>
+    <string name="loginsights_seek_check_fresh">Âge de la lecture</string>
+    <string name="loginsights_seek_check_fresh_hint">Au plus %d\u00A0minutes et issue de la connexion en cours, pour qu’aucune nouvelle ligne ne soit sautée.</string>
+    <string name="loginsights_seek_check_newest">Ligne enregistrée la plus récente</string>
+    <string name="loginsights_seek_check_newest_hint">Le pointeur va jusqu’à juste avant cette heure de l’horloge du vélo, jamais selon l’heure du téléphone.</string>
+    <string name="loginsights_seek_check_clock_hint">L’horloge du vélo n’est pas réglée. Règle-la d’abord, sinon la ligne la plus récente n’est pas univoque.</string>
+    <string name="loginsights_seek_button">Avancer le pointeur jusqu’à %s</string>
+    <string name="loginsights_seek_button_plain">Avancer le pointeur</string>
+    <string name="loginsights_seek_busy">Déplacement du pointeur …</string>
+    <string name="loginsights_seek_blocked">Possible seulement quand tous les points ci-dessus sont remplis.</string>
+    <string name="loginsights_seek_confirm_title">Avancer le pointeur de lecture</string>
+    <string name="loginsights_seek_confirm_text">Le vélo ne transmettra ensuite que les lignes à partir de %1$s le %2$s. Les %3$s lignes précédentes ne resteront que sur ce téléphone.</string>
+    <string name="loginsights_seek_confirm">Avancer</string>
+    <string name="loginsights_seek_cancel">Annuler</string>
+    <string name="loginsights_seek_done">Le pointeur se trouve avant %s. La prochaine lecture ne rendra que les nouvelles lignes.</string>
+    <string name="loginsights_archive_read_where">De nouvelles lignes s’ajoutent dès que tu lis le journal dans Diagnostic, sous «\u00A0Journal du vélo\u00A0».</string>
+</resources>

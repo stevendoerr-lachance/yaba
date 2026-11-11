@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sound-Lab on the Klang screen (ui/components/SoundLabBits.kt): volume per sound (5572) and the five replaceable clips. English is the default. -->
+<resources>
+    <!-- Volume per sound -->
+    <string name="soundlab_tiers_title">Volume per sound</string>
+    <string name="soundlab_tiers_hint">Each sound plays at level\u00A020, 30 or 38, or not at all. The firmware sets the three levels; here you choose which sound gets which.</string>
+    <string name="soundlab_tiers_unread">The bike has not reported its volumes yet. Until then, the ladders show the factory setting from firmware\u00A01.9.1.</string>
+    <string name="soundlab_tiers_read">Read from bike</string>
+    <string name="soundlab_tiers_reading">Reading…</string>
+    <string name="soundlab_tiers_none">The bike reports no volumes. Its firmware probably does not offer this value.</string>
+    <string name="soundlab_tiers_offline">Please connect to the bike to read and save the volumes.</string>
+    <string name="soundlab_tier_off">off</string>
+    <string name="soundlab_tier_silent">Silent</string>
+    <string name="soundlab_tier_low">Low</string>
+    <string name="soundlab_tier_medium">Medium</string>
+    <string name="soundlab_tier_high">Loud</string>
+    <string name="soundlab_tier_level">%1$s, level\u00A0%2$d</string>
+    <string name="soundlab_tier_changed">%1$s instead of %2$s</string>
+    <string name="soundlab_tier_step_cd">%1$s: %2$s</string>
+    <plurals name="soundlab_group_sounds">
+        <item quantity="one">%d sound</item>
+        <item quantity="other">%d sounds</item>
+    </plurals>
+    <plurals name="soundlab_group_muted">
+        <item quantity="one">%d silent</item>
+        <item quantity="other">%d silent</item>
+    </plurals>
+    <plurals name="soundlab_group_changed">
+        <item quantity="one">%d changed</item>
+        <item quantity="other">%d changed</item>
+    </plurals>
+    <string name="soundlab_state_expanded">expanded</string>
+    <string name="soundlab_state_collapsed">collapsed</string>
+    <string name="soundlab_note_bell">The bell button plays this sound. Set to silent, the button stays quiet.</string>
+    <string name="soundlab_note_alarm">Set to silent, the alarm still goes off, but without sound.</string>
+    <string name="soundlab_note_find">Set to silent, the search for the bike makes no sound.</string>
+    <string name="soundlab_note_error">Set to silent, the bike shows faults on the display only.</string>
+    <plurals name="soundlab_tiers_save">
+        <item quantity="one">Save %d change</item>
+        <item quantity="other">Save %d changes</item>
+    </plurals>
+    <string name="soundlab_tiers_saving">Saving…</string>
+    <string name="soundlab_tiers_discard">Discard changes</string>
+    <string name="soundlab_tiers_factory">Load factory setting</string>
+    <string name="soundlab_tiers_flash">Every save rewrites the bike’s flash memory. YABA therefore writes only when you save.</string>
+    <string name="soundlab_tiers_wait">Saving waits until the running transfer has finished.</string>
+    <string name="soundlab_tiers_saved">Saved. The bike reports the new volumes back.</string>
+    <string name="soundlab_tiers_not_taken">After saving, the bike reports a different setting. Please read the values from the bike again.</string>
+
+    <!-- Replaceable clips -->
+    <string name="soundlab_clips_title">Sounds in the bike</string>
+    <string name="soundlab_clips_hint">Five of the bike’s sounds can be replaced. YABA keeps every file it sends on this phone.</string>
+    <string name="soundlab_clip_factory">Factory sound</string>
+    <string name="soundlab_clip_custom">“%1$s” since %2$s</string>
+    <string name="soundlab_clip_empty">Probably silent: the last transfer broke off.</string>
+    <string name="soundlab_clip_replace">Replace</string>
+    <string name="soundlab_clip_factory_note">The bike does not give the factory sound back. Once sent over, it can only be restored with the factory file.</string>
+    <string name="soundlab_clip_bundled">Bundled sounds</string>
+    <string name="soundlab_clip_history">Sent before</string>
+    <string name="soundlab_clip_history_line">sent on %1$s</string>
+    <string name="soundlab_clip_history_unsent">never arrived in full</string>
+    <string name="soundlab_clip_choose_cd">Choose %1$s for “%2$s”</string>
+    <string name="soundlab_clip_pick_hint">YABA converts audio files. A file already in the bike’s VM_SOUND format, such as a factory file, goes to the bike unchanged.</string>
+    <string name="soundlab_clip_cancel">Cancel</string>
+    <string name="soundlab_clip_send">Send for “%1$s”</string>
+    <string name="soundlab_clip_keep_close">Please keep the phone close to the bike. If the transfer breaks off, the sound stays silent until a file arrives in full.</string>
+    <string name="soundlab_clip_wait_bell">Possible once the bell tone has arrived; the bike accepts one transfer at a time.</string>
+    <string name="soundlab_clip_sending">Sending %1$s for “%2$s”</string>
+    <string name="soundlab_clip_done">“%1$s” is transferred. The bike plays it for “%2$s” from now on, even when YABA is not running.</string>
+    <string name="soundlab_clip_finish">Done</string>
+    <string name="soundlab_clip_read_failed">The file could not be read. Please choose another audio file.</string>
+    <string name="soundlab_clip_too_big">The file is larger than %1$d\u00A0kB, the most a bike sound can hold.</string>
+    <string name="soundlab_clip_not_wav">The file starts like a bike sound file but holds no WAV audio. Please choose another file.</string>
+    <string name="soundlab_clip_store_failed">YABA could not keep the file on this phone, so it does not send it. Please check the free storage.</string>
+    <string name="soundlab_clip_failed_at">The transfer broke off at %1$d%%. “%2$s” stays silent until a file arrives in full.</string>
+    <string name="soundlab_clip_failed_before">The transfer did not start. “%1$s” keeps its previous sound.</string>
+    <string name="soundlab_clip_retry">Send again</string>
+    <string name="soundlab_clip_confirm_title">Overwrite factory sound</string>
+    <string name="soundlab_clip_confirm_text">The bike does not give the factory sound for “%1$s” back, and YABA does not have it. Once sent over, it can only be restored with the factory file.</string>
+    <string name="soundlab_clip_confirm_ok">Overwrite</string>
+    <string name="soundlab_clip_play_action">play on the bike</string>
+    <string name="soundlab_clip_replace_cd">Replace “%1$s”</string>
+    <string name="soundlab_clip_sending_percent">Sending %1$s for “%2$s”, %3$d%%</string>
+    <string name="soundlab_tiers_standstill">Saving starts at a standstill.</string>
+</resources>

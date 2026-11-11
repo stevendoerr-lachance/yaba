@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Account: first-run Welcome screen, Garage and the shared forms in AccountBits.kt. -->
+<resources>
+    <!-- Shared forms -->
+    <string name="account_disclosure_expanded">Expanded</string>
+    <string name="account_disclosure_collapsed">Collapsed</string>
+    <string name="account_field_email">Email</string>
+    <string name="account_field_password">Password</string>
+    <string name="account_password_show">Show</string>
+    <string name="account_password_hide">Hide</string>
+    <string name="account_password_show_description">Show password</string>
+    <string name="account_password_hide_description">Hide password</string>
+    <string name="account_login_submit">Sign in and get your key</string>
+    <string name="account_login_running">Signing in…</string>
+    <string name="account_login_privacy">YABA does not store your password. Only the key of your bike and a sign-in token are saved.</string>
+    <string name="account_default_bike_name">My S3</string>
+    <string name="account_default_bike_name_s2">My S2</string>
+    <string name="account_field_name">Name</string>
+    <string name="account_field_mac">MAC address</string>
+    <string name="account_mac_hint">Enter the MAC address from the bike’s Bluetooth name (for example ES3-A1B2C3D4E5F6, the whole name works) and the 32-character key from a mooovy or YABA key file.</string>
+    <string name="account_mac_hint_s2">Enter the MAC address and the 32-character key from a mooovy or YABA key file. An S2’s Bluetooth name holds only the last 6 digits of the MAC address.</string>
+    <string name="account_field_key">Key</string>
+    <string name="account_key_complete">Key complete.</string>
+    <plurals name="account_key_remaining">
+        <item quantity="one">32 hex characters, %1$d missing.</item>
+        <item quantity="other">32 hex characters, %1$d missing.</item>
+    </plurals>
+    <string name="account_field_user_key_id">User key ID</string>
+    <string name="account_user_key_id_hint">Usually 1. The number is listed next to the key in the account export (0–255).</string>
+    <string name="account_manual_add">Add bike</string>
+    <string name="account_import_title">Import key file</string>
+    <string name="account_import_field">Text of the key file</string>
+    <string name="account_import_submit">Import</string>
+    <string name="account_import_pick_file">Choose file</string>
+    <string name="account_import_hint">Choose the .json key file you saved from mooovy or from YABA on another phone.</string>
+    <string name="account_import_file_too_large">This file is too large to be a key file. Choose the YABA export or the mooovy key file.</string>
+    <string name="account_import_file_unreadable">This file is empty or cannot be read. Please choose another file or paste the text.</string>
+
+    <!-- Welcome -->
+    <string name="account_welcome_slogan">Keeps riding. No matter what.</string>
+    <string name="account_welcome_slogan_1">Keeps riding.</string>
+    <string name="account_welcome_slogan_2">No matter what.</string>
+    <string name="account_welcome_intro">YABA controls your VanMoof S3, X3, S2 or X2 directly over Bluetooth. After a one-time sign-in, unlocking, lights and bell run without VanMoof’s server.</string>
+    <string name="account_welcome_disclaimer">Yet Another Bike App. Not affiliated with VanMoof.</string>
+    <string name="account_welcome_hero_description">YABA</string>
+    <string name="account_welcome_login_title">Sign in with your VanMoof account</string>
+    <string name="account_welcome_login_button">Sign in with VanMoof account</string>
+    <string name="account_welcome_import_button">Import key file</string>
+    <string name="account_welcome_login_text">When you sign in, YABA fetches the key of your bike from VanMoof’s server. YABA does not store your password.</string>
+    <string name="account_welcome_login_caption">Only that key and a sign-in token are stored on this phone, both encrypted.</string>
+    <string name="account_welcome_login_fallback">If the server does not answer, import a key file instead.</string>
+
+    <!-- Garage -->
+    <string name="account_garage_title">Garage</string>
+    <string name="account_garage_done">Close</string>
+    <string name="account_garage_empty">No bike saved yet. Sign in or add one by hand below.</string>
+    <string name="account_garage_backup_title">Back up keys</string>
+    <string name="account_garage_backup_hint">The key file unlocks your bike. Anyone who has it can access your bike. Please keep it safe.</string>
+    <string name="account_garage_export">Export keys</string>
+    <string name="account_garage_export_subject">Bike keys</string>
+    <string name="account_garage_export_chooser">Back up bike keys</string>
+    <string name="account_garage_copy">Copy to clipboard</string>
+    <string name="account_garage_copied">The keys were copied to the clipboard. Please paste them into a password or notes app.</string>
+    <string name="account_garage_account_title">Account</string>
+    <string name="account_garage_signed_in_as">Signed in as %1$s</string>
+    <string name="account_garage_refresh">Reload bikes</string>
+    <string name="account_garage_refreshing">Loading…</string>
+    <string name="account_garage_logout">Sign out</string>
+    <string name="account_garage_login_hint">Sign in to load your bikes from your account. The keys stay here on your phone.</string>
+    <string name="account_garage_add_manual">Add a bike by hand</string>
+    <string name="account_garage_source_account">from your account</string>
+    <string name="account_garage_source_manual">added by hand</string>
+    <string name="account_garage_connected">Connected</string>
+    <string name="account_garage_connect">Connect</string>
+    <string name="account_garage_connect_description">Connect to %1$s</string>
+    <string name="account_garage_rename">Rename</string>
+    <string name="account_garage_rename_description">Rename %1$s</string>
+    <string name="account_garage_rename_title">Rename bike</string>
+    <string name="account_garage_save">Save</string>
+    <string name="account_garage_cancel">Cancel</string>
+    <string name="account_garage_delete">Delete</string>
+    <string name="account_garage_delete_title">Delete %1$s</string>
+    <string name="account_garage_delete_body">The key will be deleted from this phone. Without a sign-in or a backup, you can no longer access the bike.</string>
+    <string name="account_import_paste_hint">Paste the text of the .json key file you saved from mooovy or from YABA on another phone.</string>
+    <string name="account_import_paste_button">Paste the text instead</string>
+    <string name="account_key_show_description">Show key</string>
+    <string name="account_key_hide_description">Hide key</string>
+    <string name="account_garage_edit">Edit</string>
+    <string name="account_garage_edit_description">Edit %1$s</string>
+    <string name="account_garage_backup_first">Back up first</string>
+</resources>

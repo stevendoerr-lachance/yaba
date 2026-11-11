@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Core layers (ble, data, ride, audio, view model): Russian. -->
+<resources>
+
+    <!-- GATT characteristics (diagnosis page, version list) -->
+    <string name="core_char_challenge">Challenge</string>
+    <string name="core_char_key_index">Номер ключа</string>
+    <string name="core_char_backup_code">Резервный код</string>
+    <string name="core_char_bike_message">Бэк-офис</string>
+    <string name="core_char_firmware_metadata">Метаданные файла</string>
+    <string name="core_char_firmware_block">Блок файла</string>
+    <string name="core_char_oad_status">Статус передачи</string>
+    <string name="core_char_lock_state">Замок</string>
+    <string name="core_char_unlock_request">Запрос разблокировки</string>
+    <string name="core_char_alarm_state">Режим сигнализации</string>
+    <string name="core_char_alarm_mode">Сигнализация включена или выключена</string>
+    <string name="core_char_distance">Пробег</string>
+    <string name="core_char_speed">Скорость</string>
+    <string name="core_char_unit_system">Единицы</string>
+    <string name="core_char_power_level">Уровень поддержки</string>
+    <string name="core_char_speed_limit">Лимит скорости</string>
+    <string name="core_char_e_shifter_gear">Передача</string>
+    <string name="core_char_e_shift_points">Точки переключения</string>
+    <string name="core_char_e_shifter_mode">Режим переключения</string>
+    <string name="core_char_motor_battery_level">Батарея</string>
+    <string name="core_char_motor_battery_state">Разъём зарядки</string>
+    <string name="core_char_module_battery_level">Зарядное устройство и батарея модуля</string>
+    <string name="core_char_module_battery_state">Статус батареи модуля</string>
+    <string name="core_char_environment">Температура и влажность</string>
+    <string name="core_char_motor_telemetry_a">Телеметрия мотора A</string>
+    <string name="core_char_motor_telemetry_b">Телеметрия мотора B</string>
+    <string name="core_char_motor_errors">Биты ошибок мотора</string>
+    <string name="core_char_model">Модель</string>
+    <string name="core_char_bike_firmware">Прошивка велосипеда</string>
+    <string name="core_char_ble_firmware">Прошивка Bluetooth</string>
+    <string name="core_char_controller_firmware">Контроллер мотора</string>
+    <string name="core_char_pcba_hardware">Плата</string>
+    <string name="core_char_gsm_firmware">GSM-модуль</string>
+    <string name="core_char_e_shifter_firmware">Электропереключатель</string>
+    <string name="core_char_battery_firmware">Прошивка батареи</string>
+    <string name="core_char_frame_number">Номер рамы</string>
+    <string name="core_char_module_mode">Рабочее состояние</string>
+    <string name="core_char_module_state">Режим ожидания</string>
+    <string name="core_char_errors">Биты ошибок</string>
+    <string name="core_char_wheel_size">Тип колеса</string>
+    <string name="core_char_clock">Часы велосипеда</string>
+    <string name="core_char_buttons">Кнопки и Kick Lock</string>
+    <string name="core_char_supply_ok">Питание ≥\u00A020\u00A0В</string>
+    <string name="core_char_play_sound">Воспроизведение звука</string>
+    <string name="core_char_sound_groups">Группы громкости</string>
+    <string name="core_char_bell_sound">Звук звонка</string>
+    <string name="core_char_light_mode">Свет</string>
+    <string name="core_char_led_state">Каналы светодиодов</string>
+    <string name="core_char_light_sensor">Порог освещённости</string>
+    <string name="core_char_log_mode">Режим журнала</string>
+    <string name="core_char_log_size">Размер журнала</string>
+    <string name="core_char_log_block">Блок журнала</string>
+
+    <!-- Speed limit regions (under the road sign) -->
+    <string name="core_region_japan">Япония</string>
+    <string name="core_region_europe">Европа</string>
+    <string name="core_region_usa">США</string>
+    <string name="core_region_private">Бездорожье</string>
+
+    <!-- Lock / alarm phase (ALARM_STATE) -->
+    <string name="core_defence_unlocked">Разблокирован</string>
+    <string name="core_defence_locked">Заблокирован</string>
+    <string name="core_defence_alarm_one">Тревога, уровень\u00A01</string>
+    <string name="core_defence_alarm_two">Тревога, уровень\u00A02</string>
+    <string name="core_defence_tracking">Отслеживание</string>
+
+    <!-- Alarm switch (ALARM_MODE) -->
+    <string name="core_alarm_stage_disarmed">Выкл.</string>
+    <string name="core_alarm_stage_armed">На охране</string>
+
+    <!-- Charger state -->
+    <string name="core_charge_charging">Заряжается</string>
+    <string name="core_charge_not_charging">Не заряжается</string>
+    <string name="core_charge_battery_missing">Батарея не обнаружена</string>
+    <string name="core_log_battery_missing">Батарея не обнаружена: велосипед больше не видит батарею</string>
+    <string name="core_log_battery_back">Батарея снова обнаружена</string>
+
+    <!-- Light modes -->
+    <string name="core_light_auto">Авто</string>
+    <string name="core_light_on">Вкл.</string>
+    <string name="core_light_off">Выкл.</string>
+
+    <!-- Coarse bike status (MODULE_MODE) -->
+    <string name="core_status_ready">Готов</string>
+    <string name="core_status_riding">Готов к поездке</string>
+    <string name="core_status_alarm">Тревога/отслеживание</string>
+    <string name="core_status_updating">Идёт обновление</string>
+    <string name="core_status_shipping">Транспортный режим</string>
+    <string name="core_status_sleeping">Спит</string>
+    <string name="core_status_other">Меняет состояние</string>
+
+    <!-- Bell tones -->
+    <string name="core_bell_bell">Двойной сигнал</string>
+    <string name="core_bell_sonar">Субмарина</string>
+    <string name="core_bell_party">Гудок</string>
+    <string name="core_bell_foghorn">Туманный горн</string>
+
+    <!-- Sound board groups -->
+    <string name="core_sound_group_horn">Звонки и гудки</string>
+    <string name="core_sound_group_signal">Сигналы велосипеда</string>
+    <string name="core_sound_group_alarm">Сигнализация</string>
+    <string name="core_sound_group_system">Система</string>
+
+    <!-- Sound board sounds -->
+    <string name="core_sound_ding_dong">Двойной сигнал</string>
+    <string name="core_sound_toot">Гудок</string>
+    <string name="core_sound_foghorn">Туманный горн</string>
+    <string name="core_sound_submarine">Субмарина</string>
+    <string name="core_sound_urgent_whistle">Тревожный свисток</string>
+    <string name="core_sound_click">Щелчок</string>
+    <string name="core_sound_positive">Положительный сигнал</string>
+    <string name="core_sound_negative">Отрицательный сигнал</string>
+    <string name="core_sound_lock">Звук блокировки</string>
+    <string name="core_sound_unlock">Звук разблокировки</string>
+    <string name="core_sound_unlock_countdown">Отсчёт до разблокировки</string>
+    <string name="core_sound_backup_code">Ввод резервного кода</string>
+    <string name="core_sound_pairing_ok">Сопряжение выполнено</string>
+    <string name="core_sound_pairing_failed">Ошибка сопряжения</string>
+    <string name="core_sound_find_my">Звук поиска</string>
+    <string name="core_sound_alarm_one">Тревога, уровень\u00A01</string>
+    <string name="core_sound_alarm_two">Тревога, уровень\u00A02</string>
+    <string name="core_sound_noise">Шум</string>
+    <string name="core_sound_startup">Звук включения</string>
+    <string name="core_sound_shutdown">Звук выключения</string>
+    <string name="core_sound_charging">Звук зарядки</string>
+    <string name="core_sound_diagnostics">Звук диагностики</string>
+    <string name="core_sound_reset_countdown">Обратный отсчёт до перезапуска</string>
+    <string name="core_sound_firmware_loading">Загрузка прошивки</string>
+    <string name="core_sound_firmware_failed">Ошибка прошивки</string>
+    <string name="core_sound_unpair">Отмена сопряжения</string>
+
+    <!-- Fault table: name and what to do -->
+    <string name="core_fault_0_name">Батарея: защита от короткого замыкания</string>
+    <string name="core_fault_0_hint">Батарея отключилась, обнаружив короткое замыкание; возможно, сработал её предохранитель. Проверь проводку и разъём батареи.</string>
+    <string name="core_fault_1_name">Батарея: MOSFET перегрет</string>
+    <string name="core_fault_1_hint">Силовой ключ (MOSFET) в батарее перегрелся. Дай велосипеду остыть и попробуй снова.</string>
+    <string name="core_fault_2_name">Батарея: короткое замыкание при предразряде</string>
+    <string name="core_fault_2_hint">Батарея обнаружила короткое замыкание при включении. Проверь проводку между батареей и велосипедом.</string>
+    <string name="core_fault_3_name">Батарея: перегрузка при предразряде</string>
+    <string name="core_fault_3_hint">Батарея обнаружила перегрузку при включении. Поищи короткое замыкание в проводке между батареей и велосипедом.</string>
+    <string name="core_fault_4_name">Батарея: пониженное напряжение, уровень\u00A02</string>
+    <string name="core_fault_4_hint">Напряжение батареи упало очень низко. Заряжай батарею дольше. Если код остаётся, BMS нужно сбросить (мастерская).</string>
+    <string name="core_fault_5_name">Батарея: пониженное напряжение, уровень\u00A01</string>
+    <string name="core_fault_5_hint">Напряжение батареи низкое. Зарядь батарею.</string>
+    <string name="core_fault_6_name">Батарея: повышенное напряжение, уровень\u00A02</string>
+    <string name="core_fault_6_hint">Напряжение батареи слишком высокое. Отключи зарядное устройство и проверь, подходит ли оно (42\u00A0В). Ошибка уровня\u00A02 требует сброса BMS.</string>
+    <string name="core_fault_7_name">Батарея: повышенное напряжение, уровень\u00A01</string>
+    <string name="core_fault_7_hint">Напряжение батареи слишком высокое. Отключи зарядное устройство и проверь, подходит ли оно (42\u00A0В).</string>
+    <string name="core_fault_8_name">Батарея: слишком большой ток зарядки (уровень\u00A01)</string>
+    <string name="core_fault_8_hint">Батарея приняла слишком большой ток зарядки. Проверь зарядное устройство (42\u00A0В).</string>
+    <string name="core_fault_9_name">Батарея: слишком большой ток зарядки (уровень\u00A02)</string>
+    <string name="core_fault_9_hint">Слишком большой ток зарядки. Проверь зарядное устройство (42\u00A0В). Ошибка уровня\u00A02 требует сброса BMS.</string>
+    <string name="core_fault_10_name">Батарея: слишком большой ток разрядки (уровень\u00A02)</string>
+    <string name="core_fault_10_hint">Велосипед потребил слишком большой ток. Поищи короткое замыкание в проводке или неисправность мотора. Ошибка уровня\u00A02 требует сброса BMS.</string>
+    <string name="core_fault_11_name">Батарея: слишком большой ток разрядки (уровень\u00A01)</string>
+    <string name="core_fault_11_hint">Велосипед ненадолго потребил слишком большой ток, например на крутом подъёме или с Boost. Если код возвращается и на ровной дороге, проверь мотор и его кабель.</string>
+    <string name="core_fault_12_name">Батарея: слишком холодно для зарядки</string>
+    <string name="core_fault_12_hint">Батарея слишком холодная для зарядки. Заряжай её при комнатной температуре. Если код появляется и при нормальной температуре, возможно, неисправен датчик температуры в батарее.</string>
+    <string name="core_fault_13_name">Батарея: слишком жарко для зарядки</string>
+    <string name="core_fault_13_hint">Батарея слишком горячая для зарядки. Дай ей остыть, потом заряжай. Если код появляется и при нормальной температуре, возможно, неисправен датчик температуры в батарее.</string>
+    <string name="core_fault_14_name">Батарея: слишком холодно для езды</string>
+    <string name="core_fault_14_hint">Батарея слишком холодная, чтобы отдавать ток. Дай велосипеду прогреться. Если код появляется и при нормальной температуре, возможно, неисправен датчик температуры в батарее.</string>
+    <string name="core_fault_15_name">Батарея: слишком жарко для езды</string>
+    <string name="core_fault_15_hint">Батарея слишком горячая, чтобы отдавать ток. Дай велосипеду остыть. Если код появляется и при нормальной температуре, возможно, неисправен датчик температуры в батарее.</string>
+    <string name="core_fault_16_name">Батарея: постоянный отказ (BMS)</string>
+    <string name="core_fault_16_hint">Батарея сообщает о постоянном отказе или совсем не отвечает. Часто у неё перегорел предохранитель, вероятно из-за короткого замыкания на гнезде батареи. Проверь разъём и гнездо на следы гари. После этого батарею должна проверить мастерская.</string>
+    <string name="core_fault_17_name">Батарея не разрешает ни зарядку, ни разрядку</string>
+    <string name="core_fault_17_hint">Батарея не включила выход зарядки или разрядки. Проверь разъём и кабель батареи и перезапусти велосипед.</string>
+    <string name="core_fault_18_name">Батарея не обнаружена</string>
+    <string name="core_fault_18_hint">Велосипед не видит батарею (сигнал обнаружения остаётся низким). Проверь, что батарея вставлена до упора, затем разъём и кабель. Если одновременно появляется 42, велосипед может перейти в транспортный режим.</string>
+    <string name="core_fault_19_name">Ошибка шины батареи</string>
+    <string name="core_fault_19_hint">Велосипед не может связаться с батареей по линии данных (Modbus). Проверь разъём и кабель батареи. Если ошибка остаётся, возможно, неисправна микросхема интерфейса в модуле или сама BMS.</string>
+    <string name="core_fault_20_name">Слишком низкое напряжение питания</string>
+    <string name="core_fault_20_hint">Напряжение питания ниже 25\u00A0В, как будто батарея отключила свой выход. Зарядь батарею и проверь её разъём. Короткая 20 сразу после сброса — это нормально.</string>
+    <string name="core_fault_21_name">Зарядка без тока</string>
+    <string name="core_fault_21_hint">Велосипед видит зарядное устройство, но ток зарядки не течёт. Проверь зарядное устройство (42\u00A0В) и разъём зарядки. Достигнутый предел зарядки тоже может вызвать это.</string>
+    <string name="core_fault_22_name">Контроллер мотора не отвечает</string>
+    <string name="core_fault_22_hint">Модуль не получает ответа от контроллера мотора, поэтому помощи мотора нет. На стоянке велосипед пытается перезапустить контроллер сам. Выключи и снова включи велосипед. Если код остаётся, на контроллер не подаётся питание или он неисправен (мастерская).</string>
+    <string name="core_fault_23_name">Bluetooth-чип перезапускается</string>
+    <string name="core_fault_23_hint">Модуль потерял связь со своим Bluetooth-чипом и перезапускает его, поэтому приложение может не подключаться. Разблокировать можно по-прежнему резервным кодом. Если код остаётся, неисправен чип или его прошивка (мастерская).</string>
+    <string name="core_fault_24_name">Передача обновления прервана</string>
+    <string name="core_fault_24_hint">Передача прошивки из приложения была прервана. Перезапусти велосипед и запусти обновление снова, держа телефон рядом с велосипедом.</string>
+    <string name="core_fault_25_name">Передача обновления: ошибка контрольной суммы</string>
+    <string name="core_fault_25_hint">Переданный образ прошивки не прошёл проверку контрольной суммы. Перезапусти велосипед и передай обновление снова.</string>
+    <string name="core_fault_26_name">Передача обновления заняла слишком много времени</string>
+    <string name="core_fault_26_hint">Передача прошивки заняла слишком много времени. Перезапусти велосипед и попробуй ещё раз, держа телефон рядом с велосипедом.</string>
+    <string name="core_fault_27_name">Пакет обновления отсутствует или недействителен</string>
+    <string name="core_fault_27_hint">В пакете обновления нет файла или он недействителен. Перезапусти велосипед и загрузи пакет снова.</string>
+    <string name="core_fault_28_name">Программирование флеш-памяти: тайм-аут</string>
+    <string name="core_fault_28_hint">Модуль не успел записать новую прошивку. Перезапусти велосипед и повтори обновление. Если снова не получится, модуль должна проверить мастерская.</string>
+    <string name="core_fault_29_name">Пакет обновления: заголовок не найден</string>
+    <string name="core_fault_29_hint">Модуль не нашёл заголовок (header) в файле прошивки из пакета обновления. Пакет повреждён или не тот. Повтори обновление с целым пакетом.</string>
+    <string name="core_fault_30_name">Пакет обновления: нет файлов</string>
+    <string name="core_fault_30_hint">В пакете обновления нет ни одного файла. Повтори обновление с полным пакетом.</string>
+    <string name="core_fault_31_name">Стирание флеш-памяти не удалось</string>
+    <string name="core_fault_31_hint">Модуль не смог стереть старую прошивку. Перезапусти велосипед и повтори обновление. Если снова не получится, модуль должна проверить мастерская.</string>
+    <string name="core_fault_32_name">Запись во флеш-память не удалась</string>
+    <string name="core_fault_32_hint">Модуль не смог записать новую прошивку. Перезапусти велосипед и повтори обновление. Если снова не получится, модуль должна проверить мастерская.</string>
+    <string name="core_fault_33_name">Пакет обновления: ошибка контрольной суммы</string>
+    <string name="core_fault_33_hint">У файла в пакете обновления ошибка контрольной суммы. Повтори обновление с новым пакетом.</string>
+    <string name="core_fault_34_name">Обновление мотора не удалось</string>
+    <string name="core_fault_34_hint">Обновление контроллера мотора (motorware) не завершилось. Перезапусти велосипед и повтори обновление. Если после этого мотор не отвечает (код\u00A022), прошивку должна восстановить мастерская.</string>
+    <string name="core_fault_35_name">Обновление батареи не удалось</string>
+    <string name="core_fault_35_hint">Обновление контроллера батареи (BMS) не завершилось. Перезапусти велосипед и повтори обновление. Если батарея молчит, мастерская должна прошить её заново.</string>
+    <string name="core_fault_36_name">Обновление шифтера не удалось</string>
+    <string name="core_fault_36_hint">Обновление контроллера шифтера не завершилось. Перезапусти велосипед и повтори обновление. Если шифтер молчит (код\u00A044), мастерская должна прошить его заново.</string>
+    <string name="core_fault_37_name">Обновление Bluetooth не удалось</string>
+    <string name="core_fault_37_hint">Обновление Bluetooth-контроллера не завершилось. Перезапусти велосипед и повтори обновление. Если приложение больше не подключается, разблокировать можно по-прежнему резервным кодом; мастерская может прошить чип заново.</string>
+    <string name="core_fault_38_name">Ошибка измерения батареи модуля</string>
+    <string name="core_fault_38_hint">Велосипед не может считать маленькую батарею в Smart Cartridge; возможно, её нет, она разряжена или изношена. Зарядь велосипед и проверь, заряжается ли батарея модуля. Если код остаётся, замени батарею модуля.</string>
+    <string name="core_fault_39_name">Неисправность датчика освещённости</string>
+    <string name="core_fault_39_hint">Модуль не может считать датчик освещённости (ошибка I²C), поэтому автоматический свет может работать неправильно. Перезапусти велосипед. Если код остаётся, модуль нужно отремонтировать.</string>
+    <string name="core_fault_40_name">Кнопка звонка залипла</string>
+    <string name="core_fault_40_hint">Велосипед определил кнопку звонка как нажатую дольше 20\u00A0с. Почисти кнопку или замени её и проверь, нет ли на её кабеле влаги или короткого замыкания.</string>
+    <string name="core_fault_41_name">Кнопка Boost залипла</string>
+    <string name="core_fault_41_hint">Велосипед определил кнопку Boost как нажатую дольше 20\u00A0с. Почисти кнопку или замени её и проверь, нет ли на её кабеле влаги или короткого замыкания.</string>
+    <string name="core_fault_42_name">Катушка Kick Lock не обнаружена</string>
+    <string name="core_fault_42_hint">Велосипед не обнаруживает катушку в Kick Lock. Чаще всего разъём расшатан или кабель зажат. Пожалуйста, проверь разъём Kick Lock и пройди по кабелю, ища перегибы. Если одновременно пропадает определение батареи, велосипед, вероятно, перейдёт в транспортный режим.</string>
+    <string name="core_fault_43_name">Передача не включилась</string>
+    <string name="core_fault_43_hint">Шифтер пытался десять раз и не достиг передачи. Проверь кабель и разъём шифтера у задней втулки, потом переключи передачу снова.</string>
+    <string name="core_fault_44_name">Электропереключатель не отвечает</string>
+    <string name="core_fault_44_hint">Велосипед пять раз не получил ответа от шифтера. Проверь разъём и кабель шифтера у задней втулки. Если с ними всё в порядке, скорее всего, неисправна плата шифтера (мастерская).</string>
+    <string name="core_fault_45_name">Кабель мотора или датчик температуры разомкнуты</string>
+    <string name="core_fault_45_hint">Датчик температуры (NTC) мотора сообщает о разомкнутой линии, как будто кабель мотора отсоединён или оборван. Проверь разъём мотора и жгут проводов к переднему колесу на перегибы и обрывы. Если мотор ещё работает, это часто первый признак того, что жгут выходит из строя; без датчика у мотора нет защиты от перегрева. Покрути переднее колесо: если показывается скорость, линия скорости ещё цела.</string>
+    <string name="core_fault_46_name">Драйвер мотора: перегрев или перегрузка по току</string>
+    <string name="core_fault_46_hint">Микросхема драйвера мотора (DRV8301) сообщила об ошибке. В таблице мастерской указан перегрев, в названии кода — перегрузка по току. Дай велосипеду остыть и перезапусти его. Если код вернётся, проверь кабель мотора на повреждения; после этого контроллер должна проверить мастерская.</string>
+    <string name="core_fault_47_name">Батарея не сообщает уровень заряда</string>
+    <string name="core_fault_47_hint">Батарея не сообщает уровень заряда. Проверь разъём и кабель батареи и перезапусти велосипед.</string>
+    <string name="core_fault_48_name">Статусный бит скорости колеса</string>
+    <string name="core_fault_48_hint">YABA не считает 48 неисправностью: прошивка выставляет этот бит по импульсам скорости колеса. В таблице мастерской 48 назван ошибкой контроллера мотора (ошибка параметров, заменить мотор). Если велосипед показывает 48 на дисплее или скорость неверна, проверь разъём мотора и линию скорости в жгуте проводов.</string>
+    <string name="core_fault_49_name">Мотор: измерение тока неверно</string>
+    <string name="core_fault_49_hint">При запуске контроллер мотора измерил смещение тока, слишком далёкое от значения по умолчанию (1,0), поэтому его измерение тока неверно. Перезапусти велосипед. Если код остаётся, контроллер должна проверить мастерская.</string>
+    <string name="core_fault_50_name">Мотор: измерение напряжения неверно</string>
+    <string name="core_fault_50_hint">При запуске измерение напряжения контроллера мотора было неверным. Перезапусти велосипед и проверь разъём батареи. Если код остаётся, контроллер должна проверить мастерская.</string>
+    <string name="core_fault_51_name">Мощность мотора ограничена из-за нагрева</string>
+    <string name="core_fault_51_hint">Контроллер мотора снизил максимальный ток, потому что он горячий. Дай велосипеду остыть. Это предупреждение, а не поломка.</string>
+    <string name="core_fault_52_name">Датчик крутящего момента отказал</string>
+    <string name="core_fault_52_hint">Контроллер мотора сообщает об отказе датчика крутящего момента. Проверь разъём и кабель датчика крутящего момента и перезапусти велосипед.</string>
+    <string name="core_fault_53_name">Критическая ошибка мотора (не готов)</string>
+    <string name="core_fault_53_hint">Контроллер мотора сообщает о тяжёлой ошибке (ошибка параметров плюс состояние не готов) и не запускается. Перезапусти велосипед один раз. Если код остаётся, таблица мастерской советует заменить мотор; пусть мотор и контроллер проверит мастерская.</string>
+    <string name="core_fault_54_name">Нет SIM-карты</string>
+    <string name="core_fault_54_hint">Велосипед не обнаруживает SIM-карту своего трекера, поэтому отслеживание не работает. На поездку это не влияет. Проверь, что SIM-карта лежит в слоте и работает в другом устройстве.</string>
+    <string name="core_fault_55_name">Ошибка запуска внутренней шины</string>
+    <string name="core_fault_55_hint">Несколько микросхем на внутренней шине I²C модуля не ответили при запуске. Перезапусти велосипед. Если код остаётся, модуль (Smart Cartridge), скорее всего, неисправен.</string>
+    <string name="core_fault_56_name">Неверная SIM-карта</string>
+    <string name="core_fault_56_hint">Это не SIM-карта VanMoof (её номер начинается не с того префикса). Вставь SIM-карту, которая относится к велосипеду.</string>
+    <string name="core_fault_57_name">SIM-карта не читается</string>
+    <string name="core_fault_57_hint">Модем видит SIM-карту, но не может её прочитать. Достань SIM-карту, почисти контакты и вставь обратно. Если код остаётся, попробуй другую SIM-карту VanMoof.</string>
+    <string name="core_fault_58_name">GSM-модем не запускается</string>
+    <string name="core_fault_58_hint">Запуск модема не удался. Перезапусти велосипед; код часто исчезает после сброса. Если он остаётся, чип модема, вероятно, неисправен (его легко заменить).</string>
+    <string name="core_fault_60_name">Заводской режим</string>
+    <string name="core_fault_60_hint">Велосипед работает на заводской прошивке вместо обычной. Мастерская должна заново установить обычную прошивку.</string>
+    <string name="core_fault_unknown_name">Неизвестный код</string>
+    <string name="core_fault_unknown_hint">Этого кода нет в таблице неисправностей. Запиши номер и когда он появляется.</string>
+
+    <!-- Lock state, used inside sentences (lower case) -->
+    <string name="core_lock_unlocked">разблокирован</string>
+    <string name="core_lock_locked">заблокирован</string>
+    <string name="core_lock_pin_entry">ввод кода</string>
+
+    <!-- Link messages and connection errors -->
+    <string name="core_link_key_invalid">Ключ недействителен. Добавь велосипед в гараже заново или перезагрузи его.</string>
+    <string name="core_link_bike_not_found">Велосипед не найден. Чтобы разбудить его, коротко сдвинь велосипед или нажми кнопку звонка. Приложение VanMoof должно быть закрыто.</string>
+    <string name="core_link_location_off">Местоположение выключено. Без местоположения Android не находит устройства Bluetooth.</string>
+    <string name="core_error_bluetooth_off">Bluetooth выключен.</string>
+    <string name="core_error_connect_failed">Не удалось подключиться</string>
+    <string name="core_error_invalid_mac">Неверный MAC-адрес %1$s</string>
+    <string name="core_error_not_s3">Это не S3 и не X3, либо кэш Bluetooth повреждён.</string>
+    <string name="core_error_not_connected_wake">Нет подключения. Пожалуйста, разбуди велосипед и подожди немного.</string>
+    <string name="core_error_not_connected">Нет подключения</string>
+    <string name="core_error_link_lost">Подключение прервано</string>
+    <string name="core_error_no_challenge">Велосипед не прислал challenge</string>
+    <string name="core_error_read_failed">%1$s: ошибка чтения</string>
+    <string name="core_error_connect_gatt_null">Android не смог открыть подключение (connectGatt вернул null)</string>
+    <string name="core_error_no_answer">Нет ответа от велосипеда. Чаще всего велосипед спит, либо приложение VanMoof сейчас подключено к велосипеду.</string>
+    <string name="core_error_connect_133">Подключение прервано (133). Велосипед принимает только одно подключение за раз.</string>
+    <string name="core_error_connect_status">Не удалось подключиться (статус %1$s)</string>
+    <string name="core_error_services">Не удалось прочитать службы велосипеда</string>
+    <string name="core_error_services_status">Не удалось прочитать службы велосипеда (статус %1$s)</string>
+    <string name="core_error_missing_char">На велосипеде нет характеристики %1$s</string>
+    <string name="core_error_op_not_started">%1$s: не удалось запустить</string>
+    <string name="core_error_op_timeout">%1$s: время ожидания истекло</string>
+    <string name="core_error_op_failed">%1$s: ошибка (статус %2$d)</string>
+    <string name="core_op_read">Чтение</string>
+    <string name="core_op_write">Запись</string>
+    <string name="core_op_notify">Настройка уведомлений</string>
+    <string name="core_op_mtu">Запрос MTU</string>
+
+    <!-- Commands: event log entry and error prefix -->
+    <string name="core_cmd_failed">%1$s: не удалось</string>
+    <string name="core_cmd_refresh">Обновление</string>
+    <string name="core_cmd_read_raw">Чтение сырых данных</string>
+    <string name="core_cmd_unlock">Разблокировка</string>
+    <string name="core_cmd_lock">Блокировка</string>
+    <string name="core_cmd_speed_limit">Лимит скорости %1$d\u00A0км/ч</string>
+    <string name="core_cmd_level">Уровень\u00A0%1$d</string>
+    <string name="core_cmd_light">Свет: %1$s</string>
+    <string name="core_cmd_bell">Звук звонка: %1$s</string>
+    <string name="core_cmd_unit">Единицы: %1$s</string>
+    <string name="core_cmd_wake">Пробуждение</string>
+    <string name="core_cmd_backup_cleared">Резервный код удалён</string>
+    <string name="core_cmd_backup_set">Резервный код задан</string>
+    <string name="core_cmd_bike_log">Журнал велосипеда прочитан</string>
+    <string name="core_cmd_custom_bell">Свой звук звонка</string>
+    <string name="core_alarm_on">Сигнализация включена</string>
+    <string name="core_alarm_off">Сигнализация выключена</string>
+
+    <!-- Command errors -->
+    <string name="core_error_speed_rejected">Велосипед не принял %1$d\u00A0км/ч (он сообщает %2$s\u00A0км/ч).</string>
+    <string name="core_error_speed_rejected_lock">Велосипед не принял %1$d\u00A0км/ч (он сообщает %2$s\u00A0км/ч, ограничение региона %3$d).</string>
+    <string name="core_error_region_locked">Регион велосипеда ограничен. Велосипед сохраняет свой лимит скорости и отклонил %1$d\u00A0км/ч.</string>
+    <string name="core_error_level_rejected">Велосипед не принял уровень\u00A0%1$d (он сообщает %2$s).</string>
+    <string name="core_error_wake_riding">Во время езды не нужно.</string>
+    <string name="core_error_backup_digits">Три цифры от 1 до 9.</string>
+    <string name="core_error_no_bike_log">Этот велосипед не предоставляет журнал.</string>
+
+    <!-- Event log -->
+    <string name="core_log_key_invalid">Ключ для %1$s недействителен</string>
+    <string name="core_log_searching">Поиск: %1$s</string>
+    <string name="core_log_disconnected">Отключено</string>
+    <string name="core_log_connected">Подключено, авторизация пройдена</string>
+    <string name="core_log_link_lost_riding">Подключение прервано во время езды</string>
+    <string name="core_log_link_lost">Подключение прервано</string>
+    <plurals name="core_log_subscribed">
+        <item quantity="one">Подписка на %1$d значение в реальном времени</item>
+        <item quantity="few">Подписка на %1$d значения в реальном времени</item>
+        <item quantity="many">Подписка на %1$d значений в реальном времени</item>
+        <item quantity="other">Подписка на %1$d значения в реальном времени</item>
+    </plurals>
+    <string name="core_log_firmware">Прошивка\u00A0%1$s</string>
+    <string name="core_log_transfer">Передача: %1$s</string>
+    <string name="core_log_shipping">Велосипед сообщает о транспортном режиме</string>
+    <string name="core_log_kicklock_riding">Kick Lock сообщает «заблокирован» во время езды</string>
+    <string name="core_log_lock">Замок: %1$s</string>
+    <string name="core_log_status">Состояние: %1$s</string>
+    <string name="core_log_fault">Ошибка\u00A0%1$d: %2$s</string>
+    <string name="core_log_faults_cleared">Ошибки, которые больше не активны: %1$s</string>
+    <string name="core_log_power_button_riding">Кнопка питания/перезапуска сообщает о нажатии во время езды</string>
+    <string name="core_log_supply_low">Напряжение питания ниже 20\u00A0В</string>
+    <string name="core_log_supply_ok">Питание снова в норме</string>
+    <string name="core_log_charger_in">Зарядное устройство подключено</string>
+    <string name="core_log_charger_out">Зарядное устройство отключено</string>
+    <string name="core_log_alarm">Сигнализация: %1$s</string>
+    <string name="core_log_unlock_request">Велосипед запрашивает разблокировку</string>
+    <string name="core_log_ride_started">Запись поездок начата</string>
+    <string name="core_log_ride_stopped">Запись поездок остановлена</string>
+
+    <!-- Event details (parts are joined with commas) -->
+    <string name="core_detail_status">Состояние: %1$s</string>
+    <string name="core_detail_status_before">Было: %1$s</string>
+    <string name="core_detail_shipping">сообщён транспортный режим</string>
+    <string name="core_detail_battery">батарея %1$d\u00A0%%</string>
+    <string name="core_detail_speed">%1$d\u00A0км/ч</string>
+    <string name="core_detail_supply_ok">питание в порядке</string>
+    <string name="core_detail_supply_low">питание низкое</string>
+    <string name="core_detail_lock">замок: %1$s</string>
+    <string name="core_detail_faults">ошибки\u00A0%1$s</string>
+    <string name="core_detail_shipping_state">%1$d\u00A0км/ч, замок %2$s, ошибки\u00A0%3$s</string>
+    <string name="core_detail_supply_low_state">%1$d\u00A0км/ч, батарея %2$s\u00A0%%</string>
+    <string name="core_none">нет</string>
+
+    <!-- Custom bell transfer status (OAD) -->
+    <string name="core_oad_started">начато</string>
+    <string name="core_oad_done">завершено, контрольная сумма совпадает</string>
+    <string name="core_oad_block_ok">блок принят</string>
+    <string name="core_oad_bad_checksum">контрольная сумма не совпадает</string>
+    <string name="core_oad_not_writable">память недоступна для записи</string>
+    <string name="core_oad_bad_type">неверный тип файла</string>
+    <string name="core_oad_too_large">файл слишком большой</string>
+    <string name="core_oad_code">код\u00A0%1$s</string>
+
+    <!-- Account and cloud -->
+    <string name="core_default_bike_name">Мой S3</string>
+    <string name="core_error_no_valid_keys">Действительных ключей не найдено.</string>
+    <string name="core_error_not_logged_in">Вход в аккаунт не выполнен.</string>
+    <string name="core_vault_unavailable">Хранилище ключей недоступно.</string>
+    <string name="core_vault_unreadable">Хранилище ключей сейчас не читается. Пожалуйста, перезапусти приложение.</string>
+    <string name="core_vault_save_failed">Не удалось сохранить хранилище ключей.</string>
+    <string name="core_api_wrong_credentials">Неверная эл. почта или пароль.</string>
+    <string name="core_api_no_token">Ответ на вход не содержал токена входа.</string>
+    <string name="core_api_session_expired">Сессия истекла. Пожалуйста, войди в аккаунт снова.</string>
+    <string name="core_api_refresh_no_token">Обновление сессии не вернуло токен входа.</string>
+    <string name="core_api_rate_limited">Сервер VanMoof сейчас ограничивает число запросов. Пожалуйста, подожди одну минуту.</string>
+    <string name="core_api_not_authenticated">Вход в аккаунт не выполнен или сессия истекла.</string>
+    <string name="core_api_not_owner">У тебя нет разрешения на это. Это может сделать только владелец.</string>
+    <string name="core_api_no_permission">Нет прав.</string>
+    <string name="core_api_server_error">Сервер VanMoof ответил ошибкой\u00A0%1$d.</string>
+    <string name="core_api_unexpected">Неожиданный ответ сервера VanMoof.</string>
+    <string name="core_api_timeout">Истекло время ожидания. Возможно, действие всё же выполнено. Пожалуйста, обнови список.</string>
+    <string name="core_api_connection_dropped">Подключение к серверу VanMoof прервано.</string>
+    <string name="core_api_unreachable">Сервер VanMoof недоступен. Пожалуйста, проверь подключение к интернету.</string>
+
+    <!-- Account messages -->
+    <plurals name="core_account_bikes_loaded">
+        <item quantity="one">Загружен %1$d велосипед.</item>
+        <item quantity="few">Загружено %1$d велосипеда.</item>
+        <item quantity="many">Загружено %1$d велосипедов.</item>
+        <item quantity="other">Загружено %1$d велосипеда.</item>
+    </plurals>
+    <string name="core_account_without_key">Пока без ключа: %1$s.</string>
+    <plurals name="core_account_bikes_refreshed">
+        <item quantity="one">Обновлён %1$d велосипед.</item>
+        <item quantity="few">Обновлено %1$d велосипеда.</item>
+        <item quantity="many">Обновлено %1$d велосипедов.</item>
+        <item quantity="other">Обновлено %1$d велосипеда.</item>
+    </plurals>
+    <string name="core_account_logged_out">Выход из аккаунта выполнен. Твои ключи остаются на этом телефоне.</string>
+    <string name="core_account_bike_added">Добавлен: %1$s.</string>
+    <plurals name="core_account_imported">
+        <item quantity="one">Импортирован %1$d велосипед.</item>
+        <item quantity="few">Импортировано %1$d велосипеда.</item>
+        <item quantity="many">Импортировано %1$d велосипедов.</item>
+        <item quantity="other">Импортировано %1$d велосипеда.</item>
+    </plurals>
+    <plurals name="core_account_import_skipped">
+        <item quantity="one">Пропущена %1$d неверная запись.</item>
+        <item quantity="few">Пропущены %1$d неверные записи.</item>
+        <item quantity="many">Пропущено %1$d неверных записей.</item>
+        <item quantity="other">Пропущено %1$d неверной записи.</item>
+    </plurals>
+    <string name="core_account_import_failed">Импорт не удался.</string>
+    <string name="core_error_unknown">Неизвестная ошибка.</string>
+    <string name="core_share_shared_with">Доступ открыт для %1$s.</string>
+    <string name="core_share_revoked">Доступ закрыт.</string>
+
+    <!-- Custom bell conversion and upload -->
+    <string name="core_bell_silent">В файле только тишина.</string>
+    <string name="core_bell_too_long">Звук слишком длинный. Выбери покороче.</string>
+    <string name="core_bell_cannot_open">Файл не удаётся открыть.</string>
+    <string name="core_bell_no_audio">В файле нет звуковой дорожки.</string>
+    <string name="core_bell_unsupported">Этот телефон не может декодировать этот формат.</string>
+    <string name="core_bell_no_data">В файле нет читаемых аудиоданных.</string>
+    <string name="core_bell_convert_failed">Конвертация не удалась.</string>
+    <string name="core_bell_upload_aborted">Передача прервана. Пожалуйста, держи телефон рядом с велосипедом и отправь снова.</string>
+
+    <!-- Ride logger -->
+    <string name="core_ride_error_permission">Нет доступа к Bluetooth. Пожалуйста, сначала разреши доступ к устройствам поблизости.</string>
+    <string name="core_ride_share_subject">Запись поездки S3 %1$s</string>
+    <string name="core_ride_notif_running">Идёт запись поездок</string>
+    <plurals name="core_ride_notif_incidents">
+        <item quantity="one">Запись поездок: %1$d сбой</item>
+        <item quantity="few">Запись поездок: %1$d сбоя</item>
+        <item quantity="many">Запись поездок: %1$d сбоев</item>
+        <item quantity="other">Запись поездок: %1$d сбоя</item>
+    </plurals>
+    <string name="core_ride_notif_connecting">Подключение…</string>
+    <string name="core_ride_notif_battery">Батарея %1$d\u00A0%%</string>
+    <string name="core_ride_notif_lost">Подключение прервано, поиск продолжается</string>
+    <string name="core_ride_notif_searching">Поиск велосипеда</string>
+    <string name="core_ride_notif_stop">Остановить</string>
+
+    <!-- Debug builds only: demo data and component gallery -->
+    <string name="core_demo_kicklock_contact">Контакт Kick Lock: активен</string>
+    <string name="core_gallery_connected">Подключено</string>
+    <string name="core_gallery_battery">Батарея</string>
+    <string name="core_gallery_percent">%1$d\u00A0%%</string>
+    <string name="core_gallery_distance">Километры</string>
+    <string name="core_gallery_level">Уровень</string>
+    <string name="core_gallery_limit">Лимит</string>
+    <string name="core_gallery_speed_limit">Лимит скорости</string>
+    <string name="core_gallery_assist">Поддержка</string>
+    <string name="core_gallery_light">Свет</string>
+    <string name="core_gallery_soundboard">Звуковая панель</string>
+    <string name="core_gallery_send_bell">Отправить звук звонка</string>
+    <string name="core_gallery_search_again">Искать снова</string>
+    <string name="core_notif_link_lost_riding">Подключение к велосипеду прервано. Велосипед едет без изменений, а YABA подключается заново.</string>
+    <string name="core_server_error_title">Ошибка сервера VanMoof</string>
+    <string name="core_server_error_text">Сервер VanMoof в %1$s ответил ошибкой\u00A0%2$d. Твоего велосипеда это не касается: разблокировка, свет, звонок и диагностика работают напрямую по Bluetooth. Только вход в аккаунт и предоставление доступа ждут сервера. Нажми «Повторить», чтобы повторить запрос.</string>
+    <string name="core_server_timeout_title">Нет ответа от сервера VanMoof</string>
+    <string name="core_server_timeout_text">В %1$s ответ не пришёл в течение 10\u00A0секунд. Твоего велосипеда это не касается: разблокировка, свет, звонок и диагностика работают напрямую по Bluetooth. Только вход в аккаунт и предоставление доступа ждут сервера. Нажми «Повторить», чтобы повторить запрос.</string>
+    <string name="core_server_dead_title">Сервер VanMoof не отвечает</string>
+    <string name="core_server_dead_text">Сервер VanMoof не отвечает ни на один запрос с этого телефона. Дней без ответа: %1$d. Твоему велосипеду он не нужен: разблокировка, свет, звонок и диагностика по-прежнему работают напрямую по Bluetooth. Только вход в аккаунт и предоставление доступа невозможны, пока сервер не отвечает.</string>
+    <string name="core_server_retry">Повторить</string>
+</resources>

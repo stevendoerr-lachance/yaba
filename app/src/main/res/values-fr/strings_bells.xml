@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sonneries fournies sur l'écran Son : dix sons originaux livrés avec l'app (tools/bells). -->
+<resources>
+    <string name="bells_hint">Un appui joue le son sur ton téléphone.</string>
+    <string name="bells_choose">Choisir</string>
+    <string name="bells_muted">Le volume multimédia est coupé. Augmente-le pour entendre l’aperçu.</string>
+    <string name="bells_preview_failed">Impossible de lire l’aperçu.</string>
+    <string name="bells_seconds">%1$s\u00A0s</string>
+
+    <!-- TalkBack -->
+    <string name="bells_row_cd">%1$s, %2$s</string>
+    <string name="bells_play_action">écouter sur le téléphone</string>
+    <string name="bells_stop_action">arrêter</string>
+    <string name="bells_state_playing">Lecture sur le téléphone</string>
+
+    <!-- La sonnerie dans l'emplacement personnalisé, sur sa ligne -->
+    <string name="bells_state_on_bike">Sur le vélo</string>
+
+    <!-- Noms -->
+    <string name="bells_name_ringring">Sonnette de vélo</string>
+    <string name="bells_name_tram">Tram de Zagreb</string>
+    <string name="bells_name_honk">Klaxon de clown</string>
+    <string name="bells_name_stadium">Corne de stade</string>
+    <string name="bells_name_fanfare">Fanfare</string>
+    <string name="bells_name_cucaracha">La Cucaracha</string>
+    <string name="bells_name_trombone">Trombone triste</string>
+    <string name="bells_name_nightshift">Service de nuit</string>
+    <string name="bells_name_jingle">Jingle YABA</string>
+    <string name="bells_name_ufo">OVNI</string>
+    <string name="bells_caption_phone">Sur le téléphone</string>
+</resources>

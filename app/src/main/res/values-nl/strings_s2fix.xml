@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- S2 follow-ups: lock refusal, how the error catcher gets its blocks, the cockpit for the GPS ride, the test-mode
+         controls (mute, off-road), the garage model switch, the S2 backup-code intro and the S2 credits. -->
+    <string name="s2fix_error_lock_riding">Niet tijdens het rijden: YABA vergrendelt een S2 alleen als hij stilstaat.</string>
+    <plurals name="s2fix_catch_pushed">
+        <item quantity="one">De fiets stuurt wijzigingen uit zichzelf: tot nu toe %1$s blok. Ook een code die hij maar even toont, komt hier terecht.</item>
+        <item quantity="other">De fiets stuurt wijzigingen uit zichzelf: tot nu toe %1$s blokken. Ook een code die hij maar even toont, komt hier terecht.</item>
+    </plurals>
+    <string name="s2fix_catch_polled">De fiets heeft nog geen blok uit zichzelf gestuurd, dus YABA leest er elke %1$s\u00A0s een. Een kortere code kan ertussendoor glippen.</string>
+    <string name="s2fix_cockpit_intro">Voor de rit met gps: open de cockpit. Die toont snelheid en foutcode groot, en zodra de motor uitvalt, zet een volumeknop een markering.</string>
+    <string name="s2fix_mute_title">Geluiden bij vergrendelen en ontgrendelen</string>
+    <string name="s2fix_mute_hint">Opdracht 0x06. De ene bron zegt dat hij de geluiden dempt, een andere dat hij een afstandsbediening koppelt. Gebeurt er iets anders, zet het geluid weer aan en schrijf het op.</string>
+    <string name="s2fix_mute_reports_on">De fiets meldt: gedempt.</string>
+    <string name="s2fix_mute_reports_off">De fiets meldt: niet gedempt.</string>
+    <string name="s2fix_mute_on">Dempen</string>
+    <string name="s2fix_mute_off">Geluid aan</string>
+    <string name="s2fix_offroad_title">37\u00A0km/u (offroad)</string>
+    <string name="s2fix_offroad_hint">Laat zien of de S2 regio 2 aanneemt. Alleen met de fiets op de standaard, en zet je regio meteen daarna terug.</string>
+    <string name="s2fix_offroad_reports">De fiets meldt %1$d\u00A0km/u.</string>
+    <string name="s2fix_offroad_send">37\u00A0km/u testen</string>
+    <string name="s2fix_offroad_back">Terug naar 25\u00A0km/u</string>
+    <string name="s2fix_offroad_standstill">Alleen bij stilstand.</string>
+    <string name="s2fix_offroad_confirm_title">37\u00A0km/u versturen?</string>
+    <string name="s2fix_offroad_confirm_text">Op de openbare weg is 37\u00A0km/u niet toegestaan. YABA verstuurt het alleen zodat je ziet of de S2 het aanneemt. Laat de fiets op de standaard staan en zet je regio meteen daarna terug.</string>
+    <string name="s2fix_offroad_confirm_send">Versturen</string>
+    <string name="s2fix_offroad_confirm_cancel">Annuleren</string>
+    <string name="s2fix_garage_switch_title">Overstappen op %1$s?</string>
+    <string name="s2fix_garage_switch_text">%1$s is verbonden. YABA verbreekt de verbinding en zoekt hem opnieuw als %2$s.</string>
+    <string name="s2fix_garage_switch_confirm">Overstappen</string>
+    <string name="s2fix_code_intro_s2">Drie cijfers van 1 tot 9. Je voert ze op de fiets in zoals de handleiding van je S2 beschrijft.</string>
+    <string name="s2fix_about_credits_s2">De ondersteuning voor S2/X2 bouwt op OldMoofKit (Jegge, MIT) en de byte-indelingen uit vanbike-lib (Poket-Jony).</string>
+</resources>

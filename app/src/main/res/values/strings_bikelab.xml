@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bike-Lab UI (ui/components/BikeLabBits.kt). English is the default; reuses lab_* from strings_lab.xml. -->
+<resources>
+    <string name="bikelab_title">Bike-Lab</string>
+    <string name="bikelab_intro">Values the firmware knows and no app shows, with the commands that only work at a standstill.</string>
+    <string name="bikelab_needs_link">The bike is not connected. The values stay empty until the link is up.</string>
+
+    <string name="bikelab_live_title">Live values</string>
+    <string name="bikelab_temp_motor">Motor temperature</string>
+    <string name="bikelab_temp_controller">Controller temperature</string>
+    <string name="bikelab_temp_board">Board temperature</string>
+    <string name="bikelab_temp_value">%1$d\u00A0°C</string>
+    <string name="bikelab_torque_calibrate">Set zero point</string>
+    <string name="bikelab_torque_calibrated">Pedal force (calibrated)</string>
+    <string name="bikelab_torque_hint">Set the zero point while you are not pedalling; the raw value has no calibrated unit.</string>
+
+    <string name="bikelab_config_title">Configuration</string>
+    <string name="bikelab_cycles">Charge cycles</string>
+    <string name="bikelab_powerbank_cycles">PowerBank cycles</string>
+    <string name="bikelab_lux">Brightness (raw)</string>
+    <string name="bikelab_threshold">Auto-light threshold</string>
+    <string name="bikelab_threshold_save">Save threshold</string>
+    <string name="bikelab_threshold_hint">In auto mode the light turns on once brightness drops below the threshold. The value lives in flash and is written on Save.</string>
+    <string name="bikelab_working">…</string>
+
+    <string name="bikelab_clock">Bike clock</string>
+    <string name="bikelab_clock_set">Set clock</string>
+    <string name="bikelab_clock_ok">on time</string>
+    <string name="bikelab_clock_ahead">%1$d\u00A0seconds ahead</string>
+    <string name="bikelab_clock_behind">%1$d\u00A0seconds behind</string>
+    <string name="bikelab_clock_unknown">unknown</string>
+    <string name="bikelab_parked_only">Only at a standstill and out of riding mode; otherwise this cuts motor assist.</string>
+
+    <string name="bikelab_lamps_title">Lamp channels</string>
+    <string name="bikelab_lamp_on">Channel\u00A0%1$d on</string>
+    <string name="bikelab_lamp_off">Channel\u00A0%1$d off</string>
+    <string name="bikelab_lamps_restore">Reset lamps</string>
+    <string name="bikelab_lamps_hint">Each channel is only on or off. A lamp switched off from the app stays off until a real state change or this reset brings it back.</string>
+
+    <string name="bikelab_boost">Boost while rolling</string>
+    <string name="bikelab_boost_caption">Holding Boost changes the assist level while rolling, not only at a standstill.</string>
+
+    <string name="bikelab_actions_title">At a standstill</string>
+    <string name="bikelab_sleep">Sleep now</string>
+    <string name="bikelab_alarm_stop">Stop alarm</string>
+    <string name="bikelab_alarm_stop_note">Stops a running alarm without the backup code. It also clears the soft-lock, so the bike may read as unlocked afterwards.</string>
+    <string name="bikelab_selftest">Start self-test</string>
+    <string name="bikelab_selftest_hint">The bike plays its diagnosis tone, writes its state to the log and then goes to standby. The log is saved first.</string>
+    <string name="bikelab_selftest_archiving">Saving the log…</string>
+    <string name="bikelab_selftest_dialog_title">Start self-test</string>
+    <string name="bikelab_selftest_dialog_text">The bike saves its log first, then runs the diagnosis and goes to standby. The report pushes the oldest log lines out, so the log is saved beforehand.</string>
+    <string name="bikelab_selftest_dialog_confirm">Start</string>
+    <string name="bikelab_cancel">Cancel</string>
+
+    <string name="bikelab_exp_title">Experiments</string>
+    <string name="bikelab_siren_title">Siren</string>
+    <string name="bikelab_siren_stage">Stage\u00A0%1$d</string>
+    <string name="bikelab_siren_stop">Alarm off</string>
+    <string name="bikelab_siren_active">Siren running (stage\u00A0%1$d).</string>
+    <string name="bikelab_siren_dialog_title">Trigger siren stage\u00A0%1$d</string>
+    <string name="bikelab_siren_dialog_confirm">Trigger</string>
+</resources>

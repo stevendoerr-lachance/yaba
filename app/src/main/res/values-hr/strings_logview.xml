@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preglednik zapisa: jedan zapisnik vožnje (CSV) i dnevnik bicikla (tekst), ui/screens/RideLogViewer.kt. -->
+<resources>
+    <string name="logview_open">Prikaži</string>
+    <string name="logview_close">Zatvori</string>
+    <string name="logview_share">Podijeli</string>
+    <string name="logview_loading">Čita datoteku …</string>
+    <string name="logview_read_failed">Datoteka se nije mogla pročitati. Možda je izbrisana.</string>
+    <string name="logview_share_failed">Datoteka se nije mogla zapisati. Možda je memorija puna.</string>
+
+    <string name="logview_fmt_time">HH:mm:ss</string>
+    <string name="logview_fmt_time_short">HH:mm</string>
+    <string name="logview_fmt_date_time">EEEE, d. M. yyyy., HH:mm</string>
+    <string name="logview_fmt_date">d. M. yyyy., HH:mm</string>
+    <string name="logview_at_time">%s</string>
+    <string name="logview_unit_kmh">%s km/h</string>
+    <string name="logview_unit_km">%s km</string>
+    <string name="logview_unit_min_sec">%1$d\u00A0min %2$d\u00A0s</string>
+    <string name="logview_unit_h_min">%1$d\u00A0h %2$d\u00A0min</string>
+    <string name="logview_unit_pct">%s %%</string>
+
+    <string name="logview_ride_share_title">Podijeli zapisnik vožnje</string>
+    <string name="logview_ride_live">Ova se datoteka upravo zapisuje. YABA je ponovno čita svakih %1$d sekundi.</string>
+    <string name="logview_ride_partial">Posljednji je redak prekinut tijekom zapisivanja i nije prikazan.</string>
+    <plurals name="logview_ride_skipped">
+        <item quantity="one">%d redak ne pripada zapisniku vožnje i nije prikazan.</item>
+        <item quantity="few">%d retka ne pripadaju zapisniku vožnje i nisu prikazana.</item>
+        <item quantity="other">%d redaka ne pripada zapisniku vožnje i nije prikazano.</item>
+    </plurals>
+    <string name="logview_ride_folded">Ovaj je zapis vrlo dug. Svaka točka krivulja objedinjuje %1$d mjerenja; najveća brzina, udaljenost i signali i dalje broje svako mjerenje.</string>
+    <string name="logview_ride_empty">Ovaj zapis još ne sadrži mjerenja.</string>
+
+    <string name="logview_tube_fault">Greška %1$d</string>
+    <string name="logview_tube_fault_note">Posljednji kôd na gornjoj cijevi, %1$s.</string>
+    <string name="logview_tube_top_note">Najveća brzina ove vožnje.</string>
+    <string name="logview_tube_none_note">U ovom zapisu bicikl nije javio brzinu.</string>
+    <string name="logview_fact_start">Početak</string>
+    <string name="logview_fact_duration">Trajanje</string>
+    <string name="logview_fact_distance">Udaljenost</string>
+    <string name="logview_fact_top">Najveća brzina</string>
+    <string name="logview_fact_avg">Prosjek u vožnji</string>
+    <string name="logview_fact_battery_start">Baterija na početku</string>
+    <string name="logview_fact_battery_end">Baterija na kraju</string>
+    <string name="logview_fact_events">Događaji</string>
+    <string name="logview_fact_marks">Oznake</string>
+    <string name="logview_distance_note">YABA izračunava udaljenost i prosjek iz brzine koju je očitavao svake 2 sekunde; prosjek broji samo vrijeme u kojem se bicikl kretao.</string>
+
+    <string name="logview_chart_title">Tijek</string>
+    <string name="logview_chart_hint">Dodirni tijek ili događaj.</string>
+    <string name="logview_lane_battery">Baterija</string>
+    <string name="logview_lane_supply">20 V</string>
+    <string name="logview_lane_shipping">Transp.</string>
+    <string name="logview_legend_speed">Brzina u km/h</string>
+    <string name="logview_legend_battery">Baterija u %</string>
+    <string name="logview_legend_supply">Napajanje od 20 V naviše</string>
+    <string name="logview_legend_mark">Oznaka</string>
+    <string name="logview_chart_cd">Tijek od %1$s do %2$s. Najveća brzina %3$s, baterija od %4$s do %5$s. %6$s</string>
+    <string name="logview_readout_at">%1$s: %2$s</string>
+    <string name="logview_readout_lock">Kick Lock %1$s</string>
+    <string name="logview_readout_supply">napajanje %1$s</string>
+    <string name="logview_readout_battery">baterija %1$s</string>
+    <string name="logview_readout_offline">%1$s: bicikl nije povezan</string>
+    <string name="logview_supply_ok">20 V ili više</string>
+    <string name="logview_supply_low">ispod 20 V</string>
+    <string name="logview_lock_locked">zaključan</string>
+    <string name="logview_lock_unlocked">otključan</string>
+    <string name="logview_lock_pin">unos PIN-a</string>
+    <string name="logview_action_next_event">Sljedeći događaj</string>
+    <string name="logview_action_prev_event">Prethodni događaj</string>
+
+    <string name="logview_signals_title">Signali pravila transportnog načina</string>
+    <string name="logview_signals_intro">Prema analizi firmvera bicikl prelazi u transportni način kad zavojnica Kick Locka, prekidač Kick Locka i prepoznavanje baterije nestanu u istom trenutku. Dodirni redak da vidiš njegov prvi trenutak u tijeku.</string>
+    <string name="logview_signal_locked">Kick Lock javlja zaključano</string>
+    <string name="logview_signal_fault">Greška %1$d: %2$s</string>
+    <string name="logview_signal_shipping">Javljen transportni način</string>
+    <string name="logview_signal_supply">Napajanje ispod 20 V</string>
+    <string name="logview_short_locked">Kick Lock zaključan</string>
+    <string name="logview_short_shipping">Transportni način</string>
+    <string name="logview_signal_not_seen">nije viđeno</string>
+    <plurals name="logview_signal_seen">
+        <item quantity="one">%1$s put, %2$s</item>
+        <item quantity="few">%1$s puta, prvi put %2$s</item>
+        <item quantity="other">%1$s puta, prvi put %2$s</item>
+    </plurals>
+    <plurals name="logview_signal_riding">
+        <item quantity="one">od toga %1$s put tijekom vožnje, %2$s</item>
+        <item quantity="few">od toga %1$s puta tijekom vožnje, prvi put %2$s</item>
+        <item quantity="other">od toga %1$s puta tijekom vožnje, prvi put %2$s</item>
+    </plurals>
+    <string name="logview_signals_none">YABA u ovom zapisu nije vidio nijedan od ovih signala.</string>
+    <string name="logview_signals_seen_cd">Signali pravila transportnog načina: %1$s.</string>
+
+    <string name="logview_events_title">Događaji</string>
+    <string name="logview_events_all">Svi</string>
+    <string name="logview_events_incidents">Incidenti</string>
+    <plurals name="logview_events_incidents_count">
+        <item quantity="one">%1$s incident</item>
+        <item quantity="few">%1$s incidenta</item>
+        <item quantity="other">%1$s incidenata</item>
+    </plurals>
+    <string name="logview_events_empty">Ovaj zapis ne sadrži događaje.</string>
+    <string name="logview_events_no_incidents">Nema incidenata u ovom zapisu.</string>
+    <string name="logview_event_show">Prikaži u tijeku</string>
+    <string name="logview_event_chosen">Odabrano u tijeku</string>
+
+    <string name="logview_bike_title">Dnevnik bicikla</string>
+    <string name="logview_bike_read_at">Očitano %1$s</string>
+    <plurals name="logview_bike_lines">
+        <item quantity="one">%1$s redak</item>
+        <item quantity="few">%1$s retka</item>
+        <item quantity="other">%1$s redaka</item>
+    </plurals>
+    <string name="logview_bike_tail">Datoteka je vrlo velika. Prikaz sadrži njezinih najnovijih %1$s redaka.</string>
+    <string name="logview_bike_empty">Dnevnik je prazan.</string>
+    <string name="logview_search">Traži</string>
+    <string name="logview_search_count">%1$d od %2$d</string>
+    <string name="logview_search_none">Nema rezultata</string>
+    <string name="logview_search_prev">Prethodni rezultat</string>
+    <string name="logview_search_next">Sljedeći rezultat</string>
+    <string name="logview_jump_newest">Na najnoviji redak</string>
+    <string name="logview_bike_share_title">Podijeli dnevnik bicikla</string>
+    <string name="logview_bike_share_subject">Dnevnik bicikla S3 %1$s</string>
+    <string name="logview_bike_saved">Posljednje očitanje od %1$s spremljeno je na ovom mobitelu.</string>
+
+    <!-- Days, zoom, link, accessibility -->
+    <string name="logview_fmt_day_time">EEE d. M., HH:mm</string>
+    <string name="logview_fmt_day_time_sec">EEE d. M., HH:mm:ss</string>
+    <string name="logview_fmt_day">EEE d. M.</string>
+    <string name="logview_fmt_day_header">EEEE, d. M. yyyy.</string>
+    <string name="logview_at_moment">u %1$s</string>
+    <string name="logview_at_day_moment">%1$s u %2$s</string>
+    <string name="logview_unit_sec">%1$d\u00A0s</string>
+    <string name="logview_ride_incidents_kept">Svi incidenti i oznake su uključeni.</string>
+    <string name="logview_tube_fault_note_shipping">Na gornjoj cijevi kad je bicikl javio transportni način, %1$s.</string>
+    <string name="logview_never_connected">Bicikl tijekom ovog zapisa nije bio povezan.</string>
+    <string name="logview_never_connected_note">Brzina, baterija i signali stoga su nepoznati.</string>
+    <string name="logview_legend_link_down">Bez veze</string>
+    <string name="logview_zoom_in">Povećaj</string>
+    <string name="logview_zoom_out">Smanji</string>
+    <string name="logview_zoom_all">Cijeli zapis</string>
+    <string name="logview_zoom_window">Isječak: %1$s</string>
+    <string name="logview_signal_fault_8">Greška 8: baterija isključuje svoj izlaz</string>
+    <string name="logview_signal_unknown">nepoznato</string>
+    <string name="logview_signal_parked_only">zaključano samo u mirovanju</string>
+    <string name="logview_signals_none_riding">Osim Kick Locka u mirovanju, YABA nije vidio nijedan od ovih signala.</string>
+    <string name="logview_event_incident">Incident</string>
+    <string name="logview_open_ride_cd">Prikaži zapisnik vožnje od %1$s</string>
+    <string name="logview_open_bike_cd">Prikaži dnevnik bicikla</string>
+    <string name="logview_search_count_cd">Pogodak %1$d od %2$d, redak %3$d: %4$s</string>
+    <string name="logview_line_cd">Redak %1$d: %2$s</string>
+    <string name="logview_wrap_title">Dugi retci</string>
+    <string name="logview_wrap_on">Prelamaj</string>
+    <string name="logview_wrap_off">U jednom retku</string>
+    <plurals name="logview_ride_events_cut">
+        <item quantity="one">Popis prikazuje %1$s od %2$s događaja; %3$s stariji nije prikazan.</item>
+        <item quantity="few">Popis prikazuje %1$s od %2$s događaja; %3$s starija nisu prikazana.</item>
+        <item quantity="other">Popis prikazuje %1$s od %2$s događaja; %3$s starijih nije prikazano.</item>
+    </plurals>
+    <plurals name="logview_ride_marks_cut">
+        <item quantity="one">Ni %1$s starija oznaka nije prikazana.</item>
+        <item quantity="few">Ni %1$s starije oznake nisu prikazane.</item>
+        <item quantity="other">Ni %1$s starijih oznaka nije prikazano.</item>
+    </plurals>
+    <string name="logview_fmt_heading">EEE d. M., HH:mm</string>
+    <string name="logview_delete">Obriši</string>
+    <string name="logview_verdict_lock">Kick Lock %1$d× zaključan tijekom vožnje</string>
+    <string name="logview_verdict_lock_none">Kick Lock nijednom zaključan tijekom vožnje</string>
+    <string name="logview_verdict_coil">zavojnica %1$d× nije prepoznata</string>
+    <string name="logview_verdict_coil_none">zavojnica uvijek prepoznata</string>
+    <string name="logview_verdict_battery">prepoznavanje baterije %1$d× otkazalo</string>
+    <string name="logview_verdict_battery_none">prepoznavanje baterije nijednom nije otkazalo</string>
+    <string name="logview_verdict_short_lock">Brava %1$d× u vožnji</string>
+    <string name="logview_verdict_short_coil">Zavojnica %1$d×</string>
+    <string name="logview_verdict_short_battery">Baterija %1$d×</string>
+    <string name="logview_fact_battery">Baterija</string>
+    <string name="logview_fact_battery_value">%1$d na %2$d\u00A0%%</string>
+    <string name="logview_lane_lock">Brava</string>
+    <string name="logview_lane_f42">G42</string>
+    <string name="logview_lane_f18">G18</string>
+    <string name="logview_lane_f8">G8</string>
+    <string name="logview_lane_link">Radio</string>
+    <string name="logview_lane_signals">Signali</string>
+    <string name="logview_legend_rule">Signal pravila transportnog načina</string>
+    <string name="logview_zoom_whole">Cijela vožnja</string>
+    <string name="logview_action_expand">Prikaži sve trake</string>
+    <string name="logview_signals_unseen">Nije viđeno: %1$s</string>
+    <string name="logview_events_no_marks">Nema oznaka u ovom zapisu.</string>
+    <plurals name="logview_events_marks_count">
+        <item quantity="one">%1$s oznaka</item>
+        <item quantity="few">%1$s oznake</item>
+        <item quantity="other">%1$s oznaka</item>
+    </plurals>
+</resources>

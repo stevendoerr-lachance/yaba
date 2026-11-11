@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intro_skip">Passer</string>
+    <string name="intro_description">Intro\u00A0: une botte écrase trois fois un vélo pendant que son écran clignote avec l’erreur 42. Le vélo éclate, puis se relève en brillant.</string>
+    <string name="intro_slogan_1">Roule toujours.</string>
+    <string name="intro_slogan_2">Quoi qu’il arrive.</string>
+    <string name="intro_replay">Revoir l’intro</string>
+</resources>

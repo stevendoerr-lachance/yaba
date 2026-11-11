@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sound screen, custom bell, soundboard, sharing section and the shared sound components. -->
+<resources>
+    <!-- SoundScreen -->
+    <string name="sound_title">Sound</string>
+    <string name="sound_connect_needed">Connect to your bike to play sounds.</string>
+
+    <!-- Bell tone -->
+    <string name="sound_bell_title">Bell tone</string>
+    <string name="sound_bell_hint">The sound your bell button plays.</string>
+    <string name="sound_listen">Listen</string>
+    <string name="sound_bell_switching">Switching to %1$s…</string>
+    <string name="sound_bell_unknown">The bike has not reported its bell tone yet.</string>
+    <string name="sound_bell_plays">Plays %1$s on the bike.</string>
+    <string name="sound_tone_custom">Your own sound</string>
+    <string name="sound_tone_custom_option">Or your own sound</string>
+    <string name="sound_tile_busy">Switching</string>
+
+    <!-- Custom bell tone -->
+    <plurals name="sound_custom_intro">
+        <item quantity="one">The sound replaces “Foghorn” and may be up to %1$d\u00A0second long. Sending takes about one minute.</item>
+        <item quantity="other">The sound replaces “Foghorn” and may be up to %1$d\u00A0seconds long. Sending takes about one minute.</item>
+    </plurals>
+    <string name="sound_custom_sending_named">Sending %1$s</string>
+    <string name="sound_custom_keep_close" formatted="false">Please keep your phone close to the bike until the transfer reaches 100%.</string>
+    <string name="sound_custom_pick">Choose your own file</string>
+    <string name="sound_custom_converting">Converting…</string>
+    <string name="sound_custom_done">Bell tone transferred. The bike plays it from now on, even when YABA is not running. Please press the bell button on the handlebar to try it.</string>
+    <string name="sound_custom_sound_name">Custom sound</string>
+    <string name="sound_custom_waveform">Waveform of %1$s</string>
+    <string name="sound_custom_trimmed">Trimmed to %1$d\u00A0s</string>
+    <string name="sound_fact_length">Length</string>
+    <string name="sound_fact_sample_rate">Sample rate</string>
+    <string name="sound_fact_size">Size</string>
+    <string name="sound_value_seconds">%1$s\u00A0s</string>
+    <string name="sound_value_khz">%1$s\u00A0kHz</string>
+    <string name="sound_value_kb">%1$d\u00A0kB</string>
+    <string name="sound_custom_send">Send to bike</string>
+    <string name="sound_custom_connect_first">Please connect to your bike first.</string>
+    <string name="sound_custom_other_file">Pick another file</string>
+    <string name="sound_audio_file">Audio file</string>
+
+    <!-- Soundboard -->
+    <string name="sound_board_title">All sounds on the bike</string>
+    <string name="sound_board_quiet">The bike stays silent during the transfer.</string>
+    <string name="sound_board_hint">Tap to play a sound on the bike.</string>
+    <string name="sound_board_alarm_warning">Very loud. Please do not test it near other people.</string>
+
+    <!-- Upload meter (TalkBack + figure) -->
+    <string name="sound_upload_done_state">Transfer complete</string>
+    <string name="sound_upload_progress_state">Transfer at %1$d percent</string>
+    <string name="sound_upload_percent">%1$d%%</string>
+
+    <!-- Connect notice -->
+    <string name="sound_connect_ble_denied">Bluetooth not allowed</string>
+    <string name="sound_connect_ble_off">Bluetooth is off</string>
+    <string name="sound_connect_searching">Looking for your bike…</string>
+    <string name="sound_connect_connecting">Connecting…</string>
+    <string name="sound_connect_authenticating">Signing in to the bike…</string>
+    <string name="sound_connect_lost">Connection interrupted</string>
+    <string name="sound_connect_offline">Not connected</string>
+    <string name="sound_connect_allow">Allow Bluetooth</string>
+    <string name="sound_connect_enable">Turn on Bluetooth</string>
+    <string name="sound_connect_connect">Connect</string>
+    <string name="sound_open_garage">Open garage</string>
+
+    <!-- Sharing -->
+    <string name="sound_share_title">Sharing</string>
+    <string name="sound_share_gate_login">Sharing works through your VanMoof account. Please sign in from the garage.</string>
+    <string name="sound_share_gate_pick">Pick a bike from your account in the garage, then you can share it.</string>
+    <string name="sound_share_gate_manual">This bike is not linked to your VanMoof account. Only bikes from your account can be shared.</string>
+    <string name="sound_share_shared_with">Shared with %1$s.</string>
+    <string name="sound_share_ended_for">Stopped sharing with %1$s.</string>
+    <string name="sound_share_ended">Sharing stopped.</string>
+    <string name="sound_share_bad_email">This is not a valid email address.</string>
+    <string name="sound_share_intro">Give someone access to your bike, for a set time or without limit.</string>
+    <string name="sound_share_email_label">Email address</string>
+    <string name="sound_share_open_ended">Stays valid until you end the share.</string>
+    <string name="sound_share_sharing">Sharing…</string>
+    <string name="sound_share_submit">Share bike</string>
+    <string name="sound_share_end_title">Stop sharing?</string>
+    <string name="sound_share_end_text">%1$s will lose access to your bike.</string>
+    <string name="sound_share_someone">This person</string>
+    <string name="sound_share_end">Stop</string>
+    <string name="sound_share_end_for">Stop sharing with %1$s</string>
+    <string name="sound_share_cancel">Cancel</string>
+    <string name="sound_share_list_title">Shared with</string>
+    <string name="sound_share_loading">Loading your shares…</string>
+    <string name="sound_share_none">You have not shared your bike with anyone yet. You can share it with anyone who has a VanMoof account: enter the email address and choose a duration or “unlimited”. You can end any share at any time. Sharing runs through VanMoof’s server and works as long as it answers.</string>
+    <string name="sound_share_reload">Load again</string>
+    <string name="sound_share_no_email">No email</string>
+    <string name="sound_share_until">Until %1$s</string>
+    <string name="sound_share_expired">Expired on %1$s</string>
+    <string name="sound_share_unlimited_row">Unlimited</string>
+    <string name="sound_share_for_row">For %1$s</string>
+    <string name="sound_share_unlimited">Unlimited</string>
+    <string name="sound_share_for">For %1$s</string>
+    <plurals name="sound_share_minutes">
+        <item quantity="one">%1$d\u00A0minute</item>
+        <item quantity="other">%1$d\u00A0minutes</item>
+    </plurals>
+    <plurals name="sound_share_hours">
+        <item quantity="one">%1$d\u00A0hour</item>
+        <item quantity="other">%1$d\u00A0hours</item>
+    </plurals>
+    <plurals name="sound_share_days">
+        <item quantity="one">%1$d\u00A0day</item>
+        <item quantity="other">%1$d\u00A0days</item>
+    </plurals>
+    <plurals name="sound_share_weeks">
+        <item quantity="one">%1$d\u00A0week</item>
+        <item quantity="other">%1$d\u00A0weeks</item>
+    </plurals>
+    <string name="sound_custom_row_none">Replaces “%1$s”</string>
+    <string name="sound_tone_custom_record">Your own sound instead of %1$s</string>
+    <string name="sound_custom_failed_at">The transfer broke off at %1$d%%. “%2$s” stays silent until a file arrives in full.</string>
+    <string name="sound_custom_failed_before">The transfer did not start. “%1$s” keeps its previous sound.</string>
+    <string name="sound_custom_resend">Send again</string>
+    <string name="sound_send_standstill">Sending starts at a standstill. During the transfer, YABA reads no values for about one minute.</string>
+    <string name="sound_custom_wait_transfer">Sending waits until the running transfer has finished.</string>
+    <string name="sound_custom_sending_percent">Sending “%1$s”, %2$d%%</string>
+    <string name="sound_lab_title">Sound lab</string>
+    <string name="sound_custom_replace_cd">Choose your own sound instead of “%1$s”</string>
+</resources>

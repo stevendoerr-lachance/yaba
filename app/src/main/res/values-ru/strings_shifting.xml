@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Переключение на экране поездки: режим (5538) и точки переключения (5537). -->
+<resources>
+    <string name="shift_section">Переключение</string>
+    <string name="shift_mode_auto">Автомат</string>
+    <string name="shift_mode_manual">Вручную</string>
+    <string name="shift_gear">Передача</string>
+    <string name="shift_gear_cd">Передача\u00A0%1$d</string>
+    <string name="shift_gear_unknown_cd">Передача неизвестна</string>
+
+    <!-- Профили -->
+    <string name="shift_profile_standard">Стандарт</string>
+    <string name="shift_profile_flat">Равнина</string>
+    <string name="shift_profile_hilly">Холмы</string>
+    <string name="shift_profile_custom">Свои</string>
+    <string name="shift_reason_standard">Заводская настройка VanMoof.</string>
+    <string name="shift_reason_flat">3-я передача держится от 14 до 27\u00A0км/ч. В городском темпе переключений почти нет.</string>
+    <string name="shift_reason_hilly">2-я передача держится от 9 до 21\u00A0км/ч. В подъём велосипед реже переключается под нагрузкой.</string>
+    <string name="shift_reason_custom">Твои собственные точки переключения.</string>
+    <string name="shift_custom_empty">Своих точек переключения пока нет.</string>
+    <string name="shift_row_cd">%1$s. Вверх на %2$d, %3$d и %4$d\u00A0км/ч, вниз на %5$d, %6$d и %7$d\u00A0км/ч.</string>
+    <string name="shift_points_short">вверх %1$d, %2$d, %3$d, вниз %4$d, %5$d, %6$d\u00A0км/ч</string>
+    <string name="shift_limit_cd">Поддержка отключается на %1$d\u00A0км/ч.</string>
+    <string name="shift_axis_kmh">%1$d\u00A0км/ч</string>
+    <string name="shift_units_note">Точки переключения всегда задаются в км/ч.</string>
+    <string name="shift_reading">Чтение точек переключения…</string>
+    <string name="shift_invalid_on_bike">Точки переключения на велосипеде могут вызывать постоянное переключение туда и обратно. Выбери профиль или измени их.</string>
+    <string name="shift_fault">Переключатель сообщает об ошибке %1$d: %2$s</string>
+    <string name="shift_ease_off">Когда велосипед переключает передачу, на миг ослабь нажим на педали. Это бережёт переключатель.</string>
+
+    <!-- Свои: редактор -->
+    <string name="shift_handle_up">Вверх с %1$d на %2$d</string>
+    <string name="shift_handle_down">Вниз с %1$d на %2$d</string>
+    <string name="shift_lane_up">вверх</string>
+    <string name="shift_lane_down">вниз</string>
+    <string name="shift_allowed">Возможно: от %1$d до %2$d\u00A0км/ч</string>
+    <string name="shift_step_higher">На 1\u00A0км/ч выше</string>
+    <string name="shift_step_lower">На 1\u00A0км/ч ниже</string>
+    <string name="shift_blocked_by">Ограничивает: %1$s</string>
+    <string name="shift_rules">Переключение вниз минимум на 2\u00A0км/ч ниже переключения вверх. Точки одного направления отстоят друг от друга минимум на 3\u00A0км/ч. На 1-ю передачу велосипед переходит не позже чем на 5\u00A0км/ч.</string>
+    <string name="shift_apply">Применить</string>
+    <string name="shift_discard">Отменить</string>
+    <string name="shift_draft_matches">Совпадает с «%1$s».</string>
+    <string name="shift_draft_from_standard">Значения на велосипеде непригодны. Ты начинаешь с профиля «Стандарт».</string>
+
+    <!-- Вручную -->
+    <string name="shift_manual_up">Вверх: во время езды дважды быстро нажми Boost.</string>
+    <string name="shift_manual_down">Вниз: удерживай кнопку звонка и дважды быстро нажми Boost.</string>
+    <string name="shift_manual_stop">На месте велосипед сам переходит на 1-ю передачу.</string>
+    <string name="shift_manual_boost">Удержание Boost по-прежнему даёт дополнительную мощность.</string>
+    <string name="shift_manual_points_kept">Твои точки переключения сохраняются для режима «Автомат».</string>
+    <string name="shift_key_bell">Звонок</string>
+    <string name="shift_key_boost">Boost</string>
+    <string name="shift_key_pressed">нажата</string>
+
+    <!-- Журнал и ошибки -->
+    <string name="shift_cmd_mode">Режим переключения: %1$s</string>
+    <string name="shift_cmd_points">Точки переключения: %1$s</string>
+    <string name="shift_log_state">Переключение: %1$s (%2$s)</string>
+    <string name="shift_unknown">неизвестно</string>
+    <string name="shift_error_mode_rejected">Велосипед не принял «%1$s». Он сообщает: %2$s.</string>
+    <string name="shift_error_points_rejected">Велосипед не принял точки переключения. Он сообщает: %1$s.</string>
+    <string name="shift_error_points_invalid">Эти точки переключения вызвали бы постоянное переключение туда и обратно. Ничего не отправлено.</string>
+    <string name="shift_error_too_many">Слишком много изменений подряд. Переподключись, чтобы продолжить.</string>
+    <string name="shift_error_region_changed">Регион изменился во время сохранения. Проверь точки переключения ещё раз.</string>
+
+    <!-- Notes, conflicts, editor actions, checks (second round) -->
+    <string name="shift_riding_note">Во время езды изменение действует сразу: велосипед может тут же переключить передачу.</string>
+    <string name="shift_region_short">Для региона «%1$s» (у каждого региона свои).</string>
+    <string name="shift_legend">Светлое: эта передача. Промежуток: велосипед остаётся на передаче, с которой пришёл. Подчёркнуто: твоя передача сейчас.</string>
+    <string name="shift_profiles_show">Показать все профили</string>
+    <string name="shift_profiles_hide">Скрыть профили</string>
+    <string name="shift_reason_invalid">Недопустимые значения на велосипеде.</string>
+    <string name="shift_invalid_zero">Велосипед сообщает 0\u00A0км/ч для всех точек переключения. Тогда он сразу после начала движения переключается до 4-й передачи и трогается на 4-й. Выбери «Стандарт».</string>
+    <string name="shift_conflict_gap">Точка «%1$s» (%2$d\u00A0км/ч) должна быть минимум на 2\u00A0км/ч ниже точки «%3$s» (%4$d\u00A0км/ч).</string>
+    <string name="shift_conflict_spacing">Точка «%1$s» (%2$d\u00A0км/ч) должна быть минимум на 3\u00A0км/ч выше точки «%3$s» (%4$d\u00A0км/ч).</string>
+    <string name="shift_conflict_min">Точка «%1$s» (%2$d\u00A0км/ч) ниже %3$d\u00A0км/ч.</string>
+    <string name="shift_conflict_range">Точка «%1$s» (%2$d\u00A0км/ч) вне диапазона от %3$d до %4$d\u00A0км/ч.</string>
+    <string name="shift_conflict_max">Точка «%1$s» (%2$d\u00A0км/ч) выше %3$d\u00A0км/ч.</string>
+    <string name="shift_conflict_more">… и ещё %1$d.</string>
+    <string name="shift_edit">Изменить</string>
+    <string name="shift_edit_set">Задать</string>
+    <string name="shift_edit_close">Закрыть</string>
+    <string name="shift_expanded">развёрнуто</string>
+    <string name="shift_collapsed">свёрнуто</string>
+    <string name="shift_edit_action">Изменить точки переключения</string>
+    <string name="shift_edit_close_action">Закрыть редактор</string>
+    <string name="shift_editor_hint">Перетащи точку или нажми на неё, затем уточни кнопками − и +.</string>
+    <string name="shift_top_gear_above_limit">4-я передача включается только выше %1$d\u00A0км/ч, за пределом поддержки %2$d\u00A0км/ч, то есть только без поддержки. До этого держится 3-я.</string>
+    <string name="shift_keys_live">Кнопки на руле (в реальном времени)</string>
+    <string name="shift_gesture_hold">удерживать</string>
+    <string name="shift_check_failed">Прошивка\u00A0%1$s сообщает значения переключения, которые YABA не знает (%2$s). YABA здесь ничего не меняет.</string>
+    <string name="shift_persist_ok">Настройки переключения сохранились на велосипеде после переподключения (прошивка\u00A0%1$s).</string>
+    <string name="shift_persist_mode_lost">YABA в последний раз установила «%1$s», а велосипед теперь сообщает «%2$s». Другое приложение изменило это, или велосипед не сохранил настройку.</string>
+    <string name="shift_persist_points_lost">На велосипеде больше нет точек переключения, записанных YABA в последний раз (записано: %1$s, сейчас: %2$s). Другое приложение изменило их, или велосипед их не сохранил.</string>
+    <string name="shift_log_fw">%1$s (прошивка\u00A0%2$s)</string>
+    <string name="shift_error_read">Не удалось прочитать текущие настройки переключения. Ничего не отправлено.</string>
+    <string name="shift_error_no_region">Регион велосипеда неизвестен, поэтому YABA не знает, какая ячейка точек переключения действует. Ничего не отправлено.</string>
+    <string name="shift_error_region_moved">Регион изменился после того, как были заданы эти точки. Ничего не отправлено; проверь их ещё раз.</string>
+</resources>

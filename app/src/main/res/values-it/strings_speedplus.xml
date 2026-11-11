@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speedplus_title">Speed++ (ruote da 24″)</string>
+    <string name="speedplus_text" formatted="false">Imposta la tua bici su ruote da 24″. Conta allora l’84% della velocità reale e taglia l’assistenza solo a circa 29,7\u00A0km/h (EU) o 38\u00A0km/h (US). YABA ti mostra ovunque la velocità reale; il tachimetro della bici mostra meno.</string>
+    <string name="speedplus_on">Attiva Speed++</string>
+    <string name="speedplus_off">Torna a 28″</string>
+    <string name="speedplus_active">Attivo. YABA moltiplica la velocità della bici per 1,1875.</string>
+    <string name="speedplus_odometer" formatted="false">Finché è attivo, il contachilometri della bici conta circa il 16% in meno.</string>
+    <string name="speedplus_unknown">YABA legge la misura delle ruote quando si collega alla bici.</string>
+    <string name="speedplus_unread">YABA non è riuscito a leggere la misura delle ruote.</string>
+    <string name="speedplus_read">Leggi la misura delle ruote</string>
+    <string name="speedplus_not_28">Speed++ funziona solo con bici che hanno ruote da 28″ di fabbrica.</string>
+    <string name="speedplus_cmd">Misura ruote %1$d″</string>
+    <string name="speedplus_error_rolling">Solo da fermo: la bici passa la misura delle ruote al controller del motore.</string>
+    <string name="speedplus_error_rejected">La bici non ha accettato la misura delle ruote.</string>
+    <string name="speedplus_choice_28">28″ di serie</string>
+    <string name="speedplus_stock_title">Misura delle ruote di fabbrica</string>
+    <string name="speedplus_stock_question">La tua bici è impostata ora su ruote da 24″. YABA non riesce a capire se di fabbrica è una S3 con ruote da 28″ o una X3 con ruote da 24″. Dalla tua risposta dipende la velocità che YABA mostra.</string>
+    <string name="speedplus_stock_next">Continua</string>
+    <string name="speedplus_stock_later">Puoi cambiare la risposta più tardi in %1$s › %2$s.</string>
+    <string name="speedplus_read_none">Anche questa volta la bici non ha comunicato la misura delle ruote.</string>
+    <string name="speedplus_x3_on_28">La tua bici è impostata su ruote da 28″, ma di fabbrica ha ruote da 24″. Mostra quindi una velocità più alta di quella reale e taglia l’assistenza prima. YABA ti mostra la velocità reale.</string>
+    <string name="speedplus_back_to_24">Torna a 24″</string>
+    <string name="speedplus_stock_open_note">YABA non conosce ancora la misura delle ruote di fabbrica e quindi mostra la velocità così come la comunica la tua bici. Puoi indicarla in %1$s › %2$s.</string>
+</resources>

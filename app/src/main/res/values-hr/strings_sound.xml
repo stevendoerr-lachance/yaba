@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sound screen, custom bell, soundboard, sharing section and the shared sound components: Croatian. -->
+<resources>
+    <!-- SoundScreen -->
+    <string name="sound_title">Zvuk</string>
+    <string name="sound_connect_needed">Poveži bicikl za reprodukciju zvukova.</string>
+
+    <!-- Bell tone -->
+    <string name="sound_bell_title">Zvuk zvona</string>
+    <string name="sound_bell_hint">Zvuk koji svira tipka zvona.</string>
+    <string name="sound_listen">Poslušaj</string>
+    <string name="sound_bell_switching">Prebacivanje na %1$s…</string>
+    <string name="sound_bell_unknown">Bicikl još nije javio zvuk svojeg zvona.</string>
+    <string name="sound_bell_plays">Na biciklu svira %1$s.</string>
+    <string name="sound_tone_custom">Tvoj zvuk</string>
+    <string name="sound_tone_custom_option">Ili tvoj zvuk</string>
+    <string name="sound_tile_busy">Prebacivanje</string>
+
+    <!-- Custom bell tone -->
+    <plurals name="sound_custom_intro">
+        <item quantity="one">Zvuk zamjenjuje „Brodska sirena“ i smije trajati do %1$d\u00A0sekunde. Slanje traje otprilike jednu minutu.</item>
+        <item quantity="few">Zvuk zamjenjuje „Brodska sirena“ i smije trajati do %1$d\u00A0sekunde. Slanje traje otprilike jednu minutu.</item>
+        <item quantity="other">Zvuk zamjenjuje „Brodska sirena“ i smije trajati do %1$d\u00A0sekundi. Slanje traje otprilike jednu minutu.</item>
+    </plurals>
+    <string name="sound_custom_sending_named">Slanje: %1$s</string>
+    <string name="sound_custom_keep_close" formatted="false">Drži telefon, molim te, blizu bicikla dok prijenos ne dosegne 100\u00A0%.</string>
+    <string name="sound_custom_pick">Odaberi vlastitu datoteku</string>
+    <string name="sound_custom_converting">Pretvaranje…</string>
+    <string name="sound_custom_done">Zvuk zvona je prenesen. Bicikl ga od sada svira, čak i kad YABA ne radi. Pritisni tipku zvona na upravljaču da ga isprobaš, molim te.</string>
+    <string name="sound_custom_sound_name">Vlastiti zvuk</string>
+    <string name="sound_custom_waveform">Valni oblik: %1$s</string>
+    <string name="sound_custom_trimmed">Skraćeno na %1$d\u00A0s</string>
+    <string name="sound_fact_length">Duljina</string>
+    <string name="sound_fact_sample_rate">Frekvencija uzorkovanja</string>
+    <string name="sound_fact_size">Veličina</string>
+    <string name="sound_value_seconds">%1$s\u00A0s</string>
+    <string name="sound_value_khz">%1$s\u00A0kHz</string>
+    <string name="sound_value_kb">%1$d\u00A0kB</string>
+    <string name="sound_custom_send">Pošalji biciklu</string>
+    <string name="sound_custom_connect_first">Molim te, prvo poveži telefon s biciklom.</string>
+    <string name="sound_custom_other_file">Odaberi drugu datoteku</string>
+    <string name="sound_audio_file">Zvučna datoteka</string>
+
+    <!-- Soundboard -->
+    <string name="sound_board_title">Svi zvukovi na biciklu</string>
+    <string name="sound_board_quiet">Bicikl je tih tijekom prijenosa.</string>
+    <string name="sound_board_hint">Dodir pušta zvuk na biciklu.</string>
+    <string name="sound_board_alarm_warning">Vrlo glasno. Ne testiraj ga, molim te, u blizini drugih osoba.</string>
+
+    <!-- Upload meter (TalkBack + figure) -->
+    <string name="sound_upload_done_state">Prijenos dovršen</string>
+    <string name="sound_upload_progress_state">Prijenos na %1$d posto</string>
+    <string name="sound_upload_percent">%1$d\u00A0%%</string>
+
+    <!-- Connect notice -->
+    <string name="sound_connect_ble_denied">Bluetooth nije dopušten</string>
+    <string name="sound_connect_ble_off">Bluetooth je isključen</string>
+    <string name="sound_connect_searching">Traži bicikl…</string>
+    <string name="sound_connect_connecting">Povezivanje…</string>
+    <string name="sound_connect_authenticating">Prijava na bicikl…</string>
+    <string name="sound_connect_lost">Veza prekinuta</string>
+    <string name="sound_connect_offline">Nije povezano</string>
+    <string name="sound_connect_allow">Dopusti Bluetooth</string>
+    <string name="sound_connect_enable">Uključi Bluetooth</string>
+    <string name="sound_connect_connect">Poveži</string>
+    <string name="sound_open_garage">Otvori garažu</string>
+
+    <!-- Sharing -->
+    <string name="sound_share_title">Dijeljenje</string>
+    <string name="sound_share_gate_login">Dijeljenje radi preko tvog VanMoof računa. Prijavi se, molim te, iz garaže.</string>
+    <string name="sound_share_gate_pick">Odaberi u garaži bicikl sa svog računa, zatim ga možeš podijeliti.</string>
+    <string name="sound_share_gate_manual">Ovaj bicikl nije preuzet s tvog VanMoof računa. Mogu se dijeliti samo bicikli s tvog računa.</string>
+    <string name="sound_share_shared_with">Podijeljeno s %1$s.</string>
+    <string name="sound_share_ended_for">Dijeljenje s %1$s je završeno.</string>
+    <string name="sound_share_ended">Dijeljenje je završeno.</string>
+    <string name="sound_share_bad_email">Ovo nije valjana adresa e-pošte.</string>
+    <string name="sound_share_intro">Daj nekoj osobi pristup svom biciklu, na ograničeno vrijeme ili bez ograničenja.</string>
+    <string name="sound_share_email_label">Adresa e-pošte</string>
+    <string name="sound_share_open_ended">Vrijedi dok ne prekineš dijeljenje.</string>
+    <string name="sound_share_sharing">Dijeljenje…</string>
+    <string name="sound_share_submit">Podijeli bicikl</string>
+    <string name="sound_share_end_title">Prekinuti dijeljenje?</string>
+    <string name="sound_share_end_text">%1$s gubi pristup tvom biciklu.</string>
+    <string name="sound_share_someone">Ova osoba</string>
+    <string name="sound_share_end">Prekini</string>
+    <string name="sound_share_end_for">Prekini dijeljenje s %1$s</string>
+    <string name="sound_share_cancel">Odustani</string>
+    <string name="sound_share_list_title">Podijeljeno s</string>
+    <string name="sound_share_loading">Učitavanje dijeljenja…</string>
+    <string name="sound_share_none">Tvoj bicikl još nije podijeljen ni s kim. Možeš ga podijeliti sa svakom osobom koja ima VanMoof račun: unesi adresu e-pošte i odaberi trajanje ili „neograničeno“. Svako dijeljenje možeš prekinuti u bilo kojem trenutku. Dijeljenje ide preko VanMoofova poslužitelja i radi dok on odgovara.</string>
+    <string name="sound_share_reload">Učitaj ponovno</string>
+    <string name="sound_share_no_email">Bez e-pošte</string>
+    <string name="sound_share_until">Do %1$s</string>
+    <string name="sound_share_expired">Isteklo %1$s</string>
+    <string name="sound_share_unlimited_row">Neograničeno</string>
+    <string name="sound_share_for_row">Na %1$s</string>
+    <string name="sound_share_unlimited">Neograničeno</string>
+    <string name="sound_share_for">Na %1$s</string>
+    <plurals name="sound_share_minutes">
+        <item quantity="one">%1$d\u00A0minuta</item>
+        <item quantity="few">%1$d\u00A0minute</item>
+        <item quantity="other">%1$d\u00A0minuta</item>
+    </plurals>
+    <plurals name="sound_share_hours">
+        <item quantity="one">%1$d\u00A0sat</item>
+        <item quantity="few">%1$d\u00A0sata</item>
+        <item quantity="other">%1$d\u00A0sati</item>
+    </plurals>
+    <plurals name="sound_share_days">
+        <item quantity="one">%1$d\u00A0dan</item>
+        <item quantity="few">%1$d\u00A0dana</item>
+        <item quantity="other">%1$d\u00A0dana</item>
+    </plurals>
+    <plurals name="sound_share_weeks">
+        <item quantity="one">%1$d\u00A0tjedan</item>
+        <item quantity="few">%1$d\u00A0tjedna</item>
+        <item quantity="other">%1$d\u00A0tjedana</item>
+    </plurals>
+    <string name="sound_custom_row_none">Zamjenjuje „%1$s“</string>
+    <string name="sound_tone_custom_record">Vlastiti zvuk umjesto „%1$s“</string>
+    <string name="sound_custom_failed_at">Prijenos se prekinuo na %1$d\u00A0%%. Zvuk „%2$s“ ostaje tih dok datoteka ne stigne u cijelosti.</string>
+    <string name="sound_custom_failed_before">Prijenos nije započeo. „%1$s“ zadržava dosadašnji zvuk.</string>
+    <string name="sound_custom_resend">Pošalji ponovno</string>
+    <string name="sound_send_standstill">Slanje počinje dok bicikl stoji. Tijekom prijenosa YABA otprilike jednu minutu ne čita vrijednosti.</string>
+    <string name="sound_custom_wait_transfer">Slanje čeka dok tekući prijenos ne završi.</string>
+    <string name="sound_custom_sending_percent">Šalje „%1$s“, %2$d\u00A0%%</string>
+    <string name="sound_lab_title">Zvučni laboratorij</string>
+    <string name="sound_custom_replace_cd">Odaberi vlastiti zvuk umjesto „%1$s“</string>
+</resources>

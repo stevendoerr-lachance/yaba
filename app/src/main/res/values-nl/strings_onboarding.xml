@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inrichting: inloggen of sleutel, Bluetooth-toegang, fiets zoeken, eerste ontgrendeling (ui/onboarding). Teksten: hoogstens twee zinnen en 190 tekens. -->
+<resources>
+    <string name="onb_signin_button">Inloggen</string>
+    <string name="onb_perm_title">Toegang tot apparaten in de buurt</string>
+    <string name="onb_perm_text">Om je fiets te vinden heeft YABA toegang nodig tot “Apparaten in de buurt”. YABA gebruikt daarbij je locatie niet.</string>
+    <string name="onb_perm_button">Toegang toestaan</string>
+    <string name="onb_perm_denied">De toegang is geweigerd. Geef hem alsjeblieft in de app-instellingen onder “Rechten”.</string>
+    <string name="onb_perm_denied_again">De toegang is geweigerd. Tik op “Toegang toestaan” om opnieuw te vragen.</string>
+    <string name="onb_find_title">Fiets zoeken</string>
+    <string name="onb_find_text">YABA zoekt je fiets via Bluetooth. Blijf alsjeblieft in de buurt en sluit de VanMoof-app, want de fiets accepteert maar één telefoon tegelijk.</string>
+    <string name="onb_find_button">Nu zoeken</string>
+    <string name="onb_notfound_text">YABA ontvangt al meer dan 12\u00A0seconden geen antwoord van “%1$s”. Sluit alsjeblieft de VanMoof-app en wek de fiets met de belknop.</string>
+    <string name="onb_official_text">De VanMoof-app houdt op de achtergrond vaak de enige Bluetooth-verbinding met de fiets vast, want de fiets accepteert maar één telefoon tegelijk.</string>
+    <string name="onb_unlock_title">Eerste ontgrendeling</string>
+    <string name="onb_unlock_text">YABA heeft je fiets gevonden. Schuif de schuifregelaar tot het einde, dan ontgrendelt YABA de fiets rechtstreeks via Bluetooth.</string>
+    <string name="onb_server_text_http">De server van VanMoof heeft om %1$s\u00A0uur met fout\u00A0%2$d geantwoord. Tik op “Opnieuw proberen” om het verzoek te herhalen.</string>
+    <string name="onb_server_text_timeout">Om %1$s\u00A0uur kwam er binnen 10\u00A0seconden geen antwoord. Tik op “Opnieuw proberen” om het verzoek te herhalen.</string>
+    <string name="onb_server_text_dead">De server van VanMoof heeft sinds %1$d\u00A0dagen op geen enkel verzoek van deze telefoon geantwoord.</string>
+    <!-- matrix: ASCII only, BLE glyph + 2 empty columns + word must stay within 36 columns -->
+    <string name="onb_matrix_scan">ZOEK</string>
+    <string name="onb_step_cd">Stap\u00A0%1$d van %2$d</string>
+    <string name="onb_change_key">Sleutel wijzigen</string>
+    <string name="onb_find_idle_text">Het zoeken is beëindigd. Blijf alsjeblieft in de buurt en sluit de VanMoof-app, zoek dan opnieuw.</string>
+</resources>

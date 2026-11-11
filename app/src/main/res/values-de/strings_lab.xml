@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lab_char_cadence">Trittfrequenz</string>
+    <string name="lab_char_torque">Pedalkraft</string>
+
+    <string name="lab_sound_update_failed">Aktualisierung fehlgeschlagen</string>
+    <string name="lab_sound_update_ok">Aktualisierung erfolgreich</string>
+    <string name="lab_sound_find_loud">Lauter Suchton</string>
+
+    <string name="lab_clip_lock">Sperren</string>
+    <string name="lab_clip_unlock">Entsperren</string>
+    <string name="lab_clip_startup">Einschalten</string>
+    <string name="lab_clip_shutdown">Ausschalten</string>
+    <string name="lab_clip_charging">Laden</string>
+
+    <string name="lab_error_clock_readback">Die Rücklesung der Uhr ist unplausibel. Die Uhr wurde nicht gestellt.</string>
+    <string name="lab_error_backup_first">Lade und sichere das Protokoll des Bikes vor dem Selbsttest.</string>
+    <string name="lab_error_not_parked">Nur im Stand und außerhalb des Fahrmodus; das schaltet die Unterstützung ab.</string>
+    <string name="lab_error_clip">Die Übertragung ist fehlgeschlagen.</string>
+    <string name="lab_error_generic">Der Befehl wurde nicht ausgeführt.</string>
+
+    <string name="lab_log_siren">Sirene Stufe\u00A0%d</string>
+    <string name="lab_log_clip">Ton ersetzt: %s</string>
+
+</resources>

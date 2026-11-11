@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="labx_cmd_boost_rolling_on">Boost u vožnji uključen</string>
+    <string name="labx_cmd_boost_rolling_off">Boost u vožnji isključen</string>
+
+    <string name="labx_error_level_unknown">Razina potpore još nije očitana. Pričekaj trenutak i dodirni ponovno.</string>
+    <string name="labx_error_clock_readback">Očitavanje sata nije uvjerljivo. Sat je možda postavljen; provjeri ponovno.</string>
+    <string name="labx_error_clock_jump">Samo bez pritisnute tipke: ako sat skoči za više od 20\u00A0sekundi dok se drže Zvono ili Boost, bicikl tipku smatra zaglavljenom.</string>
+    <string name="labx_error_boost_rolling">Testiraj dok bicikl stoji: uz „uključeno“ razina se može slučajno promijeniti čim bicikl krene.</string>
+    <string name="labx_error_assist_cut">Samo u mirovanju i dok se bicikl ne kreće; ovo isključuje potporu motora.</string>
+    <string name="labx_error_not_confirmed">Nije potvrđeno. Vrijednost je zapisana, ali očitavanje je ne potvrđuje; spremljena vrijednost ostaje nepromijenjena.</string>
+    <string name="labx_error_lamp_read">Kanali svjetala ne mogu se očitati; ništa nije promijenjeno.</string>
+    <string name="labx_error_lamp_restore">Svjetla su vraćena, ali se očitavanje razlikuje. Prava promjena stanja (način rada, zaključavanje, ponovno pokretanje) vraća ih.</string>
+
+    <string name="labx_board_temp_waiting">čeka promjenu</string>
+    <string name="labx_not_read">nije očitano</string>
+    <string name="labx_threshold_factory">Tvornička vrijednost 200</string>
+
+    <string name="labx_alarm_stop_note">Zaustavlja alarm u tijeku bez rezervnog koda. Naredba briše i softversko zaključavanje; ako je bicikl bio zaključan, YABA zatim nudi „Ponovno zaključaj“.</string>
+    <string name="labx_relock_button">Ponovno zaključaj</string>
+    <string name="labx_relock_hint">Zaustavljanje alarma izbrisalo je softversko zaključavanje. Bez uključenog Kick Locka bicikl se smatra otključanim.</string>
+
+    <string name="labx_siren_note">Alarm isključen završava svaku razinu i ukida softversko zaključavanje. Po potrebi zatim ponovno zaključaj bicikl.</string>
+    <string name="labx_siren_stage2">Nadzor pokreta. Bicikl reagira tek na potres i pojačava se nakon nekoliko udaraca.</string>
+    <string name="labx_siren_stage3">Oko 30\u00A0sekundi sirene, zatim način praćenja. 2G modem se tada javlja otprilike svakih 30\u00A0minuta umjesto svaka 2\u00A0sata i troši bateriju.</string>
+    <string name="labx_siren_stage4">Izravno u način praćenja s postavljenim softverskim zaključavanjem, bez sirene.</string>
+
+    <string name="labx_selftest_dialog_text">YABA prvo preuzima dnevnik bicikla i sprema ga na telefon; zatim se pokreće dijagnoza i bicikl prelazi u stanje mirovanja. Izvještaj istiskuje najstarije retke dnevnika, pa se stoga sprema unaprijed.</string>
+
+
+    <!-- lamp channel accessibility -->
+    <string name="labx_lamp_channel">Kanal\u00A0%1$d</string>
+    <string name="labx_lamp_state_on">uključeno</string>
+    <string name="labx_lamp_state_off">isključeno</string>
+
+    <!-- Fahrtenschreiber: firmware tokens as a secondary line -->
+    <string name="labx_firmware_text">Tekst firmvera: %1$s</string>
+    <string name="labx_derate_bat_temp">Temperatura baterije %1$s</string>
+
+    <!-- Sound-Lab: factory clip cannot be recovered -->
+    <string name="labx_clip_factory_warning">Tvornički se ton ne može ponovno očitati s bicikla. Nakon zamjene nestaje zauvijek; YABA ga ne može vratiti. Sam sačuvaj kopiju ako ga želiš natrag.</string>
+</resources>

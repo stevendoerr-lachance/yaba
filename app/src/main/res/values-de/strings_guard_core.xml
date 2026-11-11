@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Benachrichtigungskanäle -->
+    <string name="guard_core_channel_alarm_name">Wache</string>
+    <string name="guard_core_channel_alarm_desc">Meldet Bewegungen am Bike und eine verlorene Verbindung, solange die Wache aktiv ist.</string>
+    <string name="guard_core_channel_status_name">Wache läuft</string>
+    <string name="guard_core_channel_status_desc">Zeigt, dass die Wache aktiv ist, solange YABA mit dem Bike verbunden bleibt.</string>
+
+    <!-- Benachrichtigungen -->
+    <string name="guard_core_notif_arming_title">Wache wird eingeschaltet</string>
+    <string name="guard_core_notif_arming_text">YABA sperrt das Bike und wartet auf seine Bestätigung.</string>
+    <string name="guard_core_notif_active_title">Wache aktiv</string>
+    <string name="guard_core_notif_active_text">Seit %1$s. Das Bike achtet selbst auf Bewegung, YABA bleibt verbunden.</string>
+    <string name="guard_core_notif_active_text_phone">Seit %1$s. YABA bleibt mit dem Bike verbunden.</string>
+    <string name="guard_core_notif_searching">Verbindung unterbrochen. YABA sucht das Bike.</string>
+    <string name="guard_core_notif_disarming_title">Wache wird beendet</string>
+    <string name="guard_core_notif_alarm_title">Alarm am Bike</string>
+    <string name="guard_core_notif_alarm_title_at">Alarm am Bike um %1$s</string>
+    <string name="guard_core_notif_lost_title">Verbindung zum Bike verloren</string>
+    <string name="guard_core_notif_lost_watch">Verbindung zum Bike verloren. Die Bewegungswache am Bike läuft weiter.</string>
+    <string name="guard_core_notif_lost">Verbindung zum Bike verloren. YABA verbindet sich neu, sobald das Bike erreichbar ist.</string>
+    <string name="guard_core_notif_restart_title">Wache unterbrochen</string>
+    <string name="guard_core_notif_restart_text">Android hat YABA im Hintergrund beendet. Tipp hier, damit die Wache weiterläuft.</string>
+    <string name="guard_core_action_end">Wache beenden</string>
+    <string name="guard_core_action_silence">Sirene aus</string>
+
+    <!-- Was als Bewegung zählte -->
+    <string name="guard_core_trigger_wheel">Das Bike meldet ein drehendes Laufrad.</string>
+    <string name="guard_core_trigger_bike_alarm">Das Bike hat seinen Alarm selbst ausgelöst.</string>
+    <string name="guard_core_trigger_status">Das Bike meldet den Zustand Alarm.</string>
+    <string name="guard_core_trigger_unlock_request">Das Bike hat eine Entsperr-Anfrage gesendet. Das geschieht bei einem Tastendruck oder einer Bewegung am Bike.</string>
+    <string name="guard_core_trigger_button">Am Bike wurde eine Taste gedrückt.</string>
+    <string name="guard_core_trigger_battery">Das Bike meldet keinen eingesetzten Akku mehr.</string>
+    <string name="guard_core_trigger_lock_opened">Das Bike meldet sich als entsperrt, ohne dass YABA es entsperrt hat.</string>
+    <string name="guard_core_trigger_pin">Am Bike wird ein Code eingegeben.</string>
+    <string name="guard_core_trigger_offline">Das Bike hat Alarm ausgelöst, während dein Handy nicht verbunden war.</string>
+
+    <!-- Was mit der Sirene geschah -->
+    <string name="guard_core_siren_yaba">YABA hat die Sirene eingeschaltet (Durchgang %1$d von %2$d).</string>
+    <string name="guard_core_siren_bike">Die Sirene des Bikes läuft.</string>
+    <string name="guard_core_siren_running">Die Sirene läuft noch.</string>
+    <string name="guard_core_siren_off_setting">Die Sirene bleibt aus, weil „Sirene sofort“ ausgeschaltet ist.</string>
+    <string name="guard_core_siren_snoozed">Nach „Sirene aus“ bleibt die Sirene zwei Minuten lang aus.</string>
+    <string name="guard_core_siren_cap">Die Sirene lief schon %1$d Mal. YABA schaltet sie erst nach zehn Minuten Ruhe wieder ein.</string>
+
+    <!-- Ereignisprotokoll und Wache-Protokoll -->
+    <string name="guard_core_cmd">Wache</string>
+    <string name="guard_core_log_arming">Wache: scharf schalten (Alarm-Modus %1$s, Schloss %2$s, Alarmzustand %3$s)</string>
+    <string name="guard_core_log_armed_native">Wache scharf: Das Bike meldet Alarmzustand 2 nach %1$s Sekunden, ohne direktes Schreiben.</string>
+    <string name="guard_core_log_armed_direct">Wache scharf: Alarmzustand 2 erst nach dem Schreiben von 5523 = 2.</string>
+    <string name="guard_core_log_armed_unconfirmed">Wache scharf ohne Bestätigung: Alarmzustand %1$s.</string>
+    <string name="guard_core_log_arm_failed">Wache nicht eingeschaltet: %1$s</string>
+    <string name="guard_core_log_value">Wache: %1$s (%2$s) = %3$s, vorher %4$s, %5$s</string>
+    <string name="guard_core_log_pushed">vom Bike gemeldet</string>
+    <string name="guard_core_log_read">gelesen</string>
+    <string name="guard_core_log_value_cap">Wache: weitere Wertänderungen in dieser Stunde nicht protokolliert</string>
+    <string name="guard_core_log_ignored">Wache, beim Einschalten nicht gezählt: %1$s</string>
+    <string name="guard_core_log_siren">Wache: Sirene geschrieben (5523 = 3), Antwort %1$s</string>
+    <string name="guard_core_log_rearmed">Wache wiederhergestellt: Alarmzustand %1$s, Schloss %2$s</string>
+    <string name="guard_core_log_silence">Wache: Sirene aus</string>
+    <string name="guard_core_log_disarmed">Wache beendet: Alarmzustand %1$s, Schloss %2$s</string>
+    <string name="guard_core_log_disarmed_offline">Wache beendet, ohne Verbindung zum Bike</string>
+    <string name="guard_core_log_lost">Wache: Verbindung verloren</string>
+    <string name="guard_core_log_back">Wache: wieder verbunden, Alarmzustand %1$s, Schloss %2$s</string>
+    <string name="guard_core_log_budget">Wache: Grenze für automatische Befehle erreicht, bis auf Weiteres nur Benachrichtigungen</string>
+    <string name="guard_core_log_restored">Wache nach einem Neustart von YABA fortgesetzt</string>
+    <string name="guard_core_log_sequence_failed">Wache: %1$s fehlgeschlagen: %2$s</string>
+    <string name="guard_core_log_bike_gone">Wache beendet: Das Bike ist nicht mehr in YABA gespeichert</string>
+
+    <!-- Fehler -->
+    <string name="guard_core_error_active">Die Wache ist aktiv. Beende zuerst die Wache.</string>
+    <string name="guard_core_error_not_s3">Die Wache gibt es nur für das S3 und das X3.</string>
+    <string name="guard_core_siren_budget">Die Sirene bleibt aus, weil YABA in den letzten zehn Minuten schon viele Befehle an das Bike geschickt hat.</string>
+    <string name="guard_core_notif_not_locked_title">Bike nicht gesperrt</string>
+    <string name="guard_core_notif_not_locked">YABA konnte das Bike nicht wieder sperren (Schloss meldet %1$s). Öffne YABA und tippe auf „Erneut versuchen“.</string>
+    <string name="guard_core_notif_not_locked_unknown">YABA hat keine Bestätigung, dass das Bike wieder gesperrt ist. Öffne YABA und tippe auf „Erneut versuchen“.</string>
+    <string name="guard_core_log_relocked">Wache: Schloss erneut geschrieben (5521\u00A0=\u00A01), Schloss meldet %1$s</string>
+    <string name="guard_core_log_not_locked">Wache: Das Bike bleibt entsperrt (Schloss %1$s). YABA versucht es nicht weiter von selbst.</string>
+    <string name="guard_core_log_held">Wache: Das Bike war beim Wiederverbinden entsperrt. YABA sperrt es erst nach „Erneut versuchen“ wieder.</string>
+    <string name="guard_core_log_watch_seen">Wache: Das Bike meldet jetzt Alarmzustand 2, seine Bewegungswache läuft.</string>
+    <string name="guard_core_log_watch_left">Wache: Das Bike meldet Alarmzustand %1$s, seine Bewegungswache läuft nicht mehr.</string>
+    <string name="guard_core_log_cancelled">Wache: %1$s abgebrochen, bevor etwas beim Bike ankam</string>
+    <string name="guard_core_log_disarmed_unconfirmed">Wache beendet, ohne Antwort vom Bike</string>
+    <string name="guard_core_step_arm">Einschalten</string>
+    <string name="guard_core_step_verify">Prüfen nach dem Verbinden</string>
+    <string name="guard_core_step_siren">Sirene</string>
+    <string name="guard_core_step_rearm">Wiederherstellen</string>
+    <string name="guard_core_step_relock">Wieder sperren</string>
+    <string name="guard_core_step_disarm">Beenden</string>
+    <string name="guard_core_step_internal">interner Schritt</string>
+</resources>

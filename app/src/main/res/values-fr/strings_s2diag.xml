@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- S2 drive diagnosis (ui/s2): wiggle test, error catcher, GPS comparison, live status block, S2 test mode. -->
+    <string name="s2diag_title">Motorisation S2</string>
+    <string name="s2diag_entry_intro">Pour un moteur qui a des coupures\u00A0: un test de torsion du câble, un relevé des codes d’erreur rares, une comparaison avec le GPS en roulant et le bloc d’état en direct.</string>
+    <string name="s2diag_entry_open">Vérifier la motorisation</string>
+    <string name="s2diag_entry_waiting">Aucun bloc d’état lu pour l’instant.</string>
+    <string name="s2diag_entry_quiet">Aucun code d’erreur dans le bloc d’état depuis %1$s.</string>
+    <plurals name="s2diag_entry_caught">
+        <item quantity="one">%1$d code d’erreur relevé\u00A0: erreur\u00A0%2$d à %3$s.</item>
+        <item quantity="other">%1$d codes d’erreur relevés, le dernier\u00A0: erreur\u00A0%2$d à %3$s.</item>
+    </plurals>
+    <string name="s2diag_close">Fermer</string>
+    <string name="s2diag_intro">Le bloc d’état du S2 ne transmet ni le courant du moteur, ni la température, ni les signaux des capteurs à effet Hall. YABA déduit donc le câble ou la pièce des coupures de vitesse et du code d’erreur.</string>
+    <string name="s2diag_connect_reason">La motorisation ne peut être vérifiée que si le vélo est connecté.</string>
+    <string name="s2diag_clock">%1$s</string>
+    <string name="s2diag_copied">Copié dans le presse-papiers.</string>
+
+    <!-- Wiggle test -->
+    <string name="s2diag_wiggle_title">Test de torsion</string>
+    <string name="s2diag_wiggle_speed_cd">Vitesse selon le vélo\u00A0: %1$d\u00A0km/h</string>
+    <string name="s2diag_wiggle_speed_none_cd">Pas encore de vitesse du vélo.</string>
+    <string name="s2diag_wiggle_unit">km/h selon le vélo</string>
+    <plurals name="s2diag_wiggle_stale">
+        <item quantity="one">Aucun bloc d’état depuis plus de %1$d\u00A0seconde.</item>
+        <item quantity="other">Aucun bloc d’état depuis plus de %1$d\u00A0secondes.</item>
+    </plurals>
+    <string name="s2diag_wiggle_step1">Soulève la roue avant, par exemple avec une caisse sous le tube diagonal, pour que le vélo tienne bien et ne puisse pas rouler. Le vélo est déverrouillé et allumé.</string>
+    <string name="s2diag_wiggle_step2">Touche Démarrer le test de torsion ci-dessus. Puis fais tourner la roue avant à la main jusqu’à ce que l’affichage indique au moins 10\u00A0km/h.</string>
+    <string name="s2diag_wiggle_step3">Faites-le à deux\u00A0: l’un fait tourner la roue, l’autre plie le câble du moteur à la fourche, au tube de direction et là où il entre dans le cadre. Garde les doigts loin des rayons et du disque de frein, et ne pédale pas ni n’appuie sur le boost.</string>
+    <string name="s2diag_wiggle_step4">Si la vitesse tombe à 0 alors que la roue tourne, le téléphone vibre, émet un bip et pose un repère avec l’heure. Un repère juste après que quelqu’un a touché la roue ne compte pas.</string>
+    <string name="s2diag_wiggle_steps_show">Afficher les étapes</string>
+    <string name="s2diag_wiggle_zero_hint">Si la vitesse reste à 0\u00A0km/h pendant que la roue tourne, le vélo ne la mesure probablement que moteur en marche. Le trajet avec GPS aide alors.</string>
+    <string name="s2diag_wiggle_spot">Endroit du câble</string>
+    <string name="s2diag_spot_fork">Fourche</string>
+    <string name="s2diag_spot_head">Tube de direction</string>
+    <string name="s2diag_spot_frame">Cadre</string>
+    <string name="s2diag_wiggle_start">Démarrer le test de torsion</string>
+    <string name="s2diag_wiggle_stop">Arrêter le test de torsion</string>
+    <string name="s2diag_wiggle_running">Le test est en cours\u00A0: YABA lit le bloc d’état environ chaque seconde et l’écran reste allumé.</string>
+    <string name="s2diag_mark">Poser un repère</string>
+    <string name="s2diag_marks_title">Repères</string>
+    <string name="s2diag_marks_clear">Effacer les repères</string>
+    <string name="s2diag_mark_drop">Chute de %1$d à 0\u00A0km/h</string>
+    <string name="s2diag_mark_manual">Posé à la main à %1$d\u00A0km/h</string>
+    <string name="s2diag_log_drop">Test de torsion\u00A0: chute de %1$d à 0\u00A0km/h</string>
+    <string name="s2diag_log_mark">Test de torsion\u00A0: repère à %1$d\u00A0km/h</string>
+
+    <!-- Error catcher -->
+    <string name="s2diag_catch_title">Relevé des erreurs</string>
+    <string name="s2diag_catch_intro">YABA vérifie chaque bloc d’état qu’il reçoit\u00A0: ceux qu’il lit lui-même toutes les quelques secondes et ceux que le vélo envoie de lui-même. Chaque code d’erreur qu’ils contiennent arrive ici, même s’il n’est que dans un seul bloc.</string>
+    <plurals name="s2diag_catch_blocks">
+        <item quantity="one">%1$s bloc d’état vérifié depuis %2$s.</item>
+        <item quantity="other">%1$s blocs d’état vérifiés depuis %2$s.</item>
+    </plurals>
+    <plurals name="s2diag_catch_implausible">
+        <item quantity="one">%1$d bloc d’état aux valeurs impossibles ignoré\u00A0; cela vient le plus souvent d’une mauvaise clé.</item>
+        <item quantity="other">%1$d blocs d’état aux valeurs impossibles ignorés\u00A0; cela vient le plus souvent d’une mauvaise clé.</item>
+    </plurals>
+    <string name="s2diag_catch_none">Aucun code d’erreur pour l’instant.</string>
+    <string name="s2diag_hit_title">Erreur\u00A0%1$d\u00A0: %2$s</string>
+    <plurals name="s2diag_hit_group">
+        <item quantity="one">Erreur\u00A0%1$d, %2$d×, à %3$s</item>
+        <item quantity="other">Erreur\u00A0%1$d, %2$d×, la dernière à %3$s</item>
+    </plurals>
+    <string name="s2diag_hit_meta">%1$s, %2$d\u00A0km/h, batterie %3$d\u00A0%%, module %4$d\u00A0%%</string>
+    <plurals name="s2diag_hit_blocks">
+        <item quantity="one">Signalé dans un seul bloc d’état.</item>
+        <item quantity="other">Signalé dans %1$d blocs d’état, jusqu’à %2$s.</item>
+    </plurals>
+    <string name="s2diag_hit_part">Probablement\u00A0: %1$s</string>
+    <string name="s2diag_part_stall">les capteurs à effet Hall ou les fils de phase du moteur</string>
+    <string name="s2diag_part_voltage_high">la batterie ou le chargeur</string>
+    <string name="s2diag_part_supply">le contact de la batterie ou le câble d’alimentation</string>
+    <string name="s2diag_part_speed_signal">le signal de vitesse du moteur, donc les capteurs à effet Hall ou leur câble</string>
+    <string name="s2diag_part_phase_short">un court-circuit sur une phase du moteur, dans le câble ou au connecteur</string>
+    <string name="s2diag_part_torque">le câble du capteur de couple</string>
+    <string name="s2diag_part_heat">moteur ou contrôleur moteur trop chaud, en général pas un câble</string>
+    <string name="s2diag_part_hall_cable">les capteurs à effet Hall du moteur ou leur câble à travers la fourche et le tube de direction</string>
+    <string name="s2diag_part_module">l’électronique du cadre, pas la motorisation</string>
+    <string name="s2diag_part_gsm">le modem mobile du module, pas la motorisation</string>
+    <string name="s2diag_part_controller_line">la ligne de données entre l’électronique du cadre et le contrôleur moteur</string>
+    <string name="s2diag_part_unknown">un code inconnu\u00A0; le bloc d’état complet figure dans l’enregistrement du trajet</string>
+    <string name="s2diag_note_disputed">Les sources ne s’accordent pas sur le code, 4 ou 5, qui signifie «\u00A0moteur trop rapide\u00A0». Active s’il te plaît le mode test S2\u00A0: chaque bloc d’état modifié arrive alors dans le journal, et le code pourra être attribué plus tard.</string>
+    <string name="s2diag_note_disputed_on">Les sources ne s’accordent pas sur le code, 4 ou 5, qui signifie «\u00A0moteur trop rapide\u00A0». Le mode test S2 est activé, donc chaque bloc d’état modifié figure dans le journal.</string>
+    <string name="s2diag_catch_copy">Copier la liste</string>
+    <string name="s2diag_catch_clear">Vider la liste</string>
+
+    <!-- Ride with GPS -->
+    <string name="s2diag_gps_title">Trajet avec GPS</string>
+    <string name="s2diag_gps_intro">En roulant, YABA inscrit la vitesse GPS du téléphone à côté de celle du vélo dans l’enregistrement du trajet. Là où le vélo indique 0\u00A0km/h alors que le GPS mesure plus de 8\u00A0km/h, la visionneuse signale une coupure du signal.</string>
+    <string name="s2diag_gps_switch">Enregistrer la vitesse GPS</string>
+    <string name="s2diag_gps_switch_hint">Seule la vitesse entre dans l’enregistrement, jamais la position.</string>
+    <string name="s2diag_gps_denied">Sans accès à la position précise, le téléphone ne mesure aucune vitesse GPS. Autorise-le s’il te plaît dans les paramètres de l’app.</string>
+    <string name="s2diag_gps_coarse">Seule la position approximative est autorisée. Pour la vitesse GPS, YABA a besoin de la position précise.</string>
+    <string name="s2diag_gps_app_settings">Ouvrir les paramètres de l’app</string>
+    <string name="s2diag_gps_off">La localisation est désactivée sur le téléphone.</string>
+    <string name="s2diag_gps_location_settings">Activer la localisation</string>
+    <string name="s2diag_gps_waiting">En attente du GPS. À ciel ouvert, cela prend le plus souvent moins d’une minute.</string>
+    <string name="s2diag_gps_fact_bike">Vélo</string>
+    <string name="s2diag_gps_fact_gps">GPS</string>
+    <string name="s2diag_kmh">%1$s\u00A0km/h</string>
+    <string name="s2diag_gps_steps">Active le GPS et roule quelques minutes sur un parcours calme en pédalant tout le temps, assistance 1 ou plus. Ouvre pour cela le cockpit dans Diagnostic\u00A0: il démarre l’enregistreur de trajet, et une touche de volume marque le moment où le moteur coupe.</string>
+    <string name="s2diag_gps_open_log">Ouvrir le dernier enregistrement</string>
+
+    <!-- Live status block -->
+    <string name="s2diag_raw_title">Bloc d’état en direct</string>
+    <string name="s2diag_raw_intro">Les 16 octets tels que le vélo les envoie en ce moment. Les octets clairs ont changé avec le dernier bloc\u00A0; le petit nombre compte leurs changements.</string>
+    <string name="s2diag_raw_legend">Octet 2 état et alarme, 3 antivol, 4 vitesse, 5 batterie, 6 batterie du module, 7 éclairage et unité, 8 niveau et région, 10 sons, 11 à 14 distance, 15 code d’erreur et bits de marche.</string>
+    <string name="s2diag_raw_none">Pas encore de bloc d’état.</string>
+    <plurals name="s2diag_raw_byte_cd">
+        <item quantity="one">Octet %1$d\u00A0: %2$s, modifié %3$d fois</item>
+        <item quantity="other">Octet %1$d\u00A0: %2$s, modifié %3$d fois</item>
+    </plurals>
+    <string name="s2diag_raw_copy">Copier le bloc</string>
+
+    <!-- S2 test mode -->
+    <string name="s2diag_test_title">Mode test S2</string>
+    <string name="s2diag_test_switch">Autoriser les commandes non confirmées</string>
+    <string name="s2diag_test_hint">Active ce qui n’est pas encore confirmé sur un vrai S2\u00A0: le verrouillage depuis l’app et l’alarme sous Rouler, le code de secours sous Vélo, la sourdine et 37\u00A0km/h ci-dessous.</string>
+    <string name="s2diag_test_gatt">Copier l’aperçu GATT</string>
+
+    <!-- Ride log viewer: GPS speed and signal dropouts -->
+    <string name="s2diag_view_legend_gps">Vitesse GPS en km/h</string>
+    <string name="s2diag_view_legend_dropout">Coupure du signal</string>
+    <string name="s2diag_view_readout_gps">GPS %1$s</string>
+    <string name="s2diag_view_fact_gps_top">Pointe GPS</string>
+    <string name="s2diag_view_fact_dropouts">Coupures du signal</string>
+    <string name="s2diag_view_signal">Coupure du signal\u00A0: vélo 0\u00A0km/h, GPS au-dessus de 8\u00A0km/h</string>
+    <string name="s2diag_view_dropout_total">%1$s au total, GPS jusqu’à %2$s</string>
+    <string name="s2diag_view_dropout_none">Aucune coupure du signal\u00A0: là où le GPS mesurait plus de 8\u00A0km/h, le vélo indiquait aussi une vitesse.</string>
+    <plurals name="s2diag_view_summary_dropouts">
+        <item quantity="one">Une fois, le vélo a indiqué 0\u00A0km/h alors que le GPS mesurait plus de 8\u00A0km/h, %2$s.</item>
+        <item quantity="other">%1$s fois, le vélo a indiqué 0\u00A0km/h alors que le GPS mesurait plus de 8\u00A0km/h, d’abord %2$s.</item>
+    </plurals>
+</resources>

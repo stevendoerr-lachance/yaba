@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Meegeleverde beltonen op het geluidsscherm: tien eigen geluiden die met de app meekomen (tools/bells). -->
+<resources>
+    <string name="bells_hint">Een tik speelt het geluid af op je telefoon.</string>
+    <string name="bells_choose">Kiezen</string>
+    <string name="bells_muted">Het mediavolume staat uit. Zet het hoger om het voorbeeld te horen.</string>
+    <string name="bells_preview_failed">Het voorbeeld kon niet worden afgespeeld.</string>
+    <string name="bells_seconds">%1$s\u00A0s</string>
+
+    <!-- TalkBack -->
+    <string name="bells_row_cd">%1$s, %2$s</string>
+    <string name="bells_play_action">afspelen op telefoon</string>
+    <string name="bells_stop_action">stoppen</string>
+    <string name="bells_state_playing">Speelt op telefoon</string>
+
+    <!-- De beltoon in de eigen plek, op zijn rij -->
+    <string name="bells_state_on_bike">Op de fiets</string>
+
+    <!-- Namen -->
+    <string name="bells_name_ringring">Fietsbel</string>
+    <string name="bells_name_tram">Tram Zagreb</string>
+    <string name="bells_name_honk">Toeter</string>
+    <string name="bells_name_stadium">Stadionhoorn</string>
+    <string name="bells_name_fanfare">Fanfare</string>
+    <string name="bells_name_cucaracha">La Cucaracha</string>
+    <string name="bells_name_trombone">Treurige trombone</string>
+    <string name="bells_name_nightshift">Nachtdienst</string>
+    <string name="bells_name_jingle">YABA-jingle</string>
+    <string name="bells_name_ufo">Ufo</string>
+    <string name="bells_caption_phone">Op je telefoon</string>
+</resources>
