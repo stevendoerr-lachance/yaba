@@ -1,36 +1,122 @@
-# YABA
+<p align="center">
+  <img src="assets/hero.svg" width="100%" alt="YABA. Keeps riding. No matter what.">
+</p>
 
-Yet Another Bike App. A native Android app that controls a VanMoof e-bike directly over Bluetooth LE.
+<p align="center">
+  <a href="https://github.com/stevendoerr-lachance/yaba/releases/latest"><img src="https://img.shields.io/github/v/release/stevendoerr-lachance/yaba?style=flat-square&label=APK&color=D6ECFF&labelColor=191C21" alt="Latest release"></a>
+  <img src="https://img.shields.io/badge/Android-8.0%2B-D6ECFF?style=flat-square&labelColor=191C21" alt="Android 8.0 and up">
+  <img src="https://img.shields.io/badge/Kotlin-Jetpack%20Compose-D6ECFF?style=flat-square&labelColor=191C21" alt="Kotlin, Jetpack Compose">
+  <img src="https://img.shields.io/badge/tests-651%20green-D6ECFF?style=flat-square&labelColor=191C21" alt="651 unit tests">
+  <img src="https://img.shields.io/badge/license-MIT-D6ECFF?style=flat-square&labelColor=191C21" alt="MIT">
+</p>
 
-Built for one second-hand S3, and meant to keep working when VanMoof's servers do not. YABA fetches
-the bike key from the VanMoof account once, stores it encrypted on the phone (Android Keystore) and
-talks to the bike without any backend after that.
+# The servers went dark. The bike did not.
 
-Not affiliated with VanMoof. Not an official VanMoof app. Use at your own risk.
+YABA is a native Android app for VanMoof e-bikes. It talks to the bike directly over Bluetooth LE.
+It fetches the bike key from the VanMoof account once, stores it encrypted on the phone (Android
+Keystore) and needs no backend after that. No subscription, no login on every start, no cloud in
+the loop.
+
+It was built in Frankfurt am Main for one second-hand S3 and for every bike that should keep riding.
+
+<p align="center">
+  <img src="assets/screens/ride.png" width="19%" alt="Ride: speed on the top tube, unlock slider, speed region">
+  <img src="assets/screens/cockpit.png" width="19%" alt="Cockpit: large speed for a phone on the handlebar">
+  <img src="assets/screens/guard.png" width="19%" alt="Guard: the bike watches for movement">
+  <img src="assets/screens/sound.png" width="19%" alt="Sound: bell tones and custom sounds">
+  <img src="assets/screens/diagnostics.png" width="19%" alt="Diagnostics: ride logger and recordings">
+</p>
+
+## What it does
+
+| | What you get |
+|---|---|
+| **Ride** | Slide to unlock, assist 0 to 4, lights, alarm, touch unlock. The top tube on screen shows what the one on the bike shows. |
+| **Cockpit** | Phone on the handlebar: speed in dots you can read at arm's length, gear, assist, and the three signals that decide whether the bike stays awake. |
+| **Guard** | Locks the bike, arms its own motion watch, keeps the link with the screen off and tells your phone the moment a wheel turns. Siren right away if you want it. |
+| **Sound** | Bell tone, your own bell from any audio file (converted on the phone), ten bundled bells, every sound the bike knows, volume per sound. |
+| **Diagnostics** | Live status, the 64 fault bits decoded into sentences, a ride logger that writes one reading every 2 seconds to CSV, and the bike's internal log read out and explained. |
+| **Bike** | Firmware versions, odometer, units, backup code, key backup and import, several bikes. |
+| **Lab** | E-shifter shift points and Speed++ (see below). |
+
+Seven languages: English, German, Dutch, French, Italian, Croatian, Russian.
 
 ## Supported bikes
 
 | Bike | Status |
 |---|---|
-| VanMoof S3 / X3 | Full support. Tested on an S3 with firmware 1.9.3. |
-| VanMoof Electrified S2 / X2 | Core functions: lock, lights, assist, alarm, diagnosis. Protocol ported from OldMoofKit. |
+| VanMoof S3 / X3 | Everything above. Tested on an S3 with firmware 1.9.3. |
+| VanMoof Electrified S2 / X2 | Lock, lights, assist, alarm, bell, diagnostics. Protocol ported from OldMoofKit. |
 
-## What it does
+<img src="assets/signs.svg" width="330" align="right" alt="Speed regions: Japan 24, Europe 25, USA 32 km/h">
 
-- **Ride:** unlock and lock, assist level 0 to 4, speed region (JP 24, EU 25, US 32 km/h), lights,
-  alarm, touch unlock.
-- **Guard:** arms the bike's own motion watch, keeps the connection with the screen off and notifies
-  the phone when the bike moves.
-- **Sound:** bell tone, custom bell from any audio file (converted on the phone), ten bundled bells
-  synthesised by `tools/bells/make_bells.py`, sound board.
-- **Diagnosis:** live status, decoded fault bits, a background ride logger (CSV), readout of the bike's
-  internal log, raw characteristic values.
-- **Bike:** firmware versions, odometer, units, backup code, key backup and import, several bikes.
-- **Experiments:** e-shifter shift points, and Speed++. Speed++ sets a 28" bike to the 24" wheel
-  setting, so the bike measures 84 % of the real speed and assist ends later. YABA shows the real
-  speed. Check what is legal where you ride.
-- Book-style foldables get a two-pane layout split at the hinge.
-- English, German, Dutch, French, Italian, Croatian, Russian.
+### Speed regions and Speed++
+
+The bike knows three regions, and YABA shows them as what they are: road signs.
+
+Speed++ sets a 28″ bike to the 24″ wheel setting. The bike then measures 84 % of the real speed,
+so assist ends at about 29.7 km/h instead of 25. The bike's own speedo and odometer read low by
+the same factor. YABA multiplies by 1.1875 and shows the real speed everywhere. Check what is
+legal where you ride.
+
+<br clear="right">
+
+## It folds
+
+On a book-style foldable the app splits at the hinge: the bike on the left, the controls on the right.
+
+<p align="center">
+  <img src="assets/screens/foldable.png" width="70%" alt="Two-pane layout on a foldable, split at the hinge">
+</p>
+
+## Ten bells, synthesised from scratch
+
+No samples, no recordings. [`tools/bells/make_bells.py`](tools/bells/make_bells.py) builds every
+bell out of sine partials, filtered noise and a bit of physics, voiced for the small speaker in
+the frame. All ten are CC0.
+
+| | Bell | What you hear |
+|---|---|---|
+| 🚲 | Ring ring | A rotary thumb bell, two pushes |
+| 🚋 | Tram | Zagreb tram gong: ding ... ding |
+| 🤡 | Clown honk | Rubber bulb horn, twice |
+| 📣 | Stadium horn | Blast, blast, BLAAAST |
+| 🎺 | Fanfare | Two trumpets and a trombone in D |
+| 🪳 | La Cucaracha | The folk tune on a musical car horn |
+| 😢 | Sad trombone | Wah wah wah waaah |
+| 🌙 | Night shift | A lounge sting with a bass slide |
+| 👾 | YABA jingle | Five notes of chiptune |
+| 🛸 | UFO | A theremin that hovers, wobbles and leaves |
+
+## The bike talks back
+
+<p align="center">
+  <img src="assets/grumble.svg" width="62%" alt="The top tube grumbles in Dutch: gedoe, balen, nou ja, he he, auw">
+</p>
+
+A Dutch bike may complain in Dutch. Now and then the dot matrix in the app says one word, rarely
+and never while you ride. The sentence below it stays polite and tells you the number, the cause
+and the next step. You can switch it off.
+
+| On the tube | Literally | Meant |
+|---|---|---|
+| `GEDOE` | fuss | trouble, bother |
+| `BALEN` | to be annoyed | what a pity |
+| `NOU JA` | well, yes | oh well |
+| `HE HE` | at last | phew |
+| `AUW` | ouch | that hurt |
+| `VERDORIE` | a softened "verdomme" | darn it |
+| `DE PIJP UIT` | out of the pipe | finished, over |
+
+## Install
+
+Get the APK from [Releases](https://github.com/stevendoerr-lachance/yaba/releases/latest).
+`universal` runs everywhere. If you want the exact one: `arm64-v8a` for almost every phone made
+since 2017, `armeabi-v7a` for older ones, `x86_64` for emulators.
+
+Allow installs from your browser or file manager, open the APK, sign in to your VanMoof account
+once. Close the official VanMoof app while using YABA: the bike accepts one Bluetooth connection
+at a time.
 
 ## Build
 
@@ -48,17 +134,22 @@ sdk.dir=/path/to/android-sdk
 ./gradlew :app:testDebugUnitTest
 ```
 
-The APK lands in `app/build/outputs/apk/debug/`. Install it with `adb install -r`.
+651 unit tests cover the protocol, the crypto, the guard state machine and the log parsers. None
+needs a bike.
 
-Close the official VanMoof app while using YABA. The bike accepts one Bluetooth connection at a time.
+## Under the hood
 
-## Layout
+| Path | What lives there |
+|---|---|
+| `app/src/main/java/dev/steven/s3control/ble` | Protocol, crypto, GATT client, drivers for S3 and S2, guard logic |
+| `.../data` | Account API, key vault |
+| `.../ride` | Ride logger, guard service, log parsers |
+| `.../ui` | Jetpack Compose: screens, the dot matrix, the cockpit, the opening film |
+| `tools/bells` | The bell synthesiser |
+| `tools/readme` | Draws the art on this page from the app's own font, palette and icon |
 
-- `app/src/main/java/dev/steven/s3control/ble`: protocol, crypto, GATT client, drivers for S3 and S2
-- `.../data`: account API, key vault
-- `.../ride`: ride logger, guard service
-- `.../ui`: Jetpack Compose screens and components
-- `app/src/test`: unit tests for protocol and logic, no device needed
+No UI kit, no image assets. The dot matrix, the tube, the glyphs in the tab bar and the opening
+film are drawn in code.
 
 ## Credits
 
@@ -67,8 +158,13 @@ Protocol knowledge comes from [mooovy](https://github.com/mjarkk/vanmoof-web-con
 [OldMoofKit](https://github.com/Jegge/OldMoofKit) (Jegge, MIT) and the S3 firmware notes by Knight1.
 No VanMoof code, firmware or sound files are part of this repository.
 
-Fonts: Archivo and Roboto Flex (SIL OFL, see `licenses/`). Bundled bells: CC0, see `tools/bells/README.md`.
+Fonts: Archivo and Roboto Flex (SIL OFL, see `licenses/`).
 
 ## License
 
 MIT, see [LICENSE](LICENSE).
+
+<p align="center">
+  <img src="assets/icon.svg" width="72" alt="YABA app icon"><br>
+  <sub>Not affiliated with VanMoof. Not an official VanMoof app. Use at your own risk.</sub>
+</p>
