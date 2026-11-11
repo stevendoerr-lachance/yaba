@@ -10,14 +10,15 @@
   <img src="https://img.shields.io/badge/license-MIT-D6ECFF?style=flat-square&labelColor=191C21" alt="MIT">
 </p>
 
-# The servers went dark. The bike did not.
+# YABA
 
-YABA is a native Android app for VanMoof e-bikes. It talks to the bike directly over Bluetooth LE.
-It fetches the bike key from the VanMoof account once, stores it encrypted on the phone (Android
-Keystore) and needs no backend after that. No subscription, no login on every start, no cloud in
-the loop.
+Yet Another Bike App. A native Android app for VanMoof e-bikes that talks to the bike directly over
+Bluetooth LE.
 
-It was built in Frankfurt am Main for one second-hand S3 and for every bike that should keep riding.
+It fetches the bike key from the VanMoof account once and stores it encrypted on the phone
+(Android Keystore). After that it works without VanMoof's servers.
+
+I built it in Frankfurt for my second-hand S3.
 
 <p align="center">
   <img src="assets/screens/ride.png" width="19%" alt="Ride: speed on the top tube, unlock slider, speed region">
@@ -31,11 +32,11 @@ It was built in Frankfurt am Main for one second-hand S3 and for every bike that
 
 | | What you get |
 |---|---|
-| **Ride** | Slide to unlock, assist 0 to 4, lights, alarm, touch unlock. The top tube on screen shows what the one on the bike shows. |
-| **Cockpit** | Phone on the handlebar: speed in dots you can read at arm's length, gear, assist, and the three signals that decide whether the bike stays awake. |
-| **Guard** | Locks the bike, arms its own motion watch, keeps the link with the screen off and tells your phone the moment a wheel turns. Siren right away if you want it. |
+| **Ride** | Slide to unlock, assist 0 to 4, lights, alarm, touch unlock. The dot matrix shows speed and status. |
+| **Cockpit** | Phone on the handlebar: large speed, gear, assist and the signals behind the shipping-mode fault. |
+| **Guard** | Locks the bike, arms its own motion watch, keeps the link with the screen off and notifies your phone when the bike moves. Optional siren. |
 | **Sound** | Bell tone, your own bell from any audio file (converted on the phone), ten bundled bells, every sound the bike knows, volume per sound. |
-| **Diagnostics** | Live status, the 64 fault bits decoded into sentences, a ride logger that writes one reading every 2 seconds to CSV, and the bike's internal log read out and explained. |
+| **Diagnostics** | Live status, decoded fault bits, a ride logger (CSV, one reading every 2 seconds), readout of the bike's internal log. |
 | **Bike** | Firmware versions, odometer, units, backup code, key backup and import, several bikes. |
 | **Lab** | E-shifter shift points and Speed++ (see below). |
 
@@ -52,7 +53,7 @@ Seven languages: English, German, Dutch, French, Italian, Croatian, Russian.
 
 ### Speed regions and Speed++
 
-The bike knows three regions, and YABA shows them as what they are: road signs.
+The bike knows three speed regions: Japan 24, Europe 25, USA 32 km/h.
 
 Speed++ sets a 28″ bike to the 24″ wheel setting. The bike then measures 84 % of the real speed,
 so assist ends at about 29.7 km/h instead of 25. The bike's own speedo and odometer read low by
@@ -61,42 +62,40 @@ legal where you ride.
 
 <br clear="right">
 
-## It folds
+## Foldables
 
-On a book-style foldable the app splits at the hinge: the bike on the left, the controls on the right.
+On a book-style foldable the app uses two panes, split at the hinge.
 
 <p align="center">
   <img src="assets/screens/foldable.png" width="70%" alt="Two-pane layout on a foldable, split at the hinge">
 </p>
 
-## Ten bells, synthesised from scratch
+## Bundled bells
 
-No samples, no recordings. [`tools/bells/make_bells.py`](tools/bells/make_bells.py) builds every
-bell out of sine partials, filtered noise and a bit of physics, voiced for the small speaker in
-the frame. All ten are CC0.
+Ten bells come with the app. [`tools/bells/make_bells.py`](tools/bells/make_bells.py) synthesises
+them from sine partials and filtered noise, tuned for the small speaker in the frame. All ten are CC0.
 
 | | Bell | What you hear |
 |---|---|---|
 | 🚲 | Ring ring | A rotary thumb bell, two pushes |
 | 🚋 | Tram | Zagreb tram gong: ding ... ding |
 | 🤡 | Clown honk | Rubber bulb horn, twice |
-| 📣 | Stadium horn | Blast, blast, BLAAAST |
+| 📣 | Stadium horn | Air horn, three blasts |
 | 🎺 | Fanfare | Two trumpets and a trombone in D |
 | 🪳 | La Cucaracha | The folk tune on a musical car horn |
 | 😢 | Sad trombone | Wah wah wah waaah |
 | 🌙 | Night shift | A lounge sting with a bass slide |
 | 👾 | YABA jingle | Five notes of chiptune |
-| 🛸 | UFO | A theremin that hovers, wobbles and leaves |
+| 🛸 | UFO | A theremin flying saucer |
 
-## The bike talks back
+## Dutch curses
 
 <p align="center">
   <img src="assets/grumble.svg" width="62%" alt="The top tube grumbles in Dutch: gedoe, balen, nou ja, he he, auw">
 </p>
 
-A Dutch bike may complain in Dutch. Now and then the dot matrix in the app says one word, rarely
-and never while you ride. The sentence below it stays polite and tells you the number, the cause
-and the next step. You can switch it off.
+Now and then the dot matrix in the app curses in Dutch. Rarely, and never while you ride. The
+error text below it stays polite. It can be switched off.
 
 | On the tube | Literally | Meant |
 |---|---|---|
@@ -134,10 +133,9 @@ sdk.dir=/path/to/android-sdk
 ./gradlew :app:testDebugUnitTest
 ```
 
-651 unit tests cover the protocol, the crypto, the guard state machine and the log parsers. None
-needs a bike.
+651 unit tests cover the protocol, the crypto, the guard state machine and the log parsers. They run without a bike.
 
-## Under the hood
+## Code
 
 | Path | What lives there |
 |---|---|
@@ -148,8 +146,7 @@ needs a bike.
 | `tools/bells` | The bell synthesiser |
 | `tools/readme` | Draws the art on this page from the app's own font, palette and icon |
 
-No UI kit, no image assets. The dot matrix, the tube, the glyphs in the tab bar and the opening
-film are drawn in code.
+The dot matrix, the tube, the tab bar glyphs and the opening film are drawn in code. There are no image assets.
 
 ## Credits
 
