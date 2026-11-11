@@ -88,24 +88,9 @@ them from sine partials and filtered noise, tuned for the small speaker in the f
 | 👾 | YABA jingle | Five notes of chiptune |
 | 🛸 | UFO | A theremin flying saucer |
 
-## Dutch curses
-
 <p align="center">
-  <img src="assets/grumble.svg" width="62%" alt="The top tube grumbles in Dutch: gedoe, balen, nou ja, he he, auw">
+  <img src="assets/grumble.svg" width="62%" alt="The dot matrix on the top tube">
 </p>
-
-Now and then the dot matrix in the app curses in Dutch. Rarely, and never while you ride. The
-error text below it stays polite. It can be switched off.
-
-| On the tube | Literally | Meant |
-|---|---|---|
-| `GEDOE` | fuss | trouble, bother |
-| `BALEN` | to be annoyed | what a pity |
-| `NOU JA` | well, yes | oh well |
-| `HE HE` | at last | phew |
-| `AUW` | ouch | that hurt |
-| `VERDORIE` | a softened "verdomme" | darn it |
-| `DE PIJP UIT` | out of the pipe | finished, over |
 
 ## Install
 

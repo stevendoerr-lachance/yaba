@@ -183,7 +183,7 @@ def grumble(font):
     slot, total = 4.0, 4.0 * len(words)
     layers = ""
     for i, w in enumerate(words):
-        a, b = (i * slot + 1.2) / total, (i * slot + 3.0) / total
+        a, b = (i * slot + 0.6) / total, (i * slot + 3.3) / total
         e = 0.02 / total  # a hard cut, like the display
         kick = 0.12 / total
         layers += (
