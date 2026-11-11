@@ -266,7 +266,7 @@
     <string name="bike_raw_reading">Čitanje…</string>
     <string name="bike_raw_done">Sve vrijednosti pročitane.</string>
     <string name="bike_raw_empty">prazno</string>
-    <string name="bike_about_origin">YABA je nastala u Frankfurtu na Majni za jedan rabljeni S3 i za svaki bicikl koji treba voziti dalje. Testirana je s firmverom\u00A01.9.3 za S3.</string>
+    <string name="bike_about_origin">YABA je nastala u Zagrebu za jedan rabljeni S3 i za svaki bicikl koji treba voziti dalje. Testirana je s firmverom\u00A01.9.3 za S3.</string>
     <string name="bike_outbursts_title">Nizozemske psovke</string>
     <string name="bike_outbursts_caption">Ponekad YABA opsuje na nizozemskom, na točkastom prikazu ovdje u aplikaciji, nikad dok voziš. Na zaslon samog bicikla YABA ne može pisati.</string>
     <string name="bike_outbursts_list_title">Riječi</string>

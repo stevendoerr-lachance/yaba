@@ -259,7 +259,7 @@
     <string name="bike_raw_reading">Lezen…</string>
     <string name="bike_raw_done">Alle waarden gelezen.</string>
     <string name="bike_raw_empty">leeg</string>
-    <string name="bike_about_origin">YABA is gebouwd in Frankfurt am Main voor één tweedehands S3 en voor elke fiets die moet blijven rijden. De app is getest met S3-firmware\u00A01.9.3.</string>
+    <string name="bike_about_origin">YABA is gebouwd in Zagreb voor één tweedehands S3 en voor elke fiets die moet blijven rijden. De app is getest met S3-firmware\u00A01.9.3.</string>
     <string name="bike_outbursts_title">Nederlandse vloeken</string>
     <string name="bike_outbursts_caption">Af en toe vloekt YABA in het Nederlands, op de puntmatrix hier in de app, nooit tijdens het rijden. Op het display van de fiets zelf kan YABA niet schrijven.</string>
     <string name="bike_outbursts_list_title">De woorden</string>

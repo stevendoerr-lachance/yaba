@@ -266,7 +266,7 @@
     <string name="bike_raw_reading">Lettura…</string>
     <string name="bike_raw_done">Tutti i valori letti.</string>
     <string name="bike_raw_empty">vuoto</string>
-    <string name="bike_about_origin">YABA è nata a Francoforte sul Meno per un S3 di seconda mano e per ogni bici che deve continuare a viaggiare. È stata provata con il firmware\u00A01.9.3 dell’S3.</string>
+    <string name="bike_about_origin">YABA è nata a Zagabria per un S3 di seconda mano e per ogni bici che deve continuare a viaggiare. È stata provata con il firmware\u00A01.9.3 dell’S3.</string>
     <string name="bike_outbursts_title">Imprecazioni olandesi</string>
     <string name="bike_outbursts_caption">Ogni tanto YABA impreca in olandese, sulla matrice a punti qui nell’app, mai mentre pedali. YABA non può scrivere sul display della bici.</string>
     <string name="bike_outbursts_list_title">Le parole</string>

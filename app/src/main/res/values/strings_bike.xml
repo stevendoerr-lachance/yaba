@@ -259,7 +259,7 @@
     <string name="bike_raw_reading">Reading…</string>
     <string name="bike_raw_done">All values read.</string>
     <string name="bike_raw_empty">empty</string>
-    <string name="bike_about_origin">YABA was built in Frankfurt am Main for one second-hand S3 and for every bike that should keep riding. It has been tested with S3 firmware\u00A01.9.3.</string>
+    <string name="bike_about_origin">YABA was built in Zagreb for one second-hand S3 and for every bike that should keep riding. It has been tested with S3 firmware\u00A01.9.3.</string>
     <string name="bike_outbursts_title">Dutch curses</string>
     <string name="bike_outbursts_caption">Now and then YABA curses in Dutch, on the dot matrix here in the app, never while you ride. YABA cannot write to the bike’s own display.</string>
     <string name="bike_outbursts_list_title">The words</string>

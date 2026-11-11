@@ -266,7 +266,7 @@
     <string name="bike_raw_reading">Lecture…</string>
     <string name="bike_raw_done">Toutes les valeurs ont été lues.</string>
     <string name="bike_raw_empty">vide</string>
-    <string name="bike_about_origin">YABA a été conçue à Francfort-sur-le-Main pour un S3 d’occasion et pour chaque vélo qui doit continuer à rouler. Elle a été testée avec le firmware\u00A01.9.3 du S3.</string>
+    <string name="bike_about_origin">YABA a été conçue à Zagreb pour un S3 d’occasion et pour chaque vélo qui doit continuer à rouler. Elle a été testée avec le firmware\u00A01.9.3 du S3.</string>
     <string name="bike_outbursts_title">Jurons néerlandais</string>
     <string name="bike_outbursts_caption">De temps en temps, YABA jure en néerlandais, sur la matrice de points ici dans l’app, jamais pendant que tu roules. YABA ne peut pas écrire sur l’écran du vélo lui-même.</string>
     <string name="bike_outbursts_list_title">Les mots</string>

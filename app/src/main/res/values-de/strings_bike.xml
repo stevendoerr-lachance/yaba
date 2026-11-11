@@ -259,7 +259,7 @@
     <string name="bike_raw_reading">Liest …</string>
     <string name="bike_raw_done">Alle Werte gelesen.</string>
     <string name="bike_raw_empty">leer</string>
-    <string name="bike_about_origin">Gebaut wurde YABA in Frankfurt am Main für ein gebrauchtes S3 und für jedes Bike, das weiterfahren soll. Getestet ist die App mit der S3-Firmware\u00A01.9.3.</string>
+    <string name="bike_about_origin">Gebaut wurde YABA in Zagreb für ein gebrauchtes S3 und für jedes Bike, das weiterfahren soll. Getestet ist die App mit der S3-Firmware\u00A01.9.3.</string>
     <string name="bike_outbursts_title">Niederländische Flüche</string>
     <string name="bike_outbursts_caption">Ab und zu flucht YABA auf Niederländisch, auf der Punktmatrix hier in der App, nie während der Fahrt. Auf das Display am Bike selbst kann YABA nicht schreiben.</string>
     <string name="bike_outbursts_list_title">Die Wörter</string>

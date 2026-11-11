@@ -273,7 +273,7 @@
     <string name="bike_raw_reading">Чтение…</string>
     <string name="bike_raw_done">Все значения прочитаны.</string>
     <string name="bike_raw_empty">пусто</string>
-    <string name="bike_about_origin">YABA создана во Франкфурте-на-Майне для одного подержанного S3 и для каждого велосипеда, который должен ехать дальше. Приложение проверено на прошивке S3\u00A01.9.3.</string>
+    <string name="bike_about_origin">YABA создана в Загребе для одного подержанного S3 и для каждого велосипеда, который должен ехать дальше. Приложение проверено на прошивке S3\u00A01.9.3.</string>
     <string name="bike_outbursts_title">Голландские ругательства</string>
     <string name="bike_outbursts_caption">Иногда YABA ругается по-голландски: на точечной матрице здесь, в приложении, и никогда во время езды. На дисплей самого велосипеда YABA писать не может.</string>
     <string name="bike_outbursts_list_title">Слова</string>
